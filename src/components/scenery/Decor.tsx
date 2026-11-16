@@ -34,7 +34,7 @@ export const Bookshelf: React.FC<{w?: number; h?: number; seed?: number} & G> = 
 		}
 		return out;
 	}, [w, h, seed]);
-	const wood = makeWoodMaterial('#7A5236');
+	const wood = makeWoodMaterial('#9A5E34');
 	return (
 		<group {...g}>
 			{[0, 1, 2, 3].map((s) => (

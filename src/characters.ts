@@ -12,6 +12,8 @@ export type CastMember = {
 	escala: number;
 	/** expressão padrão quando a cena não especifica */
 	expressaoPadrao: Expression2D;
+	/** trocas de roupa fixas (ex.: pijama → roupa de trabalho) */
+	variantes?: Record<string, Outfit2D>;
 };
 
 export const CAST = {
@@ -24,12 +26,12 @@ export const CAST = {
 		escala: 0.88,
 		expressaoPadrao: 'deboche',
 	},
-	/** Irmã de 8 anos do Zé: pijama amarelo, franja castanha e laço turquesa. */
+	/** Irmã de 8 anos do Zé: pijama amarelo, franja castanha e laço ROSA no alto da cabeça. */
 	nina: {
 		id: 'nina',
 		nome: 'Nina',
 		papel: 'irmã do Zé (8 anos)',
-		outfit: {body: PALETTE.yellow, hat: 'laco', hatColor: PALETTE.turquoise, hair: '#7A4A2A', hairStyle: 'franja', buttons: true},
+		outfit: {body: PALETTE.yellow, hat: 'laco', hatColor: '#F27BB0', hair: '#7A4A2A', hairStyle: 'franja', buttons: true},
 		escala: 0.72,
 		expressaoPadrao: 'bravo',
 	},
@@ -41,6 +43,10 @@ export const CAST = {
 		outfit: {body: PALETTE.blue, hat: 'touca', hatColor: '#6C8FD8', mustache: true, buttons: true},
 		escala: 1,
 		expressaoPadrao: 'susto',
+		variantes: {
+			/** roupa de trabalho: camisa social azul-clara, gravata azul-marinho, cinto, cabelo grisalho */
+			trabalho: {body: '#CFE0F5', hat: 'none', hair: '#8A9098', hairStyle: 'lado', mustache: true, tie: '#24407A', belt: true},
+		},
 	},
 	/** Mãe: roupa roxa, cabelo castanho escuro. */
 	mae: {

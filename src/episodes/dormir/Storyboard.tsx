@@ -21,8 +21,8 @@ export const NARRATION = {audio: 'audio/dormir-no-mesmo-lugar.mp3', timestamps: 
 const KID = 0.75; // escala de criança
 
 /** Personagem 2D do elenco (escala/expressão padrão do CAST). */
-const C2: React.FC<{who: keyof typeof CAST} & Omit<Character2DProps, 'outfit'>> = ({who, ...p}) => (
-	<Character2D outfit={CAST[who].outfit} expression={p.expression ?? CAST[who].expressaoPadrao} scale={p.scale ?? CAST[who].escala} {...p} />
+const C2: React.FC<{who: keyof typeof CAST} & Omit<Character2DProps, 'outfit'> & {outfit?: Character2DProps['outfit']}> = ({who, ...p}) => (
+	<Character2D outfit={p.outfit ?? CAST[who].outfit} expression={p.expression ?? CAST[who].expressaoPadrao} scale={p.scale ?? CAST[who].escala} {...p} />
 );
 
 /** Empurrando algo para a direita da tela. */
@@ -124,7 +124,7 @@ export const PANELS: Panel[] = [
 			<>
 				<Street2 />
 				<C2 who="roberto" expression="susto" pose="shrug" position={[0, 0.1, -0.88]} light={-1} shadowYaw={-45} />
-				<C2 who="roberto" expression="feliz" pose="walk" t={0.35} position={[1.15, 0, 1.5]} turn={0.5} light={-1} hold="briefcase" shadowYaw={-45} />
+				<C2 who="roberto" outfit={CAST.roberto.variantes.trabalho} expression="feliz" pose="walk" t={0.35} position={[1.15, 0, 1.5]} turn={0.5} light={-1} hold="briefcase" shadowYaw={-45} />
 			</>
 		),
 	},
@@ -140,7 +140,7 @@ export const PANELS: Panel[] = [
 		captionY: 0.82,
 		Scene: () => (
 			<>
-				<Bedroom2 wallpaper={['#C98FA6', '#D9A7BB']} duvet="#B9A4E6" bedWidth={1.0} lampOn={false} curtain="#2BA59B" rug="#6FA8DC" />
+				<Bedroom2 wallpaper={['#8E6FD6', '#A88BE8']} duvet="#2BA59B" bedWidth={1.0} lampOn={false} curtain="#2BA59B" rug="#6FA8DC" />
 				<C2 who="nina" expression="bravo" pose="crossArms" position={[-0.3, 0, 0.22]} light={1} tint="#FFF4E6" shadowYaw={155} />
 				<WallPlaque lines={['CAMA DA NINA', 'NÃO MEXA']} sizes={[0.26, 0.36]} red={1} position={[0.02, 1.0, -1.19]} width={0.4} height={0.22} />
 				<DaySun />
@@ -159,7 +159,7 @@ export const PANELS: Panel[] = [
 		captionY: 0.84,
 		Scene: () => (
 			<>
-				<Bedroom2 wallpaper={['#C98FA6', '#D9A7BB']} duvet="#B9A4E6" bedWidth={1.0} lampOn={false} curtain="#2BA59B" rug="#6FA8DC" bedOffset={[0.55, 0.35]} bedRot={0.3} dragMarks />
+				<Bedroom2 wallpaper={['#8E6FD6', '#A88BE8']} duvet="#2BA59B" bedWidth={1.0} lampOn={false} curtain="#2BA59B" rug="#6FA8DC" bedOffset={[0.55, 0.35]} bedRot={0.3} dragMarks />
 				<C2 who="mae" expression="bravo" pose={PUSH_R} position={[-0.5, 0, -0.05]} turn={0.6} light={1} tint="#FFF4E6" shadowYaw={155} />
 				<WallPlaque lines={['CAMA MUDADA', 'DE LUGAR:', '364 VEZES']} sizes={[0.2, 0.2, 0.3]} red={2} position={[-0.62, 0.95, -1.19]} width={0.4} height={0.3} />
 				<DaySun />
@@ -237,7 +237,7 @@ export const PANELS: Panel[] = [
 		captionY: 0.84,
 		Scene: () => (
 			<>
-				<Bedroom2 wallpaper={['#2F4766', '#3B5A80']} duvet="#C9A27A" bedWidth={1.0} curtain="#A07A36" />
+				<Bedroom2 wallpaper={['#2F4F8A', '#3D63A8']} duvet="#E07A3A" bedWidth={1.0} curtain="#A07A36" />
 				<C2 who="ze" expression="deboche" pose="sit" position={[-0.3, BED_TOP, -0.35]} turn={0.2} light={1} tint="#D3CFE6" shadowYaw={155} />
 				<WallPlaque lines={['NOITE Nº', '1']} sizes={[0.3, 0.5]} position={[0.05, 0.98, -1.19]} width={0.28} height={0.24} />
 				<MoonShaft />

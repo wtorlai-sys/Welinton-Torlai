@@ -244,12 +244,13 @@ const hatSvg = (o: Outfit2D, hx: number, hy: number, tx: number, front: boolean)
 				: '';
 		case 'laco': {
 			if (!front) return '';
-			const bx = hx + R * 0.55;
-			const by = hy - R * 0.82;
+			// laço em cima da cabeça, levemente para o lado
+			const bx = hx + R * 0.32;
+			const by = hy - R * 0.97;
 			return (
-				`<path d="M${f(bx)} ${f(by)} L${f(bx - 10)} ${f(by - 7)} Q${f(bx - 13)} ${f(by)} ${f(bx - 10)} ${f(by + 7)} Z" fill="${c}" ${st}/>` +
-				`<path d="M${f(bx)} ${f(by)} L${f(bx + 10)} ${f(by - 7)} Q${f(bx + 13)} ${f(by)} ${f(bx + 10)} ${f(by + 7)} Z" fill="${c}" ${st}/>` +
-				`<circle cx="${f(bx)}" cy="${f(by)}" r="3" fill="${d}" ${st}/>`
+				`<path d="M${f(bx)} ${f(by)} L${f(bx - 9)} ${f(by - 6.5)} Q${f(bx - 12)} ${f(by)} ${f(bx - 9)} ${f(by + 6.5)} Z" fill="${c}" ${st}/>` +
+				`<path d="M${f(bx)} ${f(by)} L${f(bx + 9)} ${f(by - 6.5)} Q${f(bx + 12)} ${f(by)} ${f(bx + 9)} ${f(by + 6.5)} Z" fill="${c}" ${st}/>` +
+				`<circle cx="${f(bx)}" cy="${f(by)}" r="2.8" fill="${d}" ${st}/>`
 			);
 		}
 		case 'touca':

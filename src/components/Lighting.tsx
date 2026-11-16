@@ -49,7 +49,7 @@ export const LIGHTING: Record<LightingPreset, PresetDef> = {
 		fog: [REF.light.fogNear, REF.light.fogFar],
 		exposure: 1.0,
 		bloom: false,
-		grade: {contrast: 1.1, saturation: 1.1, shadowTint: [-0.012, 0.0, 0.022], highlightTint: [0.02, 0.008, -0.012]},
+		grade: {contrast: 1.15, saturation: 1.25, shadowTint: [-0.012, 0.0, 0.022], highlightTint: [0.02, 0.008, -0.012]},
 	},
 	entardecer: {
 		skyTop: '#1E2740',
@@ -84,7 +84,7 @@ export const LIGHTING: Record<LightingPreset, PresetDef> = {
 		fog: [REF.light.fogNear, REF.light.fogFar],
 		exposure: 1.0,
 		bloom: true,
-		grade: {contrast: 1.12, saturation: 0.95, shadowTint: [-0.012, 0.0, 0.035], highlightTint: [0.03, 0.012, -0.012]},
+		grade: {contrast: 1.15, saturation: 1.12, shadowTint: [-0.012, 0.0, 0.035], highlightTint: [0.03, 0.012, -0.012]},
 	},
 };
 

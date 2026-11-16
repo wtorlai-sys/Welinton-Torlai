@@ -12,3 +12,4 @@ export {Bed, bedTop, Nightstand, Wardrobe, Rug, DoorPanel, Briefcase, MilkGlass}
 export {Counter, Fridge, Table, Chair} from './Kitchen';
 export {House} from './House';
 export {Bookshelf, Curtains, PictureFrame, Slippers} from './Decor';
+export {Inked} from './Inked';

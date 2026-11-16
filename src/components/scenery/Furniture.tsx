@@ -21,7 +21,7 @@ export const Bed: React.FC<{width?: number; length?: number; duvet?: string; pil
 	lumps = [],
 	...g
 }) => {
-	const wood = makeWoodMaterial('#9A6B44');
+	const wood = makeWoodMaterial('#C07840');
 	const duvetLen = length * (1 - folded * 0.5);
 	return (
 		<group {...g}>
@@ -70,7 +70,7 @@ export const Bed: React.FC<{width?: number; length?: number; duvet?: string; pil
 /** Criado-mudo com abajur (o abajur brilha à noite via <Glow> + pointLight quente). */
 export const Nightstand: React.FC<{lampOn?: boolean} & G> = ({lampOn = false, ...g}) => (
 	<group {...g}>
-		<RoundedBox args={[0.45, 0.5, 0.4]} radius={0.02} position={[0, 0.25, 0]} material={makeWoodMaterial('#8C5E3C')} castShadow receiveShadow />
+		<RoundedBox args={[0.45, 0.5, 0.4]} radius={0.02} position={[0, 0.25, 0]} material={makeWoodMaterial('#B5683A')} castShadow receiveShadow />
 		<mesh position={[0, 0.36, 0.201]} material={makePlainMaterial('#3A2A1E', 0.4, 0.6)}>
 			<boxGeometry args={[0.12, 0.025, 0.01]} />
 		</mesh>

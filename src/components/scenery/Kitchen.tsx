@@ -6,7 +6,7 @@ import {makePlainMaterial, makeWoodMaterial} from '../../style/materials';
 type G = Omit<React.ComponentProps<'group'>, 'children'>;
 
 /** Bancada encostada na parede (fundo em -Z). */
-export const Counter: React.FC<{length?: number; color?: string; top?: string} & G> = ({length = 2.4, color = '#2BA59B', top = '#EDE6DA', ...g}) => {
+export const Counter: React.FC<{length?: number; color?: string; top?: string; upper?: string} & G> = ({length = 2.4, color = '#2BA59B', top = '#EDE6DA', upper = '#F2C230', ...g}) => {
 	const doors = Math.max(2, Math.round(length / 0.6));
 	return (
 		<group {...g}>
@@ -22,14 +22,14 @@ export const Counter: React.FC<{length?: number; color?: string; top?: string} &
 				<boxGeometry args={[length + 0.04, 0.04, 0.64]} />
 			</mesh>
 			{/* armários superiores */}
-			<mesh position={[0, 1.75, -0.12]} material={makePlainMaterial('#F1EBDF', 0.55)} castShadow receiveShadow>
+			<mesh position={[0, 1.75, -0.12]} material={makePlainMaterial(upper, 0.5)} castShadow receiveShadow>
 				<boxGeometry args={[length, 0.6, 0.36]} />
 			</mesh>
 		</group>
 	);
 };
 
-export const Fridge: React.FC<{color?: string} & G> = ({color = '#9FD8CB', ...g}) => (
+export const Fridge: React.FC<{color?: string} & G> = ({color = '#7FD8C8', ...g}) => (
 	<group {...g}>
 		<RoundedBox args={[0.75, 1.8, 0.68]} radius={0.08} smoothness={4} position={[0, 0.9, 0]} material={makePlainMaterial(color, 0.3)} castShadow receiveShadow />
 		<mesh position={[0, 1.22, 0.345]} material={makePlainMaterial('#7FB8AB', 0.3)}>

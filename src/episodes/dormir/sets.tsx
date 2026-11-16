@@ -2,7 +2,8 @@
 // para conversar com o personagem de 1,0 m (STYLE_GUIDE §10).
 import React from 'react';
 import * as THREE from 'three';
-import {Bed, Bookshelf, Briefcase, Chair, Counter, Curtains, DoorPanel, Fridge, Grass, Ground, House, Nightstand, PictureFrame, Road, Room, Rug, Sign, Slippers, Table, Tree, Wardrobe} from '../../components/scenery';
+import {ContactShadows} from '@react-three/drei';
+import {Bed, Bookshelf, Inked, Briefcase, Chair, Counter, Curtains, DoorPanel, Fridge, Grass, Ground, House, Nightstand, PictureFrame, Road, Room, Rug, Sign, Slippers, Table, Tree, Wardrobe} from '../../components/scenery';
 import {makeTileMaterial, makeWallpaperMaterial} from '../../style/materials';
 import {PALETTE} from '../../style/constants';
 
@@ -125,22 +126,25 @@ export type Bedroom2Props = {
 };
 
 export const Bedroom2: React.FC<Bedroom2Props> = ({
-	duvet = '#4F6FA8',
+	duvet = '#3A6FD8',
 	lampOn = true,
 	lumps = [],
-	wallpaper = ['#557A86', '#6A92A0'],
+	wallpaper = ['#2F7F8F', '#3D97A8'],
 	bedWidth = 1.5,
 	bedOffset = [0, 0],
 	bedRot = 0,
 	dragMarks = false,
 	ceiling = true,
-	curtain = '#A07A36',
-	rug = '#8E5A4A',
+	curtain = '#E0A93B',
+	rug = '#E07A3A',
 	folded = 0,
 }) => {
 	const b = BEDROOM2;
 	return (
+		<>
+		<RoomAO />
 		<group scale={S}>
+			<Inked>
 			<Room
 				width={4.4}
 				depth={4}
@@ -157,7 +161,7 @@ export const Bedroom2: React.FC<Bedroom2Props> = ({
 			<PictureFrame position={[-1.25, 1.75, -1.98]} />
 			<Rug position={[-0.4, 0, 0.55]} w={1.8} d={1.0} color={rug} />
 			<Slippers position={[0.15, 0, -0.05]} color="#3A6FD8" />
-			<Wardrobe position={[1.75, 0, -1.68]} color="#B9A07E" />
+			<Wardrobe position={[1.75, 0, -1.68]} color="#F2C230" />
 			{dragMarks &&
 				[-0.35, 0.35].map((dx) => (
 					<mesh key={dx} rotation={[-Math.PI / 2, 0, bedRot * 0.5]} position={[b.bed.x + bedOffset[0] * 0.5 + dx, 0.004, b.bed.z + 0.2]}>
@@ -165,14 +169,19 @@ export const Bedroom2: React.FC<Bedroom2Props> = ({
 						<meshStandardMaterial color="#4A2F1C" roughness={1} transparent opacity={0.5} />
 					</mesh>
 				))}
+			</Inked>
 		</group>
+		</>
 	);
 };
 
 /** Cozinha detalhada: azulejo, bancada, armários, geladeira, mesa, fruteira, panelas, janela lateral. */
 export const Kitchen2: React.FC = () => (
+	<>
+	<RoomAO />
 	<group scale={S}>
-		<Room width={4.4} depth={4} height={2.6} wallMaterial={makeTileMaterial('#E6E0CF', '#B7AE9C', 0.16)} floorColor="#B98656" windows={[{wall: 'back', at: -1.2, y: 1.15, w: 0.9, h: 0.75}]} doors={[{wall: 'right', at: 0.4}]} />
+		<Inked>
+		<Room width={4.4} depth={4} height={2.6} wallMaterial={makeTileMaterial('#F4EEDC', '#B7AE9C', 0.16)} floorColor="#B98656" windows={[{wall: 'back', at: -1.2, y: 1.15, w: 0.9, h: 0.75}]} doors={[{wall: 'right', at: 0.4}]} />
 		<Curtains position={[-1.2, 0.95, -2.0]} w={0.9} h={1.2} color="#2BA59B" open={0.85} />
 		<Counter position={[-0.6, 0, -1.68]} length={2.6} color="#3A6FD8" />
 		{/* fogão + panela + chaleira */}
@@ -189,7 +198,7 @@ export const Kitchen2: React.FC = () => (
 			<meshStandardMaterial color="#F2C230" roughness={0.35} />
 		</mesh>
 		<Fridge position={[1.55, 0, -1.62]} />
-		<Wardrobe position={[-1.9, 0, -1.65]} color="#E6D9C2" />
+		<Wardrobe position={[-1.9, 0, -1.65]} color="#F27BB0" />
 		<Table position={[0.1, 0, 0.1]} />
 		{/* fruteira + xícaras na mesa */}
 		<mesh position={[0.3, 0.8, 0.1]} castShadow>
@@ -209,8 +218,16 @@ export const Kitchen2: React.FC = () => (
 		<Chair position={[-0.85, 0, 0.1]} rotation={[0, Math.PI / 2, 0]} />
 		<Chair position={[0.1, 0, -0.65]} />
 		<PictureFrame position={[0.9, 1.75, -1.98]} sky="#9FD8CB" hill="#3A6FD8" />
+		</Inked>
 	</group>
+	</>
 );
+
+/**
+ * Sombra de contato do cômodo inteiro (escurece o piso sob móveis — dá peso/profundidade).
+ * Fica acima das sombras-blob dos personagens (y=0.006) para não capturá-las.
+ */
+export const RoomAO: React.FC = () => <ContactShadows position={[0, 0.0095, 0]} scale={[2.8, 2.6]} resolution={1024} blur={2.2} far={0.5} opacity={0.7} color="#1A1020" frames={1} />;
 
 /** Rua do Sr. Roberto com mais detalhe: cerca, arbustos, caixa de correio, poste. */
 export const Street2: React.FC = () => (
