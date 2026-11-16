@@ -6,7 +6,7 @@
   "iniciar": "concluido",
   "preparar": "concluido",
   "motion_mapa": "concluido",
-  "motion_render": "aguardando_aprovacao",
+  "motion_render": "em_andamento",
   "sfx": "pendente",
   "render": "pendente"
  },
@@ -915,11 +915,13 @@
   "cenas": {
    "c01": {
     "arquivo": "scenes/gancho.tsx#C01Gancho",
-    "versao": 1
+    "versao": 1,
+    "status": "aprovado"
    },
    "c02": {
     "arquivo": "scenes/gancho.tsx#C02Mentira",
-    "versao": 1
+    "versao": 1,
+    "status": "aprovado"
    }
   },
   "eventos": [
@@ -1043,6 +1045,9 @@
     "forca": "media",
     "obs": "carimbo VERDADE"
    }
+  ],
+  "trechos_aprovados": [
+   "gancho (c01–c02) · prancha_v01 · 16/11"
   ]
  }
 }
