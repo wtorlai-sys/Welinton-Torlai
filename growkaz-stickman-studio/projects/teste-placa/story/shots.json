@@ -1,0 +1,165 @@
+{
+ "title": "Teste - E se a placa fosse sincera",
+ "duration": 11.0,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0,
+   "end": 2.1,
+   "line": "E se a placa fosse sincera?",
+   "scene": "Estabelecimento: estrada ao pôr do sol, Zé ao lado da placa DIAS SEM ACIDENTE: 7, push-in",
+   "set": "roadside",
+   "in": {
+    "type": "fade",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "whoosh",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s02",
+   "start": 2.1,
+   "end": 4.05,
+   "line": "7 dias sem acidente.",
+   "scene": "Médio: Zé aponta orgulhoso, readout RECORDE 7 DIAS",
+   "set": "roadside",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "pop",
+     "gain": -12
+    },
+    {
+     "at": 0.2,
+     "name": "ding",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s03",
+   "start": 4.05,
+   "end": 5.85,
+   "line": "Até que…",
+   "scene": "Câmera baixa no asfalto: faróis do carro crescendo e desviando",
+   "set": "roadside",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "riser",
+     "gain": -10,
+     "dur": 1.8
+    },
+    {
+     "at": 0.6,
+     "name": "carpass",
+     "gain": -8
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s04",
+   "start": 5.85,
+   "end": 6.85,
+   "line": "PÁ!",
+   "scene": "Impacto: carro acerta a placa, shake, faíscas, destroços, Zé em choque",
+   "set": "roadside",
+   "in": {
+    "type": "flash",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.12,
+     "name": "impact",
+     "gain": -3
+    },
+    {
+     "at": 0.14,
+     "name": "hit",
+     "gain": -6
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s05",
+   "start": 6.85,
+   "end": 7.8,
+   "line": "Zero.",
+   "scene": "Insert: placa torta, número vira 0 em vermelho",
+   "set": "roadside",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.25,
+     "name": "stinger",
+     "gain": -8
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s06",
+   "start": 7.8,
+   "end": 11.0,
+   "line": "Pelo menos durou uma semana.",
+   "scene": "Close gigante do Zé com deboche falando, placa e carro desfocados atrás",
+   "set": "roadside",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  }
+ ],
+ "music": [
+  {
+   "start": 0,
+   "end": 5.85,
+   "mood": "playful",
+   "intensity": 0.4
+  },
+  {
+   "start": 5.85,
+   "end": 11.0,
+   "mood": "tension",
+   "intensity": 0.3
+  }
+ ],
+ "sfx": []
+}

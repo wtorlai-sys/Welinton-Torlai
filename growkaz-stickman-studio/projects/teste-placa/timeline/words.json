@@ -1,0 +1,100 @@
+{
+ "source": "script:script.json",
+ "words": [
+  {
+   "word": "E",
+   "start": 0.1,
+   "end": 0.25
+  },
+  {
+   "word": "se",
+   "start": 0.25,
+   "end": 0.45
+  },
+  {
+   "word": "a",
+   "start": 0.45,
+   "end": 0.55
+  },
+  {
+   "word": "placa",
+   "start": 0.55,
+   "end": 0.95
+  },
+  {
+   "word": "fosse",
+   "start": 0.95,
+   "end": 1.3
+  },
+  {
+   "word": "sincera?",
+   "start": 1.3,
+   "end": 1.95
+  },
+  {
+   "word": "7",
+   "start": 2.2,
+   "end": 2.55
+  },
+  {
+   "word": "dias",
+   "start": 2.55,
+   "end": 2.9
+  },
+  {
+   "word": "sem",
+   "start": 2.9,
+   "end": 3.2
+  },
+  {
+   "word": "acidente.",
+   "start": 3.2,
+   "end": 3.9
+  },
+  {
+   "word": "Até",
+   "start": 4.2,
+   "end": 4.55
+  },
+  {
+   "word": "que…",
+   "start": 4.55,
+   "end": 5.4
+  },
+  {
+   "word": "PÁ!",
+   "start": 5.9,
+   "end": 6.4
+  },
+  {
+   "word": "Zero.",
+   "start": 6.9,
+   "end": 7.5
+  },
+  {
+   "word": "Pelo",
+   "start": 7.9,
+   "end": 8.15
+  },
+  {
+   "word": "menos",
+   "start": 8.15,
+   "end": 8.5
+  },
+  {
+   "word": "durou",
+   "start": 8.5,
+   "end": 8.85
+  },
+  {
+   "word": "uma",
+   "start": 8.85,
+   "end": 9.05
+  },
+  {
+   "word": "semana.",
+   "start": 9.05,
+   "end": 9.55
+  }
+ ]
+}

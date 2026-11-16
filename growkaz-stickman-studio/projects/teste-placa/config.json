@@ -1,0 +1,23 @@
+{
+ "title": "Teste - E se a placa fosse sincera",
+ "aspect": "9:16",
+ "resolution": "1080p",
+ "fps": 24,
+ "style": "emerald",
+ "voiceover": "input/voiceover.wav",
+ "script": "input/script.json",
+ "duration": 11.0,
+ "captions": true,
+ "bars": null,
+ "fadeIn": 0.5,
+ "fadeOut": 0.8,
+ "music": {
+  "enabled": true,
+  "gainDb": -17
+ },
+ "sfx": {
+  "enabled": true,
+  "gainDb": -6
+ },
+ "loudness": -14
+}
