@@ -7,7 +7,7 @@
   "preparar": "concluido",
   "motion_mapa": "concluido",
   "motion_render": "concluido",
-  "sfx": "aguardando_aprovacao",
+  "sfx": "concluido",
   "render": "pendente"
  },
  "pendencias": [],
@@ -1852,6 +1852,7 @@
    "public/2026-11-16_monetizacao/mix.m4a"
   ],
   "previa": "_CLAUDE/revisao/previa_gancho_v01.mp4",
-  "versao": 1
+  "versao": 1,
+  "aprovado": "previa_gancho_v01 · 16/11"
  }
 }
