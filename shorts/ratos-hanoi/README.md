@@ -11,8 +11,8 @@ Montado com a skill `ricksclips-short-style` (palco three.js em `shorts/stage`).
 | Trilha pizzicato (Karplus-Strong) | `shorts/tools/music.py` | `audio/music.mp3` |
 | Cena / planos / luz | `shorts/tools/build_short.py` | `short.json` |
 
-A narração original (`audio/voice_original.mp3`, 93,7 s) foi acelerada 1,55× com `atempo` para caber em ~60 s.
-As marcações de palavras (faster-whisper) foram escaladas na mesma proporção (`audio/words.json`).
+A narração está na velocidade natural da gravação (93,7 s). `build_short.py . <fator>` permite acelerar se for necessário.
+As marcações de palavras vêm do faster-whisper (`audio/words.json`).
 
 ```bash
 cd shorts/stage && npm install three@0.187.0
