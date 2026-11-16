@@ -1,0 +1,10 @@
+[
+ {"inicio": 30.2, "fim": 31.4, "tokens": [["R$ 1", 30.22, 30.56], ["e", 30.56, 30.64], ["R$ 5", 30.64, 31.48]],
+  "nota": "falado 'entre um e cinco reais'; escrito como valor (large-v3: R$ 1 e R$ 5)"},
+ {"inicio": 41.5, "fim": 42.9, "tokens": [["R$ 10", 41.58, 42.06], ["e", 42.06, 42.16], ["R$ 50.", 42.16, 43.24]],
+  "nota": "falado 'entre dez e cinquenta reais'"},
+ {"inicio": 47.1, "fim": 47.9, "tokens": [["R$ 500.", 47.18, 48.26]],
+  "nota": "falado 'quinhentos reais'"},
+ {"inicio": 53.5, "fim": 55.1, "tokens": [["R$ 1.000", 53.58, 54.02], ["e", 54.02, 54.14], ["R$ 5.000.", 54.14, 55.5]],
+  "nota": "falado 'entre mil e cinco mil reais'"}
+]

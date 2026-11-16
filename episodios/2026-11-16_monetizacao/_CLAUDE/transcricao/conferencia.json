@@ -1,0 +1,210 @@
+{
+ "numeros": [
+  {
+   "t": 29.8,
+   "medium": "",
+   "large": "R $",
+   "numero": true
+  },
+  {
+   "t": 30.56,
+   "medium": "",
+   "large": "R $",
+   "numero": true
+  },
+  {
+   "t": 31.14,
+   "medium": "reais",
+   "large": "",
+   "numero": true
+  },
+  {
+   "t": 41.24,
+   "medium": "",
+   "large": "R $",
+   "numero": true
+  },
+  {
+   "t": 42.06,
+   "medium": "",
+   "large": "R $",
+   "numero": true
+  },
+  {
+   "t": 42.78,
+   "medium": "reais.",
+   "large": "",
+   "numero": true
+  },
+  {
+   "t": 46.98,
+   "medium": "",
+   "large": "R $",
+   "numero": true
+  },
+  {
+   "t": 47.74,
+   "medium": "reais.",
+   "large": "",
+   "numero": true
+  },
+  {
+   "t": 53.14,
+   "medium": "",
+   "large": "R $",
+   "numero": true
+  },
+  {
+   "t": 54.02,
+   "medium": "",
+   "large": "R $",
+   "numero": true
+  },
+  {
+   "t": 55.02,
+   "medium": "reais.",
+   "large": "",
+   "numero": true
+  }
+ ],
+ "tempo": [
+  {
+   "ataque": 27.3,
+   "palavra": 27.5,
+   "desvio": 0.2
+  },
+  {
+   "ataque": 55.95,
+   "palavra": 56.22,
+   "desvio": 0.27
+  }
+ ],
+ "engolidos": [],
+ "pausas": [
+  {
+   "ini": 3.12,
+   "fim": 3.43,
+   "dur": 0.31
+  },
+  {
+   "ini": 8.81,
+   "fim": 9.16,
+   "dur": 0.35
+  },
+  {
+   "ini": 10.79,
+   "fim": 11.16,
+   "dur": 0.37
+  },
+  {
+   "ini": 16.12,
+   "fim": 16.52,
+   "dur": 0.4
+  },
+  {
+   "ini": 18.26,
+   "fim": 18.64,
+   "dur": 0.38
+  },
+  {
+   "ini": 21.69,
+   "fim": 22.13,
+   "dur": 0.44
+  },
+  {
+   "ini": 26.96,
+   "fim": 27.3,
+   "dur": 0.34
+  },
+  {
+   "ini": 33.04,
+   "fim": 33.48,
+   "dur": 0.44
+  },
+  {
+   "ini": 34.55,
+   "fim": 34.97,
+   "dur": 0.42
+  },
+  {
+   "ini": 40.01,
+   "fim": 40.35,
+   "dur": 0.34
+  },
+  {
+   "ini": 43.24,
+   "fim": 43.63,
+   "dur": 0.39
+  },
+  {
+   "ini": 45.51,
+   "fim": 45.83,
+   "dur": 0.32
+  },
+  {
+   "ini": 48.26,
+   "fim": 48.71,
+   "dur": 0.45
+  },
+  {
+   "ini": 51.78,
+   "fim": 52.15,
+   "dur": 0.37
+  },
+  {
+   "ini": 55.56,
+   "fim": 55.95,
+   "dur": 0.39
+  },
+  {
+   "ini": 60.09,
+   "fim": 60.51,
+   "dur": 0.42
+  },
+  {
+   "ini": 63.4,
+   "fim": 63.88,
+   "dur": 0.48
+  },
+  {
+   "ini": 70.48,
+   "fim": 70.91,
+   "dur": 0.43
+  },
+  {
+   "ini": 72.79,
+   "fim": 73.26,
+   "dur": 0.47
+  },
+  {
+   "ini": 77.28,
+   "fim": 77.75,
+   "dur": 0.47
+  },
+  {
+   "ini": 79.22,
+   "fim": 79.63,
+   "dur": 0.41
+  },
+  {
+   "ini": 83.46,
+   "fim": 83.86,
+   "dur": 0.4
+  },
+  {
+   "ini": 90.63,
+   "fim": 91.06,
+   "dur": 0.43
+  },
+  {
+   "ini": 95.54,
+   "fim": 95.96,
+   "dur": 0.42
+  },
+  {
+   "ini": 96.86,
+   "fim": 97.19,
+   "dur": 0.33
+  }
+ ]
+}

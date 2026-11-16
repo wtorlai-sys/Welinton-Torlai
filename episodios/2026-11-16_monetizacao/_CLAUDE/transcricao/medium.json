@@ -1,0 +1,1740 @@
+{
+ "modelo": "medium",
+ "duracao": 104.359,
+ "inicio": 0.0,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 5.88,
+   "text": "Você pode conseguir mil visualizações no YouTube e ganhar menos de R$ 5,00,"
+  },
+  {
+   "start": 5.88,
+   "end": 8.86,
+   "text": "mas também pode ganhar muito mais do que isso."
+  },
+  {
+   "start": 9.16,
+   "end": 10.86,
+   "text": "E não, não é mentira."
+  },
+  {
+   "start": 11.18,
+   "end": 16.18,
+   "text": "Vou te mostrar quanto um canal recém-monetizado pode receber por mil visualizações."
+  },
+  {
+   "start": 16.52,
+   "end": 18.26,
+   "text": "Primeiro, uma coisa importante."
+  },
+  {
+   "start": 18.66,
+   "end": 21.7,
+   "text": "O YouTube não paga um valor fixo por visualização,"
+  },
+  {
+   "start": 22.02,
+   "end": 27.06,
+   "text": "mas, para ter uma ideia, em vídeos tradicionais, com público principalmente brasileiro,"
+  },
+  {
+   "start": 27.06,
+   "end": 33.12,
+   "text": "Uma estimativa comum para canais menores fica entre 1 e 5 reais a cada mil visualizações."
+  },
+  {
+   "start": 33.5,
+   "end": 34.66,
+   "text": "Agora, imagina só!"
+  },
+  {
+   "start": 34.98,
+   "end": 40.08,
+   "text": "Se seu canal acabou de ser monetizado e um vídeo alcançar 10 mil visualizações,"
+  },
+  {
+   "start": 40.4,
+   "end": 43.24,
+   "text": "você pode receber entre 10 e 50 reais."
+  },
+  {
+   "start": 43.58,
+   "end": 48.26,
+   "text": "Com 100 mil visualizações, esse valor pode chegar a 500 reais."
+  },
+  {
+   "start": 48.66,
+   "end": 51.82,
+   "text": "E se o vídeo alcançar 1 milhão de visualizações?"
+  },
+  {
+   "start": 52.18,
+   "end": 55.5,
+   "text": "Você poderia ganhar entre 1 mil e 5 mil reais."
+  },
+  {
+   "start": 55.5,
+   "end": 60.14,
+   "text": "Mas calma, porque existe um detalhe que muda completamente essa conta."
+  },
+  {
+   "start": 60.58,
+   "end": 63.56,
+   "text": "O assunto do seu canal influencia muito no pagamento."
+  },
+  {
+   "start": 63.96,
+   "end": 68.7,
+   "text": "Um canal de finanças, por exemplo, pode receber muito mais por mil visualizações do que"
+  },
+  {
+   "start": 68.7,
+   "end": 70.52,
+   "text": "um canal de entretenimento ou humor."
+  },
+  {
+   "start": 70.92,
+   "end": 72.82,
+   "text": "E tem outra diferença enorme."
+  },
+  {
+   "start": 73.28,
+   "end": 77.34,
+   "text": "Os shorts geralmente pagam muito menos do que os vídeos tradicionais."
+  },
+  {
+   "start": 77.74,
+   "end": 79.22,
+   "text": "E sabe o que é mais interessante?"
+  },
+  {
+   "start": 79.64,
+   "end": 83.46,
+   "text": "Um canal que acabou de ser monetizado não recebe uma tarifa especial."
+  },
+  {
+   "start": 83.46,
+   "end": 87.5,
+   "text": "O pagamento depende do público, do conteúdo, dos anúncios"
+  },
+  {
+   "start": 87.5,
+   "end": 90.78,
+   "text": "e de quantas visualizações realmente geram receita."
+  },
+  {
+   "start": 91.18,
+   "end": 95.64,
+   "text": "Agora me conta, você está começando um canal no YouTube ou já conseguiu monetizar?"
+  },
+  {
+   "start": 96.06,
+   "end": 99.96,
+   "text": "Comenta aqui embaixo, porque esse pode ser o primeiro de vários vídeos"
+  },
+  {
+   "start": 99.96,
+   "end": 104.12,
+   "text": "mostrando quanto realmente dá para ganhar criando conteúdo na internet."
+  }
+ ],
+ "words": [
+  {
+   "text": "Você",
+   "start": 0.0,
+   "end": 0.48,
+   "prob": 0.803
+  },
+  {
+   "text": "pode",
+   "start": 0.48,
+   "end": 0.76,
+   "prob": 0.993
+  },
+  {
+   "text": "conseguir",
+   "start": 0.76,
+   "end": 1.2,
+   "prob": 0.995
+  },
+  {
+   "text": "mil",
+   "start": 1.2,
+   "end": 1.68,
+   "prob": 0.743
+  },
+  {
+   "text": "visualizações",
+   "start": 1.68,
+   "end": 2.52,
+   "prob": 0.998
+  },
+  {
+   "text": "no",
+   "start": 2.52,
+   "end": 2.66,
+   "prob": 0.984
+  },
+  {
+   "text": "YouTube",
+   "start": 2.66,
+   "end": 3.1,
+   "prob": 0.851
+  },
+  {
+   "text": "e",
+   "start": 3.1,
+   "end": 3.54,
+   "prob": 0.841
+  },
+  {
+   "text": "ganhar",
+   "start": 3.54,
+   "end": 3.9,
+   "prob": 0.996
+  },
+  {
+   "text": "menos",
+   "start": 3.9,
+   "end": 4.42,
+   "prob": 0.991
+  },
+  {
+   "text": "de",
+   "start": 4.42,
+   "end": 4.78,
+   "prob": 0.997
+  },
+  {
+   "text": "R",
+   "start": 4.78,
+   "end": 5.18,
+   "prob": 0.474
+  },
+  {
+   "text": "$",
+   "start": 5.18,
+   "end": 5.18,
+   "prob": 0.999
+  },
+  {
+   "text": "5",
+   "start": 5.18,
+   "end": 5.18,
+   "prob": 0.737
+  },
+  {
+   "text": ",00,",
+   "start": 5.18,
+   "end": 5.88,
+   "prob": 0.941
+  },
+  {
+   "text": "mas",
+   "start": 5.88,
+   "end": 6.2,
+   "prob": 0.984
+  },
+  {
+   "text": "também",
+   "start": 6.2,
+   "end": 6.6,
+   "prob": 0.989
+  },
+  {
+   "text": "pode",
+   "start": 6.6,
+   "end": 6.8,
+   "prob": 0.996
+  },
+  {
+   "text": "ganhar",
+   "start": 6.8,
+   "end": 7.2,
+   "prob": 0.998
+  },
+  {
+   "text": "muito",
+   "start": 7.2,
+   "end": 7.84,
+   "prob": 0.985
+  },
+  {
+   "text": "mais",
+   "start": 7.84,
+   "end": 8.2,
+   "prob": 0.999
+  },
+  {
+   "text": "do",
+   "start": 8.2,
+   "end": 8.38,
+   "prob": 0.952
+  },
+  {
+   "text": "que",
+   "start": 8.38,
+   "end": 8.56,
+   "prob": 0.999
+  },
+  {
+   "text": "isso.",
+   "start": 8.56,
+   "end": 8.86,
+   "prob": 0.994
+  },
+  {
+   "text": "E",
+   "start": 9.16,
+   "end": 9.44,
+   "prob": 0.931
+  },
+  {
+   "text": "não,",
+   "start": 9.44,
+   "end": 9.8,
+   "prob": 0.967
+  },
+  {
+   "text": "não",
+   "start": 9.9,
+   "end": 10.16,
+   "prob": 0.996
+  },
+  {
+   "text": "é",
+   "start": 10.16,
+   "end": 10.38,
+   "prob": 0.999
+  },
+  {
+   "text": "mentira.",
+   "start": 10.38,
+   "end": 10.86,
+   "prob": 0.999
+  },
+  {
+   "text": "Vou",
+   "start": 11.18,
+   "end": 11.32,
+   "prob": 0.966
+  },
+  {
+   "text": "te",
+   "start": 11.32,
+   "end": 11.5,
+   "prob": 0.985
+  },
+  {
+   "text": "mostrar",
+   "start": 11.5,
+   "end": 11.96,
+   "prob": 0.999
+  },
+  {
+   "text": "quanto",
+   "start": 11.96,
+   "end": 12.36,
+   "prob": 0.96
+  },
+  {
+   "text": "um",
+   "start": 12.36,
+   "end": 12.5,
+   "prob": 0.996
+  },
+  {
+   "text": "canal",
+   "start": 12.5,
+   "end": 12.82,
+   "prob": 0.999
+  },
+  {
+   "text": "recém",
+   "start": 12.82,
+   "end": 13.24,
+   "prob": 0.979
+  },
+  {
+   "text": "-monetizado",
+   "start": 13.24,
+   "end": 13.92,
+   "prob": 0.945
+  },
+  {
+   "text": "pode",
+   "start": 13.92,
+   "end": 14.18,
+   "prob": 0.996
+  },
+  {
+   "text": "receber",
+   "start": 14.18,
+   "end": 14.64,
+   "prob": 0.997
+  },
+  {
+   "text": "por",
+   "start": 14.64,
+   "end": 14.98,
+   "prob": 0.996
+  },
+  {
+   "text": "mil",
+   "start": 14.98,
+   "end": 15.24,
+   "prob": 0.98
+  },
+  {
+   "text": "visualizações.",
+   "start": 15.24,
+   "end": 16.18,
+   "prob": 1.0
+  },
+  {
+   "text": "Primeiro,",
+   "start": 16.52,
+   "end": 17.14,
+   "prob": 0.982
+  },
+  {
+   "text": "uma",
+   "start": 17.26,
+   "end": 17.4,
+   "prob": 0.996
+  },
+  {
+   "text": "coisa",
+   "start": 17.4,
+   "end": 17.66,
+   "prob": 1.0
+  },
+  {
+   "text": "importante.",
+   "start": 17.66,
+   "end": 18.26,
+   "prob": 0.997
+  },
+  {
+   "text": "O",
+   "start": 18.66,
+   "end": 18.76,
+   "prob": 0.99
+  },
+  {
+   "text": "YouTube",
+   "start": 18.76,
+   "end": 19.22,
+   "prob": 0.99
+  },
+  {
+   "text": "não",
+   "start": 19.22,
+   "end": 19.66,
+   "prob": 0.998
+  },
+  {
+   "text": "paga",
+   "start": 19.66,
+   "end": 19.96,
+   "prob": 0.999
+  },
+  {
+   "text": "um",
+   "start": 19.96,
+   "end": 20.1,
+   "prob": 0.991
+  },
+  {
+   "text": "valor",
+   "start": 20.1,
+   "end": 20.42,
+   "prob": 0.999
+  },
+  {
+   "text": "fixo",
+   "start": 20.42,
+   "end": 20.8,
+   "prob": 0.997
+  },
+  {
+   "text": "por",
+   "start": 20.8,
+   "end": 21.06,
+   "prob": 0.996
+  },
+  {
+   "text": "visualização,",
+   "start": 21.06,
+   "end": 21.7,
+   "prob": 0.998
+  },
+  {
+   "text": "mas,",
+   "start": 22.02,
+   "end": 22.48,
+   "prob": 0.994
+  },
+  {
+   "text": "para",
+   "start": 22.58,
+   "end": 22.7,
+   "prob": 0.999
+  },
+  {
+   "text": "ter",
+   "start": 22.7,
+   "end": 22.88,
+   "prob": 0.995
+  },
+  {
+   "text": "uma",
+   "start": 22.88,
+   "end": 23.12,
+   "prob": 0.998
+  },
+  {
+   "text": "ideia,",
+   "start": 23.12,
+   "end": 23.42,
+   "prob": 0.979
+  },
+  {
+   "text": "em",
+   "start": 23.7,
+   "end": 23.88,
+   "prob": 0.998
+  },
+  {
+   "text": "vídeos",
+   "start": 23.88,
+   "end": 24.22,
+   "prob": 0.991
+  },
+  {
+   "text": "tradicionais,",
+   "start": 24.22,
+   "end": 24.96,
+   "prob": 0.999
+  },
+  {
+   "text": "com",
+   "start": 25.06,
+   "end": 25.18,
+   "prob": 0.999
+  },
+  {
+   "text": "público",
+   "start": 25.18,
+   "end": 25.54,
+   "prob": 0.545
+  },
+  {
+   "text": "principalmente",
+   "start": 25.54,
+   "end": 26.42,
+   "prob": 0.967
+  },
+  {
+   "text": "brasileiro,",
+   "start": 26.42,
+   "end": 27.06,
+   "prob": 0.997
+  },
+  {
+   "text": "Uma",
+   "start": 27.06,
+   "end": 27.5,
+   "prob": 0.761
+  },
+  {
+   "text": "estimativa",
+   "start": 27.5,
+   "end": 28.02,
+   "prob": 0.997
+  },
+  {
+   "text": "comum",
+   "start": 28.02,
+   "end": 28.4,
+   "prob": 0.997
+  },
+  {
+   "text": "para",
+   "start": 28.4,
+   "end": 28.66,
+   "prob": 0.998
+  },
+  {
+   "text": "canais",
+   "start": 28.66,
+   "end": 28.98,
+   "prob": 0.996
+  },
+  {
+   "text": "menores",
+   "start": 28.98,
+   "end": 29.52,
+   "prob": 0.999
+  },
+  {
+   "text": "fica",
+   "start": 29.52,
+   "end": 29.8,
+   "prob": 0.988
+  },
+  {
+   "text": "entre",
+   "start": 29.8,
+   "end": 30.22,
+   "prob": 0.994
+  },
+  {
+   "text": "1",
+   "start": 30.22,
+   "end": 30.56,
+   "prob": 0.586
+  },
+  {
+   "text": "e",
+   "start": 30.56,
+   "end": 30.64,
+   "prob": 0.945
+  },
+  {
+   "text": "5",
+   "start": 30.64,
+   "end": 31.14,
+   "prob": 0.981
+  },
+  {
+   "text": "reais",
+   "start": 31.14,
+   "end": 31.48,
+   "prob": 0.973
+  },
+  {
+   "text": "a",
+   "start": 31.48,
+   "end": 31.68,
+   "prob": 0.986
+  },
+  {
+   "text": "cada",
+   "start": 31.68,
+   "end": 31.94,
+   "prob": 0.999
+  },
+  {
+   "text": "mil",
+   "start": 31.94,
+   "end": 32.18,
+   "prob": 0.642
+  },
+  {
+   "text": "visualizações.",
+   "start": 32.18,
+   "end": 33.12,
+   "prob": 0.999
+  },
+  {
+   "text": "Agora,",
+   "start": 33.5,
+   "end": 33.78,
+   "prob": 0.972
+  },
+  {
+   "text": "imagina",
+   "start": 33.92,
+   "end": 34.38,
+   "prob": 0.929
+  },
+  {
+   "text": "só!",
+   "start": 34.38,
+   "end": 34.66,
+   "prob": 0.944
+  },
+  {
+   "text": "Se",
+   "start": 34.98,
+   "end": 35.14,
+   "prob": 0.981
+  },
+  {
+   "text": "seu",
+   "start": 35.14,
+   "end": 35.32,
+   "prob": 0.871
+  },
+  {
+   "text": "canal",
+   "start": 35.32,
+   "end": 35.62,
+   "prob": 1.0
+  },
+  {
+   "text": "acabou",
+   "start": 35.62,
+   "end": 36.12,
+   "prob": 0.998
+  },
+  {
+   "text": "de",
+   "start": 36.12,
+   "end": 36.34,
+   "prob": 0.999
+  },
+  {
+   "text": "ser",
+   "start": 36.34,
+   "end": 36.5,
+   "prob": 0.999
+  },
+  {
+   "text": "monetizado",
+   "start": 36.5,
+   "end": 37.18,
+   "prob": 0.994
+  },
+  {
+   "text": "e",
+   "start": 37.18,
+   "end": 37.42,
+   "prob": 0.864
+  },
+  {
+   "text": "um",
+   "start": 37.42,
+   "end": 37.56,
+   "prob": 0.976
+  },
+  {
+   "text": "vídeo",
+   "start": 37.56,
+   "end": 37.74,
+   "prob": 0.995
+  },
+  {
+   "text": "alcançar",
+   "start": 37.74,
+   "end": 38.42,
+   "prob": 0.996
+  },
+  {
+   "text": "10",
+   "start": 38.42,
+   "end": 38.88,
+   "prob": 0.951
+  },
+  {
+   "text": "mil",
+   "start": 38.88,
+   "end": 39.14,
+   "prob": 0.926
+  },
+  {
+   "text": "visualizações,",
+   "start": 39.14,
+   "end": 40.08,
+   "prob": 1.0
+  },
+  {
+   "text": "você",
+   "start": 40.4,
+   "end": 40.58,
+   "prob": 0.988
+  },
+  {
+   "text": "pode",
+   "start": 40.58,
+   "end": 40.86,
+   "prob": 0.996
+  },
+  {
+   "text": "receber",
+   "start": 40.86,
+   "end": 41.24,
+   "prob": 0.997
+  },
+  {
+   "text": "entre",
+   "start": 41.24,
+   "end": 41.58,
+   "prob": 0.998
+  },
+  {
+   "text": "10",
+   "start": 41.58,
+   "end": 42.06,
+   "prob": 0.994
+  },
+  {
+   "text": "e",
+   "start": 42.06,
+   "end": 42.16,
+   "prob": 0.985
+  },
+  {
+   "text": "50",
+   "start": 42.16,
+   "end": 42.78,
+   "prob": 0.998
+  },
+  {
+   "text": "reais.",
+   "start": 42.78,
+   "end": 43.24,
+   "prob": 0.997
+  },
+  {
+   "text": "Com",
+   "start": 43.58,
+   "end": 44.0,
+   "prob": 0.985
+  },
+  {
+   "text": "100",
+   "start": 44.0,
+   "end": 44.36,
+   "prob": 0.992
+  },
+  {
+   "text": "mil",
+   "start": 44.36,
+   "end": 44.62,
+   "prob": 0.987
+  },
+  {
+   "text": "visualizações,",
+   "start": 44.62,
+   "end": 45.58,
+   "prob": 1.0
+  },
+  {
+   "text": "esse",
+   "start": 45.88,
+   "end": 46.08,
+   "prob": 0.973
+  },
+  {
+   "text": "valor",
+   "start": 46.08,
+   "end": 46.38,
+   "prob": 0.999
+  },
+  {
+   "text": "pode",
+   "start": 46.38,
+   "end": 46.66,
+   "prob": 0.997
+  },
+  {
+   "text": "chegar",
+   "start": 46.66,
+   "end": 46.98,
+   "prob": 0.999
+  },
+  {
+   "text": "a",
+   "start": 46.98,
+   "end": 47.18,
+   "prob": 0.995
+  },
+  {
+   "text": "500",
+   "start": 47.18,
+   "end": 47.74,
+   "prob": 0.986
+  },
+  {
+   "text": "reais.",
+   "start": 47.74,
+   "end": 48.26,
+   "prob": 0.996
+  },
+  {
+   "text": "E",
+   "start": 48.66,
+   "end": 48.88,
+   "prob": 0.983
+  },
+  {
+   "text": "se",
+   "start": 48.88,
+   "end": 49.02,
+   "prob": 0.903
+  },
+  {
+   "text": "o",
+   "start": 49.02,
+   "end": 49.18,
+   "prob": 0.991
+  },
+  {
+   "text": "vídeo",
+   "start": 49.18,
+   "end": 49.38,
+   "prob": 0.995
+  },
+  {
+   "text": "alcançar",
+   "start": 49.38,
+   "end": 49.98,
+   "prob": 0.999
+  },
+  {
+   "text": "1",
+   "start": 49.98,
+   "end": 50.34,
+   "prob": 0.854
+  },
+  {
+   "text": "milhão",
+   "start": 50.34,
+   "end": 50.74,
+   "prob": 0.996
+  },
+  {
+   "text": "de",
+   "start": 50.74,
+   "end": 51.02,
+   "prob": 0.998
+  },
+  {
+   "text": "visualizações?",
+   "start": 51.02,
+   "end": 51.82,
+   "prob": 0.999
+  },
+  {
+   "text": "Você",
+   "start": 52.18,
+   "end": 52.44,
+   "prob": 0.997
+  },
+  {
+   "text": "poderia",
+   "start": 52.44,
+   "end": 52.78,
+   "prob": 0.997
+  },
+  {
+   "text": "ganhar",
+   "start": 52.78,
+   "end": 53.14,
+   "prob": 0.997
+  },
+  {
+   "text": "entre",
+   "start": 53.14,
+   "end": 53.58,
+   "prob": 0.998
+  },
+  {
+   "text": "1",
+   "start": 53.58,
+   "end": 54.02,
+   "prob": 0.574
+  },
+  {
+   "text": "mil",
+   "start": 54.02,
+   "end": 54.02,
+   "prob": 0.389
+  },
+  {
+   "text": "e",
+   "start": 54.02,
+   "end": 54.14,
+   "prob": 0.986
+  },
+  {
+   "text": "5",
+   "start": 54.14,
+   "end": 54.8,
+   "prob": 0.984
+  },
+  {
+   "text": "mil",
+   "start": 54.8,
+   "end": 55.02,
+   "prob": 0.998
+  },
+  {
+   "text": "reais.",
+   "start": 55.02,
+   "end": 55.5,
+   "prob": 0.999
+  },
+  {
+   "text": "Mas",
+   "start": 55.5,
+   "end": 56.22,
+   "prob": 0.843
+  },
+  {
+   "text": "calma,",
+   "start": 56.22,
+   "end": 56.84,
+   "prob": 0.965
+  },
+  {
+   "text": "porque",
+   "start": 56.92,
+   "end": 57.22,
+   "prob": 0.961
+  },
+  {
+   "text": "existe",
+   "start": 57.22,
+   "end": 57.46,
+   "prob": 0.998
+  },
+  {
+   "text": "um",
+   "start": 57.46,
+   "end": 57.76,
+   "prob": 0.998
+  },
+  {
+   "text": "detalhe",
+   "start": 57.76,
+   "end": 58.08,
+   "prob": 0.996
+  },
+  {
+   "text": "que",
+   "start": 58.08,
+   "end": 58.24,
+   "prob": 0.991
+  },
+  {
+   "text": "muda",
+   "start": 58.24,
+   "end": 58.56,
+   "prob": 0.995
+  },
+  {
+   "text": "completamente",
+   "start": 58.56,
+   "end": 59.5,
+   "prob": 0.995
+  },
+  {
+   "text": "essa",
+   "start": 59.5,
+   "end": 59.8,
+   "prob": 0.968
+  },
+  {
+   "text": "conta.",
+   "start": 59.8,
+   "end": 60.14,
+   "prob": 0.998
+  },
+  {
+   "text": "O",
+   "start": 60.58,
+   "end": 60.72,
+   "prob": 0.582
+  },
+  {
+   "text": "assunto",
+   "start": 60.72,
+   "end": 61.08,
+   "prob": 0.964
+  },
+  {
+   "text": "do",
+   "start": 61.08,
+   "end": 61.32,
+   "prob": 0.989
+  },
+  {
+   "text": "seu",
+   "start": 61.32,
+   "end": 61.46,
+   "prob": 0.998
+  },
+  {
+   "text": "canal",
+   "start": 61.46,
+   "end": 61.8,
+   "prob": 0.999
+  },
+  {
+   "text": "influencia",
+   "start": 61.8,
+   "end": 62.48,
+   "prob": 0.993
+  },
+  {
+   "text": "muito",
+   "start": 62.48,
+   "end": 62.86,
+   "prob": 0.999
+  },
+  {
+   "text": "no",
+   "start": 62.86,
+   "end": 63.02,
+   "prob": 0.993
+  },
+  {
+   "text": "pagamento.",
+   "start": 63.02,
+   "end": 63.56,
+   "prob": 1.0
+  },
+  {
+   "text": "Um",
+   "start": 63.96,
+   "end": 64.0,
+   "prob": 0.925
+  },
+  {
+   "text": "canal",
+   "start": 64.0,
+   "end": 64.26,
+   "prob": 0.999
+  },
+  {
+   "text": "de",
+   "start": 64.26,
+   "end": 64.52,
+   "prob": 0.999
+  },
+  {
+   "text": "finanças,",
+   "start": 64.52,
+   "end": 64.94,
+   "prob": 0.988
+  },
+  {
+   "text": "por",
+   "start": 64.94,
+   "end": 65.14,
+   "prob": 0.999
+  },
+  {
+   "text": "exemplo,",
+   "start": 65.14,
+   "end": 65.52,
+   "prob": 1.0
+  },
+  {
+   "text": "pode",
+   "start": 65.78,
+   "end": 65.9,
+   "prob": 0.994
+  },
+  {
+   "text": "receber",
+   "start": 65.9,
+   "end": 66.38,
+   "prob": 0.997
+  },
+  {
+   "text": "muito",
+   "start": 66.38,
+   "end": 66.88,
+   "prob": 0.995
+  },
+  {
+   "text": "mais",
+   "start": 66.88,
+   "end": 67.16,
+   "prob": 0.999
+  },
+  {
+   "text": "por",
+   "start": 67.16,
+   "end": 67.32,
+   "prob": 0.994
+  },
+  {
+   "text": "mil",
+   "start": 67.32,
+   "end": 67.56,
+   "prob": 0.9
+  },
+  {
+   "text": "visualizações",
+   "start": 67.56,
+   "end": 68.44,
+   "prob": 0.999
+  },
+  {
+   "text": "do",
+   "start": 68.44,
+   "end": 68.6,
+   "prob": 0.913
+  },
+  {
+   "text": "que",
+   "start": 68.6,
+   "end": 68.7,
+   "prob": 0.999
+  },
+  {
+   "text": "um",
+   "start": 68.7,
+   "end": 68.9,
+   "prob": 0.989
+  },
+  {
+   "text": "canal",
+   "start": 68.9,
+   "end": 69.04,
+   "prob": 0.999
+  },
+  {
+   "text": "de",
+   "start": 69.04,
+   "end": 69.32,
+   "prob": 0.995
+  },
+  {
+   "text": "entretenimento",
+   "start": 69.32,
+   "end": 69.94,
+   "prob": 0.998
+  },
+  {
+   "text": "ou",
+   "start": 69.94,
+   "end": 70.2,
+   "prob": 0.992
+  },
+  {
+   "text": "humor.",
+   "start": 70.2,
+   "end": 70.52,
+   "prob": 0.994
+  },
+  {
+   "text": "E",
+   "start": 70.92,
+   "end": 71.04,
+   "prob": 0.972
+  },
+  {
+   "text": "tem",
+   "start": 71.04,
+   "end": 71.3,
+   "prob": 0.984
+  },
+  {
+   "text": "outra",
+   "start": 71.3,
+   "end": 71.68,
+   "prob": 0.988
+  },
+  {
+   "text": "diferença",
+   "start": 71.68,
+   "end": 72.18,
+   "prob": 0.999
+  },
+  {
+   "text": "enorme.",
+   "start": 72.18,
+   "end": 72.82,
+   "prob": 0.998
+  },
+  {
+   "text": "Os",
+   "start": 73.28,
+   "end": 73.52,
+   "prob": 0.984
+  },
+  {
+   "text": "shorts",
+   "start": 73.52,
+   "end": 73.92,
+   "prob": 0.886
+  },
+  {
+   "text": "geralmente",
+   "start": 73.92,
+   "end": 74.74,
+   "prob": 0.978
+  },
+  {
+   "text": "pagam",
+   "start": 74.74,
+   "end": 75.12,
+   "prob": 0.996
+  },
+  {
+   "text": "muito",
+   "start": 75.12,
+   "end": 75.56,
+   "prob": 0.997
+  },
+  {
+   "text": "menos",
+   "start": 75.56,
+   "end": 75.9,
+   "prob": 0.999
+  },
+  {
+   "text": "do",
+   "start": 75.9,
+   "end": 76.06,
+   "prob": 0.959
+  },
+  {
+   "text": "que",
+   "start": 76.06,
+   "end": 76.1,
+   "prob": 0.999
+  },
+  {
+   "text": "os",
+   "start": 76.1,
+   "end": 76.28,
+   "prob": 0.994
+  },
+  {
+   "text": "vídeos",
+   "start": 76.28,
+   "end": 76.56,
+   "prob": 0.993
+  },
+  {
+   "text": "tradicionais.",
+   "start": 76.56,
+   "end": 77.34,
+   "prob": 0.998
+  },
+  {
+   "text": "E",
+   "start": 77.74,
+   "end": 77.94,
+   "prob": 0.939
+  },
+  {
+   "text": "sabe",
+   "start": 77.94,
+   "end": 78.08,
+   "prob": 0.99
+  },
+  {
+   "text": "o",
+   "start": 78.08,
+   "end": 78.18,
+   "prob": 0.995
+  },
+  {
+   "text": "que",
+   "start": 78.18,
+   "end": 78.34,
+   "prob": 0.998
+  },
+  {
+   "text": "é",
+   "start": 78.34,
+   "end": 78.36,
+   "prob": 0.973
+  },
+  {
+   "text": "mais",
+   "start": 78.36,
+   "end": 78.66,
+   "prob": 0.998
+  },
+  {
+   "text": "interessante?",
+   "start": 78.66,
+   "end": 79.22,
+   "prob": 0.998
+  },
+  {
+   "text": "Um",
+   "start": 79.64,
+   "end": 79.82,
+   "prob": 0.985
+  },
+  {
+   "text": "canal",
+   "start": 79.82,
+   "end": 80.06,
+   "prob": 0.999
+  },
+  {
+   "text": "que",
+   "start": 80.06,
+   "end": 80.32,
+   "prob": 0.993
+  },
+  {
+   "text": "acabou",
+   "start": 80.32,
+   "end": 80.56,
+   "prob": 0.999
+  },
+  {
+   "text": "de",
+   "start": 80.56,
+   "end": 80.82,
+   "prob": 0.999
+  },
+  {
+   "text": "ser",
+   "start": 80.82,
+   "end": 80.96,
+   "prob": 0.999
+  },
+  {
+   "text": "monetizado",
+   "start": 80.96,
+   "end": 81.66,
+   "prob": 0.996
+  },
+  {
+   "text": "não",
+   "start": 81.66,
+   "end": 82.04,
+   "prob": 0.886
+  },
+  {
+   "text": "recebe",
+   "start": 82.04,
+   "end": 82.48,
+   "prob": 0.998
+  },
+  {
+   "text": "uma",
+   "start": 82.48,
+   "end": 82.68,
+   "prob": 0.998
+  },
+  {
+   "text": "tarifa",
+   "start": 82.68,
+   "end": 83.0,
+   "prob": 0.991
+  },
+  {
+   "text": "especial.",
+   "start": 83.0,
+   "end": 83.46,
+   "prob": 0.999
+  },
+  {
+   "text": "O",
+   "start": 83.46,
+   "end": 83.98,
+   "prob": 0.798
+  },
+  {
+   "text": "pagamento",
+   "start": 83.98,
+   "end": 84.54,
+   "prob": 0.999
+  },
+  {
+   "text": "depende",
+   "start": 84.54,
+   "end": 84.88,
+   "prob": 0.998
+  },
+  {
+   "text": "do",
+   "start": 84.88,
+   "end": 85.12,
+   "prob": 0.997
+  },
+  {
+   "text": "público,",
+   "start": 85.12,
+   "end": 85.52,
+   "prob": 0.996
+  },
+  {
+   "text": "do",
+   "start": 85.84,
+   "end": 86.0,
+   "prob": 0.998
+  },
+  {
+   "text": "conteúdo,",
+   "start": 86.0,
+   "end": 86.42,
+   "prob": 0.999
+  },
+  {
+   "text": "dos",
+   "start": 86.76,
+   "end": 86.96,
+   "prob": 0.997
+  },
+  {
+   "text": "anúncios",
+   "start": 86.96,
+   "end": 87.5,
+   "prob": 0.996
+  },
+  {
+   "text": "e",
+   "start": 87.5,
+   "end": 87.82,
+   "prob": 0.928
+  },
+  {
+   "text": "de",
+   "start": 87.82,
+   "end": 88.0,
+   "prob": 0.996
+  },
+  {
+   "text": "quantas",
+   "start": 88.0,
+   "end": 88.38,
+   "prob": 0.999
+  },
+  {
+   "text": "visualizações",
+   "start": 88.38,
+   "end": 89.22,
+   "prob": 0.999
+  },
+  {
+   "text": "realmente",
+   "start": 89.22,
+   "end": 89.84,
+   "prob": 0.994
+  },
+  {
+   "text": "geram",
+   "start": 89.84,
+   "end": 90.22,
+   "prob": 0.992
+  },
+  {
+   "text": "receita.",
+   "start": 90.22,
+   "end": 90.78,
+   "prob": 0.987
+  },
+  {
+   "text": "Agora",
+   "start": 91.18,
+   "end": 91.38,
+   "prob": 0.977
+  },
+  {
+   "text": "me",
+   "start": 91.38,
+   "end": 91.62,
+   "prob": 0.739
+  },
+  {
+   "text": "conta,",
+   "start": 91.62,
+   "end": 91.86,
+   "prob": 0.995
+  },
+  {
+   "text": "você",
+   "start": 92.22,
+   "end": 92.46,
+   "prob": 0.99
+  },
+  {
+   "text": "está",
+   "start": 92.46,
+   "end": 92.64,
+   "prob": 0.997
+  },
+  {
+   "text": "começando",
+   "start": 92.64,
+   "end": 93.08,
+   "prob": 0.999
+  },
+  {
+   "text": "um",
+   "start": 93.08,
+   "end": 93.16,
+   "prob": 0.996
+  },
+  {
+   "text": "canal",
+   "start": 93.16,
+   "end": 93.42,
+   "prob": 0.999
+  },
+  {
+   "text": "no",
+   "start": 93.42,
+   "end": 93.56,
+   "prob": 0.992
+  },
+  {
+   "text": "YouTube",
+   "start": 93.56,
+   "end": 94.0,
+   "prob": 0.687
+  },
+  {
+   "text": "ou",
+   "start": 94.0,
+   "end": 94.38,
+   "prob": 0.926
+  },
+  {
+   "text": "já",
+   "start": 94.38,
+   "end": 94.64,
+   "prob": 0.997
+  },
+  {
+   "text": "conseguiu",
+   "start": 94.64,
+   "end": 95.02,
+   "prob": 0.999
+  },
+  {
+   "text": "monetizar?",
+   "start": 95.02,
+   "end": 95.64,
+   "prob": 0.996
+  },
+  {
+   "text": "Comenta",
+   "start": 96.06,
+   "end": 96.3,
+   "prob": 0.991
+  },
+  {
+   "text": "aqui",
+   "start": 96.3,
+   "end": 96.5,
+   "prob": 0.994
+  },
+  {
+   "text": "embaixo,",
+   "start": 96.5,
+   "end": 96.88,
+   "prob": 0.981
+  },
+  {
+   "text": "porque",
+   "start": 97.22,
+   "end": 97.48,
+   "prob": 0.981
+  },
+  {
+   "text": "esse",
+   "start": 97.48,
+   "end": 97.82,
+   "prob": 0.958
+  },
+  {
+   "text": "pode",
+   "start": 97.82,
+   "end": 98.02,
+   "prob": 0.998
+  },
+  {
+   "text": "ser",
+   "start": 98.02,
+   "end": 98.26,
+   "prob": 1.0
+  },
+  {
+   "text": "o",
+   "start": 98.26,
+   "end": 98.44,
+   "prob": 0.999
+  },
+  {
+   "text": "primeiro",
+   "start": 98.44,
+   "end": 98.82,
+   "prob": 0.992
+  },
+  {
+   "text": "de",
+   "start": 98.82,
+   "end": 99.2,
+   "prob": 0.999
+  },
+  {
+   "text": "vários",
+   "start": 99.2,
+   "end": 99.56,
+   "prob": 0.999
+  },
+  {
+   "text": "vídeos",
+   "start": 99.56,
+   "end": 99.96,
+   "prob": 0.995
+  },
+  {
+   "text": "mostrando",
+   "start": 99.96,
+   "end": 100.56,
+   "prob": 0.996
+  },
+  {
+   "text": "quanto",
+   "start": 100.56,
+   "end": 100.98,
+   "prob": 0.506
+  },
+  {
+   "text": "realmente",
+   "start": 100.98,
+   "end": 101.7,
+   "prob": 0.986
+  },
+  {
+   "text": "dá",
+   "start": 101.7,
+   "end": 101.86,
+   "prob": 0.993
+  },
+  {
+   "text": "para",
+   "start": 101.86,
+   "end": 102.06,
+   "prob": 0.993
+  },
+  {
+   "text": "ganhar",
+   "start": 102.06,
+   "end": 102.46,
+   "prob": 0.997
+  },
+  {
+   "text": "criando",
+   "start": 102.46,
+   "end": 103.0,
+   "prob": 0.982
+  },
+  {
+   "text": "conteúdo",
+   "start": 103.0,
+   "end": 103.48,
+   "prob": 0.842
+  },
+  {
+   "text": "na",
+   "start": 103.48,
+   "end": 103.7,
+   "prob": 0.996
+  },
+  {
+   "text": "internet.",
+   "start": 103.7,
+   "end": 104.12,
+   "prob": 0.874
+  }
+ ]
+}

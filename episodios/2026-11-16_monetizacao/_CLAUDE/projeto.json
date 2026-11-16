@@ -4,7 +4,7 @@
  "criado": "2026-11-16",
  "etapas": {
   "iniciar": "concluido",
-  "preparar": "pendente",
+  "preparar": "aguardando_aprovacao",
   "motion_mapa": "pendente",
   "motion_render": "pendente",
   "sfx": "pendente",
@@ -16,5 +16,24 @@
   "arquivo": "audio/Monetização_teste.mp3",
   "md5": "1c7536a0825f869a386c75b15d16baa2",
   "duracao_s": 104.359
+ },
+ "transcricao": {
+  "narracao_remotion": "public/2026-11-16_monetizacao/narracao.mp3",
+  "palavras": "public/2026-11-16_monetizacao/palavras.json",
+  "legendas": "public/2026-11-16_monetizacao/legendas.json",
+  "frases": "_CLAUDE/frases.md",
+  "fixes": "_CLAUDE/fixes.json",
+  "brutos": "_CLAUDE/transcricao/ (medium.json, large-v3.json, conferencia.json)",
+  "duracao_s": 104.359,
+  "frames": 3131,
+  "fps": 30,
+  "audio": "mp3 44,1 kHz mono",
+  "frases_n": 21,
+  "blocos_legenda": 101,
+  "pausas_mais_0_3s": 25,
+  "numeros": "medium e large-v3 concordam nos valores; 4 trechos escritos como R$ (fixes.json)",
+  "tempo": "2 ataques corrigidos (27,30 Uma; 55,95 Mas); 0 desvios > 0,15 s",
+  "engolidos": 0,
+  "alertas": []
  }
 }
