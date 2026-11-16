@@ -5,7 +5,7 @@
  "etapas": {
   "iniciar": "concluido",
   "preparar": "concluido",
-  "motion_mapa": "pendente",
+  "motion_mapa": "aguardando_aprovacao",
   "motion_render": "pendente",
   "sfx": "pendente",
   "render": "pendente"
@@ -35,5 +35,874 @@
   "tempo": "2 ataques corrigidos (27,30 Uma; 55,95 Mas); 0 desvios > 0,15 s",
   "engolidos": 0,
   "alertas": []
- }
+ },
+ "cenas": [
+  {
+   "id": "c01",
+   "inicio": 0.0,
+   "fim": 9.01,
+   "trecho": "gancho",
+   "titulo": "Gancho: 1.000 views × menos de R$ 5, depois \"muito mais\"",
+   "gatilhos": [
+    {
+     "palavra": "Você",
+     "t": 0.0,
+     "o": "frame 0: botão de play 3D explode do centro com anel de choque"
+    },
+    {
+     "palavra": "mil",
+     "t": 1.2,
+     "o": "painel \"Painel do canal\" entra; contador de views (olho) dispara 0→1.000 (expo.out)"
+    },
+    {
+     "palavra": "visualizações",
+     "t": 1.68,
+     "o": "contador freia em 1.000, \"1.000\" dourado gigante"
+    },
+    {
+     "palavra": "YouTube",
+     "t": 2.66,
+     "o": "selo de play vermelho carimba no canto do painel"
+    },
+    {
+     "palavra": "ganhar",
+     "t": 3.54,
+     "o": "linha de receita: moedas R$ surgem e se desfazem em pó"
+    },
+    {
+     "palavra": "menos",
+     "t": 3.9,
+     "o": "zoom rápido no campo Receita; balança: 1.000 views pesado × receita leve"
+    },
+    {
+     "palavra": "R$ 5",
+     "t": 4.78,
+     "o": "slam \"MENOS DE R$ 5\" verde grande, punch + tremida"
+    },
+    {
+     "palavra": "mas",
+     "t": 5.88,
+     "o": "sub-momento B (mesmo mundo, sem corte): câmera chicoteia para cima pela linha do gráfico"
+    },
+    {
+     "palavra": "ganhar",
+     "t": 6.8,
+     "o": "gráfico de linha dispara com ponto brilhante; odômetro de R$ girando borrado (sem valor final)"
+    },
+    {
+     "palavra": "muito mais",
+     "t": 7.2,
+     "o": "texto cinético \"MUITO MAIS\" com speed lines; notas e moedas 3D atravessam"
+    }
+   ],
+   "transicao": "abertura no frame 0; 5,88 movimento rápido no mesmo mundo (sem corte)",
+   "camera": "push-in constante; zoom rápido em \"menos\"; punch em R$ 5; chicote para cima em \"mas\"",
+   "captionY": 915,
+   "batidas": [
+    "0,00 impacto play",
+    "1,20–2,40 contador",
+    "2,66 carimbo",
+    "3,54 moedas",
+    "4,78 slam R$ 5",
+    "5,88 whoosh subindo",
+    "7,84 rajada moedas"
+   ],
+   "status": "proposto"
+  },
+  {
+   "id": "c02",
+   "inicio": 9.01,
+   "fim": 10.98,
+   "trecho": "gancho",
+   "titulo": "\"E não, não é mentira\"",
+   "gatilhos": [
+    {
+     "palavra": "E não",
+     "t": 9.16,
+     "o": "palavra \"MENTIRA?\" apagada no centro, inclinada em 3D"
+    },
+    {
+     "palavra": "não",
+     "t": 9.9,
+     "o": "risco dourado atravessa a palavra"
+    },
+    {
+     "palavra": "mentira",
+     "t": 10.38,
+     "o": "selo verde de check \"VERDADE\" carimba por cima"
+    }
+   ],
+   "transicao": "flash + corte com assentamento",
+   "camera": "inclinação 3D lenta que se endireita no carimbo",
+   "captionY": 915,
+   "batidas": [
+    "9,90 risco",
+    "10,38 carimbo"
+   ],
+   "status": "proposto"
+  },
+  {
+   "id": "c03",
+   "inicio": 10.98,
+   "fim": 16.32,
+   "trecho": "corpo",
+   "titulo": "\"Vou te mostrar quanto um canal recém-monetizado pode receber por 1.000 visualizações\"",
+   "gatilhos": [
+    {
+     "palavra": "mostrar",
+     "t": 11.5,
+     "o": "câmera atravessa o selo e chega no cartão do canal"
+    },
+    {
+     "palavra": "canal",
+     "t": 12.5,
+     "o": "cartão \"Seu canal\" (avatar genérico, ícone de inscritos)"
+    },
+    {
+     "palavra": "monetizado",
+     "t": 13.24,
+     "o": "chave \"Monetização\" liga (verde) com brilho"
+    },
+    {
+     "palavra": "receber",
+     "t": 14.18,
+     "o": "carteira com \"R$ ???\" girando ao lado"
+    },
+    {
+     "palavra": "mil visualizações",
+     "t": 14.98,
+     "o": "pílula \"por 1.000 visualizações\" dourada encaixa embaixo"
+    }
+   ],
+   "transicao": "zoom-through (pelo selo de check)",
+   "camera": "chegada em movimento, deriva para a direita acompanhando os elementos",
+   "captionY": 915,
+   "batidas": [
+    "11,50 whoosh",
+    "13,24 clique da chave",
+    "14,18 giro",
+    "14,98 pop"
+   ],
+   "status": "proposto"
+  },
+  {
+   "id": "c04",
+   "inicio": 16.32,
+   "fim": 21.91,
+   "trecho": "corpo",
+   "titulo": "\"Primeiro, uma coisa importante. O YouTube não paga um valor fixo por visualização\"",
+   "gatilhos": [
+    {
+     "palavra": "Primeiro",
+     "t": 16.52,
+     "o": "\"1\" grande + \"PRIMEIRO\" cai de cima"
+    },
+    {
+     "palavra": "importante",
+     "t": 17.66,
+     "o": "ícone de alerta pulsa (ciano/dourado)"
+    },
+    {
+     "palavra": "YouTube",
+     "t": 18.76,
+     "o": "painel de monetização entra com play no cabeçalho, barras de receita oscilando"
+    },
+    {
+     "palavra": "valor fixo",
+     "t": 20.1,
+     "o": "etiqueta de preço \"VALOR FIXO / view\" entra"
+    },
+    {
+     "palavra": "visualização",
+     "t": 21.06,
+     "o": "carimbo ✕ vermelho (foco da piada) sobre a etiqueta; barras continuam variando"
+    }
+   ],
+   "transicao": "drop (de cima)",
+   "camera": "push-in; leve punch no ✕",
+   "captionY": 915,
+   "batidas": [
+    "16,52 queda",
+    "17,66 alerta",
+    "18,76 interface",
+    "21,06 carimbo ✕"
+   ],
+   "status": "proposto"
+  },
+  {
+   "id": "c05",
+   "inicio": 21.91,
+   "fim": 27.13,
+   "trecho": "corpo",
+   "titulo": "\"Para ter uma ideia, em vídeos tradicionais, com público principalmente brasileiro\"",
+   "gatilhos": [
+    {
+     "palavra": "ideia",
+     "t": 23.12,
+     "o": "barra de filtros \"Estimativa\" se abre"
+    },
+    {
+     "palavra": "vídeos tradicionais",
+     "t": 23.88,
+     "o": "chip \"Vídeos tradicionais\" (ícone 16:9) encaixa"
+    },
+    {
+     "palavra": "público",
+     "t": 25.18,
+     "o": "chip \"Público\" (pessoas) encaixa"
+    },
+    {
+     "palavra": "brasileiro",
+     "t": 26.42,
+     "o": "chip \"Brasil\" (bandeira desenhada) encaixa; grupo recentraliza"
+    }
+   ],
+   "transicao": "whip para a esquerda",
+   "camera": "deriva lateral seguindo os chips",
+   "captionY": 915,
+   "batidas": [
+    "23,12 abre",
+    "23,88 clique",
+    "25,18 clique",
+    "26,42 clique"
+   ],
+   "status": "proposto"
+  },
+  {
+   "id": "c06",
+   "inicio": 27.13,
+   "fim": 33.27,
+   "trecho": "corpo",
+   "titulo": "Primeira estimativa: R$ 1 a R$ 5 a cada 1.000 visualizações",
+   "gatilhos": [
+    {
+     "palavra": "estimativa",
+     "t": 27.5,
+     "o": "pílula \"ESTIMATIVA\" + \"canais menores\" (ícone de canal pequeno)"
+    },
+    {
+     "palavra": "entre",
+     "t": 29.8,
+     "o": "trilho da faixa aparece"
+    },
+    {
+     "palavra": "R$ 1",
+     "t": 30.22,
+     "o": "\"R$ 1\" pop na ponta esquerda"
+    },
+    {
+     "palavra": "R$ 5",
+     "t": 30.64,
+     "o": "\"R$ 5\" pop na direita; trilho enche de verde entre os dois"
+    },
+    {
+     "palavra": "mil visualizações",
+     "t": 31.94,
+     "o": "\"/ 1.000 visualizações\" com olho e contador dourado embaixo"
+    }
+   ],
+   "transicao": "zoom-through (pela barra de filtros)",
+   "camera": "push-in; punch em R$ 5",
+   "captionY": 915,
+   "batidas": [
+    "30,22 pop",
+    "30,64 pop + enchimento",
+    "31,94 contador"
+   ],
+   "status": "proposto"
+  },
+  {
+   "id": "c07",
+   "inicio": 33.27,
+   "fim": 40.2,
+   "trecho": "corpo",
+   "titulo": "\"Agora, imagina só! Se seu canal acabou de ser monetizado e um vídeo alcançar 10 mil\"",
+   "gatilhos": [
+    {
+     "palavra": "Agora",
+     "t": 33.5,
+     "o": "faixa R$ 1–5 encolhe e vira HUD fixo no canto superior esquerdo (fica até c11)"
+    },
+    {
+     "palavra": "imagina",
+     "t": 33.92,
+     "o": "recuo revela palco escuro, brilho de \"ideia\""
+    },
+    {
+     "palavra": "canal",
+     "t": 35.32,
+     "o": "cartão do canal volta"
+    },
+    {
+     "palavra": "monetizado",
+     "t": 36.5,
+     "o": "chave Monetização pulsa verde (já ligada)"
+    },
+    {
+     "palavra": "vídeo",
+     "t": 37.56,
+     "o": "câmera viaja para a direita; cartão de vídeo 16:9 cai ao lado"
+    },
+    {
+     "palavra": "10",
+     "t": 38.42,
+     "o": "contador de views do vídeo 1.000→10.000"
+    },
+    {
+     "palavra": "mil",
+     "t": 38.88,
+     "o": "\"10 MIL\" dourado; grade de ícones de pessoas enche"
+    }
+   ],
+   "transicao": "recuo (a faixa vira HUD)",
+   "camera": "recuo lento → pan para o vídeo em 37,4 → push-in no contador",
+   "captionY": 915,
+   "batidas": [
+    "33,50 encolhe",
+    "36,50 pulso",
+    "37,56 queda",
+    "38,42–38,88 contador",
+    "38,88 pop"
+   ],
+   "status": "proposto"
+  },
+  {
+   "id": "c08",
+   "inicio": 40.2,
+   "fim": 43.44,
+   "trecho": "corpo",
+   "titulo": "\"Você pode receber entre R$ 10 e R$ 50\"",
+   "gatilhos": [
+    {
+     "palavra": "você",
+     "t": 40.4,
+     "o": "cartão do vídeo gira em 3D e mostra o verso: receita"
+    },
+    {
+     "palavra": "entre",
+     "t": 41.24,
+     "o": "trilho da faixa"
+    },
+    {
+     "palavra": "R$ 10",
+     "t": 41.58,
+     "o": "\"R$ 10\" pop"
+    },
+    {
+     "palavra": "R$ 50",
+     "t": 42.16,
+     "o": "\"R$ 50\" pop maior que o R$ 5 da c06, moedas 2D estouram; HUD atualiza"
+    }
+   ],
+   "transicao": "inclinação 3D (cartão vira)",
+   "camera": "punch em R$ 50",
+   "captionY": 915,
+   "batidas": [
+    "40,40 virada",
+    "41,58 pop",
+    "42,16 pop + moedas"
+   ],
+   "status": "proposto"
+  },
+  {
+   "id": "c09",
+   "inicio": 43.44,
+   "fim": 48.48,
+   "trecho": "corpo",
+   "titulo": "\"Com 100 mil visualizações, esse valor pode chegar a R$ 500\"",
+   "gatilhos": [
+    {
+     "palavra": "Com",
+     "t": 43.63,
+     "o": "gráfico de barras de evolução: 1K e 10K já em pé"
+    },
+    {
+     "palavra": "100",
+     "t": 44.0,
+     "o": "contador acelerado 10.000→100.000 com \"+K\" saltando do número"
+    },
+    {
+     "palavra": "mil",
+     "t": 44.36,
+     "o": "barra 100K dispara e passa do painel; câmera sobe junto"
+    },
+    {
+     "palavra": "valor",
+     "t": 46.08,
+     "o": "linha de receita desenha subindo"
+    },
+    {
+     "palavra": "R$ 500",
+     "t": 47.18,
+     "o": "slam \"ATÉ R$ 500\" (só \"até\", como na fala), anel de choque, punch, tremida"
+    }
+   ],
+   "transicao": "whip para cima",
+   "camera": "sobe seguindo a barra; punch no R$ 500",
+   "captionY": 915,
+   "batidas": [
+    "44,00 contador acelerado",
+    "44,36 barra",
+    "47,18 impacto"
+   ],
+   "status": "proposto"
+  },
+  {
+   "id": "c10",
+   "inicio": 48.48,
+   "fim": 52.0,
+   "trecho": "corpo",
+   "titulo": "\"E se o vídeo alcançar 1 milhão de visualizações?\" (preparação)",
+   "gatilhos": [
+    {
+     "palavra": "E se",
+     "t": 48.71,
+     "o": "fundo escurece, tudo desacelera"
+    },
+    {
+     "palavra": "alcançar",
+     "t": 49.38,
+     "o": "contador 100.000 começa devagar e acelera (expo.in), dígitos borram"
+    },
+    {
+     "palavra": "milhão",
+     "t": 50.34,
+     "o": "trava em 1.000.000: flash, anel de choque, raios, tremida forte; gráfico sai pelo topo"
+    },
+    {
+     "palavra": "visualizações",
+     "t": 51.02,
+     "o": "\"1 MILHÃO\" dourado respira"
+    }
+   ],
+   "transicao": "escurecer (speed ramp lento)",
+   "camera": "aproximação lenta quase parada → punch 25% no \"milhão\"",
+   "captionY": 915,
+   "batidas": [
+    "48,71 riser",
+    "50,34 impacto grande"
+   ],
+   "status": "proposto"
+  },
+  {
+   "id": "c11",
+   "inicio": 52.0,
+   "fim": 55.73,
+   "trecho": "corpo",
+   "titulo": "\"Você poderia ganhar entre R$ 1.000 e R$ 5.000\" (ápice)",
+   "gatilhos": [
+    {
+     "palavra": "Você",
+     "t": 52.18,
+     "o": "slot \"R$ ????\" girando"
+    },
+    {
+     "palavra": "R$ 1.000",
+     "t": 53.58,
+     "o": "primeiro rolo para em \"R$ 1.000\" (menor, à esquerda)"
+    },
+    {
+     "palavra": "R$ 5.000",
+     "t": 54.14,
+     "o": "slam \"R$ 5.000\" ocupando ~70% da largura; moedas 3D + chuva de notas, flash, tremida"
+    }
+   ],
+   "transicao": "zoom-through (pelo \"0\" do 1.000.000)",
+   "camera": "push-in; punch forte no R$ 5.000",
+   "captionY": 915,
+   "batidas": [
+    "52,18 slot girando",
+    "53,58 trava",
+    "54,14 impacto máximo + moedas"
+   ],
+   "status": "proposto"
+  },
+  {
+   "id": "c12",
+   "inicio": 55.73,
+   "fim": 60.36,
+   "trecho": "corpo",
+   "titulo": "Virada: \"Mas calma, existe um detalhe que muda completamente essa conta\"",
+   "gatilhos": [
+    {
+     "palavra": "Mas",
+     "t": 55.95,
+     "o": "glitch; tudo congela (moedas paradas no ar), cores esfriam, fundo mais escuro"
+    },
+    {
+     "palavra": "calma",
+     "t": 56.22,
+     "o": "HUD R$ 1–5 some; silêncio visual"
+    },
+    {
+     "palavra": "detalhe",
+     "t": 57.76,
+     "o": "lupa entra devagar sobre o R$ 5.000"
+    },
+    {
+     "palavra": "muda completamente",
+     "t": 58.24,
+     "o": "sob a lente os dígitos viram \"?\" dourado"
+    },
+    {
+     "palavra": "conta",
+     "t": 59.8,
+     "o": "conta aparece: \"views × R$ por 1.000 = ?\" com o termo do meio circulado"
+    }
+   ],
+   "transicao": "glitch (só aqui, na virada)",
+   "camera": "quase parada, aproximação lenta",
+   "captionY": 915,
+   "batidas": [
+    "55,95 glitch + corte de música",
+    "57,76 tom grave",
+    "59,80 pop suave"
+   ],
+   "status": "proposto"
+  },
+  {
+   "id": "c13",
+   "inicio": 60.36,
+   "fim": 63.68,
+   "trecho": "corpo",
+   "titulo": "\"O assunto do seu canal influencia muito no pagamento\"",
+   "gatilhos": [
+    {
+     "palavra": "assunto",
+     "t": 60.72,
+     "o": "botão giratório \"ASSUNTO DO CANAL\" acende"
+    },
+    {
+     "palavra": "influencia",
+     "t": 61.8,
+     "o": "botão gira; linha ligada a um medidor \"PAGAMENTO\" pulsa"
+    },
+    {
+     "palavra": "muito",
+     "t": 62.48,
+     "o": "agulha do medidor varre longe"
+    },
+    {
+     "palavra": "pagamento",
+     "t": 63.02,
+     "o": "R$ do medidor acende verde"
+    }
+   ],
+   "transicao": "acender (do escuro)",
+   "camera": "push-in suave",
+   "captionY": 915,
+   "batidas": [
+    "61,80 giro",
+    "62,48 varrida",
+    "63,02 acende"
+   ],
+   "status": "proposto"
+  },
+  {
+   "id": "c14",
+   "inicio": 63.68,
+   "fim": 70.72,
+   "trecho": "corpo",
+   "titulo": "Nichos: finanças × entretenimento × humor (ilustrativo)",
+   "gatilhos": [
+    {
+     "palavra": "finanças",
+     "t": 64.52,
+     "o": "painel Finanças (velas, gráfico subindo, moedas) na frente"
+    },
+    {
+     "palavra": "muito mais",
+     "t": 66.38,
+     "o": "medidor \"$$$\" do painel enche alto"
+    },
+    {
+     "palavra": "mil visualizações",
+     "t": 67.32,
+     "o": "rótulo \"por 1.000 visualizações\" no topo"
+    },
+    {
+     "palavra": "entretenimento",
+     "t": 69.32,
+     "o": "carrossel gira: Entretenimento (claquete, filme) com \"$\""
+    },
+    {
+     "palavra": "humor",
+     "t": 70.2,
+     "o": "Humor (rosto rindo) com \"$\"; recuo mostra os três + \"* comparação ilustrativa\""
+    }
+   ],
+   "transicao": "inclinação 3D (carrossel)",
+   "camera": "começa perto de Finanças, recua no fim",
+   "captionY": 915,
+   "batidas": [
+    "64,52 entrada",
+    "66,38 medidor",
+    "69,32 giro",
+    "70,20 giro + recuo"
+   ],
+   "status": "proposto"
+  },
+  {
+   "id": "c15",
+   "inicio": 70.72,
+   "fim": 73.05,
+   "trecho": "corpo",
+   "titulo": "\"E tem outra diferença enorme\"",
+   "gatilhos": [
+    {
+     "palavra": "outra",
+     "t": 71.3,
+     "o": "\"OUTRA DIFERENÇA\" cinético; silhuetas de quadro vertical e horizontal ao fundo"
+    },
+    {
+     "palavra": "enorme",
+     "t": 72.18,
+     "o": "\"ENORME\" cresce até tomar a tela, com punch; \"≠\" entre as silhuetas"
+    }
+   ],
+   "transicao": "flash",
+   "camera": "punch em \"enorme\"",
+   "captionY": 915,
+   "batidas": [
+    "71,30 whoosh curto",
+    "72,18 impacto"
+   ],
+   "status": "proposto"
+  },
+  {
+   "id": "c16",
+   "inicio": 73.05,
+   "fim": 77.51,
+   "trecho": "corpo",
+   "titulo": "Shorts × vídeos longos (tela dividida, ilustrativo)",
+   "gatilhos": [
+    {
+     "palavra": "shorts",
+     "t": 73.52,
+     "o": "o \"≠\" abre a tela: esquerda celular 9:16 com ícone de Shorts genérico vermelho e contador; direita player 16:9 apagado"
+    },
+    {
+     "palavra": "pagam",
+     "t": 74.74,
+     "o": "medidor de receita da esquerda aparece"
+    },
+    {
+     "palavra": "muito menos",
+     "t": 75.56,
+     "o": "medidor da esquerda esvazia, seta para baixo, \"$\""
+    },
+    {
+     "palavra": "vídeos tradicionais",
+     "t": 76.28,
+     "o": "direita acende: gráfico de receita + \"$$$\"; título \"SHORTS VS VÍDEOS LONGOS\" + selo ilustrativo"
+    }
+   ],
+   "transicao": "divisão a partir do centro",
+   "camera": "leve deriva esquerda → direita",
+   "captionY": 915,
+   "batidas": [
+    "73,52 abertura",
+    "75,56 queda",
+    "76,28 acende"
+   ],
+   "status": "proposto"
+  },
+  {
+   "id": "c17",
+   "inicio": 77.51,
+   "fim": 83.66,
+   "trecho": "corpo",
+   "titulo": "\"E sabe o que é mais interessante? Um canal recém-monetizado não recebe uma tarifa especial\"",
+   "gatilhos": [
+    {
+     "palavra": "sabe",
+     "t": 77.94,
+     "o": "\"?\" grande cai e gira em 3D"
+    },
+    {
+     "palavra": "interessante",
+     "t": 78.66,
+     "o": "faíscas em volta do \"?\""
+    },
+    {
+     "palavra": "canal",
+     "t": 79.82,
+     "o": "\"?\" se transforma no cartão do canal"
+    },
+    {
+     "palavra": "monetizado",
+     "t": 80.96,
+     "o": "cadeado abre com explosão verde + ícone de dinheiro"
+    },
+    {
+     "palavra": "recebe",
+     "t": 82.04,
+     "o": "ingresso dourado \"TARIFA ESPECIAL\" desliza"
+    },
+    {
+     "palavra": "especial",
+     "t": 83.0,
+     "o": "ingresso rasga ao meio e cai"
+    }
+   ],
+   "transicao": "drop (de cima)",
+   "camera": "push-in; leve tremida no rasgo",
+   "captionY": 915,
+   "batidas": [
+    "77,94 queda",
+    "80,96 destrava",
+    "82,04 deslize",
+    "83,00 rasgo"
+   ],
+   "status": "proposto"
+  },
+  {
+   "id": "c18",
+   "inicio": 83.66,
+   "fim": 90.91,
+   "trecho": "corpo",
+   "titulo": "Fatores: público, conteúdo, anúncios, visualizações que geram receita",
+   "gatilhos": [
+    {
+     "palavra": "pagamento",
+     "t": 83.98,
+     "o": "nó central \"PAGAMENTO\" (R$) à esquerda do centro"
+    },
+    {
+     "palavra": "público",
+     "t": 85.12,
+     "o": "cartão Público (pessoas) liga com linha pulsante"
+    },
+    {
+     "palavra": "conteúdo",
+     "t": 86.0,
+     "o": "cartão Conteúdo (vídeo)"
+    },
+    {
+     "palavra": "anúncios",
+     "t": 86.96,
+     "o": "cartão Anúncios (megafone + selo AD)"
+    },
+    {
+     "palavra": "visualizações",
+     "t": 88.38,
+     "o": "cartão \"Visualizações que geram receita\" (olho + R$)"
+    },
+    {
+     "palavra": "receita",
+     "t": 90.22,
+     "o": "pulsos correm pelas linhas até o centro, nó acende verde"
+    }
+   ],
+   "transicao": "whip para a direita",
+   "camera": "deriva em direção a cada cartão que entra",
+   "captionY": 915,
+   "batidas": [
+    "85,12 / 86,00 / 86,96 / 88,38 pops de interface",
+    "90,22 pulso final"
+   ],
+   "status": "proposto",
+   "legenda_obs": "últimos 20 s: legenda deslocada para a esquerda (centro x≈640), quarto inferior direito livre"
+  },
+  {
+   "id": "c19",
+   "inicio": 90.91,
+   "fim": 95.8,
+   "trecho": "cta",
+   "titulo": "\"Agora me conta, você está começando um canal no YouTube ou já conseguiu monetizar?\"",
+   "gatilhos": [
+    {
+     "palavra": "conta",
+     "t": 91.62,
+     "o": "speed ramp para dentro do nó; painel de comentários (inspirado) desliza"
+    },
+    {
+     "palavra": "começando",
+     "t": 92.64,
+     "o": "chip \"Começando o canal\" (broto)"
+    },
+    {
+     "palavra": "YouTube",
+     "t": 93.56,
+     "o": "play no cabeçalho do painel"
+    },
+    {
+     "palavra": "já conseguiu",
+     "t": 94.38,
+     "o": "chip \"Já monetizei\" (check verde)"
+    },
+    {
+     "palavra": "monetizar",
+     "t": 95.02,
+     "o": "título \"VOCÊ JÁ MONETIZOU?\" slam (MONETIZOU em verde)"
+    }
+   ],
+   "transicao": "zoom contínuo com speed ramp",
+   "camera": "push-in",
+   "captionY": 915,
+   "batidas": [
+    "91,62 whoosh",
+    "92,64 / 94,38 pops",
+    "95,02 impacto leve"
+   ],
+   "status": "proposto",
+   "legenda_obs": "últimos 20 s: legenda deslocada para a esquerda (centro x≈640), quarto inferior direito livre"
+  },
+  {
+   "id": "c20",
+   "inicio": 95.8,
+   "fim": 104.36,
+   "trecho": "cta",
+   "titulo": "\"Comenta aqui embaixo… primeiro de vários vídeos… ganhar criando conteúdo na internet\"",
+   "gatilhos": [
+    {
+     "palavra": "Comenta",
+     "t": 96.06,
+     "o": "câmera desce até o campo de comentário; cursor entra em arco"
+    },
+    {
+     "palavra": "embaixo",
+     "t": 96.5,
+     "o": "clique no botão \"Comentar\" (afunda e volta com mola)"
+    },
+    {
+     "palavra": "porque",
+     "t": 97.22,
+     "o": "balões de comentário empilham (\"Começando agora!\", \"Já monetizei!\", sem nomes)"
+    },
+    {
+     "palavra": "primeiro",
+     "t": 98.44,
+     "o": "selo \"EP. 1\" no cartão deste vídeo"
+    },
+    {
+     "palavra": "vários vídeos",
+     "t": 99.2,
+     "o": "fila de miniaturas \"EP. 2?\", \"EP. 3?\" entra em cascata"
+    },
+    {
+     "palavra": "ganhar",
+     "t": 102.06,
+     "o": "moeda e seta verde correm pela fila"
+    },
+    {
+     "palavra": "internet",
+     "t": 103.7,
+     "o": "play com brilho; tudo continua andando até o último frame"
+    }
+   ],
+   "transicao": "continuação (câmera desce, sem corte)",
+   "camera": "desce e segue a fila para a esquerda; deriva até o fim",
+   "captionY": 915,
+   "batidas": [
+    "96,50 clique",
+    "97,22–98,0 pops dos balões",
+    "98,44 selo",
+    "99,20 cascata",
+    "103,70 final"
+   ],
+   "status": "proposto",
+   "legenda_obs": "últimos 20 s: legenda deslocada para a esquerda (centro x≈640), quarto inferior direito livre"
+  }
+ ]
 }
