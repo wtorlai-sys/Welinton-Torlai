@@ -6,7 +6,7 @@
   "iniciar": "concluido",
   "preparar": "concluido",
   "motion_mapa": "concluido",
-  "motion_render": "em_andamento",
+  "motion_render": "aguardando_aprovacao",
   "sfx": "pendente",
   "render": "pendente"
  },
@@ -908,9 +908,10 @@
  "render": {
   "composicao": "Monetizacao20261116",
   "codigo": "src/episodes/2026-11-16_monetizacao/",
-  "prancha": "_CLAUDE/revisao/prancha_v01.png",
+  "prancha": "_CLAUDE/revisao/prancha_v02.png",
   "trechos_feitos": [
-   "gancho"
+   "gancho",
+   "c03–c08"
   ],
   "cenas": {
    "c01": {
@@ -922,6 +923,40 @@
     "arquivo": "scenes/gancho.tsx#C02Mentira",
     "versao": 1,
     "status": "aprovado"
+   },
+   "c03": {
+    "arquivo": "scenes/corpo1.tsx#C03Mostrar",
+    "versao": 1,
+    "status": "aguardando"
+   },
+   "c04": {
+    "arquivo": "scenes/corpo1.tsx#C04ValorFixo",
+    "versao": 1,
+    "status": "aguardando"
+   },
+   "c05": {
+    "arquivo": "scenes/corpo1.tsx#C05Filtros",
+    "versao": 1,
+    "status": "aguardando"
+   },
+   "c06": {
+    "arquivo": "scenes/corpo1.tsx#C06Faixa",
+    "versao": 1,
+    "status": "aguardando"
+   },
+   "c07": {
+    "arquivo": "scenes/corpo1.tsx#C07DezMil",
+    "versao": 1,
+    "status": "aguardando"
+   },
+   "c08": {
+    "arquivo": "scenes/corpo1.tsx#C08DezCinquenta",
+    "versao": 1,
+    "status": "aguardando"
+   },
+   "hud": {
+    "arquivo": "scenes/corpo1.tsx#RegraHUD",
+    "obs": "33,95–56,2"
    }
   },
   "eventos": [
@@ -1044,6 +1079,237 @@
     "tipo": "impacto",
     "forca": "media",
     "obs": "carimbo VERDADE"
+   },
+   {
+    "id": "e18",
+    "t": 10.98,
+    "tipo": "whoosh",
+    "forca": "media",
+    "obs": "zoom-through c03"
+   },
+   {
+    "id": "e19",
+    "t": 11.18,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "cartão do canal"
+   },
+   {
+    "id": "e20",
+    "t": 13.24,
+    "tipo": "notificacao",
+    "forca": "media",
+    "obs": "chave Monetização liga"
+   },
+   {
+    "id": "e21",
+    "t": 14.13,
+    "tipo": "whoosh",
+    "forca": "leve",
+    "obs": "carteira entra"
+   },
+   {
+    "id": "e22",
+    "t": 14.18,
+    "tipo": "contador",
+    "forca": "leve",
+    "obs": "odômetro R$ ???"
+   },
+   {
+    "id": "e23",
+    "t": 14.98,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "por 1.000 visualizações"
+   },
+   {
+    "id": "e24",
+    "t": 16.42,
+    "tipo": "whoosh",
+    "forca": "media",
+    "obs": "drop PRIMEIRO"
+   },
+   {
+    "id": "e25",
+    "t": 17.66,
+    "tipo": "notificacao",
+    "forca": "leve",
+    "obs": "alerta"
+   },
+   {
+    "id": "e26",
+    "t": 18.46,
+    "tipo": "whoosh",
+    "forca": "media",
+    "obs": "painel inclinação 3D"
+   },
+   {
+    "id": "e27",
+    "t": 20.1,
+    "tipo": "whoosh",
+    "forca": "leve",
+    "obs": "etiqueta valor fixo"
+   },
+   {
+    "id": "e28",
+    "t": 21.06,
+    "tipo": "impacto",
+    "forca": "media",
+    "obs": "carimbo ✕"
+   },
+   {
+    "id": "e29",
+    "t": 21.91,
+    "tipo": "whoosh",
+    "forca": "forte",
+    "obs": "whip esquerda c05"
+   },
+   {
+    "id": "e30",
+    "t": 23.12,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "lâmpada + barra abre"
+   },
+   {
+    "id": "e31",
+    "t": 23.88,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "chip 1"
+   },
+   {
+    "id": "e32",
+    "t": 25.18,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "chip 2"
+   },
+   {
+    "id": "e33",
+    "t": 26.42,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "chip Brasil"
+   },
+   {
+    "id": "e34",
+    "t": 27.13,
+    "tipo": "whoosh",
+    "forca": "media",
+    "obs": "zoom-through c06"
+   },
+   {
+    "id": "e35",
+    "t": 27.5,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "ESTIMATIVA COMUM"
+   },
+   {
+    "id": "e36",
+    "t": 28.98,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "CANAIS MENORES"
+   },
+   {
+    "id": "e37",
+    "t": 30.22,
+    "tipo": "impacto",
+    "forca": "media",
+    "obs": "R$ 1"
+   },
+   {
+    "id": "e38",
+    "t": 30.64,
+    "tipo": "impacto",
+    "forca": "media",
+    "obs": "R$ 5"
+   },
+   {
+    "id": "e39",
+    "t": 31.94,
+    "tipo": "contador",
+    "forca": "leve",
+    "obs": "a cada 1.000"
+   },
+   {
+    "id": "e40",
+    "t": 33.5,
+    "tipo": "whoosh",
+    "forca": "media",
+    "obs": "faixa vira HUD"
+   },
+   {
+    "id": "e41",
+    "t": 34.38,
+    "tipo": "impacto",
+    "forca": "leve",
+    "obs": "SÓ!"
+   },
+   {
+    "id": "e42",
+    "t": 35.24,
+    "tipo": "whoosh",
+    "forca": "leve",
+    "obs": "canal volta"
+   },
+   {
+    "id": "e43",
+    "t": 36.5,
+    "tipo": "notificacao",
+    "forca": "leve",
+    "obs": "pulso monetizado"
+   },
+   {
+    "id": "e44",
+    "t": 37.26,
+    "tipo": "whoosh",
+    "forca": "media",
+    "obs": "pan + vídeo cai"
+   },
+   {
+    "id": "e45",
+    "t": 38.42,
+    "tipo": "contador",
+    "forca": "media",
+    "obs": "1.000→10.000"
+   },
+   {
+    "id": "e46",
+    "t": 38.88,
+    "tipo": "impacto",
+    "forca": "media",
+    "obs": "10 MIL + pessoas"
+   },
+   {
+    "id": "e47",
+    "t": 40.25,
+    "tipo": "whoosh",
+    "forca": "media",
+    "obs": "cartão gira"
+   },
+   {
+    "id": "e48",
+    "t": 41.58,
+    "tipo": "impacto",
+    "forca": "media",
+    "obs": "R$ 10"
+   },
+   {
+    "id": "e49",
+    "t": 42.16,
+    "tipo": "impacto",
+    "forca": "forte",
+    "obs": "R$ 50 + moedas"
+   },
+   {
+    "id": "e50",
+    "t": 42.16,
+    "tipo": "moeda",
+    "forca": "media",
+    "obs": "moedas"
    }
   ],
   "trechos_aprovados": [
