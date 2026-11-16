@@ -6,7 +6,7 @@
   "iniciar": "concluido",
   "preparar": "concluido",
   "motion_mapa": "concluido",
-  "motion_render": "aguardando_aprovacao",
+  "motion_render": "concluido",
   "sfx": "pendente",
   "render": "pendente"
  },
@@ -962,62 +962,62 @@
    "c09": {
     "arquivo": "scenes/corpo2.tsx#C09CemMil",
     "versao": 1,
-    "status": "aguardando"
+    "status": "aprovado"
    },
    "c10": {
     "arquivo": "scenes/corpo2.tsx#C10Milhao",
     "versao": 1,
-    "status": "aguardando"
+    "status": "aprovado"
    },
    "c11": {
     "arquivo": "scenes/corpo2.tsx#C11Apice",
     "versao": 1,
-    "status": "aguardando"
+    "status": "aprovado"
    },
    "c12": {
     "arquivo": "scenes/corpo2.tsx#C12Virada",
     "versao": 1,
-    "status": "aguardando"
+    "status": "aprovado"
    },
    "c13": {
     "arquivo": "scenes/corpo2.tsx#C13Assunto",
     "versao": 1,
-    "status": "aguardando"
+    "status": "aprovado"
    },
    "c14": {
     "arquivo": "scenes/corpo2.tsx#C14Nichos",
     "versao": 1,
-    "status": "aguardando"
+    "status": "aprovado"
    },
    "c15": {
     "arquivo": "scenes/fim.tsx#C15Diferenca",
     "versao": 1,
-    "status": "aguardando"
+    "status": "aprovado"
    },
    "c16": {
     "arquivo": "scenes/fim.tsx#C16Shorts",
     "versao": 1,
-    "status": "aguardando"
+    "status": "aprovado"
    },
    "c17": {
     "arquivo": "scenes/fim.tsx#C17Tarifa",
     "versao": 1,
-    "status": "aguardando"
+    "status": "aprovado"
    },
    "c18": {
     "arquivo": "scenes/fim.tsx#C18Fatores",
     "versao": 1,
-    "status": "aguardando"
+    "status": "aprovado"
    },
    "c19": {
     "arquivo": "scenes/fim.tsx#C19CTA (c19+c20 contínuas)",
     "versao": 1,
-    "status": "aguardando"
+    "status": "aprovado"
    },
    "c20": {
     "arquivo": "scenes/fim.tsx#C19CTA (c19+c20 contínuas)",
     "versao": 1,
-    "status": "aguardando"
+    "status": "aprovado"
    }
   },
   "eventos": [
@@ -1837,7 +1837,8 @@
   ],
   "trechos_aprovados": [
    "gancho (c01–c02) · prancha_v01 · 16/11",
-   "c03–c08 · prancha_v02 · 16/11"
+   "c03–c08 · prancha_v02 · 16/11",
+   "c09–c20 · prancha_v03 · 16/11"
   ]
  }
 }
