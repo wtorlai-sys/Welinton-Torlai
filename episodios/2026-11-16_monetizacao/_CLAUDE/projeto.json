@@ -5,7 +5,7 @@
  "etapas": {
   "iniciar": "concluido",
   "preparar": "concluido",
-  "motion_mapa": "aguardando_aprovacao",
+  "motion_mapa": "concluido",
   "motion_render": "pendente",
   "sfx": "pendente",
   "render": "pendente"
@@ -107,7 +107,7 @@
     "5,88 whoosh subindo",
     "7,84 rajada moedas"
    ],
-   "status": "proposto"
+   "status": "aprovado"
   },
   {
    "id": "c02",
@@ -139,7 +139,7 @@
     "9,90 risco",
     "10,38 carimbo"
    ],
-   "status": "proposto"
+   "status": "aprovado"
   },
   {
    "id": "c03",
@@ -183,7 +183,7 @@
     "14,18 giro",
     "14,98 pop"
    ],
-   "status": "proposto"
+   "status": "aprovado"
   },
   {
    "id": "c04",
@@ -227,7 +227,7 @@
     "18,76 interface",
     "21,06 carimbo ✕"
    ],
-   "status": "proposto"
+   "status": "aprovado"
   },
   {
    "id": "c05",
@@ -266,7 +266,7 @@
     "25,18 clique",
     "26,42 clique"
    ],
-   "status": "proposto"
+   "status": "aprovado"
   },
   {
    "id": "c06",
@@ -309,7 +309,7 @@
     "30,64 pop + enchimento",
     "31,94 contador"
    ],
-   "status": "proposto"
+   "status": "aprovado"
   },
   {
    "id": "c07",
@@ -364,7 +364,7 @@
     "38,42–38,88 contador",
     "38,88 pop"
    ],
-   "status": "proposto"
+   "status": "aprovado"
   },
   {
    "id": "c08",
@@ -402,7 +402,7 @@
     "41,58 pop",
     "42,16 pop + moedas"
    ],
-   "status": "proposto"
+   "status": "aprovado"
   },
   {
    "id": "c09",
@@ -445,7 +445,7 @@
     "44,36 barra",
     "47,18 impacto"
    ],
-   "status": "proposto"
+   "status": "aprovado"
   },
   {
    "id": "c10",
@@ -482,7 +482,7 @@
     "48,71 riser",
     "50,34 impacto grande"
    ],
-   "status": "proposto"
+   "status": "aprovado"
   },
   {
    "id": "c11",
@@ -515,7 +515,7 @@
     "53,58 trava",
     "54,14 impacto máximo + moedas"
    ],
-   "status": "proposto"
+   "status": "aprovado"
   },
   {
    "id": "c12",
@@ -558,7 +558,7 @@
     "57,76 tom grave",
     "59,80 pop suave"
    ],
-   "status": "proposto"
+   "status": "aprovado"
   },
   {
    "id": "c13",
@@ -596,7 +596,7 @@
     "62,48 varrida",
     "63,02 acende"
    ],
-   "status": "proposto"
+   "status": "aprovado"
   },
   {
    "id": "c14",
@@ -640,7 +640,7 @@
     "69,32 giro",
     "70,20 giro + recuo"
    ],
-   "status": "proposto"
+   "status": "aprovado"
   },
   {
    "id": "c15",
@@ -667,7 +667,7 @@
     "71,30 whoosh curto",
     "72,18 impacto"
    ],
-   "status": "proposto"
+   "status": "aprovado"
   },
   {
    "id": "c16",
@@ -705,7 +705,7 @@
     "75,56 queda",
     "76,28 acende"
    ],
-   "status": "proposto"
+   "status": "aprovado"
   },
   {
    "id": "c17",
@@ -754,7 +754,7 @@
     "82,04 deslize",
     "83,00 rasgo"
    ],
-   "status": "proposto"
+   "status": "aprovado"
   },
   {
    "id": "c18",
@@ -801,7 +801,7 @@
     "85,12 / 86,00 / 86,96 / 88,38 pops de interface",
     "90,22 pulso final"
    ],
-   "status": "proposto",
+   "status": "aprovado",
    "legenda_obs": "últimos 20 s: legenda deslocada para a esquerda (centro x≈640), quarto inferior direito livre"
   },
   {
@@ -845,7 +845,7 @@
     "92,64 / 94,38 pops",
     "95,02 impacto leve"
    ],
-   "status": "proposto",
+   "status": "aprovado",
    "legenda_obs": "últimos 20 s: legenda deslocada para a esquerda (centro x≈640), quarto inferior direito livre"
   },
   {
@@ -901,7 +901,7 @@
     "99,20 cascata",
     "103,70 final"
    ],
-   "status": "proposto",
+   "status": "aprovado",
    "legenda_obs": "últimos 20 s: legenda deslocada para a esquerda (centro x≈640), quarto inferior direito livre"
   }
  ]

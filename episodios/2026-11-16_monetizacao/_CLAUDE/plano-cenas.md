@@ -4,7 +4,7 @@ Gancho 0:00–0:11 (c01–c02) · corpo 0:11–1:31 (c03–c18) · fechamento/CT
 
 Legenda padrão: terço de baixo, y≈915. Últimos 20 s (a partir de 1:24,4): legenda à esquerda (x≈640) e quarto inferior direito livre (c18–c20).
 
-Status: proposto (aguardando revisão ① de Welinton).
+Status: aprovado por Welinton em 16/11/2026 (revisão ①).
 
 ## c01 · 0:00.00–0:09.01 · Gancho: 1.000 views × menos de R$ 5, depois "muito mais"
 - "Você" 0:00.00: frame 0: botão de play 3D explode do centro com anel de choque
