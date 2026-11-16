@@ -4,7 +4,7 @@
  "criado": "2026-11-16",
  "etapas": {
   "iniciar": "concluido",
-  "preparar": "aguardando_aprovacao",
+  "preparar": "concluido",
   "motion_mapa": "pendente",
   "motion_render": "pendente",
   "sfx": "pendente",
