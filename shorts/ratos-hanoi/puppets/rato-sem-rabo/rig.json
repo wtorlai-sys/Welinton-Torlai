@@ -1,0 +1,50 @@
+{
+ "version": 2,
+ "name": "rato-sem-rabo",
+ "size": [
+  520,
+  300
+ ],
+ "feetY": 288,
+ "head": {
+  "center": [
+   370,
+   140
+  ],
+  "diameter": 150
+ },
+ "skin": "#948ca0",
+ "layers": {
+  "head": {
+   "file": "head.png",
+   "box": [
+    293,
+    56,
+    220,
+    155
+   ],
+   "pivot": [
+    330,
+    170
+   ]
+  },
+  "body": {
+   "file": "body.png",
+   "box": [
+    63,
+    121,
+    314,
+    171
+   ],
+   "pivot": [
+    240,
+    272
+   ]
+  }
+ },
+ "order": [
+  "body",
+  "head"
+ ],
+ "faces": {}
+}

@@ -1,0 +1,219 @@
+{
+ "version": 2,
+ "name": "hero",
+ "size": [
+  640,
+  1320
+ ],
+ "feetY": 1290,
+ "head": {
+  "center": [
+   320,
+   360
+  ],
+  "diameter": 410
+ },
+ "skin": "#f6f1e2",
+ "layers": {
+  "head": {
+   "file": "head.png",
+   "box": [
+    10,
+    20,
+    620,
+    555
+   ],
+   "pivot": [
+    320,
+    555
+   ]
+  },
+  "body": {
+   "file": "body.png",
+   "box": [
+    120,
+    530,
+    419,
+    539
+   ],
+   "pivot": [
+    320,
+    990
+   ]
+  },
+  "armL": {
+   "file": "armL.png",
+   "box": [
+    86,
+    645,
+    89,
+    363
+   ],
+   "pivot": [
+    150,
+    670
+   ]
+  },
+  "armR": {
+   "file": "armR.png",
+   "box": [
+    465,
+    645,
+    89,
+    363
+   ],
+   "pivot": [
+    490,
+    670
+   ]
+  },
+  "legL": {
+   "file": "legL.png",
+   "box": [
+    191,
+    1001,
+    74,
+    292
+   ],
+   "pivot": [
+    250,
+    1010
+   ]
+  },
+  "legR": {
+   "file": "legR.png",
+   "box": [
+    374,
+    1001,
+    75,
+    292
+   ],
+   "pivot": [
+    390,
+    1010
+   ]
+  }
+ },
+ "order": [
+  "legL",
+  "legR",
+  "armL",
+  "armR",
+  "body",
+  "head"
+ ],
+ "faces": {
+  "happy": {
+   "file": "faces/happy.png",
+   "size": [
+    620,
+    555
+   ],
+   "pivot": [
+    310,
+    535
+   ],
+   "center": [
+    310,
+    340
+   ],
+   "diameter": 410
+  },
+  "nervous": {
+   "file": "faces/nervous.png",
+   "size": [
+    620,
+    555
+   ],
+   "pivot": [
+    310,
+    535
+   ],
+   "center": [
+    310,
+    340
+   ],
+   "diameter": 410
+  },
+  "shocked": {
+   "file": "faces/shocked.png",
+   "size": [
+    620,
+    555
+   ],
+   "pivot": [
+    310,
+    535
+   ],
+   "center": [
+    310,
+    340
+   ],
+   "diameter": 410
+  },
+  "shouting": {
+   "file": "faces/shouting.png",
+   "size": [
+    620,
+    565
+   ],
+   "pivot": [
+    310,
+    535
+   ],
+   "center": [
+    310,
+    340
+   ],
+   "diameter": 410
+  },
+  "confused": {
+   "file": "faces/confused.png",
+   "size": [
+    620,
+    555
+   ],
+   "pivot": [
+    310,
+    535
+   ],
+   "center": [
+    310,
+    340
+   ],
+   "diameter": 410
+  },
+  "neutral": {
+   "file": "faces/neutral.png",
+   "size": [
+    620,
+    555
+   ],
+   "pivot": [
+    310,
+    535
+   ],
+   "center": [
+    310,
+    340
+   ],
+   "diameter": 410
+  }
+ },
+ "eyes": [
+  {
+   "c": [
+    250,
+    400
+   ],
+   "r": 15
+  },
+  {
+   "c": [
+    390,
+    400
+   ],
+   "r": 15
+  }
+ ]
+}

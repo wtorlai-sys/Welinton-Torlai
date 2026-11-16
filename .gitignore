@@ -1,3 +1,7 @@
 node_modules/
 out/
 .DS_Store
+shorts/stage/node_modules/
+shorts/*/out_stills/
+shorts/*/render/
+shorts/*/puppets/_svg/
