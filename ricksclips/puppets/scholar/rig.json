@@ -1,0 +1,219 @@
+{
+ "version": 2,
+ "name": "scholar",
+ "size": [
+  455,
+  1000
+ ],
+ "feetY": 994,
+ "head": {
+  "center": [
+   227.0,
+   188.0
+  ],
+  "diameter": 363.0
+ },
+ "skin": "#f3efe4",
+ "layers": {
+  "legL": {
+   "file": "legL.png",
+   "box": [
+    123,
+    766,
+    58,
+    229
+   ],
+   "pivot": [
+    174.6,
+    772.2
+   ]
+  },
+  "legR": {
+   "file": "legR.png",
+   "box": [
+    273,
+    766,
+    58,
+    229
+   ],
+   "pivot": [
+    279.0,
+    772.3
+   ]
+  },
+  "armL": {
+   "file": "armL.png",
+   "box": [
+    5,
+    508,
+    60,
+    233
+   ],
+   "pivot": [
+    46.4,
+    525.3
+   ]
+  },
+  "armR": {
+   "file": "armR.png",
+   "box": [
+    390,
+    509,
+    60,
+    232
+   ],
+   "pivot": [
+    407.3,
+    526.3
+   ]
+  },
+  "body": {
+   "file": "body.png",
+   "box": [
+    46,
+    340,
+    363,
+    438
+   ],
+   "pivot": [
+    226.8,
+    772.2
+   ]
+  },
+  "head": {
+   "file": "head.png",
+   "box": [
+    19,
+    5,
+    416,
+    364
+   ],
+   "pivot": [
+    226.5,
+    369.0
+   ]
+  }
+ },
+ "order": [
+  "legL",
+  "legR",
+  "armL",
+  "armR",
+  "body",
+  "head"
+ ],
+ "eyes": [
+  {
+   "c": [
+    176.5,
+    195.0
+   ],
+   "r": 14.5
+  },
+  {
+   "c": [
+    306.5,
+    195.0
+   ],
+   "r": 14.5
+  }
+ ],
+ "faces": {
+  "happy": {
+   "file": "faces/happy.png",
+   "size": [
+    464,
+    420
+   ],
+   "pivot": [
+    231.5,
+    410.4
+   ],
+   "center": [
+    231.5,
+    211.0
+   ],
+   "diameter": 400.0
+  },
+  "nervous": {
+   "file": "faces/nervous.png",
+   "size": [
+    464,
+    420
+   ],
+   "pivot": [
+    231.5,
+    410.4
+   ],
+   "center": [
+    231.5,
+    211.0
+   ],
+   "diameter": 400.0
+  },
+  "shocked": {
+   "file": "faces/shocked.png",
+   "size": [
+    464,
+    420
+   ],
+   "pivot": [
+    231.5,
+    410.4
+   ],
+   "center": [
+    231.5,
+    211.0
+   ],
+   "diameter": 400.0
+  },
+  "shouting": {
+   "file": "faces/shouting.png",
+   "size": [
+    464,
+    420
+   ],
+   "pivot": [
+    231.5,
+    410.4
+   ],
+   "center": [
+    231.5,
+    211.0
+   ],
+   "diameter": 400.0
+  },
+  "confused": {
+   "file": "faces/confused.png",
+   "size": [
+    464,
+    420
+   ],
+   "pivot": [
+    231.5,
+    410.4
+   ],
+   "center": [
+    231.5,
+    211.0
+   ],
+   "diameter": 400.0
+  },
+  "neutral": {
+   "file": "faces/neutral.png",
+   "size": [
+    464,
+    420
+   ],
+   "pivot": [
+    231.5,
+    410.4
+   ],
+   "center": [
+    231.5,
+    211.0
+   ],
+   "diameter": 400.0
+  }
+ }
+}

@@ -19,6 +19,11 @@ Se um pedido conflitar com o guia, aponte o conflito antes de implementar.
 Todo vídeo é em **português do Brasil (pt-BR)**: roteiro, narração, legendas e textos na tela.
 A virada do roteiro é "Você vê…" (no lugar de "You see…"). Outro idioma só quando o usuário pedir.
 
+## Shorts no estilo ricksclips (skill `ricksclips-short-style`)
+Não há conector Higgsfield. Personagem, folha de expressões, texturas, fundo, modelos 3D (GLB)
+e música são feitos **em código** aqui (`ricksclips/tools/`). O usuário envia só a **narração**
+(áudio); eu gero o `words.json` com `shortkit.py words`. Biblioteca do canal em `ricksclips/`.
+
 ## Comandos
 ```bash
 npm install

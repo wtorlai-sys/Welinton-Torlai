@@ -1,0 +1,3 @@
+out_stills/
+*.mp4
+!final/*.mp4

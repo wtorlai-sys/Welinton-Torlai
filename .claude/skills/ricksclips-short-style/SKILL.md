@@ -52,6 +52,12 @@ my-channel/
 
 Every video for this user is in **Brazilian Portuguese (pt-BR)**: script, voiceover, captions and `script.txt`. The pivot line is "Você vê…" in place of "You see…", so the lighting switch is `{"t": "say:Você vê", "mood": "night"}`. Only make a video in another language when the user asks for it in that request.
 
+## This user: no Higgsfield
+
+There is no Higgsfield connector. Do not stop: build every asset in code with the generators in
+`ricksclips/tools/` of the repository (character, emotion sheet, textures, backdrop, GLB models,
+music) and ask the user only for the voiceover audio. The channel library lives in `ricksclips/`.
+
 ## The workflow, request by request
 
 Users drive this in short requests. Each one maps to a step below; do the step, show the result, and say what the next step is. When the user pastes a script and nothing else, run steps 7 to 10 with the existing library and ask nothing first.
