@@ -9,8 +9,8 @@ import {PALETTE} from '../../style/constants';
 import {useT} from './kit';
 
 const coinGeo = new THREE.CylinderGeometry(0.5, 0.5, 0.09, 40);
-const rimMat = new THREE.MeshStandardMaterial({color: '#D9930F', metalness: 0.85, roughness: 0.32});
-const faceMat = new THREE.MeshStandardMaterial({color: '#FFC83D', metalness: 0.7, roughness: 0.25, emissive: '#5A3A00', emissiveIntensity: 0.35});
+const rimMat = new THREE.MeshStandardMaterial({color: '#E6A21C', metalness: 0.5, roughness: 0.3, emissive: '#6A4200', emissiveIntensity: 0.5});
+const faceMat = new THREE.MeshStandardMaterial({color: '#FFD04A', metalness: 0.35, roughness: 0.28, emissive: '#B07800', emissiveIntensity: 0.55});
 
 const Lights: React.FC = () => (
 	<>
@@ -52,7 +52,7 @@ export const Coins3D: React.FC<{t0: number; n?: number; seed?: number; burst?: b
 				if (burst) {
 					x = Math.cos(c.ang) * c.pow * t;
 					y = Math.sin(c.ang) * c.pow * t * 0.9 + 2 * t - 7 * t * t;
-					z = c.z + 3 * t;
+					z = c.z - 2 - 2 * t;
 				} else {
 					x = c.x + Math.sin(t * 1.5 + i) * 0.4;
 					y = 9 - c.vy * t - 2.2 * t * t;

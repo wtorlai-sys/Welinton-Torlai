@@ -74,14 +74,16 @@ export const shakeAt = (T: number, hits: number[], amp = 22, dur = 0.3) => {
 /* ------------------------------------------------------------------ */
 /* Layout                                                              */
 /* ------------------------------------------------------------------ */
-export const W = 1080;
-export const H = 1920;
-/** centro horizontal do conteúdo (área segura: 10% da direita livre) */
-export const CX = 512;
+export const W = 1920;
+export const H = 1080;
+/** centro horizontal do conteúdo (16:9) */
+export const CX = 960;
+/** centro vertical da área útil (barra do player embaixo) */
+export const CY = 470;
 
 type AtProps = {x?: number; y?: number; children: React.ReactNode; style?: React.CSSProperties; w?: number; h?: number; z?: number};
 /** posiciona o centro do filho em (x, y) */
-export const At: React.FC<AtProps> = ({x = CX, y = 960, children, style, w, h, z}) => (
+export const At: React.FC<AtProps> = ({x = CX, y = CY, children, style, w, h, z}) => (
 	<div style={{position: 'absolute', left: x, top: y, width: w, height: h, transform: 'translate(-50%,-50%)', zIndex: z, ...style}}>{children}</div>
 );
 
@@ -167,11 +169,11 @@ export const Bg: React.FC<{glow?: string; glow2?: string; speed?: number; dim?: 
 	return (
 		<Fill style={{background: `linear-gradient(180deg, ${C.bg1} 0%, ${C.bg0} 55%, #020308 100%)`, overflow: 'hidden'}}>
 			{/* brilhos de cor */}
-			<div style={{position: 'absolute', left: -300 + Math.sin(tt * 0.4) * 80, top: 120, width: 1200, height: 1200, borderRadius: '50%', background: `radial-gradient(circle, ${glow}38 0%, ${glow}00 62%)`}} />
-			<div style={{position: 'absolute', left: 200 + Math.cos(tt * 0.33) * 90, top: 900, width: 1300, height: 1300, borderRadius: '50%', background: `radial-gradient(circle, ${glow2}30 0%, ${glow2}00 60%)`}} />
+			<div style={{position: 'absolute', left: -200 + Math.sin(tt * 0.4) * 80, top: -300, width: 1200, height: 1200, borderRadius: '50%', background: `radial-gradient(circle, ${glow}38 0%, ${glow}00 62%)`}} />
+			<div style={{position: 'absolute', left: 900 + Math.cos(tt * 0.33) * 90, top: 100, width: 1300, height: 1300, borderRadius: '50%', background: `radial-gradient(circle, ${glow2}30 0%, ${glow2}00 60%)`}} />
 			{/* grade do "chão" em perspectiva, andando */}
 			{grid && (
-				<div style={{position: 'absolute', left: -800, right: -800, top: 1180, height: 1400, transform: 'perspective(700px) rotateX(68deg)', transformOrigin: '50% 0%', opacity: 0.55}}>
+				<div style={{position: 'absolute', left: -800, right: -800, top: 700, height: 900, transform: 'perspective(700px) rotateX(68deg)', transformOrigin: '50% 0%', opacity: 0.55}}>
 					<div
 						style={{
 							position: 'absolute',
@@ -188,7 +190,7 @@ export const Bg: React.FC<{glow?: string; glow2?: string; speed?: number; dim?: 
 			{/* grade fina de HUD no alto */}
 			<div style={{position: 'absolute', inset: 0, backgroundImage: `radial-gradient(${C.line} 2px, transparent 2px)`, backgroundSize: '54px 54px', backgroundPosition: `${(tt * 6) % 54}px ${(tt * 12) % 54}px`, opacity: 0.6}} />
 			{/* partículas e símbolos flutuando */}
-			{Array.from({length: 34}).map((_, i) => {
+			{Array.from({length: 44}).map((_, i) => {
 				const sx = hash1(i * 3.1) * W;
 				const sp = 30 + hash1(i * 7.7) * 70;
 				const y = (((hash1(i * 5.3) * H - tt * sp) % H) + H) % H;
@@ -223,7 +225,7 @@ export const Cam: React.FC<{zoom?: number; x?: number; y?: number; rot?: number;
 	amp = 22,
 	children,
 	ox = CX,
-	oy = 900,
+	oy = CY,
 }) => {
 	const T = useT();
 	const s = shakeAt(T, hits, amp);
@@ -704,7 +706,7 @@ export const Bars: React.FC<{w: number; h: number; vals: number[]; p: number; co
 };
 
 /** Anel de choque (impacto) */
-export const Shock: React.FC<{t: number; color?: string; size?: number; x?: number; y?: number; dur?: number}> = ({t, color = '#fff', size = 900, x = CX, y = 900, dur = 0.55}) => {
+export const Shock: React.FC<{t: number; color?: string; size?: number; x?: number; y?: number; dur?: number}> = ({t, color = '#fff', size = 900, x = CX, y = CY, dur = 0.55}) => {
 	const T = useT();
 	const q = k(T, t, dur);
 	if (q <= 0 || q >= 1) return null;
@@ -715,7 +717,7 @@ export const Shock: React.FC<{t: number; color?: string; size?: number; x?: numb
 };
 
 /** Raios saindo do centro (burst) */
-export const Burst: React.FC<{t: number; color?: string; x?: number; y?: number; n?: number; len?: number; dur?: number; seed?: number}> = ({t, color = C.gold, x = CX, y = 900, n = 14, len = 420, dur = 0.5, seed = 1}) => {
+export const Burst: React.FC<{t: number; color?: string; x?: number; y?: number; n?: number; len?: number; dur?: number; seed?: number}> = ({t, color = C.gold, x = CX, y = CY, n = 14, len = 420, dur = 0.5, seed = 1}) => {
 	const T = useT();
 	const q = k(T, t, dur);
 	if (q <= 0 || q >= 1) return null;
@@ -748,7 +750,7 @@ export const SpeedLines: React.FC<{amt: number; color?: string; seed?: number}> 
 			{Array.from({length: 26}).map((_, i) => {
 				const x = hash1(i * 1.7 + seed) * W;
 				const sp = 1400 + hash1(i * 4.1 + seed) * 1600;
-				const y = ((((hash1(i * 2.3 + seed) * 2400 + T * sp) % 2400) + 2400) % 2400) - 300;
+				const y = ((((hash1(i * 2.3 + seed) * 1500 + T * sp) % 1500) + 1500) % 1500) - 300;
 				const l = 120 + hash1(i * 6.6) * 260;
 				return <div key={i} style={{position: 'absolute', left: x, top: y, width: 4, height: l * amt, borderRadius: 2, background: `linear-gradient(180deg, ${color}00, ${color})`, opacity: 0.35 * amt}} />;
 			})}
@@ -794,7 +796,7 @@ export const MoneyRain: React.FC<{t: number; dur?: number; n?: number; seed?: nu
 				const st = t + hash1(i * 3.3 + seed) * dur * 0.7;
 				const lt = T - st;
 				if (lt < 0) return null;
-				const x = hash1(i * 7.1 + seed) * 1000 + 40;
+				const x = hash1(i * 7.1 + seed) * 1800 + 60;
 				const vy = (900 + hash1(i * 1.9 + seed) * 700) * speed;
 				const y = -200 + lt * vy;
 				if (y > H + 200) return null;
@@ -812,7 +814,7 @@ export const MoneyRain: React.FC<{t: number; dur?: number; n?: number; seed?: nu
 };
 
 /** Explosão de moedas a partir de um ponto */
-export const CoinBurst: React.FC<{t: number; x?: number; y?: number; n?: number; seed?: number; power?: number}> = ({t, x = CX, y = 900, n = 16, seed = 5, power = 1}) => {
+export const CoinBurst: React.FC<{t: number; x?: number; y?: number; n?: number; seed?: number; power?: number}> = ({t, x = CX, y = CY, n = 16, seed = 5, power = 1}) => {
 	const T = useT();
 	const lt = T - t;
 	if (lt < 0 || lt > 1.6) return null;
