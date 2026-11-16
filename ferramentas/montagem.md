@@ -1,6 +1,6 @@
 # Montagem do fluxo de edição
 
-Fase atual: 4 (plano do fluxo) · Atualizado em 16/11/2026
+Fase atual: 6 (teste no vídeo de monetização) · Atualizado em 16/11/2026
 
 ## Ambiente
 - Sistema: Linux (contêiner na nuvem, sem GPU) · Python 3.13 · FFmpeg 6.1 · Node.js 22 · Git 2.43
@@ -26,11 +26,20 @@ Fase atual: 4 (plano do fluxo) · Atualizado em 16/11/2026
 - canal (`ferramentas/perfis/canal/`): perfil inicial a partir do briefing — identidade, estilo-motion, estilo-camera, estilo-som, catálogo. Falta: referências medidas (opcional, depois)
 
 ## Fluxo aprovado
-- (fase 4)
+1. edit-iniciar — pasta do episódio, narração original guardada, estado e briefing
+2. edit-preparar — medir áudio, transcrição (medium tempo + large-v3 texto), números conferidos, frases e legendas
+3. edit-motion-mapa — plano das cenas (revisão ① no chat)
+4. edit-motion-render — cenas no Remotion + câmera virtual + legendas, prancha de stills (revisão ②)
+5. edit-sfx — SFX e música por código, mixagem -14 LUFS, prévia do gancho com som (revisão ③)
+6. edit-render — render final 1920×1080, QC, FINAL/<slug>_vNN.mp4 (revisão ④)
+Fora: cortes (narração inteira), assets (tudo desenhado em código), câmera (junto do motion-render)
+Conflito STYLE_GUIDE.md resolvido: ele vale só para a série "E se…?"; registrado no CLAUDE.md
 
 ## Skills escritas
-- [ ] regras comuns
-- [ ] skill mestra /editar
+- [x] regras comuns (`.claude/skills/editar/regras-comuns.md`)
+- [x] skill mestra /editar
+- [x] edit-iniciar, edit-preparar, edit-motion-mapa, edit-motion-render, edit-sfx, edit-render
+- [ ] scripts em ferramentas/scripts/ (nascem no teste da fase 6)
 
 ## Próximo passo
-Fase 4: aprovar a lista de etapas do fluxo.
+Fase 6: rodar o fluxo inteiro no vídeo de monetização com /editar (os scripts nascem aqui).

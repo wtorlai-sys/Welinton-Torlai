@@ -2,7 +2,13 @@
 
 Projeto de shorts verticais **"E se…?"** em Remotion + React Three Fiber (`@remotion/three`).
 
-## Regra obrigatória
+## Duas séries, dois guias
+- **Shorts verticais "E se…?"** (personagem 2D em cenário 3D): seguem o `STYLE_GUIDE.md` (regras abaixo).
+- **Vídeos narrados de motion graphics, horizontais 16:9 (fluxo `/editar`)**: seguem o perfil
+  `ferramentas/perfis/canal/` e `.claude/skills/editar/regras-comuns.md`, não o `STYLE_GUIDE.md`.
+  Para editar um vídeo novo: `/editar`. Decisões do fluxo em `ferramentas/montagem.md`.
+
+## Regra obrigatória (série "E se…?")
 **Antes de criar ou alterar qualquer cena, componente, material, câmera, legenda ou render,
 leia e siga [`STYLE_GUIDE.md`](./STYLE_GUIDE.md).** Ele é a fonte da verdade do visual.
 Se um pedido conflitar com o guia, aponte o conflito antes de implementar.
