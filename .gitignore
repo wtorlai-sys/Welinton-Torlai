@@ -3,3 +3,4 @@ out/
 .DS_Store
 growkaz-stickman-studio/projects/*/build/
 growkaz-stickman-studio/projects/*/out/
+__pycache__/
