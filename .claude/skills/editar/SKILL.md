@@ -1,6 +1,6 @@
 ---
 name: editar
-description: "Ponto de entrada da edição de vídeos de Welinton (motion graphics narrados, 16:9 para YouTube): mostra onde o vídeo está (etapas, pendências, alertas, aprendizados anotados) e abre a skill da etapa certa. Também aplica os aprendizados (/editar aprendizados). Use em /editar, ao começar um vídeo novo a partir de uma narração, ao retomar um vídeo, depois de um /clear, ou quando Welinton perguntar em que pé está o vídeo."
+description: "Ponto de entrada da edição de vídeos de Welinton (motion graphics narrados, 16:9 para YouTube): mostra onde o vídeo está (etapas, pendências, alertas, aprendizados anotados) e abre a skill da etapa certa. Também aplica os aprendizados (/editar aprendizados). Use em /editar, sempre que Welinton pedir para editar um vídeo para o YouTube, ao começar um vídeo novo a partir de uma narração, ao retomar um vídeo, depois de um /clear, ou quando Welinton perguntar em que pé está o vídeo."
 ---
 
 # editar

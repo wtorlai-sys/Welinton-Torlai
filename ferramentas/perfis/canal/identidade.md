@@ -2,6 +2,8 @@
 
 Origem: briefing do vídeo de monetização (16/11/2026). Perfil inicial, sem referências medidas ainda. Tendência, não regra.
 
+**Aprovado por Welinton em 16/11/2026** (vídeo final de monetização, v01): este é o padrão de todo vídeo novo para o YouTube. Referência viva: `episodios/2026-11-16_monetizacao/` (plano, pranchas, vídeo final) e o código em `src/episodes/2026-11-16_monetizacao/`.
+
 ## Formato
 - Horizontal 16:9, 1920×1080, 30 fps, YouTube formato longo (decidido em 16/11/2026)
 - Área segura: nada importante nos 9% de baixo (barra do player) nem, nos últimos 20 s, no quarto inferior direito (cartões finais)

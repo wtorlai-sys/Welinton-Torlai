@@ -7,6 +7,8 @@ Projeto de shorts verticais **"E se…?"** em Remotion + React Three Fiber (`@re
 - **Vídeos narrados de motion graphics, horizontais 16:9 (fluxo `/editar`)**: seguem o perfil
   `ferramentas/perfis/canal/` e `.claude/skills/editar/regras-comuns.md`, não o `STYLE_GUIDE.md`.
   Para editar um vídeo novo: `/editar`. Decisões do fluxo em `ferramentas/montagem.md`.
+- **Pedido de "editar um vídeo pro YouTube"** → fluxo `/editar` com o perfil `canal`. Padrão aprovado
+  em 16/11/2026: o vídeo `episodios/2026-11-16_monetizacao/` (estrutura, visual, som e render) é a referência.
 
 ## Regra obrigatória (série "E se…?")
 **Antes de criar ou alterar qualquer cena, componente, material, câmera, legenda ou render,

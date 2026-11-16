@@ -2,6 +2,8 @@
 
 Origem: entrevista de 16/11/2026. Câmera virtual (sem apresentador). Tendência, não regra.
 
+**Aprovado por Welinton em 16/11/2026** (vídeo final de monetização, v01): este é o padrão de todo vídeo novo para o YouTube. Referência viva: `episodios/2026-11-16_monetizacao/` (plano, pranchas, vídeo final) e o código em `src/episodes/2026-11-16_monetizacao/`.
+
 - Push-in lento e constante em quase toda cena: 5–10% em 2–3 s, deriva linear por baixo (sem engasgar)
 - Punch nas revelações de valor (R$ 5, 1 milhão, R$ 5.000): ~15–25%, in-out assimétrico
 - Tremida curta nos impactos: 6–10 f, sempre junto com som de impacto

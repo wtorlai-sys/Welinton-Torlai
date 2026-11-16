@@ -1,6 +1,6 @@
 # Montagem do fluxo de edição
 
-Fase atual: 6 (teste no vídeo de monetização) · Atualizado em 16/11/2026
+Fase atual: 7 (fluxo em uso) · Atualizado em 16/11/2026
 
 ## Ambiente
 - Sistema: Linux (contêiner na nuvem, sem GPU) · Python 3.13 · FFmpeg 6.1 · Node.js 22 · Git 2.43
@@ -39,7 +39,8 @@ Conflito STYLE_GUIDE.md resolvido: ele vale só para a série "E se…?"; regist
 - [x] regras comuns (`.claude/skills/editar/regras-comuns.md`)
 - [x] skill mestra /editar
 - [x] edit-iniciar, edit-preparar, edit-motion-mapa, edit-motion-render, edit-sfx, edit-render
-- [ ] scripts em ferramentas/scripts/ (nascem no teste da fase 6)
+- [x] scripts em ferramentas/scripts/ (nasceram no teste da fase 6)
 
 ## Próximo passo
-Fase 6: rodar o fluxo inteiro no vídeo de monetização com /editar (os scripts nascem aqui).
+Fase 6 concluída: o vídeo de monetização passou pelo fluxo inteiro e o final v01 foi aprovado por Welinton em 16/11/2026. Essa estrutura (fluxo /editar + perfil `canal` + kit do vídeo de monetização) é o padrão quando ele pedir para editar um vídeo para o YouTube.
+Fase 7: usar em vídeos novos; aplicar aprendizados com `/editar aprendizados`; quando der, promover o kit para `src/kit/` (cópia, sem mover nada).

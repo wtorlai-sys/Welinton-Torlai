@@ -2,6 +2,8 @@
 
 Origem: entrevista de 16/11/2026. Tendência, não regra.
 
+**Aprovado por Welinton em 16/11/2026** (vídeo final de monetização, v01): este é o padrão de todo vídeo novo para o YouTube. Referência viva: `episodios/2026-11-16_monetizacao/` (plano, pranchas, vídeo final) e o código em `src/episodes/2026-11-16_monetizacao/`.
+
 ## Efeitos (SFX)
 - Gerados por código (numpy, determinísticos); se existir `ferramentas/sons/<categoria>/`, preferir esses arquivos
 - Densidade alta, sutil: whoosh em toda troca de cena; pop em cada número/valor; tique de contador durante contagens; blip digital em interfaces; ding em notificações; moedas/caixa registradora em dinheiro; impacto grave nas revelações; riser antes da revelação principal

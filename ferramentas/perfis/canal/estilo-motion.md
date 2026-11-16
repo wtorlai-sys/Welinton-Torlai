@@ -1,6 +1,8 @@
 # Estilo de motion — perfil "canal"
 
-Origem: briefing do vídeo de monetização (16/11/2026); sem referências medidas ainda. Tendência, não regra. Numeração igual ao ofício (guias/oficio-motion.md); onde contraria o ofício, vale este perfil.
+Origem: briefing do vídeo de monetização (16/11/2026); sem referências medidas ainda. Tendência, não regra.
+
+**Aprovado por Welinton em 16/11/2026** (vídeo final de monetização, v01): este é o padrão de todo vídeo novo para o YouTube. Referência viva: `episodios/2026-11-16_monetizacao/` (plano, pranchas, vídeo final) e o código em `src/episodes/2026-11-16_monetizacao/`. Numeração igual ao ofício (guias/oficio-motion.md); onde contraria o ofício, vale este perfil.
 
 ## Densidade (por trecho)
 - O vídeo inteiro é denso: algo novo na tela a cada 1,5–3 s, sempre sincronizado com uma palavra da fala (briefing)
