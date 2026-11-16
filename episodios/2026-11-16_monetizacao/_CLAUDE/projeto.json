@@ -6,7 +6,7 @@
   "iniciar": "concluido",
   "preparar": "concluido",
   "motion_mapa": "concluido",
-  "motion_render": "pendente",
+  "motion_render": "aguardando_aprovacao",
   "sfx": "pendente",
   "render": "pendente"
  },
@@ -904,5 +904,145 @@
    "status": "aprovado",
    "legenda_obs": "últimos 20 s: legenda deslocada para a esquerda (centro x≈640), quarto inferior direito livre"
   }
- ]
+ ],
+ "render": {
+  "composicao": "Monetizacao20261116",
+  "codigo": "src/episodes/2026-11-16_monetizacao/",
+  "prancha": "_CLAUDE/revisao/prancha_v01.png",
+  "trechos_feitos": [
+   "gancho"
+  ],
+  "cenas": {
+   "c01": {
+    "arquivo": "scenes/gancho.tsx#C01Gancho",
+    "versao": 1
+   },
+   "c02": {
+    "arquivo": "scenes/gancho.tsx#C02Mentira",
+    "versao": 1
+   }
+  },
+  "eventos": [
+   {
+    "id": "e01",
+    "t": 0.0,
+    "tipo": "impacto",
+    "forca": "media",
+    "obs": "play 3D explode"
+   },
+   {
+    "id": "e02",
+    "t": 1.08,
+    "tipo": "whoosh",
+    "forca": "media",
+    "obs": "câmera atravessa o play"
+   },
+   {
+    "id": "e03",
+    "t": 1.2,
+    "tipo": "contador",
+    "forca": "media",
+    "ate": 1.8
+   },
+   {
+    "id": "e04",
+    "t": 1.8,
+    "tipo": "pop",
+    "forca": "media",
+    "obs": "1.000 trava dourado"
+   },
+   {
+    "id": "e05",
+    "t": 2.66,
+    "tipo": "impacto",
+    "forca": "leve",
+    "obs": "carimbo do play"
+   },
+   {
+    "id": "e06",
+    "t": 3.49,
+    "tipo": "whoosh",
+    "forca": "leve",
+    "obs": "cartão de receita entra"
+   },
+   {
+    "id": "e07",
+    "t": 3.59,
+    "tipo": "moeda",
+    "forca": "leve",
+    "obs": "dinheiro se desfaz"
+   },
+   {
+    "id": "e08",
+    "t": 3.9,
+    "tipo": "notificacao",
+    "forca": "leve",
+    "obs": "MENOS DE + zoom"
+   },
+   {
+    "id": "e09",
+    "t": 4.78,
+    "tipo": "impacto",
+    "forca": "forte",
+    "obs": "slam R$ 5"
+   },
+   {
+    "id": "e10",
+    "t": 5.64,
+    "tipo": "whoosh",
+    "forca": "forte",
+    "obs": "chicote para cima"
+   },
+   {
+    "id": "e11",
+    "t": 6.8,
+    "tipo": "riser",
+    "forca": "media",
+    "ate": 7.6,
+    "obs": "gráfico dispara + odômetro"
+   },
+   {
+    "id": "e12",
+    "t": 7.2,
+    "tipo": "pop",
+    "forca": "media",
+    "obs": "MUITO"
+   },
+   {
+    "id": "e13",
+    "t": 7.84,
+    "tipo": "impacto",
+    "forca": "forte",
+    "obs": "MAIS + moedas 3D"
+   },
+   {
+    "id": "e14",
+    "t": 7.9,
+    "tipo": "moeda",
+    "forca": "forte",
+    "obs": "chuva de moedas/notas"
+   },
+   {
+    "id": "e15",
+    "t": 9.01,
+    "tipo": "whoosh",
+    "forca": "leve",
+    "obs": "flash de corte c02"
+   },
+   {
+    "id": "e16",
+    "t": 9.9,
+    "tipo": "whoosh",
+    "forca": "leve",
+    "obs": "risco dourado"
+   },
+   {
+    "id": "e17",
+    "t": 10.38,
+    "tipo": "impacto",
+    "forca": "media",
+    "obs": "carimbo VERDADE"
+   }
+  ]
+ }
 }

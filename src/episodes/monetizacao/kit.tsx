@@ -842,4 +842,47 @@ export const breathe = (T: number, amt = 0.02, sp = 2.2, ph = 0) => 1 + Math.sin
 /** Digita texto progressivamente */
 export const typed = (s: string, T: number, a: number, cps = 26) => s.slice(0, Math.max(0, Math.floor((T - a) * cps)));
 
+/* ------------------------------------------------------------------ */
+/* Peças novas (vídeo 2026-11-16_monetizacao)                          */
+/* ------------------------------------------------------------------ */
+/** speed ramp: saída acelerando (power4.in) entre a e a+d → 0..1 */
+export const rampOut = (T: number, a: number, d: number) => Math.pow(k(T, a, d), 4);
+/** speed ramp: chegada freando (expo.out) entre a e a+d → 1..0 (quanto falta) */
+export const rampIn = (T: number, a: number, d: number) => 1 - expoOut(k(T, a, d));
+/** punch assimétrico: sobe rápido (pico em ~30%) e volta devagar → 0..1..0 */
+export const punch = (T: number, a: number, d = 1.1) => {
+	const q = k(T, a, d);
+	if (q <= 0 || q >= 1) return 0;
+	return q < 0.3 ? easeOutCubic(q / 0.3) : 1 - easeOutCubic((q - 0.3) / 0.7);
+};
+
+/** Carimbo: cai de grande, gira e assenta com overshoot no tempo t */
+export const Stamp: React.FC<{t: number; children: React.ReactNode; rot?: number; from?: number; style?: React.CSSProperties}> = ({t, children, rot = -12, from = 2.4, style}) => {
+	const T = useT();
+	if (T < t - 0.001) return null;
+	const p = easeOutBack(k(T, t, 0.22), 2.2);
+	const s = from + (1 - from) * p;
+	return <div style={{transform: `rotate(${rot * (0.6 + 0.4 * p)}deg) scale(${s})`, opacity: clamp(k(T, t, 0.08)), ...style}}>{children}</div>;
+};
+
+/** Odômetro: dígitos girando borrados (sem valor final), determinístico */
+export const Odometer: React.FC<{n?: number; size?: number; color?: string; prefix?: string; seed?: number; speed?: number}> = ({n = 5, size = 120, color = C.green, prefix = 'R$', seed = 1, speed = 30}) => {
+	const T = useT();
+	const f = Math.floor(T * speed);
+	return (
+		<div style={{display: 'flex', alignItems: 'center', gap: size * 0.12, fontFamily: F.black, fontSize: size, color, lineHeight: 1}}>
+			<span>{prefix}</span>
+			{Array.from({length: n}).map((_, i) => {
+				const d = Math.floor(hash1(f * 1.37 + i * 9.1 + seed) * 10);
+				const off = ((T * speed * (1 + i * 0.3)) % 1) * size * 0.5;
+				return (
+					<div key={i} style={{width: size * 0.66, height: size * 1.1, overflow: 'hidden', borderRadius: size * 0.12, background: 'rgba(255,255,255,0.06)', position: 'relative'}}>
+						<div style={{position: 'absolute', left: 0, right: 0, top: size * 0.05 - off, textAlign: 'center', filter: 'blur(3px)', textShadow: `0 ${size * 0.5}px 0 ${color}`}}>{d}</div>
+					</div>
+				);
+			})}
+		</div>
+	);
+};
+
 export {clamp, easeOutBack, easeOutCubic, lerp, smooth};

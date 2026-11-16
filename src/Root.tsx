@@ -5,6 +5,7 @@ import {TestScene, TEST_SCENE_FRAMES} from './scenes/TestScene';
 import {PANELS, Storyboard} from './episodes/dormir/Storyboard';
 import {CastSheet} from './scenes/CastSheet';
 import {MON_FPS, MON_FRAMES, MonetizacaoVideo} from './episodes/monetizacao/Video';
+import {EP_FPS, EP_FRAMES, Monetizacao20261116} from './episodes/2026-11-16_monetizacao/Video';
 import {DORMIR_FPS, DORMIR_FRAMES, DormirVideo} from './episodes/dormir/Video';
 
 export const RemotionRoot: React.FC = () => (
@@ -20,5 +21,7 @@ export const RemotionRoot: React.FC = () => (
 		<Composition id="DormirStoryboard" component={Storyboard} durationInFrames={PANELS.length} fps={VIDEO.fps} width={VIDEO.width} height={VIDEO.height} />
 		{/* Episódio "Monetização": horizontal 1920×1080 (perfil ferramentas/perfis/canal) */}
 		<Composition id="Monetizacao" component={MonetizacaoVideo} durationInFrames={MON_FRAMES} fps={MON_FPS} width={1920} height={1080} defaultProps={{audio: true}} />
+		{/* Vídeo 2026-11-16_monetizacao (fluxo /editar, plano aprovado) */}
+		<Composition id="Monetizacao20261116" component={Monetizacao20261116} durationInFrames={EP_FRAMES} fps={EP_FPS} width={1920} height={1080} defaultProps={{audio: true}} />
 	</>
 );
