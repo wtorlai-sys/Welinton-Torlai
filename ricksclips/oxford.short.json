@@ -1,0 +1,488 @@
+{
+ "fps": 30,
+ "words": "videos/oxford/audio/words_draft.json",
+ "captions": {
+  "wordsPer": 1
+ },
+ "moods": {
+  "day": {
+   "sun": {
+    "azimuth": 32,
+    "elevation": 46,
+    "color": "#ffd9a6",
+    "intensity": 2.6
+   },
+   "sky": {
+    "top": "#5f86d8",
+    "horizon": "#f4b884"
+   },
+   "fill": {
+    "sky": "#8ea2ff",
+    "ground": "#6a3b6e",
+    "intensity": 1.1
+   }
+  },
+  "night": {
+   "sun": {
+    "azimuth": -45,
+    "elevation": 36,
+    "color": "#9fb4ff",
+    "intensity": 1.8
+   },
+   "sky": {
+    "top": "#141f5e",
+    "horizon": "#4f57a8"
+   },
+   "fill": {
+    "sky": "#6a7ce8",
+    "ground": "#3f3584",
+    "intensity": 1.6
+   },
+   "exposure": 1.2
+  }
+ },
+ "lighting": [
+  {
+   "t": 0,
+   "mood": "day"
+  },
+  {
+   "t": "say:Você vê",
+   "mood": "night",
+   "fade": 0.8
+  }
+ ],
+ "ground": {
+  "texture": "textures/cobble.png",
+  "repeat": [
+   150,
+   150
+  ]
+ },
+ "backdrop": {
+  "image": "bg/oxford.png"
+ },
+ "ink": {
+  "set": 4
+ },
+ "characters": [
+  {
+   "id": "scholar",
+   "puppet": "puppets/scholar",
+   "pos": [
+    -0.4,
+    0,
+    0.3
+   ],
+   "height": 1.8,
+   "face": "neutral"
+  }
+ ],
+ "props": [
+  {
+   "type": "model",
+   "file": "models/oxford_tower.glb",
+   "pos": [
+    0,
+    0,
+    -10
+   ],
+   "height": 12
+  },
+  {
+   "type": "house",
+   "pos": [
+    -9.5,
+    0,
+    -9
+   ],
+   "size": [
+    7,
+    5,
+    5
+   ],
+   "wall": "textures/sandstone.png",
+   "roofTexture": "textures/slate.png"
+  },
+  {
+   "type": "house",
+   "pos": [
+    9.5,
+    0,
+    -9
+   ],
+   "size": [
+    7,
+    4.6,
+    5
+   ],
+   "wall": "textures/sandstone.png",
+   "roofTexture": "textures/slate.png"
+  },
+  {
+   "type": "wall",
+   "pos": [
+    -5.2,
+    0,
+    -5.4
+   ],
+   "size": [
+    4,
+    1.1,
+    0.5
+   ],
+   "texture": "textures/sandstone.png",
+   "repeat": [
+    2,
+    0.6
+   ]
+  },
+  {
+   "type": "wall",
+   "pos": [
+    5.2,
+    0,
+    -5.4
+   ],
+   "size": [
+    4,
+    1.1,
+    0.5
+   ],
+   "texture": "textures/sandstone.png",
+   "repeat": [
+    2,
+    0.6
+   ]
+  },
+  {
+   "type": "tree",
+   "pos": [
+    -6.5,
+    0,
+    -3.8
+   ],
+   "scale": 1.4,
+   "color": "#5f9a4c"
+  },
+  {
+   "type": "tree",
+   "pos": [
+    6.8,
+    0,
+    -4.2
+   ],
+   "scale": 1.2,
+   "color": "#4f8f4a"
+  },
+  {
+   "type": "post",
+   "pos": [
+    -3.1,
+    0,
+    -0.95
+   ],
+   "h": 1.0,
+   "color": "#6b4429"
+  },
+  {
+   "type": "post",
+   "pos": [
+    -1.5,
+    0,
+    -0.35
+   ],
+   "h": 1.0,
+   "color": "#6b4429"
+  },
+  {
+   "type": "plane",
+   "image": "props/board_1096.png",
+   "pos": [
+    -2.3,
+    0.8,
+    -0.6
+   ],
+   "size": [
+    2.1,
+    1.4
+   ],
+   "rotY": 20
+  },
+  {
+   "type": "post",
+   "pos": [
+    1.1,
+    0,
+    -0.45
+   ],
+   "h": 1.0,
+   "color": "#6b4429"
+  },
+  {
+   "type": "post",
+   "pos": [
+    2.7,
+    0,
+    -1.05
+   ],
+   "h": 1.0,
+   "color": "#6b4429"
+  },
+  {
+   "type": "plane",
+   "image": "props/board_1521.png",
+   "pos": [
+    1.9,
+    0.8,
+    -0.7
+   ],
+   "size": [
+    2.1,
+    1.4
+   ],
+   "rotY": -20
+  },
+  {
+   "type": "crate",
+   "pos": [
+    -4.6,
+    0,
+    0.6
+   ],
+   "size": 0.6,
+   "rotY": 15,
+   "texture": "textures/adobe.png"
+  },
+  {
+   "type": "barrel",
+   "pos": [
+    4.5,
+    0,
+    0.4
+   ]
+  },
+  {
+   "type": "model",
+   "file": "models/aztec_pyramid.glb",
+   "pos": [
+    80,
+    0,
+    -12
+   ],
+   "height": 11
+  },
+  {
+   "type": "wall",
+   "pos": [
+    71,
+    0,
+    -6
+   ],
+   "size": [
+    5,
+    1.4,
+    0.6
+   ],
+   "texture": "textures/adobe.png",
+   "repeat": [
+    2,
+    0.7
+   ]
+  },
+  {
+   "type": "wall",
+   "pos": [
+    89,
+    0,
+    -6
+   ],
+   "size": [
+    5,
+    1.4,
+    0.6
+   ],
+   "texture": "textures/adobe.png",
+   "repeat": [
+    2,
+    0.7
+   ]
+  },
+  {
+   "type": "tree",
+   "pos": [
+    72,
+    0,
+    -9
+   ],
+   "scale": 1.3,
+   "color": "#4f8f4a"
+  },
+  {
+   "type": "tree",
+   "pos": [
+    88.5,
+    0,
+    -9.5
+   ],
+   "scale": 1.5,
+   "color": "#5f9a4c"
+  },
+  {
+   "type": "barrel",
+   "pos": [
+    76,
+    0,
+    -3
+   ],
+   "color": "#b4774a"
+  },
+  {
+   "type": "crate",
+   "pos": [
+    84,
+    0,
+    -3.2
+   ],
+   "size": 0.7,
+   "texture": "textures/adobe.png"
+  }
+ ],
+ "shots": [
+  {
+   "start": 0,
+   "target": "scholar",
+   "headWidth": 0.14,
+   "yaw": 8,
+   "pitch": 6,
+   "zoom": 6,
+   "pan": [
+    -18,
+    6
+   ],
+   "actions": [
+    {
+     "at": 0.7,
+     "who": "scholar",
+     "face": "happy",
+     "pose": {
+      "head": -5
+     }
+    }
+   ]
+  },
+  {
+   "start": "say:Lá já tinha aula",
+   "target": "scholar",
+   "headWidth": 0.16,
+   "yaw": -18,
+   "pitch": 4,
+   "frameX": 0.24,
+   "zoom": 5,
+   "pan": [
+    16,
+    0
+   ],
+   "actions": [
+    {
+     "at": 0.0,
+     "who": "scholar",
+     "face": "happy",
+     "pose": {
+      "armL": 70,
+      "head": 0
+     }
+    }
+   ]
+  },
+  {
+   "start": "say:Você vê",
+   "target": "scholar",
+   "headWidth": 0.26,
+   "yaw": 6,
+   "pitch": 9,
+   "zoom": 8,
+   "pan": [
+    0,
+    -10
+   ],
+   "actions": [
+    {
+     "at": 0.0,
+     "who": "scholar",
+     "face": "shocked",
+     "pose": {
+      "armL": 0
+     }
+    },
+    {
+     "at": 0.5,
+     "who": "scholar",
+     "face": "confused",
+     "pose": {
+      "head": 7
+     }
+    }
+   ],
+   "out": "dissolve"
+  },
+  {
+   "start": "say:Tenochtitlán",
+   "anchor": [
+    80,
+    4,
+    -12
+   ],
+   "distance": 44,
+   "yaw": 12,
+   "pitch": 4,
+   "zoom": 6,
+   "pan": [
+    -14,
+    0
+   ]
+  },
+  {
+   "start": "say:E o império caiu",
+   "anchor": [
+    80,
+    5.5,
+    -12
+   ],
+   "distance": 26,
+   "yaw": -30,
+   "pitch": 4,
+   "zoom": -5,
+   "pan": [
+    12,
+    0
+   ],
+   "out": "dissolve"
+  },
+  {
+   "start": "say:enquanto",
+   "target": "scholar",
+   "headWidth": 0.15,
+   "yaw": 26,
+   "pitch": 4,
+   "frameX": -0.22,
+   "zoom": 5,
+   "pan": [
+    -14,
+    0
+   ],
+   "actions": [
+    {
+     "at": 0.0,
+     "who": "scholar",
+     "face": "happy",
+     "pose": {
+      "armR": -70,
+      "head": 0
+     }
+    }
+   ]
+  }
+ ],
+ "end": 12.1
+}
