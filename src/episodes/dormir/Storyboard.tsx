@@ -5,23 +5,52 @@ import React, {useEffect, useState} from 'react';
 import {AbsoluteFill, continueRender, delayRender, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {ThreeCanvas} from '@remotion/three';
 import * as THREE from 'three';
-import {Character, CharacterProps, HEAD_HEIGHT} from '../../components/Character';
-import {pose2D} from '../../components/Character2D';
+import {Character2DProps, Pose2D, pose2D} from '../../components/Character2D';
 import {CAST} from '../../characters';
 import {Lighting, LightingPreset} from '../../components/Lighting';
 import {CameraRig, Shot} from '../../components/CameraRig';
 import {Captions} from '../../components/Captions';
-import {MilkGlass} from '../../components/scenery';
 import {parseTimestamps, Word} from '../../lib/timestamps';
 import {PALETTE} from '../../style/constants';
-import {BED_TOP, Bedroom, Bedroom2, Briefcase, Kitchen, Street, WallPlaque, deg} from './sets';
+import {BED_TOP, Bedroom2, Kitchen2, Street2, WallPlaque} from './sets';
 import {Character2D} from '../../components/Character2D';
 import {DustMotes, LightShaft} from '../../components/LightFX';
 
 export const NARRATION = {audio: 'audio/dormir-no-mesmo-lugar.mp3', timestamps: 'timestamps/dormir-no-mesmo-lugar.json', seconds: 82.36};
 
 const KID = 0.75; // escala de criança
-const kidHead = HEAD_HEIGHT.stand * KID;
+
+/** Personagem 2D do elenco (escala/expressão padrão do CAST). */
+const C2: React.FC<{who: keyof typeof CAST} & Omit<Character2DProps, 'outfit'>> = ({who, ...p}) => (
+	<Character2D outfit={CAST[who].outfit} expression={p.expression ?? CAST[who].expressaoPadrao} scale={p.scale ?? CAST[who].escala} {...p} />
+);
+
+/** Empurrando algo para a direita da tela. */
+const PUSH_R: Pose2D = {...pose2D('stand'), armR: [82, -4], armL: [-62, -6], lean: 12, legL: [20, 0], legR: [-6, 12]};
+/** Sentado na beira da cama, pernas penduradas. */
+const SIT_EDGE: Pose2D = {...pose2D('stand'), drop: 26, legL: [8, 0], legR: [8, 0], armL: [22, 20], armR: [22, 20]};
+
+// Janela do fundo do quarto (Bedroom2) e da cozinha (Kitchen2), em coordenadas de mundo.
+const BED_WIN: [THREE.Vector3Tuple, THREE.Vector3Tuple, THREE.Vector3Tuple, THREE.Vector3Tuple] = [[0.39, 1.26, -1.19], [0.99, 1.26, -1.19], [0.99, 0.57, -1.19], [0.39, 0.57, -1.19]];
+const KIT_WIN: [THREE.Vector3Tuple, THREE.Vector3Tuple, THREE.Vector3Tuple, THREE.Vector3Tuple] = [[-0.99, 1.14, -1.19], [-0.45, 1.14, -1.19], [-0.45, 0.69, -1.19], [-0.99, 0.69, -1.19]];
+const DaySun: React.FC = () => (
+	<>
+		<LightShaft window={BED_WIN} dir={[-0.324, -0.643, 0.694]} length={1.9} color="#FFE0A8" strength={0.16} />
+		<DustMotes center={[0.35, 0.7, -0.6]} size={[0.8, 0.8, 1.0]} count={120} color="#FFF0D0" />
+	</>
+);
+const MoonShaft: React.FC = () => (
+	<>
+		<LightShaft window={BED_WIN} dir={[-0.35, -0.57, 0.75]} length={1.9} color="#9DB4FF" strength={0.22} />
+		<DustMotes center={[0.35, 0.75, -0.6]} size={[0.8, 0.8, 1.0]} count={160} />
+	</>
+);
+const KitchenSun: React.FC = () => (
+	<>
+		<LightShaft window={KIT_WIN} dir={[0.262, -0.643, 0.72]} length={1.8} color="#FFE0A8" strength={0.16} />
+		<DustMotes center={[-0.45, 0.65, -0.55]} size={[0.7, 0.7, 0.9]} count={120} color="#FFF0D0" />
+	</>
+);
 
 type Panel = {
 	id: string;
@@ -40,10 +69,6 @@ type Panel = {
 // Sol entra pela janela da parede esquerda (-X): azimute -90°.
 const WINDOW_SUN = {az: -90, el: 28};
 
-/** Personagem com defaults do elenco. */
-const Cast: React.FC<{who: keyof typeof CAST} & Omit<CharacterProps, 'outfit'>> = ({who, expression, ...p}) => (
-	<Character outfit={CAST[who].outfit} expression={expression ?? CAST[who].expressaoPadrao} {...p} />
-);
 
 export const PANELS: Panel[] = [
 	{
@@ -64,26 +89,25 @@ export const PANELS: Panel[] = [
 				{/* a cópia, sentada, encarando a câmera */}
 				<Character2D outfit={CAST.roberto.outfit} expression="sinistro" pose={{...pose2D('sitBed'), armL: [18, 35], armR: [18, 35]}} position={[-0.03, BED_TOP - 0.02, -0.82]} turn={-0.25} light={1} tint="#D8CFE2" shadowYaw={155} />
 				<WallPlaque lines={['NOITE Nº', '2']} sizes={[0.3, 0.5]} red={1} position={[-0.5, 0.95, -1.19]} width={0.3} height={0.26} />
-				<LightShaft window={[[0.39, 1.26, -1.19], [0.99, 1.26, -1.19], [0.99, 0.57, -1.19], [0.39, 0.57, -1.19]]} dir={[-0.35, -0.57, 0.75]} length={1.9} color="#9DB4FF" strength={0.22} />
-				<DustMotes center={[0.35, 0.75, -0.6]} size={[0.8, 0.8, 1.0]} count={160} />
+				<MoonShaft />
 			</>
 		),
 	},
 	{
 		id: 'P2',
 		t: 15.2,
-		beat: '"…encontrou outro Roberto dormindo ao seu lado"',
-		plano: 'Aéreo simétrico (top-down) sobre a cama — ironia',
+		beat: '"…e na manhã seguinte encontrou outro Roberto dormindo ao seu lado"',
+		plano: 'Aéreo simétrico (top-down) sobre a cama — ironia: dois Robertos idênticos',
 		light: 'dia',
-		sun: {az: -90, el: 40},
-		focus: [0, 0, -0.5],
-		shot: {preset: 'aereo', subject: [0.18, 0, -0.6], height: 3.0, dist: 89, fov: 50},
-		captionY: 0.2,
+		sun: {az: 155, el: 50},
+		focus: [-0.3, 0, -0.6],
+		shot: {preset: 'aereo', subject: [-0.3, 0, -0.62], height: 2.5, dist: 89, fov: 50},
+		captionY: 0.18,
 		Scene: () => (
 			<>
-				<Bedroom bed={{x: 0.18, z: -0.6, width: 1.5, duvet: '#5F7FB8', pillows: 2}} ceiling={false} />
-				<Cast who="roberto" expression="susto" pose="lie" lying position={[0.0, BED_TOP, -0.62]} />
-				<Cast who="roberto" expression="dormindo" pose="lie" lying position={[0.37, BED_TOP, -0.62]} />
+				<Bedroom2 ceiling={false} lampOn={false} folded={0.5} />
+				<C2 who="roberto" expression="susto" pose="lie" flat position={[-0.52, BED_TOP + 0.06, -0.68]} light={1} />
+				<C2 who="roberto" expression="dormindo" pose="lie" flat position={[-0.08, BED_TOP + 0.06, -0.68]} light={1} />
 			</>
 		),
 	},
@@ -93,14 +117,14 @@ export const PANELS: Panel[] = [
 		beat: '"E sabe o pior? O outro foi trabalhar no lugar dele."',
 		plano: 'Aberto na frente da casa: o clone sai feliz com a maleta, o original de pijama na porta',
 		light: 'dia',
-		focus: [0.5, 0, 0],
-		shot: {position: [1.6, 1.2, 4.6], target: [0.5, 0.75, -0.6], fov: 55},
+		focus: [0.5, 0, 0.5],
+		shot: {position: [1.45, 1.15, 4.3], target: [0.55, 0.7, -0.3], fov: 52},
 		captionY: 0.2,
 		Scene: () => (
 			<>
-				<Street />
-				<Cast who="roberto" expression="susto" pose="shrug" position={[0, 0.1, -0.9]} />
-				<Cast who="roberto" expression="feliz" pose="walk" t={0.35} position={[1.25, 0, 1.6]} rotation={[0, deg(55), 0]} rightHand={<Briefcase rotation={[0, Math.PI / 2, 0]} />} />
+				<Street2 />
+				<C2 who="roberto" expression="susto" pose="shrug" position={[0, 0.1, -0.88]} light={-1} shadowYaw={-45} />
+				<C2 who="roberto" expression="feliz" pose="walk" t={0.35} position={[1.15, 0, 1.5]} turn={0.5} light={-1} hold="briefcase" shadowYaw={-45} />
 			</>
 		),
 	},
@@ -108,17 +132,18 @@ export const PANELS: Panel[] = [
 		id: 'P4',
 		t: 25.8,
 		beat: '"Mas minha irmã Nina, de 8 anos, odeia mudar de cama."',
-		plano: 'Médio da Nina emburrada na frente da cama; placa-gag na parede',
+		plano: 'Contra-plongée (câmera baixa) da Nina emburrada na frente da cama; placa-gag',
 		light: 'dia',
-		sun: WINDOW_SUN,
-		focus: [0, 0, -0.4],
-		shot: {position: [0.15, 0.8, 1.75], target: [0.15, 0.55, -0.5], fov: 55},
-		captionY: 0.2,
+		sun: {az: 155, el: 40},
+		focus: [-0.3, 0, -0.5],
+		shot: {position: [-0.18, 0.5, 1.35], target: [-0.3, 0.62, -0.6], fov: 52},
+		captionY: 0.82,
 		Scene: () => (
 			<>
-				<Bedroom bed={{x: 0.3, z: -0.6, duvet: '#B9A4E6'}} wallColor="#F0E2D0" />
-				<Cast who="nina" expression="bravo" pose="crossArms" scale={KID} position={[0.12, 0, 0.12]} rotation={[0, deg(-8), 0]} />
-				<WallPlaque lines={['CAMA DA NINA', 'NÃO MEXA']} sizes={[0.26, 0.36]} red={1} position={[0.3, 0.98, -1.19]} width={0.62} height={0.32} />
+				<Bedroom2 wallpaper={['#C98FA6', '#D9A7BB']} duvet="#B9A4E6" bedWidth={1.0} lampOn={false} curtain="#2BA59B" rug="#6FA8DC" />
+				<C2 who="nina" expression="bravo" pose="crossArms" position={[-0.3, 0, 0.22]} light={1} tint="#FFF4E6" shadowYaw={155} />
+				<WallPlaque lines={['CAMA DA NINA', 'NÃO MEXA']} sizes={[0.26, 0.36]} red={1} position={[0.02, 1.0, -1.19]} width={0.4} height={0.22} />
+				<DaySun />
 			</>
 		),
 	},
@@ -126,17 +151,18 @@ export const PANELS: Panel[] = [
 		id: 'P5',
 		t: 31.0,
 		beat: '"Minha mãe sempre mudava os móveis de lugar para enganar a regra."',
-		plano: 'Aberto do quarto: a mãe empurra a cama; marcas no piso + contador na parede',
+		plano: 'Médio-aberto: a mãe empurra a cama; marcas no piso + contador na parede',
 		light: 'dia',
-		sun: WINDOW_SUN,
-		focus: [0, 0, -0.4],
-		shot: {position: [0.2, 1.1, 2.4], target: [0.1, 0.5, -0.45], fov: 55},
-		captionY: 0.8,
+		sun: {az: 155, el: 40},
+		focus: [-0.2, 0, -0.4],
+		shot: {position: [-0.05, 0.95, 1.65], target: [-0.1, 0.55, -0.5], fov: 52},
+		captionY: 0.84,
 		Scene: () => (
 			<>
-				<Bedroom bed={{x: 0.36, z: -0.35, duvet: '#B9A4E6', rot: 0.35}} wallColor="#F0E2D0" dragMarks />
-				<Cast who="mae" expression="bravo" pose="push" position={[-0.36, 0, 0.02]} rotation={[0, deg(70), 0]} />
-				<WallPlaque lines={['CAMA MUDADA', 'DE LUGAR:', '364 VEZES']} sizes={[0.2, 0.2, 0.3]} red={2} position={[0.45, 0.98, -1.19]} width={0.6} height={0.4} />
+				<Bedroom2 wallpaper={['#C98FA6', '#D9A7BB']} duvet="#B9A4E6" bedWidth={1.0} lampOn={false} curtain="#2BA59B" rug="#6FA8DC" bedOffset={[0.55, 0.35]} bedRot={0.3} dragMarks />
+				<C2 who="mae" expression="bravo" pose={PUSH_R} position={[-0.5, 0, -0.05]} turn={0.6} light={1} tint="#FFF4E6" shadowYaw={155} />
+				<WallPlaque lines={['CAMA MUDADA', 'DE LUGAR:', '364 VEZES']} sizes={[0.2, 0.2, 0.3]} red={2} position={[-0.62, 0.95, -1.19]} width={0.4} height={0.3} />
+				<DaySun />
 			</>
 		),
 	},
@@ -144,19 +170,19 @@ export const PANELS: Panel[] = [
 		id: 'P6',
 		t: 37.4,
 		beat: '"Na manhã seguinte, encontrei Nina tomando leite na cozinha."',
-		plano: 'Médio na cozinha: Nina bebendo leite, Zé (narrador) desconfiado',
+		plano: 'Médio na cozinha: Nina bebendo leite, Zé (narrador) desconfiado; calendário "QUINTA" na geladeira',
 		light: 'dia',
-		sun: WINDOW_SUN,
+		sun: {az: 200, el: 40},
 		focus: [0, 0, 0],
-		shot: {position: [0.3, 1.0, 2.7], target: [0.2, 0.5, 0.0], fov: 55},
+		shot: {position: [0.12, 0.95, 2.3], target: [0.12, 0.52, 0.0], fov: 52},
 		captionY: 0.2,
 		Scene: () => (
 			<>
-				<Kitchen />
-				<Cast who="nina" expression="neutro" pose="drink" scale={KID} position={[0.0, 0, 0.5]} rotation={[0, deg(20), 0]} rightHand={<MilkGlass position={[0, -0.02, 0.03]} rotation={[deg(-40), 0, 0]} />} />
-				<Cast who="ze" expression="deboche" pose="crossArms" scale={0.85} position={[0.48, 0, 0.85]} rotation={[0, deg(-40), 0]} />
-				{/* calendário preso na geladeira */}
-				<WallPlaque lines={['QUINTA', 'FEIRA']} sizes={[0.36, 0.36]} position={[0.93, 0.66, -0.755]} width={0.3} height={0.24} />
+				<Kitchen2 />
+				<C2 who="nina" expression="neutro" pose="drink" hold="glass" position={[0.22, 0, 0.45]} turn={-0.25} light={-1} shadowYaw={200} />
+				<C2 who="ze" expression="deboche" pose="crossArms" position={[-0.18, 0, 0.85]} turn={0.45} light={-1} shadowYaw={200} />
+				<WallPlaque lines={['QUINTA', 'FEIRA']} sizes={[0.36, 0.36]} position={[0.56, 0.86, -1.19]} width={0.24} height={0.19} />
+				<KitchenSun />
 			</>
 		),
 	},
@@ -164,19 +190,20 @@ export const PANELS: Panel[] = [
 		id: 'P7',
 		t: 42.4,
 		beat: '"Duas Ninas! E as duas diziam ser a verdadeira!"',
-		plano: 'Médio-aberto: as duas Ninas se acusando; Pai e Zé em choque nas bordas',
+		plano: 'Médio-aberto: as duas Ninas se acusando; Pai e Zé em choque no primeiro plano',
 		light: 'dia',
-		sun: WINDOW_SUN,
-		focus: [0, 0, 0],
-		shot: {position: [0.05, 1.05, 3.4], target: [0.05, 0.45, 0.35], fov: 55},
-		captionY: 0.2,
+		sun: {az: 200, el: 40},
+		focus: [0, 0, 0.3],
+		shot: {position: [0.0, 1.0, 2.9], target: [0.0, 0.46, 0.45], fov: 52},
+		captionY: 0.18,
 		Scene: () => (
 			<>
-				<Kitchen />
-				<Cast who="nina" expression="bravo" pose="point" scale={KID} position={[-0.22, 0, 0.55]} rotation={[0, deg(70), 0]} />
-				<Cast who="nina" expression="bravo" pose="point" scale={KID} position={[0.28, 0, 0.55]} rotation={[0, deg(-70), 0]} />
-				<Cast who="pai" expression="susto" pose="shrug" position={[-0.38, 0, 1.2]} rotation={[0, deg(25), 0]} />
-				<Cast who="ze" expression="susto" pose="shrug" scale={0.85} position={[0.4, 0, 1.25]} rotation={[0, deg(-25), 0]} />
+				<Kitchen2 />
+				<C2 who="nina" expression="bravo" pose="point" position={[-0.2, 0, 0.5]} turn={0.5} light={-1} shadowYaw={200} />
+				<C2 who="nina" expression="bravo" pose="point" flip position={[0.2, 0, 0.5]} turn={0.5} light={-1} shadowYaw={200} />
+				<C2 who="pai" expression="susto" pose="shrug" position={[-0.36, 0, 1.15]} turn={0.4} light={-1} shadowYaw={200} />
+				<C2 who="ze" expression="susto" pose="armsUp" position={[0.36, 0, 1.2]} turn={-0.4} light={-1} shadowYaw={200} />
+				<KitchenSun />
 			</>
 		),
 	},
@@ -184,16 +211,17 @@ export const PANELS: Panel[] = [
 		id: 'P8',
 		t: 63.6,
 		beat: '"Que bom que escolheram ela. Agora posso ficar com o quarto só para mim."',
-		plano: 'Close de reação da Nina falsa (sorriso sinistro), leve dutch angle',
+		plano: 'Close de reação da Nina falsa (sorriso sinistro), dutch angle',
 		light: 'dia',
-		sun: WINDOW_SUN,
-		focus: [0, 0, 0],
-		shot: {preset: 'close', subject: [0.0, kidHead, 0.45], facing: 10, height: kidHead + 0.12, roll: 6},
-		captionY: 0.8,
+		sun: {az: 200, el: 40},
+		focus: [0, 0, 0.4],
+		shot: {position: [0.05, 0.62, 1.2], target: [0.0, 0.56, 0.45], fov: 40, roll: 7},
+		captionY: 0.82,
 		Scene: () => (
 			<>
-				<Kitchen />
-				<Cast who="nina" expression="sinistro" pose="stand" scale={KID} position={[0.0, 0, 0.45]} rotation={[0, deg(10), 0]} />
+				<Kitchen2 />
+				<C2 who="nina" expression="sinistro" pose="stand" position={[0.0, 0, 0.45]} turn={-0.15} light={-1} tint="#E9E4F2" />
+				<KitchenSun />
 			</>
 		),
 	},
@@ -201,17 +229,18 @@ export const PANELS: Panel[] = [
 		id: 'P9',
 		t: 71.4,
 		beat: '"Agora me conta, você teria coragem de dormir duas vezes no mesmo lugar?"',
-		plano: 'Médio do Zé sentado na cama falando com a câmera (CTA), noite',
+		plano: 'Médio do Zé sentado na beira da cama falando com a câmera (CTA), noite',
 		light: 'noite',
-		sun: WINDOW_SUN,
-		focus: [0, 0, -0.4],
-		shot: {position: [0.55, 0.85, 1.45], target: [0.25, 0.5, -0.5], fov: 52},
-		captionY: 0.8,
+		sun: {az: 155, el: 34},
+		focus: [-0.3, 0, -0.5],
+		shot: {position: [-0.22, 0.72, 1.25], target: [-0.28, 0.58, -0.5], fov: 52},
+		captionY: 0.84,
 		Scene: () => (
 			<>
-				<Bedroom bed={{x: 0.3, z: -0.6, duvet: PALETTE.turquoise}} lampOn wallColor="#DDE3EC" />
-				<Cast who="ze" expression="deboche" pose="sit" position={[0.12, BED_TOP, -0.6]} rotation={[0, deg(65), 0]} />
-				<WallPlaque lines={['NOITE Nº', '1']} sizes={[0.3, 0.5]} position={[0.55, 1.02, -1.19]} width={0.45} height={0.38} />
+				<Bedroom2 wallpaper={['#2F4766', '#3B5A80']} duvet="#C9A27A" bedWidth={1.0} curtain="#A07A36" />
+				<C2 who="ze" expression="deboche" pose="sit" position={[-0.3, BED_TOP, -0.35]} turn={0.2} light={1} tint="#D3CFE6" shadowYaw={155} />
+				<WallPlaque lines={['NOITE Nº', '1']} sizes={[0.3, 0.5]} position={[0.05, 0.98, -1.19]} width={0.28} height={0.24} />
+				<MoonShaft />
 			</>
 		),
 	},

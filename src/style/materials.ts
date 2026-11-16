@@ -399,3 +399,20 @@ export const makeWallpaperMaterial = (base = '#2F5D6B', pattern = '#3E7482', sca
 			`,
 		}),
 	);
+
+/** Azulejo (cozinha/banheiro): grade com rejunte AA + variação de tom por peça (hash). */
+export const makeTileMaterial = (color = '#E8E3D6', grout = '#B9B2A4', size = 0.15) =>
+	memo(`tile-${color}-${grout}-${size}`, () =>
+		patchStandard(new THREE.MeshStandardMaterial({color: '#ffffff', roughness: 0.35}), `tile-${color}-${grout}-${size}`, {
+			uniforms: {uTile: {value: c(color)}, uGrout: {value: c(grout)}, uSize: {value: size}},
+			color: /* glsl */ `
+				vec2 uv = vec2(vW.x + vW.z, vW.y) / uSize;
+				vec2 cell = floor(uv);
+				vec2 g = abs(fract(uv) - 0.5);
+				float w = fwidth(uv.x) * 1.5;
+				float groutMask = 1.0 - smoothstep(0.45 - w, 0.47, max(g.x, g.y));
+				vec3 t = uTile * (0.94 + 0.1 * hash31(vec3(cell, 3.0)));
+				diffuseColor.rgb = mix(uGrout, t, groutMask);
+			`,
+		}),
+	);

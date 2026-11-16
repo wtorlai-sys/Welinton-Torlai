@@ -123,7 +123,8 @@ const LIMB = 2.5;
 const rad = (d: number) => (d * Math.PI) / 180;
 const f = (n: number) => n.toFixed(2);
 
-type DrawOpts = {outfit: Outfit2D; expression: Expression2D; pose: Pose2D; turn: number; light: number; blink: number; mouthOpen: number};
+export type Hold2D = 'briefcase' | 'glass' | 'none';
+type DrawOpts = {outfit: Outfit2D; expression: Expression2D; pose: Pose2D; turn: number; light: number; blink: number; mouthOpen: number; hold?: Hold2D};
 
 const limbPts = (x: number, y: number, a: number, b: number, side: number, L1: number, L2: number, downSign = 1) => {
 	const kx = x + side * Math.sin(rad(a)) * L1;
@@ -281,7 +282,7 @@ const hairSvg = (o: Outfit2D, hx: number, hy: number, tx: number) => {
 };
 
 /** Monta o SVG do personagem. Exportado para testes/thumbnail. */
-export const drawCharacterSvg = ({outfit: o, expression, pose: p, turn, light, blink, mouthOpen}: DrawOpts) => {
+export const drawCharacterSvg = ({outfit: o, expression, pose: p, turn, light, blink, mouthOpen, hold = 'none'}: DrawOpts) => {
 	const tx = turn * 5;
 	const skin = o.skin ?? '#F6EEDD';
 	const body = o.body;
@@ -342,6 +343,17 @@ export const drawCharacterSvg = ({outfit: o, expression, pose: p, turn, light, b
 		const q = limbPts(x, shY, a, b, side, 13.5, 13);
 		parts.push(limb([[x, shY], [q.kx, q.ky], [q.hx, q.hy]]));
 		parts.push(`<circle cx="${f(q.hx)}" cy="${f(q.hy)}" r="2.5" fill="${INK}"/>`);
+		if (side > 0 && hold === 'briefcase')
+			parts.push(
+				`<path d="M${f(q.hx - 3)} ${f(q.hy + 1)} q3 -4 6 0" fill="none" stroke="${INK}" stroke-width="1.6"/>` +
+					`<rect x="${f(q.hx - 9)}" y="${f(q.hy + 1.5)}" width="18" height="13" rx="2" fill="#6B4428" stroke="${INK}" stroke-width="${SW}"/>` +
+					`<rect x="${f(q.hx - 1.5)}" y="${f(q.hy + 5)}" width="3" height="2.2" fill="#E2B53C"/>`,
+			);
+		if (side > 0 && hold === 'glass')
+			parts.push(
+				`<path d="M${f(q.hx - 3.6)} ${f(q.hy - 9)} L${f(q.hx + 3.6)} ${f(q.hy - 9)} L${f(q.hx + 3)} ${f(q.hy + 3)} L${f(q.hx - 3)} ${f(q.hy + 3)} Z" fill="#DCE8EE" stroke="${INK}" stroke-width="1.5" stroke-linejoin="round"/>` +
+					`<path d="M${f(q.hx - 3.2)} ${f(q.hy - 4)} L${f(q.hx + 3.2)} ${f(q.hy - 4)} L${f(q.hx + 2.9)} ${f(q.hy + 2.4)} L${f(q.hx - 2.9)} ${f(q.hy + 2.4)} Z" fill="#FBF8F0"/>`,
+			);
 	});
 
 	// Cabeça
@@ -445,6 +457,8 @@ export type Character2DProps = {
 	groundShadow?: boolean;
 	scale?: number;
 	position?: [number, number, number];
+	/** objeto na mão direita (da tela) */
+	hold?: Hold2D;
 };
 
 export const Character2D: React.FC<Character2DProps> = ({
@@ -464,10 +478,11 @@ export const Character2D: React.FC<Character2DProps> = ({
 	groundShadow,
 	scale = 1,
 	position = [0, 0, 0],
+	hold = 'none',
 }) => {
 	const p = typeof pose === 'string' ? pose2D(pose, t) : pose;
 	const q = (n: number) => Math.round(n * 20) / 20;
-	const svg = drawCharacterSvg({outfit, expression, pose: p, turn: q(turn), light: flip ? -light : light, blink: q(blink), mouthOpen: q(mouthOpen)});
+	const svg = drawCharacterSvg({outfit, expression, pose: p, turn: q(turn), light: flip ? -light : light, blink: q(blink), mouthOpen: q(mouthOpen), hold});
 	const geometry = geometryFor(svg);
 	const material = useMemo(() => new THREE.MeshBasicMaterial({vertexColors: true, side: THREE.DoubleSide, toneMapped: true}), []);
 	material.color.set(tint);
