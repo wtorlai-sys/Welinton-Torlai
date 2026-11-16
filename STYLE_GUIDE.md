@@ -145,9 +145,13 @@ Padrão para todo vídeo. Mude só o necessário para o clima do tema (ex.: noit
 ### Regras técnicas derivadas
 - Valores animados são calculados no corpo do componente a partir de `useCurrentFrame()`
   (nunca em `useFrame` com `delta`). Uniforms de shader recebem `frame / fps`.
-- Tone mapping `NEUTRAL` no composer; a cabeça usa branco "HDR" (`HEAD_WHITE`) para sair
-  #FFFFFF depois do tone mapping. O bloom tem limiar alto: só emissivos fortes (lâmpadas)
-  passam — cabeça, placas e legendas nunca estouram.
+- Tone mapping = só o "ombro" do Khronos PBR Neutral (comprime acima de 0.8), dentro do
+  color grade. O Neutral completo subtrai 0.04 das cores escuras e deixa o asfalto azul-marinho.
+  A cabeça usa branco "HDR" (`HEAD_WHITE`) para sair branca depois da compressão.
+- Bloom SELETIVO: só o que estiver dentro de `<Glow>` (lâmpadas, faróis, faíscas) brilha.
+  Cabeça, placas e legendas nunca estouram.
+- As cores da §10 são cores de TELA. Se uma superfície não bater com a referência no still,
+  ajuste `ALBEDO_GAIN` em `materials.ts` (calibrado medindo pixels), não a paleta.
 - Placas usam `CanvasTexture` com a fonte Montserrat Black carregada antes do desenho
   (`src/style/fonts.ts`), `anisotropy` alto e mipmaps.
 - Texturas de cenário são procedurais em coordenadas de mundo (noise em 2 escalas),

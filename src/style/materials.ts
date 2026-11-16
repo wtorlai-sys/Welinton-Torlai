@@ -11,9 +11,9 @@ import {PALETTE} from './constants';
 export const OUTLINE_SCALE = 1.04;
 
 /**
- * Branco "HDR" da cabeça: o composer aplica tone mapping NEUTRAL, que comprime 1.0
- * para ~0.88. Com 3.0 a cabeça sai #FFFFFF no frame final, sem sombreamento.
- * (Fica abaixo do limiar do bloom — ver Lighting.tsx.)
+ * Branco "HDR" da cabeça: o tone mapping (ombro do Neutral, em Lighting.tsx) comprime 1.0
+ * para ~0.88. Com 3.0 a cabeça sai ~#FEFEFE no frame final, sem sombreamento.
+ * O bloom é seletivo (<Glow> em Lighting.tsx), então a cabeça nunca brilha.
  */
 export const HEAD_WHITE = 3.0;
 
@@ -139,6 +139,13 @@ const patchStandard = (mat: THREE.MeshStandardMaterial, key: string, patch: Patc
 const c = (hex: string) => new THREE.Color(hex);
 
 /**
+ * Os VALORES DE REFERÊNCIA (STYLE_GUIDE §10) são cores de TELA (frame final), não albedo.
+ * Superfícies horizontais sob o sol de 32° + grade escurecem o albedo; estes ganhos
+ * (em espaço linear) foram calibrados medindo pixels dos stills do preset "dia".
+ */
+export const ALBEDO_GAIN = {ground: 1.3, asphalt: 1.35};
+
+/**
  * Chão do campo: grama saturada com manchas em 2 escalas, acostamento de terra perto
  * da estrada e um campo dourado numa região (bounds = xmin, xmax, zmin, zmax).
  */
@@ -148,11 +155,12 @@ export const makeGroundMaterial = (opts: {roadHalfWidth?: number; fieldBounds?: 
 			uniforms: {
 				uGrass: {value: c(PALETTE.grass)},
 				uGrassDark: {value: c(PALETTE.grassDark)},
-				uGrassDry: {value: c(PALETTE.grassDry)},
+				uGrassDry: {value: c(PALETTE.grassLight)},
 				uField: {value: c(PALETTE.field)},
 				uFieldLight: {value: c(PALETTE.fieldLight)},
-				uDirt: {value: c('#9A8466')},
+				uDirt: {value: c(PALETTE.dirt)},
 				uRoadHalf: {value: opts.roadHalfWidth ?? 3.5},
+				uGain: {value: ALBEDO_GAIN.ground},
 				uFieldB: {value: new THREE.Vector4(...(opts.fieldBounds ?? [1e5, 1e5, 1e5, 1e5]))},
 			},
 			color: /* glsl */ `
@@ -173,7 +181,7 @@ export const makeGroundMaterial = (opts: {roadHalfWidth?: number; fieldBounds?: 
 				float dRoad = abs(p.x) - uRoadHalf;
 				float shoulder = 1.0 - smoothstep(0.0, 0.9 + mid * 0.8, dRoad);
 				g = mix(g, uDirt * (0.85 + 0.3 * fine), shoulder * step(0.0, dRoad + 0.01));
-				diffuseColor.rgb = g;
+				diffuseColor.rgb = g * uGain;
 			`,
 		}),
 	);
@@ -181,13 +189,14 @@ export const makeGroundMaterial = (opts: {roadHalfWidth?: number; fieldBounds?: 
 /** Asfalto cinza-azulado com grão em 2 escalas, trilhas de pneu e faixas pintadas (AA). */
 export const makeAsphaltMaterial = (halfWidth = 3.5) =>
 	memo(`asphalt-${halfWidth}`, () =>
-		patchStandard(new THREE.MeshStandardMaterial({color: '#ffffff', roughness: 0.85}), `asphalt-${halfWidth}`, {
+		patchStandard(new THREE.MeshStandardMaterial({color: '#ffffff', roughness: 0.85, envMapIntensity: 0.3}), `asphalt-${halfWidth}`, {
 			uniforms: {
 				uA: {value: c(PALETTE.asphalt)},
 				uB: {value: c(PALETTE.asphaltLight)},
 				uLine: {value: c(PALETTE.roadLine)},
 				uYellow: {value: c(PALETTE.roadLineYellow)},
 				uHalf: {value: halfWidth},
+				uGain: {value: ALBEDO_GAIN.asphalt},
 			},
 			color: /* glsl */ `
 				vec3 p = vW;
@@ -200,7 +209,10 @@ export const makeAsphaltMaterial = (halfWidth = 3.5) =>
 				float tracks = 0.0;
 				for (int s = -1; s <= 1; s += 2) {
 					float lc = float(s) * lane;
-					tracks += exp(-pow((p.x - (lc - 0.8)) / 0.35, 2.0)) + exp(-pow((p.x - (lc + 0.8)) / 0.35, 2.0));
+					// (x*x em vez de pow(x, 2.0): pow com base negativa é indefinido em GLSL → NaN)
+					float d1 = (p.x - (lc - 0.8)) / 0.35;
+					float d2 = (p.x - (lc + 0.8)) / 0.35;
+					tracks += exp(-d1 * d1) + exp(-d2 * d2);
 				}
 				a *= 1.0 - 0.12 * tracks;
 				// faixas: bordas brancas contínuas + centro amarelo tracejado
@@ -210,7 +222,7 @@ export const makeAsphaltMaterial = (halfWidth = 3.5) =>
 				float wear = 0.8 + 0.2 * vnoise(p * 4.0);
 				a = mix(a, uLine * wear, clamp(edgeL, 0.0, 1.0));
 				a = mix(a, uYellow * wear, center);
-				diffuseColor.rgb = a;
+				diffuseColor.rgb = a * uGain;
 			`,
 			roughness: /* glsl */ `roughnessFactor = 0.78 + 0.15 * vnoise(vW * 2.0);`,
 		}),
@@ -233,10 +245,10 @@ export const makeBarkMaterial = () =>
 	);
 
 /** Copa low-poly SÓLIDA: flatShading + variação de cor em massas (nada de cartões). */
-export const makeFoliageMaterial = (color: string = PALETTE.leaf) =>
+export const makeFoliageMaterial = (color: string = PALETTE.grass) =>
 	memo(`foliage-${color}`, () =>
 		patchStandard(new THREE.MeshStandardMaterial({color: '#ffffff', roughness: 0.9, flatShading: true}), `foliage-${color}`, {
-			uniforms: {uLeaf: {value: c(color)}, uLeafLight: {value: c('#7DBA3C')}, uLeafDark: {value: c('#1F5A22')}},
+			uniforms: {uLeaf: {value: c(color)}, uLeafLight: {value: c(PALETTE.grassLight)}, uLeafDark: {value: c('#2E6A1C')}},
 			color: /* glsl */ `
 				float n = fbm(vW * 0.9);
 				vec3 l = mix(uLeafDark, uLeaf, smoothstep(0.2, 0.55, n));
@@ -274,7 +286,7 @@ export const makeGlassMaterial = () =>
 export const makeRubberMaterial = () => memo('rubber', () => new THREE.MeshStandardMaterial({color: '#1A1A1C', roughness: 0.9}));
 
 /** Emissivo para lâmpadas (bloom só pega isso: intensidade bem acima do limiar). */
-export const makeEmissiveMaterial = (color: string, intensity = 12) =>
+export const makeEmissiveMaterial = (color: string = PALETTE.emissive, intensity = 6) =>
 	memo(`emis-${color}-${intensity}`, () => new THREE.MeshStandardMaterial({color: '#000000', emissive: color, emissiveIntensity: intensity}));
 
 /** Sombra blob (fallback barato a ContactShadows): textura radial gerada uma vez. */

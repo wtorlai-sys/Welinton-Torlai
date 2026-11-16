@@ -115,8 +115,12 @@ export const Sign: React.FC<SignProps> = ({lines, width = 1.6, height = 1.0, boa
 	);
 };
 
-/** Contador-gag "DAYS SINCE LAST …: N" — o número é o único vermelho (foco). */
-export const DaysSinceSign: React.FC<Omit<SignProps, 'lines'> & {what?: string; days: number | string}> = ({what = 'CRASH', days, ...p}) => (
+/**
+ * Contador-gag "DAYS SINCE LAST …: N".
+ * `accent`: pinta o número de vermelho — só use quando a placa for O ponto vermelho da cena
+ * (STYLE_GUIDE §10: 1 ponto de vermelho por cena). Padrão: preto.
+ */
+export const DaysSinceSign: React.FC<Omit<SignProps, 'lines'> & {what?: string; days: number | string; accent?: boolean}> = ({what = 'CRASH', days, accent = false, ...p}) => (
 	<Sign
 		width={1.5}
 		height={1.15}
@@ -124,7 +128,7 @@ export const DaysSinceSign: React.FC<Omit<SignProps, 'lines'> & {what?: string; 
 		lines={[
 			{text: 'DAYS SINCE', size: 0.17, gap: 0.0},
 			{text: `LAST ${what}:`, size: 0.17, gap: 0.02},
-			{text: String(days), size: 0.46, color: PALETTE.accent, gap: 0},
+			{text: String(days), size: 0.46, color: accent ? PALETTE.accent : PALETTE.ink, gap: 0},
 		]}
 	/>
 );

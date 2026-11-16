@@ -62,7 +62,7 @@ export const Grass: React.FC<GrassProps> = ({center = [0, 0], radius = 14, count
 				);
 			sh.fragmentShader = sh.fragmentShader
 				.replace('#include <common>', '#include <common>\nvarying float vH;')
-				.replace('#include <color_fragment>', '#include <color_fragment>\ndiffuseColor.rgb *= mix(0.45, 1.08, vH);');
+				.replace('#include <color_fragment>', '#include <color_fragment>\ndiffuseColor.rgb *= mix(0.6, 1.25, vH);');
 		};
 		mat.customProgramCacheKey = () => 'grass';
 		const g = bladeGeometry();
@@ -72,7 +72,7 @@ export const Grass: React.FC<GrassProps> = ({center = [0, 0], radius = 14, count
 		const col = new THREE.Color();
 		const cA = new THREE.Color(PALETTE.grass);
 		const cB = new THREE.Color(PALETTE.grassDark);
-		const cC = new THREE.Color(PALETTE.grassDry);
+		const cC = new THREE.Color(PALETTE.grassLight);
 		let n = 0;
 		let guard = 0;
 		while (n < count && guard++ < count * 6) {

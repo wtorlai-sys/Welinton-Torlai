@@ -4,8 +4,9 @@ import React, {useMemo} from 'react';
 import * as THREE from 'three';
 import {Environment} from '@react-three/drei';
 import {useFrame, useThree} from '@react-three/fiber';
-import {BlendFunction, BloomEffect, Effect, EffectComposer, EffectPass, RenderPass, ToneMappingEffect, ToneMappingMode} from 'postprocessing';
+import {BlendFunction, Effect, EffectComposer, EffectPass, RenderPass, SelectiveBloomEffect} from 'postprocessing';
 import {mulberry32} from '../style/random';
+import {PALETTE, REF} from '../style/constants';
 
 export type LightingPreset = 'dia' | 'entardecer';
 
@@ -31,37 +32,38 @@ type PresetDef = {
 
 type GradeParams = {contrast: number; saturation: number; shadowTint: [number, number, number]; highlightTint: [number, number, number]};
 
+// Valores de referência (STYLE_GUIDE §10). "entardecer" = noite/entardecer: sol a 10%, ambiente azulado.
 export const LIGHTING: Record<LightingPreset, PresetDef> = {
 	dia: {
-		skyTop: '#3C8EE0',
-		skyHorizon: '#CFE6F2',
+		skyTop: PALETTE.skyTop,
+		skyHorizon: PALETTE.skyHorizon,
 		ground: '#9DBF7A',
-		sunColor: '#FFE1B0',
-		sunIntensity: 3.6,
-		sunElevation: 24,
-		sunAzimuth: -58,
-		hemiSky: '#9CCBF2',
-		hemiGround: '#5E8F3C',
-		hemiIntensity: 0.55,
-		envIntensity: 0.55,
-		fog: [40, 320],
+		sunColor: REF.light.sunColor,
+		sunIntensity: REF.light.sunIntensity,
+		sunElevation: REF.light.sunElevation,
+		sunAzimuth: REF.light.sunAzimuth,
+		hemiSky: REF.light.hemiSky,
+		hemiGround: REF.light.hemiGround,
+		hemiIntensity: REF.light.hemiIntensity,
+		envIntensity: 0.5,
+		fog: [REF.light.fogNear, REF.light.fogFar],
 		exposure: 1.0,
 		bloom: false,
 		grade: {contrast: 1.1, saturation: 1.1, shadowTint: [-0.012, 0.0, 0.022], highlightTint: [0.02, 0.008, -0.012]},
 	},
 	entardecer: {
-		skyTop: '#23324F',
-		skyHorizon: '#8A8FA8',
-		ground: '#3A4038',
-		sunColor: '#FF9B5A',
-		sunIntensity: 1.4,
-		sunElevation: 6,
-		sunAzimuth: -70,
-		hemiSky: '#53627F',
-		hemiGround: '#2B3326',
-		hemiIntensity: 0.45,
+		skyTop: '#1E2740',
+		skyHorizon: PALETTE.nightBg,
+		ground: '#20283A',
+		sunColor: '#FFB27A',
+		sunIntensity: REF.light.sunIntensity * REF.light.night.sunFactor,
+		sunElevation: 10,
+		sunAzimuth: REF.light.sunAzimuth,
+		hemiSky: '#5A6FA0',
+		hemiGround: '#2A3340',
+		hemiIntensity: REF.light.hemiIntensity,
 		envIntensity: 0.35,
-		fog: [25, 220],
+		fog: [REF.light.fogNear, REF.light.fogFar],
 		exposure: 1.0,
 		bloom: true,
 		grade: {contrast: 1.12, saturation: 0.95, shadowTint: [-0.01, 0.0, 0.03], highlightTint: [0.025, 0.01, -0.01]},
@@ -122,8 +124,18 @@ export const GradientSky: React.FC<{preset: PresetDef; sunDir: THREE.Vector3; ra
 
 const gradeFrag = /* glsl */ `
 uniform float contrast; uniform float saturation; uniform vec3 shadowTint; uniform vec3 highlightTint;
+// Tone mapping: só o "ombro" do Khronos PBR Neutral (comprime acima de 0.8).
+// O Neutral completo subtrai 0.04 de todas as cores escuras (toe) e esmaga o asfalto #4A4F5A.
+vec3 shoulder(vec3 x){
+	const float start = 0.8;
+	const float d = 1.0 - start;
+	float peak = max(x.r, max(x.g, x.b));
+	if (peak < start) return x;
+	float newPeak = 1.0 - d * d / (peak + d - start);
+	return x * (newPeak / peak);
+}
 void mainImage(const in vec4 inputColor, const in vec2 uv, out vec4 outputColor){
-	vec3 c = pow(max(inputColor.rgb, 0.0), vec3(1.0/2.2));
+	vec3 c = pow(shoulder(max(inputColor.rgb, 0.0)), vec3(1.0/2.2));
 	float l = dot(c, vec3(0.2126, 0.7152, 0.0722));
 	c = mix(vec3(l), c, saturation);
 	c = (c - 0.5) * contrast + 0.5;
@@ -153,27 +165,59 @@ class GradeEffect extends Effect {
  * com frameloop="never" do Remotion o frame é desenhado antes dele existir (canvas vazio).
  * Aqui o composer nasce no useMemo e renderiza no useFrame (prioridade 1) do mesmo advance().
  */
+/** Camada usada pelo bloom seletivo. */
+export const BLOOM_LAYER = 11;
+const glowObjects = new Set<THREE.Object3D>();
+
+/** Marca os filhos como emissivos para o bloom (STYLE_GUIDE §4). Nada fora de <Glow> brilha. */
+export const Glow: React.FC<{children: React.ReactNode}> = ({children}) => {
+	const ref = React.useRef<THREE.Group>(null);
+	React.useLayoutEffect(() => {
+		const list: THREE.Object3D[] = [];
+		ref.current?.traverse((o) => {
+			if ((o as THREE.Mesh).isMesh || (o as THREE.Points).isPoints) {
+				glowObjects.add(o);
+				list.push(o);
+			}
+		});
+		return () => list.forEach((o) => glowObjects.delete(o));
+	});
+	return <group ref={ref}>{children}</group>;
+};
+
 export const PostFX: React.FC<{bloom: boolean; grade: GradeParams; multisampling?: number}> = ({bloom, grade, multisampling = 4}) => {
 	const gl = useThree((s) => s.gl);
 	const scene = useThree((s) => s.scene);
 	const camera = useThree((s) => s.camera);
 	const size = useThree((s) => s.size);
-	const composer = useMemo(() => {
+	const {composer, bloomFx} = useMemo(() => {
 		const c = new EffectComposer(gl, {multisampling, frameBufferType: THREE.HalfFloatType});
 		c.addPass(new RenderPass(scene, camera));
 		const effects: Effect[] = [];
-		// Limiar acima do branco HDR da cabeça (3.0): só emissivos fortes (lâmpadas/faíscas) brilham.
-		if (bloom) effects.push(new BloomEffect({mipmapBlur: true, luminanceThreshold: 4.5, luminanceSmoothing: 0.2, intensity: 1.1, radius: 0.7}));
-		effects.push(new ToneMappingEffect({mode: ToneMappingMode.NEUTRAL}));
+		// Bloom SELETIVO: só objetos dentro de <Glow> (lâmpadas, faíscas, faróis).
+		// Cabeça branca, placas e legendas nunca entram — por isso o threshold 0.8 é seguro.
+		let bloomFx: SelectiveBloomEffect | null = null;
+		if (bloom) {
+			bloomFx = new SelectiveBloomEffect(scene, camera, {
+				mipmapBlur: true,
+				luminanceThreshold: REF.light.night.bloomThreshold,
+				luminanceSmoothing: 0.15,
+				intensity: REF.light.night.bloomIntensity,
+				radius: 0.7,
+			});
+			bloomFx.selection.layer = BLOOM_LAYER;
+			effects.push(bloomFx);
+		}
 		effects.push(new GradeEffect(grade));
 		c.addPass(new EffectPass(camera, ...effects));
-		return c;
+		return {composer: c, bloomFx};
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [gl, scene, bloom, grade, multisampling]);
 	useMemo(() => composer.setSize(size.width, size.height), [composer, size.width, size.height]);
 	React.useEffect(() => () => composer.dispose(), [composer]);
 	useFrame((state) => {
 		composer.setMainCamera(state.camera);
+		if (bloomFx) bloomFx.selection.set(glowObjects);
 		composer.render();
 	}, 1);
 	return null;
@@ -195,6 +239,8 @@ export type LightingProps = {
 	post?: boolean;
 	/** força bloom on/off (default: o do preset) */
 	bloom?: boolean;
+	/** 2048–4096 (REF) */
+	shadowMapSize?: number;
 };
 
 export const sunDirection = (azimuthDeg: number, elevationDeg: number) => {
@@ -203,7 +249,7 @@ export const sunDirection = (azimuthDeg: number, elevationDeg: number) => {
 	return new THREE.Vector3(Math.sin(az) * Math.cos(el), Math.sin(el), Math.cos(az) * Math.cos(el)).normalize();
 };
 
-export const Lighting: React.FC<LightingProps> = ({preset = 'dia', focus = [0, 0, 0], shadowExtent = 18, sunAzimuth, sunElevation, post = true, bloom}) => {
+export const Lighting: React.FC<LightingProps> = ({preset = 'dia', focus = [0, 0, 0], shadowExtent = 18, sunAzimuth, sunElevation, post = true, bloom, shadowMapSize = REF.light.shadowMapSize}) => {
 	const p = LIGHTING[preset];
 	const sunDir = useMemo(() => sunDirection(sunAzimuth ?? p.sunAzimuth, sunElevation ?? p.sunElevation), [p, sunAzimuth, sunElevation]);
 	const target = useMemo(() => new THREE.Object3D(), []);
@@ -230,10 +276,10 @@ export const Lighting: React.FC<LightingProps> = ({preset = 'dia', focus = [0, 0
 				position={sunPos}
 				target={target}
 				castShadow
-				shadow-mapSize={[2048, 2048]}
-				shadow-bias={-0.00035}
-				shadow-normalBias={0.025}
-				shadow-radius={4}
+				shadow-mapSize={[shadowMapSize, shadowMapSize]}
+				shadow-bias={REF.light.shadowBias}
+				shadow-normalBias={0.02}
+				shadow-radius={REF.light.shadowRadius}
 				shadow-camera-left={-shadowExtent}
 				shadow-camera-right={shadowExtent}
 				shadow-camera-top={shadowExtent}
@@ -260,7 +306,7 @@ export const Sparks: React.FC<{
 	life?: number;
 	color?: string;
 	position?: [number, number, number];
-}> = ({t, count = 60, seed = 7, speed = 5, life = 0.8, color = '#FFB347', position = [0, 0, 0]}) => {
+}> = ({t, count = 60, seed = 7, speed = 5, life = 0.8, color = PALETTE.emissive, position = [0, 0, 0]}) => {
 	const {geometry, vel, delay} = useMemo(() => {
 		const r = mulberry32(seed);
 		const v: THREE.Vector3[] = [];
@@ -277,7 +323,7 @@ export const Sparks: React.FC<{
 		return {geometry: g, vel: v, delay: d};
 	}, [count, seed, speed]);
 	const mat = useMemo(
-		() => new THREE.PointsMaterial({color: new THREE.Color(color).multiplyScalar(14), size: 0.06, sizeAttenuation: true, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending}),
+		() => new THREE.PointsMaterial({color: new THREE.Color(color).multiplyScalar(6), size: 0.06, sizeAttenuation: true, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending}),
 		[color],
 	);
 	if (t < 0 || t > life + 0.2) return null;
@@ -289,5 +335,9 @@ export const Sparks: React.FC<{
 	}
 	pos.needsUpdate = true;
 	mat.opacity = 1 - Math.min(1, t / life);
-	return <points geometry={geometry} material={mat} position={position} frustumCulled={false} />;
+	return (
+		<Glow>
+			<points geometry={geometry} material={mat} position={position} frustumCulled={false} />
+		</Glow>
+	);
 };

@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react';
 import {AbsoluteFill, continueRender, delayRender, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {activeWordIndex, parseTimestamps, Word} from '../lib/timestamps';
 import {CAPTION_FONT, ensureFonts} from '../style/fonts';
-import {SAFE} from '../style/constants';
+import {REF, SAFE} from '../style/constants';
 import {clamp, easeOutCubic} from '../style/easing';
 
 export type CaptionsProps = {
@@ -23,7 +23,7 @@ export type CaptionsProps = {
 /** Mantém a legenda dentro da área segura (8% topo / 12% base). */
 const safeY = (y: number) => clamp(y, SAFE.top + 0.05, 1 - SAFE.bottom - 0.05);
 
-export const Captions: React.FC<CaptionsProps> = ({words, src, captionY = 0.65, offset = 0, fontSize = 112, highlight = [], highlightColor = '#FFD23F'}) => {
+export const Captions: React.FC<CaptionsProps> = ({words, src, captionY = REF.caption.y, offset = 0, fontSize = REF.caption.fontSize, highlight = [], highlightColor = '#FFD23F'}) => {
 	const frame = useCurrentFrame();
 	const {fps, width, height} = useVideoConfig();
 	const [loaded, setLoaded] = useState<Word[] | null>(words ?? null);
@@ -52,7 +52,8 @@ export const Captions: React.FC<CaptionsProps> = ({words, src, captionY = 0.65, 
 	const scale = 0.8 + 0.2 * easeOutCubic(k);
 	const clean = w.text.replace(/[.,;:!?…"“”]/g, '').toLowerCase();
 	const isHi = highlight.map((h) => h.toLowerCase()).includes(clean);
-	const stroke = Math.round(fontSize * 0.16); // ~18 px => contorno visível de ~9 px por fora
+	// paint-order: stroke fill => metade do traço fica por fora: 2×9 px = contorno visível de 9 px
+	const stroke = REF.caption.strokePx * 2;
 
 	return (
 		<AbsoluteFill style={{pointerEvents: 'none'}}>
@@ -79,7 +80,7 @@ export const Captions: React.FC<CaptionsProps> = ({words, src, captionY = 0.65, 
 						color: isHi ? highlightColor : '#FFFFFF',
 						WebkitTextStroke: `${stroke}px #000`,
 						paintOrder: 'stroke fill',
-						textShadow: '0 10px 0 rgba(0,0,0,0.55), 0 14px 24px rgba(0,0,0,0.35)',
+						textShadow: `0 ${REF.caption.shadowPx}px 0 rgba(0,0,0,0.85)`,
 						whiteSpace: 'nowrap',
 					}}
 				>

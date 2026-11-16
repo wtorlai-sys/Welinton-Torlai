@@ -14,7 +14,7 @@ import {
 	makeOutlineMaterial,
 	makeToonMaterial,
 } from '../style/materials';
-import {PALETTE} from '../style/constants';
+import {PALETTE, REF} from '../style/constants';
 import {lerp} from '../style/easing';
 
 /* ------------------------------------------------------------------ */
@@ -59,22 +59,32 @@ export type PoseName = 'stand' | 'sit' | 'sitHug' | 'wave' | 'shrug' | 'point' |
 /* Proporções (m)                                                      */
 /* ------------------------------------------------------------------ */
 
+/**
+ * Rig em "unidades de desenho" (cabeça r=0.24). O personagem inteiro é escalado por
+ * CHAR_SCALE para medir REF.character.height (1,0 m) com a cabeça = 35% da altura.
+ */
 export const RIG = {
-	thigh: 0.3,
-	shin: 0.3,
-	upperArm: 0.24,
-	foreArm: 0.24,
+	thigh: 0.19,
+	shin: 0.19,
+	upperArm: 0.19,
+	foreArm: 0.19,
 	limbR: 0.024,
-	hipY: 0.62,
-	hipX: 0.085,
-	bodyR: 0.2,
-	bodyLen: 0.32,
-	bodyY: 0.9,
-	shoulderY: 1.07,
-	shoulderX: 0.185,
+	hipY: 0.4,
+	hipX: 0.075,
+	bodyR: 0.18,
+	bodyLen: 0.18,
+	bodyY: 0.63,
+	shoulderY: 0.8,
+	shoulderX: 0.165,
 	headR: 0.24,
-	headY: 1.46,
+	headY: 1.131,
 } as const;
+
+/** altura de desenho (topo da cabeça) → 1,0 m reais */
+const DESIGN_HEIGHT = RIG.headY + RIG.headR; // 1.371 => cabeça (0.48) = 35%
+export const CHAR_SCALE = REF.character.height / DESIGN_HEIGHT;
+/** altura real (m) do centro da cabeça: em pé e sentado — use para mirar a câmera */
+export const HEAD_HEIGHT = {stand: RIG.headY * CHAR_SCALE, sit: (RIG.headY - 0.34) * CHAR_SCALE};
 
 /* ------------------------------------------------------------------ */
 /* Poses                                                               */
@@ -102,19 +112,19 @@ export const getPose = (name: PoseName, t = 0): Pose => {
 		case 'stand':
 			return {...BASE, lShoulder: [0, 12 + Math.sin(t * 2) * 1.5], rShoulder: [0, 12 + Math.sin(t * 2 + 1) * 1.5]};
 		case 'sit':
-			// Sentado na grama, joelhos para cima, mãos apoiadas atrás.
+			// Sentado na grama com as pernas esticadas para frente, mãos sobre as coxas.
 			return {
 				...BASE,
-				lHip: [135, 14],
-				rHip: [135, 14],
-				lKnee: 150,
-				rKnee: 150,
-				lShoulder: [-35, 22],
-				rShoulder: [-35, 22],
-				lElbow: 0,
-				rElbow: 0,
-				spine: -10,
-				rootY: -0.545,
+				lHip: [88, 10],
+				rHip: [88, 10],
+				lKnee: 12,
+				rKnee: 12,
+				lShoulder: [38, 8],
+				rShoulder: [38, 8],
+				lElbow: 35,
+				rElbow: 35,
+				spine: -6,
+				rootY: -0.34,
 			};
 		case 'sitHug':
 			// Sentado abraçando os joelhos.
@@ -129,7 +139,7 @@ export const getPose = (name: PoseName, t = 0): Pose => {
 				lElbow: 55,
 				rElbow: 55,
 				spine: 8,
-				rootY: -0.545,
+				rootY: -0.34,
 			};
 		case 'wave': {
 			const w = Math.sin(t * 10) * 18;
@@ -381,7 +391,7 @@ const hatGeo = {
 	beanie: new THREE.SphereGeometry(RIG.headR * 1.06, 40, 20, 0, Math.PI * 2, 0, Math.PI * 0.42),
 	beanieCuff: new THREE.TorusGeometry(RIG.headR * 0.98, 0.035, 12, 40).rotateX(Math.PI / 2),
 	pom: new THREE.IcosahedronGeometry(0.06, 1),
-	vest: new THREE.CylinderGeometry(RIG.bodyR * 1.07, RIG.bodyR * 1.07, 0.36, 32, 1, true),
+	vest: new THREE.CylinderGeometry(RIG.bodyR * 1.07, RIG.bodyR * 1.07, 0.3, 32, 1, true),
 	vestBand: new THREE.CylinderGeometry(RIG.bodyR * 1.085, RIG.bodyR * 1.085, 0.045, 32, 1, true),
 };
 
@@ -465,22 +475,23 @@ export const Character: React.FC<CharacterProps> = ({
 			{/* Sombra de contato — fica no chão, fora do deslocamento da pose. */}
 			{(shadow === 'contact' || shadow === 'both') && (
 				<ContactShadows
-					position={[0, 0.012, sitting ? 0.05 : 0]}
-					scale={sitting ? 1.9 : 1.5}
+					position={[0, 0.012, sitting ? 0.04 : 0]}
+					scale={sitting ? 1.4 : 1.1}
 					resolution={256}
-					blur={1.6}
-					far={sitting ? 0.9 : 1.2}
-					opacity={0.85}
+					blur={REF.light.contactBlur}
+					far={sitting ? 0.6 : 0.9}
+					opacity={REF.light.contactOpacity}
 					color="#0B1A10"
 					frames={Infinity}
 				/>
 			)}
 			{(shadow === 'blob' || shadow === 'both') && (
-				<mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.01, sitting ? 0.08 : 0]} scale={sitting ? [0.95, 1.1, 1] : [0.7, 0.7, 1]} material={makeBlobShadowMaterial()}>
+				<mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.01, sitting ? 0.06 : 0]} scale={sitting ? [0.7, 0.8, 1] : [0.5, 0.5, 1]} material={makeBlobShadowMaterial()}>
 					<planeGeometry />
 				</mesh>
 			)}
 
+			<group scale={CHAR_SCALE}>
 			<group position={[0, p.rootY, 0]} scale={[1 / Math.sqrt(squash), squash, 1 / Math.sqrt(squash)]}>
 				{/* Pernas (quadril → joelho) */}
 				<Limb root={[RIG.hipX, RIG.hipY, 0]} fwd={p.lHip[0]} side={p.lHip[1]} sideSign={1} bend={p.lKnee} bendDir={-1} upper={geo.thigh} lower={geo.shin} upperLen={RIG.thigh} lowerLen={RIG.shin} end="foot" />
@@ -490,7 +501,7 @@ export const Character: React.FC<CharacterProps> = ({
 				<group position={[0, RIG.hipY, 0]} rotation={[D(p.spine), 0, 0]}>
 					<group position={[0, -RIG.hipY, 0]}>
 						<Outlined geometry={geo.body} material={makeToonMaterial(outfit.body)} position={[0, RIG.bodyY, 0]} />
-						{outfit.vest && <Vest color={outfit.vestColor ?? PALETTE.orangeVest} />}
+						{outfit.vest && <Vest color={outfit.vestColor ?? PALETTE.vest} />}
 
 						{/* Braços (ombro → cotovelo) */}
 						<Limb root={[RIG.shoulderX, RIG.shoulderY, 0]} fwd={p.lShoulder[0]} side={p.lShoulder[1]} sideSign={1} bend={p.lElbow} bendDir={1} upper={geo.upperArm} lower={geo.foreArm} upperLen={RIG.upperArm} lowerLen={RIG.foreArm} end="hand" />
@@ -505,6 +516,7 @@ export const Character: React.FC<CharacterProps> = ({
 						</group>
 					</group>
 				</group>
+			</group>
 			</group>
 		</group>
 	);

@@ -2,13 +2,15 @@
 import React from 'react';
 import * as THREE from 'three';
 import {RoundedBox} from '@react-three/drei';
+import {Glow} from '../Lighting';
+import {PALETTE} from '../../style/constants';
 import {makeEmissiveMaterial, makeGlassMaterial, makeMetalMaterial, makePaintMaterial, makeRubberMaterial} from '../../style/materials';
 
 const wheelGeo = new THREE.CylinderGeometry(0.34, 0.34, 0.24, 24).rotateZ(Math.PI / 2);
 const hubGeo = new THREE.CylinderGeometry(0.2, 0.2, 0.25, 16).rotateZ(Math.PI / 2);
 
 export const Car: React.FC<{color?: string; /** metros percorridos (gira as rodas) */ distance?: number; lights?: boolean} & Omit<React.ComponentProps<'group'>, 'children'>> = ({
-	color = '#F5C518',
+	color = PALETTE.yellow,
 	distance = 0,
 	lights = false,
 	...g
@@ -39,16 +41,19 @@ export const Car: React.FC<{color?: string; /** metros percorridos (gira as roda
 				</mesh>
 			))}
 			{/* faróis / lanternas */}
-			{[0.6, -0.6].map((x) => (
+			{[0.6, -0.6].map((x) => {
+				const lamps = (
 				<React.Fragment key={x}>
-					<mesh position={[x, 0.7, 2.101]} material={lights ? makeEmissiveMaterial('#FFF4D6', 10) : makeMetalMaterial('#E8EEF2')}>
+					<mesh position={[x, 0.7, 2.101]} material={lights ? makeEmissiveMaterial(PALETTE.emissive, 6) : makeMetalMaterial('#E8EEF2')}>
 						<planeGeometry args={[0.34, 0.14]} />
 					</mesh>
 					<mesh position={[x, 0.72, -2.101]} rotation={[0, Math.PI, 0]} material={makeEmissiveMaterial('#7A1E14', lights ? 6 : 0.6)}>
 						<planeGeometry args={[0.3, 0.12]} />
 					</mesh>
 				</React.Fragment>
-			))}
+				);
+				return lights ? <Glow key={x}>{lamps}</Glow> : lamps;
+			})}
 			{/* para-choques */}
 			<mesh position={[0, 0.38, 2.12]} material={makeRubberMaterial()} castShadow>
 				<boxGeometry args={[1.7, 0.16, 0.12]} />

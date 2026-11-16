@@ -26,7 +26,7 @@ export const CAST = {
 		id: 'tonho',
 		nome: 'Tonho',
 		papel: 'trabalhador / "especialista"',
-		outfit: {body: PALETTE.blue, hat: 'capacete', hatColor: PALETTE.yellow, vest: true, vestColor: PALETTE.orangeVest},
+		outfit: {body: PALETTE.blue, hat: 'capacete', hatColor: PALETTE.yellow, vest: true, vestColor: PALETTE.vest},
 		expressaoPadrao: 'neutro',
 	},
 	/** Cientista/explicadora do fato real: gorro roxo. */
@@ -42,7 +42,7 @@ export const CAST = {
 		id: 'figurante',
 		nome: 'Figurante',
 		papel: 'extra',
-		outfit: {body: PALETTE.blue, hat: 'none'},
+		outfit: {body: PALETTE.offWhite, hat: 'none'},
 		expressaoPadrao: 'neutro',
 	},
 } satisfies Record<string, CastMember>;
