@@ -1,0 +1,1797 @@
+{
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 5.88,
+   "text": " Você pode conseguir mil visualizações no YouTube e ganhar menos de R$ 5,00,"
+  },
+  {
+   "start": 5.88,
+   "end": 8.86,
+   "text": " mas também pode ganhar muito mais do que isso."
+  },
+  {
+   "start": 9.16,
+   "end": 10.86,
+   "text": " E não, não é mentira."
+  },
+  {
+   "start": 11.18,
+   "end": 16.18,
+   "text": " Vou te mostrar quanto um canal recém-monetizado pode receber por mil visualizações."
+  },
+  {
+   "start": 16.52,
+   "end": 18.26,
+   "text": " Primeiro, uma coisa importante."
+  },
+  {
+   "start": 18.66,
+   "end": 21.7,
+   "text": " O YouTube não paga um valor fixo por visualização,"
+  },
+  {
+   "start": 22.02,
+   "end": 27.06,
+   "text": " mas, para ter uma ideia, em vídeos tradicionais, com público principalmente brasileiro,"
+  },
+  {
+   "start": 27.06,
+   "end": 33.12,
+   "text": " uma estimativa comum para canais menores fica entre R$ 1,00 e R$ 5,00 a cada mil visualizações."
+  },
+  {
+   "start": 33.52,
+   "end": 34.66,
+   "text": " Agora, imagina só."
+  },
+  {
+   "start": 34.98,
+   "end": 40.08,
+   "text": " Se seu canal acabou de ser monetizado e um vídeo alcançar 10 mil visualizações,"
+  },
+  {
+   "start": 40.4,
+   "end": 42.82,
+   "text": " você pode receber entre R$ 10,50."
+  },
+  {
+   "start": 43.56,
+   "end": 47.86,
+   "text": " Com 100 mil visualizações, esse valor pode chegar a R$ 500."
+  },
+  {
+   "start": 48.58,
+   "end": 51.82,
+   "text": " E se o vídeo alcançar 1 milhão de visualizações?"
+  },
+  {
+   "start": 52.18,
+   "end": 55.08,
+   "text": " Você poderia ganhar entre R$ 1,00 e R$ 5,00."
+  },
+  {
+   "start": 55.839999999999996,
+   "end": 60.14,
+   "text": " Mas calma, porque existe um detalhe que muda completamente essa conta."
+  },
+  {
+   "start": 60.54,
+   "end": 63.56,
+   "text": " O assunto do seu canal influencia muito no pagamento."
+  },
+  {
+   "start": 63.94,
+   "end": 65.54,
+   "text": " Um canal de finanças, por exemplo,"
+  },
+  {
+   "start": 65.78,
+   "end": 70.54,
+   "text": " pode receber muito mais por mil visualizações do que um canal de entretenimento ou humor."
+  },
+  {
+   "start": 70.92,
+   "end": 72.84,
+   "text": " E tem outra diferença enorme."
+  },
+  {
+   "start": 73.26,
+   "end": 77.5,
+   "text": " Os shorts geralmente pagam muito menos do que os vídeos tradicionais."
+  },
+  {
+   "start": 77.74,
+   "end": 79.22,
+   "text": " E sabe o que é mais interessante?"
+  },
+  {
+   "start": 79.62,
+   "end": 83.46,
+   "text": " Um canal que acabou de ser monetizado não recebe uma tarifa especial."
+  },
+  {
+   "start": 83.46,
+   "end": 87.5,
+   "text": " O pagamento depende do público, do conteúdo, dos anúncios"
+  },
+  {
+   "start": 87.5,
+   "end": 90.78,
+   "text": " e de quantas visualizações realmente geram receita."
+  },
+  {
+   "start": 91.18,
+   "end": 95.64,
+   "text": " Agora me conta, você está começando um canal no YouTube ou já conseguiu monetizar?"
+  },
+  {
+   "start": 96.06,
+   "end": 99.96,
+   "text": " Comenta aqui embaixo, porque esse pode ser o primeiro de vários vídeos"
+  },
+  {
+   "start": 99.96,
+   "end": 104.12,
+   "text": " mostrando o quanto realmente dá para ganhar criando conteúdo na internet."
+  }
+ ],
+ "words": [
+  {
+   "text": "Você",
+   "start": 0.0,
+   "end": 0.48,
+   "type": "word"
+  },
+  {
+   "text": "pode",
+   "start": 0.48,
+   "end": 0.76,
+   "type": "word"
+  },
+  {
+   "text": "conseguir",
+   "start": 0.76,
+   "end": 1.2,
+   "type": "word"
+  },
+  {
+   "text": "mil",
+   "start": 1.2,
+   "end": 1.68,
+   "type": "word"
+  },
+  {
+   "text": "visualizações",
+   "start": 1.68,
+   "end": 2.52,
+   "type": "word"
+  },
+  {
+   "text": "no",
+   "start": 2.52,
+   "end": 2.66,
+   "type": "word"
+  },
+  {
+   "text": "YouTube",
+   "start": 2.66,
+   "end": 3.1,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 3.1,
+   "end": 3.54,
+   "type": "word"
+  },
+  {
+   "text": "ganhar",
+   "start": 3.54,
+   "end": 3.9,
+   "type": "word"
+  },
+  {
+   "text": "menos",
+   "start": 3.9,
+   "end": 4.42,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 4.42,
+   "end": 4.78,
+   "type": "word"
+  },
+  {
+   "text": "R",
+   "start": 4.78,
+   "end": 5.18,
+   "type": "word"
+  },
+  {
+   "text": "$",
+   "start": 5.18,
+   "end": 5.18,
+   "type": "word"
+  },
+  {
+   "text": "5",
+   "start": 5.18,
+   "end": 5.18,
+   "type": "word"
+  },
+  {
+   "text": ",00,",
+   "start": 5.18,
+   "end": 5.88,
+   "type": "word"
+  },
+  {
+   "text": "mas",
+   "start": 5.88,
+   "end": 6.2,
+   "type": "word"
+  },
+  {
+   "text": "também",
+   "start": 6.2,
+   "end": 6.6,
+   "type": "word"
+  },
+  {
+   "text": "pode",
+   "start": 6.6,
+   "end": 6.8,
+   "type": "word"
+  },
+  {
+   "text": "ganhar",
+   "start": 6.8,
+   "end": 7.2,
+   "type": "word"
+  },
+  {
+   "text": "muito",
+   "start": 7.2,
+   "end": 7.84,
+   "type": "word"
+  },
+  {
+   "text": "mais",
+   "start": 7.84,
+   "end": 8.2,
+   "type": "word"
+  },
+  {
+   "text": "do",
+   "start": 8.2,
+   "end": 8.38,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 8.38,
+   "end": 8.56,
+   "type": "word"
+  },
+  {
+   "text": "isso.",
+   "start": 8.56,
+   "end": 8.86,
+   "type": "word"
+  },
+  {
+   "text": "E",
+   "start": 9.16,
+   "end": 9.44,
+   "type": "word"
+  },
+  {
+   "text": "não,",
+   "start": 9.44,
+   "end": 9.8,
+   "type": "word"
+  },
+  {
+   "text": "não",
+   "start": 9.9,
+   "end": 10.16,
+   "type": "word"
+  },
+  {
+   "text": "é",
+   "start": 10.16,
+   "end": 10.38,
+   "type": "word"
+  },
+  {
+   "text": "mentira.",
+   "start": 10.38,
+   "end": 10.86,
+   "type": "word"
+  },
+  {
+   "text": "Vou",
+   "start": 11.18,
+   "end": 11.32,
+   "type": "word"
+  },
+  {
+   "text": "te",
+   "start": 11.32,
+   "end": 11.5,
+   "type": "word"
+  },
+  {
+   "text": "mostrar",
+   "start": 11.5,
+   "end": 11.96,
+   "type": "word"
+  },
+  {
+   "text": "quanto",
+   "start": 11.96,
+   "end": 12.36,
+   "type": "word"
+  },
+  {
+   "text": "um",
+   "start": 12.36,
+   "end": 12.5,
+   "type": "word"
+  },
+  {
+   "text": "canal",
+   "start": 12.5,
+   "end": 12.82,
+   "type": "word"
+  },
+  {
+   "text": "recém",
+   "start": 12.82,
+   "end": 13.24,
+   "type": "word"
+  },
+  {
+   "text": "-monetizado",
+   "start": 13.24,
+   "end": 13.92,
+   "type": "word"
+  },
+  {
+   "text": "pode",
+   "start": 13.92,
+   "end": 14.18,
+   "type": "word"
+  },
+  {
+   "text": "receber",
+   "start": 14.18,
+   "end": 14.64,
+   "type": "word"
+  },
+  {
+   "text": "por",
+   "start": 14.64,
+   "end": 14.98,
+   "type": "word"
+  },
+  {
+   "text": "mil",
+   "start": 14.98,
+   "end": 15.24,
+   "type": "word"
+  },
+  {
+   "text": "visualizações.",
+   "start": 15.24,
+   "end": 16.18,
+   "type": "word"
+  },
+  {
+   "text": "Primeiro,",
+   "start": 16.52,
+   "end": 17.14,
+   "type": "word"
+  },
+  {
+   "text": "uma",
+   "start": 17.26,
+   "end": 17.4,
+   "type": "word"
+  },
+  {
+   "text": "coisa",
+   "start": 17.4,
+   "end": 17.66,
+   "type": "word"
+  },
+  {
+   "text": "importante.",
+   "start": 17.66,
+   "end": 18.26,
+   "type": "word"
+  },
+  {
+   "text": "O",
+   "start": 18.66,
+   "end": 18.76,
+   "type": "word"
+  },
+  {
+   "text": "YouTube",
+   "start": 18.76,
+   "end": 19.22,
+   "type": "word"
+  },
+  {
+   "text": "não",
+   "start": 19.22,
+   "end": 19.66,
+   "type": "word"
+  },
+  {
+   "text": "paga",
+   "start": 19.66,
+   "end": 19.96,
+   "type": "word"
+  },
+  {
+   "text": "um",
+   "start": 19.96,
+   "end": 20.1,
+   "type": "word"
+  },
+  {
+   "text": "valor",
+   "start": 20.1,
+   "end": 20.42,
+   "type": "word"
+  },
+  {
+   "text": "fixo",
+   "start": 20.42,
+   "end": 20.8,
+   "type": "word"
+  },
+  {
+   "text": "por",
+   "start": 20.8,
+   "end": 21.06,
+   "type": "word"
+  },
+  {
+   "text": "visualização,",
+   "start": 21.06,
+   "end": 21.7,
+   "type": "word"
+  },
+  {
+   "text": "mas,",
+   "start": 22.02,
+   "end": 22.48,
+   "type": "word"
+  },
+  {
+   "text": "para",
+   "start": 22.58,
+   "end": 22.7,
+   "type": "word"
+  },
+  {
+   "text": "ter",
+   "start": 22.7,
+   "end": 22.88,
+   "type": "word"
+  },
+  {
+   "text": "uma",
+   "start": 22.88,
+   "end": 23.12,
+   "type": "word"
+  },
+  {
+   "text": "ideia,",
+   "start": 23.12,
+   "end": 23.42,
+   "type": "word"
+  },
+  {
+   "text": "em",
+   "start": 23.7,
+   "end": 23.88,
+   "type": "word"
+  },
+  {
+   "text": "vídeos",
+   "start": 23.88,
+   "end": 24.22,
+   "type": "word"
+  },
+  {
+   "text": "tradicionais,",
+   "start": 24.22,
+   "end": 24.96,
+   "type": "word"
+  },
+  {
+   "text": "com",
+   "start": 25.06,
+   "end": 25.18,
+   "type": "word"
+  },
+  {
+   "text": "público",
+   "start": 25.18,
+   "end": 25.54,
+   "type": "word"
+  },
+  {
+   "text": "principalmente",
+   "start": 25.54,
+   "end": 26.42,
+   "type": "word"
+  },
+  {
+   "text": "brasileiro,",
+   "start": 26.42,
+   "end": 27.06,
+   "type": "word"
+  },
+  {
+   "text": "uma",
+   "start": 27.06,
+   "end": 27.48,
+   "type": "word"
+  },
+  {
+   "text": "estimativa",
+   "start": 27.48,
+   "end": 28.02,
+   "type": "word"
+  },
+  {
+   "text": "comum",
+   "start": 28.02,
+   "end": 28.4,
+   "type": "word"
+  },
+  {
+   "text": "para",
+   "start": 28.4,
+   "end": 28.66,
+   "type": "word"
+  },
+  {
+   "text": "canais",
+   "start": 28.66,
+   "end": 28.98,
+   "type": "word"
+  },
+  {
+   "text": "menores",
+   "start": 28.98,
+   "end": 29.54,
+   "type": "word"
+  },
+  {
+   "text": "fica",
+   "start": 29.54,
+   "end": 29.8,
+   "type": "word"
+  },
+  {
+   "text": "entre",
+   "start": 29.8,
+   "end": 30.22,
+   "type": "word"
+  },
+  {
+   "text": "R",
+   "start": 30.22,
+   "end": 30.56,
+   "type": "word"
+  },
+  {
+   "text": "$",
+   "start": 30.56,
+   "end": 30.56,
+   "type": "word"
+  },
+  {
+   "text": "1",
+   "start": 30.56,
+   "end": 30.58,
+   "type": "word"
+  },
+  {
+   "text": ",00",
+   "start": 30.58,
+   "end": 30.76,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 30.76,
+   "end": 30.76,
+   "type": "word"
+  },
+  {
+   "text": "R",
+   "start": 30.76,
+   "end": 30.9,
+   "type": "word"
+  },
+  {
+   "text": "$",
+   "start": 30.9,
+   "end": 30.9,
+   "type": "word"
+  },
+  {
+   "text": "5",
+   "start": 30.9,
+   "end": 31.14,
+   "type": "word"
+  },
+  {
+   "text": ",00",
+   "start": 31.14,
+   "end": 31.42,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 31.42,
+   "end": 31.68,
+   "type": "word"
+  },
+  {
+   "text": "cada",
+   "start": 31.68,
+   "end": 31.92,
+   "type": "word"
+  },
+  {
+   "text": "mil",
+   "start": 31.92,
+   "end": 32.16,
+   "type": "word"
+  },
+  {
+   "text": "visualizações.",
+   "start": 32.16,
+   "end": 33.12,
+   "type": "word"
+  },
+  {
+   "text": "Agora,",
+   "start": 33.52,
+   "end": 33.78,
+   "type": "word"
+  },
+  {
+   "text": "imagina",
+   "start": 33.92,
+   "end": 34.38,
+   "type": "word"
+  },
+  {
+   "text": "só.",
+   "start": 34.38,
+   "end": 34.66,
+   "type": "word"
+  },
+  {
+   "text": "Se",
+   "start": 34.98,
+   "end": 35.14,
+   "type": "word"
+  },
+  {
+   "text": "seu",
+   "start": 35.14,
+   "end": 35.32,
+   "type": "word"
+  },
+  {
+   "text": "canal",
+   "start": 35.32,
+   "end": 35.62,
+   "type": "word"
+  },
+  {
+   "text": "acabou",
+   "start": 35.62,
+   "end": 36.12,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 36.12,
+   "end": 36.34,
+   "type": "word"
+  },
+  {
+   "text": "ser",
+   "start": 36.34,
+   "end": 36.5,
+   "type": "word"
+  },
+  {
+   "text": "monetizado",
+   "start": 36.5,
+   "end": 37.18,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 37.18,
+   "end": 37.42,
+   "type": "word"
+  },
+  {
+   "text": "um",
+   "start": 37.42,
+   "end": 37.56,
+   "type": "word"
+  },
+  {
+   "text": "vídeo",
+   "start": 37.56,
+   "end": 37.74,
+   "type": "word"
+  },
+  {
+   "text": "alcançar",
+   "start": 37.74,
+   "end": 38.42,
+   "type": "word"
+  },
+  {
+   "text": "10",
+   "start": 38.42,
+   "end": 38.92,
+   "type": "word"
+  },
+  {
+   "text": "mil",
+   "start": 38.92,
+   "end": 39.14,
+   "type": "word"
+  },
+  {
+   "text": "visualizações,",
+   "start": 39.14,
+   "end": 40.08,
+   "type": "word"
+  },
+  {
+   "text": "você",
+   "start": 40.4,
+   "end": 40.58,
+   "type": "word"
+  },
+  {
+   "text": "pode",
+   "start": 40.58,
+   "end": 40.86,
+   "type": "word"
+  },
+  {
+   "text": "receber",
+   "start": 40.86,
+   "end": 41.24,
+   "type": "word"
+  },
+  {
+   "text": "entre",
+   "start": 41.24,
+   "end": 41.58,
+   "type": "word"
+  },
+  {
+   "text": "R",
+   "start": 41.58,
+   "end": 41.92,
+   "type": "word"
+  },
+  {
+   "text": "$",
+   "start": 41.92,
+   "end": 41.92,
+   "type": "word"
+  },
+  {
+   "text": "10",
+   "start": 41.92,
+   "end": 42.12,
+   "type": "word"
+  },
+  {
+   "text": ",50.",
+   "start": 42.12,
+   "end": 42.82,
+   "type": "word"
+  },
+  {
+   "text": "Com",
+   "start": 43.56,
+   "end": 43.96,
+   "type": "word"
+  },
+  {
+   "text": "100",
+   "start": 43.96,
+   "end": 44.38,
+   "type": "word"
+  },
+  {
+   "text": "mil",
+   "start": 44.38,
+   "end": 44.62,
+   "type": "word"
+  },
+  {
+   "text": "visualizações,",
+   "start": 44.62,
+   "end": 45.58,
+   "type": "word"
+  },
+  {
+   "text": "esse",
+   "start": 45.86,
+   "end": 46.08,
+   "type": "word"
+  },
+  {
+   "text": "valor",
+   "start": 46.08,
+   "end": 46.38,
+   "type": "word"
+  },
+  {
+   "text": "pode",
+   "start": 46.38,
+   "end": 46.66,
+   "type": "word"
+  },
+  {
+   "text": "chegar",
+   "start": 46.66,
+   "end": 46.98,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 46.98,
+   "end": 47.16,
+   "type": "word"
+  },
+  {
+   "text": "R",
+   "start": 47.16,
+   "end": 47.86,
+   "type": "word"
+  },
+  {
+   "text": "$",
+   "start": 47.86,
+   "end": 47.86,
+   "type": "word"
+  },
+  {
+   "text": "500.",
+   "start": 47.86,
+   "end": 47.86,
+   "type": "word"
+  },
+  {
+   "text": "E",
+   "start": 48.58,
+   "end": 48.8,
+   "type": "word"
+  },
+  {
+   "text": "se",
+   "start": 48.8,
+   "end": 49.02,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 49.02,
+   "end": 49.18,
+   "type": "word"
+  },
+  {
+   "text": "vídeo",
+   "start": 49.18,
+   "end": 49.38,
+   "type": "word"
+  },
+  {
+   "text": "alcançar",
+   "start": 49.38,
+   "end": 49.98,
+   "type": "word"
+  },
+  {
+   "text": "1",
+   "start": 49.98,
+   "end": 50.34,
+   "type": "word"
+  },
+  {
+   "text": "milhão",
+   "start": 50.34,
+   "end": 50.74,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 50.74,
+   "end": 51.02,
+   "type": "word"
+  },
+  {
+   "text": "visualizações?",
+   "start": 51.02,
+   "end": 51.82,
+   "type": "word"
+  },
+  {
+   "text": "Você",
+   "start": 52.18,
+   "end": 52.44,
+   "type": "word"
+  },
+  {
+   "text": "poderia",
+   "start": 52.44,
+   "end": 52.78,
+   "type": "word"
+  },
+  {
+   "text": "ganhar",
+   "start": 52.78,
+   "end": 53.14,
+   "type": "word"
+  },
+  {
+   "text": "entre",
+   "start": 53.14,
+   "end": 53.56,
+   "type": "word"
+  },
+  {
+   "text": "R",
+   "start": 53.56,
+   "end": 53.96,
+   "type": "word"
+  },
+  {
+   "text": "$",
+   "start": 53.96,
+   "end": 53.96,
+   "type": "word"
+  },
+  {
+   "text": "1",
+   "start": 53.96,
+   "end": 53.96,
+   "type": "word"
+  },
+  {
+   "text": ",00",
+   "start": 53.96,
+   "end": 54.28,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 54.28,
+   "end": 54.28,
+   "type": "word"
+  },
+  {
+   "text": "R",
+   "start": 54.28,
+   "end": 54.48,
+   "type": "word"
+  },
+  {
+   "text": "$",
+   "start": 54.48,
+   "end": 54.48,
+   "type": "word"
+  },
+  {
+   "text": "5",
+   "start": 54.48,
+   "end": 54.78,
+   "type": "word"
+  },
+  {
+   "text": ",00.",
+   "start": 54.78,
+   "end": 55.08,
+   "type": "word"
+  },
+  {
+   "text": "Mas",
+   "start": 55.84,
+   "end": 56.14,
+   "type": "word"
+  },
+  {
+   "text": "calma,",
+   "start": 56.14,
+   "end": 56.82,
+   "type": "word"
+  },
+  {
+   "text": "porque",
+   "start": 56.92,
+   "end": 57.22,
+   "type": "word"
+  },
+  {
+   "text": "existe",
+   "start": 57.22,
+   "end": 57.46,
+   "type": "word"
+  },
+  {
+   "text": "um",
+   "start": 57.46,
+   "end": 57.74,
+   "type": "word"
+  },
+  {
+   "text": "detalhe",
+   "start": 57.74,
+   "end": 58.08,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 58.08,
+   "end": 58.24,
+   "type": "word"
+  },
+  {
+   "text": "muda",
+   "start": 58.24,
+   "end": 58.56,
+   "type": "word"
+  },
+  {
+   "text": "completamente",
+   "start": 58.56,
+   "end": 59.52,
+   "type": "word"
+  },
+  {
+   "text": "essa",
+   "start": 59.52,
+   "end": 59.8,
+   "type": "word"
+  },
+  {
+   "text": "conta.",
+   "start": 59.8,
+   "end": 60.14,
+   "type": "word"
+  },
+  {
+   "text": "O",
+   "start": 60.54,
+   "end": 60.78,
+   "type": "word"
+  },
+  {
+   "text": "assunto",
+   "start": 60.78,
+   "end": 61.08,
+   "type": "word"
+  },
+  {
+   "text": "do",
+   "start": 61.08,
+   "end": 61.32,
+   "type": "word"
+  },
+  {
+   "text": "seu",
+   "start": 61.32,
+   "end": 61.44,
+   "type": "word"
+  },
+  {
+   "text": "canal",
+   "start": 61.44,
+   "end": 61.8,
+   "type": "word"
+  },
+  {
+   "text": "influencia",
+   "start": 61.8,
+   "end": 62.48,
+   "type": "word"
+  },
+  {
+   "text": "muito",
+   "start": 62.48,
+   "end": 62.86,
+   "type": "word"
+  },
+  {
+   "text": "no",
+   "start": 62.86,
+   "end": 63.02,
+   "type": "word"
+  },
+  {
+   "text": "pagamento.",
+   "start": 63.02,
+   "end": 63.56,
+   "type": "word"
+  },
+  {
+   "text": "Um",
+   "start": 63.94,
+   "end": 64.02,
+   "type": "word"
+  },
+  {
+   "text": "canal",
+   "start": 64.02,
+   "end": 64.26,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 64.26,
+   "end": 64.52,
+   "type": "word"
+  },
+  {
+   "text": "finanças,",
+   "start": 64.52,
+   "end": 64.94,
+   "type": "word"
+  },
+  {
+   "text": "por",
+   "start": 64.94,
+   "end": 65.14,
+   "type": "word"
+  },
+  {
+   "text": "exemplo,",
+   "start": 65.14,
+   "end": 65.54,
+   "type": "word"
+  },
+  {
+   "text": "pode",
+   "start": 65.78,
+   "end": 65.92,
+   "type": "word"
+  },
+  {
+   "text": "receber",
+   "start": 65.92,
+   "end": 66.38,
+   "type": "word"
+  },
+  {
+   "text": "muito",
+   "start": 66.38,
+   "end": 66.86,
+   "type": "word"
+  },
+  {
+   "text": "mais",
+   "start": 66.86,
+   "end": 67.16,
+   "type": "word"
+  },
+  {
+   "text": "por",
+   "start": 67.16,
+   "end": 67.32,
+   "type": "word"
+  },
+  {
+   "text": "mil",
+   "start": 67.32,
+   "end": 67.56,
+   "type": "word"
+  },
+  {
+   "text": "visualizações",
+   "start": 67.56,
+   "end": 68.44,
+   "type": "word"
+  },
+  {
+   "text": "do",
+   "start": 68.44,
+   "end": 68.6,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 68.6,
+   "end": 68.7,
+   "type": "word"
+  },
+  {
+   "text": "um",
+   "start": 68.7,
+   "end": 68.9,
+   "type": "word"
+  },
+  {
+   "text": "canal",
+   "start": 68.9,
+   "end": 69.04,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 69.04,
+   "end": 69.32,
+   "type": "word"
+  },
+  {
+   "text": "entretenimento",
+   "start": 69.32,
+   "end": 69.94,
+   "type": "word"
+  },
+  {
+   "text": "ou",
+   "start": 69.94,
+   "end": 70.2,
+   "type": "word"
+  },
+  {
+   "text": "humor.",
+   "start": 70.2,
+   "end": 70.54,
+   "type": "word"
+  },
+  {
+   "text": "E",
+   "start": 70.92,
+   "end": 71.04,
+   "type": "word"
+  },
+  {
+   "text": "tem",
+   "start": 71.04,
+   "end": 71.3,
+   "type": "word"
+  },
+  {
+   "text": "outra",
+   "start": 71.3,
+   "end": 71.66,
+   "type": "word"
+  },
+  {
+   "text": "diferença",
+   "start": 71.66,
+   "end": 72.18,
+   "type": "word"
+  },
+  {
+   "text": "enorme.",
+   "start": 72.18,
+   "end": 72.84,
+   "type": "word"
+  },
+  {
+   "text": "Os",
+   "start": 73.26,
+   "end": 73.52,
+   "type": "word"
+  },
+  {
+   "text": "shorts",
+   "start": 73.52,
+   "end": 73.92,
+   "type": "word"
+  },
+  {
+   "text": "geralmente",
+   "start": 73.92,
+   "end": 74.74,
+   "type": "word"
+  },
+  {
+   "text": "pagam",
+   "start": 74.74,
+   "end": 75.12,
+   "type": "word"
+  },
+  {
+   "text": "muito",
+   "start": 75.12,
+   "end": 75.58,
+   "type": "word"
+  },
+  {
+   "text": "menos",
+   "start": 75.58,
+   "end": 75.88,
+   "type": "word"
+  },
+  {
+   "text": "do",
+   "start": 75.88,
+   "end": 76.06,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 76.06,
+   "end": 76.12,
+   "type": "word"
+  },
+  {
+   "text": "os",
+   "start": 76.12,
+   "end": 76.28,
+   "type": "word"
+  },
+  {
+   "text": "vídeos",
+   "start": 76.28,
+   "end": 76.56,
+   "type": "word"
+  },
+  {
+   "text": "tradicionais.",
+   "start": 76.56,
+   "end": 77.5,
+   "type": "word"
+  },
+  {
+   "text": "E",
+   "start": 77.74,
+   "end": 77.94,
+   "type": "word"
+  },
+  {
+   "text": "sabe",
+   "start": 77.94,
+   "end": 78.08,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 78.08,
+   "end": 78.16,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 78.16,
+   "end": 78.34,
+   "type": "word"
+  },
+  {
+   "text": "é",
+   "start": 78.34,
+   "end": 78.4,
+   "type": "word"
+  },
+  {
+   "text": "mais",
+   "start": 78.4,
+   "end": 78.7,
+   "type": "word"
+  },
+  {
+   "text": "interessante?",
+   "start": 78.7,
+   "end": 79.22,
+   "type": "word"
+  },
+  {
+   "text": "Um",
+   "start": 79.62,
+   "end": 79.84,
+   "type": "word"
+  },
+  {
+   "text": "canal",
+   "start": 79.84,
+   "end": 80.06,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 80.06,
+   "end": 80.32,
+   "type": "word"
+  },
+  {
+   "text": "acabou",
+   "start": 80.32,
+   "end": 80.56,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 80.56,
+   "end": 80.82,
+   "type": "word"
+  },
+  {
+   "text": "ser",
+   "start": 80.82,
+   "end": 80.98,
+   "type": "word"
+  },
+  {
+   "text": "monetizado",
+   "start": 80.98,
+   "end": 81.68,
+   "type": "word"
+  },
+  {
+   "text": "não",
+   "start": 81.68,
+   "end": 82.04,
+   "type": "word"
+  },
+  {
+   "text": "recebe",
+   "start": 82.04,
+   "end": 82.48,
+   "type": "word"
+  },
+  {
+   "text": "uma",
+   "start": 82.48,
+   "end": 82.68,
+   "type": "word"
+  },
+  {
+   "text": "tarifa",
+   "start": 82.68,
+   "end": 83.0,
+   "type": "word"
+  },
+  {
+   "text": "especial.",
+   "start": 83.0,
+   "end": 83.46,
+   "type": "word"
+  },
+  {
+   "text": "O",
+   "start": 83.46,
+   "end": 83.98,
+   "type": "word"
+  },
+  {
+   "text": "pagamento",
+   "start": 83.98,
+   "end": 84.54,
+   "type": "word"
+  },
+  {
+   "text": "depende",
+   "start": 84.54,
+   "end": 84.88,
+   "type": "word"
+  },
+  {
+   "text": "do",
+   "start": 84.88,
+   "end": 85.12,
+   "type": "word"
+  },
+  {
+   "text": "público,",
+   "start": 85.12,
+   "end": 85.52,
+   "type": "word"
+  },
+  {
+   "text": "do",
+   "start": 85.84,
+   "end": 86.0,
+   "type": "word"
+  },
+  {
+   "text": "conteúdo,",
+   "start": 86.0,
+   "end": 86.42,
+   "type": "word"
+  },
+  {
+   "text": "dos",
+   "start": 86.76,
+   "end": 86.96,
+   "type": "word"
+  },
+  {
+   "text": "anúncios",
+   "start": 86.96,
+   "end": 87.5,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 87.5,
+   "end": 87.82,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 87.82,
+   "end": 88.0,
+   "type": "word"
+  },
+  {
+   "text": "quantas",
+   "start": 88.0,
+   "end": 88.38,
+   "type": "word"
+  },
+  {
+   "text": "visualizações",
+   "start": 88.38,
+   "end": 89.22,
+   "type": "word"
+  },
+  {
+   "text": "realmente",
+   "start": 89.22,
+   "end": 89.84,
+   "type": "word"
+  },
+  {
+   "text": "geram",
+   "start": 89.84,
+   "end": 90.22,
+   "type": "word"
+  },
+  {
+   "text": "receita.",
+   "start": 90.22,
+   "end": 90.78,
+   "type": "word"
+  },
+  {
+   "text": "Agora",
+   "start": 91.18,
+   "end": 91.38,
+   "type": "word"
+  },
+  {
+   "text": "me",
+   "start": 91.38,
+   "end": 91.62,
+   "type": "word"
+  },
+  {
+   "text": "conta,",
+   "start": 91.62,
+   "end": 91.86,
+   "type": "word"
+  },
+  {
+   "text": "você",
+   "start": 92.22,
+   "end": 92.46,
+   "type": "word"
+  },
+  {
+   "text": "está",
+   "start": 92.46,
+   "end": 92.64,
+   "type": "word"
+  },
+  {
+   "text": "começando",
+   "start": 92.64,
+   "end": 93.08,
+   "type": "word"
+  },
+  {
+   "text": "um",
+   "start": 93.08,
+   "end": 93.16,
+   "type": "word"
+  },
+  {
+   "text": "canal",
+   "start": 93.16,
+   "end": 93.42,
+   "type": "word"
+  },
+  {
+   "text": "no",
+   "start": 93.42,
+   "end": 93.56,
+   "type": "word"
+  },
+  {
+   "text": "YouTube",
+   "start": 93.56,
+   "end": 94.0,
+   "type": "word"
+  },
+  {
+   "text": "ou",
+   "start": 94.0,
+   "end": 94.38,
+   "type": "word"
+  },
+  {
+   "text": "já",
+   "start": 94.38,
+   "end": 94.64,
+   "type": "word"
+  },
+  {
+   "text": "conseguiu",
+   "start": 94.64,
+   "end": 95.02,
+   "type": "word"
+  },
+  {
+   "text": "monetizar?",
+   "start": 95.02,
+   "end": 95.64,
+   "type": "word"
+  },
+  {
+   "text": "Comenta",
+   "start": 96.06,
+   "end": 96.3,
+   "type": "word"
+  },
+  {
+   "text": "aqui",
+   "start": 96.3,
+   "end": 96.5,
+   "type": "word"
+  },
+  {
+   "text": "embaixo,",
+   "start": 96.5,
+   "end": 96.88,
+   "type": "word"
+  },
+  {
+   "text": "porque",
+   "start": 97.22,
+   "end": 97.48,
+   "type": "word"
+  },
+  {
+   "text": "esse",
+   "start": 97.48,
+   "end": 97.82,
+   "type": "word"
+  },
+  {
+   "text": "pode",
+   "start": 97.82,
+   "end": 98.02,
+   "type": "word"
+  },
+  {
+   "text": "ser",
+   "start": 98.02,
+   "end": 98.26,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 98.26,
+   "end": 98.44,
+   "type": "word"
+  },
+  {
+   "text": "primeiro",
+   "start": 98.44,
+   "end": 98.82,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 98.82,
+   "end": 99.2,
+   "type": "word"
+  },
+  {
+   "text": "vários",
+   "start": 99.2,
+   "end": 99.56,
+   "type": "word"
+  },
+  {
+   "text": "vídeos",
+   "start": 99.56,
+   "end": 99.96,
+   "type": "word"
+  },
+  {
+   "text": "mostrando",
+   "start": 99.96,
+   "end": 100.56,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 100.56,
+   "end": 100.72,
+   "type": "word"
+  },
+  {
+   "text": "quanto",
+   "start": 100.72,
+   "end": 101.04,
+   "type": "word"
+  },
+  {
+   "text": "realmente",
+   "start": 101.04,
+   "end": 101.7,
+   "type": "word"
+  },
+  {
+   "text": "dá",
+   "start": 101.7,
+   "end": 101.86,
+   "type": "word"
+  },
+  {
+   "text": "para",
+   "start": 101.86,
+   "end": 102.06,
+   "type": "word"
+  },
+  {
+   "text": "ganhar",
+   "start": 102.06,
+   "end": 102.46,
+   "type": "word"
+  },
+  {
+   "text": "criando",
+   "start": 102.46,
+   "end": 103.0,
+   "type": "word"
+  },
+  {
+   "text": "conteúdo",
+   "start": 103.0,
+   "end": 103.48,
+   "type": "word"
+  },
+  {
+   "text": "na",
+   "start": 103.48,
+   "end": 103.7,
+   "type": "word"
+  },
+  {
+   "text": "internet.",
+   "start": 103.7,
+   "end": 104.12,
+   "type": "word"
+  }
+ ]
+}
