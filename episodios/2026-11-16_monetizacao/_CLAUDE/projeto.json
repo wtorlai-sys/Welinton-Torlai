@@ -1,0 +1,20 @@
+{
+ "projeto": "2026-11-16_monetizacao",
+ "perfil": "canal",
+ "criado": "2026-11-16",
+ "etapas": {
+  "iniciar": "concluido",
+  "preparar": "pendente",
+  "motion_mapa": "pendente",
+  "motion_render": "pendente",
+  "sfx": "pendente",
+  "render": "pendente"
+ },
+ "pendencias": [],
+ "alertas": [],
+ "narracao": {
+  "arquivo": "audio/Monetização_teste.mp3",
+  "md5": "1c7536a0825f869a386c75b15d16baa2",
+  "duracao_s": 104.359
+ }
+}
