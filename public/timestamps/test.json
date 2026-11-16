@@ -1,0 +1,112 @@
+{
+ "language_code": "por",
+ "language_probability": 0.99,
+ "text": "E SE ESSA PLACA NUNCA PASSASSE DO 7?",
+ "words": [
+  {
+   "text": "E",
+   "start": 0.0,
+   "end": 0.18,
+   "type": "word",
+   "speaker_id": "speaker_0"
+  },
+  {
+   "text": " ",
+   "start": 0.18,
+   "end": 0.2,
+   "type": "spacing",
+   "speaker_id": "speaker_0"
+  },
+  {
+   "text": "SE",
+   "start": 0.2,
+   "end": 0.42,
+   "type": "word",
+   "speaker_id": "speaker_0"
+  },
+  {
+   "text": " ",
+   "start": 0.42,
+   "end": 0.48,
+   "type": "spacing",
+   "speaker_id": "speaker_0"
+  },
+  {
+   "text": "ESSA",
+   "start": 0.48,
+   "end": 0.8,
+   "type": "word",
+   "speaker_id": "speaker_0"
+  },
+  {
+   "text": " ",
+   "start": 0.8,
+   "end": 0.84,
+   "type": "spacing",
+   "speaker_id": "speaker_0"
+  },
+  {
+   "text": "PLACA",
+   "start": 0.84,
+   "end": 1.3,
+   "type": "word",
+   "speaker_id": "speaker_0"
+  },
+  {
+   "text": " ",
+   "start": 1.3,
+   "end": 1.52,
+   "type": "spacing",
+   "speaker_id": "speaker_0"
+  },
+  {
+   "text": "NUNCA",
+   "start": 1.52,
+   "end": 1.9,
+   "type": "word",
+   "speaker_id": "speaker_0"
+  },
+  {
+   "text": " ",
+   "start": 1.9,
+   "end": 1.94,
+   "type": "spacing",
+   "speaker_id": "speaker_0"
+  },
+  {
+   "text": "PASSASSE",
+   "start": 1.94,
+   "end": 2.55,
+   "type": "word",
+   "speaker_id": "speaker_0"
+  },
+  {
+   "text": " ",
+   "start": 2.55,
+   "end": 2.62,
+   "type": "spacing",
+   "speaker_id": "speaker_0"
+  },
+  {
+   "text": "DO",
+   "start": 2.62,
+   "end": 2.8,
+   "type": "word",
+   "speaker_id": "speaker_0"
+  },
+  {
+   "text": " ",
+   "start": 2.8,
+   "end": 2.9,
+   "type": "spacing",
+   "speaker_id": "speaker_0"
+  },
+  {
+   "text": "7?",
+   "start": 2.9,
+   "end": 3.6,
+   "type": "word",
+   "speaker_id": "speaker_0"
+  }
+ ]
+}
