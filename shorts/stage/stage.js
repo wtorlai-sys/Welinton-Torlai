@@ -250,7 +250,7 @@ async function makeProp(p) {
     grp.add(obj);
   } else throw new Error('unknown prop type "' + p.type + '"');
   grp.position.set(...(p.pos || [0, 0, 0])); if (p.rotY) grp.rotation.y = rad(p.rotY);
-  grp.traverse(o => { if (o.isMesh) { if (!o.userData.noInk) { o.castShadow = true; o.receiveShadow = true; o.layers.enable(1); } } });
+  grp.traverse(o => { if (o.isMesh) { const card = p.type === 'plane'; if (!card) { o.castShadow = o.userData.noShadow ? false : true; o.receiveShadow = true; } if (!o.userData.noInk && !card) o.layers.enable(1); } });
   grp.userData.prop = p;
   return grp;
 }
@@ -309,7 +309,7 @@ function makeInk(width, color) {
         for (int i = 0; i < 4; i++) {
           vec2 a = vUv + dirs[i] * o, b = vUv - dirs[i] * o;
           e = max(e, smoothstep(0.18, 0.34, max(distance(texture2D(tN, a).rgb, n0), distance(texture2D(tN, b).rgb, n0))));
-          e = max(e, smoothstep(0.012, 0.03, abs(lin(a) + lin(b) - 2.0 * d0) / d0));
+          e = max(e, smoothstep(0.03, 0.07, abs(lin(a) + lin(b) - 2.0 * d0) / d0));
         }
         e *= 1.0 - smoothstep(45.0, 110.0, d0);
         gl_FragColor = vec4(ink, e);
@@ -346,7 +346,7 @@ window.setup = async (spec) => {
 
   const gr = spec.ground || {};
   const ground = new THREE.Mesh(new THREE.PlaneGeometry(gr.size || 400, gr.size || 400), await surface(gr.color || '#c98a55', gr.texture, gr.repeat || [60, 60]));
-  ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; ground.layers.enable(1); setRoot.add(ground);
+  ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; if (gr.ink) ground.layers.enable(1); setRoot.add(ground);
   for (const p of (spec.props || [])) setRoot.add(await makeProp(p));
 
   if (spec.backdrop && spec.backdrop.image) {                // flat painting far behind the set, blurred, wrapped around the world
@@ -471,7 +471,7 @@ window.probeFrame = (i, quality = 0.9) => {
   const t = i / FPS, plan = compose(i), k = shotIndex(t), s = shots[k], flags = [];
   const cp = camera.position, boxes = [];
   setRoot.children.forEach(o => { if (o.userData.prop && o.userData.prop.type !== 'plane') boxes.push({ p: o.userData.prop, box: new THREE.Box3().setFromObject(o) }); });
-  const inside = boxes.filter(b => b.box.clone().expandByScalar(0.12).containsPoint(cp)).map(b => b.p.type + '@' + (b.p.pos || [0, 0, 0]).join(','));
+  const inside = boxes.filter(b => !b.p.interior).filter(b => b.box.clone().expandByScalar(0.12).containsPoint(cp)).map(b => b.p.type + '@' + (b.p.pos || [0, 0, 0]).join(','));
   if (inside.length) flags.push('CAMERA_INSIDE_PROP');
   if (cp.y < 0.05) flags.push('CAMERA_UNDER_GROUND');
   let head = null;

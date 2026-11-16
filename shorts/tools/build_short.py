@@ -17,8 +17,8 @@ chars = [
   {"id": "cacador2", "puppet": "puppets/hero", "pos": [-3.2, 0, -3.4], "height": 1.7, "face": "happy", "flip": True},
   {"id": "cacador3", "puppet": "puppets/hero", "pos": [8.4, 0, -2.4], "height": 1.68, "face": "happy", "flip": True},
   # esgoto
-  {"id": "cacadorT", "puppet": "puppets/hero", "pos": [EX + 2.2, 0.6, 1.2], "height": 1.75, "face": "neutral", "flip": True},
-  {"id": "fiscalT", "puppet": "puppets/official", "pos": [EX - 3.2, 0.6, 1.4], "height": 1.8, "face": "confused"},
+  {"id": "cacadorT", "puppet": "puppets/hero", "pos": [EX + 30, 0, 0], "height": 1.75, "face": "neutral", "flip": True},
+  {"id": "fiscalT", "puppet": "puppets/official", "pos": [EX + 32, 0, 0], "height": 1.8, "face": "confused"},
   # criação
   {"id": "cacadorF", "puppet": "puppets/hero", "pos": [FX + 1.6, 0, -0.6], "height": 1.75, "face": "happy"},
 ]
@@ -26,12 +26,12 @@ def rat(id, pos, h=0.34, tail=True, flip=False):
     chars.append({"id": id, "puppet": "puppets/rato" if tail else "puppets/rato-sem-rabo", "pos": pos, "height": h, "flip": flip})
 for i, (x, z) in enumerate([(-1.2, 0.4), (-0.4, 1.1), (1.6, 0.8), (2.4, 0.2), (-2.4, 1.3)]):  # ratos da rua (aparecem no plano 2)
     rat(f"rr{i}", [-30 - i, 0, z])
-for i, (x, z, f) in enumerate([(-1.0, 0.9, False), (0.2, 1.6, True), (1.0, 0.7, False), (-2.6, 1.9, True), (1.9, 0.3, False), (-4.2, 1.2, False)]):
+for i, (x, z, f) in enumerate([(-2.0, 1.0, False), (-2.6, -1.2, True), (2.0, 0.4, True), (2.7, -2.2, False), (-1.8, -4.5, False), (2.3, -6.0, True)]):
     rat(f"rt{i}", [EX + x, 0.6, z], 0.36, True, f)
-rat("filhote1", [EX + 4.4, 0.6, 3.5], 0.2, True, True); rat("filhote2", [EX + 4.9, 0.6, 3.2], 0.2, True, False); rat("filhote3", [EX + 3.3, 0.6, 3.4], 0.19, True, False)
-for i, (x, z) in enumerate([(-1.6, 2.2), (-0.8, 2.9), (0.0, 2.3), (0.6, 3.1), (-2.2, 3.2), (1.2, 2.5), (-0.2, 3.6)]):
+rat("filhote1", [EX + 2.1, 0.6, 6.4], 0.2, True, True); rat("filhote2", [EX + 2.6, 0.6, 6.0], 0.2, True, False); rat("filhote3", [EX + 1.7, 0.6, 5.8], 0.19, True, False)
+for i, (x, z) in enumerate([(-1.7, -0.6), (-2.7, 0.0), (-2.2, -1.6), (1.6, -1.0), (2.8, -1.8), (1.9, -3.0), (-2.9, -3.4)]):
     rat(f"rp{i}", [EX + x, 0.6, z], 0.34, True, i % 2 == 0)
-rat("mae", [EX + 3.8, 0.6, 2.9], 0.36, False, False)
+rat("mae", [EX + 2.2, 0.6, 5.5], 0.36, False, False)
 for i, (x, z) in enumerate([(-1.0, -0.5), (0.4, 0.3), (-0.3, 1.0)]):
     rat(f"sr{i}", [-30, 0, 0], 0.34, False)      # sem rabo, entram no plano 16
 for i, (x, y, z) in enumerate([(-1.9, 0.18, -3.1), (-1.3, 0.18, -2.9), (0.6, 0.18, -3.2), (1.1, 0.18, -3.0), (-1.6, 1.24, -3.05)]):
@@ -50,9 +50,9 @@ props = [
   {"type": "barrel", "pos": [-4.6, 0, -4.4]}, {"type": "barrel", "pos": [-5.3, 0, -4.0]},
   {"type": "plane", "image": "textures/placa_peste.png", "pos": [-5.6, 0, -2.6], "size": [1.9, 2.3], "rotY": 18},
   # esgoto
-  {"type": "model", "file": "models/esgoto.glb", "pos": [EX, 0, -2.0]},
-  {"type": "wall", "pos": [EX, 0, 2.6], "size": [16, 0.6, 5.0], "texture": "textures/tijolo.jpg", "repeat": [6, 2]},
-  {"type": "barrel", "pos": [EX + 7.0, 0.6, 1.0]}, {"type": "crate", "pos": [EX - 6, 0.6, 0.9], "size": 0.7, "texture": "textures/madeira.jpg"},
+  {"type": "model", "file": "models/esgoto.glb", "pos": [EX, 0, -15.0], "interior": True, "matte": False},
+  {"type": "barrel", "pos": [EX + 2.8, 0.6, -7.2]}, {"type": "crate", "pos": [EX - 2.8, 0.6, -9.0], "size": 0.7, "texture": "textures/madeira.jpg"},
+  {"type": "crate", "pos": [EX - 2.75, 1.3, -9.1], "size": 0.5, "rotY": 25, "texture": "textures/madeira.jpg"},
   # criação de ratos
   {"type": "house", "pos": [FX, 0, -9], "size": [8, 3.8, 5], "wall": "textures/madeira.jpg", "repeat": [3, 2], "roofTexture": "textures/telhado.jpg"},
   {"type": "model", "file": "models/gaiola.glb", "pos": [FX - 1.6, 0, -3.0], "height": 1.06},
@@ -73,18 +73,18 @@ shots = [
        *[A(f"rr{i}", 0.02 + 0.06 * i, to=[x, 0, z], over=0.9, walk=True) for i, (x, z) in enumerate([(-1.2, 0.4), (-0.4, 1.1), (1.6, 0.8), (2.4, 0.2), (-2.4, 1.3)])],
        A("fiscal", 0.5, face="shocked", pose={"armR": 0, "armL": 30}), A("fiscal", 0.6, shake=0.8), A("cacador", 0.4, face="shocked", hop=0.12)]),
   # 2 "Os franceses tinham acabado de construir 19 km de esgoto moderno..."
-  dict(start=T(15), anchor=[EX, 1.4, 0.4], distance=9.5, yaw=-22, pitch=12, zoom=5, pan=[30, 0], out="glide"),
+  dict(start=T(15), anchor=[EX, 1.7, -6.0], distance=10.0, yaw=0, pitch=4, frameY=0.0, zoom=5),
   # 3 "Novo,"  4 "escuro,"  5 "quentinho." (três batidas no mesmo grupo de ratos)
-  dict(start=T(29), target="rt0", headWidth=0.16, yaw=20, pitch=6, zoom=7, pan=[-15, 0], actions=[A("rt0", 0.1, hop=0.12)]),
-  dict(start=T(31), target="rt2", headWidth=0.14, yaw=28, pitch=6, zoom=5, pan=[15, 0], actions=[A("rt2", 0.0, hop=0.1)]),
+  dict(start=T(29), target="rt0", headWidth=0.14, yaw=18, pitch=26, zoom=7, pan=[-15, 0], actions=[A("rt0", 0.1, hop=0.12)]),
+  dict(start=T(31), target="rt2", headWidth=0.13, yaw=-18, pitch=24, zoom=5, pan=[15, 0], actions=[A("rt2", 0.0, hop=0.1)]),
   # 6 "Perfeito para ratos."
-  dict(start=T(32), anchor=[EX, 0.9, 1.0], distance=5.5, yaw=4, pitch=14, zoom=5, actions=[*[A(f"rt{i}", 0.2 + 0.12 * i, hop=0.18) for i in range(6)]]),
+  dict(start=T(32), anchor=[EX, 0.9, -1.5], distance=6.5, yaw=0, pitch=12, zoom=5, actions=[*[A(f"rt{i}", 0.2 + 0.12 * i, hop=0.18) for i in range(6)]]),
   # 7 "Com medo da peste,"
   dict(start=T(35), target="fiscal", headWidth=0.22, yaw=10, pitch=2, zoom=8, pan=[0, 10], out="dissolve", actions=[A("fiscal", 0.0, face="nervous", pose={"armR": 0, "armL": 0}, shake=1.0)]),
   # 8 "o governo mandou caçadores vietnamitas descerem nos túneis."
   dict(start=T(39), target="cacadorT", headWidth=0.12, yaw=-24, pitch=6, zoom=5, pan=[-30, 0], actions=[
-       A("cacadorT", 0.0, face="shouting", pose={"armR": -40, "armL": 40}), A("cacadorT", 0.2, to=[EX + 0.4, 0.6, 1.2], over=1.6, walk=True),
-       *[A(f"rt{i}", 0.3, face="default", to=[EX - 5 - i * 0.8, 0.6, 0.9 + 0.2 * i], over=1.2, walk=True, flip=True) for i in (0, 2)]]),
+       A("cacadorT", 0.0, to=[EX + 2.1, 0.6, -10.0], over=0.01), A("cacadorT", 0.0, face="shouting", pose={"armR": -40, "armL": 40}), A("cacadorT", 0.2, to=[EX + 2.1, 0.6, -3.0], over=1.6, walk=True),
+       A("rt5", 0.2, to=[EX + 2.6, 0.6, -1.0], over=1.2, walk=True, flip=False), A("rt3", 0.3, to=[EX + 1.6, 0.6, 0.0], over=1.2, walk=True, flip=False)]),
   # 9 "Numa única semana de abril,"
   dict(start=T(48), target="cacador", headWidth=0.18, yaw=18, pitch=4, zoom=6, pan=[-20, 0], out="dissolve", actions=[A("cacador", 0.0, face="happy", pose={"armR": -120})]),
   # 10 "eles trouxeram quase 8 mil ratos mortos."
@@ -119,13 +119,13 @@ shots = [
   # 22 "um rato morto paga 1 centavo uma vez só."
   dict(start=T(120), target="cacador", headWidth=0.16, yaw=22, pitch=6, zoom=5, pan=[-20, 0], actions=[A("cacador", 0.0, face="confused", pose={"armR": -95, "head": -6})]),
   # 23 "Mas um rato vivo, sem rabo, continua fazendo filhotes."
-  dict(start=T(129), target="mae", headWidth=0.08, yaw=-12, pitch=12, frameY=0.04, zoom=6, pan=[20, 0], out="dissolve", actions=[A("mae", 0.3, hop=0.1), A("filhote1", 0.9, hop=0.08), A("filhote2", 1.1, hop=0.08), A("filhote3", 1.3, hop=0.08)]),
+  dict(start=T(129), target="mae", headWidth=0.11, yaw=-30, pitch=14, frameY=0.04, zoom=6, pan=[20, 0], out="dissolve", actions=[A("mae", 0.3, hop=0.1), A("filhote1", 0.9, hop=0.08), A("filhote2", 1.1, hop=0.08), A("filhote3", 1.3, hop=0.08)]),
   # 24 "E cada filhote nasce com um rabo novinho."
-  dict(start=T(138), target="filhote2", headWidth=0.1, yaw=16, pitch=8, frameY=0.0, zoom=8, actions=[A("filhote2", 0.4, hop=0.1), A("filhote1", 0.7, hop=0.1)]),
+  dict(start=T(138), target="filhote2", headWidth=0.13, yaw=-36, pitch=10, frameY=0.0, zoom=8, actions=[A("filhote2", 0.4, hop=0.1), A("filhote1", 0.7, hop=0.1)]),
   # 25 "Então, os caçadores cortavam o rabo e soltavam o rato de volta no esgoto."
   dict(start=T(146), target="cacadorT", headWidth=0.14, yaw=-20, pitch=6, zoom=5, pan=[-25, 0], actions=[
-       A("cacadorT", 0.0, face="nervous", to=[EX + 2.2, 0.6, 1.2], over=0.01, pose={"armR": 0, "armL": 0}), A("cacadorT", 0.8, face="happy", pose={"armL": 70}),
-       A("rt1", 0.9, to=[EX - 3.5, 0.6, 1.0], over=1.4, walk=True, flip=True)]),
+       A("cacadorT", 0.0, face="nervous", to=[EX + 2.1, 0.6, -3.0], over=0.01, pose={"armR": 0, "armL": 0}), A("cacadorT", 0.8, face="happy", pose={"armL": 70}),
+       A("rt1", 0.9, to=[EX - 2.4, 0.6, -14.0], over=1.4, walk=True, flip=True)]),
   # 26 "Hahaha, depois surgiram criações de ratos nos arredores da cidade,"
   dict(start=T(160), target="cacadorF", headWidth=0.14, yaw=16, pitch=6, zoom=5, pan=[-25, 0], out="dissolve", actions=[A("cacadorF", 0.0, face="happy", pose={"armR": -130}, hop=0.12)]),
   # 27 "só por causa dos rabos."
@@ -139,9 +139,9 @@ shots = [
   # 31 "a peste chegou a Hanói e matou pelo menos 263 pessoas."
   dict(start=T(187), target="cacador", headWidth=0.22, yaw=-16, pitch=4, zoom=8, pan=[0, 10], actions=[A("cacador", 0.0, face="shocked", pose={"armR": 0, "head": 0}, shake=1.4)]),
   # 32 "E o esgoto, que virou o paraíso dos ratos,"
-  dict(start=T(198), target="rp2", headWidth=0.07, yaw=-10, pitch=16, frameY=0.0, zoom=6, pan=[25, 0], actions=[*[A(f"rt{i}", 0.4 + 0.1 * i, hop=0.12) for i in range(6)]]),
+  dict(start=T(198), target="rp2", headWidth=0.06, yaw=14, pitch=24, frameY=0.0, zoom=6, pan=[25, 0], actions=[*[A(f"rp{i}", 0.4 + 0.1 * i, hop=0.12) for i in range(7)]]),
   # 33 "tinha sido construído justamente para deixar a cidade mais limpa."
-  dict(start=T(207), target="fiscalT", headWidth=0.2, yaw=14, pitch=4, zoom=7, pan=[0, -8], actions=[A("fiscalT", 0.0, face="confused", pose={"head": 8}), A("fiscalT", 1.6, face="shocked", pose={"armL": 40}), A("fiscalT", 2.4, face="neutral", pose={"head": -6})]),
+  dict(start=T(207), target="fiscalT", headWidth=0.2, yaw=14, pitch=4, zoom=7, pan=[0, -8], actions=[A("fiscalT", 0.0, to=[EX - 2.1, 0.6, -2.4], over=0.01), A("fiscalT", 0.0, face="confused", pose={"head": 8}), A("fiscalT", 1.6, face="shocked", pose={"armL": 40}), A("fiscalT", 2.4, face="neutral", pose={"head": -6})]),
 ]
 def place(sh):
     x = sh["anchor"][0] if "anchor" in sh else next(c["pos"][0] for c in chars if c["id"] == sh["target"])
@@ -167,7 +167,7 @@ short = {
               "fill": {"sky": "#8796f2", "ground": "#5a4c9c", "intensity": 2.1}, "exposure": 1.5},
   },
   "lighting": [{"t": 0, "mood": "day"}, {"t": T(118), "mood": "night", "fade": 0.8}],
-  "ground": {"texture": "textures/chao.jpg", "repeat": [140, 140]},
+  "ground": {"texture": "textures/chao.jpg", "repeat": [100, 100]},
   "backdrop": {"image": "bg/hanoi.jpg"}, "ink": {"set": 4},
   "characters": chars, "props": props, "shots": shots, "end": "audio",
 }

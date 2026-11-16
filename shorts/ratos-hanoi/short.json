@@ -61,8 +61,8 @@
  "ground": {
   "texture": "textures/chao.jpg",
   "repeat": [
-   140,
-   140
+   100,
+   100
   ]
  },
  "backdrop": {
@@ -123,9 +123,9 @@
    "id": "cacadorT",
    "puppet": "puppets/hero",
    "pos": [
-    82.2,
-    0.6,
-    1.2
+    110,
+    0,
+    0
    ],
    "height": 1.75,
    "face": "neutral",
@@ -135,9 +135,9 @@
    "id": "fiscalT",
    "puppet": "puppets/official",
    "pos": [
-    76.8,
-    0.6,
-    1.4
+    112,
+    0,
+    0
    ],
    "height": 1.8,
    "face": "confused"
@@ -212,9 +212,9 @@
    "id": "rt0",
    "puppet": "puppets/rato",
    "pos": [
-    79.0,
+    78.0,
     0.6,
-    0.9
+    1.0
    ],
    "height": 0.36,
    "flip": false
@@ -223,9 +223,9 @@
    "id": "rt1",
    "puppet": "puppets/rato",
    "pos": [
-    80.2,
+    77.4,
     0.6,
-    1.6
+    -1.2
    ],
    "height": 0.36,
    "flip": true
@@ -234,31 +234,31 @@
    "id": "rt2",
    "puppet": "puppets/rato",
    "pos": [
-    81.0,
+    82.0,
     0.6,
-    0.7
-   ],
-   "height": 0.36,
-   "flip": false
-  },
-  {
-   "id": "rt3",
-   "puppet": "puppets/rato",
-   "pos": [
-    77.4,
-    0.6,
-    1.9
+    0.4
    ],
    "height": 0.36,
    "flip": true
   },
   {
+   "id": "rt3",
+   "puppet": "puppets/rato",
+   "pos": [
+    82.7,
+    0.6,
+    -2.2
+   ],
+   "height": 0.36,
+   "flip": false
+  },
+  {
    "id": "rt4",
    "puppet": "puppets/rato",
    "pos": [
-    81.9,
+    78.2,
     0.6,
-    0.3
+    -4.5
    ],
    "height": 0.36,
    "flip": false
@@ -267,20 +267,20 @@
    "id": "rt5",
    "puppet": "puppets/rato",
    "pos": [
-    75.8,
+    82.3,
     0.6,
-    1.2
+    -6.0
    ],
    "height": 0.36,
-   "flip": false
+   "flip": true
   },
   {
    "id": "filhote1",
    "puppet": "puppets/rato",
    "pos": [
-    84.4,
+    82.1,
     0.6,
-    3.5
+    6.4
    ],
    "height": 0.2,
    "flip": true
@@ -289,9 +289,9 @@
    "id": "filhote2",
    "puppet": "puppets/rato",
    "pos": [
-    84.9,
+    82.6,
     0.6,
-    3.2
+    6.0
    ],
    "height": 0.2,
    "flip": false
@@ -300,9 +300,9 @@
    "id": "filhote3",
    "puppet": "puppets/rato",
    "pos": [
-    83.3,
+    81.7,
     0.6,
-    3.4
+    5.8
    ],
    "height": 0.19,
    "flip": false
@@ -311,9 +311,9 @@
    "id": "rp0",
    "puppet": "puppets/rato",
    "pos": [
-    78.4,
+    78.3,
     0.6,
-    2.2
+    -0.6
    ],
    "height": 0.34,
    "flip": true
@@ -322,9 +322,9 @@
    "id": "rp1",
    "puppet": "puppets/rato",
    "pos": [
-    79.2,
+    77.3,
     0.6,
-    2.9
+    0.0
    ],
    "height": 0.34,
    "flip": false
@@ -333,9 +333,9 @@
    "id": "rp2",
    "puppet": "puppets/rato",
    "pos": [
-    80.0,
+    77.8,
     0.6,
-    2.3
+    -1.6
    ],
    "height": 0.34,
    "flip": true
@@ -344,9 +344,9 @@
    "id": "rp3",
    "puppet": "puppets/rato",
    "pos": [
-    80.6,
+    81.6,
     0.6,
-    3.1
+    -1.0
    ],
    "height": 0.34,
    "flip": false
@@ -355,9 +355,9 @@
    "id": "rp4",
    "puppet": "puppets/rato",
    "pos": [
-    77.8,
+    82.8,
     0.6,
-    3.2
+    -1.8
    ],
    "height": 0.34,
    "flip": true
@@ -366,9 +366,9 @@
    "id": "rp5",
    "puppet": "puppets/rato",
    "pos": [
-    81.2,
+    81.9,
     0.6,
-    2.5
+    -3.0
    ],
    "height": 0.34,
    "flip": false
@@ -377,9 +377,9 @@
    "id": "rp6",
    "puppet": "puppets/rato",
    "pos": [
-    79.8,
+    77.1,
     0.6,
-    3.6
+    -3.4
    ],
    "height": 0.34,
    "flip": true
@@ -388,9 +388,9 @@
    "id": "mae",
    "puppet": "puppets/rato-sem-rabo",
    "pos": [
-    83.8,
+    82.2,
     0.6,
-    2.9
+    5.5
    ],
    "height": 0.36,
    "flip": false
@@ -688,43 +688,38 @@
    "pos": [
     80,
     0,
-    -2.0
-   ]
-  },
-  {
-   "type": "wall",
-   "pos": [
-    80,
-    0,
-    2.6
+    -15.0
    ],
-   "size": [
-    16,
-    0.6,
-    5.0
-   ],
-   "texture": "textures/tijolo.jpg",
-   "repeat": [
-    6,
-    2
-   ]
+   "interior": true,
+   "matte": false
   },
   {
    "type": "barrel",
    "pos": [
-    87.0,
+    82.8,
     0.6,
-    1.0
+    -7.2
    ]
   },
   {
    "type": "crate",
    "pos": [
-    74,
+    77.2,
     0.6,
-    0.9
+    -9.0
    ],
    "size": 0.7,
+   "texture": "textures/madeira.jpg"
+  },
+  {
+   "type": "crate",
+   "pos": [
+    77.25,
+    1.3,
+    -9.1
+   ],
+   "size": 0.5,
+   "rotY": 25,
    "texture": "textures/madeira.jpg"
   },
   {
@@ -997,24 +992,21 @@
    "start": 6.66,
    "anchor": [
     80,
-    1.4,
-    0.4
+    1.7,
+    -6.0
    ],
-   "distance": 9.5,
-   "yaw": -22,
-   "pitch": 12,
-   "zoom": 3.84,
-   "pan": [
-    23.1,
-    0.0
-   ]
+   "distance": 10.0,
+   "yaw": 0,
+   "pitch": 4,
+   "frameY": 0.0,
+   "zoom": 3.84
   },
   {
    "start": 13.16,
    "target": "rt0",
-   "headWidth": 0.16,
-   "yaw": 20,
-   "pitch": 6,
+   "headWidth": 0.14,
+   "yaw": 18,
+   "pitch": 26,
    "zoom": 5.38,
    "pan": [
     -11.5,
@@ -1031,9 +1023,9 @@
   {
    "start": 15.1,
    "target": "rt2",
-   "headWidth": 0.14,
-   "yaw": 28,
-   "pitch": 6,
+   "headWidth": 0.13,
+   "yaw": -18,
+   "pitch": 24,
    "zoom": 3.84,
    "pan": [
     11.5,
@@ -1052,11 +1044,11 @@
    "anchor": [
     80,
     0.9,
-    1.0
+    -1.5
    ],
-   "distance": 5.5,
-   "yaw": 4,
-   "pitch": 14,
+   "distance": 6.5,
+   "yaw": 0,
+   "pitch": 12,
    "zoom": 3.84,
    "actions": [
     {
@@ -1132,6 +1124,16 @@
     {
      "at": 0.0,
      "who": "cacadorT",
+     "to": [
+      82.1,
+      0.6,
+      -10.0
+     ],
+     "over": 0.01
+    },
+    {
+     "at": 0.0,
+     "who": "cacadorT",
      "face": "shouting",
      "pose": {
       "armR": -40,
@@ -1142,38 +1144,36 @@
      "at": 0.31,
      "who": "cacadorT",
      "to": [
-      80.4,
+      82.1,
       0.6,
-      1.2
+      -3.0
      ],
      "over": 2.48,
      "walk": true
     },
     {
-     "at": 0.465,
-     "who": "rt0",
-     "face": "default",
+     "at": 0.31,
+     "who": "rt5",
      "to": [
-      75.0,
+      82.6,
       0.6,
-      0.9
+      -1.0
      ],
      "over": 1.86,
      "walk": true,
-     "flip": true
+     "flip": false
     },
     {
      "at": 0.465,
-     "who": "rt2",
-     "face": "default",
+     "who": "rt3",
      "to": [
-      73.4,
+      81.6,
       0.6,
-      1.3
+      0.0
      ],
      "over": 1.86,
      "walk": true,
-     "flip": true
+     "flip": false
     }
    ],
    "out": "dissolve"
@@ -1618,9 +1618,9 @@
   {
    "start": 57.44,
    "target": "mae",
-   "headWidth": 0.08,
-   "yaw": -12,
-   "pitch": 12,
+   "headWidth": 0.11,
+   "yaw": -30,
+   "pitch": 14,
    "frameY": 0.04,
    "zoom": 4.61,
    "pan": [
@@ -1653,9 +1653,9 @@
   {
    "start": 62.0,
    "target": "filhote2",
-   "headWidth": 0.1,
-   "yaw": 16,
-   "pitch": 8,
+   "headWidth": 0.13,
+   "yaw": -36,
+   "pitch": 10,
    "frameY": 0.0,
    "zoom": 6.15,
    "actions": [
@@ -1669,7 +1669,8 @@
      "who": "filhote1",
      "hop": 0.1
     }
-   ]
+   ],
+   "out": "dissolve"
   },
   {
    "start": 65.32,
@@ -1688,9 +1689,9 @@
      "who": "cacadorT",
      "face": "nervous",
      "to": [
-      82.2,
+      82.1,
       0.6,
-      1.2
+      -3.0
      ],
      "over": 0.01,
      "pose": {
@@ -1710,9 +1711,9 @@
      "at": 1.395,
      "who": "rt1",
      "to": [
-      76.5,
+      77.6,
       0.6,
-      1.0
+      -14.0
      ],
      "over": 2.17,
      "walk": true,
@@ -1872,9 +1873,9 @@
   {
    "start": 86.52,
    "target": "rp2",
-   "headWidth": 0.07,
-   "yaw": -10,
-   "pitch": 16,
+   "headWidth": 0.06,
+   "yaw": 14,
+   "pitch": 24,
    "frameY": 0.0,
    "zoom": 4.61,
    "pan": [
@@ -1884,35 +1885,41 @@
    "actions": [
     {
      "at": 0.62,
-     "who": "rt0",
+     "who": "rp0",
      "hop": 0.12
     },
     {
      "at": 0.775,
-     "who": "rt1",
+     "who": "rp1",
      "hop": 0.12
     },
     {
      "at": 0.93,
-     "who": "rt2",
+     "who": "rp2",
      "hop": 0.12
     },
     {
      "at": 1.085,
-     "who": "rt3",
+     "who": "rp3",
      "hop": 0.12
     },
     {
      "at": 1.24,
-     "who": "rt4",
+     "who": "rp4",
      "hop": 0.12
     },
     {
      "at": 1.395,
-     "who": "rt5",
+     "who": "rp5",
+     "hop": 0.12
+    },
+    {
+     "at": 1.55,
+     "who": "rp6",
      "hop": 0.12
     }
-   ]
+   ],
+   "out": "dissolve"
   },
   {
    "start": 89.68,
@@ -1926,6 +1933,16 @@
     -6.2
    ],
    "actions": [
+    {
+     "at": 0.0,
+     "who": "fiscalT",
+     "to": [
+      77.9,
+      0.6,
+      -2.4
+     ],
+     "over": 0.01
+    },
     {
      "at": 0.0,
      "who": "fiscalT",

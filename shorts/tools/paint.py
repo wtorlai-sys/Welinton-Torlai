@@ -34,10 +34,10 @@ for j in range(rows):
         sh = r.uniform(-12, 12); c = tuple(int(v + sh) for v in hexc('#c99c72'))
         for dx in (-N, 0):
             box = [x0 + dx + 5, y0 + 5, x0 + dx + w, y0 + h]
-            d.rounded_rectangle(box, radius=26, fill=c + (255,), outline=INK + (255,), width=6)
+            d.rounded_rectangle(box, radius=26, fill=c + (255,), outline=(112, 74, 62, 255), width=5)
             d.arc([box[0] + 10, box[1] + 8, box[2] - 10, box[3] - 8], 200, 290, fill=(240, 214, 176, 255), width=6)
 strokes(img, 900, [hexc('#8e5f45'), hexc('#e9c9a0'), hexc('#7a5a6e')], (10, 40), 0.15, 2)
-save(img, 'chao.jpg')
+save(img.filter(ImageFilter.GaussianBlur(1.6)), 'chao.jpg')
 # parede: reboco amarelo-ocre colonial francês
 img = base(N, '#d9a85a', '#ecc77f', 2.5, 4)
 strokes(img, 1400, [hexc('#c28a45'), hexc('#f3d9a0'), hexc('#b77d55')], (30, 90), 0.16, 5)
