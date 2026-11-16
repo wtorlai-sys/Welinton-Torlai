@@ -1,0 +1,1891 @@
+{
+ "slug": "2026-11-16_monetizacao",
+ "duracao": 104.36,
+ "musica": {
+  "bpm": 124,
+  "quebras": "55.95:60.36",
+  "filtro": "48.71:50.34",
+  "fim": 103.7,
+  "semente": 7
+ },
+ "niveis": {
+  "musica_lu": -20,
+  "sfx_lu": -10
+ },
+ "cues": [
+  {
+   "id": "sfx01",
+   "evento": "e01",
+   "obs": "play 3D explode",
+   "t": 0.0,
+   "som": "impacto",
+   "args": {
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -5,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx02",
+   "evento": "e02",
+   "obs": "câmera atravessa o play",
+   "t": 1.08,
+   "som": "whoosh",
+   "args": {
+    "d": 0.55,
+    "forca": 0.8
+   },
+   "alinhar": "pico",
+   "ganho_db": -7,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx03",
+   "evento": "e03",
+   "obs": "contador",
+   "t": 1.2,
+   "som": "contador",
+   "args": {
+    "ate": 1.8,
+    "de": 0.09,
+    "para": 0.06,
+    "curva": 1
+   },
+   "alinhar": "inicio",
+   "ganho_db": -12,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx04",
+   "evento": "e04",
+   "obs": "1.000 trava dourado",
+   "t": 1.8,
+   "som": "pop",
+   "args": {
+    "forca": 1
+   },
+   "alinhar": "inicio",
+   "ganho_db": -7,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx05",
+   "evento": "e05",
+   "obs": "carimbo do play",
+   "t": 2.66,
+   "som": "impacto",
+   "args": {
+    "forca": 0.4
+   },
+   "alinhar": "pico",
+   "ganho_db": -8,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx06",
+   "evento": "e06",
+   "obs": "cartão de receita entra",
+   "t": 3.49,
+   "som": "whoosh",
+   "args": {
+    "d": 0.4,
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -10,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx07",
+   "evento": "e07",
+   "obs": "dinheiro se desfaz",
+   "t": 3.59,
+   "som": "moedas",
+   "args": {
+    "n": 5,
+    "d": 0.5
+   },
+   "alinhar": "inicio",
+   "ganho_db": -12,
+   "pan": 0.0,
+   "camada": "apoio"
+  },
+  {
+   "id": "sfx08",
+   "evento": "e08",
+   "obs": "MENOS DE + zoom",
+   "t": 3.9,
+   "som": "blip",
+   "args": {
+    "notas": 2,
+    "sobe": false
+   },
+   "alinhar": "inicio",
+   "ganho_db": -11,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx09",
+   "evento": "e09",
+   "obs": "slam R$ 5",
+   "t": 4.78,
+   "som": "impacto",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "pico",
+   "ganho_db": -3,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx10",
+   "evento": "e09",
+   "obs": "slam R$ 5",
+   "t": 4.78,
+   "som": "sub",
+   "args": {
+    "d": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -6,
+   "pan": 0.0,
+   "camada": "grave"
+  },
+  {
+   "id": "sfx11",
+   "evento": "e10",
+   "obs": "chicote para cima",
+   "t": 5.64,
+   "som": "whoosh",
+   "args": {
+    "d": 0.72,
+    "forca": 1
+   },
+   "alinhar": "pico",
+   "ganho_db": -4,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx12",
+   "evento": "e11",
+   "obs": "gráfico dispara + odômetro",
+   "t": 7.84,
+   "som": "riser",
+   "args": {
+    "d": 1.04,
+    "f0": 220,
+    "f1": 1800
+   },
+   "alinhar": "fim",
+   "ganho_db": -9,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx13",
+   "evento": "e12",
+   "obs": "MUITO",
+   "t": 7.2,
+   "som": "pop",
+   "args": {
+    "forca": 1
+   },
+   "alinhar": "inicio",
+   "ganho_db": -7,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx14",
+   "evento": "e13",
+   "obs": "MAIS + moedas 3D",
+   "t": 7.84,
+   "som": "impacto",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "pico",
+   "ganho_db": -3,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx15",
+   "evento": "e13",
+   "obs": "MAIS + moedas 3D",
+   "t": 7.84,
+   "som": "sub",
+   "args": {
+    "d": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -6,
+   "pan": 0.0,
+   "camada": "grave"
+  },
+  {
+   "id": "sfx16",
+   "evento": "e14",
+   "obs": "chuva de moedas/notas",
+   "t": 7.9,
+   "som": "moedas",
+   "args": {
+    "n": 14,
+    "d": 1.4
+   },
+   "alinhar": "inicio",
+   "ganho_db": -7,
+   "pan": 0.0,
+   "camada": "apoio"
+  },
+  {
+   "id": "sfx17",
+   "evento": "e15",
+   "obs": "flash de corte c02",
+   "t": 9.01,
+   "som": "whoosh",
+   "args": {
+    "d": 0.4,
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -10,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx18",
+   "evento": "e16",
+   "obs": "risco dourado",
+   "t": 9.9,
+   "som": "whoosh",
+   "args": {
+    "d": 0.4,
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -10,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx19",
+   "evento": "e17",
+   "obs": "carimbo VERDADE",
+   "t": 10.38,
+   "som": "impacto",
+   "args": {
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -5,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx20",
+   "evento": "e18",
+   "obs": "zoom-through c03",
+   "t": 10.98,
+   "som": "whoosh",
+   "args": {
+    "d": 0.55,
+    "forca": 0.8
+   },
+   "alinhar": "pico",
+   "ganho_db": -7,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx21",
+   "evento": "e19",
+   "obs": "cartão do canal",
+   "t": 11.18,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx22",
+   "evento": "e20",
+   "obs": "chave Monetização liga",
+   "t": 13.24,
+   "som": "clique",
+   "args": {},
+   "alinhar": "inicio",
+   "ganho_db": -7,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx23",
+   "evento": "e20",
+   "obs": "chave Monetização liga",
+   "t": 13.24,
+   "som": "blip",
+   "args": {
+    "notas": 2
+   },
+   "alinhar": "inicio",
+   "ganho_db": -11,
+   "pan": 0.0,
+   "camada": "apoio"
+  },
+  {
+   "id": "sfx24",
+   "evento": "e21",
+   "obs": "carteira entra",
+   "t": 14.13,
+   "som": "whoosh",
+   "args": {
+    "d": 0.4,
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -10,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx25",
+   "evento": "e22",
+   "obs": "odômetro R$ ???",
+   "t": 14.18,
+   "som": "contador",
+   "args": {
+    "ate": 14.9,
+    "de": 0.07,
+    "para": 0.05,
+    "curva": 1
+   },
+   "alinhar": "inicio",
+   "ganho_db": -14,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx26",
+   "evento": "e23",
+   "obs": "por 1.000 visualizações",
+   "t": 14.98,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx27",
+   "evento": "e24",
+   "obs": "drop PRIMEIRO",
+   "t": 16.42,
+   "som": "whoosh",
+   "args": {
+    "d": 0.55,
+    "forca": 0.8
+   },
+   "alinhar": "pico",
+   "ganho_db": -7,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx28",
+   "evento": "e25",
+   "obs": "alerta",
+   "t": 17.66,
+   "som": "ding",
+   "args": {
+    "duplo": true,
+    "d": 0.7
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx29",
+   "evento": "e26",
+   "obs": "painel inclinação 3D",
+   "t": 18.46,
+   "som": "whoosh",
+   "args": {
+    "d": 0.55,
+    "forca": 0.8
+   },
+   "alinhar": "pico",
+   "ganho_db": -7,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx30",
+   "evento": "e27",
+   "obs": "etiqueta valor fixo",
+   "t": 20.1,
+   "som": "whoosh",
+   "args": {
+    "d": 0.4,
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -10,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx31",
+   "evento": "e28",
+   "obs": "carimbo ✕",
+   "t": 21.06,
+   "som": "impacto",
+   "args": {
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -5,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx32",
+   "evento": "e29",
+   "obs": "whip esquerda c05",
+   "t": 21.91,
+   "som": "whoosh",
+   "args": {
+    "d": 0.72,
+    "forca": 1
+   },
+   "alinhar": "pico",
+   "ganho_db": -4,
+   "pan": -0.35,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx33",
+   "evento": "e30",
+   "obs": "lâmpada + barra abre",
+   "t": 23.12,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx34",
+   "evento": "e31",
+   "obs": "chip 1",
+   "t": 23.88,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx35",
+   "evento": "e32",
+   "obs": "chip 2",
+   "t": 25.18,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx36",
+   "evento": "e33",
+   "obs": "chip Brasil",
+   "t": 26.42,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx37",
+   "evento": "e34",
+   "obs": "zoom-through c06",
+   "t": 27.13,
+   "som": "whoosh",
+   "args": {
+    "d": 0.55,
+    "forca": 0.8
+   },
+   "alinhar": "pico",
+   "ganho_db": -7,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx38",
+   "evento": "e35",
+   "obs": "ESTIMATIVA COMUM",
+   "t": 27.5,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx39",
+   "evento": "e36",
+   "obs": "CANAIS MENORES",
+   "t": 28.98,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx40",
+   "evento": "e37",
+   "obs": "R$ 1",
+   "t": 30.22,
+   "som": "impacto",
+   "args": {
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -5,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx41",
+   "evento": "e38",
+   "obs": "R$ 5",
+   "t": 30.64,
+   "som": "impacto",
+   "args": {
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -5,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx42",
+   "evento": "e39",
+   "obs": "a cada 1.000",
+   "t": 31.94,
+   "som": "contador",
+   "args": {
+    "ate": 32.6,
+    "de": 0.08,
+    "para": 0.06,
+    "curva": 1
+   },
+   "alinhar": "inicio",
+   "ganho_db": -14,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx43",
+   "evento": "e40",
+   "obs": "faixa vira HUD",
+   "t": 33.5,
+   "som": "whoosh",
+   "args": {
+    "d": 0.55,
+    "forca": 0.8
+   },
+   "alinhar": "pico",
+   "ganho_db": -7,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx44",
+   "evento": "e41",
+   "obs": "SÓ!",
+   "t": 34.38,
+   "som": "impacto",
+   "args": {
+    "forca": 0.4
+   },
+   "alinhar": "pico",
+   "ganho_db": -8,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx45",
+   "evento": "e42",
+   "obs": "canal volta",
+   "t": 35.24,
+   "som": "whoosh",
+   "args": {
+    "d": 0.4,
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -10,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx46",
+   "evento": "e43",
+   "obs": "pulso monetizado",
+   "t": 36.5,
+   "som": "ding",
+   "args": {
+    "d": 0.7
+   },
+   "alinhar": "inicio",
+   "ganho_db": -12,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx47",
+   "evento": "e44",
+   "obs": "pan + vídeo cai",
+   "t": 37.26,
+   "som": "whoosh",
+   "args": {
+    "d": 0.55,
+    "forca": 0.8
+   },
+   "alinhar": "pico",
+   "ganho_db": -7,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx48",
+   "evento": "e45",
+   "obs": "1.000→10.000",
+   "t": 38.42,
+   "som": "contador",
+   "args": {
+    "ate": 38.88,
+    "de": 0.06,
+    "para": 0.035,
+    "curva": 1
+   },
+   "alinhar": "inicio",
+   "ganho_db": -12,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx49",
+   "evento": "e46",
+   "obs": "10 MIL + pessoas",
+   "t": 38.88,
+   "som": "impacto",
+   "args": {
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -5,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx50",
+   "evento": "e47",
+   "obs": "cartão gira",
+   "t": 40.25,
+   "som": "whoosh",
+   "args": {
+    "d": 0.55,
+    "forca": 0.8
+   },
+   "alinhar": "pico",
+   "ganho_db": -7,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx51",
+   "evento": "e48",
+   "obs": "R$ 10",
+   "t": 41.58,
+   "som": "impacto",
+   "args": {
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -5,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx52",
+   "evento": "e49",
+   "obs": "R$ 50 + moedas",
+   "t": 42.16,
+   "som": "impacto",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "pico",
+   "ganho_db": -3,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx53",
+   "evento": "e49",
+   "obs": "R$ 50 + moedas",
+   "t": 42.16,
+   "som": "sub",
+   "args": {
+    "d": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -6,
+   "pan": 0.0,
+   "camada": "grave"
+  },
+  {
+   "id": "sfx54",
+   "evento": "e50",
+   "obs": "moedas",
+   "t": 42.16,
+   "som": "moedas",
+   "args": {
+    "n": 8,
+    "d": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -9,
+   "pan": 0.0,
+   "camada": "apoio"
+  },
+  {
+   "id": "sfx55",
+   "evento": "e51",
+   "obs": "whip para cima c09",
+   "t": 43.44,
+   "som": "whoosh",
+   "args": {
+    "d": 0.72,
+    "forca": 1
+   },
+   "alinhar": "pico",
+   "ganho_db": -4,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx56",
+   "evento": "e52",
+   "obs": "contador acelerado até 100.000 (+K)",
+   "t": 44.0,
+   "som": "contador",
+   "args": {
+    "ate": 44.62,
+    "de": 0.06,
+    "para": 0.03,
+    "curva": 1
+   },
+   "alinhar": "inicio",
+   "ganho_db": -11,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx57",
+   "evento": "e53",
+   "obs": "barra 100K dispara",
+   "t": 44.62,
+   "som": "riser",
+   "args": {
+    "d": 0.6,
+    "f0": 220,
+    "f1": 1800
+   },
+   "alinhar": "fim",
+   "ganho_db": -11,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx58",
+   "evento": "e54",
+   "obs": "100 MIL",
+   "t": 44.62,
+   "som": "pop",
+   "args": {
+    "forca": 1
+   },
+   "alinhar": "inicio",
+   "ganho_db": -7,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx59",
+   "evento": "e55",
+   "obs": "painel de receita",
+   "t": 46.03,
+   "som": "whoosh",
+   "args": {
+    "d": 0.4,
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -10,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx60",
+   "evento": "e56",
+   "obs": "ATÉ R$ 500",
+   "t": 47.18,
+   "som": "impacto",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "pico",
+   "ganho_db": -3,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx61",
+   "evento": "e56",
+   "obs": "ATÉ R$ 500",
+   "t": 47.18,
+   "som": "sub",
+   "args": {
+    "d": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -6,
+   "pan": 0.0,
+   "camada": "grave"
+  },
+  {
+   "id": "sfx62",
+   "evento": "e56",
+   "obs": "ATÉ R$ 500",
+   "t": 47.18,
+   "som": "caixa",
+   "args": {},
+   "alinhar": "inicio",
+   "ganho_db": -8,
+   "pan": 0.0,
+   "camada": "apoio"
+  },
+  {
+   "id": "sfx63",
+   "evento": "e57",
+   "obs": "escurece, preparação (até 50,34)",
+   "t": 50.34,
+   "som": "riser",
+   "args": {
+    "d": 1.63,
+    "f0": 150,
+    "f1": 1800
+   },
+   "alinhar": "fim",
+   "ganho_db": -7,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx64",
+   "evento": "e58",
+   "obs": "contador expo.in até 1.000.000",
+   "t": 49.38,
+   "som": "contador",
+   "args": {
+    "ate": 50.34,
+    "de": 0.13,
+    "para": 0.022,
+    "curva": 2.0
+   },
+   "alinhar": "inicio",
+   "ganho_db": -11,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx65",
+   "evento": "e59",
+   "obs": "1 MILHÃO trava + flash",
+   "t": 50.34,
+   "som": "impacto",
+   "args": {
+    "forca": 1
+   },
+   "alinhar": "pico",
+   "ganho_db": -1.5,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx66",
+   "evento": "e59",
+   "obs": "1 MILHÃO trava + flash",
+   "t": 50.34,
+   "som": "sub",
+   "args": {
+    "d": 1.3
+   },
+   "alinhar": "inicio",
+   "ganho_db": -3,
+   "pan": 0.0,
+   "camada": "grave"
+  },
+  {
+   "id": "sfx67",
+   "evento": "e60",
+   "obs": "1 MILHÃO",
+   "t": 51.02,
+   "som": "pop",
+   "args": {
+    "forca": 1
+   },
+   "alinhar": "inicio",
+   "ganho_db": -7,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx68",
+   "evento": "e61",
+   "obs": "zoom-through c11",
+   "t": 52.0,
+   "som": "whoosh",
+   "args": {
+    "d": 0.72,
+    "forca": 1
+   },
+   "alinhar": "pico",
+   "ganho_db": -4,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx69",
+   "evento": "e62",
+   "obs": "slot girando",
+   "t": 52.18,
+   "som": "contador",
+   "args": {
+    "ate": 53.58,
+    "de": 0.045,
+    "para": 0.11,
+    "curva": 1
+   },
+   "alinhar": "inicio",
+   "ganho_db": -12,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx70",
+   "evento": "e63",
+   "obs": "R$ 1.000",
+   "t": 53.58,
+   "som": "clique",
+   "args": {},
+   "alinhar": "inicio",
+   "ganho_db": -6,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx71",
+   "evento": "e63",
+   "obs": "R$ 1.000",
+   "t": 53.58,
+   "som": "pop",
+   "args": {
+    "forca": 1
+   },
+   "alinhar": "inicio",
+   "ganho_db": -8,
+   "pan": 0.0,
+   "camada": "apoio"
+  },
+  {
+   "id": "sfx72",
+   "evento": "e64",
+   "obs": "R$ 5.000 + moedas 3D",
+   "t": 54.14,
+   "som": "impacto",
+   "args": {
+    "forca": 1
+   },
+   "alinhar": "pico",
+   "ganho_db": 0,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx73",
+   "evento": "e64",
+   "obs": "R$ 5.000 + moedas 3D",
+   "t": 54.14,
+   "som": "sub",
+   "args": {
+    "d": 1.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -1,
+   "pan": 0.0,
+   "camada": "grave"
+  },
+  {
+   "id": "sfx74",
+   "evento": "e65",
+   "obs": "chuva de moedas/notas",
+   "t": 54.2,
+   "som": "moedas",
+   "args": {
+    "n": 14,
+    "d": 1.4
+   },
+   "alinhar": "inicio",
+   "ganho_db": -7,
+   "pan": 0.0,
+   "camada": "apoio"
+  },
+  {
+   "id": "sfx75",
+   "evento": "e66",
+   "obs": "virada: congela; música corta/abaixa",
+   "t": 55.95,
+   "som": "glitch",
+   "args": {
+    "d": 0.6
+   },
+   "alinhar": "inicio",
+   "ganho_db": -5,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx76",
+   "evento": "e66",
+   "obs": "virada: congela; música corta/abaixa",
+   "t": 55.95,
+   "som": "sub",
+   "args": {
+    "f0": 70,
+    "f1": 30,
+    "d": 1.6
+   },
+   "alinhar": "inicio",
+   "ganho_db": -7,
+   "pan": 0.0,
+   "camada": "grave"
+  },
+  {
+   "id": "sfx77",
+   "evento": "e67",
+   "obs": "lupa (tom grave)",
+   "t": 57.76,
+   "som": "drone",
+   "args": {
+    "d": 1.4,
+    "f": 45
+   },
+   "alinhar": "inicio",
+   "ganho_db": -9,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx78",
+   "evento": "e68",
+   "obs": "dígitos viram ?",
+   "t": 58.24,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx79",
+   "evento": "e69",
+   "obs": "a conta",
+   "t": 59.8,
+   "som": "ding",
+   "args": {
+    "d": 1.0
+   },
+   "alinhar": "inicio",
+   "ganho_db": -11,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx80",
+   "evento": "e70",
+   "obs": "acender c13",
+   "t": 60.36,
+   "som": "whoosh",
+   "args": {
+    "d": 0.4,
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -10,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx81",
+   "evento": "e71",
+   "obs": "botão gira",
+   "t": 61.8,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx82",
+   "evento": "e72",
+   "obs": "agulha varre",
+   "t": 62.48,
+   "som": "whoosh",
+   "args": {
+    "d": 0.4,
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -10,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx83",
+   "evento": "e73",
+   "obs": "PAGAMENTO acende",
+   "t": 63.02,
+   "som": "ding",
+   "args": {
+    "d": 1.0
+   },
+   "alinhar": "inicio",
+   "ganho_db": -9,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx84",
+   "evento": "e74",
+   "obs": "carrossel 3D Finanças",
+   "t": 64.47,
+   "som": "whoosh",
+   "args": {
+    "d": 0.55,
+    "forca": 0.8
+   },
+   "alinhar": "pico",
+   "ganho_db": -7,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx85",
+   "evento": "e75",
+   "obs": "medidor $$$ enche",
+   "t": 66.38,
+   "som": "contador",
+   "args": {
+    "ate": 67.2,
+    "de": 0.08,
+    "para": 0.05,
+    "curva": 1
+   },
+   "alinhar": "inicio",
+   "ganho_db": -12,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx86",
+   "evento": "e76",
+   "obs": "por 1.000 visualizações",
+   "t": 67.27,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx87",
+   "evento": "e77",
+   "obs": "carrossel → Entretenimento",
+   "t": 69.17,
+   "som": "whoosh",
+   "args": {
+    "d": 0.55,
+    "forca": 0.8
+   },
+   "alinhar": "pico",
+   "ganho_db": -7,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx88",
+   "evento": "e78",
+   "obs": "Humor + recuo",
+   "t": 70.15,
+   "som": "whoosh",
+   "args": {
+    "d": 0.55,
+    "forca": 0.8
+   },
+   "alinhar": "pico",
+   "ganho_db": -7,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx89",
+   "evento": "e79",
+   "obs": "flash c15",
+   "t": 70.72,
+   "som": "impacto",
+   "args": {
+    "forca": 0.4
+   },
+   "alinhar": "pico",
+   "ganho_db": -8,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx90",
+   "evento": "e80",
+   "obs": "OUTRA",
+   "t": 71.3,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx91",
+   "evento": "e81",
+   "obs": "DIFERENÇA",
+   "t": 71.68,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx92",
+   "evento": "e82",
+   "obs": "ENORME",
+   "t": 72.18,
+   "som": "impacto",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "pico",
+   "ganho_db": -3,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx93",
+   "evento": "e82",
+   "obs": "ENORME",
+   "t": 72.18,
+   "som": "sub",
+   "args": {
+    "d": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -6,
+   "pan": 0.0,
+   "camada": "grave"
+  },
+  {
+   "id": "sfx94",
+   "evento": "e83",
+   "obs": "≠",
+   "t": 72.62,
+   "som": "pop",
+   "args": {
+    "forca": 1
+   },
+   "alinhar": "inicio",
+   "ganho_db": -7,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx95",
+   "evento": "e84",
+   "obs": "tela divide",
+   "t": 73.05,
+   "som": "whoosh",
+   "args": {
+    "d": 0.55,
+    "forca": 0.8
+   },
+   "alinhar": "pico",
+   "ganho_db": -7,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx96",
+   "evento": "e85",
+   "obs": "celular Shorts",
+   "t": 73.44,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx97",
+   "evento": "e86",
+   "obs": "medidor $",
+   "t": 74.69,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx98",
+   "evento": "e87",
+   "obs": "medidor esvazia (queda)",
+   "t": 75.56,
+   "som": "blip",
+   "args": {
+    "notas": 3,
+    "sobe": false
+   },
+   "alinhar": "inicio",
+   "ganho_db": -9,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx99",
+   "evento": "e88",
+   "obs": "lado longo acende $$$",
+   "t": 76.28,
+   "som": "ding",
+   "args": {
+    "f": 1568,
+    "duplo": true,
+    "d": 1.0
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx100",
+   "evento": "e88",
+   "obs": "lado longo acende $$$",
+   "t": 76.28,
+   "som": "moedas",
+   "args": {
+    "n": 5,
+    "d": 0.5
+   },
+   "alinhar": "inicio",
+   "ganho_db": -14,
+   "pan": 0.0,
+   "camada": "apoio"
+  },
+  {
+   "id": "sfx101",
+   "evento": "e89",
+   "obs": "? cai",
+   "t": 77.84,
+   "som": "whoosh",
+   "args": {
+    "d": 0.55,
+    "forca": 0.8
+   },
+   "alinhar": "pico",
+   "ganho_db": -7,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx102",
+   "evento": "e90",
+   "obs": "faíscas",
+   "t": 78.66,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx103",
+   "evento": "e91",
+   "obs": "canal + cadeado",
+   "t": 79.77,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx104",
+   "evento": "e92",
+   "obs": "cadeado abre + moedas",
+   "t": 80.96,
+   "som": "clique",
+   "args": {},
+   "alinhar": "inicio",
+   "ganho_db": -4,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx105",
+   "evento": "e92",
+   "obs": "cadeado abre + moedas",
+   "t": 80.96,
+   "som": "sub",
+   "args": {
+    "d": 0.7
+   },
+   "alinhar": "inicio",
+   "ganho_db": -8,
+   "pan": 0.0,
+   "camada": "grave"
+  },
+  {
+   "id": "sfx106",
+   "evento": "e93",
+   "obs": "ingresso desliza",
+   "t": 81.99,
+   "som": "whoosh",
+   "args": {
+    "d": 0.4,
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -10,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx107",
+   "evento": "e94",
+   "obs": "ingresso rasga",
+   "t": 83.0,
+   "som": "impacto",
+   "args": {
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -5,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx108",
+   "evento": "e95",
+   "obs": "whip direita c18",
+   "t": 83.66,
+   "som": "whoosh",
+   "args": {
+    "d": 0.72,
+    "forca": 1
+   },
+   "alinhar": "pico",
+   "ganho_db": -4,
+   "pan": 0.35,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx109",
+   "evento": "e96",
+   "obs": "nó PAGAMENTO",
+   "t": 83.9,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx110",
+   "evento": "e97",
+   "obs": "Público",
+   "t": 85.08,
+   "som": "blip",
+   "args": {
+    "notas": 2
+   },
+   "alinhar": "inicio",
+   "ganho_db": -11,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx111",
+   "evento": "e98",
+   "obs": "Conteúdo",
+   "t": 85.96,
+   "som": "blip",
+   "args": {
+    "notas": 2
+   },
+   "alinhar": "inicio",
+   "ganho_db": -11,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx112",
+   "evento": "e99",
+   "obs": "Anúncios",
+   "t": 86.92,
+   "som": "blip",
+   "args": {
+    "notas": 2
+   },
+   "alinhar": "inicio",
+   "ganho_db": -11,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx113",
+   "evento": "e100",
+   "obs": "Views que geram receita",
+   "t": 88.34,
+   "som": "blip",
+   "args": {
+    "notas": 2
+   },
+   "alinhar": "inicio",
+   "ganho_db": -11,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx114",
+   "evento": "e101",
+   "obs": "pulsos convergem, nó acende",
+   "t": 90.22,
+   "som": "impacto",
+   "args": {
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -5,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx115",
+   "evento": "e102",
+   "obs": "speed ramp para dentro do nó",
+   "t": 90.6,
+   "som": "whoosh",
+   "args": {
+    "d": 0.72,
+    "forca": 1
+   },
+   "alinhar": "pico",
+   "ganho_db": -4,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx116",
+   "evento": "e103",
+   "obs": "painel de comentários",
+   "t": 91.0,
+   "som": "whoosh",
+   "args": {
+    "d": 0.55,
+    "forca": 0.8
+   },
+   "alinhar": "pico",
+   "ganho_db": -7,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx117",
+   "evento": "e104",
+   "obs": "chip Começando",
+   "t": 92.64,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx118",
+   "evento": "e105",
+   "obs": "play",
+   "t": 93.56,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx119",
+   "evento": "e106",
+   "obs": "chip Já monetizei",
+   "t": 94.38,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx120",
+   "evento": "e107",
+   "obs": "VOCÊ JÁ MONETIZOU?",
+   "t": 95.02,
+   "som": "impacto",
+   "args": {
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -5,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx121",
+   "evento": "e108",
+   "obs": "câmera desce",
+   "t": 95.8,
+   "som": "whoosh",
+   "args": {
+    "d": 0.4,
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -10,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx122",
+   "evento": "e109",
+   "obs": "cursor",
+   "t": 96.06,
+   "som": "whoosh",
+   "args": {
+    "d": 0.4,
+    "forca": 0.6
+   },
+   "alinhar": "pico",
+   "ganho_db": -10,
+   "pan": 0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx123",
+   "evento": "e110",
+   "obs": "clique Comentar",
+   "t": 96.5,
+   "som": "pop",
+   "args": {
+    "forca": 1
+   },
+   "alinhar": "inicio",
+   "ganho_db": -7,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx124",
+   "evento": "e111",
+   "obs": "balão 1",
+   "t": 97.22,
+   "som": "ding",
+   "args": {
+    "d": 0.7
+   },
+   "alinhar": "inicio",
+   "ganho_db": -12,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx125",
+   "evento": "e112",
+   "obs": "balão 2",
+   "t": 97.62,
+   "som": "ding",
+   "args": {
+    "d": 0.7
+   },
+   "alinhar": "inicio",
+   "ganho_db": -12,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx126",
+   "evento": "e113",
+   "obs": "EP. 1",
+   "t": 98.44,
+   "som": "pop",
+   "args": {
+    "forca": 1
+   },
+   "alinhar": "inicio",
+   "ganho_db": -7,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx127",
+   "evento": "e114",
+   "obs": "EP. 2? / 3?",
+   "t": 99.2,
+   "som": "pop",
+   "args": {
+    "forca": 0.8
+   },
+   "alinhar": "inicio",
+   "ganho_db": -10,
+   "pan": 0.0,
+   "camada": "principal"
+  },
+  {
+   "id": "sfx128",
+   "evento": "e115",
+   "obs": "moeda corre pela fila",
+   "t": 102.06,
+   "som": "moedas",
+   "args": {
+    "n": 10,
+    "d": 1.6
+   },
+   "alinhar": "inicio",
+   "ganho_db": -9,
+   "pan": 0.0,
+   "camada": "apoio"
+  },
+  {
+   "id": "sfx129",
+   "evento": "e116",
+   "obs": "play final",
+   "t": 103.7,
+   "som": "impacto",
+   "args": {
+    "forca": 0.4
+   },
+   "alinhar": "pico",
+   "ganho_db": -8,
+   "pan": 0.0,
+   "camada": "principal"
+  }
+ ]
+}

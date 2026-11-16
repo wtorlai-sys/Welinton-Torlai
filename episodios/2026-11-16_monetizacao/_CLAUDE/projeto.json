@@ -7,7 +7,7 @@
   "preparar": "concluido",
   "motion_mapa": "concluido",
   "motion_render": "concluido",
-  "sfx": "pendente",
+  "sfx": "aguardando_aprovacao",
   "render": "pendente"
  },
  "pendencias": [],
@@ -1840,5 +1840,18 @@
    "c03–c08 · prancha_v02 · 16/11",
    "c09–c20 · prancha_v03 · 16/11"
   ]
+ },
+ "sfx": {
+  "cues": "ferramentas/scripts/sfx_2026-11-16_monetizacao.json",
+  "n_cues": 129,
+  "musica": "código · 124 BPM · Lá menor · filtro 48,71–50,34 · tape stop 55,95 → volta 60,36 · fecho 103,7",
+  "niveis": "voz -22,1 LUFS · música -20 LU abaixo + ducking · sfx -10 LU abaixo · master -14,1 LUFS, pico -1,9 dBTP",
+  "arquivos": [
+   "public/2026-11-16_monetizacao/sfx.wav",
+   "public/2026-11-16_monetizacao/musica.wav",
+   "public/2026-11-16_monetizacao/mix.m4a"
+  ],
+  "previa": "_CLAUDE/revisao/previa_gancho_v01.mp4",
+  "versao": 1
  }
 }
