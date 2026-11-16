@@ -8,7 +8,7 @@
   "motion_mapa": "concluido",
   "motion_render": "concluido",
   "sfx": "concluido",
-  "render": "pendente"
+  "render": "aguardando_aprovacao"
  },
  "pendencias": [],
  "alertas": [],
@@ -1854,5 +1854,12 @@
   "previa": "_CLAUDE/revisao/previa_gancho_v01.mp4",
   "versao": 1,
   "aprovado": "previa_gancho_v01 · 16/11"
+ },
+ "entregas": {
+  "v01": {
+   "arquivo": "FINAL/2026-11-16_monetizacao_v01.mp4",
+   "qc": "_CLAUDE/revisao/qc_v01.png",
+   "resumo": "1920x1080 30fps 3131 frames 104,37s; -14,1 LUFS; pico -1,8 dBTP; render em 8 partes juntadas"
+  }
  }
 }
