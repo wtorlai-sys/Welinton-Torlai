@@ -8,7 +8,7 @@ import {BlendFunction, Effect, EffectComposer, EffectPass, RenderPass, Selective
 import {mulberry32} from '../style/random';
 import {PALETTE, REF} from '../style/constants';
 
-export type LightingPreset = 'dia' | 'entardecer';
+export type LightingPreset = 'dia' | 'entardecer' | 'noite';
 
 type PresetDef = {
 	skyTop: string;
@@ -67,6 +67,24 @@ export const LIGHTING: Record<LightingPreset, PresetDef> = {
 		exposure: 1.0,
 		bloom: true,
 		grade: {contrast: 1.12, saturation: 0.95, shadowTint: [-0.01, 0.0, 0.03], highlightTint: [0.025, 0.01, -0.01]},
+	},
+	/** Noite: "sol" vira luar azulado a 10%, fundo #2B3550; luz quente vem dos emissivos (<Glow>). */
+	noite: {
+		skyTop: '#121829',
+		skyHorizon: PALETTE.nightBg,
+		ground: '#1A2030',
+		sunColor: '#A9BEFF',
+		sunIntensity: REF.light.sunIntensity * REF.light.night.sunFactor,
+		sunElevation: 30,
+		sunAzimuth: REF.light.sunAzimuth,
+		hemiSky: '#4A5C8A',
+		hemiGround: '#22262F',
+		hemiIntensity: 0.35,
+		envIntensity: 0.25,
+		fog: [REF.light.fogNear, REF.light.fogFar],
+		exposure: 1.0,
+		bloom: true,
+		grade: {contrast: 1.12, saturation: 0.95, shadowTint: [-0.012, 0.0, 0.035], highlightTint: [0.03, 0.012, -0.012]},
 	},
 };
 
@@ -241,6 +259,11 @@ export type LightingProps = {
 	bloom?: boolean;
 	/** 2048–4096 (REF) */
 	shadowMapSize?: number;
+	/**
+	 * Cena de interior: o "chão" do hemisfério vira o rebatimento quente do piso (em vez do verde
+	 * da grama, que tingia teto/paredes) e o fill sobe — dentro de casa só a janela recebe sol.
+	 */
+	interior?: boolean;
 };
 
 export const sunDirection = (azimuthDeg: number, elevationDeg: number) => {
@@ -249,8 +272,11 @@ export const sunDirection = (azimuthDeg: number, elevationDeg: number) => {
 	return new THREE.Vector3(Math.sin(az) * Math.cos(el), Math.sin(el), Math.cos(az) * Math.cos(el)).normalize();
 };
 
-export const Lighting: React.FC<LightingProps> = ({preset = 'dia', focus = [0, 0, 0], shadowExtent = 18, sunAzimuth, sunElevation, post = true, bloom, shadowMapSize = REF.light.shadowMapSize}) => {
-	const p = LIGHTING[preset];
+export const Lighting: React.FC<LightingProps> = ({preset = 'dia', focus = [0, 0, 0], shadowExtent = 18, sunAzimuth, sunElevation, post = true, bloom, shadowMapSize = REF.light.shadowMapSize, interior = false}) => {
+	const base = LIGHTING[preset];
+	const p: PresetDef = interior
+		? {...base, hemiGround: preset === 'dia' ? '#C8B49A' : '#3A3026', hemiSky: preset === 'dia' ? '#E4ECF5' : base.hemiSky, hemiIntensity: base.hemiIntensity * (preset === 'dia' ? 1.9 : 1.3)}
+		: base;
 	const sunDir = useMemo(() => sunDirection(sunAzimuth ?? p.sunAzimuth, sunElevation ?? p.sunElevation), [p, sunAzimuth, sunElevation]);
 	const target = useMemo(() => new THREE.Object3D(), []);
 	const sunPos = useMemo(() => new THREE.Vector3(...focus).addScaledVector(sunDir, 60), [focus, sunDir]);

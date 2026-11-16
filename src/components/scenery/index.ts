@@ -6,3 +6,8 @@ export {Fence} from './Fence';
 export {Sign, DaysSinceSign} from './Sign';
 export type {SignLine, SignProps} from './Sign';
 export {Car} from './Car';
+export {Room} from './Room';
+export type {RoomProps, WindowSpec} from './Room';
+export {Bed, bedTop, Nightstand, Wardrobe, Rug, DoorPanel, Briefcase, MilkGlass} from './Furniture';
+export {Counter, Fridge, Table, Chair} from './Kitchen';
+export {House} from './House';

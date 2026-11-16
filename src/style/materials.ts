@@ -204,21 +204,23 @@ export const makeAsphaltMaterial = (halfWidth = 3.5) =>
 				float grain = vnoise(p * 9.0) * 0.6 + vnoise(p * 31.0) * 0.4;
 				vec3 a = mix(uA, uB, smoothstep(0.3, 0.75, big));
 				a *= 0.88 + 0.22 * grain;
+				// faixas em coordenada LOCAL da estrada (x = transversal, y = longitudinal): funciona girada
+				vec2 q = vL.xy;
 				// trilhas de pneu (mais escuras/lisas) nas duas faixas
 				float lane = uHalf * 0.5;
 				float tracks = 0.0;
 				for (int s = -1; s <= 1; s += 2) {
 					float lc = float(s) * lane;
 					// (x*x em vez de pow(x, 2.0): pow com base negativa é indefinido em GLSL → NaN)
-					float d1 = (p.x - (lc - 0.8)) / 0.35;
-					float d2 = (p.x - (lc + 0.8)) / 0.35;
+					float d1 = (q.x - (lc - 0.8)) / 0.35;
+					float d2 = (q.x - (lc + 0.8)) / 0.35;
 					tracks += exp(-d1 * d1) + exp(-d2 * d2);
 				}
 				a *= 1.0 - 0.12 * tracks;
 				// faixas: bordas brancas contínuas + centro amarelo tracejado
-				float edgeL = band(p.x - (uHalf - 0.3), 0.08) + band(p.x + (uHalf - 0.3), 0.08);
-				float dash = step(fract(p.z / 12.0), 0.4);
-				float center = band(p.x, 0.07) * dash;
+				float edgeL = band(q.x - (uHalf - 0.3), 0.08) + band(q.x + (uHalf - 0.3), 0.08);
+				float dash = step(fract(q.y / 12.0), 0.4);
+				float center = band(q.x, 0.07) * dash;
 				float wear = 0.8 + 0.2 * vnoise(p * 4.0);
 				a = mix(a, uLine * wear, clamp(edgeL, 0.0, 1.0));
 				a = mix(a, uYellow * wear, center);
@@ -311,3 +313,65 @@ export const makeBlobShadowMaterial = () =>
 	memo('blob', () =>
 		new THREE.MeshBasicMaterial({map: blobShadowTexture(), transparent: true, depthWrite: false, toneMapped: false, polygonOffset: true, polygonOffsetFactor: -1}),
 	);
+
+/* ------------------------------------------------------------------ */
+/* Interiores                                                          */
+/* ------------------------------------------------------------------ */
+
+/**
+ * Piso de tábuas: cada tábua tem tom/veio próprios por hash (fileira × tábua) e emendas
+ * deslocadas por fileira — padrão natural, sem tile repetido.
+ */
+export const makeFloorMaterial = (color = '#B07A4A', plankWidth = 0.14) =>
+	memo(`floor-${color}-${plankWidth}`, () =>
+		patchStandard(new THREE.MeshStandardMaterial({color: '#ffffff', roughness: 0.6}), `floor-${color}-${plankWidth}`, {
+			uniforms: {uWood: {value: c(color)}, uPW: {value: plankWidth}},
+			color: /* glsl */ `
+				vec2 p = vW.xz;
+				float row = floor(p.y / uPW);
+				float off = hash31(vec3(row, 1.0, 7.0)) * 3.0;
+				float len = 0.9 + hash31(vec3(row, 3.0, 1.0)) * 0.8;
+				float plank = floor((p.x + off) / len);
+				float tone = hash31(vec3(row, plank, 5.0));
+				float grain = fbm(vec3((p.x + off) * 1.2, p.y * 40.0, row * 3.1 + plank));
+				vec3 w = uWood * (0.72 + 0.4 * tone) * (0.82 + 0.3 * grain);
+				// emendas (bordas escuras) com AA
+				float fy = fract(p.y / uPW);
+				float fx = fract((p.x + off) / len);
+				float seam = max(1.0 - smoothstep(0.0, 0.06, min(fy, 1.0 - fy)), 1.0 - smoothstep(0.0, 0.008, min(fx, 1.0 - fx)));
+				w *= 1.0 - 0.45 * seam;
+				diffuseColor.rgb = w;
+			`,
+			roughness: /* glsl */ `roughnessFactor = 0.5 + 0.25 * vnoise(vW * 3.0);`,
+		}),
+	);
+
+/** Parede pintada: cor chapada com manchas grandes suaves + grão fino (sem tile). */
+export const makeWallMaterial = (color = '#E9DCC3') =>
+	memo(`wall-${color}`, () =>
+		patchStandard(new THREE.MeshStandardMaterial({color: '#ffffff', roughness: 0.92}), `wall-${color}`, {
+			uniforms: {uPaint: {value: c(color)}},
+			color: /* glsl */ `
+				float big = fbm(vW * 0.6);
+				float fine = vnoise(vW * 40.0);
+				diffuseColor.rgb = uPaint * (0.93 + 0.1 * big) * (0.97 + 0.05 * fine);
+			`,
+		}),
+	);
+
+/** Tecido (edredom, travesseiro, tapete): fosco, com trama sutil. */
+export const makeFabricMaterial = (color: string) =>
+	memo(`fabric-${color}`, () =>
+		patchStandard(new THREE.MeshStandardMaterial({color: '#ffffff', roughness: 1}), `fabric-${color}`, {
+			uniforms: {uCloth: {value: c(color)}},
+			color: /* glsl */ `
+				float weave = vnoise(vW * 90.0) * 0.5 + vnoise(vW * 23.0) * 0.5;
+				float fold = fbm(vW * 2.5);
+				diffuseColor.rgb = uCloth * (0.85 + 0.15 * weave) * (0.88 + 0.2 * fold);
+			`,
+		}),
+	);
+
+/** Material liso semi-realista genérico (móveis pintados, eletrodomésticos). */
+export const makePlainMaterial = (color: string, roughness = 0.55, metalness = 0) =>
+	memo(`plain-${color}-${roughness}-${metalness}`, () => new THREE.MeshStandardMaterial({color, roughness, metalness}));

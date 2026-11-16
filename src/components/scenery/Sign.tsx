@@ -17,7 +17,8 @@ export type SignProps = {
 	border?: string;
 	/** altura da base da placa em relação ao chão */
 	elevation?: number;
-	posts?: 1 | 2;
+	/** 0 = placa de parede (sem postes) */
+	posts?: 0 | 1 | 2;
 } & Omit<React.ComponentProps<'group'>, 'children'>;
 
 const PX_PER_M = 900;
@@ -96,7 +97,7 @@ export const Sign: React.FC<SignProps> = ({lines, width = 1.6, height = 1.0, boa
 	);
 	const backMat = makeMetalMaterial('#8E959C');
 	const postMat = makeMetalMaterial('#9AA1A8');
-	const postX = posts === 2 ? [-width * 0.35, width * 0.35] : [0];
+	const postX = posts === 2 ? [-width * 0.35, width * 0.35] : posts === 1 ? [0] : [];
 	const top = elevation + height;
 	return (
 		<group {...g}>

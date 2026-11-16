@@ -1,6 +1,6 @@
 // STYLE_GUIDE §2 — elenco recorrente com ROUPA FIXA.
 // Para mudar o visual de um personagem, mude aqui (e só aqui).
-import type {Outfit} from './components/Character';
+import type {Expression, Outfit} from './components/Character';
 import {PALETTE} from './style/constants';
 
 export type CastMember = {
@@ -9,7 +9,7 @@ export type CastMember = {
 	papel: string;
 	outfit: Outfit;
 	/** expressão padrão quando a cena não especifica */
-	expressaoPadrao: 'neutro' | 'deboche' | 'feliz' | 'susto' | 'bravo';
+	expressaoPadrao: Expression;
 };
 
 export const CAST = {
@@ -36,6 +36,38 @@ export const CAST = {
 		papel: 'explica o fato científico',
 		outfit: {body: PALETTE.yellow, hat: 'gorro', hatColor: PALETTE.purple},
 		expressaoPadrao: 'feliz',
+	},
+	/** Irmã de 8 anos do Zé: pijama amarelo + laço turquesa. (Personagem criança: use scale ~0.75) */
+	nina: {
+		id: 'nina',
+		nome: 'Nina',
+		papel: 'irmã do Zé (8 anos)',
+		outfit: {body: PALETTE.yellow, hat: 'laco', hatColor: PALETTE.turquoise},
+		expressaoPadrao: 'bravo',
+	},
+	/** Sr. Roberto: pijama azul + touca de dormir branca. */
+	roberto: {
+		id: 'roberto',
+		nome: 'Sr. Roberto',
+		papel: 'vítima do exemplo',
+		outfit: {body: PALETTE.blue, hat: 'touca', hatColor: PALETTE.offWhite},
+		expressaoPadrao: 'susto',
+	},
+	/** Mãe: roupa roxa, sem chapéu. */
+	mae: {
+		id: 'mae',
+		nome: 'Mãe',
+		papel: 'mãe do Zé e da Nina',
+		outfit: {body: PALETTE.purple, hat: 'none'},
+		expressaoPadrao: 'neutro',
+	},
+	/** Pai: camisa off-white + gorro azul. */
+	pai: {
+		id: 'pai',
+		nome: 'Pai',
+		papel: 'pai do Zé e da Nina',
+		outfit: {body: PALETTE.offWhite, hat: 'gorro', hatColor: PALETTE.blue},
+		expressaoPadrao: 'neutro',
 	},
 	/** Figurante genérico (motoristas, multidão). Sem chapéu. */
 	figurante: {

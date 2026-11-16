@@ -1,0 +1,1428 @@
+{
+ "language_code": "por",
+ "source": "faster-whisper",
+ "words": [
+  {
+   "text": "Nesse",
+   "start": 0.0,
+   "end": 0.42,
+   "type": "word"
+  },
+  {
+   "text": "mundo,",
+   "start": 0.42,
+   "end": 0.78,
+   "type": "word"
+  },
+  {
+   "text": "se",
+   "start": 0.92,
+   "end": 1.08,
+   "type": "word"
+  },
+  {
+   "text": "você",
+   "start": 1.08,
+   "end": 1.32,
+   "type": "word"
+  },
+  {
+   "text": "dormir",
+   "start": 1.32,
+   "end": 1.68,
+   "type": "word"
+  },
+  {
+   "text": "duas",
+   "start": 1.68,
+   "end": 2.18,
+   "type": "word"
+  },
+  {
+   "text": "vezes",
+   "start": 2.18,
+   "end": 2.54,
+   "type": "word"
+  },
+  {
+   "text": "no",
+   "start": 2.54,
+   "end": 2.8,
+   "type": "word"
+  },
+  {
+   "text": "mesmo",
+   "start": 2.8,
+   "end": 3.12,
+   "type": "word"
+  },
+  {
+   "text": "lugar,",
+   "start": 3.12,
+   "end": 3.48,
+   "type": "word"
+  },
+  {
+   "text": "uma",
+   "start": 3.66,
+   "end": 3.92,
+   "type": "word"
+  },
+  {
+   "text": "cópia",
+   "start": 3.92,
+   "end": 4.36,
+   "type": "word"
+  },
+  {
+   "text": "sua",
+   "start": 4.36,
+   "end": 4.62,
+   "type": "word"
+  },
+  {
+   "text": "vai",
+   "start": 4.62,
+   "end": 4.84,
+   "type": "word"
+  },
+  {
+   "text": "aparecer,",
+   "start": 4.84,
+   "end": 5.38,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 5.64,
+   "end": 5.82,
+   "type": "word"
+  },
+  {
+   "text": "ela",
+   "start": 5.82,
+   "end": 5.98,
+   "type": "word"
+  },
+  {
+   "text": "pode",
+   "start": 5.98,
+   "end": 6.2,
+   "type": "word"
+  },
+  {
+   "text": "roubar",
+   "start": 6.2,
+   "end": 6.78,
+   "type": "word"
+  },
+  {
+   "text": "sua",
+   "start": 6.78,
+   "end": 6.96,
+   "type": "word"
+  },
+  {
+   "text": "vida!",
+   "start": 6.96,
+   "end": 7.4,
+   "type": "word"
+  },
+  {
+   "text": "Foi",
+   "start": 7.76,
+   "end": 7.96,
+   "type": "word"
+  },
+  {
+   "text": "exatamente",
+   "start": 7.96,
+   "end": 8.7,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 8.7,
+   "end": 8.82,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 8.82,
+   "end": 8.98,
+   "type": "word"
+  },
+  {
+   "text": "aconteceu",
+   "start": 8.98,
+   "end": 9.36,
+   "type": "word"
+  },
+  {
+   "text": "com",
+   "start": 9.36,
+   "end": 9.58,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 9.58,
+   "end": 9.72,
+   "type": "word"
+  },
+  {
+   "text": "Sr.",
+   "start": 9.72,
+   "end": 9.88,
+   "type": "word"
+  },
+  {
+   "text": "Roberto.",
+   "start": 10.06,
+   "end": 10.4,
+   "type": "word"
+  },
+  {
+   "text": "Ele",
+   "start": 10.72,
+   "end": 10.94,
+   "type": "word"
+  },
+  {
+   "text": "dormiu",
+   "start": 10.94,
+   "end": 11.34,
+   "type": "word"
+  },
+  {
+   "text": "duas",
+   "start": 11.34,
+   "end": 11.72,
+   "type": "word"
+  },
+  {
+   "text": "noites",
+   "start": 11.72,
+   "end": 12.1,
+   "type": "word"
+  },
+  {
+   "text": "na",
+   "start": 12.1,
+   "end": 12.38,
+   "type": "word"
+  },
+  {
+   "text": "mesma",
+   "start": 12.38,
+   "end": 12.74,
+   "type": "word"
+  },
+  {
+   "text": "cama,",
+   "start": 12.74,
+   "end": 13.02,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 13.28,
+   "end": 13.4,
+   "type": "word"
+  },
+  {
+   "text": "na",
+   "start": 13.4,
+   "end": 13.52,
+   "type": "word"
+  },
+  {
+   "text": "manhã",
+   "start": 13.52,
+   "end": 13.82,
+   "type": "word"
+  },
+  {
+   "text": "seguinte",
+   "start": 13.82,
+   "end": 14.26,
+   "type": "word"
+  },
+  {
+   "text": "encontrou",
+   "start": 14.26,
+   "end": 14.9,
+   "type": "word"
+  },
+  {
+   "text": "outro",
+   "start": 14.9,
+   "end": 15.34,
+   "type": "word"
+  },
+  {
+   "text": "Roberto",
+   "start": 15.34,
+   "end": 15.82,
+   "type": "word"
+  },
+  {
+   "text": "dormindo",
+   "start": 15.82,
+   "end": 16.2,
+   "type": "word"
+  },
+  {
+   "text": "ao",
+   "start": 16.2,
+   "end": 16.36,
+   "type": "word"
+  },
+  {
+   "text": "seu",
+   "start": 16.36,
+   "end": 16.56,
+   "type": "word"
+  },
+  {
+   "text": "lado.",
+   "start": 16.56,
+   "end": 16.8,
+   "type": "word"
+  },
+  {
+   "text": "E",
+   "start": 17.14,
+   "end": 17.3,
+   "type": "word"
+  },
+  {
+   "text": "sabe",
+   "start": 17.3,
+   "end": 17.46,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 17.46,
+   "end": 17.56,
+   "type": "word"
+  },
+  {
+   "text": "pior?",
+   "start": 17.56,
+   "end": 17.8,
+   "type": "word"
+  },
+  {
+   "text": "O",
+   "start": 18.1,
+   "end": 18.42,
+   "type": "word"
+  },
+  {
+   "text": "outro",
+   "start": 18.42,
+   "end": 18.66,
+   "type": "word"
+  },
+  {
+   "text": "foi",
+   "start": 18.66,
+   "end": 18.84,
+   "type": "word"
+  },
+  {
+   "text": "trabalhar",
+   "start": 18.84,
+   "end": 19.3,
+   "type": "word"
+  },
+  {
+   "text": "no",
+   "start": 19.3,
+   "end": 19.46,
+   "type": "word"
+  },
+  {
+   "text": "lugar",
+   "start": 19.46,
+   "end": 19.78,
+   "type": "word"
+  },
+  {
+   "text": "dele.",
+   "start": 19.78,
+   "end": 20.16,
+   "type": "word"
+  },
+  {
+   "text": "Por",
+   "start": 20.54,
+   "end": 20.76,
+   "type": "word"
+  },
+  {
+   "text": "isso",
+   "start": 20.76,
+   "end": 21.08,
+   "type": "word"
+  },
+  {
+   "text": "ninguém",
+   "start": 21.08,
+   "end": 21.58,
+   "type": "word"
+  },
+  {
+   "text": "dorme",
+   "start": 21.58,
+   "end": 22.0,
+   "type": "word"
+  },
+  {
+   "text": "no",
+   "start": 22.0,
+   "end": 22.2,
+   "type": "word"
+  },
+  {
+   "text": "mesmo",
+   "start": 22.2,
+   "end": 22.46,
+   "type": "word"
+  },
+  {
+   "text": "lugar",
+   "start": 22.46,
+   "end": 22.8,
+   "type": "word"
+  },
+  {
+   "text": "duas",
+   "start": 22.8,
+   "end": 23.2,
+   "type": "word"
+  },
+  {
+   "text": "vezes.",
+   "start": 23.2,
+   "end": 23.56,
+   "type": "word"
+  },
+  {
+   "text": "Mas",
+   "start": 23.76,
+   "end": 24.06,
+   "type": "word"
+  },
+  {
+   "text": "minha",
+   "start": 24.06,
+   "end": 24.26,
+   "type": "word"
+  },
+  {
+   "text": "irmã",
+   "start": 24.26,
+   "end": 24.68,
+   "type": "word"
+  },
+  {
+   "text": "Nina,",
+   "start": 24.68,
+   "end": 24.86,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 24.86,
+   "end": 25.1,
+   "type": "word"
+  },
+  {
+   "text": "8",
+   "start": 25.1,
+   "end": 25.32,
+   "type": "word"
+  },
+  {
+   "text": "anos,",
+   "start": 25.32,
+   "end": 25.68,
+   "type": "word"
+  },
+  {
+   "text": "odeia",
+   "start": 26.08,
+   "end": 26.4,
+   "type": "word"
+  },
+  {
+   "text": "mudar",
+   "start": 26.4,
+   "end": 26.68,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 26.68,
+   "end": 27.0,
+   "type": "word"
+  },
+  {
+   "text": "cama.",
+   "start": 27.0,
+   "end": 27.18,
+   "type": "word"
+  },
+  {
+   "text": "Eu",
+   "start": 27.4,
+   "end": 27.6,
+   "type": "word"
+  },
+  {
+   "text": "quero",
+   "start": 27.6,
+   "end": 27.84,
+   "type": "word"
+  },
+  {
+   "text": "dormir",
+   "start": 27.84,
+   "end": 28.16,
+   "type": "word"
+  },
+  {
+   "text": "na",
+   "start": 28.16,
+   "end": 28.44,
+   "type": "word"
+  },
+  {
+   "text": "minha",
+   "start": 28.44,
+   "end": 28.74,
+   "type": "word"
+  },
+  {
+   "text": "cama.",
+   "start": 28.74,
+   "end": 29.1,
+   "type": "word"
+  },
+  {
+   "text": "Minha",
+   "start": 29.1,
+   "end": 29.7,
+   "type": "word"
+  },
+  {
+   "text": "mãe",
+   "start": 29.7,
+   "end": 29.9,
+   "type": "word"
+  },
+  {
+   "text": "sempre",
+   "start": 29.9,
+   "end": 30.42,
+   "type": "word"
+  },
+  {
+   "text": "mudava",
+   "start": 30.42,
+   "end": 30.74,
+   "type": "word"
+  },
+  {
+   "text": "os",
+   "start": 30.74,
+   "end": 30.94,
+   "type": "word"
+  },
+  {
+   "text": "móveis",
+   "start": 30.94,
+   "end": 31.2,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 31.2,
+   "end": 31.38,
+   "type": "word"
+  },
+  {
+   "text": "lugar",
+   "start": 31.38,
+   "end": 31.66,
+   "type": "word"
+  },
+  {
+   "text": "para",
+   "start": 31.66,
+   "end": 31.88,
+   "type": "word"
+  },
+  {
+   "text": "enganar",
+   "start": 31.88,
+   "end": 32.34,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 32.34,
+   "end": 32.52,
+   "type": "word"
+  },
+  {
+   "text": "regra.",
+   "start": 32.52,
+   "end": 32.98,
+   "type": "word"
+  },
+  {
+   "text": "Até",
+   "start": 33.02,
+   "end": 33.36,
+   "type": "word"
+  },
+  {
+   "text": "que,",
+   "start": 33.36,
+   "end": 33.7,
+   "type": "word"
+  },
+  {
+   "text": "numa",
+   "start": 33.92,
+   "end": 33.94,
+   "type": "word"
+  },
+  {
+   "text": "quinta",
+   "start": 33.94,
+   "end": 34.38,
+   "type": "word"
+  },
+  {
+   "text": "-feira,",
+   "start": 34.38,
+   "end": 34.7,
+   "type": "word"
+  },
+  {
+   "text": "esqueceu.",
+   "start": 35.0,
+   "end": 35.52,
+   "type": "word"
+  },
+  {
+   "text": "Na",
+   "start": 35.82,
+   "end": 35.96,
+   "type": "word"
+  },
+  {
+   "text": "manhã",
+   "start": 35.96,
+   "end": 36.28,
+   "type": "word"
+  },
+  {
+   "text": "seguinte,",
+   "start": 36.28,
+   "end": 36.76,
+   "type": "word"
+  },
+  {
+   "text": "encontrei",
+   "start": 37.0,
+   "end": 37.38,
+   "type": "word"
+  },
+  {
+   "text": "Nina",
+   "start": 37.38,
+   "end": 37.6,
+   "type": "word"
+  },
+  {
+   "text": "tomando",
+   "start": 37.6,
+   "end": 38.06,
+   "type": "word"
+  },
+  {
+   "text": "leite",
+   "start": 38.06,
+   "end": 38.4,
+   "type": "word"
+  },
+  {
+   "text": "na",
+   "start": 38.4,
+   "end": 38.54,
+   "type": "word"
+  },
+  {
+   "text": "cozinha.",
+   "start": 38.54,
+   "end": 39.18,
+   "type": "word"
+  },
+  {
+   "text": "Mas",
+   "start": 39.28,
+   "end": 39.48,
+   "type": "word"
+  },
+  {
+   "text": "tinha",
+   "start": 39.48,
+   "end": 39.74,
+   "type": "word"
+  },
+  {
+   "text": "outra",
+   "start": 39.74,
+   "end": 40.28,
+   "type": "word"
+  },
+  {
+   "text": "Nina",
+   "start": 40.28,
+   "end": 40.5,
+   "type": "word"
+  },
+  {
+   "text": "dormindo",
+   "start": 40.5,
+   "end": 40.9,
+   "type": "word"
+  },
+  {
+   "text": "no",
+   "start": 40.9,
+   "end": 41.1,
+   "type": "word"
+  },
+  {
+   "text": "quarto.",
+   "start": 41.1,
+   "end": 41.44,
+   "type": "word"
+  },
+  {
+   "text": "Duas",
+   "start": 41.74,
+   "end": 42.24,
+   "type": "word"
+  },
+  {
+   "text": "Ninas!",
+   "start": 42.24,
+   "end": 42.72,
+   "type": "word"
+  },
+  {
+   "text": "E",
+   "start": 42.88,
+   "end": 43.08,
+   "type": "word"
+  },
+  {
+   "text": "as",
+   "start": 43.08,
+   "end": 43.34,
+   "type": "word"
+  },
+  {
+   "text": "duas",
+   "start": 43.34,
+   "end": 43.58,
+   "type": "word"
+  },
+  {
+   "text": "diziam",
+   "start": 43.58,
+   "end": 43.96,
+   "type": "word"
+  },
+  {
+   "text": "ser",
+   "start": 43.96,
+   "end": 44.18,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 44.18,
+   "end": 44.3,
+   "type": "word"
+  },
+  {
+   "text": "verdadeira!",
+   "start": 44.3,
+   "end": 44.88,
+   "type": "word"
+  },
+  {
+   "text": "Meu",
+   "start": 45.22,
+   "end": 45.46,
+   "type": "word"
+  },
+  {
+   "text": "pai",
+   "start": 45.46,
+   "end": 45.68,
+   "type": "word"
+  },
+  {
+   "text": "teve",
+   "start": 45.68,
+   "end": 45.92,
+   "type": "word"
+  },
+  {
+   "text": "uma",
+   "start": 45.92,
+   "end": 46.12,
+   "type": "word"
+  },
+  {
+   "text": "ideia.",
+   "start": 46.12,
+   "end": 46.48,
+   "type": "word"
+  },
+  {
+   "text": "Perguntou",
+   "start": 46.72,
+   "end": 47.24,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 47.24,
+   "end": 47.28,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 47.28,
+   "end": 47.5,
+   "type": "word"
+  },
+  {
+   "text": "cada",
+   "start": 47.5,
+   "end": 47.84,
+   "type": "word"
+  },
+  {
+   "text": "uma",
+   "start": 47.84,
+   "end": 48.08,
+   "type": "word"
+  },
+  {
+   "text": "tinha",
+   "start": 48.08,
+   "end": 48.3,
+   "type": "word"
+  },
+  {
+   "text": "feito",
+   "start": 48.3,
+   "end": 48.62,
+   "type": "word"
+  },
+  {
+   "text": "primeiro",
+   "start": 48.62,
+   "end": 49.14,
+   "type": "word"
+  },
+  {
+   "text": "naquela",
+   "start": 49.14,
+   "end": 49.54,
+   "type": "word"
+  },
+  {
+   "text": "manhã.",
+   "start": 49.54,
+   "end": 49.98,
+   "type": "word"
+  },
+  {
+   "text": "Fui",
+   "start": 50.08,
+   "end": 50.24,
+   "type": "word"
+  },
+  {
+   "text": "tomar",
+   "start": 50.24,
+   "end": 50.52,
+   "type": "word"
+  },
+  {
+   "text": "leite.",
+   "start": 50.52,
+   "end": 50.98,
+   "type": "word"
+  },
+  {
+   "text": "Fui",
+   "start": 51.14,
+   "end": 51.32,
+   "type": "word"
+  },
+  {
+   "text": "procurar",
+   "start": 51.32,
+   "end": 51.68,
+   "type": "word"
+  },
+  {
+   "text": "meu",
+   "start": 51.68,
+   "end": 51.86,
+   "type": "word"
+  },
+  {
+   "text": "irmão.",
+   "start": 51.86,
+   "end": 52.36,
+   "type": "word"
+  },
+  {
+   "text": "Meu",
+   "start": 52.48,
+   "end": 52.7,
+   "type": "word"
+  },
+  {
+   "text": "pai",
+   "start": 52.7,
+   "end": 52.88,
+   "type": "word"
+  },
+  {
+   "text": "ficou",
+   "start": 52.88,
+   "end": 53.2,
+   "type": "word"
+  },
+  {
+   "text": "branco,",
+   "start": 53.2,
+   "end": 53.92,
+   "type": "word"
+  },
+  {
+   "text": "porque",
+   "start": 53.98,
+   "end": 54.2,
+   "type": "word"
+  },
+  {
+   "text": "ele",
+   "start": 54.2,
+   "end": 54.44,
+   "type": "word"
+  },
+  {
+   "text": "tinha",
+   "start": 54.44,
+   "end": 54.54,
+   "type": "word"
+  },
+  {
+   "text": "me",
+   "start": 54.54,
+   "end": 54.84,
+   "type": "word"
+  },
+  {
+   "text": "visto",
+   "start": 54.84,
+   "end": 55.06,
+   "type": "word"
+  },
+  {
+   "text": "entrando",
+   "start": 55.06,
+   "end": 55.48,
+   "type": "word"
+  },
+  {
+   "text": "no",
+   "start": 55.48,
+   "end": 55.66,
+   "type": "word"
+  },
+  {
+   "text": "quarto",
+   "start": 55.66,
+   "end": 55.92,
+   "type": "word"
+  },
+  {
+   "text": "para",
+   "start": 55.92,
+   "end": 56.2,
+   "type": "word"
+  },
+  {
+   "text": "acordar",
+   "start": 56.2,
+   "end": 56.6,
+   "type": "word"
+  },
+  {
+   "text": "Nina.",
+   "start": 56.6,
+   "end": 56.9,
+   "type": "word"
+  },
+  {
+   "text": "Então",
+   "start": 56.9,
+   "end": 57.56,
+   "type": "word"
+  },
+  {
+   "text": "descobrimos",
+   "start": 57.56,
+   "end": 58.26,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 58.26,
+   "end": 58.44,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 58.44,
+   "end": 58.62,
+   "type": "word"
+  },
+  {
+   "text": "Nina",
+   "start": 58.62,
+   "end": 58.76,
+   "type": "word"
+  },
+  {
+   "text": "do",
+   "start": 58.76,
+   "end": 58.98,
+   "type": "word"
+  },
+  {
+   "text": "quarto",
+   "start": 58.98,
+   "end": 59.28,
+   "type": "word"
+  },
+  {
+   "text": "era",
+   "start": 59.28,
+   "end": 59.66,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 59.66,
+   "end": 59.84,
+   "type": "word"
+  },
+  {
+   "text": "verdadeira.",
+   "start": 59.84,
+   "end": 60.32,
+   "type": "word"
+  },
+  {
+   "text": "Mas",
+   "start": 60.58,
+   "end": 60.84,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 60.84,
+   "end": 61.1,
+   "type": "word"
+  },
+  {
+   "text": "outra",
+   "start": 61.1,
+   "end": 61.36,
+   "type": "word"
+  },
+  {
+   "text": "Nina",
+   "start": 61.36,
+   "end": 61.68,
+   "type": "word"
+  },
+  {
+   "text": "começou",
+   "start": 61.68,
+   "end": 62.14,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 62.14,
+   "end": 62.38,
+   "type": "word"
+  },
+  {
+   "text": "sorrir.",
+   "start": 62.38,
+   "end": 62.82,
+   "type": "word"
+  },
+  {
+   "text": "Que",
+   "start": 63.12,
+   "end": 63.28,
+   "type": "word"
+  },
+  {
+   "text": "bom",
+   "start": 63.28,
+   "end": 63.42,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 63.42,
+   "end": 63.66,
+   "type": "word"
+  },
+  {
+   "text": "escolheram",
+   "start": 63.66,
+   "end": 64.08,
+   "type": "word"
+  },
+  {
+   "text": "ela.",
+   "start": 64.08,
+   "end": 64.3,
+   "type": "word"
+  },
+  {
+   "text": "Agora",
+   "start": 64.6,
+   "end": 64.96,
+   "type": "word"
+  },
+  {
+   "text": "posso",
+   "start": 64.96,
+   "end": 65.2,
+   "type": "word"
+  },
+  {
+   "text": "ficar",
+   "start": 65.2,
+   "end": 65.54,
+   "type": "word"
+  },
+  {
+   "text": "com",
+   "start": 65.54,
+   "end": 65.72,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 65.72,
+   "end": 65.88,
+   "type": "word"
+  },
+  {
+   "text": "quarto",
+   "start": 65.88,
+   "end": 66.12,
+   "type": "word"
+  },
+  {
+   "text": "só",
+   "start": 66.12,
+   "end": 66.52,
+   "type": "word"
+  },
+  {
+   "text": "para",
+   "start": 66.52,
+   "end": 66.78,
+   "type": "word"
+  },
+  {
+   "text": "mim.",
+   "start": 66.78,
+   "end": 66.96,
+   "type": "word"
+  },
+  {
+   "text": "E",
+   "start": 67.22,
+   "end": 67.38,
+   "type": "word"
+  },
+  {
+   "text": "saiu",
+   "start": 67.38,
+   "end": 67.6,
+   "type": "word"
+  },
+  {
+   "text": "correndo!",
+   "start": 67.6,
+   "end": 68.1,
+   "type": "word"
+  },
+  {
+   "text": "Nunca",
+   "start": 68.42,
+   "end": 68.86,
+   "type": "word"
+  },
+  {
+   "text": "mais",
+   "start": 68.86,
+   "end": 69.14,
+   "type": "word"
+  },
+  {
+   "text": "apareceu!",
+   "start": 69.14,
+   "end": 69.7,
+   "type": "word"
+  },
+  {
+   "text": "Agora",
+   "start": 70.12,
+   "end": 70.28,
+   "type": "word"
+  },
+  {
+   "text": "me",
+   "start": 70.28,
+   "end": 70.58,
+   "type": "word"
+  },
+  {
+   "text": "conta,",
+   "start": 70.58,
+   "end": 70.78,
+   "type": "word"
+  },
+  {
+   "text": "você",
+   "start": 71.06,
+   "end": 71.28,
+   "type": "word"
+  },
+  {
+   "text": "teria",
+   "start": 71.28,
+   "end": 71.6,
+   "type": "word"
+  },
+  {
+   "text": "coragem",
+   "start": 71.6,
+   "end": 72.16,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 72.16,
+   "end": 72.34,
+   "type": "word"
+  },
+  {
+   "text": "dormir",
+   "start": 72.34,
+   "end": 72.68,
+   "type": "word"
+  },
+  {
+   "text": "duas",
+   "start": 72.68,
+   "end": 73.12,
+   "type": "word"
+  },
+  {
+   "text": "vezes",
+   "start": 73.12,
+   "end": 73.54,
+   "type": "word"
+  },
+  {
+   "text": "no",
+   "start": 73.54,
+   "end": 73.86,
+   "type": "word"
+  },
+  {
+   "text": "mesmo",
+   "start": 73.86,
+   "end": 74.1,
+   "type": "word"
+  },
+  {
+   "text": "lugar?",
+   "start": 74.1,
+   "end": 74.42,
+   "type": "word"
+  },
+  {
+   "text": "Curta",
+   "start": 74.8,
+   "end": 75.12,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 75.12,
+   "end": 75.2,
+   "type": "word"
+  },
+  {
+   "text": "se",
+   "start": 75.2,
+   "end": 75.42,
+   "type": "word"
+  },
+  {
+   "text": "inscreva,",
+   "start": 75.42,
+   "end": 75.84,
+   "type": "word"
+  },
+  {
+   "text": "porque",
+   "start": 75.92,
+   "end": 76.14,
+   "type": "word"
+  },
+  {
+   "text": "no",
+   "start": 76.14,
+   "end": 76.36,
+   "type": "word"
+  },
+  {
+   "text": "próximo",
+   "start": 76.36,
+   "end": 76.72,
+   "type": "word"
+  },
+  {
+   "text": "vídeo",
+   "start": 76.72,
+   "end": 77.08,
+   "type": "word"
+  },
+  {
+   "text": "vou",
+   "start": 77.08,
+   "end": 77.36,
+   "type": "word"
+  },
+  {
+   "text": "contar",
+   "start": 77.36,
+   "end": 77.72,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 77.72,
+   "end": 77.94,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 77.94,
+   "end": 78.26,
+   "type": "word"
+  },
+  {
+   "text": "acontece",
+   "start": 78.26,
+   "end": 78.58,
+   "type": "word"
+  },
+  {
+   "text": "quando",
+   "start": 78.58,
+   "end": 78.84,
+   "type": "word"
+  },
+  {
+   "text": "alguém",
+   "start": 78.84,
+   "end": 79.16,
+   "type": "word"
+  },
+  {
+   "text": "sonha",
+   "start": 79.16,
+   "end": 79.64,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 79.64,
+   "end": 79.84,
+   "type": "word"
+  },
+  {
+   "text": "mesma",
+   "start": 79.84,
+   "end": 80.16,
+   "type": "word"
+  },
+  {
+   "text": "coisa",
+   "start": 80.16,
+   "end": 80.62,
+   "type": "word"
+  },
+  {
+   "text": "três",
+   "start": 80.62,
+   "end": 81.14,
+   "type": "word"
+  },
+  {
+   "text": "noites",
+   "start": 81.14,
+   "end": 81.64,
+   "type": "word"
+  },
+  {
+   "text": "seguidas.",
+   "start": 81.64,
+   "end": 82.18,
+   "type": "word"
+  }
+ ]
+}

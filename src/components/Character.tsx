@@ -21,8 +21,8 @@ import {lerp} from '../style/easing';
 /* Tipos                                                               */
 /* ------------------------------------------------------------------ */
 
-export type Expression = 'neutro' | 'deboche' | 'feliz' | 'susto' | 'bravo';
-export type HatType = 'none' | 'bone' | 'capacete' | 'gorro';
+export type Expression = 'neutro' | 'deboche' | 'feliz' | 'susto' | 'bravo' | 'dormindo' | 'sinistro';
+export type HatType = 'none' | 'bone' | 'capacete' | 'gorro' | 'laco' | 'touca';
 
 export type Outfit = {
 	/** Cor da cápsula do corpo (roupa). */
@@ -53,7 +53,7 @@ export type Pose = {
 	rootY: number;
 };
 
-export type PoseName = 'stand' | 'sit' | 'sitHug' | 'wave' | 'shrug' | 'point' | 'walk';
+export type PoseName = 'stand' | 'sit' | 'sitHug' | 'wave' | 'shrug' | 'point' | 'walk' | 'lie' | 'crossArms' | 'drink' | 'run' | 'armsUp' | 'push';
 
 /* ------------------------------------------------------------------ */
 /* Proporções (m)                                                      */
@@ -149,6 +149,36 @@ export const getPose = (name: PoseName, t = 0): Pose => {
 			return {...BASE, lShoulder: [15, 55], rShoulder: [15, 55], lElbow: 95, rElbow: 95, headTilt: 8};
 		case 'point':
 			return {...BASE, rShoulder: [85, 8], rElbow: 0, headYaw: -10};
+		case 'lie':
+			// Deitado de barriga para cima (use com a prop `lying`)
+			return {...BASE, lShoulder: [0, 14], rShoulder: [0, 14], lElbow: 5, rElbow: 5, lHip: [0, 4], rHip: [0, 4]};
+		case 'crossArms':
+			// Braços cruzados na frente do corpo (birra / impaciência)
+			return {...BASE, lShoulder: [55, -8], rShoulder: [55, -8], lElbow: 105, rElbow: 105, headTilt: -4};
+		case 'drink':
+			// Copo na boca: braço direito dobrado até o rosto
+			return {...BASE, rShoulder: [70, -10], rElbow: 130, headPitch: -12};
+		case 'push':
+			// empurrando um móvel: braços esticados à frente, tronco inclinado
+			return {...BASE, lShoulder: [78, 6], rShoulder: [78, 6], lElbow: 20, rElbow: 20, spine: 18, lHip: [-12, 2], rHip: [22, 2], rKnee: 25, headPitch: -10};
+		case 'armsUp':
+			return {...BASE, lShoulder: [10, 160], rShoulder: [10, 160], lElbow: 10, rElbow: 10};
+		case 'run': {
+			const s = Math.sin(t * 13);
+			return {
+				...BASE,
+				lHip: [s * 50, 2],
+				rHip: [-s * 50, 2],
+				lKnee: 20 + Math.max(0, -s) * 75,
+				rKnee: 20 + Math.max(0, s) * 75,
+				lShoulder: [-s * 60, 12],
+				rShoulder: [s * 60, 12],
+				lElbow: 80,
+				rElbow: 80,
+				spine: 14,
+				rootY: Math.abs(Math.cos(t * 13)) * 0.05,
+			};
+		}
 		case 'walk': {
 			const s = Math.sin(t * 7);
 			const k = Math.max(0, -Math.cos(t * 7));
@@ -236,7 +266,9 @@ const Limb: React.FC<{
 	upperLen: number;
 	lowerLen: number;
 	end: 'hand' | 'foot';
-}> = ({root, fwd, side, sideSign, bend, bendDir, upper, lower, upperLen, lowerLen, end}) => {
+	/** objeto preso na mão (em metros reais; já compensa CHAR_SCALE) */
+	holding?: React.ReactNode;
+}> = ({root, fwd, side, sideSign, bend, bendDir, upper, lower, upperLen, lowerLen, end, holding}) => {
 	const m = makeLimbMaterial();
 	return (
 		<group position={root} rotation={new THREE.Euler(-D(fwd), 0, D(side) * sideSign, 'ZXY')}>
@@ -247,6 +279,7 @@ const Limb: React.FC<{
 				<mesh geometry={lower} material={m} castShadow />
 				<group position={[0, -lowerLen, 0]} rotation={end === 'foot' ? [D(fwd - bend), 0, 0] : [0, 0, 0]}>
 					<Outlined geometry={end === 'hand' ? geo.hand : geo.foot} material={m} outline={1.0} />
+					{holding && <group scale={1 / CHAR_SCALE}>{holding}</group>}
 				</group>
 			</group>
 		</group>
@@ -356,9 +389,23 @@ const buildFace = (expr: Expression, blink: number, mouthOpen: number): Feature[
 			both((s) => place(bar(0.05, 0.012), s * EYE_X, EYE_Y + 0.095, s * 10));
 			f.push({g: place(arc(0.02 + 0.01 * mouthOpen, 0.012, 0, Math.PI * 2), 0, -0.085, 0, 1, 1.25)});
 			break;
+		case 'dormindo':
+			// olhos fechados em arco ∪ + boca pequena
+			both((s) => place(arc(0.027, 0.012, Math.PI, Math.PI), s * EYE_X, EYE_Y + 0.012));
+			f.push({g: place(ellipse(0.014, 0.01 + 0.012 * mouthOpen), 0, -0.08)});
+			break;
+		case 'sinistro':
+			// olhos meio fechados olhando de lado + sorriso largo e fino
+			both((s) => place(halfEllipse(0.03, 0.026), s * EYE_X, EYE_Y + 0.005));
+			both((s) => place(ellipse(0.008, 0.008), s * EYE_X - 0.012, EYE_Y - 0.004), true);
+			both((s) => place(bar(0.07, 0.015), s * (EYE_X - 0.005), EYE_Y + 0.03, s * 16));
+			f.push({g: place(arc(0.085, 0.014, Math.PI + 0.25, Math.PI - 0.5), 0, -0.01)});
+			// cantos da boca levantados (sorriso de quem aprontou)
+			both((s) => place(bar(0.03, 0.013), s * 0.083, -0.04, s * 55));
+			break;
 		case 'bravo':
 			both((s) => place(ellipse(0.024, 0.034), s * EYE_X, EYE_Y - 0.005, 0, 1, eyeSy));
-			both((s) => place(bar(0.075, 0.018), s * (EYE_X - 0.008), EYE_Y + 0.05, s * -22));
+			both((s) => place(bar(0.075, 0.018), s * (EYE_X - 0.008), EYE_Y + 0.05, s * 22)); // ponta de dentro para BAIXO
 			f.push({g: place(arc(0.04, 0.013, 0.25, Math.PI - 0.5), 0, -0.11)});
 			break;
 	}
@@ -391,6 +438,9 @@ const hatGeo = {
 	beanie: new THREE.SphereGeometry(RIG.headR * 1.06, 40, 20, 0, Math.PI * 2, 0, Math.PI * 0.42),
 	beanieCuff: new THREE.TorusGeometry(RIG.headR * 0.98, 0.035, 12, 40).rotateX(Math.PI / 2),
 	pom: new THREE.IcosahedronGeometry(0.06, 1),
+	bowLoop: new THREE.SphereGeometry(0.095, 16, 12).scale(1.2, 0.85, 0.5),
+	bowKnot: new THREE.SphereGeometry(0.035, 12, 10),
+	nightcap: new THREE.ConeGeometry(RIG.headR * 0.95, RIG.headR * 1.9, 24, 1, true).translate(0, RIG.headR * 0.95, 0),
 	vest: new THREE.CylinderGeometry(RIG.bodyR * 1.07, RIG.bodyR * 1.07, 0.3, 32, 1, true),
 	vestBand: new THREE.CylinderGeometry(RIG.bodyR * 1.085, RIG.bodyR * 1.085, 0.045, 32, 1, true),
 };
@@ -414,6 +464,24 @@ const Hat: React.FC<{type: HatType; color: string}> = ({type, color}) => {
 					<Outlined geometry={hatGeo.helmetDome} material={m} />
 					<Outlined geometry={hatGeo.helmetBrim} material={m} position={[0, 0.0, 0.02]} />
 					<Outlined geometry={hatGeo.helmetRidge} material={m} />
+				</group>
+			);
+		case 'laco':
+			// laço no alto da cabeça (lado esquerdo do personagem)
+			return (
+				<group position={[RIG.headR * 0.55, RIG.headR * 0.95, RIG.headR * 0.1]} rotation={[0.15, 0, -0.55]}>
+					<Outlined geometry={hatGeo.bowLoop} material={m} position={[-0.1, 0, 0]} rotation={[0, 0, 0.3]} />
+					<Outlined geometry={hatGeo.bowLoop} material={m} position={[0.1, 0, 0]} rotation={[0, 0, -0.3]} />
+					<Outlined geometry={hatGeo.bowKnot} material={m} />
+				</group>
+			);
+		case 'touca':
+			// touca de dormir caída para trás, com pompom
+			return (
+				<group position={[0, RIG.headR * 0.42, -0.02]} rotation={[-0.55, 0, 0.15]}>
+					<Outlined geometry={hatGeo.beanieCuff} material={makeToonMaterial(PALETTE.white)} scale={[1.0, 1.0, 1.0]} />
+					<Outlined geometry={hatGeo.nightcap} material={m} />
+					<Outlined geometry={hatGeo.pom} material={makeToonMaterial(PALETTE.white)} position={[0, RIG.headR * 1.9, 0]} />
 				</group>
 			);
 		case 'gorro':
@@ -455,6 +523,14 @@ export type CharacterProps = {
 	shadow?: 'contact' | 'blob' | 'both';
 	/** squash & stretch rápido para reações (1 = normal) */
 	squash?: number;
+	/** deitado de costas (cabeça para -Z do personagem). A raiz fica na superfície (colchão/chão). */
+	lying?: boolean;
+	/**
+	 * Objetos nas mãos (copo, maleta…), em metros reais. Origem = centro da mão;
+	 * -Y local aponta ao longo do antebraço (para fora da mão).
+	 */
+	leftHand?: React.ReactNode;
+	rightHand?: React.ReactNode;
 } & Omit<React.ComponentProps<'group'>, 'children'>;
 
 export const Character: React.FC<CharacterProps> = ({
@@ -466,6 +542,9 @@ export const Character: React.FC<CharacterProps> = ({
 	mouthOpen = 0,
 	shadow = 'contact',
 	squash = 1,
+	lying = false,
+	leftHand,
+	rightHand,
 	...group
 }) => {
 	const p = typeof pose === 'string' ? getPose(pose, t) : pose;
@@ -476,7 +555,7 @@ export const Character: React.FC<CharacterProps> = ({
 			{(shadow === 'contact' || shadow === 'both') && (
 				<ContactShadows
 					position={[0, 0.012, sitting ? 0.04 : 0]}
-					scale={sitting ? 1.4 : 1.1}
+					scale={lying ? 1.8 : sitting ? 1.4 : 1.1}
 					resolution={256}
 					blur={REF.light.contactBlur}
 					far={sitting ? 0.6 : 0.9}
@@ -491,7 +570,7 @@ export const Character: React.FC<CharacterProps> = ({
 				</mesh>
 			)}
 
-			<group scale={CHAR_SCALE}>
+			<group scale={CHAR_SCALE} rotation={lying ? [-Math.PI / 2, 0, 0] : [0, 0, 0]} position={lying ? [0, RIG.bodyR * CHAR_SCALE, RIG.bodyY * CHAR_SCALE] : [0, 0, 0]}>
 			<group position={[0, p.rootY, 0]} scale={[1 / Math.sqrt(squash), squash, 1 / Math.sqrt(squash)]}>
 				{/* Pernas (quadril → joelho) */}
 				<Limb root={[RIG.hipX, RIG.hipY, 0]} fwd={p.lHip[0]} side={p.lHip[1]} sideSign={1} bend={p.lKnee} bendDir={-1} upper={geo.thigh} lower={geo.shin} upperLen={RIG.thigh} lowerLen={RIG.shin} end="foot" />
@@ -504,8 +583,8 @@ export const Character: React.FC<CharacterProps> = ({
 						{outfit.vest && <Vest color={outfit.vestColor ?? PALETTE.vest} />}
 
 						{/* Braços (ombro → cotovelo) */}
-						<Limb root={[RIG.shoulderX, RIG.shoulderY, 0]} fwd={p.lShoulder[0]} side={p.lShoulder[1]} sideSign={1} bend={p.lElbow} bendDir={1} upper={geo.upperArm} lower={geo.foreArm} upperLen={RIG.upperArm} lowerLen={RIG.foreArm} end="hand" />
-						<Limb root={[-RIG.shoulderX, RIG.shoulderY, 0]} fwd={p.rShoulder[0]} side={p.rShoulder[1]} sideSign={-1} bend={p.rElbow} bendDir={1} upper={geo.upperArm} lower={geo.foreArm} upperLen={RIG.upperArm} lowerLen={RIG.foreArm} end="hand" />
+						<Limb root={[RIG.shoulderX, RIG.shoulderY, 0]} fwd={p.lShoulder[0]} side={p.lShoulder[1]} sideSign={1} bend={p.lElbow} bendDir={1} upper={geo.upperArm} lower={geo.foreArm} upperLen={RIG.upperArm} lowerLen={RIG.foreArm} end="hand" holding={leftHand} />
+						<Limb root={[-RIG.shoulderX, RIG.shoulderY, 0]} fwd={p.rShoulder[0]} side={p.rShoulder[1]} sideSign={-1} bend={p.rElbow} bendDir={1} upper={geo.upperArm} lower={geo.foreArm} upperLen={RIG.upperArm} lowerLen={RIG.foreArm} end="hand" holding={rightHand} />
 
 						{/* Cabeça */}
 						<group position={[0, RIG.headY, 0]} rotation={new THREE.Euler(D(p.headPitch), D(p.headYaw), D(p.headTilt), 'YXZ')}>
