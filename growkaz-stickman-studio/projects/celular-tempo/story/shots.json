@@ -1,6 +1,6 @@
 {
  "title": "O tempo nao espera",
- "duration": 42.5,
+ "duration": 48.0,
  "shots": [
   {
    "id": "s01",
@@ -106,7 +106,7 @@
    "start": 9.6,
    "end": 13.2,
    "line": "",
-   "scene": "Praça: Beto chama para o jogo, Léo no banco no celular. 18 ANOS",
+   "scene": "Praça: o pai chama \"BORA JOGAR BOLA, FILHO?\"; Léo (12 anos) no celular: \"AGORA NÃO DÁ, PAI…\"",
    "set": "park",
    "in": {
     "type": "whip",
@@ -119,18 +119,23 @@
      "gain": -10
     },
     {
-     "at": 0.3,
-     "name": "kick",
-     "gain": -8
+     "at": 0.1,
+     "name": "footstep",
+     "gain": -12
     },
     {
-     "at": 1.3,
-     "name": "kick",
-     "gain": -8
+     "at": 0.4,
+     "name": "footstep",
+     "gain": -12
     },
     {
-     "at": 1.1,
-     "name": "whistle",
+     "at": 0.65,
+     "name": "pop",
+     "gain": -14
+    },
+    {
+     "at": 1.85,
+     "name": "pop",
      "gain": -14
     }
    ],
@@ -144,7 +149,7 @@
    "start": 13.2,
    "end": 16.2,
    "line": "",
-   "scene": "OTS: Beto desiste e vai embora",
+   "scene": "OTS: Léo no banco desfocado; o pai vai embora sozinho com a bola",
    "set": "park",
    "in": {
     "type": "cut",
@@ -152,17 +157,17 @@
    },
    "sfx": [
     {
+     "at": 0.8,
+     "name": "footstep",
+     "gain": -12
+    },
+    {
      "at": 1.3,
      "name": "footstep",
      "gain": -12
     },
     {
-     "at": 1.7,
-     "name": "footstep",
-     "gain": -12
-    },
-    {
-     "at": 2.1,
+     "at": 1.8,
      "name": "footstep",
      "gain": -14
     }
@@ -185,13 +190,18 @@
    },
    "sfx": [
     {
-     "at": 0.8,
-     "name": "cheer",
+     "at": 0.3,
+     "name": "pop",
      "gain": -14
     },
     {
-     "at": 0.3,
-     "name": "shimmer",
+     "at": 0.8,
+     "name": "cheer",
+     "gain": -16
+    },
+    {
+     "at": 1.85,
+     "name": "pop",
      "gain": -14
     }
    ],
@@ -213,12 +223,17 @@
    },
    "sfx": [
     {
-     "at": 0.2,
+     "at": 0.15,
      "name": "pop",
      "gain": -14
     },
     {
-     "at": 1.8,
+     "at": 1.35,
+     "name": "pop",
+     "gain": -14
+    },
+    {
+     "at": 2.0,
      "name": "tick",
      "gain": -10
     }
@@ -269,6 +284,16 @@
     "dur": 0.35
    },
    "sfx": [
+    {
+     "at": 0.15,
+     "name": "pop",
+     "gain": -14
+    },
+    {
+     "at": 1.55,
+     "name": "pop",
+     "gain": -14
+    },
     {
      "at": 1.7,
      "name": "footstep",
@@ -362,6 +387,11 @@
      "at": 1.4,
      "name": "heartbeat",
      "gain": -14
+    },
+    {
+     "at": 1.55,
+     "name": "pop",
+     "gain": -16
     }
    ],
    "amb": {
@@ -372,9 +402,9 @@
   {
    "id": "s13",
    "start": 38.6,
-   "end": 42.5,
+   "end": 41.4,
    "line": "",
-   "scene": "Banco vazio da praça, celular apagado. O TEMPO NÃO ESPERA.",
+   "scene": "Banco vazio, celular apagado: O TEMPO NÃO ESPERA.",
    "set": "park",
    "in": {
     "type": "fade",
@@ -396,6 +426,64 @@
     "name": "wind",
     "gain": -26
    }
+  },
+  {
+   "id": "s14",
+   "start": 41.4,
+   "end": 48.0,
+   "line": "",
+   "scene": "Lição de moral: de volta à praça, Léo larga o celular e vai jogar bola com o pai. QUEM TE AMA NÃO VAI ESTAR AÍ PARA SEMPRE. LARGUE O CELULAR. VIVA AGORA.",
+   "set": "park",
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "shimmer",
+     "gain": -10
+    },
+    {
+     "at": 0.95,
+     "name": "pop",
+     "gain": -14
+    },
+    {
+     "at": 1.7,
+     "name": "footstep",
+     "gain": -12
+    },
+    {
+     "at": 2.0,
+     "name": "footstep",
+     "gain": -12
+    },
+    {
+     "at": 2.6,
+     "name": "kick",
+     "gain": -6
+    },
+    {
+     "at": 3.3,
+     "name": "kick",
+     "gain": -8
+    },
+    {
+     "at": 2.9,
+     "name": "ding",
+     "gain": -12
+    },
+    {
+     "at": 3.7,
+     "name": "stinger",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   }
   }
  ],
  "music": [
@@ -413,9 +501,15 @@
   },
   {
    "start": 29.4,
-   "end": 42.5,
+   "end": 41.4,
    "mood": "sad",
    "intensity": 0.25
+  },
+  {
+   "start": 41.4,
+   "end": 48.0,
+   "mood": "hopeful",
+   "intensity": 0.5
   }
  ],
  "sfx": []
