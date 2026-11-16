@@ -1,7 +1,9 @@
 # Monta short.json (cena 3D completa) a partir das marcações de palavras. Cada plano começa no início de uma frase.
 import json, sys
 P = sys.argv[1]
-W = json.load(open(f'{P}/audio/words_original.json'))['words']; K = 1.55
+W = json.load(open(f'{P}/audio/words_original.json'))['words']
+K = float(sys.argv[2]) if len(sys.argv) > 2 else 1.0   # fator de velocidade aplicado à voz (1.0 = fala natural)
+SLOW = 1.55 / K                                           # as ações foram ajustadas para 1.55; esticar na mesma proporção
 T = lambda i: round(W[i]['t0'] / K, 3)          # índice de palavra (transcrição original) -> segundos no áudio acelerado
 
 ST = (0, 0, 0)            # rua (x=0)
@@ -74,7 +76,7 @@ shots = [
   dict(start=T(15), anchor=[EX, 1.4, 0.4], distance=9.5, yaw=-22, pitch=12, zoom=5, pan=[30, 0], out="glide"),
   # 3 "Novo,"  4 "escuro,"  5 "quentinho." (três batidas no mesmo grupo de ratos)
   dict(start=T(29), target="rt0", headWidth=0.16, yaw=20, pitch=6, zoom=7, pan=[-15, 0], actions=[A("rt0", 0.1, hop=0.12)]),
-  dict(start=T(31), target="rt2", headWidth=0.16, yaw=-16, pitch=4, zoom=7, pan=[15, 0], actions=[A("rt2", 0.0, hop=0.1)]),
+  dict(start=T(31), target="rt2", headWidth=0.14, yaw=28, pitch=6, zoom=5, pan=[15, 0], actions=[A("rt2", 0.0, hop=0.1)]),
   # 6 "Perfeito para ratos."
   dict(start=T(32), anchor=[EX, 0.9, 1.0], distance=5.5, yaw=4, pitch=14, zoom=5, actions=[*[A(f"rt{i}", 0.2 + 0.12 * i, hop=0.18) for i in range(6)]]),
   # 7 "Com medo da peste,"
@@ -146,6 +148,13 @@ def place(sh):
     return round(x / 40)
 for i, sh in enumerate(shots):
     sh.pop("out", None)
+    if SLOW != 1:
+        if "zoom" in sh: sh["zoom"] = round(sh["zoom"] / SLOW ** 0.6, 2)
+        if "pan" in sh: sh["pan"] = [round(v / SLOW ** 0.6, 1) for v in sh["pan"]]
+        for a in sh.get("actions", []):
+            a["at"] = round(a["at"] * SLOW, 3)
+            if a.get("over", 0) > 0.05: a["over"] = round(a["over"] * SLOW, 3)
+            if "shake" in a: a["shake"] = round(a["shake"] * SLOW, 3)
     if i + 1 < len(shots) and place(shots[i + 1]) != place(sh): sh["out"] = "dissolve"
 short = {
   "fps": 30,
