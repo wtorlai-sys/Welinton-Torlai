@@ -40,7 +40,7 @@ export const parseTimestamps = (json: unknown): Word[] => {
 		if (Array.isArray(j.words)) return parseTimestamps(j.words);
 	}
 	if (Array.isArray(json)) {
-		return (json as Loose[])
+		const list = (json as Loose[])
 			.filter((w) => (w.type ? w.type === 'word' : true))
 			.map((w) => ({
 				text: String(w.text ?? w.word ?? '').trim(),
@@ -48,6 +48,15 @@ export const parseTimestamps = (json: unknown): Word[] => {
 				end: w.end ?? (w.end_ms ?? 0) / 1000,
 			}))
 			.filter((w) => w.text.length > 0);
+		// junta sufixos com hífen ("quinta" + "-feira" → "quinta-feira")
+		const out: Word[] = [];
+		list.forEach((w) => {
+			if (w.text.startsWith('-') && out.length) {
+				out[out.length - 1].text += w.text;
+				out[out.length - 1].end = w.end;
+			} else out.push({...w});
+		});
+		return out;
 	}
 	throw new Error('Formato de timestamps não reconhecido');
 };

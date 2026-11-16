@@ -82,12 +82,20 @@ export const Sign: React.FC<SignProps> = ({lines, width = 1.6, height = 1.0, boa
 		};
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [key, canvas, texture]);
+	const released = React.useRef(false);
+	const release = React.useCallback(() => {
+		if (released.current) return;
+		released.current = true;
+		continueRender(handle);
+	}, [handle]);
 	useEffect(() => {
 		if (!ready) return;
 		// frameloop="never": a textura chegou depois do frame — redesenha antes de liberar o render
 		advance(performance.now());
-		requestAnimationFrame(() => continueRender(handle));
-	}, [ready, handle, advance]);
+		requestAnimationFrame(release);
+	}, [ready, advance, release]);
+	// se o plano for desmontado antes da textura ficar pronta, libera o render mesmo assim
+	useEffect(() => release, [release]);
 
 	const faceMat = useMemo(
 		() =>

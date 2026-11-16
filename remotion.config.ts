@@ -10,3 +10,6 @@ Config.setCodec('h264');
 Config.setCrf(17);
 Config.setPixelFormat('yuv420p');
 Config.setVideoImageFormat('png');
+
+// Frames com set inteiro + sombras em CPU (swangle) podem passar de 28 s.
+Config.setDelayRenderTimeoutInMilliseconds(180000);

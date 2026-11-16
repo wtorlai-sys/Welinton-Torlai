@@ -21,31 +21,31 @@ export const NARRATION = {audio: 'audio/dormir-no-mesmo-lugar.mp3', timestamps: 
 const KID = 0.75; // escala de criança
 
 /** Personagem 2D do elenco (escala/expressão padrão do CAST). */
-const C2: React.FC<{who: keyof typeof CAST} & Omit<Character2DProps, 'outfit'> & {outfit?: Character2DProps['outfit']}> = ({who, ...p}) => (
+export const C2: React.FC<{who: keyof typeof CAST} & Omit<Character2DProps, 'outfit'> & {outfit?: Character2DProps['outfit']}> = ({who, ...p}) => (
 	<Character2D outfit={p.outfit ?? CAST[who].outfit} expression={p.expression ?? CAST[who].expressaoPadrao} scale={p.scale ?? CAST[who].escala} {...p} />
 );
 
 /** Empurrando algo para a direita da tela. */
-const PUSH_R: Pose2D = {...pose2D('stand'), armR: [82, -4], armL: [-62, -6], lean: 12, legL: [20, 0], legR: [-6, 12]};
+export const PUSH_R: Pose2D = {...pose2D('stand'), armR: [82, -4], armL: [-62, -6], lean: 12, legL: [20, 0], legR: [-6, 12]};
 /** Sentado na beira da cama, pernas penduradas. */
-const SIT_EDGE: Pose2D = {...pose2D('stand'), drop: 26, legL: [8, 0], legR: [8, 0], armL: [22, 20], armR: [22, 20]};
+export const SIT_EDGE: Pose2D = {...pose2D('stand'), drop: 26, legL: [8, 0], legR: [8, 0], armL: [22, 20], armR: [22, 20]};
 
 // Janela do fundo do quarto (Bedroom2) e da cozinha (Kitchen2), em coordenadas de mundo.
-const BED_WIN: [THREE.Vector3Tuple, THREE.Vector3Tuple, THREE.Vector3Tuple, THREE.Vector3Tuple] = [[0.39, 1.26, -1.19], [0.99, 1.26, -1.19], [0.99, 0.57, -1.19], [0.39, 0.57, -1.19]];
-const KIT_WIN: [THREE.Vector3Tuple, THREE.Vector3Tuple, THREE.Vector3Tuple, THREE.Vector3Tuple] = [[-0.99, 1.14, -1.19], [-0.45, 1.14, -1.19], [-0.45, 0.69, -1.19], [-0.99, 0.69, -1.19]];
-const DaySun: React.FC = () => (
+export const BED_WIN: [THREE.Vector3Tuple, THREE.Vector3Tuple, THREE.Vector3Tuple, THREE.Vector3Tuple] = [[0.39, 1.26, -1.19], [0.99, 1.26, -1.19], [0.99, 0.57, -1.19], [0.39, 0.57, -1.19]];
+export const KIT_WIN: [THREE.Vector3Tuple, THREE.Vector3Tuple, THREE.Vector3Tuple, THREE.Vector3Tuple] = [[-0.99, 1.14, -1.19], [-0.45, 1.14, -1.19], [-0.45, 0.69, -1.19], [-0.99, 0.69, -1.19]];
+export const DaySun: React.FC = () => (
 	<>
 		<LightShaft window={BED_WIN} dir={[-0.324, -0.643, 0.694]} length={1.9} color="#FFE0A8" strength={0.16} />
 		<DustMotes center={[0.35, 0.7, -0.6]} size={[0.8, 0.8, 1.0]} count={120} color="#FFF0D0" />
 	</>
 );
-const MoonShaft: React.FC = () => (
+export const MoonShaft: React.FC = () => (
 	<>
 		<LightShaft window={BED_WIN} dir={[-0.35, -0.57, 0.75]} length={1.9} color="#9DB4FF" strength={0.22} />
 		<DustMotes center={[0.35, 0.75, -0.6]} size={[0.8, 0.8, 1.0]} count={160} />
 	</>
 );
-const KitchenSun: React.FC = () => (
+export const KitchenSun: React.FC = () => (
 	<>
 		<LightShaft window={KIT_WIN} dir={[0.262, -0.643, 0.72]} length={1.8} color="#FFE0A8" strength={0.16} />
 		<DustMotes center={[-0.45, 0.65, -0.55]} size={[0.7, 0.7, 0.9]} count={120} color="#FFF0D0" />
