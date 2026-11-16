@@ -6,6 +6,7 @@ import {AbsoluteFill, continueRender, delayRender, staticFile, useCurrentFrame, 
 import {ThreeCanvas} from '@remotion/three';
 import * as THREE from 'three';
 import {Character, CharacterProps, HEAD_HEIGHT} from '../../components/Character';
+import {pose2D} from '../../components/Character2D';
 import {CAST} from '../../characters';
 import {Lighting, LightingPreset} from '../../components/Lighting';
 import {CameraRig, Shot} from '../../components/CameraRig';
@@ -13,7 +14,9 @@ import {Captions} from '../../components/Captions';
 import {MilkGlass} from '../../components/scenery';
 import {parseTimestamps, Word} from '../../lib/timestamps';
 import {PALETTE} from '../../style/constants';
-import {BED_TOP, Bedroom, Briefcase, Kitchen, Street, WallPlaque, deg} from './sets';
+import {BED_TOP, Bedroom, Bedroom2, Briefcase, Kitchen, Street, WallPlaque, deg} from './sets';
+import {Character2D} from '../../components/Character2D';
+import {DustMotes, LightShaft} from '../../components/LightFX';
 
 export const NARRATION = {audio: 'audio/dormir-no-mesmo-lugar.mp3', timestamps: 'timestamps/dormir-no-mesmo-lugar.json', seconds: 82.36};
 
@@ -47,18 +50,22 @@ export const PANELS: Panel[] = [
 		id: 'P1',
 		t: 0.4,
 		beat: 'Gancho: "se você dormir duas vezes no mesmo lugar, uma cópia sua vai aparecer"',
-		plano: 'Médio no pé da cama, noite (vira a thumbnail)',
+		plano: 'Médio no pé da cama, noite: Roberto dorme, a cópia sentada ao lado sorri (vira a thumbnail)',
 		light: 'noite',
-		sun: WINDOW_SUN,
+		sun: {az: 155, el: 34},
 		focus: [0, 0, -0.5],
-		shot: {position: [1.95, 1.1, -0.2], target: [0.05, 0.5, -0.85], fov: 55},
-		captionY: 0.78,
+		shot: {position: [-0.24, 1.0, 0.85], target: [-0.25, 0.52, -0.95], fov: 52},
+		captionY: 0.8,
 		Scene: () => (
 			<>
-				<Bedroom bed={{x: 0.18, z: -0.6, width: 1.5, duvet: '#5F7FB8', pillows: 2}} lampOn wardrobe={false} hideWalls={['right']} />
-				<Cast who="roberto" expression="dormindo" pose="lie" lying position={[0.4, BED_TOP, -0.62]} />
-				<Cast who="roberto" expression="sinistro" pose="sit" position={[-0.05, BED_TOP, -0.62]} rotation={[0, deg(70), 0]} />
-				<WallPlaque lines={['NOITE Nº', '2']} sizes={[0.3, 0.5]} red={1} position={[0.12, 0.95, -1.19]} width={0.4} height={0.34} />
+				<Bedroom2 lumps={[{x: -0.3, len: 1.3}, {x: 0.45, len: 0.9}]} />
+				{/* Roberto dormindo: cabeça no travesseiro, corpo sob o edredom */}
+				<Character2D outfit={CAST.roberto.outfit} expression="dormindo" pose={{...pose2D('sitBed'), drop: 34, headTilt: -16, armL: [5, 0], armR: [5, 0]}} position={[-0.79 * 0.6 + 0.0, 0.0, -1.0]} light={1} tint="#C7CCE8" />
+				{/* a cópia, sentada, encarando a câmera */}
+				<Character2D outfit={CAST.roberto.outfit} expression="sinistro" pose={{...pose2D('sitBed'), armL: [18, 35], armR: [18, 35]}} position={[-0.03, BED_TOP - 0.02, -0.82]} turn={-0.25} light={1} tint="#D8CFE2" shadowYaw={155} />
+				<WallPlaque lines={['NOITE Nº', '2']} sizes={[0.3, 0.5]} red={1} position={[-0.5, 0.95, -1.19]} width={0.3} height={0.26} />
+				<LightShaft window={[[0.39, 1.26, -1.19], [0.99, 1.26, -1.19], [0.99, 0.57, -1.19], [0.39, 0.57, -1.19]]} dir={[-0.35, -0.57, 0.75]} length={1.9} color="#9DB4FF" strength={0.22} />
+				<DustMotes center={[0.35, 0.75, -0.6]} size={[0.8, 0.8, 1.0]} count={160} />
 			</>
 		),
 	},

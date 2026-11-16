@@ -9,6 +9,7 @@ Se um pedido conflitar com o guia, aponte o conflito antes de implementar.
 
 - Reaproveite os blocos existentes (`src/style/materials.ts`, `src/components/*`,
   `src/characters.ts`) em vez de criar materiais/personagens novos do zero.
+- **Personagem é 2D** (`src/components/Character2D.tsx`) dentro de cenário 3D. Não usar o `Character.tsx` (3D, legado).
 - Personagens recorrentes só mudam de roupa editando `src/characters.ts`.
 - Vermelho só via `PALETTE.accent` e só no elemento-foco da piada.
 - Tudo determinístico: sem `Math.random()` sem seed, sem `Date.now()`, sem `delta` de `useFrame`.

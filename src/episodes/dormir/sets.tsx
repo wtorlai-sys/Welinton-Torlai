@@ -2,7 +2,8 @@
 // para conversar com o personagem de 1,0 m (STYLE_GUIDE §10).
 import React from 'react';
 import * as THREE from 'three';
-import {Bed, Briefcase, Chair, Counter, DoorPanel, Fridge, Grass, Ground, House, Nightstand, Road, Room, Rug, Sign, Table, Tree, Wardrobe} from '../../components/scenery';
+import {Bed, Bookshelf, Briefcase, Chair, Counter, Curtains, DoorPanel, Fridge, Grass, Ground, House, Nightstand, PictureFrame, Road, Room, Rug, Sign, Slippers, Table, Tree, Wardrobe} from '../../components/scenery';
+import {makeWallpaperMaterial} from '../../style/materials';
 import {PALETTE} from '../../style/constants';
 
 /** Objetos do cotidiano em escala de personagem (1 m ≈ adulto). */
@@ -95,3 +96,43 @@ export const WallPlaque: React.FC<{lines: string[]; sizes?: number[]; red?: numb
 );
 
 export const deg = THREE.MathUtils.degToRad;
+
+/**
+ * Quarto do casal (v2, para personagem 2D): janela no FUNDO, à direita da cama — o luar/sol entra
+ * por trás e cruza o quadro. Papel de parede, estante, quadro, chinelos (densidade das referências).
+ * Medidas em metros reais dentro do grupo escalado.
+ */
+export const BEDROOM2 = {
+	bed: {x: -0.5, z: -1.0, width: 1.5},
+	window: {at: 1.15, y: 0.95, w: 1.0, h: 1.15},
+	nightstand: {x: 0.62, z: -1.7},
+};
+
+export const Bedroom2: React.FC<{duvet?: string; lampOn?: boolean; lumps?: {x: number; len?: number}[]; wallpaper?: [string, string]}> = ({
+	duvet = '#4F6FA8',
+	lampOn = true,
+	lumps = [],
+	wallpaper = ['#557A86', '#6A92A0'],
+}) => {
+	const b = BEDROOM2;
+	return (
+		<group scale={S}>
+			<Room
+				width={4.4}
+				depth={4}
+				height={2.6}
+				wallMaterial={makeWallpaperMaterial(wallpaper[0], wallpaper[1])}
+				windows={[{wall: 'back', at: b.window.at, y: b.window.y, w: b.window.w, h: b.window.h}]}
+				doors={[{wall: 'left', at: 0.6}]}
+			/>
+			<Curtains position={[b.window.at, b.window.y - 0.2, -2.0]} w={b.window.w} h={b.window.h + 0.6} color="#A07A36" open={0.8} />
+			<Bed position={[b.bed.x, 0, b.bed.z]} width={b.bed.width} duvet={duvet} pillows={2} folded={0} lumps={lumps} />
+			<Nightstand position={[b.nightstand.x, 0, b.nightstand.z]} lampOn={lampOn} />
+			<Bookshelf position={[-1.75, 0.95, -1.86]} w={0.8} h={1.1} seed={5} />
+			<PictureFrame position={[-1.25, 1.75, -1.98]} />
+			<Rug position={[-0.4, 0, 0.55]} w={1.8} d={1.0} color="#8E5A4A" />
+			<Slippers position={[0.15, 0, -0.05]} color="#3A6FD8" />
+			<Wardrobe position={[1.75, 0, -1.68]} color="#B9A07E" />
+		</group>
+	);
+};

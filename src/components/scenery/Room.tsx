@@ -2,6 +2,7 @@
 // rodapé e janela recortada na parede — o sol entra pela janela (STYLE_GUIDE §4).
 // Frente aberta (+Z) para a câmera. Medidas em metros "reais"; o episódio escala o set.
 import React from 'react';
+import * as THREE from 'three';
 import {makeFloorMaterial, makePlainMaterial, makeWallMaterial, makeWoodMaterial} from '../../style/materials';
 
 export type WallSide = 'back' | 'left' | 'right';
@@ -19,6 +20,8 @@ export type RoomProps = {
 	ceiling?: boolean;
 	/** "parede removível" de set: esconde paredes que bloqueiam a câmera */
 	hideWalls?: WallSide[];
+	/** material das paredes (ex.: papel de parede) — substitui wallColor */
+	wallMaterial?: THREE.Material;
 } & Omit<React.ComponentProps<'group'>, 'children'>;
 
 const T = 0.14; // espessura da parede
@@ -26,8 +29,8 @@ const T = 0.14; // espessura da parede
 type Hole = {at: number; y: number; w: number; h: number; frame: boolean};
 
 /** Parede ao longo de X local (comprimento L), com furos; origem no centro da base. */
-const Wall: React.FC<{L: number; H: number; holes: Hole[]; color: string}> = ({L, H, holes, color}) => {
-	const mat = makeWallMaterial(color);
+const Wall: React.FC<{L: number; H: number; holes: Hole[]; color: string; material?: THREE.Material}> = ({L, H, holes, color, material}) => {
+	const mat = material ?? makeWallMaterial(color);
 	const pieces: [number, number, number, number][] = []; // x0,x1,y0,y1
 	const sorted = [...holes].sort((a, b) => a.at - b.at);
 	let cursor = -L / 2;
@@ -89,6 +92,7 @@ export const Room: React.FC<RoomProps> = ({
 	doors = [],
 	ceiling = true,
 	hideWalls = [],
+	wallMaterial,
 	...g
 }) => {
 	const show = (w: WallSide) => !hideWalls.includes(w);
@@ -108,13 +112,13 @@ export const Room: React.FC<RoomProps> = ({
 				</mesh>
 			)}
 			{show('back') && <group position={[0, 0, -depth / 2 - T / 2]}>
-				<Wall L={width + 2 * T} H={height} holes={holesFor('back')} color={wallColor} />
+				<Wall L={width + 2 * T} H={height} holes={holesFor('back')} color={wallColor} material={wallMaterial} />
 			</group>}
 			{show('left') && <group position={[-width / 2 - T / 2, 0, 0]} rotation={[0, Math.PI / 2, 0]}>
-				<Wall L={depth} H={height} holes={holesFor('left').map((h) => ({...h, at: -h.at}))} color={wallColor} />
+				<Wall L={depth} H={height} holes={holesFor('left').map((h) => ({...h, at: -h.at}))} color={wallColor} material={wallMaterial} />
 			</group>}
 			{show('right') && <group position={[width / 2 + T / 2, 0, 0]} rotation={[0, -Math.PI / 2, 0]}>
-				<Wall L={depth} H={height} holes={holesFor('right')} color={wallColor} />
+				<Wall L={depth} H={height} holes={holesFor('right')} color={wallColor} material={wallMaterial} />
 			</group>}
 		</group>
 	);

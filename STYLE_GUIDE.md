@@ -1,8 +1,8 @@
 # STYLE GUIDE — Shorts "E se…?"
 
 > Regra de ouro: **toda cena, componente e render deste repositório segue este guia.**
-> Personagens toon 2D-ish (cabeça branca redonda, corpo em cápsula colorida, braços e
-> pernas de palito pretos) dentro de cenários 3D semi-realistas iluminados pelo sol.
+> Personagens **2D** desenhados (cabeça creme redonda, corpo em cápsula colorida, braços e pernas
+> de traço preto, contorno grosso) dentro de cenários **3D** iluminados (sol, janelas, lâmpadas).
 > Stack: Remotion + React Three Fiber (`@remotion/three`), narração ElevenLabs/MiniMax.
 
 ---
@@ -12,15 +12,25 @@
 - Nunca usar interpolação de frames. Cada frame é renderizado de forma determinística pelo Remotion (sem `Math.random` sem seed, sem `Date.now`; tudo dirigido por `useCurrentFrame()`).
 - Área segura: nada importante nos 12% de baixo e 8% de cima (UI do Shorts/TikTok) nem nos 10% da direita (botões).
 
-## 2. Personagem
-- Cabeça: esfera branca pura, `MeshBasicMaterial` #FFFFFF (sem sombreamento, lê bem em miniatura).
-- Corpo: cápsula com `MeshToonMaterial` (gradientMap de 3 tons) na cor da roupa.
-- Braços e pernas: tubos finos pretos (#111), articulados (ombro, cotovelo, quadril, joelho).
-- Contorno preto em TODO o personagem via inverted hull (cópia da malha, escala 1.03-1.05, `side: BackSide`, `MeshBasicMaterial` preto).
-- Rosto: olhos, sobrancelhas e boca como decals/planos 2D pretos na frente da cabeça. Expressões pré-definidas: neutro, deboche (olhos meio fechados + sobrancelha reta), feliz (olhos fechados em arco ^^), susto (olhos arregalados com óculos/círculos), bravo.
-- Identidade por chapéu/roupa (boné, capacete, colete refletivo, gorro). Cada personagem recorrente tem roupa fixa salva num arquivo `characters.ts`.
-- SEMPRE `ContactShadows` (drei) ou sombra blob sob cada personagem — personagem nunca pode parecer flutuando/colado.
-- Personagem recebe e projeta sombra do sol.
+## 2. Personagem — DESENHO 2D dentro do cenário 3D
+> O personagem é **2D** (traço vetorial chapado, como desenho animado). O cenário e os objetos são **3D**.
+> Referência visual: desenho 2D com contorno grosso composto num set 3D iluminado (luz, sombra, profundidade).
+
+- Construído em SVG (`src/components/Character2D.tsx`) e convertido em geometria vetorial dentro da cena:
+  nítido em qualquer zoom, sem textura pixelada, determinístico.
+- O plano do desenho fica sempre virado para a câmera (billboard vertical). Deitado = desenho girado/deitado na cama.
+- Cabeça: círculo **creme** (#F6EEDD) com contorno preto grosso; leve meia-lua de sombra no lado oposto à luz.
+- Corpo: cápsula/oval na cor da roupa, cor chapada + meia-lua de sombra no lado oposto à luz (2 tons).
+- Braços e pernas: traços pretos (#1A1414) com cotovelo/joelho; mãos e pés pequenos.
+- Contorno preto grosso em TUDO (cabeça, corpo, chapéu, roupa).
+- Rosto expressivo desenhado: pupilas, sobrancelhas grossas, boca com dentes quando for o caso, bigode/cabelo.
+  Expressões: neutro, deboche, feliz, susto, bravo, dormindo, sinistro.
+- Identidade por chapéu/cabelo/roupa + detalhes de figurino (gravata, cinto, distintivo, botões, colete).
+  Elenco recorrente com visual fixo em `src/characters.ts`.
+- Integração com a luz da cena: `tint` (cor da luz ambiente da cena) multiplica o desenho e `light` define de
+  que lado vem a luz (a sombra do desenho vai para o outro lado). Noite = tint azulado; abajur = lado quente.
+- SEMPRE sombra no chão (elipse suave sob os pés) — nunca flutuando. Projeta sombra do sol/lâmpada no cenário
+  via "sombra-proxy" (silhueta invisível virada para a luz).
 
 ## 3. Cores
 - Paleta base: verde grama saturado, azul céu, campo dourado/bege, asfalto cinza-azulado.
@@ -76,7 +86,7 @@ Padrão para todo vídeo. Mude só o necessário para o clima do tema (ex.: noit
 - Vegetação: #5DA130 / #8CC63F | Terra/campo: #D9B86C | Asfalto/chão urbano: #4A4F5A
 - Destaque da piada: #E63B2E (só 1 ponto por cena)
 - Roupas: #2BA59B, #F2C230, #3A6FD8, #E8E8E8
-- Personagem: cabeça #FFFFFF, membros e contorno #111111
+- Personagem (2D): cabeça creme #F6EEDD, membros e contorno #1A1414
 - Noite: fundo #2B3550, emissivos #FFD27A
 
 ### Luz e sombras
@@ -96,10 +106,10 @@ Padrão para todo vídeo. Mude só o necessário para o clima do tema (ex.: noit
 - Movimentos: push-in de 5–10% em 2 s com easing; órbita até 15°
 - Tremida no impacto: 6–10 frames, amplitude 0.05–0.1
 
-### Personagem
+### Personagem (2D)
 - Altura total 1,0 m (a cabeça é 35% disso)
-- Contorno 3–5% maior que o corpo
-- Gradiente toon de 3 tons
+- Contorno: ~2,2 cm num personagem de 1 m (≈ 6% do diâmetro da cabeça) — traço grosso de desenho animado
+- 2 tons por cor (base + meia-lua de sombra no lado oposto à luz)
 
 ### Legenda
 - Fonte 90–110 px, contorno 8–10 px preto, sombra 4 px
@@ -110,13 +120,15 @@ Padrão para todo vídeo. Mude só o necessário para o clima do tema (ex.: noit
   `PCFShadowMap`, que agora já faz filtragem suave controlada por `shadow.radius`. Usar PCF + raio 2–4.
 - **Bloom threshold 0.8**: vale sobre a imagem já em faixa 0–1. Para a cabeça branca, placas e
   legendas não estourarem, o bloom é seletivo (só objetos emissivos), nunca global.
+- **Personagem 2D (nov/2026)**: substitui o personagem 3D (esfera/cápsula/inverted hull). O componente 3D antigo
+  (`Character.tsx`) fica só como legado; cenas novas usam `Character2D`.
 - **Close com FOV 40°**: exceção consciente ao FOV 50–60 da §6 — só no close de reação.
 
 ---
 
 ## Checklist de aprovação (rodar em TODO still/render antes de entregar)
 - [ ] Personagem tem sombra de contato e não flutua
-- [ ] Contorno preto visível em todo o personagem
+- [ ] Personagem é desenho 2D com contorno preto grosso, integrado à luz da cena (tint/sombra)
 - [ ] Nenhuma textura com repetição visível
 - [ ] Árvore sem cartões de folha/aliasing
 - [ ] Texto da placa legível
@@ -135,7 +147,7 @@ Padrão para todo vídeo. Mude só o necessário para o clima do tema (ex.: noit
 | Determinismo | `src/style/random.ts` (`mulberry32`, `seeded`) — nunca `Math.random`/`Date.now` |
 | Área segura | `SAFE` em `src/style/constants.ts` + `<SafeAreaGuides/>` para QC |
 | Materiais toon / outline / cabeça / cenário | `src/style/materials.ts` |
-| Personagem | `src/components/Character.tsx`; elenco fixo em `src/characters.ts` |
+| Personagem (2D) | `src/components/Character2D.tsx`; elenco fixo em `src/characters.ts` |
 | Paleta e vermelho de destaque | `PALETTE` em `src/style/constants.ts` (`PALETTE.accent` é o ÚNICO vermelho) |
 | Luz dia / entardecer-noite + bloom + color grade | `src/components/Lighting.tsx` |
 | Legendas | `src/components/Captions.tsx` + `src/lib/timestamps.ts` |

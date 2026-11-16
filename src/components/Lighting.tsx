@@ -4,7 +4,7 @@ import React, {useMemo} from 'react';
 import * as THREE from 'three';
 import {Environment} from '@react-three/drei';
 import {useFrame, useThree} from '@react-three/fiber';
-import {BlendFunction, Effect, EffectComposer, EffectPass, RenderPass, SelectiveBloomEffect} from 'postprocessing';
+import {BlendFunction, Effect, EffectComposer, EffectPass, RenderPass, SelectiveBloomEffect, VignetteEffect} from 'postprocessing';
 import {mulberry32} from '../style/random';
 import {PALETTE, REF} from '../style/constants';
 
@@ -203,7 +203,7 @@ export const Glow: React.FC<{children: React.ReactNode}> = ({children}) => {
 	return <group ref={ref}>{children}</group>;
 };
 
-export const PostFX: React.FC<{bloom: boolean; grade: GradeParams; multisampling?: number}> = ({bloom, grade, multisampling = 4}) => {
+export const PostFX: React.FC<{bloom: boolean; grade: GradeParams; multisampling?: number; vignette?: number}> = ({bloom, grade, multisampling = 4, vignette = 0.45}) => {
 	const gl = useThree((s) => s.gl);
 	const scene = useThree((s) => s.scene);
 	const camera = useThree((s) => s.camera);
@@ -227,10 +227,12 @@ export const PostFX: React.FC<{bloom: boolean; grade: GradeParams; multisampling
 			effects.push(bloomFx);
 		}
 		effects.push(new GradeEffect(grade));
+		// vinheta: escurece as bordas e puxa o olho para o centro (referências)
+		effects.push(new VignetteEffect({offset: 0.32, darkness: vignette}));
 		c.addPass(new EffectPass(camera, ...effects));
 		return {composer: c, bloomFx};
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [gl, scene, bloom, grade, multisampling]);
+	}, [gl, scene, bloom, grade, multisampling, vignette]);
 	useMemo(() => composer.setSize(size.width, size.height), [composer, size.width, size.height]);
 	React.useEffect(() => () => composer.dispose(), [composer]);
 	useFrame((state) => {
@@ -264,6 +266,8 @@ export type LightingProps = {
 	 * da grama, que tingia teto/paredes) e o fill sobe — dentro de casa só a janela recebe sol.
 	 */
 	interior?: boolean;
+	/** força da vinheta (0 = sem). Padrão 0.45 de dia, 0.65 à noite. */
+	vignette?: number;
 };
 
 export const sunDirection = (azimuthDeg: number, elevationDeg: number) => {
@@ -272,7 +276,7 @@ export const sunDirection = (azimuthDeg: number, elevationDeg: number) => {
 	return new THREE.Vector3(Math.sin(az) * Math.cos(el), Math.sin(el), Math.cos(az) * Math.cos(el)).normalize();
 };
 
-export const Lighting: React.FC<LightingProps> = ({preset = 'dia', focus = [0, 0, 0], shadowExtent = 18, sunAzimuth, sunElevation, post = true, bloom, shadowMapSize = REF.light.shadowMapSize, interior = false}) => {
+export const Lighting: React.FC<LightingProps> = ({preset = 'dia', focus = [0, 0, 0], shadowExtent = 18, sunAzimuth, sunElevation, post = true, bloom, shadowMapSize = REF.light.shadowMapSize, interior = false, vignette}) => {
 	const base = LIGHTING[preset];
 	const p: PresetDef = interior
 		? {...base, hemiGround: preset === 'dia' ? '#C8B49A' : '#3A3026', hemiSky: preset === 'dia' ? '#E4ECF5' : base.hemiSky, hemiIntensity: base.hemiIntensity * (preset === 'dia' ? 1.9 : 1.3)}
@@ -314,7 +318,7 @@ export const Lighting: React.FC<LightingProps> = ({preset = 'dia', focus = [0, 0
 				shadow-camera-far={140}
 			/>
 
-			{post && <PostFX bloom={useBloom} grade={p.grade} />}
+			{post && <PostFX bloom={useBloom} grade={p.grade} vignette={vignette ?? (preset === 'dia' ? 0.45 : 0.65)} />}
 		</>
 	);
 };

@@ -375,3 +375,27 @@ export const makeFabricMaterial = (color: string) =>
 /** Material liso semi-realista genérico (móveis pintados, eletrodomésticos). */
 export const makePlainMaterial = (color: string, roughness = 0.55, metalness = 0) =>
 	memo(`plain-${color}-${roughness}-${metalness}`, () => new THREE.MeshStandardMaterial({color, roughness, metalness}));
+
+/**
+ * Papel de parede: losangos + pontinhos (padrão de papel de parede é repetitivo por natureza),
+ * com manchas grandes de luz/desbotado em noise para não ficar estéril.
+ */
+export const makeWallpaperMaterial = (base = '#2F5D6B', pattern = '#3E7482', scale = 0.32) =>
+	memo(`wallpaper-${base}-${pattern}-${scale}`, () =>
+		patchStandard(new THREE.MeshStandardMaterial({color: '#ffffff', roughness: 0.9}), `wallpaper-${base}-${pattern}-${scale}`, {
+			uniforms: {uBase: {value: c(base)}, uPat: {value: c(pattern)}, uS: {value: scale}},
+			color: /* glsl */ `
+				// coordenada ao longo da parede: usa a maior extensão horizontal do mundo
+				vec2 uv = vec2(vW.x + vW.z, vW.y) / uS;
+				vec2 g = fract(uv) - 0.5;
+				vec2 cell = floor(uv);
+				float diamond = abs(g.x) * 1.0 + abs(g.y) * 0.62;
+				float motif = 1.0 - smoothstep(0.17, 0.19, abs(diamond - 0.2));
+				vec2 g2 = fract(uv + 0.5) - 0.5;
+				float dot2 = 1.0 - smoothstep(0.045, 0.06, length(g2));
+				vec3 col = mix(uBase, uPat, max(motif, dot2));
+				col *= 0.9 + 0.18 * fbm(vW * 0.7);
+				diffuseColor.rgb = col;
+			`,
+		}),
+	);

@@ -11,3 +11,4 @@ export type {RoomProps, WindowSpec} from './Room';
 export {Bed, bedTop, Nightstand, Wardrobe, Rug, DoorPanel, Briefcase, MilkGlass} from './Furniture';
 export {Counter, Fridge, Table, Chair} from './Kitchen';
 export {House} from './House';
+export {Bookshelf, Curtains, PictureFrame, Slippers} from './Decor';

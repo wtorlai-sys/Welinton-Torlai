@@ -12,12 +12,13 @@ type G = Omit<React.ComponentProps<'group'>, 'children'>;
 export const bedTop = (scale = 1) => 0.56 * scale;
 
 /** Cama: estrado de madeira, cabeceira, colchão, edredom e travesseiro(s). Cabeceira em -Z. */
-export const Bed: React.FC<{width?: number; length?: number; duvet?: string; pillows?: 1 | 2; folded?: number} & G> = ({
+export const Bed: React.FC<{width?: number; length?: number; duvet?: string; pillows?: 1 | 2; folded?: number; /** volumes de corpo sob o edredom: x local, comprimento */ lumps?: {x: number; len?: number}[]} & G> = ({
 	width = 1.0,
 	length = 2.0,
 	duvet = '#6FA8DC',
 	pillows = 1,
 	folded = 0.45,
+	lumps = [],
 	...g
 }) => {
 	const wood = makeWoodMaterial('#9A6B44');
@@ -45,6 +46,11 @@ export const Bed: React.FC<{width?: number; length?: number; duvet?: string; pil
 				castShadow
 				receiveShadow
 			/>
+			{lumps.map((l, i) => (
+				<mesh key={`l${i}`} position={[l.x, 0.6, length / 2 - (l.len ?? 1.3) / 2 - 0.1]} scale={[0.22, 0.13, (l.len ?? 1.3) / 2]} material={makeFabricMaterial(duvet)} castShadow receiveShadow>
+					<sphereGeometry args={[1, 24, 16, 0, Math.PI * 2, 0, Math.PI / 2]} />
+				</mesh>
+			))}
 			{Array.from({length: pillows}, (_, i) => (
 				<RoundedBox
 					key={i}
