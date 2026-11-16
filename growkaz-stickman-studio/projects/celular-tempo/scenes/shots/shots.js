@@ -45,7 +45,8 @@ registerShot('s01', { draw(g, t, info) {
   const cam = { z: 1.25 + 0.08 * ease.inOut(t / info.dur), x: -60, y: 60 };
   const { GY, CX, M } = bedroom(g, t, cam);
   layer(g, cam, 1, (g) => {
-    const o = { x: CX - 120, y: GY - 70, s: 1.5, facing: 1, outfit: LEO, pose: breathe(sitPhone(), t), expr: 'absorbed', look: [0.3, 0.8], rim: rim(M, [1, -0.6]), prop: PH, shadow: false, blink: blinkOf(t, 3.1) };
+    const o = { x: CX - 120, y: GY + 14, s: 1.5,   // quadril no colchão (topo em GY-96), pés no chão
+    facing: 1, outfit: LEO, pose: breathe(sitPhone(), t), expr: 'absorbed', look: [0.3, 0.8], rim: rim(M, [1, -0.6]), prop: PH, shadow: false, blink: blinkOf(t, 3.1) };
     drawFigure(g, o); phoneGlow(g, o);
   });
   FX.dust(g, t, { count: 30, color: M.rim, a: 0.25 });
