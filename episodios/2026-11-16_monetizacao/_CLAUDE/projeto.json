@@ -908,10 +908,11 @@
  "render": {
   "composicao": "Monetizacao20261116",
   "codigo": "src/episodes/2026-11-16_monetizacao/",
-  "prancha": "_CLAUDE/revisao/prancha_v02.png",
+  "prancha": "_CLAUDE/revisao/prancha_v03.png",
   "trechos_feitos": [
    "gancho",
-   "c03–c08"
+   "c03–c08",
+   "c09–c20"
   ],
   "cenas": {
    "c01": {
@@ -927,36 +928,96 @@
    "c03": {
     "arquivo": "scenes/corpo1.tsx#C03Mostrar",
     "versao": 1,
-    "status": "aguardando"
+    "status": "aprovado"
    },
    "c04": {
     "arquivo": "scenes/corpo1.tsx#C04ValorFixo",
     "versao": 1,
-    "status": "aguardando"
+    "status": "aprovado"
    },
    "c05": {
     "arquivo": "scenes/corpo1.tsx#C05Filtros",
     "versao": 1,
-    "status": "aguardando"
+    "status": "aprovado"
    },
    "c06": {
     "arquivo": "scenes/corpo1.tsx#C06Faixa",
     "versao": 1,
-    "status": "aguardando"
+    "status": "aprovado"
    },
    "c07": {
     "arquivo": "scenes/corpo1.tsx#C07DezMil",
     "versao": 1,
-    "status": "aguardando"
+    "status": "aprovado"
    },
    "c08": {
     "arquivo": "scenes/corpo1.tsx#C08DezCinquenta",
     "versao": 1,
-    "status": "aguardando"
+    "status": "aprovado"
    },
    "hud": {
     "arquivo": "scenes/corpo1.tsx#RegraHUD",
     "obs": "33,95–56,2"
+   },
+   "c09": {
+    "arquivo": "scenes/corpo2.tsx#C09CemMil",
+    "versao": 1,
+    "status": "aguardando"
+   },
+   "c10": {
+    "arquivo": "scenes/corpo2.tsx#C10Milhao",
+    "versao": 1,
+    "status": "aguardando"
+   },
+   "c11": {
+    "arquivo": "scenes/corpo2.tsx#C11Apice",
+    "versao": 1,
+    "status": "aguardando"
+   },
+   "c12": {
+    "arquivo": "scenes/corpo2.tsx#C12Virada",
+    "versao": 1,
+    "status": "aguardando"
+   },
+   "c13": {
+    "arquivo": "scenes/corpo2.tsx#C13Assunto",
+    "versao": 1,
+    "status": "aguardando"
+   },
+   "c14": {
+    "arquivo": "scenes/corpo2.tsx#C14Nichos",
+    "versao": 1,
+    "status": "aguardando"
+   },
+   "c15": {
+    "arquivo": "scenes/fim.tsx#C15Diferenca",
+    "versao": 1,
+    "status": "aguardando"
+   },
+   "c16": {
+    "arquivo": "scenes/fim.tsx#C16Shorts",
+    "versao": 1,
+    "status": "aguardando"
+   },
+   "c17": {
+    "arquivo": "scenes/fim.tsx#C17Tarifa",
+    "versao": 1,
+    "status": "aguardando"
+   },
+   "c18": {
+    "arquivo": "scenes/fim.tsx#C18Fatores",
+    "versao": 1,
+    "status": "aguardando"
+   },
+   "c19": {
+    "arquivo": "scenes/fim.tsx#C19CTA (c19+c20 contínuas)",
+    "versao": 1,
+    "status": "aguardando"
+   },
+   "c20": {
+    "arquivo": "scenes/fim.tsx#C19CTA (c19+c20 contínuas)",
+    "versao": 1,
+    "status": "aguardando"
    }
   },
   "eventos": [
@@ -1310,10 +1371,473 @@
     "tipo": "moeda",
     "forca": "media",
     "obs": "moedas"
+   },
+   {
+    "id": "e51",
+    "t": 43.44,
+    "tipo": "whoosh",
+    "forca": "forte",
+    "obs": "whip para cima c09"
+   },
+   {
+    "id": "e52",
+    "t": 44.0,
+    "tipo": "contador",
+    "forca": "forte",
+    "obs": "contador acelerado até 100.000 (+K)"
+   },
+   {
+    "id": "e53",
+    "t": 44.36,
+    "tipo": "riser",
+    "forca": "media",
+    "obs": "barra 100K dispara"
+   },
+   {
+    "id": "e54",
+    "t": 44.62,
+    "tipo": "pop",
+    "forca": "media",
+    "obs": "100 MIL"
+   },
+   {
+    "id": "e55",
+    "t": 46.03,
+    "tipo": "whoosh",
+    "forca": "leve",
+    "obs": "painel de receita"
+   },
+   {
+    "id": "e56",
+    "t": 47.18,
+    "tipo": "impacto",
+    "forca": "forte",
+    "obs": "ATÉ R$ 500"
+   },
+   {
+    "id": "e57",
+    "t": 48.71,
+    "tipo": "riser",
+    "forca": "media",
+    "obs": "escurece, preparação (até 50,34)"
+   },
+   {
+    "id": "e58",
+    "t": 49.38,
+    "tipo": "contador",
+    "forca": "forte",
+    "obs": "contador expo.in até 1.000.000"
+   },
+   {
+    "id": "e59",
+    "t": 50.34,
+    "tipo": "impacto",
+    "forca": "muito forte",
+    "obs": "1 MILHÃO trava + flash"
+   },
+   {
+    "id": "e60",
+    "t": 51.02,
+    "tipo": "pop",
+    "forca": "media",
+    "obs": "1 MILHÃO"
+   },
+   {
+    "id": "e61",
+    "t": 52.0,
+    "tipo": "whoosh",
+    "forca": "forte",
+    "obs": "zoom-through c11"
+   },
+   {
+    "id": "e62",
+    "t": 52.18,
+    "tipo": "contador",
+    "forca": "media",
+    "obs": "slot girando"
+   },
+   {
+    "id": "e63",
+    "t": 53.58,
+    "tipo": "impacto",
+    "forca": "media",
+    "obs": "R$ 1.000"
+   },
+   {
+    "id": "e64",
+    "t": 54.14,
+    "tipo": "impacto",
+    "forca": "maximo",
+    "obs": "R$ 5.000 + moedas 3D"
+   },
+   {
+    "id": "e65",
+    "t": 54.2,
+    "tipo": "moeda",
+    "forca": "forte",
+    "obs": "chuva de moedas/notas"
+   },
+   {
+    "id": "e66",
+    "t": 55.95,
+    "tipo": "glitch",
+    "forca": "forte",
+    "obs": "virada: congela; música corta/abaixa"
+   },
+   {
+    "id": "e67",
+    "t": 57.76,
+    "tipo": "riser",
+    "forca": "leve",
+    "obs": "lupa (tom grave)"
+   },
+   {
+    "id": "e68",
+    "t": 58.24,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "dígitos viram ?"
+   },
+   {
+    "id": "e69",
+    "t": 59.8,
+    "tipo": "notificacao",
+    "forca": "leve",
+    "obs": "a conta"
+   },
+   {
+    "id": "e70",
+    "t": 60.36,
+    "tipo": "whoosh",
+    "forca": "leve",
+    "obs": "acender c13"
+   },
+   {
+    "id": "e71",
+    "t": 61.8,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "botão gira"
+   },
+   {
+    "id": "e72",
+    "t": 62.48,
+    "tipo": "whoosh",
+    "forca": "leve",
+    "obs": "agulha varre"
+   },
+   {
+    "id": "e73",
+    "t": 63.02,
+    "tipo": "notificacao",
+    "forca": "media",
+    "obs": "PAGAMENTO acende"
+   },
+   {
+    "id": "e74",
+    "t": 64.47,
+    "tipo": "whoosh",
+    "forca": "media",
+    "obs": "carrossel 3D Finanças"
+   },
+   {
+    "id": "e75",
+    "t": 66.38,
+    "tipo": "contador",
+    "forca": "media",
+    "obs": "medidor $$$ enche"
+   },
+   {
+    "id": "e76",
+    "t": 67.27,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "por 1.000 visualizações"
+   },
+   {
+    "id": "e77",
+    "t": 69.17,
+    "tipo": "whoosh",
+    "forca": "media",
+    "obs": "carrossel → Entretenimento"
+   },
+   {
+    "id": "e78",
+    "t": 70.15,
+    "tipo": "whoosh",
+    "forca": "media",
+    "obs": "Humor + recuo"
+   },
+   {
+    "id": "e79",
+    "t": 70.72,
+    "tipo": "impacto",
+    "forca": "leve",
+    "obs": "flash c15"
+   },
+   {
+    "id": "e80",
+    "t": 71.3,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "OUTRA"
+   },
+   {
+    "id": "e81",
+    "t": 71.68,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "DIFERENÇA"
+   },
+   {
+    "id": "e82",
+    "t": 72.18,
+    "tipo": "impacto",
+    "forca": "forte",
+    "obs": "ENORME"
+   },
+   {
+    "id": "e83",
+    "t": 72.62,
+    "tipo": "pop",
+    "forca": "media",
+    "obs": "≠"
+   },
+   {
+    "id": "e84",
+    "t": 73.05,
+    "tipo": "whoosh",
+    "forca": "media",
+    "obs": "tela divide"
+   },
+   {
+    "id": "e85",
+    "t": 73.44,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "celular Shorts"
+   },
+   {
+    "id": "e86",
+    "t": 74.69,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "medidor $"
+   },
+   {
+    "id": "e87",
+    "t": 75.56,
+    "tipo": "notificacao",
+    "forca": "media",
+    "obs": "medidor esvazia (queda)"
+   },
+   {
+    "id": "e88",
+    "t": 76.28,
+    "tipo": "riser",
+    "forca": "media",
+    "obs": "lado longo acende $$$"
+   },
+   {
+    "id": "e89",
+    "t": 77.84,
+    "tipo": "whoosh",
+    "forca": "media",
+    "obs": "? cai"
+   },
+   {
+    "id": "e90",
+    "t": 78.66,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "faíscas"
+   },
+   {
+    "id": "e91",
+    "t": 79.77,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "canal + cadeado"
+   },
+   {
+    "id": "e92",
+    "t": 80.96,
+    "tipo": "impacto",
+    "forca": "forte",
+    "obs": "cadeado abre + moedas"
+   },
+   {
+    "id": "e93",
+    "t": 81.99,
+    "tipo": "whoosh",
+    "forca": "leve",
+    "obs": "ingresso desliza"
+   },
+   {
+    "id": "e94",
+    "t": 83.0,
+    "tipo": "impacto",
+    "forca": "media",
+    "obs": "ingresso rasga"
+   },
+   {
+    "id": "e95",
+    "t": 83.66,
+    "tipo": "whoosh",
+    "forca": "forte",
+    "obs": "whip direita c18"
+   },
+   {
+    "id": "e96",
+    "t": 83.9,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "nó PAGAMENTO"
+   },
+   {
+    "id": "e97",
+    "t": 85.08,
+    "tipo": "notificacao",
+    "forca": "leve",
+    "obs": "Público"
+   },
+   {
+    "id": "e98",
+    "t": 85.96,
+    "tipo": "notificacao",
+    "forca": "leve",
+    "obs": "Conteúdo"
+   },
+   {
+    "id": "e99",
+    "t": 86.92,
+    "tipo": "notificacao",
+    "forca": "leve",
+    "obs": "Anúncios"
+   },
+   {
+    "id": "e100",
+    "t": 88.34,
+    "tipo": "notificacao",
+    "forca": "leve",
+    "obs": "Views que geram receita"
+   },
+   {
+    "id": "e101",
+    "t": 90.22,
+    "tipo": "impacto",
+    "forca": "media",
+    "obs": "pulsos convergem, nó acende"
+   },
+   {
+    "id": "e102",
+    "t": 90.6,
+    "tipo": "whoosh",
+    "forca": "forte",
+    "obs": "speed ramp para dentro do nó"
+   },
+   {
+    "id": "e103",
+    "t": 91.0,
+    "tipo": "whoosh",
+    "forca": "media",
+    "obs": "painel de comentários"
+   },
+   {
+    "id": "e104",
+    "t": 92.64,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "chip Começando"
+   },
+   {
+    "id": "e105",
+    "t": 93.56,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "play"
+   },
+   {
+    "id": "e106",
+    "t": 94.38,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "chip Já monetizei"
+   },
+   {
+    "id": "e107",
+    "t": 95.02,
+    "tipo": "impacto",
+    "forca": "media",
+    "obs": "VOCÊ JÁ MONETIZOU?"
+   },
+   {
+    "id": "e108",
+    "t": 95.8,
+    "tipo": "whoosh",
+    "forca": "leve",
+    "obs": "câmera desce"
+   },
+   {
+    "id": "e109",
+    "t": 96.06,
+    "tipo": "whoosh",
+    "forca": "leve",
+    "obs": "cursor"
+   },
+   {
+    "id": "e110",
+    "t": 96.5,
+    "tipo": "pop",
+    "forca": "media",
+    "obs": "clique Comentar"
+   },
+   {
+    "id": "e111",
+    "t": 97.22,
+    "tipo": "notificacao",
+    "forca": "leve",
+    "obs": "balão 1"
+   },
+   {
+    "id": "e112",
+    "t": 97.62,
+    "tipo": "notificacao",
+    "forca": "leve",
+    "obs": "balão 2"
+   },
+   {
+    "id": "e113",
+    "t": 98.44,
+    "tipo": "pop",
+    "forca": "media",
+    "obs": "EP. 1"
+   },
+   {
+    "id": "e114",
+    "t": 99.2,
+    "tipo": "pop",
+    "forca": "leve",
+    "obs": "EP. 2? / 3?"
+   },
+   {
+    "id": "e115",
+    "t": 102.06,
+    "tipo": "moeda",
+    "forca": "media",
+    "obs": "moeda corre pela fila"
+   },
+   {
+    "id": "e116",
+    "t": 103.7,
+    "tipo": "impacto",
+    "forca": "leve",
+    "obs": "play final"
    }
   ],
   "trechos_aprovados": [
-   "gancho (c01–c02) · prancha_v01 · 16/11"
+   "gancho (c01–c02) · prancha_v01 · 16/11",
+   "c03–c08 · prancha_v02 · 16/11"
   ]
  }
 }

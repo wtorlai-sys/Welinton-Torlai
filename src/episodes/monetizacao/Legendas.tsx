@@ -40,7 +40,7 @@ const styleFor = (raw: string) => {
 	return {color: '#FFFFFF', scale: 1};
 };
 
-export const Legendas: React.FC<{src: string; y?: number | ((T: number) => number); size?: number}> = ({src, y = 905, size = 66}) => {
+export const Legendas: React.FC<{src: string; y?: number | ((T: number) => number); size?: number; cx?: (T: number) => number}> = ({src, y = 905, size = 66, cx}) => {
 	const T = useT();
 	const [data, setData] = useState<CapChunk[] | null>(null);
 	const [handle] = useState(() => delayRender('Legendas'));
@@ -62,7 +62,7 @@ export const Legendas: React.FC<{src: string; y?: number | ((T: number) => numbe
 	const yy = typeof y === 'function' ? y(T) : y;
 	const out = clamp((until - T) / 0.08);
 	return (
-		<div style={{position: 'absolute', left: 0, width: W, top: yy, transform: 'translateY(-50%)', display: 'flex', justifyContent: 'center', alignItems: 'baseline', gap: size * 0.5, opacity: out, pointerEvents: 'none'}}>
+		<div style={{position: 'absolute', left: (cx ? cx(T) : W / 2) - W / 2, width: W, top: yy, transform: 'translateY(-50%)', display: 'flex', justifyContent: 'center', alignItems: 'baseline', gap: size * 0.5, opacity: out, pointerEvents: 'none'}}>
 			{ch.words.map((w, i) => {
 				if (T < w.start - 0.02) return null;
 				const p = easeOutBack(clamp((T - w.start) / 0.12), 2);
