@@ -1,11 +1,12 @@
 import React from 'react';
-import {Composition} from 'remotion';
+import {Composition, Still} from 'remotion';
 import {VIDEO} from './style/constants';
 import {TestScene, TEST_SCENE_FRAMES} from './scenes/TestScene';
 import {PANELS, Storyboard} from './episodes/dormir/Storyboard';
 import {CastSheet} from './scenes/CastSheet';
 import {MON_FPS, MON_FRAMES, MonetizacaoVideo} from './episodes/monetizacao/Video';
 import {EP_FPS, EP_FRAMES, Monetizacao20261116} from './episodes/2026-11-16_monetizacao/Video';
+import {MonetizacaoThumb} from './episodes/2026-11-16_monetizacao/Thumb';
 import {DORMIR_FPS, DORMIR_FRAMES, DormirVideo} from './episodes/dormir/Video';
 
 export const RemotionRoot: React.FC = () => (
@@ -23,5 +24,8 @@ export const RemotionRoot: React.FC = () => (
 		<Composition id="Monetizacao" component={MonetizacaoVideo} durationInFrames={MON_FRAMES} fps={MON_FPS} width={1920} height={1080} defaultProps={{audio: true}} />
 		{/* Vídeo 2026-11-16_monetizacao (fluxo /editar, plano aprovado) */}
 		<Composition id="Monetizacao20261116" component={Monetizacao20261116} durationInFrames={EP_FRAMES} fps={EP_FPS} width={1920} height={1080} defaultProps={{audio: true}} />
+		{/* Thumbnails A/B do vídeo 2026-11-16_monetizacao (render com --scale=0.6667 → 1280×720) */}
+		<Still id="Monetizacao20261116ThumbA" component={MonetizacaoThumb} width={1920} height={1080} defaultProps={{v: 'A' as const}} />
+		<Still id="Monetizacao20261116ThumbB" component={MonetizacaoThumb} width={1920} height={1080} defaultProps={{v: 'B' as const}} />
 	</>
 );
