@@ -80,7 +80,7 @@ const probeDuration = (f) => Number(execFileSync('ffprobe', ['-v', 'error', '-sh
 function resolveTimeline(s) {
   const fps = s.fps || 30;
   const words = s.words ? JSON.parse(fs.readFileSync(inProject(s.words), 'utf8')) : null;
-  const tok = (x) => String(x).toLowerCase().replace(/[\u2018\u2019]/g, "'").replace(/[^a-z0-9' ]+/g, ' ').trim().split(/\s+/).filter(Boolean);
+  const tok = (x) => String(x).toLowerCase().replace(/[\u2018\u2019]/g, "'").replace(/[^\p{L}\p{N}' ]+/gu, ' ').trim().split(/\s+/).filter(Boolean);
   const wn = words ? words.words.map(w => tok(w.w).join('')) : [];
   const timeOf = (v, what) => {
     if (typeof v === 'number') return v;

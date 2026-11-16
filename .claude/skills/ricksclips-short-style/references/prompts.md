@@ -68,7 +68,7 @@ Keep the horizon low and the foreground empty: the stage wraps the painting arou
 
 ## Voice
 
-`generate_audio`, speech model from the catalog (default `seed_audio`), with the user's own voice from `list_voices` (`voice_type: "element"`) or a preset. Paste the script as the prompt. Ask for English (US) output and check the result: a wrong language or accent is the first thing to rule out when timings look odd.
+`generate_audio`, speech model from the catalog (default `seed_audio`), with the user's own voice from `list_voices` (`voice_type: "element"`) or a preset. Paste the script as the prompt. Ask for Portuguese (Brazil) output, never English unless the user asks for it, and check the result: a wrong language or accent is the first thing to rule out when timings look odd.
 
 Delivery for this style: energetic, fast, punchy, about four words a second, no pauses between sentences. If the model takes a speed setting, raise it slightly instead of rewriting the script.
 

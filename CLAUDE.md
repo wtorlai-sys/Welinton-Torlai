@@ -15,6 +15,10 @@ Se um pedido conflitar com o guia, aponte o conflito antes de implementar.
 - Tudo determinístico: sem `Math.random()` sem seed, sem `Date.now()`, sem `delta` de `useFrame`.
 - Toda cena tem pelo menos 1 elemento-gag e `captionY` escolhido para não cobrir a ação.
 
+## Idioma dos vídeos
+Todo vídeo é em **português do Brasil (pt-BR)**: roteiro, narração, legendas e textos na tela.
+A virada do roteiro é "Você vê…" (no lugar de "You see…"). Outro idioma só quando o usuário pedir.
+
 ## Comandos
 ```bash
 npm install
