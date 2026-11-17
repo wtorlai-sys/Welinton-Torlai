@@ -4,7 +4,7 @@ import {VIDEO} from './style/constants';
 import {TestScene, TEST_SCENE_FRAMES} from './scenes/TestScene';
 import {PANELS, Storyboard} from './episodes/dormir/Storyboard';
 import {CastSheet} from './scenes/CastSheet';
-import {CHUVA_FPS, CHUVA_FRAMES, CHUVA_H, CHUVA_W, ChuvaVideo} from './episodes/chuva/Video';
+import {CHUVA_FPS, CHUVA_FRAMES, CHUVA_H, CHUVA_W, ChuvaThumb, ChuvaVideo} from './episodes/chuva/Video';
 import {DORMIR_FPS, DORMIR_FRAMES, DormirVideo} from './episodes/dormir/Video';
 
 export const RemotionRoot: React.FC = () => (
@@ -20,5 +20,7 @@ export const RemotionRoot: React.FC = () => (
 		<Composition id="DormirStoryboard" component={Storyboard} durationInFrames={PANELS.length} fps={VIDEO.fps} width={VIDEO.width} height={VIDEO.height} />
 		{/* "A chuva da vovó" — história em blocos, 16:9 (YouTube) */}
 		<Composition id="Chuva" component={ChuvaVideo} durationInFrames={CHUVA_FRAMES} fps={CHUVA_FPS} width={CHUVA_W} height={CHUVA_H} defaultProps={{captions: true, audio: true}} />
+		<Composition id="ChuvaThumbA" component={ChuvaThumb} durationInFrames={30} fps={30} width={1920} height={1080} defaultProps={{v: 'A' as const}} />
+		<Composition id="ChuvaThumbB" component={ChuvaThumb} durationInFrames={30} fps={30} width={1920} height={1080} defaultProps={{v: 'B' as const}} />
 	</>
 );

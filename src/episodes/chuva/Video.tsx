@@ -1198,3 +1198,58 @@ export const CHUVA_QC_TIMES = PLANS.map((p, i) => {
 });
 // referência para não acusar import não usado
 void useWordAt;
+
+/* ------------------------------------------------------------------ */
+/* Capas (teste A/B) — cena limpa, sem legenda, para receber texto     */
+/* ------------------------------------------------------------------ */
+
+const THUMBS: Record<'A' | 'B', Plan> = {
+	// A: dois rostos grandes — ele ensopado e em choque, ela chorando de alegria
+	A: {
+		s: 70,
+		light: 'dourado',
+		focus: [0, 0, 0],
+		extent: 6,
+		cam: {p: [0.15, 1.95, 3.1], l: [0.15, 1.72, 0], fov: 36},
+		Scene: ({t, T}) => (
+			<>
+				<Yard />
+				<Who c="narrador" T={T} blink={false} pose={mix(POSES.lookUp(T), POSES.shrug(), 0.5)} position={[-0.62, 0, 0.2]} rotation={[0, 0.35, 0]} expression="susto" wet={1} />
+				<RainCloud t={t} size={1.7} fall={HN + 1.35} position={[-0.62, HN + 1.35, 0.2]} drops={220} flash={0.25} />
+				<Who c="vovo" T={T} blink={false} pose={POSES.handChest(T)} position={[0.85, 0, -0.1]} rotation={[0, -0.4, 0]} expression="emocionado" />
+			</>
+		),
+	},
+	// B: festa seca e ensolarada; só ele, no meio, debaixo da tempestade (seta "EU")
+	B: {
+		s: 70,
+		light: 'dourado',
+		focus: [0, 0, 2],
+		extent: 9,
+		cam: {p: [0.9, 2.3, 8.6], l: [0.2, 1.55, 2.4], fov: 40},
+		Scene: ({t, T}) => (
+			<>
+				<Yard />
+				<PartyTable T={T} radio radioOn={1} />
+				<PartyGuests T={T} />
+				<Chair position={VOVO_SEAT} />
+				<Who c="vovo" T={T} blink={false} pose={POSES.laugh(T)} position={[0, 0, -2.0]} expression="rindo" />
+				<Who c="narrador" T={T} blink={false} pose={POSES.idle(T)} position={[0.2, 0, 4.6]} rotation={[0, 0.1, 0]} expression="serio" wet={1} />
+				<RainCloud t={t} size={2.0} fall={HN + 1.6} position={[0.2, HN + 1.6, 4.6]} drops={240} flash={0.5} />
+			</>
+		),
+	},
+};
+
+export const ChuvaThumb: React.FC<{v: 'A' | 'B'}> = ({v}) => {
+	const [ready, setReady] = useState(false);
+	const [handle] = useState(() => delayRender('Carregando capa'));
+	useEffect(() => {
+		Promise.all([loadEpisodeTextures(), ensureFonts()])
+			.then(() => setReady(true))
+			.finally(() => continueRender(handle));
+	}, [handle]);
+	if (!ready) return <AbsoluteFill style={{background: '#000'}} />;
+	const p = THUMBS[v];
+	return <PlanView plan={p} end={p.s + 2} />;
+};
