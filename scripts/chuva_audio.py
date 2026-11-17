@@ -242,12 +242,12 @@ for a, b, h in [(0, 7.96, 0.4), (15.48, 17.2, 0.5), (17.2, 21.04, 0.4), (23.0, 2
 sput(thunder(2.6, 0.16), 0.6)
 sput(thunder(2.4, 0.12), 3.9, -0.2)
 sput(thunder(2.0, 0.08), 64.6, 0.1)
-sput(plip(0.7), 61.5)
-sput(plip(0.6), 63.3, 0.3)
+sput(plip(0.25), 61.5)
+sput(plip(0.22), 63.3, 0.3)
 sput(sizzle(1.6), 49.4, -0.2)
-sput(click(0.6), 54.7)
+sput(click(0.25), 54.7)
 sput(hiss(25.6, 0.012), 54.75, 0.0)
-sput(click(0.6), 80.6)
+sput(click(0.25), 80.6)
 
 sfx = np.stack([SL, SRr])
 sfx *= 2.6  # sem normalizar pelo pico: a chuva fica baixa de verdade
