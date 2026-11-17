@@ -8,7 +8,7 @@ import {BlendFunction, Effect, EffectComposer, EffectPass, RenderPass, Selective
 import {mulberry32} from '../style/random';
 import {PALETTE, REF} from '../style/constants';
 
-export type LightingPreset = 'dia' | 'entardecer' | 'noite';
+export type LightingPreset = 'dia' | 'entardecer' | 'noite' | 'dourado';
 
 type PresetDef = {
 	skyTop: string;
@@ -67,6 +67,24 @@ export const LIGHTING: Record<LightingPreset, PresetDef> = {
 		exposure: 1.0,
 		bloom: true,
 		grade: {contrast: 1.12, saturation: 0.95, shadowTint: [-0.01, 0.0, 0.03], highlightTint: [0.025, 0.01, -0.01]},
+	},
+	/** Hora dourada (festa ao fim da tarde): sol baixo e alaranjado, sombras longas, bloom nas lâmpadas. */
+	dourado: {
+		skyTop: '#5F7FB8',
+		skyHorizon: '#F6B98A',
+		ground: '#7A6A4A',
+		sunColor: '#FFB36B',
+		sunIntensity: 2.8,
+		sunElevation: 11,
+		sunAzimuth: REF.light.sunAzimuth,
+		hemiSky: '#9DB4E0',
+		hemiGround: '#7A5A3A',
+		hemiIntensity: 0.55,
+		envIntensity: 0.45,
+		fog: [REF.light.fogNear, REF.light.fogFar],
+		exposure: 1.0,
+		bloom: true,
+		grade: {contrast: 1.12, saturation: 1.18, shadowTint: [-0.01, 0.0, 0.03], highlightTint: [0.03, 0.012, -0.012]},
 	},
 	/** Noite: "sol" vira luar azulado a 10%, fundo #2B3550; luz quente vem dos emissivos (<Glow>). */
 	noite: {

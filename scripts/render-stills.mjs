@@ -7,7 +7,7 @@ import fs from 'node:fs';
 
 const [, , compId = 'TestScene', ...rest] = process.argv;
 const frames = rest.length ? rest.map(Number) : [0, 45, 90];
-const outDir = path.resolve('out/stills');
+const outDir = path.resolve(process.env.OUT_DIR || "out/stills");
 fs.mkdirSync(outDir, {recursive: true});
 
 const serveUrl = await bundle({entryPoint: path.resolve('src/index.ts')});
