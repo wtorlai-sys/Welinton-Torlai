@@ -237,21 +237,20 @@ def birds(dur, gain=0.05):
 # ambiente de dia na cidade (passarinhos)
 sput(birds(35), 0, 0.3)
 # chuva por plano (início, fim, intensidade)
-for a, b, h in [(0, 7.96, 0.7), (15.48, 17.2, 0.5), (17.2, 21.04, 0.4), (23.0, 24.26, 0.5), (35.08, 39.04, 1.0), (64.55, 66.88, 0.8), (66.88, 68.56, 0.6), (71.98, 82.2, 0.75), (86.1, 89.4, 0.6)]:
-    sput(rain(b - a, h), a)
-sput(thunder(2.6, 0.9), 0.6)
-sput(thunder(2.4, 0.7), 3.9, -0.2)
-sput(thunder(2.0, 0.35), 64.6, 0.1)
+for a, b, h in [(0, 7.96, 0.4), (15.48, 17.2, 0.5), (17.2, 21.04, 0.4), (23.0, 24.26, 0.5), (35.08, 39.04, 1.0), (64.55, 66.88, 0.8), (66.88, 68.56, 0.6), (71.98, 82.2, 0.75), (86.1, 89.4, 0.6)]:
+    sput(rain(b - a, h), a, gain=0.5)  # chuva bem baixa: nunca passa da voz
+sput(thunder(2.6, 0.16), 0.6)
+sput(thunder(2.4, 0.12), 3.9, -0.2)
+sput(thunder(2.0, 0.08), 64.6, 0.1)
 sput(plip(0.7), 61.5)
 sput(plip(0.6), 63.3, 0.3)
 sput(sizzle(1.6), 49.4, -0.2)
 sput(click(0.6), 54.7)
-sput(hiss(25.6), 54.75, 0.0)
+sput(hiss(25.6, 0.012), 54.75, 0.0)
 sput(click(0.6), 80.6)
 
 sfx = np.stack([SL, SRr])
-sfx /= np.max(np.abs(sfx)) + 1e-9
-sfx *= 0.85
+sfx *= 2.6  # sem normalizar pelo pico: a chuva fica baixa de verdade
 
 
 def save(x, name):
