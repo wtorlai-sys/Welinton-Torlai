@@ -1,0 +1,316 @@
+[
+ {
+  "id": "S01",
+  "w": 0,
+  "prompt": "School hallway with lockers, warm morning light. The popular blonde girl walks toward camera with hearts floating around her, dreamy in-love face, hands clasped near her cheek. In the foreground, the boy in the red hoodie (Max) looks at camera with a hopeful proud grin, pointing at himself with his thumb.",
+  "foco": [
+   0.7,
+   0.6
+  ]
+ },
+ {
+  "id": "S02",
+  "w": 10,
+  "prompt": "Close-up medium shot of the boy in the red hoodie (Max) in a school hallway, awkward nervous grimace, one eyebrow raised, scratching the back of his head, a single sweat drop on his forehead.",
+  "foco": [
+   0.5,
+   0.4
+  ]
+ },
+ {
+  "id": "S03",
+  "w": 15,
+  "prompt": "School hallway: the popular blonde girl hugs the arm of the older brother in the green varsity jacket with a dreamy in-love face and floating hearts, the brother looks surprised. Behind them, the boy in the red hoodie (Max) does a facepalm.",
+  "foco": [
+   0.6,
+   0.42
+  ]
+ },
+ {
+  "id": "S04",
+  "w": 23,
+  "prompt": "Night, cozy teenager bedroom lit by a desk lamp and a laptop screen. The boy in the red hoodie (Max) sits at his desk typing on the laptop, sly secretive smile; the laptop screen shows a profile page with a blank grey anonymous avatar silhouette with a question mark. Posters without text, pencils, sketchbooks on the desk.",
+  "foco": [
+   0.62,
+   0.4
+  ]
+ },
+ {
+  "id": "S05",
+  "w": 34,
+  "prompt": "Top-down overhead shot of a desk: only the blocky hands of the boy (red hoodie sleeves) drawing a cute dragon with a pencil on a sketchbook page, a smartphone on a small tripod filming the page from above. Face not visible. Warm lamp light.",
+  "foco": [
+   0.6,
+   0.55
+  ]
+ },
+ {
+  "id": "S06",
+  "w": 43,
+  "prompt": "Extreme macro close-up of the corner of a sketchbook page: a blocky hand with red hoodie sleeve finishing a small bright BLUE five-pointed star doodle with a blue pen in the bottom corner of a drawing. Shallow depth of field, warm lamp light. The blue star is the focus.",
+  "foco": [
+   0.45,
+   0.75
+  ]
+ },
+ {
+  "id": "S07",
+  "w": 54,
+  "prompt": "Pink cozy girl bedroom at evening with fairy lights. The popular blonde girl lies on her bed on her belly, kicking her feet, holding her smartphone and typing excitedly, big sparkly eyes, small hearts and sparkles floating from the phone.",
+  "foco": [
+   0.5,
+   0.55
+  ]
+ },
+ {
+  "id": "S20",
+  "w": 71,
+  "foco": [
+   0.45,
+   0.35
+  ],
+  "ofs": 1,
+  "nota": "reuso: ela elogiando"
+ },
+ {
+  "id": "S09",
+  "w": 84,
+  "prompt": "School corridor, daylight. The popular blonde girl walks past the boy in the red hoodie (Max) with her nose up and eyes closed, ignoring him completely, flipping her hair. Max stands by a locker holding books with a deadpan disappointed face.",
+  "foco": [
+   0.5,
+   0.45
+  ]
+ },
+ {
+  "id": "S10",
+  "w": 92,
+  "prompt": "Night, the boy in the red hoodie (Max) lies on his bed in a dark bedroom, his face lit by the phone screen, giant happy grin, many notification bubbles with hearts popping out of the phone (no readable text).",
+  "foco": [
+   0.45,
+   0.6
+  ]
+ },
+ {
+  "id": "S11",
+  "w": 101,
+  "prompt": "Night, the popular blonde girl sits on her bed in pajamas under a blanket in a dark pink bedroom, moonlight from the window, face lit by her phone, biting her lip curiously while typing a question.",
+  "foco": [
+   0.55,
+   0.45
+  ]
+ },
+ {
+  "id": "S12",
+  "w": 110,
+  "prompt": "Close-up of the boy in the red hoodie (Max) at night in bed, blushing bright red cheeks, nervous smile, holding his phone close; the phone screen facing the camera shows a chat with three big red heart emojis.",
+  "foco": [
+   0.5,
+   0.45
+  ]
+ },
+ {
+  "id": "S14",
+  "w": 119,
+  "prompt": "Next day, school lockers, bright daylight. The popular blonde girl leans toward the older brother in the green varsity jacket, eyes sparkling, hands behind her back, asking him something sweetly. The brother leans on a locker, surprised and confused, pointing at himself.",
+  "foco": [
+   0.5,
+   0.35
+  ]
+ },
+ {
+  "id": "S15",
+  "w": 133,
+  "prompt": "School cafeteria. The boy in the red hoodie (Max) chokes on his juice, spraying juice from his mouth in a comic spit-take, eyes bulging, squeezing a juice box, droplets flying. Cafeteria tables and trays in the background.",
+  "punch": true,
+  "foco": [
+   0.5,
+   0.35
+  ]
+ },
+ {
+  "id": "S17",
+  "w": 140,
+  "prompt": "The older brother in the green varsity jacket sits on a sofa wearing sunglasses, smug scheming grin, rubbing his hands together, holding a smartphone, living room, golden afternoon light.",
+  "foco": [
+   0.5,
+   0.35
+  ]
+ },
+ {
+  "id": "S14",
+  "w": 153,
+  "foco": [
+   0.66,
+   0.36
+  ],
+  "ofs": 1,
+  "nota": "reuso: irmão apontando pra si = finge ser o dono"
+ },
+ {
+  "id": "S18",
+  "w": 163,
+  "prompt": "The older brother in the green varsity jacket sits at a table trying to draw with a crayon, tongue sticking out in concentration, sheets of paper with terrible scribbles everywhere, crumpled papers on the floor.",
+  "foco": [
+   0.5,
+   0.33
+  ]
+ },
+ {
+  "id": "S19",
+  "w": 171,
+  "prompt": "Close-up of a paper held up by blocky hands with green varsity sleeves: a terrible childish crayon drawing that looks like a brown lumpy potato with two triangle cat ears and whiskers. Comic, crude, funny. No text.",
+  "foco": [
+   0.5,
+   0.64
+  ]
+ },
+ {
+  "id": "S20",
+  "w": 189,
+  "prompt": "The popular blonde girl in her pink bedroom presses her phone to her chest with both hands, eyes closed, swooning with a huge in-love smile, hearts bursting around her, cheeks blushing.",
+  "foco": [
+   0.45,
+   0.35
+  ]
+ },
+ {
+  "id": "S21",
+  "w": 195,
+  "prompt": "The boy in the red hoodie (Max) furious and indignant, red face, angry eyebrows, cartoon steam puffs from his ears, fists clenched, holding his phone, in his bedroom.",
+  "punch": true,
+  "foco": [
+   0.5,
+   0.3
+  ]
+ },
+ {
+  "id": "S22",
+  "w": 198,
+  "prompt": "The boy in the red hoodie (Max) stands determined in front of his bedroom mirror at sunset, chin up, clenching a fist, heroic orange backlight.",
+  "foco": [
+   0.4,
+   0.42
+  ]
+ },
+ {
+  "id": "S23",
+  "w": 208,
+  "prompt": "Friday afternoon in a sunny schoolyard with trees. The boy in the red hoodie (Max) bravely holds out his phone to show the screen to the popular blonde girl; the phone screen shows a gallery of drawings with small blue stars. She looks at the phone curiously.",
+  "foco": [
+   0.5,
+   0.45
+  ]
+ },
+ {
+  "id": "S06",
+  "w": 225,
+  "foco": [
+   0.45,
+   0.75
+  ],
+  "ofs": 1,
+  "nota": "reuso: estrela azul = os desenhos eram meus"
+ },
+ {
+  "id": "S24",
+  "w": 231,
+  "prompt": "Over-the-shoulder shot past the boy in the red hoodie (Max): the popular blonde girl lifts her eyes from the phone and stares straight at Max with surprised wide eyes, schoolyard background.",
+  "foco": [
+   0.5,
+   0.45
+  ]
+ },
+ {
+  "id": "S25",
+  "w": 240,
+  "prompt": "The popular blonde girl laughing out loud, eyes closed, hand on her stomach, sunny schoolyard background, cheerful.",
+  "foco": [
+   0.5,
+   0.33
+  ]
+ },
+ {
+  "id": "S26",
+  "w": 244,
+  "prompt": "Schoolyard: the popular blonde girl points at the boy in the red hoodie (Max) with a playful surprised smile; Max nods shyly, blushing, looking down.",
+  "foco": [
+   0.45,
+   0.42
+  ]
+ },
+ {
+  "id": "S24",
+  "w": 255,
+  "foco": [
+   0.5,
+   0.42
+  ],
+  "ofs": 1,
+  "nota": "reuso: silêncio, ela encarando"
+ },
+ {
+  "id": "S28",
+  "w": 262,
+  "prompt": "The popular blonde girl holds her phone toward the camera, smug knowing smile; the phone screen shows a folder grid full of dozens of small drawings, each with a tiny blue star in the corner.",
+  "foco": [
+   0.5,
+   0.45
+  ]
+ },
+ {
+  "id": "S29",
+  "w": 274,
+  "prompt": "Extreme close-up of the boy in the red hoodie (Max) totally shocked, jaw dropped, eyes huge, schoolyard background blurred.",
+  "punch": true,
+  "foco": [
+   0.55,
+   0.4
+  ]
+ },
+ {
+  "id": "S30",
+  "w": 277,
+  "prompt": "Close-up of the popular blonde girl with a sweet confident knowing smile, one eyebrow raised, hand on her hip, golden afternoon light, schoolyard.",
+  "foco": [
+   0.45,
+   0.3
+  ]
+ },
+ {
+  "id": "S31",
+  "w": 293,
+  "prompt": "The popular blonde girl in front, smiling; behind her the older brother in the green varsity jacket gives a wink and two thumbs up, sunny schoolyard.",
+  "foco": [
+   0.5,
+   0.35
+  ]
+ },
+ {
+  "id": "S32",
+  "w": 306,
+  "prompt": "The boy in the red hoodie (Max) frozen with a completely blank stunned face, empty dot eyes, mouth a flat line, a little loading-circle symbol above his head, schoolyard.",
+  "punch": true,
+  "foco": [
+   0.5,
+   0.55
+  ]
+ },
+ {
+  "id": "S33",
+  "w": 311,
+  "prompt": "Wide shot in the schoolyard: the boy in the red hoodie (Max) faces the popular blonde girl; behind the girl, the older brother in the green varsity jacket grins and holds up a white cardboard sign with big bold black hand-painted letters reading exactly: FINALMENTE!",
+  "foco": [
+   0.66,
+   0.35
+  ]
+ },
+ {
+  "id": "S34",
+  "w": 325,
+  "prompt": "Golden sunset in the schoolyard, wide shot: the popular blonde girl and the older brother high-five and laugh together, while the boy in the red hoodie (Max) stands in the foreground looking at the camera with a dumbfounded embarrassed face, blushing.",
+  "foco": [
+   0.45,
+   0.62
+  ]
+ }
+]
