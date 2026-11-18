@@ -22,6 +22,7 @@ AUDIO = EP / "narracao.mp3"
 ap = argparse.ArgumentParser()
 ap.add_argument("--preview", action="store_true", help="540x960, rápido")
 ap.add_argument("--stills", action="store_true", help="só um frame do meio de cada plano")
+ap.add_argument("--video", default="", help="vídeo animado mudo (render do Remotion): só aplica legenda + trilha/efeitos")
 o = ap.parse_args()
 OUT.mkdir(parents=True, exist_ok=True)
 
@@ -258,6 +259,15 @@ subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(AUDIO), "-i", str(bed),
                 "[1:a][sc]sidechaincompress=threshold=0.05:ratio=3:attack=30:release=400[bd];"
                 "[v][bd]amix=inputs=2:normalize=0:duration=longest,loudnorm=I=-14:TP=-1.5:LRA=11",
                 "-c:a", "aac", "-b:a", "256k", str(mix)], check=True)
+
+if o.video:
+    out = OUT / "A_garota_popular_animado.mp4"
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(Path(o.video).resolve()), "-i", str(mix), "-vf",
+                    f"ass={ass.name}:fontsdir={os.path.expanduser('~/.fonts')}", "-map", "0:v", "-map", "1:a", "-c:v", "libx264",
+                    "-preset", "slow", "-crf", "17", "-pix_fmt", "yuv420p", "-c:a", "copy", "-shortest", "-movflags", "+faststart",
+                    str(out)], check=True, cwd=OUT)
+    print("pronto:", out)
+    raise SystemExit
 
 name = "preview.mp4" if o.preview else "A_garota_popular.mp4"
 vf = f"ass={ass.name}:fontsdir={os.path.expanduser('~/.fonts')}" + (",scale=540:960" if o.preview else "")
