@@ -27,3 +27,8 @@ npm run typecheck
 ## Ao terminar qualquer cena
 Renderize stills, abra cada imagem e passe pelo **Checklist de aprovação** do STYLE_GUIDE.md.
 Corrija o que falhar antes de entregar.
+
+## Vídeos estilo Roblox (bonecos 3D de blocos)
+Para qualquer vídeo nesse formato, leia antes a pasta [`ROBLOX VÍDEO/`](./ROBLOX%20VÍDEO/README.md):
+estrutura do roteiro, estilo visual, pipeline e lições aprendidas. Tem que ser **animação** (nunca
+"vídeo de foto"); personagens vêm do Customuse.
