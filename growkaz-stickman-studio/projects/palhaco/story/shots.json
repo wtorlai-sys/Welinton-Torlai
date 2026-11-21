@@ -1,0 +1,1396 @@
+{
+ "title": "Palhaço",
+ "duration": 164.6,
+ "shots": [
+  {
+   "id": "s001",
+   "start": 0.0,
+   "end": 3.65,
+   "line": "Eu estava comemorando o meu aniversário com meus amigos no quintal de casa.",
+   "scene": "3D establishing: backyard birthday party, balloons, bunting, kids around a gift table, slow orbit",
+   "set": "yard3d",
+   "bars": null,
+   "in": {
+    "type": "fade",
+    "dur": 0.5
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s002",
+   "start": 3.65,
+   "end": 7.0,
+   "line": "Estava prestes a abrir o maior presente que já tinha ganhado",
+   "scene": "Medium: narrator kid (red hoodie) beside a gift box taller than him, reaching for the ribbon, happy",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.5,
+     "name": "shimmer",
+     "gain": -14
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s003",
+   "start": 7.0,
+   "end": 8.5,
+   "line": "quando a campainha tocou.",
+   "scene": "Insert: doorbell button on the front of the house pulses, sound rings; kid hand freezes on ribbon",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.9,
+     "name": "ding",
+     "gain": -6
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s004",
+   "start": 8.5,
+   "end": 10.1,
+   "line": "Meu pai entrou para atender.",
+   "scene": "Wide: dad walks across the yard into the back door, light spills",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "footstep",
+     "gain": -14
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s005",
+   "start": 10.1,
+   "end": 12.35,
+   "line": "E foi exatamente nesse momento que",
+   "scene": "Two-shot: kids turn their heads toward the back wall, faces shift to surprised, slow push",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s006",
+   "start": 12.35,
+   "end": 15.55,
+   "line": "um palhaço desconhecido pulou o muro da nossa casa.",
+   "scene": "Wide: a clown (purple suit, pink curly wig, red nose) vaults over the brick wall in an arc and lands",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.9,
+     "name": "whoosh",
+     "gain": -8
+    },
+    {
+     "at": 2.4,
+     "name": "hit",
+     "gain": -8
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s007",
+   "start": 15.55,
+   "end": 18.28,
+   "line": "Ele gritou com uma voz toda engraçada.",
+   "scene": "Medium: clown arms up, shouting in a funny voice, rings around head, kids startled",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -12
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s008",
+   "start": 18.28,
+   "end": 20.65,
+   "line": "Seu pai me contratou para animar a festa.",
+   "scene": "Giant face: clown smiling, talking, red nose, blurred party behind",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s009",
+   "start": 20.65,
+   "end": 22.1,
+   "line": "Vamos brincar de um jogo!",
+   "scene": "Medium: clown cheer pose, confetti sparkles burst",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "shimmer",
+     "gain": -10
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s010",
+   "start": 22.1,
+   "end": 23.55,
+   "line": "Ele segurou meu pulso e",
+   "scene": "Insert: clown white-gloved hand grips the narrator red-sleeved wrist",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "swish",
+     "gain": -10
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s011",
+   "start": 23.55,
+   "end": 26.68,
+   "line": "colocou todas as crianças em fila perto do muro.",
+   "scene": "Wide: six kids lined up against the brick wall, clown walking along the line",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s012",
+   "start": 26.68,
+   "end": 28.58,
+   "line": "Calma, ninguém vai se machucar.",
+   "scene": "Medium: clown talking with calming hands to the line of kids",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s013",
+   "start": 28.58,
+   "end": 31.9,
+   "line": "Só levantem a mão se os seus pais estão nesta festa.",
+   "scene": "Medium: clown raises his hand high, asking kids to raise theirs",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s014",
+   "start": 31.9,
+   "end": 35.0,
+   "line": "Eu levantei a mão, assim como outras cinco crianças.",
+   "scene": "Line of kids: narrator raises hand, then five others one by one, counter 1 to 6",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.25,
+     "name": "blip",
+     "gain": -14
+    },
+    {
+     "at": 2.1,
+     "name": "counter",
+     "gain": -16
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s015",
+   "start": 35.0,
+   "end": 39.0,
+   "line": "Mas então, vi alguns homens de uniforme azul entrando na minha casa.",
+   "scene": "Narrator POV of the house: silhouettes of men in blue uniforms pass the lit windows inside",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "riser",
+     "gain": -14,
+     "dur": 3
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s016",
+   "start": 39.0,
+   "end": 40.6,
+   "line": "Meu coração disparou.",
+   "scene": "Giant face: narrator scared, heartbeat rings pulse",
+   "set": "yard",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "heartbeat",
+     "gain": -6
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s017",
+   "start": 40.6,
+   "end": 43.42,
+   "line": "Senhor palhaço, o que está acontecendo lá dentro?",
+   "scene": "Two-shot low: small narrator looks up at the tall clown, asking",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s018",
+   "start": 43.42,
+   "end": 44.7,
+   "line": "Apontei para casa,",
+   "scene": "Medium: narrator points toward the house windows",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s019",
+   "start": 44.7,
+   "end": 48.55,
+   "line": "mas ele simplesmente tirou um par de luvas pretas e grossas do bolso.",
+   "scene": "Insert: clown pulls a pair of thick black gloves out of his pocket",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.1,
+     "name": "swish",
+     "gain": -10
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s020",
+   "start": 48.55,
+   "end": 51.7,
+   "line": "Então perguntou com uma voz muito mais séria.",
+   "scene": "Giant face: clown smile fades, serious, party blurred and darkening",
+   "set": "yard",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s021",
+   "start": 51.7,
+   "end": 55.35,
+   "line": "Vocês seis, já viram seus pais usando luvas como essas?",
+   "scene": "OTS: kids blurred in foreground, clown holds the black gloves up",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s022",
+   "start": 55.35,
+   "end": 57.85,
+   "line": "Eu, Bill e Wallace levantamos a mão.",
+   "scene": "Three kids raise hands, name tags pop: EU, BILL, WALLACE",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "pop",
+     "gain": -12
+    },
+    {
+     "at": 0.8,
+     "name": "pop",
+     "gain": -12
+    },
+    {
+     "at": 1.2,
+     "name": "pop",
+     "gain": -12
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s023",
+   "start": 57.85,
+   "end": 60.48,
+   "line": "O palhaço chamou nós três para perto dele.",
+   "scene": "Medium: clown waves the three kids closer, they step toward him",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.9,
+     "name": "footstep",
+     "gain": -16
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s024",
+   "start": 60.48,
+   "end": 64.8,
+   "line": "Pela janela, vi os homens de uniforme colocando algemas no pai de Wallace.",
+   "scene": "Through the window: two men in blue uniforms cuff a man in a black trench coat inside the house",
+   "set": "window",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 2.7,
+     "name": "tick",
+     "gain": -8
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s025",
+   "start": 64.8,
+   "end": 66.12,
+   "line": "Ele estava tremendo.",
+   "scene": "Closer through the glass: the cuffed man trembling",
+   "set": "window",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s026",
+   "start": 66.12,
+   "end": 67.7,
+   "line": "A gente está em apuros?",
+   "scene": "Giant face: narrator worried, asking",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s027",
+   "start": 67.7,
+   "end": 70.0,
+   "line": "Perguntei, quase sem conseguir falar.",
+   "scene": "Low two-shot: tiny narrator nervous, sweat drop, clown towering",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s028",
+   "start": 70.0,
+   "end": 71.86,
+   "line": "O palhaço apenas respondeu.",
+   "scene": "Medium: clown kneels to the kids level",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s029",
+   "start": 71.86,
+   "end": 73.0,
+   "line": "Vamos descobrir.",
+   "scene": "Giant face: clown determined, says let us find out",
+   "set": "yard",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s030",
+   "start": 73.0,
+   "end": 75.5,
+   "line": "Em seguida, ele mostrou algumas fotos.",
+   "scene": "Medium: clown fans out photos to three kids",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.0,
+     "name": "swish",
+     "gain": -12
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s031",
+   "start": 75.5,
+   "end": 80.64,
+   "line": "Eram fios vermelhos e azuis, enrolados juntos e presos com fita isolante preta.",
+   "scene": "Insert: a photo of red and blue wires twisted together, wrapped with black tape; labels pop on the words",
+   "set": "photo",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "blip",
+     "gain": -14
+    },
+    {
+     "at": 1.3,
+     "name": "blip",
+     "gain": -14
+    },
+    {
+     "at": 3.9,
+     "name": "blip",
+     "gain": -14
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s032",
+   "start": 80.64,
+   "end": 82.02,
+   "line": "Vocês reconhecem isso?",
+   "scene": "OTS: blurred kid foreground, clown holds the photo toward camera, asking",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s033",
+   "start": 82.02,
+   "end": 85.52,
+   "line": "Eu e Bill balançamos a cabeça, mas Wallace começou a tremer.",
+   "scene": "Three kids: narrator and Bill shake heads, Wallace trembles",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s034",
+   "start": 85.52,
+   "end": 86.95,
+   "line": "Eu já vi esses fios",
+   "scene": "Giant face: Wallace scared, talking",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s035",
+   "start": 86.95,
+   "end": 89.88,
+   "line": "na garagem do meu pai, mas não sei o que são.",
+   "scene": "Flashback: dark garage workbench, the same red/blue taped wires and black gloves under a hanging bulb",
+   "set": "garage",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.3
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "hum",
+    "gain": -24
+   }
+  },
+  {
+   "id": "s036",
+   "start": 89.88,
+   "end": 92.82,
+   "line": "O sorriso do palhaço desapareceu na mesma hora.",
+   "scene": "Giant face: clown smile vanishes on the word",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 1.2,
+     "name": "stinger",
+     "gain": -10
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s037",
+   "start": 92.82,
+   "end": 96.34,
+   "line": "Ele puxou Wallace para o lado e olhou diretamente para mim.",
+   "scene": "Medium: clown pulls Wallace aside behind him, then looks straight at the narrator",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s038",
+   "start": 96.34,
+   "end": 98.7,
+   "line": "Não abra o seu presente de aniversário.",
+   "scene": "Giant face: clown dead serious, do not open your present; gift blurred behind",
+   "set": "yard",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "riser",
+     "gain": -12,
+     "dur": 2
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s039",
+   "start": 98.7,
+   "end": 101.06,
+   "line": "Antes que eu pudesse perguntar qualquer coisa,",
+   "scene": "Giant face: narrator confused, about to ask",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s040",
+   "start": 101.06,
+   "end": 103.3,
+   "line": "a porta dos fundos se abriu com tudo.",
+   "scene": "Wide: the back door bursts open, light floods out, shake",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.1,
+     "name": "impact",
+     "gain": -4
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s041",
+   "start": 103.3,
+   "end": 106.86,
+   "line": "Os homens de uniforme saíram, usando equipamentos de proteção e",
+   "scene": "Wide: men in blue bomb-squad gear with helmets and visors march out",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "footstep",
+     "gain": -12
+    },
+    {
+     "at": 0.9,
+     "name": "footstep",
+     "gain": -12
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s042",
+   "start": 106.86,
+   "end": 108.28,
+   "line": "carregando alicates.",
+   "scene": "Insert: gloved hand carrying wire cutters (pliers), glint",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "shimmer",
+     "gain": -14
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s043",
+   "start": 108.28,
+   "end": 112.86,
+   "line": "Eles estavam levando o pai de Wallace algemado, diretamente até o meu presente.",
+   "scene": "Wide: men escort the handcuffed trench-coat man straight to the gift box",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s044",
+   "start": 112.86,
+   "end": 117.8,
+   "line": "E foi quando percebi que havia um par de luvas pretas saindo do bolso dele.",
+   "scene": "Insert: trench coat pocket with black gloves sticking out, callout",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 2.9,
+     "name": "stinger",
+     "gain": -10
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s045",
+   "start": 117.8,
+   "end": 119.46,
+   "line": "O que está acontecendo?",
+   "scene": "Giant face: narrator shouting what is happening",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s046",
+   "start": 119.46,
+   "end": 122.22,
+   "line": "Mas um dos homens já estava abrindo a caixa.",
+   "scene": "Medium: a squad man kneels and lifts the gift lid, ribbon slides off",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "riser",
+     "gain": -10,
+     "dur": 2.2
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s047",
+   "start": 122.22,
+   "end": 124.54,
+   "line": "E lá dentro havia uma bomba,",
+   "scene": "Top-down: inside the box a bomb with wires and a dark timer",
+   "set": "bomb",
+   "bars": "scope",
+   "in": {
+    "type": "flash",
+    "dur": 0.25
+   },
+   "sfx": [
+    {
+     "at": 1.5,
+     "name": "impact",
+     "gain": -4
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s048",
+   "start": 124.54,
+   "end": 129.3,
+   "line": "com fios vermelhos e azuis enrolados e presos com fita isolante preta.",
+   "scene": "Macro: red and blue wires taped with black tape, same labels as the photo",
+   "set": "bomb",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "blip",
+     "gain": -14
+    },
+    {
+     "at": 1.2,
+     "name": "blip",
+     "gain": -14
+    },
+    {
+     "at": 3.5,
+     "name": "blip",
+     "gain": -14
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s049",
+   "start": 129.3,
+   "end": 132.08,
+   "line": "De repente, o cronômetro começou a funcionar.",
+   "scene": "Insert: the timer display lights up red and starts",
+   "set": "bomb",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 1.5,
+     "name": "buzz",
+     "gain": -8
+    },
+    {
+     "at": 2.0,
+     "name": "tick",
+     "gain": -8
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s050",
+   "start": 132.08,
+   "end": 134.2,
+   "line": "Dez, nove, oito.",
+   "scene": "Giant countdown digits 10, 9, 8 synced to the words, red glow pulses",
+   "set": "bomb",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.12,
+     "name": "tick",
+     "gain": -4
+    },
+    {
+     "at": 0.72,
+     "name": "tick",
+     "gain": -4
+    },
+    {
+     "at": 1.58,
+     "name": "tick",
+     "gain": -4
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s051",
+   "start": 134.2,
+   "end": 135.38,
+   "line": "Eu comecei a gritar,",
+   "scene": "Giant face: narrator screaming, shake",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s052",
+   "start": 135.38,
+   "end": 138.32,
+   "line": "mas um dos homens cortou imediatamente o fio azul.",
+   "scene": "FREEZE: pliers snap the blue wire, sparks hang in the air, cool tint",
+   "set": "bomb",
+   "bars": "scope",
+   "in": {
+    "type": "flash",
+    "dur": 0.25
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "freeze",
+     "gain": -6
+    },
+    {
+     "at": 2.45,
+     "name": "hit",
+     "gain": -4
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s053",
+   "start": 138.32,
+   "end": 139.3,
+   "line": "O barulho parou.",
+   "scene": "Timer frozen at 07, silence, slow push",
+   "set": "bomb",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "slowmo",
+     "gain": -12
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s054",
+   "start": 139.3,
+   "end": 141.14,
+   "line": "Então ele olhou para mim e disse,",
+   "scene": "Medium: squad man lifts visor and turns to the narrator",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s055",
+   "start": 141.14,
+   "end": 144.2,
+   "line": "Esse homem deu uma bomba de presente para você.",
+   "scene": "Medium: squad man points at the cuffed trench man while talking",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s056",
+   "start": 144.2,
+   "end": 146.96,
+   "line": "Essa casa inteira estava prestes a explodir.",
+   "scene": "Blueprint: the house with a red dashed blast radius growing over the whole yard",
+   "set": "blast",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "riser",
+     "gain": -12,
+     "dur": 2
+    },
+    {
+     "at": 2.2,
+     "name": "impact",
+     "gain": -8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s057",
+   "start": 146.96,
+   "end": 148.94,
+   "line": "Minhas pernas ficaram bambas.",
+   "scene": "Medium: narrator legs wobble, knees buckle into a kneel",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s058",
+   "start": 148.94,
+   "end": 152.62,
+   "line": "O pai de Wallace tinha me dado uma bomba para matar todos nós.",
+   "scene": "Giant face: Wallace dad in fedora and sunglasses, half shadow, cold smirk",
+   "set": "yard",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s059",
+   "start": 152.62,
+   "end": 154.54,
+   "line": "Olhei para ele, algemado,",
+   "scene": "Wide: cuffed dad led away through the back door by the squad",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s060",
+   "start": 154.54,
+   "end": 157.78,
+   "line": "depois para Wallace, chorando nos braços do palhaço.",
+   "scene": "Medium: clown kneels hugging Wallace who cries",
+   "set": "yard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s061",
+   "start": 157.78,
+   "end": 164.6,
+   "line": "Se aquele palhaço não tivesse me impedido de abrir meu presente, todos nós teríamos morrido.",
+   "scene": "3D final: sunset backyard, clown and kids by the open box, slow pull-out",
+   "set": "yard3d",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "shimmer",
+     "gain": -14
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  }
+ ],
+ "music": [
+  {
+   "start": 0,
+   "end": 35.0,
+   "mood": "playful",
+   "intensity": 0.35
+  },
+  {
+   "start": 35.0,
+   "end": 73.0,
+   "mood": "mystery",
+   "intensity": 0.4
+  },
+  {
+   "start": 73.0,
+   "end": 101.06,
+   "mood": "tension",
+   "intensity": 0.5
+  },
+  {
+   "start": 101.06,
+   "end": 138.32,
+   "mood": "tension",
+   "intensity": 0.85
+  },
+  {
+   "start": 138.32,
+   "end": 157.78,
+   "mood": "sad",
+   "intensity": 0.35
+  },
+  {
+   "start": 157.78,
+   "end": 164.6,
+   "mood": "hopeful",
+   "intensity": 0.4
+  }
+ ],
+ "sfx": []
+}
