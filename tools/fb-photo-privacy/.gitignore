@@ -1,0 +1,5 @@
+node_modules/
+# Perfil do navegador (contém a sua sessão do Facebook) — nunca versionar
+.fb-profile/
+# Estado, relatórios e capturas (contêm dados pessoais) — nunca versionar
+data/

@@ -1,0 +1,21 @@
+{
+  "name": "fb-photo-privacy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Automação local (Playwright) para colocar fotos e álbuns do Facebook em 'Somente eu', com login manual, verificação e salvamento de progresso.",
+  "type": "module",
+  "scripts": {
+    "login": "node cli.mjs login",
+    "map": "node cli.mjs map",
+    "scan": "node cli.mjs scan",
+    "test-one": "node cli.mjs test-one",
+    "test-album": "node cli.mjs test-album",
+    "run": "node cli.mjs run",
+    "run-albums": "node cli.mjs run-albums",
+    "report": "node cli.mjs report",
+    "selftest": "node test/mock-selftest.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0"
+  }
+}
