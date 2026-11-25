@@ -6,7 +6,7 @@ description: >
   cada atalho ingênuo gera uma falha física mostrada em 3D low-poly, cada falha é resolvida por uma peça real
   que só ganha nome depois da função, e fecha com "Parabéns! Você construiu um X!". Formato extraído por
   engenharia reversa de vídeos virais reais (viral-video-engine/analysis). Use esta skill sempre que o usuário
-  pedir ideias de vídeo, roteiro, gancho, revisão de roteiro, narração/voz no ElevenLabs, storyboard, cenas,
+  pedir ideias de vídeo, roteiro, gancho, revisão de roteiro, texto de narração para colar no ElevenLabs, storyboard, cenas,
   prompts de imagem/animação, edição, legendas, SFX, auditoria ou análise de novos vídeos de referência para
   este canal/formato — mesmo que ele não diga "construção viral", fale só "faz um vídeo daquele jeito",
   "próximo vídeo", "como se constrói X", "vídeo de engenharia", "passa no ElevenLabs" ou mande métricas de um
@@ -27,6 +27,7 @@ Caminhos (relativos à raiz do repositório):
 
 ## Decisões fixas do usuário (2026-11-25)
 - Nome da skill: construcaoviral ("Construção Viral").
+- ElevenLabs: só entregar o roteiro narrado para copiar e colar; nada de API.
 - Visual: **3D low-poly com mascote 3D**, como nas referências. Neste formato isso substitui a regra de
   personagem 2D do `STYLE_GUIDE.md` (que vale para a série "E se…?"). As demais regras técnicas do repositório
   (determinismo, 1080x1920/30 fps, área segura, vermelho só no foco) continuam valendo quando a produção for em código.
@@ -38,7 +39,7 @@ Caminhos (relativos à raiz do repositório):
 | ideias, temas, "o que gravar" | F1 Descoberta | `references/descoberta-de-ideias.md`, `references/FORMATO_IDENTIFICADO.md` §8 |
 | roteiro, gancho, "desenvolve a ideia X" | F2 Roteiro | `references/estrutura-narrativa.md`, `references/engenharia-de-roteiro.md`, `references/padroes-e-exemplos.md` |
 | revisar/melhorar roteiro | F3 Auditoria | `references/auditoria.md` |
-| narração, voz, ElevenLabs, áudio | F4 Narração | `references/elevenlabs.md` |
+| narração, texto para o ElevenLabs, "mandei o áudio" | F4 Narração | `references/elevenlabs.md` |
 | storyboard, cenas, prompts, edição, legenda, SFX, música, render | F5 Produção | `references/engenharia-visual.md`, `references/edicao-e-retencao.md`, `references/producao.md` |
 | novos vídeos de referência ou métricas | F6 Aprendizado | `references/aprendizado.md` |
 
@@ -47,9 +48,12 @@ Leia só o que a função pede. `FORMATO_IDENTIFICADO.md` é o resumo de tudo; o
 ## Fluxo de produção e pontos de controle
 
 ```
-F1 ideias ──(usuário escolhe)──► F2 roteiro ──► F3 auditoria ──► F4 narração ElevenLabs
+F1 ideias ──(usuário escolhe)──► F2 roteiro ──► F3 auditoria ──► F4 texto narrado para colar
                                                                      │
-                                                    ⛔ PARE: usuário aprova o áudio
+                                         ⛔ PARE: usuário gera o áudio no ElevenLabs por conta própria
+                                                                     │  (manda o arquivo se quiser produção)
+                                                                     ▼
+                                     áudio registrado + medido ──► ⛔ usuário aprova o áudio
                                                                      │
                                                                      ▼
                                               F5 storyboard + produção ──► auditoria final
@@ -60,10 +64,10 @@ O áudio é a base temporal de tudo (cada cena, legenda e SFX é cronometrada pe
 1. **Não avance para F5 sem aprovação explícita do áudio.** Confira `projects/<slug>/estado.json`:
    F5 só começa com `"audio_aprovado": true`, e só o usuário pode pedir para marcar isso
    (`python3 scripts/estado.py <slug> audio_aprovado true` depois que ele aprovar na conversa).
-2. **Não envie texto ao ElevenLabs antes da auditoria F3** (`"roteiro_auditado": true`).
-3. Antes de gastar créditos, rode `scripts/elevenlabs.py status` e informe o custo estimado em caracteres.
-4. **Nunca diga que o áudio foi gerado** sem o arquivo existir e o script ter retornado sucesso.
-5. Ao terminar F4: entregue caminho do áudio, duração real, palavras/min, voz e configurações — e pare.
+2. **Não entregue o texto narrado antes da auditoria F3** (`"roteiro_auditado": true`).
+3. **ElevenLabs = só texto para copiar e colar** (decisão do usuário). Não use a API, não peça chave, não escolha
+   voz/modelo. O áudio é gerado pelo usuário.
+4. **Nunca diga que existe áudio** se o usuário não enviou o arquivo.
 
 ## Começar um projeto
 
@@ -98,13 +102,14 @@ Rode `python3 scripts/preparar_narracao.py <slug>` para as métricas e siga `ref
 técnica. Não corte informação importante só para encurtar. Salve em `02-roteiro.md` (seção Auditoria) e marque
 `roteiro_auditado`.
 
-## F4 — Narração no ElevenLabs
+## F4 — Narração (texto para colar no ElevenLabs)
 Siga `references/elevenlabs.md`. Resumo:
-1. `scripts/elevenlabs.py status` (credencial e cota) e `vozes` (vozes da conta). Se falhar por credencial,
-   explique o erro exato, entregue `03-narracao/narracao.txt` pronto para uso manual e pare.
-2. `preparar_narracao.py` gera o texto limpo (sem marcações, números por extenso, sem `[PAUSA]`).
-3. Gere com `scripts/elevenlabs.py gerar <slug> --voz <id> --confirmar` (salva mp3 + timestamps por palavra).
-4. Meça (`scripts/medir_audio.py <slug>`), registre em `03-narracao/config.json`, mostre ao usuário. **PARE.**
+1. `scripts/preparar_narracao.py <slug>` → `03-narracao/narracao.txt`: só o que é falado, números por extenso,
+   sem tags, **em bloco único** (parágrafos viram pausas longas na voz).
+2. Revise e entregue o texto **na conversa, num bloco de código** para copiar, com caracteres, palavras, duração
+   estimada e palavras de pronúncia duvidosa. **PARE.**
+3. Se o usuário mandar o áudio gerado: `scripts/transcrever_audio.py <slug> <arquivo>` (tempo por palavra) +
+   `scripts/medir_audio.py <slug>`; mostre e peça aprovação antes da F5.
 
 ## F5 — Produção (só com áudio aprovado)
 Siga `references/producao.md`: storyboard cronometrado pelos timestamps reais (`04-storyboard.md`), depois
@@ -122,4 +127,3 @@ suficiente e sempre registre em `viral-video-engine/conhecimento/historico-de-de
 ## Honestidade
 - Separe sempre OBSERVADO / ESTIMATIVA / HIPÓTESE. Sem dados de retenção, pontos de queda são hipóteses.
 - Correlação não é causalidade: "os 3 vídeos fazem X" não prova que X causa viralização.
-- Nunca exponha chaves. A chave do ElevenLabs é injetada pelo proxy do ambiente; os scripts não precisam dela.

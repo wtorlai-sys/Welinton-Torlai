@@ -15,7 +15,7 @@ if d.exists():
 for t in sorted(TEMPLATES.glob("*.md")):
     (d / t.name).write_text(t.read_text(encoding="utf-8").replace("{{TITULO}}", titulo), encoding="utf-8")
 estado = {"slug": slug, "titulo": titulo, "criado_em": datetime.date.today().isoformat(),
-          "ideia_escolhida": False, "roteiro_auditado": False, "audio_gerado": False,
+          "ideia_escolhida": False, "roteiro_auditado": False, "narracao_entregue": False, "audio_gerado": False,
           "audio_aprovado": False, "storyboard_pronto": False, "producao_pronta": False, "auditoria_final": False}
 (d / "estado.json").write_text(json.dumps(estado, ensure_ascii=False, indent=1))
 print(f"Criado {d}")

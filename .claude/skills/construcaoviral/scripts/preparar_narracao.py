@@ -5,7 +5,8 @@ Uso: preparar_narracao.py <slug> [--so-metricas]
 
 Lê   projects/<slug>/02-roteiro.md, trecho entre <!-- NARRACAO:INICIO --> e <!-- NARRACAO:FIM -->.
      Dentro dele: linhas que começam com '#', '>', '|', '[', '(' ou '<!--' são notas e NÃO são faladas.
-Grava projects/<slug>/03-narracao/narracao.txt (texto limpo) e imprime as métricas da auditoria.
+Grava projects/<slug>/03-narracao/narracao.txt — texto pronto para COPIAR E COLAR no ElevenLabs (bloco único:
+     quebras de parágrafo viram pausas longas na voz) — e imprime as métricas da auditoria e o próprio texto.
 
 Limpeza: remove markdown (**, _, `), rótulos de bloco ("GANCHO:"), números e unidades por extenso
 ("30%" -> "trinta por cento", "50 °C" -> "cinquenta graus", "6 a 10 m" -> "seis a dez metros"),
@@ -85,13 +86,19 @@ def extrair(md: str) -> str:
     linhas = []
     for ln in m[1].splitlines():
         s = ln.strip()
-        if not s or s[0] in "#>|[(" or s.startswith("<!--"):
+        if s.startswith("#"):
+            linhas.append("\n\n")                                   # novo bloco = novo parágrafo
+            continue
+        if not s or s[0] in ">|[(" or s.startswith("<!--"):
             continue
         s = re.sub(r"^[A-ZÁÉÍÓÚÂÊÔÃÕÇ /]{3,}:\s*", "", s)          # rótulo de bloco "GANCHO:"
         s = re.sub(r"[*_`]", "", s)
         s = re.sub(r"\[[^\]]*\]", "", s)                             # [notas] residuais
         linhas.append(s.strip())
-    return re.sub(r"\s+", " ", " ".join(linhas)).strip()
+    texto = " ".join(linhas)
+    paragrafos = [re.sub(r"\s+", " ", p).strip() for p in texto.split("\n\n")]
+    # Bloco único: no ElevenLabs cada quebra de parágrafo vira pausa longa, e o formato quase não tem pausas.
+    return " ".join(p for p in paragrafos if p)
 
 
 def metricas(t: str) -> dict:
@@ -120,15 +127,16 @@ def main():
     slug = sys.argv[1]
     p = proj(slug)
     bruto = extrair((p / "02-roteiro.md").read_text(encoding="utf-8"))
-    met = metricas(bruto)
+    met = metricas(re.sub(r"\s+", " ", bruto))
     limpo = normalizar(bruto)
-    met["caracteres_texto_tts"] = len(limpo)
+    met["caracteres_texto_para_colar"] = len(limpo)
     alvo = {"palavras": "470–560", "media_palavras_por_frase": "10–14", "n_termos": "6–13", "duracao": "140–165 s"}
     print(json.dumps({"metricas": met, "alvo_do_formato": alvo}, ensure_ascii=False, indent=1))
     if "--so-metricas" not in sys.argv:
         out = p / "03-narracao"; out.mkdir(exist_ok=True)
         (out / "narracao.txt").write_text(limpo + "\n", encoding="utf-8")
-        print(f"\nTexto limpo salvo em {out/'narracao.txt'} ({len(limpo)} caracteres)")
+        print(f"\nTexto para colar no ElevenLabs salvo em {out/'narracao.txt'} ({len(limpo)} caracteres):\n")
+        print(limpo)
 
 
 if __name__ == "__main__":

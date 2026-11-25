@@ -2,7 +2,7 @@
 """Mede a narração gerada e compara com as referências do formato.
 
 Uso: medir_audio.py <slug>
-Lê 03-narracao/narracao.mp3 (+ timestamps.json se existir) e grava 03-narracao/medicao.json.
+Lê 03-narracao/narracao.(mp3|wav|m4a) (+ timestamps.json se existir) e grava 03-narracao/medicao.json.
 Referências medidas: 193–213 palavras/min, 1ª palavra em 0,0 s, ≤ 10 pausas > 0,35 s, duração 140–165 s.
 """
 import sys, os, json, subprocess
@@ -11,7 +11,7 @@ from _comum import proj
 
 slug = sys.argv[1] if len(sys.argv) > 1 else sys.exit(__doc__)
 d = proj(slug) / "03-narracao"
-mp3 = d / "narracao.mp3"
+mp3 = next((d / f"narracao{e}" for e in (".mp3", ".wav", ".m4a") if (d / f"narracao{e}").exists()), d / "narracao.mp3")
 if not mp3.exists():
     sys.exit(f"Não existe {mp3}: nenhum áudio foi gerado.")
 dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(mp3)],

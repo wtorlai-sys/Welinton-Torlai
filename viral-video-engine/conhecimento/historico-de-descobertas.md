@@ -4,6 +4,7 @@
 |---|---|---|---|---|
 | 2026-11-25 | V1 arranha-céu, V2 muro de arrimo, V3 telhado | Formato "Você Construiu" identificado (P1–P20) | ver `padroes-e-exemplos.md` | `analysis/*`, `FORMATO_IDENTIFICADO.md` |
 | 2026-11-25 | decisão do usuário | Skill `construcaoviral`; visual 3D low-poly com mascote 3D (exceção ao personagem 2D do STYLE_GUIDE) | decisão | `SKILL.md`, `engenharia-visual.md` |
+| 2026-11-25 | decisão do usuário | ElevenLabs só como texto para copiar e colar; sem API | decisão | `SKILL.md`, `references/elevenlabs.md`, scripts |
 
 ## Hipóteses em aberto (validar com métricas)
 - H1: gancho com contraste + desastre visual retém mais nos 3 s iniciais que gancho de consequência pequena (V3).

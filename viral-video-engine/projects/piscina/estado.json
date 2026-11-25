@@ -8,5 +8,6 @@
  "audio_aprovado": false,
  "storyboard_pronto": false,
  "producao_pronta": false,
- "auditoria_final": false
+ "auditoria_final": false,
+ "narracao_entregue": true
 }

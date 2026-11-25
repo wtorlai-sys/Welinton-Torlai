@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Lê ou altera o estado (pontos de controle) de um projeto.
-Uso: estado.py <slug>                 mostra
+Uso: estado.py <slug>                 mostra (campos: roteiro_auditado, narracao_entregue, audio_gerado, audio_aprovado, ...)
      estado.py <slug> <campo> true|false
 'audio_aprovado' só deve ser marcado depois que o USUÁRIO aprovar o áudio na conversa."""
 import sys, os, json
