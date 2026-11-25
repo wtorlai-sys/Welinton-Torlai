@@ -32,6 +32,23 @@ timestamps), determinismo e reaproveitamento do mundo entre vídeos.
 - Colapsos: animações por keyframes determinísticos (rotação/queda com easing + partículas de poeira com seed).
 - QC: renderizar stills nos instantes-chave (gancho, cada termo, cada desastre, final) e abrir cada imagem.
 
+#### Kit já implementado (reaproveitar — episódio de referência: piscina)
+| Arquivo | O que faz |
+|---|---|
+| `src/construcaoviral/kit/tempo.ts` | `k`/`win` (rampas), **rebobinar** (`mapRewind`: a cena inteira roda para trás), câmera por keyframes com cortes e tremores (`cameraAt`), projeção 3D→tela (`makeProjector`) |
+| `src/construcaoviral/kit/Mascote3D.tsx` | mascote low-poly com poses (`idle`, `cava`, `comemora`, `aponta`, `esfrega`, `despeja`, `pula`, `escorrega`, `salta`, `coca-olho`, `acena`, `segura-borda`, `atolado`, `anda`), rostos e acessórios |
+| `src/construcaoviral/kit/Mundo.tsx` | luz/céu/climas (`dia`, `sol`, `chuva`, `entardecer`, `noite`), casa, árvore, nuvem, montanha, muro, fundo com "buraco" para o terreno detalhado |
+| `src/construcaoviral/kit/Overlays.tsx` | legenda palavra a palavra (Title Case, termo amarelo), pílulas, rótulo amarelo, setas, cotas, ✓/✗, balão, ◀◀, ▶▶, chuva, confete, CTA, lupa, régua de pH, calor, tom subaquático |
+| `src/construcaoviral/episodios/piscina/` | exemplo completo: `linha.ts` (estado por segundo + rebobinares + câmera + legenda), `Cena.tsx` (terreno e objeto **cortáveis em z=0**: a metade da frente afunda para mostrar o corte), `Video.tsx` (composição + agenda de etiquetas) |
+| `scripts/construcaoviral_piscina_audio.py` | SFX + trilha sintetizados por cue (copiar e trocar os tempos) |
+| `scripts/construcaoviral_mixar.sh <slug>` | ducking + master −14 LUFS + junta vídeo mudo e áudio em `viral-video-engine/output/<slug>.mp4` |
+
+Fluxo: `linha.ts` com tempos de `frases.json` → stills de QC (`node scripts/render-stills.mjs <Comp> <frames>`) → corrigir →
+`npx remotion render <Comp> out/construcaoviral/<slug>_mudo.mp4 --props='{"mudo":true}' --muted` → áudio → mixar.
+Lições do 1º episódio: o gramado de fundo precisa de "buraco" na área do terreno; solo do corte até y=−9 (senão
+aparece céu embaixo); camadas finas (impermeabilização, azulejo) só ficam legíveis exageradas (5–6 cm); mascote
+fora da faixa x da câmera de corte fica cortado; rótulo amarelo e legenda colidem — a legenda desvia sozinha.
+
 ### B) Geradores externos (imagem + animação)
 Quando o usuário preferir IA generativa. Para cada cena entregue:
 - **Prompt de imagem** (inglês funciona melhor na maioria dos geradores): estilo fixo +
