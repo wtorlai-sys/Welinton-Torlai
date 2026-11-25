@@ -1,0 +1,104 @@
+{
+ "duracao_s": 176.67,
+ "loudness": "I:         -23.7 LUFS",
+ "palavras": 543,
+ "palavras_por_minuto": 185,
+ "primeira_palavra_s": 0.0,
+ "silencio_final_s": 0.19,
+ "pausas_acima_0_35s": [
+  [
+   0.58,
+   "dentro."
+  ],
+  [
+   0.36,
+   "lona."
+  ],
+  [
+   0.38,
+   "solta,"
+  ],
+  [
+   0.58,
+   "só."
+  ],
+  [
+   0.46,
+   "fora."
+  ],
+  [
+   0.4,
+   "dentro."
+  ],
+  [
+   0.46,
+   "lados."
+  ],
+  [
+   0.5,
+   "passar."
+  ],
+  [
+   0.44,
+   "revestimento."
+  ],
+  [
+   0.44,
+   "verde."
+  ],
+  [
+   0.36,
+   "cesto."
+  ],
+  [
+   0.36,
+   "coadeira,"
+  ],
+  [
+   0.6,
+   "afunda."
+  ],
+  [
+   0.4,
+   "baixo."
+  ],
+  [
+   0.44,
+   "fundo."
+  ],
+  [
+   0.4,
+   "especial."
+  ],
+  [
+   0.38,
+   "cloro."
+  ],
+  [
+   0.54,
+   "demais."
+  ],
+  [
+   0.56,
+   "entrar."
+  ],
+  [
+   0.46,
+   "forte."
+  ],
+  [
+   0.38,
+   "entrar."
+  ],
+  [
+   0.46,
+   "hidrostática."
+  ]
+ ],
+ "referencia": {
+  "ppm": "193–213",
+  "primeira_palavra_s": 0.0,
+  "pausas_acima_0_35s": "≤ 10",
+  "duracao_s": "140–165"
+ }
+}
