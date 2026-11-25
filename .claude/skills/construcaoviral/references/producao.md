@@ -2,6 +2,7 @@
 
 ## 1. Ler a narração real
 - `03-narracao/medicao.json` (duração, ppm) e `03-narracao/timestamps.json` (tempo de cada palavra).
+- `scripts/marcar_tempos.py <slug>` → `03-narracao/frases.json`: início/fim real de cada frase e de cada palavra.
 - Marque no roteiro os instantes de: cada verbo de ação, cada termo ("Esse é o…"), cada "Mas", cada número.
   Esses instantes são as âncoras de corte/evento. Use os tempos reais, nunca estimativas por contagem de palavras.
 

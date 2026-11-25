@@ -1,0 +1,2498 @@
+[
+ {
+  "n": 1,
+  "frase": "Se você cavar um buraco no quintal e encher de água, você não vai ter uma piscina, vai ter um lamaçal.",
+  "inicio": 0.0,
+  "fim": 5.18,
+  "palavras": [
+   {
+    "t": "Se",
+    "s": 0.0
+   },
+   {
+    "t": "você",
+    "s": 0.2
+   },
+   {
+    "t": "cavar",
+    "s": 0.46
+   },
+   {
+    "t": "um",
+    "s": 0.7
+   },
+   {
+    "t": "buraco",
+    "s": 0.84
+   },
+   {
+    "t": "no",
+    "s": 1.06
+   },
+   {
+    "t": "quintal",
+    "s": 1.18
+   },
+   {
+    "t": "e",
+    "s": 1.62
+   },
+   {
+    "t": "encher",
+    "s": 1.8
+   },
+   {
+    "t": "de",
+    "s": 1.98
+   },
+   {
+    "t": "água,",
+    "s": 2.28
+   },
+   {
+    "t": "você",
+    "s": 2.78
+   },
+   {
+    "t": "não",
+    "s": 2.9
+   },
+   {
+    "t": "vai",
+    "s": 3.08
+   },
+   {
+    "t": "ter",
+    "s": 3.2
+   },
+   {
+    "t": "uma",
+    "s": 3.32
+   },
+   {
+    "t": "piscina,",
+    "s": 3.52
+   },
+   {
+    "t": "vai",
+    "s": 4.16
+   },
+   {
+    "t": "ter",
+    "s": 4.32
+   },
+   {
+    "t": "um",
+    "s": 4.46
+   },
+   {
+    "t": "lamaçal,",
+    "s": 4.58
+   }
+  ]
+ },
+ {
+  "n": 2,
+  "frase": "Porque a terra bebe a água.",
+  "inicio": 5.38,
+  "fim": 6.9,
+  "palavras": [
+   {
+    "t": "porque",
+    "s": 5.38
+   },
+   {
+    "t": "a",
+    "s": 5.52
+   },
+   {
+    "t": "terra",
+    "s": 5.76
+   },
+   {
+    "t": "bebe",
+    "s": 5.98
+   },
+   {
+    "t": "a",
+    "s": 6.52
+   },
+   {
+    "t": "água.",
+    "s": 6.76
+   }
+  ]
+ },
+ {
+  "n": 3,
+  "frase": "Ela vaza pelo fundo, encharca as paredes de terra, e elas desmoronam pra dentro.",
+  "inicio": 7.12,
+  "fim": 11.42,
+  "palavras": [
+   {
+    "t": "Ela",
+    "s": 7.12
+   },
+   {
+    "t": "vaza",
+    "s": 7.36
+   },
+   {
+    "t": "pelo",
+    "s": 7.62
+   },
+   {
+    "t": "fundo,",
+    "s": 7.84
+   },
+   {
+    "t": "encharca",
+    "s": 8.54
+   },
+   {
+    "t": "as",
+    "s": 8.92
+   },
+   {
+    "t": "paredes",
+    "s": 9.12
+   },
+   {
+    "t": "de",
+    "s": 9.38
+   },
+   {
+    "t": "terra,",
+    "s": 9.64
+   },
+   {
+    "t": "e",
+    "s": 10.08
+   },
+   {
+    "t": "elas",
+    "s": 10.16
+   },
+   {
+    "t": "desmoronam",
+    "s": 10.32
+   },
+   {
+    "t": "dentro.",
+    "s": 11.12
+   }
+  ]
+ },
+ {
+  "n": 4,
+  "frase": "Uma piscina de oito por quatro metros guarda uns quarenta e cinco mil litros.",
+  "inicio": 11.76,
+  "fim": 15.82,
+  "palavras": [
+   {
+    "t": "Uma",
+    "s": 11.76
+   },
+   {
+    "t": "piscina",
+    "s": 11.84
+   },
+   {
+    "t": "de",
+    "s": 12.22
+   },
+   {
+    "t": "por",
+    "s": 12.7
+   },
+   {
+    "t": "metros",
+    "s": 13.22
+   },
+   {
+    "t": "guarda",
+    "s": 13.62
+   },
+   {
+    "t": "uns",
+    "s": 14.0
+   },
+   {
+    "t": "mil",
+    "s": 14.78
+   },
+   {
+    "t": "litros,",
+    "s": 15.22
+   }
+  ]
+ },
+ {
+  "n": 5,
+  "frase": "São quarenta e cinco toneladas empurrando o chão.",
+  "inicio": 15.94,
+  "fim": 18.68,
+  "palavras": [
+   {
+    "t": "são",
+    "s": 15.94
+   },
+   {
+    "t": "toneladas",
+    "s": 17.0
+   },
+   {
+    "t": "empurrando",
+    "s": 17.82
+   },
+   {
+    "t": "o",
+    "s": 18.26
+   },
+   {
+    "t": "chão.",
+    "s": 18.44
+   }
+  ]
+ },
+ {
+  "n": 6,
+  "frase": "Então você forra o buraco com uma lona.",
+  "inicio": 18.84,
+  "fim": 20.72,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 18.84
+   },
+   {
+    "t": "você",
+    "s": 19.1
+   },
+   {
+    "t": "forra",
+    "s": 19.48
+   },
+   {
+    "t": "o",
+    "s": 19.74
+   },
+   {
+    "t": "buraco",
+    "s": 19.86
+   },
+   {
+    "t": "com",
+    "s": 20.12
+   },
+   {
+    "t": "uma",
+    "s": 20.32
+   },
+   {
+    "t": "lona,",
+    "s": 20.52
+   }
+  ]
+ },
+ {
+  "n": 7,
+  "frase": "Mas a terra atrás dela continua solta, cede, uma pedrinha fura a lona, e vaza tudo de novo.",
+  "inicio": 20.96,
+  "fim": 26.8,
+  "palavras": [
+   {
+    "t": "mas",
+    "s": 20.96
+   },
+   {
+    "t": "a",
+    "s": 21.18
+   },
+   {
+    "t": "terra",
+    "s": 21.36
+   },
+   {
+    "t": "atrás",
+    "s": 21.58
+   },
+   {
+    "t": "dela",
+    "s": 21.86
+   },
+   {
+    "t": "continua",
+    "s": 22.14
+   },
+   {
+    "t": "solta.",
+    "s": 22.48
+   },
+   {
+    "t": "uma",
+    "s": 23.98
+   },
+   {
+    "t": "pedrinha",
+    "s": 24.14
+   },
+   {
+    "t": "fura",
+    "s": 24.62
+   },
+   {
+    "t": "a",
+    "s": 24.88
+   },
+   {
+    "t": "lona",
+    "s": 25.08
+   },
+   {
+    "t": "e",
+    "s": 25.24
+   },
+   {
+    "t": "vaza",
+    "s": 25.68
+   },
+   {
+    "t": "tudo",
+    "s": 26.08
+   },
+   {
+    "t": "de",
+    "s": 26.38
+   },
+   {
+    "t": "novo.",
+    "s": 26.58
+   }
+  ]
+ },
+ {
+  "n": 8,
+  "frase": "Então você troca a terra por uma caixa de concreto com aço dentro, fundo e paredes numa peça só.",
+  "inicio": 26.8,
+  "fim": 32.52,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 26.8
+   },
+   {
+    "t": "você",
+    "s": 27.24
+   },
+   {
+    "t": "troca",
+    "s": 27.54
+   },
+   {
+    "t": "a",
+    "s": 27.84
+   },
+   {
+    "t": "terra",
+    "s": 28.04
+   },
+   {
+    "t": "por",
+    "s": 28.2
+   },
+   {
+    "t": "uma",
+    "s": 28.4
+   },
+   {
+    "t": "caixa",
+    "s": 28.6
+   },
+   {
+    "t": "de",
+    "s": 28.86
+   },
+   {
+    "t": "concreto",
+    "s": 29.18
+   },
+   {
+    "t": "com",
+    "s": 29.4
+   },
+   {
+    "t": "aço",
+    "s": 29.64
+   },
+   {
+    "t": "dentro,",
+    "s": 29.94
+   },
+   {
+    "t": "fundo",
+    "s": 30.68
+   },
+   {
+    "t": "e",
+    "s": 30.92
+   },
+   {
+    "t": "paredes",
+    "s": 31.2
+   },
+   {
+    "t": "numa",
+    "s": 31.58
+   },
+   {
+    "t": "peça",
+    "s": 31.78
+   },
+   {
+    "t": "só.",
+    "s": 32.14
+   }
+  ]
+ },
+ {
+  "n": 9,
+  "frase": "Cheia, a água empurra as paredes pra fora.",
+  "inicio": 32.72,
+  "fim": 35.04,
+  "palavras": [
+   {
+    "t": "Cheia,",
+    "s": 32.72
+   },
+   {
+    "t": "a",
+    "s": 33.36
+   },
+   {
+    "t": "água",
+    "s": 33.5
+   },
+   {
+    "t": "empurra",
+    "s": 33.6
+   },
+   {
+    "t": "as",
+    "s": 34.04
+   },
+   {
+    "t": "paredes",
+    "s": 34.26
+   },
+   {
+    "t": "fora.",
+    "s": 34.78
+   }
+  ]
+ },
+ {
+  "n": 10,
+  "frase": "Vazia, é a terra que empurra pra dentro.",
+  "inicio": 35.4,
+  "fim": 37.54,
+  "palavras": [
+   {
+    "t": "Vazia,",
+    "s": 35.4
+   },
+   {
+    "t": "é",
+    "s": 36.08
+   },
+   {
+    "t": "a",
+    "s": 36.22
+   },
+   {
+    "t": "terra",
+    "s": 36.34
+   },
+   {
+    "t": "que",
+    "s": 36.62
+   },
+   {
+    "t": "empurra",
+    "s": 36.82
+   },
+   {
+    "t": "dentro.",
+    "s": 37.22
+   }
+  ]
+ },
+ {
+  "n": 11,
+  "frase": "O aço segura os dois lados.",
+  "inicio": 37.84,
+  "fim": 39.36,
+  "palavras": [
+   {
+    "t": "O",
+    "s": 37.84
+   },
+   {
+    "t": "aço",
+    "s": 38.02
+   },
+   {
+    "t": "segura",
+    "s": 38.32
+   },
+   {
+    "t": "os",
+    "s": 38.6
+   },
+   {
+    "t": "dois",
+    "s": 38.76
+   },
+   {
+    "t": "lados.",
+    "s": 38.98
+   }
+  ]
+ },
+ {
+  "n": 12,
+  "frase": "Esse é o concreto armado.",
+  "inicio": 39.72,
+  "fim": 41.24,
+  "palavras": [
+   {
+    "t": "Esse",
+    "s": 39.72
+   },
+   {
+    "t": "é",
+    "s": 40.02
+   },
+   {
+    "t": "o",
+    "s": 40.2
+   },
+   {
+    "t": "concreto",
+    "s": 40.46
+   },
+   {
+    "t": "armado.",
+    "s": 40.7
+   }
+  ]
+ },
+ {
+  "n": 13,
+  "frase": "Mas concreto tem poros e trincas finíssimas, e a água atravessa devagarinho.",
+  "inicio": 41.38,
+  "fim": 45.84,
+  "palavras": [
+   {
+    "t": "Mas",
+    "s": 41.38
+   },
+   {
+    "t": "concreto",
+    "s": 41.52
+   },
+   {
+    "t": "tem",
+    "s": 41.96
+   },
+   {
+    "t": "poros",
+    "s": 42.18
+   },
+   {
+    "t": "e",
+    "s": 42.66
+   },
+   {
+    "t": "trincas",
+    "s": 42.8
+   },
+   {
+    "t": "finíssimas,",
+    "s": 43.22
+   },
+   {
+    "t": "e",
+    "s": 44.16
+   },
+   {
+    "t": "a",
+    "s": 44.26
+   },
+   {
+    "t": "água",
+    "s": 44.38
+   },
+   {
+    "t": "atravessa",
+    "s": 44.52
+   },
+   {
+    "t": "devagarinho.",
+    "s": 45.0
+   }
+  ]
+ },
+ {
+  "n": 14,
+  "frase": "Então você cobre a caixa por dentro com uma camada elástica, que estica sem rachar e não deixa a água passar.",
+  "inicio": 46.02,
+  "fim": 51.64,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 46.02
+   },
+   {
+    "t": "você",
+    "s": 46.18
+   },
+   {
+    "t": "cobre",
+    "s": 46.5
+   },
+   {
+    "t": "a",
+    "s": 46.74
+   },
+   {
+    "t": "caixa",
+    "s": 46.88
+   },
+   {
+    "t": "por",
+    "s": 47.1
+   },
+   {
+    "t": "dentro",
+    "s": 47.34
+   },
+   {
+    "t": "com",
+    "s": 47.58
+   },
+   {
+    "t": "uma",
+    "s": 47.78
+   },
+   {
+    "t": "camada",
+    "s": 47.94
+   },
+   {
+    "t": "elástica,",
+    "s": 48.2
+   },
+   {
+    "t": "que",
+    "s": 48.96
+   },
+   {
+    "t": "estica",
+    "s": 49.26
+   },
+   {
+    "t": "sem",
+    "s": 49.54
+   },
+   {
+    "t": "rachar",
+    "s": 49.8
+   },
+   {
+    "t": "e",
+    "s": 50.34
+   },
+   {
+    "t": "não",
+    "s": 50.54
+   },
+   {
+    "t": "deixa",
+    "s": 50.78
+   },
+   {
+    "t": "a",
+    "s": 51.04
+   },
+   {
+    "t": "água",
+    "s": 51.16
+   },
+   {
+    "t": "passar.",
+    "s": 51.28
+   }
+  ]
+ },
+ {
+  "n": 15,
+  "frase": "Essa é a impermeabilização.",
+  "inicio": 52.0,
+  "fim": 53.46,
+  "palavras": [
+   {
+    "t": "Essa",
+    "s": 52.0
+   },
+   {
+    "t": "é",
+    "s": 52.26
+   },
+   {
+    "t": "a",
+    "s": 52.5
+   },
+   {
+    "t": "impermeabilização.",
+    "s": 52.62
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "frase": "Mas essa camada é mole, e qualquer escova rasga.",
+  "inicio": 53.7,
+  "fim": 56.26,
+  "palavras": [
+   {
+    "t": "Mas",
+    "s": 53.7
+   },
+   {
+    "t": "essa",
+    "s": 53.86
+   },
+   {
+    "t": "camada",
+    "s": 54.06
+   },
+   {
+    "t": "é",
+    "s": 54.36
+   },
+   {
+    "t": "mole,",
+    "s": 54.56
+   },
+   {
+    "t": "e",
+    "s": 54.98
+   },
+   {
+    "t": "qualquer",
+    "s": 55.16
+   },
+   {
+    "t": "escova",
+    "s": 55.46
+   },
+   {
+    "t": "rasga.",
+    "s": 55.88
+   }
+  ]
+ },
+ {
+  "n": 17,
+  "frase": "Então você cobre tudo com plaquinhas de cerâmica.",
+  "inicio": 56.26,
+  "fim": 58.94,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 56.26
+   },
+   {
+    "t": "você",
+    "s": 56.68
+   },
+   {
+    "t": "cobre",
+    "s": 56.94
+   },
+   {
+    "t": "tudo",
+    "s": 57.22
+   },
+   {
+    "t": "com",
+    "s": 57.54
+   },
+   {
+    "t": "plaquinhas",
+    "s": 57.72
+   },
+   {
+    "t": "de",
+    "s": 58.12
+   },
+   {
+    "t": "cerâmica.",
+    "s": 58.4
+   }
+  ]
+ },
+ {
+  "n": 18,
+  "frase": "Esse é o revestimento.",
+  "inicio": 59.24,
+  "fim": 60.56,
+  "palavras": [
+   {
+    "t": "Esse",
+    "s": 59.24
+   },
+   {
+    "t": "é",
+    "s": 59.44
+   },
+   {
+    "t": "o",
+    "s": 59.62
+   },
+   {
+    "t": "revestimento.",
+    "s": 59.82
+   }
+  ]
+ },
+ {
+  "n": 19,
+  "frase": "É por isso que quase toda piscina é de azulejo: protege a camada de baixo e é fácil de esfregar.",
+  "inicio": 60.8,
+  "fim": 64.92,
+  "palavras": [
+   {
+    "t": "É",
+    "s": 60.8
+   },
+   {
+    "t": "por",
+    "s": 60.88
+   },
+   {
+    "t": "isso",
+    "s": 61.1
+   },
+   {
+    "t": "que",
+    "s": 61.2
+   },
+   {
+    "t": "quase",
+    "s": 61.34
+   },
+   {
+    "t": "toda",
+    "s": 61.6
+   },
+   {
+    "t": "piscina",
+    "s": 61.82
+   },
+   {
+    "t": "é",
+    "s": 62.16
+   },
+   {
+    "t": "de",
+    "s": 62.2
+   },
+   {
+    "t": "azulejo.",
+    "s": 62.34
+   },
+   {
+    "t": "Protege",
+    "s": 63.18
+   },
+   {
+    "t": "a",
+    "s": 63.48
+   },
+   {
+    "t": "camada",
+    "s": 63.62
+   },
+   {
+    "t": "de",
+    "s": 63.84
+   },
+   {
+    "t": "baixo",
+    "s": 64.1
+   },
+   {
+    "t": "e",
+    "s": 64.32
+   },
+   {
+    "t": "é",
+    "s": 64.54
+   },
+   {
+    "t": "fácil",
+    "s": 64.68
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "frase": "Mas água parada junta folha e poeira, e em poucos dias fica verde.",
+  "inicio": 65.74,
+  "fim": 69.76,
+  "palavras": [
+   {
+    "t": "Mas",
+    "s": 65.74
+   },
+   {
+    "t": "água",
+    "s": 65.9
+   },
+   {
+    "t": "parada",
+    "s": 66.14
+   },
+   {
+    "t": "junta",
+    "s": 66.68
+   },
+   {
+    "t": "folha",
+    "s": 67.0
+   },
+   {
+    "t": "e",
+    "s": 67.48
+   },
+   {
+    "t": "poeira,",
+    "s": 67.68
+   },
+   {
+    "t": "e",
+    "s": 68.22
+   },
+   {
+    "t": "em",
+    "s": 68.32
+   },
+   {
+    "t": "poucos",
+    "s": 68.54
+   },
+   {
+    "t": "dias",
+    "s": 68.84
+   },
+   {
+    "t": "fica",
+    "s": 69.1
+   },
+   {
+    "t": "verde.",
+    "s": 69.32
+   }
+  ]
+ },
+ {
+  "n": 21,
+  "frase": "Então você põe uma bomba que passa a água por um tanque de areia, e a areia segura a sujeira.",
+  "inicio": 70.04,
+  "fim": 74.58,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 70.04
+   },
+   {
+    "t": "você",
+    "s": 70.2
+   },
+   {
+    "t": "põe",
+    "s": 70.46
+   },
+   {
+    "t": "uma",
+    "s": 70.56
+   },
+   {
+    "t": "bomba",
+    "s": 70.84
+   },
+   {
+    "t": "que",
+    "s": 71.16
+   },
+   {
+    "t": "passa",
+    "s": 71.34
+   },
+   {
+    "t": "a",
+    "s": 71.66
+   },
+   {
+    "t": "água",
+    "s": 71.8
+   },
+   {
+    "t": "por",
+    "s": 71.92
+   },
+   {
+    "t": "um",
+    "s": 72.12
+   },
+   {
+    "t": "tanque",
+    "s": 72.28
+   },
+   {
+    "t": "de",
+    "s": 72.48
+   },
+   {
+    "t": "areia,",
+    "s": 72.64
+   },
+   {
+    "t": "e",
+    "s": 73.14
+   },
+   {
+    "t": "a",
+    "s": 73.22
+   },
+   {
+    "t": "areia",
+    "s": 73.36
+   },
+   {
+    "t": "segura",
+    "s": 73.66
+   },
+   {
+    "t": "a",
+    "s": 73.98
+   },
+   {
+    "t": "sujeira.",
+    "s": 74.08
+   }
+  ]
+ },
+ {
+  "n": 22,
+  "frase": "Esse é o filtro.",
+  "inicio": 74.78,
+  "fim": 75.92,
+  "palavras": [
+   {
+    "t": "Esse",
+    "s": 74.78
+   },
+   {
+    "t": "é",
+    "s": 75.08
+   },
+   {
+    "t": "o",
+    "s": 75.26
+   },
+   {
+    "t": "filtro,",
+    "s": 75.46
+   }
+  ]
+ },
+ {
+  "n": 23,
+  "frase": "Mas folha boia.",
+  "inicio": 76.0,
+  "fim": 76.92,
+  "palavras": [
+   {
+    "t": "mas",
+    "s": 76.0
+   },
+   {
+    "t": "folha",
+    "s": 76.22
+   },
+   {
+    "t": "boia.",
+    "s": 76.56
+   }
+  ]
+ },
+ {
+  "n": 24,
+  "frase": "Então você abre na parede, na altura da água, uma boca que suga a superfície e prende as folhas num cesto.",
+  "inicio": 77.2,
+  "fim": 82.92,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 77.2
+   },
+   {
+    "t": "você",
+    "s": 77.36
+   },
+   {
+    "t": "abre",
+    "s": 77.66
+   },
+   {
+    "t": "na",
+    "s": 77.8
+   },
+   {
+    "t": "parede,",
+    "s": 77.96
+   },
+   {
+    "t": "na",
+    "s": 78.44
+   },
+   {
+    "t": "altura",
+    "s": 78.52
+   },
+   {
+    "t": "da",
+    "s": 78.82
+   },
+   {
+    "t": "água,",
+    "s": 79.14
+   },
+   {
+    "t": "uma",
+    "s": 79.44
+   },
+   {
+    "t": "boca",
+    "s": 79.62
+   },
+   {
+    "t": "que",
+    "s": 79.96
+   },
+   {
+    "t": "suga",
+    "s": 80.32
+   },
+   {
+    "t": "a",
+    "s": 80.56
+   },
+   {
+    "t": "superfície",
+    "s": 80.66
+   },
+   {
+    "t": "e",
+    "s": 81.26
+   },
+   {
+    "t": "prende",
+    "s": 81.54
+   },
+   {
+    "t": "as",
+    "s": 81.76
+   },
+   {
+    "t": "folhas",
+    "s": 82.02
+   },
+   {
+    "t": "num",
+    "s": 82.18
+   },
+   {
+    "t": "cesto.",
+    "s": 82.4
+   }
+  ]
+ },
+ {
+  "n": 25,
+  "frase": "Esse é o skimmer, que muita gente chama de coadeira.",
+  "inicio": 83.08,
+  "fim": 85.86,
+  "palavras": [
+   {
+    "t": "Esse",
+    "s": 83.08
+   },
+   {
+    "t": "é",
+    "s": 83.4
+   },
+   {
+    "t": "o",
+    "s": 83.56
+   },
+   {
+    "t": "skimmer,",
+    "s": 83.76
+   },
+   {
+    "t": "que",
+    "s": 84.3
+   },
+   {
+    "t": "muita",
+    "s": 84.46
+   },
+   {
+    "t": "gente",
+    "s": 84.66
+   },
+   {
+    "t": "chama",
+    "s": 84.94
+   },
+   {
+    "t": "de",
+    "s": 85.14
+   },
+   {
+    "t": "coadeira.",
+    "s": 85.4
+   }
+  ]
+ },
+ {
+  "n": 26,
+  "frase": "E a sujeira pesada afunda.",
+  "inicio": 85.86,
+  "fim": 87.7,
+  "palavras": [
+   {
+    "t": "E",
+    "s": 85.86
+   },
+   {
+    "t": "a",
+    "s": 86.16
+   },
+   {
+    "t": "sujeira",
+    "s": 86.26
+   },
+   {
+    "t": "pesada",
+    "s": 86.6
+   },
+   {
+    "t": "afunda.",
+    "s": 87.2
+   }
+  ]
+ },
+ {
+  "n": 27,
+  "frase": "Então, no ponto mais fundo, você põe uma saída que puxa a água lá de baixo.",
+  "inicio": 88.1,
+  "fim": 92.1,
+  "palavras": [
+   {
+    "t": "Então,",
+    "s": 88.1
+   },
+   {
+    "t": "no",
+    "s": 88.46
+   },
+   {
+    "t": "ponto",
+    "s": 88.56
+   },
+   {
+    "t": "mais",
+    "s": 88.84
+   },
+   {
+    "t": "fundo,",
+    "s": 89.24
+   },
+   {
+    "t": "você",
+    "s": 89.72
+   },
+   {
+    "t": "põe",
+    "s": 89.86
+   },
+   {
+    "t": "uma",
+    "s": 89.94
+   },
+   {
+    "t": "saída",
+    "s": 90.18
+   },
+   {
+    "t": "que",
+    "s": 90.56
+   },
+   {
+    "t": "puxa",
+    "s": 90.8
+   },
+   {
+    "t": "a",
+    "s": 91.12
+   },
+   {
+    "t": "água",
+    "s": 91.32
+   },
+   {
+    "t": "lá",
+    "s": 91.44
+   },
+   {
+    "t": "de",
+    "s": 91.68
+   },
+   {
+    "t": "baixo.",
+    "s": 91.84
+   }
+  ]
+ },
+ {
+  "n": 28,
+  "frase": "Esse é o ralo de fundo.",
+  "inicio": 92.56,
+  "fim": 93.8,
+  "palavras": [
+   {
+    "t": "Esse",
+    "s": 92.56
+   },
+   {
+    "t": "é",
+    "s": 92.74
+   },
+   {
+    "t": "o",
+    "s": 92.98
+   },
+   {
+    "t": "ralo",
+    "s": 93.14
+   },
+   {
+    "t": "de",
+    "s": 93.3
+   },
+   {
+    "t": "fundo.",
+    "s": 93.56
+   }
+  ]
+ },
+ {
+  "n": 29,
+  "frase": "É por isso que piscina bem feita tem dois ralos com tampa especial: a sucção de um ralo só pode prender o cabelo de quem mergulha.",
+  "inicio": 94.08,
+  "fim": 100.58,
+  "palavras": [
+   {
+    "t": "É",
+    "s": 94.08
+   },
+   {
+    "t": "por",
+    "s": 94.16
+   },
+   {
+    "t": "isso",
+    "s": 94.38
+   },
+   {
+    "t": "que",
+    "s": 94.46
+   },
+   {
+    "t": "piscina",
+    "s": 94.62
+   },
+   {
+    "t": "bem",
+    "s": 94.88
+   },
+   {
+    "t": "feita",
+    "s": 95.16
+   },
+   {
+    "t": "tem",
+    "s": 95.4
+   },
+   {
+    "t": "dois",
+    "s": 95.6
+   },
+   {
+    "t": "ralos",
+    "s": 95.96
+   },
+   {
+    "t": "com",
+    "s": 96.3
+   },
+   {
+    "t": "especial.",
+    "s": 96.72
+   },
+   {
+    "t": "A",
+    "s": 97.5
+   },
+   {
+    "t": "sucção",
+    "s": 97.6
+   },
+   {
+    "t": "de",
+    "s": 98.02
+   },
+   {
+    "t": "um",
+    "s": 98.16
+   },
+   {
+    "t": "ralo",
+    "s": 98.28
+   },
+   {
+    "t": "só",
+    "s": 98.48
+   },
+   {
+    "t": "pode",
+    "s": 98.76
+   },
+   {
+    "t": "prender",
+    "s": 99.12
+   },
+   {
+    "t": "o",
+    "s": 99.42
+   },
+   {
+    "t": "cabelo",
+    "s": 99.58
+   },
+   {
+    "t": "de",
+    "s": 99.82
+   },
+   {
+    "t": "quem",
+    "s": 99.96
+   },
+   {
+    "t": "mergulha.",
+    "s": 100.06
+   }
+  ]
+ },
+ {
+  "n": 30,
+  "frase": "Mas filtro não segura bactéria nem alga.",
+  "inicio": 100.74,
+  "fim": 103.02,
+  "palavras": [
+   {
+    "t": "Mas",
+    "s": 100.74
+   },
+   {
+    "t": "filtro",
+    "s": 100.96
+   },
+   {
+    "t": "não",
+    "s": 101.36
+   },
+   {
+    "t": "segura",
+    "s": 101.54
+   },
+   {
+    "t": "bactéria",
+    "s": 101.8
+   },
+   {
+    "t": "nem",
+    "s": 102.36
+   },
+   {
+    "t": "alga.",
+    "s": 102.58
+   }
+  ]
+ },
+ {
+  "n": 31,
+  "frase": "Então você põe na água um produto que mata o que é vivo, e acerta a acidez pra ele funcionar.",
+  "inicio": 103.18,
+  "fim": 107.7,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 103.18
+   },
+   {
+    "t": "você",
+    "s": 103.32
+   },
+   {
+    "t": "põe",
+    "s": 103.6
+   },
+   {
+    "t": "na",
+    "s": 103.76
+   },
+   {
+    "t": "água",
+    "s": 104.02
+   },
+   {
+    "t": "um",
+    "s": 104.12
+   },
+   {
+    "t": "produto",
+    "s": 104.36
+   },
+   {
+    "t": "que",
+    "s": 104.54
+   },
+   {
+    "t": "mata",
+    "s": 104.82
+   },
+   {
+    "t": "o",
+    "s": 105.04
+   },
+   {
+    "t": "que",
+    "s": 105.16
+   },
+   {
+    "t": "é",
+    "s": 105.26
+   },
+   {
+    "t": "vivo",
+    "s": 105.4
+   },
+   {
+    "t": "e",
+    "s": 105.62
+   },
+   {
+    "t": "acerta",
+    "s": 105.98
+   },
+   {
+    "t": "a",
+    "s": 106.38
+   },
+   {
+    "t": "acidez",
+    "s": 106.52
+   },
+   {
+    "t": "pra",
+    "s": 106.86
+   },
+   {
+    "t": "ele",
+    "s": 107.02
+   },
+   {
+    "t": "funcionar.",
+    "s": 107.18
+   }
+  ]
+ },
+ {
+  "n": 32,
+  "frase": "Esse é o cloro.",
+  "inicio": 107.86,
+  "fim": 108.88,
+  "palavras": [
+   {
+    "t": "Esse",
+    "s": 107.86
+   },
+   {
+    "t": "é",
+    "s": 108.22
+   },
+   {
+    "t": "o",
+    "s": 108.4
+   },
+   {
+    "t": "cloro.",
+    "s": 108.64
+   }
+  ]
+ },
+ {
+  "n": 33,
+  "frase": "É por isso que o olho arde em piscina mal cuidada: quase sempre é falta de cuidado, não cloro demais.",
+  "inicio": 109.14,
+  "fim": 114.18,
+  "palavras": [
+   {
+    "t": "É",
+    "s": 109.14
+   },
+   {
+    "t": "por",
+    "s": 109.24
+   },
+   {
+    "t": "isso",
+    "s": 109.46
+   },
+   {
+    "t": "que",
+    "s": 109.6
+   },
+   {
+    "t": "o",
+    "s": 109.7
+   },
+   {
+    "t": "olho",
+    "s": 109.78
+   },
+   {
+    "t": "arde",
+    "s": 109.98
+   },
+   {
+    "t": "em",
+    "s": 110.26
+   },
+   {
+    "t": "piscina",
+    "s": 110.4
+   },
+   {
+    "t": "mal",
+    "s": 110.64
+   },
+   {
+    "t": "cuidada.",
+    "s": 110.84
+   },
+   {
+    "t": "Quase",
+    "s": 111.52
+   },
+   {
+    "t": "sempre",
+    "s": 111.86
+   },
+   {
+    "t": "falta",
+    "s": 112.3
+   },
+   {
+    "t": "de",
+    "s": 112.44
+   },
+   {
+    "t": "cuidado,",
+    "s": 112.7
+   },
+   {
+    "t": "não",
+    "s": 113.3
+   },
+   {
+    "t": "cloro",
+    "s": 113.5
+   },
+   {
+    "t": "demais.",
+    "s": 113.8
+   }
+  ]
+ },
+ {
+  "n": 34,
+  "frase": "E a bomba e o filtro ficam numa caixinha ao lado, mais baixa que a água, pra bomba já começar cheia.",
+  "inicio": 114.18,
+  "fim": 119.76,
+  "palavras": [
+   {
+    "t": "E",
+    "s": 114.18
+   },
+   {
+    "t": "a",
+    "s": 114.58
+   },
+   {
+    "t": "bomba",
+    "s": 114.78
+   },
+   {
+    "t": "e",
+    "s": 115.06
+   },
+   {
+    "t": "o",
+    "s": 115.12
+   },
+   {
+    "t": "filtro",
+    "s": 115.34
+   },
+   {
+    "t": "ficam",
+    "s": 115.62
+   },
+   {
+    "t": "numa",
+    "s": 115.84
+   },
+   {
+    "t": "caixinha",
+    "s": 116.02
+   },
+   {
+    "t": "ao",
+    "s": 116.46
+   },
+   {
+    "t": "lado,",
+    "s": 116.68
+   },
+   {
+    "t": "mais",
+    "s": 117.12
+   },
+   {
+    "t": "baixa",
+    "s": 117.28
+   },
+   {
+    "t": "que",
+    "s": 117.58
+   },
+   {
+    "t": "a",
+    "s": 117.74
+   },
+   {
+    "t": "água,",
+    "s": 117.9
+   },
+   {
+    "t": "pra",
+    "s": 118.24
+   },
+   {
+    "t": "bomba",
+    "s": 118.32
+   },
+   {
+    "t": "já",
+    "s": 118.7
+   },
+   {
+    "t": "começar",
+    "s": 118.9
+   },
+   {
+    "t": "cheia.",
+    "s": 119.26
+   }
+  ]
+ },
+ {
+  "n": 35,
+  "frase": "Essa é a casa de máquinas.",
+  "inicio": 120.04,
+  "fim": 121.58,
+  "palavras": [
+   {
+    "t": "Essa",
+    "s": 120.04
+   },
+   {
+    "t": "é",
+    "s": 120.22
+   },
+   {
+    "t": "a",
+    "s": 120.48
+   },
+   {
+    "t": "casa",
+    "s": 120.5
+   },
+   {
+    "t": "de",
+    "s": 120.78
+   },
+   {
+    "t": "máquinas.",
+    "s": 121.0
+   }
+  ]
+ },
+ {
+  "n": 36,
+  "frase": "Mas pedra escura no sol queima o pé, e molhada escorrega.",
+  "inicio": 121.74,
+  "fim": 125.26,
+  "palavras": [
+   {
+    "t": "Mas",
+    "s": 121.74
+   },
+   {
+    "t": "pedra",
+    "s": 121.9
+   },
+   {
+    "t": "escura",
+    "s": 122.26
+   },
+   {
+    "t": "no",
+    "s": 122.58
+   },
+   {
+    "t": "sol",
+    "s": 122.76
+   },
+   {
+    "t": "queima",
+    "s": 123.02
+   },
+   {
+    "t": "o",
+    "s": 123.44
+   },
+   {
+    "t": "pé",
+    "s": 123.58
+   },
+   {
+    "t": "e",
+    "s": 123.7
+   },
+   {
+    "t": "molhada",
+    "s": 124.0
+   },
+   {
+    "t": "escorrega.",
+    "s": 124.52
+   }
+  ]
+ },
+ {
+  "n": 37,
+  "frase": "Então você contorna a piscina com uma pedra clara e áspera, inclinada pra fora, pra chuva não entrar.",
+  "inicio": 125.42,
+  "fim": 130.52,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 125.42
+   },
+   {
+    "t": "você",
+    "s": 125.54
+   },
+   {
+    "t": "contorna",
+    "s": 125.8
+   },
+   {
+    "t": "a",
+    "s": 126.26
+   },
+   {
+    "t": "piscina",
+    "s": 126.5
+   },
+   {
+    "t": "com",
+    "s": 126.74
+   },
+   {
+    "t": "uma",
+    "s": 126.9
+   },
+   {
+    "t": "pedra",
+    "s": 127.06
+   },
+   {
+    "t": "clara",
+    "s": 127.42
+   },
+   {
+    "t": "e",
+    "s": 127.82
+   },
+   {
+    "t": "áspera,",
+    "s": 128.04
+   },
+   {
+    "t": "inclinada",
+    "s": 128.68
+   },
+   {
+    "t": "pra",
+    "s": 129.0
+   },
+   {
+    "t": "fora,",
+    "s": 129.26
+   },
+   {
+    "t": "pra",
+    "s": 129.7
+   },
+   {
+    "t": "chuva",
+    "s": 129.82
+   },
+   {
+    "t": "não",
+    "s": 130.12
+   },
+   {
+    "t": "entrar.",
+    "s": 130.3
+   }
+  ]
+ },
+ {
+  "n": 38,
+  "frase": "Essa é a borda atérmica.",
+  "inicio": 130.9,
+  "fim": 131.84,
+  "palavras": [
+   {
+    "t": "Essa",
+    "s": 130.9
+   },
+   {
+    "t": "é",
+    "s": 131.14
+   },
+   {
+    "t": "a",
+    "s": 131.42
+   },
+   {
+    "t": "borda",
+    "s": 131.48
+   }
+  ]
+ },
+ {
+  "n": 39,
+  "frase": "Mas um dia você esvazia a piscina pra limpar, e chove forte.",
+  "inicio": 132.58,
+  "fim": 135.84,
+  "palavras": [
+   {
+    "t": "Mas",
+    "s": 132.58
+   },
+   {
+    "t": "um",
+    "s": 132.7
+   },
+   {
+    "t": "dia",
+    "s": 132.94
+   },
+   {
+    "t": "a",
+    "s": 133.78
+   },
+   {
+    "t": "piscina",
+    "s": 133.96
+   },
+   {
+    "t": "pra",
+    "s": 134.14
+   },
+   {
+    "t": "limpar",
+    "s": 134.3
+   },
+   {
+    "t": "e",
+    "s": 134.7
+   },
+   {
+    "t": "chove",
+    "s": 135.0
+   },
+   {
+    "t": "forte.",
+    "s": 135.38
+   }
+  ]
+ },
+ {
+  "n": 40,
+  "frase": "A água do chão empurra a caixa vazia pra cima, como um barco, e a piscina sai do chão.",
+  "inicio": 136.16,
+  "fim": 140.88,
+  "palavras": [
+   {
+    "t": "A",
+    "s": 136.16
+   },
+   {
+    "t": "água",
+    "s": 136.28
+   },
+   {
+    "t": "do",
+    "s": 136.42
+   },
+   {
+    "t": "chão",
+    "s": 136.62
+   },
+   {
+    "t": "empurra",
+    "s": 136.8
+   },
+   {
+    "t": "a",
+    "s": 137.26
+   },
+   {
+    "t": "caixa",
+    "s": 137.42
+   },
+   {
+    "t": "vazia",
+    "s": 137.68
+   },
+   {
+    "t": "pra",
+    "s": 138.0
+   },
+   {
+    "t": "cima,",
+    "s": 138.26
+   },
+   {
+    "t": "como",
+    "s": 138.66
+   },
+   {
+    "t": "um",
+    "s": 138.82
+   },
+   {
+    "t": "barco,",
+    "s": 139.06
+   },
+   {
+    "t": "e",
+    "s": 139.56
+   },
+   {
+    "t": "a",
+    "s": 139.7
+   },
+   {
+    "t": "piscina",
+    "s": 139.88
+   },
+   {
+    "t": "sai",
+    "s": 140.22
+   },
+   {
+    "t": "do",
+    "s": 140.44
+   },
+   {
+    "t": "chão.",
+    "s": 140.68
+   }
+  ]
+ },
+ {
+  "n": 41,
+  "frase": "Então você põe no fundo uma válvula que abre quando a água de fora empurra mais forte, e deixa essa água entrar.",
+  "inicio": 140.88,
+  "fim": 146.78,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 140.88
+   },
+   {
+    "t": "você",
+    "s": 141.3
+   },
+   {
+    "t": "põe",
+    "s": 141.64
+   },
+   {
+    "t": "no",
+    "s": 141.8
+   },
+   {
+    "t": "fundo",
+    "s": 141.96
+   },
+   {
+    "t": "uma",
+    "s": 142.22
+   },
+   {
+    "t": "válvula",
+    "s": 142.54
+   },
+   {
+    "t": "que",
+    "s": 143.04
+   },
+   {
+    "t": "abre",
+    "s": 143.3
+   },
+   {
+    "t": "quando",
+    "s": 143.54
+   },
+   {
+    "t": "a",
+    "s": 143.82
+   },
+   {
+    "t": "água",
+    "s": 143.94
+   },
+   {
+    "t": "de",
+    "s": 144.08
+   },
+   {
+    "t": "fora",
+    "s": 144.36
+   },
+   {
+    "t": "empurra",
+    "s": 144.52
+   },
+   {
+    "t": "mais",
+    "s": 144.86
+   },
+   {
+    "t": "forte.",
+    "s": 145.18
+   },
+   {
+    "t": "E",
+    "s": 145.84
+   },
+   {
+    "t": "deixa",
+    "s": 145.9
+   },
+   {
+    "t": "essa",
+    "s": 146.1
+   },
+   {
+    "t": "água",
+    "s": 146.3
+   },
+   {
+    "t": "entrar.",
+    "s": 146.5
+   }
+  ]
+ },
+ {
+  "n": 42,
+  "frase": "A piscina fica pesada e não sobe.",
+  "inicio": 147.1,
+  "fim": 149.04,
+  "palavras": [
+   {
+    "t": "A",
+    "s": 147.1
+   },
+   {
+    "t": "piscina",
+    "s": 147.24
+   },
+   {
+    "t": "fica",
+    "s": 147.46
+   },
+   {
+    "t": "pesada",
+    "s": 147.66
+   },
+   {
+    "t": "e",
+    "s": 148.28
+   },
+   {
+    "t": "não",
+    "s": 148.44
+   },
+   {
+    "t": "sobe.",
+    "s": 148.6
+   }
+  ]
+ },
+ {
+  "n": 43,
+  "frase": "Essa é a válvula hidrostática.",
+  "inicio": 149.42,
+  "fim": 151.08,
+  "palavras": [
+   {
+    "t": "Essa",
+    "s": 149.42
+   },
+   {
+    "t": "é",
+    "s": 149.58
+   },
+   {
+    "t": "a",
+    "s": 149.84
+   },
+   {
+    "t": "válvula",
+    "s": 149.98
+   },
+   {
+    "t": "hidrostática.",
+    "s": 150.3
+   }
+  ]
+ },
+ {
+  "n": 44,
+  "frase": "Coloque uma escada, uma luz embaixo d'água e uma boia de unicórnio.",
+  "inicio": 151.38,
+  "fim": 154.86,
+  "palavras": [
+   {
+    "t": "Coloque",
+    "s": 151.38
+   },
+   {
+    "t": "uma",
+    "s": 151.54
+   },
+   {
+    "t": "escada,",
+    "s": 151.74
+   },
+   {
+    "t": "uma",
+    "s": 152.52
+   },
+   {
+    "t": "luz",
+    "s": 152.62
+   },
+   {
+    "t": "embaixo",
+    "s": 152.82
+   },
+   {
+    "t": "e",
+    "s": 153.52
+   },
+   {
+    "t": "uma",
+    "s": 153.76
+   },
+   {
+    "t": "boia",
+    "s": 153.98
+   },
+   {
+    "t": "de",
+    "s": 154.2
+   },
+   {
+    "t": "unicórnio.",
+    "s": 154.4
+   }
+  ]
+ },
+ {
+  "n": 45,
+  "frase": "Agora é só pular.",
+  "inicio": 155.24,
+  "fim": 156.1,
+  "palavras": [
+   {
+    "t": "Agora",
+    "s": 155.24
+   },
+   {
+    "t": "é",
+    "s": 155.34
+   },
+   {
+    "t": "só",
+    "s": 155.54
+   },
+   {
+    "t": "pular.",
+    "s": 155.74
+   }
+  ]
+ },
+ {
+  "n": 46,
+  "frase": "Parabéns!",
+  "inicio": 156.58,
+  "fim": 157.06,
+  "palavras": [
+   {
+    "t": "Parabéns!",
+    "s": 156.58
+   }
+  ]
+ },
+ {
+  "n": 47,
+  "frase": "Você construiu uma piscina!",
+  "inicio": 157.12,
+  "fim": 158.48,
+  "palavras": [
+   {
+    "t": "Você",
+    "s": 157.12
+   },
+   {
+    "t": "construiu",
+    "s": 157.36
+   },
+   {
+    "t": "uma",
+    "s": 157.74
+   },
+   {
+    "t": "piscina!",
+    "s": 157.96
+   }
+  ]
+ },
+ {
+  "n": 48,
+  "frase": "Se você já sabia, comente \"piscineiro\".",
+  "inicio": 158.7,
+  "fim": 160.96,
+  "palavras": [
+   {
+    "t": "Se",
+    "s": 158.7
+   },
+   {
+    "t": "você",
+    "s": 158.84
+   },
+   {
+    "t": "já",
+    "s": 159.04
+   },
+   {
+    "t": "sabia,",
+    "s": 159.24
+   },
+   {
+    "t": "comente",
+    "s": 159.86
+   },
+   {
+    "t": "piscineiro.",
+    "s": 160.22
+   }
+  ]
+ },
+ {
+  "n": 49,
+  "frase": "Se não sabia, comente \"boia\".",
+  "inicio": 161.2,
+  "fim": 162.9,
+  "palavras": [
+   {
+    "t": "Se",
+    "s": 161.2
+   },
+   {
+    "t": "não",
+    "s": 161.32
+   },
+   {
+    "t": "sabia,",
+    "s": 161.48
+   },
+   {
+    "t": "comente",
+    "s": 162.14
+   },
+   {
+    "t": "boia.",
+    "s": 162.5
+   }
+  ]
+ }
+]

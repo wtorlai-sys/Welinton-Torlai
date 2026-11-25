@@ -113,7 +113,8 @@ Siga `references/elevenlabs.md`. Resumo:
    `scripts/ajustar_ritmo.py <slug>`; mostre e peça aprovação antes da F5.
 
 ## F5 — Produção (só com áudio aprovado)
-Siga `references/producao.md`: storyboard cronometrado pelos timestamps reais (`04-storyboard.md`), depois
+Siga `references/producao.md`. Rode `scripts/marcar_tempos.py <slug>` (tempo real de cada frase + palavras-âncora) e
+monte o storyboard cronometrado (`04-storyboard.md`), depois
 `05-producao.md` com prompts/código, edição, legendas, palavras destacadas, SFX, música, transições.
 Cada cena nasce de um trecho do áudio; nenhuma imagem "de enchimento". Termine com a auditoria final
 (`06-auditoria.md`, checklist em `references/auditoria.md`).
