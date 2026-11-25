@@ -12,3253 +12,3247 @@
   {
    "text": "você",
    "start": 0.2,
-   "end": 0.48,
+   "end": 0.46,
    "type": "word"
   },
   {
    "text": "cavar",
-   "start": 0.48,
-   "end": 0.72,
+   "start": 0.46,
+   "end": 0.7,
    "type": "word"
   },
   {
    "text": "um",
-   "start": 0.72,
-   "end": 0.86,
+   "start": 0.7,
+   "end": 0.84,
    "type": "word"
   },
   {
    "text": "buraco",
-   "start": 0.86,
-   "end": 1.1,
+   "start": 0.84,
+   "end": 1.06,
    "type": "word"
   },
   {
    "text": "no",
-   "start": 1.1,
-   "end": 1.22,
+   "start": 1.06,
+   "end": 1.18,
    "type": "word"
   },
   {
    "text": "quintal",
-   "start": 1.22,
-   "end": 1.68,
+   "start": 1.18,
+   "end": 1.62,
    "type": "word"
   },
   {
    "text": "e",
-   "start": 1.68,
-   "end": 1.88,
+   "start": 1.62,
+   "end": 1.8,
    "type": "word"
   },
   {
    "text": "encher",
-   "start": 1.88,
-   "end": 2.06,
+   "start": 1.8,
+   "end": 1.98,
    "type": "word"
   },
   {
    "text": "de",
-   "start": 2.06,
-   "end": 2.38,
+   "start": 1.98,
+   "end": 2.28,
    "type": "word"
   },
   {
    "text": "água,",
-   "start": 2.38,
-   "end": 2.56,
+   "start": 2.28,
+   "end": 2.5,
    "type": "word"
   },
   {
    "text": "você",
-   "start": 2.88,
-   "end": 3.02,
+   "start": 2.78,
+   "end": 2.9,
    "type": "word"
   },
   {
    "text": "não",
-   "start": 3.02,
+   "start": 2.9,
+   "end": 3.08,
+   "type": "word"
+  },
+  {
+   "text": "vai",
+   "start": 3.08,
    "end": 3.2,
    "type": "word"
   },
   {
-   "text": "vai",
-   "start": 3.2,
-   "end": 3.34,
-   "type": "word"
-  },
-  {
    "text": "ter",
-   "start": 3.34,
-   "end": 3.44,
+   "start": 3.2,
+   "end": 3.32,
    "type": "word"
   },
   {
    "text": "uma",
-   "start": 3.44,
-   "end": 3.68,
+   "start": 3.32,
+   "end": 3.52,
    "type": "word"
   },
   {
    "text": "piscina,",
-   "start": 3.68,
-   "end": 4.22,
+   "start": 3.52,
+   "end": 3.96,
    "type": "word"
   },
   {
    "text": "vai",
-   "start": 4.34,
-   "end": 4.5,
+   "start": 4.16,
+   "end": 4.32,
    "type": "word"
   },
   {
    "text": "ter",
-   "start": 4.5,
-   "end": 4.62,
+   "start": 4.32,
+   "end": 4.46,
    "type": "word"
   },
   {
    "text": "um",
-   "start": 4.62,
-   "end": 4.76,
+   "start": 4.46,
+   "end": 4.58,
    "type": "word"
   },
   {
    "text": "lamaçal,",
-   "start": 4.76,
-   "end": 5.56,
+   "start": 4.58,
+   "end": 5.18,
    "type": "word"
   },
   {
    "text": "porque",
-   "start": 5.7,
-   "end": 5.92,
+   "start": 5.38,
+   "end": 5.52,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 5.92,
-   "end": 6.18,
+   "start": 5.52,
+   "end": 5.76,
    "type": "word"
   },
   {
    "text": "terra",
-   "start": 6.18,
-   "end": 6.4,
+   "start": 5.76,
+   "end": 5.98,
    "type": "word"
   },
   {
    "text": "bebe",
-   "start": 6.4,
-   "end": 6.94,
+   "start": 5.98,
+   "end": 6.52,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 6.94,
-   "end": 7.2,
+   "start": 6.52,
+   "end": 6.76,
    "type": "word"
   },
   {
    "text": "água.",
-   "start": 7.2,
-   "end": 7.38,
+   "start": 6.76,
+   "end": 6.9,
    "type": "word"
   },
   {
    "text": "Ela",
-   "start": 7.68,
-   "end": 7.92,
+   "start": 7.12,
+   "end": 7.36,
    "type": "word"
   },
   {
    "text": "vaza",
-   "start": 7.92,
-   "end": 8.2,
+   "start": 7.36,
+   "end": 7.62,
    "type": "word"
   },
   {
    "text": "pelo",
-   "start": 8.2,
-   "end": 8.46,
+   "start": 7.62,
+   "end": 7.84,
    "type": "word"
   },
   {
    "text": "fundo,",
-   "start": 8.46,
-   "end": 8.84,
+   "start": 7.84,
+   "end": 8.24,
    "type": "word"
   },
   {
    "text": "encharca",
-   "start": 9.16,
-   "end": 9.56,
+   "start": 8.54,
+   "end": 8.92,
    "type": "word"
   },
   {
    "text": "as",
-   "start": 9.56,
-   "end": 9.74,
+   "start": 8.92,
+   "end": 9.12,
    "type": "word"
   },
   {
    "text": "paredes",
-   "start": 9.74,
-   "end": 10.04,
+   "start": 9.12,
+   "end": 9.38,
    "type": "word"
   },
   {
    "text": "de",
-   "start": 10.04,
-   "end": 10.26,
+   "start": 9.38,
+   "end": 9.64,
    "type": "word"
   },
   {
-   "text": "terra",
-   "start": 10.26,
-   "end": 10.54,
+   "text": "terra,",
+   "start": 9.64,
+   "end": 9.86,
    "type": "word"
   },
   {
    "text": "e",
-   "start": 10.54,
-   "end": 10.82,
+   "start": 10.08,
+   "end": 10.16,
    "type": "word"
   },
   {
    "text": "elas",
-   "start": 10.82,
-   "end": 11.06,
+   "start": 10.16,
+   "end": 10.32,
    "type": "word"
   },
   {
    "text": "desmoronam",
-   "start": 11.06,
-   "end": 11.6,
+   "start": 10.32,
+   "end": 10.88,
    "type": "word"
   },
   {
-   "text": "pra",
-   "start": 11.6,
-   "end": 11.84,
+   "text": "para",
+   "start": 10.88,
+   "end": 11.12,
    "type": "word"
   },
   {
    "text": "dentro.",
-   "start": 11.84,
-   "end": 12.16,
+   "start": 11.12,
+   "end": 11.42,
    "type": "word"
   },
   {
    "text": "Uma",
-   "start": 12.74,
-   "end": 12.88,
+   "start": 11.76,
+   "end": 11.84,
    "type": "word"
   },
   {
    "text": "piscina",
-   "start": 12.88,
-   "end": 13.26,
+   "start": 11.84,
+   "end": 12.22,
    "type": "word"
   },
   {
    "text": "de",
-   "start": 13.26,
-   "end": 13.52,
+   "start": 12.22,
+   "end": 12.46,
    "type": "word"
   },
   {
    "text": "8",
-   "start": 13.52,
-   "end": 13.76,
+   "start": 12.46,
+   "end": 12.7,
    "type": "word"
   },
   {
    "text": "por",
-   "start": 13.76,
-   "end": 13.96,
+   "start": 12.7,
+   "end": 12.9,
    "type": "word"
   },
   {
    "text": "4",
-   "start": 13.96,
-   "end": 14.32,
+   "start": 12.9,
+   "end": 13.22,
    "type": "word"
   },
   {
    "text": "metros",
-   "start": 14.32,
-   "end": 14.72,
+   "start": 13.22,
+   "end": 13.62,
    "type": "word"
   },
   {
    "text": "guarda",
-   "start": 14.72,
-   "end": 15.12,
+   "start": 13.62,
+   "end": 14.0,
    "type": "word"
   },
   {
    "text": "uns",
-   "start": 15.12,
-   "end": 15.3,
+   "start": 14.0,
+   "end": 14.18,
    "type": "word"
   },
   {
    "text": "45",
-   "start": 15.3,
-   "end": 15.92,
+   "start": 14.18,
+   "end": 14.78,
    "type": "word"
   },
   {
    "text": "mil",
-   "start": 15.92,
-   "end": 16.38,
+   "start": 14.78,
+   "end": 15.22,
    "type": "word"
   },
   {
    "text": "litros,",
-   "start": 16.38,
-   "end": 17.06,
+   "start": 15.22,
+   "end": 15.82,
    "type": "word"
   },
   {
    "text": "são",
-   "start": 17.24,
-   "end": 17.44,
+   "start": 15.94,
+   "end": 16.14,
    "type": "word"
   },
   {
    "text": "45",
-   "start": 17.44,
-   "end": 18.22,
+   "start": 16.14,
+   "end": 17.0,
    "type": "word"
   },
   {
    "text": "toneladas",
-   "start": 18.22,
-   "end": 19.2,
+   "start": 17.0,
+   "end": 17.82,
    "type": "word"
   },
   {
    "text": "empurrando",
-   "start": 19.2,
-   "end": 19.64,
+   "start": 17.82,
+   "end": 18.26,
    "type": "word"
   },
   {
    "text": "o",
-   "start": 19.64,
-   "end": 19.82,
+   "start": 18.26,
+   "end": 18.44,
    "type": "word"
   },
   {
    "text": "chão.",
-   "start": 19.82,
-   "end": 20.32,
+   "start": 18.44,
+   "end": 18.68,
    "type": "word"
   },
   {
    "text": "Então",
-   "start": 20.46,
-   "end": 20.78,
+   "start": 18.84,
+   "end": 19.1,
    "type": "word"
   },
   {
    "text": "você",
-   "start": 20.78,
-   "end": 21.22,
+   "start": 19.1,
+   "end": 19.48,
    "type": "word"
   },
   {
    "text": "forra",
-   "start": 21.22,
-   "end": 21.4,
+   "start": 19.48,
+   "end": 19.74,
    "type": "word"
   },
   {
    "text": "o",
-   "start": 21.4,
-   "end": 21.56,
+   "start": 19.74,
+   "end": 19.86,
    "type": "word"
   },
   {
    "text": "buraco",
-   "start": 21.56,
-   "end": 21.86,
+   "start": 19.86,
+   "end": 20.12,
    "type": "word"
   },
   {
    "text": "com",
-   "start": 21.86,
-   "end": 22.04,
+   "start": 20.12,
+   "end": 20.32,
    "type": "word"
   },
   {
    "text": "uma",
-   "start": 22.04,
-   "end": 22.28,
+   "start": 20.32,
+   "end": 20.52,
    "type": "word"
   },
   {
-   "text": "lona.",
-   "start": 22.28,
-   "end": 22.52,
+   "text": "lona,",
+   "start": 20.52,
+   "end": 20.72,
    "type": "word"
   },
   {
-   "text": "Mas",
-   "start": 22.88,
-   "end": 23.12,
+   "text": "mas",
+   "start": 20.96,
+   "end": 21.18,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 23.12,
-   "end": 23.3,
+   "start": 21.18,
+   "end": 21.36,
    "type": "word"
   },
   {
    "text": "terra",
-   "start": 23.3,
-   "end": 23.52,
+   "start": 21.36,
+   "end": 21.58,
    "type": "word"
   },
   {
    "text": "atrás",
-   "start": 23.52,
-   "end": 23.82,
+   "start": 21.58,
+   "end": 21.86,
    "type": "word"
   },
   {
    "text": "dela",
-   "start": 23.82,
-   "end": 24.12,
+   "start": 21.86,
+   "end": 22.14,
    "type": "word"
   },
   {
    "text": "continua",
-   "start": 24.12,
-   "end": 24.46,
+   "start": 22.14,
+   "end": 22.48,
    "type": "word"
   },
   {
-   "text": "solta,",
-   "start": 24.46,
-   "end": 25.08,
+   "text": "solta.",
+   "start": 22.48,
+   "end": 23.1,
    "type": "word"
   },
   {
-   "text": "cede,",
-   "start": 25.46,
-   "end": 25.76,
+   "text": "Sede,",
+   "start": 23.36,
+   "end": 23.72,
    "type": "word"
   },
   {
    "text": "uma",
-   "start": 26.04,
-   "end": 26.2,
+   "start": 23.98,
+   "end": 24.14,
    "type": "word"
   },
   {
    "text": "pedrinha",
-   "start": 26.2,
-   "end": 26.72,
+   "start": 24.14,
+   "end": 24.62,
    "type": "word"
   },
   {
    "text": "fura",
-   "start": 26.72,
-   "end": 27.04,
+   "start": 24.62,
+   "end": 24.88,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 27.04,
-   "end": 27.18,
+   "start": 24.88,
+   "end": 25.08,
    "type": "word"
   },
   {
    "text": "lona",
-   "start": 27.18,
-   "end": 27.32,
+   "start": 25.08,
+   "end": 25.24,
    "type": "word"
   },
   {
    "text": "e",
-   "start": 27.32,
-   "end": 27.84,
+   "start": 25.24,
+   "end": 25.68,
    "type": "word"
   },
   {
    "text": "vaza",
-   "start": 27.84,
-   "end": 28.22,
+   "start": 25.68,
+   "end": 26.08,
    "type": "word"
   },
   {
    "text": "tudo",
-   "start": 28.22,
-   "end": 28.56,
+   "start": 26.08,
+   "end": 26.38,
    "type": "word"
   },
   {
    "text": "de",
-   "start": 28.56,
-   "end": 28.74,
+   "start": 26.38,
+   "end": 26.58,
    "type": "word"
   },
   {
    "text": "novo.",
-   "start": 28.74,
-   "end": 28.98,
+   "start": 26.58,
+   "end": 26.8,
    "type": "word"
   },
   {
    "text": "Então",
-   "start": 28.98,
-   "end": 29.72,
+   "start": 26.8,
+   "end": 27.24,
    "type": "word"
   },
   {
    "text": "você",
-   "start": 29.72,
-   "end": 30.06,
+   "start": 27.24,
+   "end": 27.54,
    "type": "word"
   },
   {
    "text": "troca",
-   "start": 30.06,
-   "end": 30.36,
+   "start": 27.54,
+   "end": 27.84,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 30.36,
-   "end": 30.56,
+   "start": 27.84,
+   "end": 28.04,
    "type": "word"
   },
   {
    "text": "terra",
-   "start": 30.56,
-   "end": 30.72,
+   "start": 28.04,
+   "end": 28.2,
    "type": "word"
   },
   {
    "text": "por",
-   "start": 30.72,
-   "end": 30.94,
+   "start": 28.2,
+   "end": 28.4,
    "type": "word"
   },
   {
    "text": "uma",
-   "start": 30.94,
-   "end": 31.16,
+   "start": 28.4,
+   "end": 28.6,
    "type": "word"
   },
   {
    "text": "caixa",
-   "start": 31.16,
-   "end": 31.4,
+   "start": 28.6,
+   "end": 28.86,
    "type": "word"
   },
   {
    "text": "de",
-   "start": 31.4,
-   "end": 31.72,
+   "start": 28.86,
+   "end": 29.18,
    "type": "word"
   },
   {
    "text": "concreto",
-   "start": 31.72,
-   "end": 31.98,
+   "start": 29.18,
+   "end": 29.4,
    "type": "word"
   },
   {
    "text": "com",
-   "start": 31.98,
-   "end": 32.26,
+   "start": 29.4,
+   "end": 29.64,
    "type": "word"
   },
   {
    "text": "aço",
-   "start": 32.26,
-   "end": 32.54,
+   "start": 29.64,
+   "end": 29.94,
    "type": "word"
   },
   {
    "text": "dentro,",
-   "start": 32.54,
-   "end": 32.98,
+   "start": 29.94,
+   "end": 30.36,
    "type": "word"
   },
   {
    "text": "fundo",
-   "start": 33.32,
-   "end": 33.56,
+   "start": 30.68,
+   "end": 30.92,
    "type": "word"
   },
   {
    "text": "e",
-   "start": 33.56,
-   "end": 33.86,
+   "start": 30.92,
+   "end": 31.2,
    "type": "word"
   },
   {
    "text": "paredes",
-   "start": 33.86,
-   "end": 34.24,
+   "start": 31.2,
+   "end": 31.58,
    "type": "word"
   },
   {
    "text": "numa",
-   "start": 34.24,
-   "end": 34.46,
+   "start": 31.58,
+   "end": 31.78,
    "type": "word"
   },
   {
    "text": "peça",
-   "start": 34.46,
-   "end": 34.84,
+   "start": 31.78,
+   "end": 32.14,
    "type": "word"
   },
   {
    "text": "só.",
-   "start": 34.84,
-   "end": 35.12,
+   "start": 32.14,
+   "end": 32.52,
    "type": "word"
   },
   {
    "text": "Cheia,",
-   "start": 35.7,
-   "end": 36.06,
+   "start": 32.72,
+   "end": 33.12,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 36.3,
-   "end": 36.44,
+   "start": 33.36,
+   "end": 33.5,
    "type": "word"
   },
   {
    "text": "água",
-   "start": 36.44,
-   "end": 36.56,
+   "start": 33.5,
+   "end": 33.6,
    "type": "word"
   },
   {
    "text": "empurra",
-   "start": 36.56,
-   "end": 37.0,
+   "start": 33.6,
+   "end": 34.04,
    "type": "word"
   },
   {
    "text": "as",
-   "start": 37.0,
-   "end": 37.22,
+   "start": 34.04,
+   "end": 34.26,
    "type": "word"
   },
   {
    "text": "paredes",
-   "start": 37.22,
-   "end": 37.5,
+   "start": 34.26,
+   "end": 34.52,
    "type": "word"
   },
   {
-   "text": "pra",
-   "start": 37.5,
-   "end": 37.8,
+   "text": "para",
+   "start": 34.52,
+   "end": 34.78,
    "type": "word"
   },
   {
    "text": "fora.",
-   "start": 37.8,
-   "end": 38.08,
+   "start": 34.78,
+   "end": 35.04,
    "type": "word"
   },
   {
    "text": "Vazia,",
-   "start": 38.54,
-   "end": 39.04,
+   "start": 35.4,
+   "end": 35.88,
    "type": "word"
   },
   {
    "text": "é",
-   "start": 39.3,
-   "end": 39.4,
+   "start": 36.08,
+   "end": 36.22,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 39.4,
-   "end": 39.54,
+   "start": 36.22,
+   "end": 36.34,
    "type": "word"
   },
   {
    "text": "terra",
-   "start": 39.54,
-   "end": 39.8,
+   "start": 36.34,
+   "end": 36.62,
    "type": "word"
   },
   {
    "text": "que",
-   "start": 39.8,
-   "end": 40.02,
+   "start": 36.62,
+   "end": 36.82,
    "type": "word"
   },
   {
    "text": "empurra",
-   "start": 40.02,
-   "end": 40.24,
+   "start": 36.82,
+   "end": 37.02,
    "type": "word"
   },
   {
-   "text": "pra",
-   "start": 40.24,
-   "end": 40.46,
+   "text": "para",
+   "start": 37.02,
+   "end": 37.22,
    "type": "word"
   },
   {
    "text": "dentro.",
-   "start": 40.46,
-   "end": 40.8,
+   "start": 37.22,
+   "end": 37.54,
    "type": "word"
   },
   {
    "text": "O",
-   "start": 41.2,
-   "end": 41.42,
+   "start": 37.84,
+   "end": 38.02,
    "type": "word"
   },
   {
    "text": "aço",
-   "start": 41.42,
-   "end": 41.7,
+   "start": 38.02,
+   "end": 38.32,
    "type": "word"
   },
   {
    "text": "segura",
-   "start": 41.7,
-   "end": 41.98,
+   "start": 38.32,
+   "end": 38.6,
    "type": "word"
   },
   {
    "text": "os",
-   "start": 41.98,
-   "end": 42.14,
+   "start": 38.6,
+   "end": 38.76,
    "type": "word"
   },
   {
    "text": "dois",
-   "start": 42.14,
-   "end": 42.4,
+   "start": 38.76,
+   "end": 38.98,
    "type": "word"
   },
   {
    "text": "lados.",
-   "start": 42.4,
-   "end": 42.76,
+   "start": 38.98,
+   "end": 39.36,
    "type": "word"
   },
   {
    "text": "Esse",
-   "start": 43.22,
-   "end": 43.52,
+   "start": 39.72,
+   "end": 40.02,
    "type": "word"
   },
   {
    "text": "é",
-   "start": 43.52,
-   "end": 43.74,
+   "start": 40.02,
+   "end": 40.2,
    "type": "word"
   },
   {
    "text": "o",
-   "start": 43.74,
-   "end": 44.0,
+   "start": 40.2,
+   "end": 40.46,
    "type": "word"
   },
   {
    "text": "concreto",
-   "start": 44.0,
-   "end": 44.26,
+   "start": 40.46,
+   "end": 40.7,
    "type": "word"
   },
   {
    "text": "armado.",
-   "start": 44.26,
-   "end": 44.94,
+   "start": 40.7,
+   "end": 41.24,
    "type": "word"
   },
   {
    "text": "Mas",
-   "start": 45.24,
-   "end": 45.42,
+   "start": 41.38,
+   "end": 41.52,
    "type": "word"
   },
   {
    "text": "concreto",
-   "start": 45.42,
-   "end": 45.88,
+   "start": 41.52,
+   "end": 41.96,
    "type": "word"
   },
   {
    "text": "tem",
-   "start": 45.88,
-   "end": 46.12,
+   "start": 41.96,
+   "end": 42.18,
    "type": "word"
   },
   {
    "text": "poros",
-   "start": 46.12,
-   "end": 46.6,
+   "start": 42.18,
+   "end": 42.66,
    "type": "word"
   },
   {
    "text": "e",
-   "start": 46.6,
-   "end": 46.74,
+   "start": 42.66,
+   "end": 42.8,
    "type": "word"
   },
   {
    "text": "trincas",
-   "start": 46.74,
-   "end": 47.2,
+   "start": 42.8,
+   "end": 43.22,
    "type": "word"
   },
   {
-   "text": "finíssimas",
-   "start": 47.2,
-   "end": 48.0,
+   "text": "finíssimas,",
+   "start": 43.22,
+   "end": 43.98,
    "type": "word"
   },
   {
    "text": "e",
-   "start": 48.0,
-   "end": 48.24,
+   "start": 44.16,
+   "end": 44.26,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 48.24,
-   "end": 48.36,
+   "start": 44.26,
+   "end": 44.38,
    "type": "word"
   },
   {
    "text": "água",
-   "start": 48.36,
-   "end": 48.54,
+   "start": 44.38,
+   "end": 44.52,
    "type": "word"
   },
   {
    "text": "atravessa",
-   "start": 48.54,
-   "end": 49.02,
+   "start": 44.52,
+   "end": 45.0,
    "type": "word"
   },
   {
    "text": "devagarinho.",
-   "start": 49.02,
-   "end": 50.06,
+   "start": 45.0,
+   "end": 45.84,
    "type": "word"
   },
   {
    "text": "Então",
-   "start": 50.28,
-   "end": 50.46,
+   "start": 46.02,
+   "end": 46.18,
    "type": "word"
   },
   {
    "text": "você",
-   "start": 50.46,
-   "end": 50.78,
+   "start": 46.18,
+   "end": 46.5,
    "type": "word"
   },
   {
    "text": "cobre",
-   "start": 50.78,
-   "end": 51.02,
+   "start": 46.5,
+   "end": 46.74,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 51.02,
-   "end": 51.18,
+   "start": 46.74,
+   "end": 46.88,
    "type": "word"
   },
   {
    "text": "caixa",
-   "start": 51.18,
-   "end": 51.4,
+   "start": 46.88,
+   "end": 47.1,
    "type": "word"
   },
   {
    "text": "por",
-   "start": 51.4,
-   "end": 51.66,
+   "start": 47.1,
+   "end": 47.34,
    "type": "word"
   },
   {
    "text": "dentro",
-   "start": 51.66,
-   "end": 51.92,
+   "start": 47.34,
+   "end": 47.58,
    "type": "word"
   },
   {
    "text": "com",
-   "start": 51.92,
-   "end": 52.12,
+   "start": 47.58,
+   "end": 47.78,
    "type": "word"
   },
   {
    "text": "uma",
-   "start": 52.12,
-   "end": 52.28,
+   "start": 47.78,
+   "end": 47.94,
    "type": "word"
   },
   {
    "text": "camada",
-   "start": 52.28,
-   "end": 52.56,
+   "start": 47.94,
+   "end": 48.2,
    "type": "word"
   },
   {
    "text": "elástica,",
-   "start": 52.56,
-   "end": 53.2,
+   "start": 48.2,
+   "end": 48.82,
    "type": "word"
   },
   {
    "text": "que",
-   "start": 53.36,
-   "end": 53.66,
+   "start": 48.96,
+   "end": 49.26,
    "type": "word"
   },
   {
    "text": "estica",
-   "start": 53.66,
-   "end": 53.94,
+   "start": 49.26,
+   "end": 49.54,
    "type": "word"
   },
   {
    "text": "sem",
-   "start": 53.94,
-   "end": 54.22,
+   "start": 49.54,
+   "end": 49.8,
    "type": "word"
   },
   {
    "text": "rachar",
-   "start": 54.22,
-   "end": 54.78,
+   "start": 49.8,
+   "end": 50.34,
    "type": "word"
   },
   {
    "text": "e",
-   "start": 54.78,
-   "end": 55.0,
+   "start": 50.34,
+   "end": 50.54,
    "type": "word"
   },
   {
    "text": "não",
-   "start": 55.0,
-   "end": 55.24,
+   "start": 50.54,
+   "end": 50.78,
    "type": "word"
   },
   {
    "text": "deixa",
-   "start": 55.24,
-   "end": 55.5,
+   "start": 50.78,
+   "end": 51.04,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 55.5,
-   "end": 55.6,
+   "start": 51.04,
+   "end": 51.16,
    "type": "word"
   },
   {
    "text": "água",
-   "start": 55.6,
-   "end": 55.74,
+   "start": 51.16,
+   "end": 51.28,
    "type": "word"
   },
   {
    "text": "passar.",
-   "start": 55.74,
-   "end": 56.14,
+   "start": 51.28,
+   "end": 51.64,
    "type": "word"
   },
   {
    "text": "Essa",
-   "start": 56.64,
-   "end": 56.96,
+   "start": 52.0,
+   "end": 52.26,
    "type": "word"
   },
   {
    "text": "é",
-   "start": 56.96,
-   "end": 57.18,
+   "start": 52.26,
+   "end": 52.5,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 57.18,
-   "end": 57.3,
+   "start": 52.5,
+   "end": 52.62,
    "type": "word"
   },
   {
    "text": "impermeabilização.",
-   "start": 57.3,
-   "end": 58.16,
+   "start": 52.62,
+   "end": 53.46,
    "type": "word"
   },
   {
    "text": "Mas",
-   "start": 58.16,
-   "end": 58.74,
+   "start": 53.7,
+   "end": 53.86,
    "type": "word"
   },
   {
    "text": "essa",
-   "start": 58.74,
-   "end": 59.0,
+   "start": 53.86,
+   "end": 54.06,
    "type": "word"
   },
   {
    "text": "camada",
-   "start": 59.0,
-   "end": 59.3,
+   "start": 54.06,
+   "end": 54.36,
    "type": "word"
   },
   {
    "text": "é",
-   "start": 59.3,
-   "end": 59.5,
+   "start": 54.36,
+   "end": 54.56,
    "type": "word"
   },
   {
-   "text": "mole",
-   "start": 59.5,
-   "end": 59.8,
+   "text": "mole,",
+   "start": 54.56,
+   "end": 54.82,
    "type": "word"
   },
   {
    "text": "e",
-   "start": 59.8,
-   "end": 60.06,
+   "start": 54.98,
+   "end": 55.16,
    "type": "word"
   },
   {
    "text": "qualquer",
-   "start": 60.06,
-   "end": 60.46,
+   "start": 55.16,
+   "end": 55.46,
    "type": "word"
   },
   {
    "text": "escova",
-   "start": 60.46,
-   "end": 60.9,
+   "start": 55.46,
+   "end": 55.88,
    "type": "word"
   },
   {
    "text": "rasga.",
-   "start": 60.9,
-   "end": 61.56,
+   "start": 55.88,
+   "end": 56.26,
    "type": "word"
   },
   {
    "text": "Então",
-   "start": 61.8,
-   "end": 61.88,
+   "start": 56.26,
+   "end": 56.68,
    "type": "word"
   },
   {
    "text": "você",
-   "start": 61.88,
-   "end": 62.14,
+   "start": 56.68,
+   "end": 56.94,
    "type": "word"
   },
   {
    "text": "cobre",
-   "start": 62.14,
-   "end": 62.42,
+   "start": 56.94,
+   "end": 57.22,
    "type": "word"
   },
   {
    "text": "tudo",
-   "start": 62.42,
-   "end": 62.74,
+   "start": 57.22,
+   "end": 57.54,
    "type": "word"
   },
   {
    "text": "com",
-   "start": 62.74,
-   "end": 62.96,
+   "start": 57.54,
+   "end": 57.72,
    "type": "word"
   },
   {
    "text": "plaquinhas",
-   "start": 62.96,
-   "end": 63.36,
+   "start": 57.72,
+   "end": 58.12,
    "type": "word"
   },
   {
    "text": "de",
-   "start": 63.36,
-   "end": 63.64,
+   "start": 58.12,
+   "end": 58.4,
    "type": "word"
   },
   {
    "text": "cerâmica.",
-   "start": 63.64,
-   "end": 64.28,
+   "start": 58.4,
+   "end": 58.94,
    "type": "word"
   },
   {
    "text": "Esse",
-   "start": 64.48,
-   "end": 64.82,
+   "start": 59.24,
+   "end": 59.44,
    "type": "word"
   },
   {
    "text": "é",
-   "start": 64.82,
-   "end": 65.02,
+   "start": 59.44,
+   "end": 59.62,
    "type": "word"
   },
   {
    "text": "o",
-   "start": 65.02,
-   "end": 65.22,
+   "start": 59.62,
+   "end": 59.82,
    "type": "word"
   },
   {
    "text": "revestimento.",
-   "start": 65.22,
-   "end": 65.96,
+   "start": 59.82,
+   "end": 60.56,
    "type": "word"
   },
   {
    "text": "É",
-   "start": 66.4,
-   "end": 66.48,
+   "start": 60.8,
+   "end": 60.88,
    "type": "word"
   },
   {
    "text": "por",
-   "start": 66.48,
-   "end": 66.7,
+   "start": 60.88,
+   "end": 61.1,
    "type": "word"
   },
   {
    "text": "isso",
-   "start": 66.7,
-   "end": 66.82,
+   "start": 61.1,
+   "end": 61.2,
    "type": "word"
   },
   {
    "text": "que",
-   "start": 66.82,
-   "end": 66.96,
+   "start": 61.2,
+   "end": 61.34,
    "type": "word"
   },
   {
    "text": "quase",
-   "start": 66.96,
-   "end": 67.24,
+   "start": 61.34,
+   "end": 61.6,
    "type": "word"
   },
   {
    "text": "toda",
-   "start": 67.24,
-   "end": 67.46,
+   "start": 61.6,
+   "end": 61.82,
    "type": "word"
   },
   {
    "text": "piscina",
-   "start": 67.46,
-   "end": 67.82,
+   "start": 61.82,
+   "end": 62.16,
    "type": "word"
   },
   {
    "text": "é",
-   "start": 67.82,
-   "end": 67.88,
+   "start": 62.16,
+   "end": 62.2,
    "type": "word"
   },
   {
    "text": "de",
-   "start": 67.88,
-   "end": 68.0,
+   "start": 62.2,
+   "end": 62.34,
    "type": "word"
   },
   {
-   "text": "azulejo,",
-   "start": 68.0,
-   "end": 68.62,
+   "text": "azulejo.",
+   "start": 62.34,
+   "end": 62.9,
    "type": "word"
   },
   {
-   "text": "protege",
-   "start": 68.94,
-   "end": 69.2,
+   "text": "Protege",
+   "start": 63.18,
+   "end": 63.48,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 69.2,
-   "end": 69.36,
+   "start": 63.48,
+   "end": 63.62,
    "type": "word"
   },
   {
    "text": "camada",
-   "start": 69.36,
-   "end": 69.6,
+   "start": 63.62,
+   "end": 63.84,
    "type": "word"
   },
   {
    "text": "de",
-   "start": 69.6,
-   "end": 69.84,
+   "start": 63.84,
+   "end": 64.1,
    "type": "word"
   },
   {
    "text": "baixo",
-   "start": 69.84,
-   "end": 70.08,
+   "start": 64.1,
+   "end": 64.32,
    "type": "word"
   },
   {
    "text": "e",
-   "start": 70.08,
-   "end": 70.32,
+   "start": 64.32,
+   "end": 64.54,
    "type": "word"
   },
   {
    "text": "é",
-   "start": 70.32,
-   "end": 70.48,
+   "start": 64.54,
+   "end": 64.68,
    "type": "word"
   },
   {
    "text": "fácil",
-   "start": 70.48,
-   "end": 70.7,
+   "start": 64.68,
+   "end": 64.92,
    "type": "word"
   },
   {
    "text": "desfregar.",
-   "start": 70.7,
-   "end": 71.58,
+   "start": 64.92,
+   "end": 65.54,
    "type": "word"
   },
   {
    "text": "Mas",
-   "start": 71.74,
-   "end": 71.98,
-   "type": "word"
-  },
-  {
-   "text": "a",
-   "start": 71.98,
-   "end": 72.12,
+   "start": 65.74,
+   "end": 65.9,
    "type": "word"
   },
   {
    "text": "água",
-   "start": 72.12,
-   "end": 72.26,
+   "start": 65.9,
+   "end": 66.14,
    "type": "word"
   },
   {
    "text": "parada",
-   "start": 72.26,
-   "end": 72.78,
+   "start": 66.14,
+   "end": 66.68,
    "type": "word"
   },
   {
    "text": "junta",
-   "start": 72.78,
-   "end": 73.12,
+   "start": 66.68,
+   "end": 67.0,
    "type": "word"
   },
   {
    "text": "folha",
-   "start": 73.12,
-   "end": 73.64,
+   "start": 67.0,
+   "end": 67.48,
    "type": "word"
   },
   {
    "text": "e",
-   "start": 73.64,
-   "end": 73.8,
+   "start": 67.48,
+   "end": 67.68,
    "type": "word"
   },
   {
-   "text": "poeira",
-   "start": 73.8,
-   "end": 74.3,
+   "text": "poeira,",
+   "start": 67.68,
+   "end": 68.14,
    "type": "word"
   },
   {
    "text": "e",
-   "start": 74.3,
-   "end": 74.48,
+   "start": 68.22,
+   "end": 68.32,
    "type": "word"
   },
   {
    "text": "em",
-   "start": 74.48,
-   "end": 74.68,
+   "start": 68.32,
+   "end": 68.54,
    "type": "word"
   },
   {
    "text": "poucos",
-   "start": 74.68,
-   "end": 75.04,
+   "start": 68.54,
+   "end": 68.84,
    "type": "word"
   },
   {
    "text": "dias",
-   "start": 75.04,
-   "end": 75.3,
+   "start": 68.84,
+   "end": 69.1,
    "type": "word"
   },
   {
    "text": "fica",
-   "start": 75.3,
-   "end": 75.54,
+   "start": 69.1,
+   "end": 69.32,
    "type": "word"
   },
   {
    "text": "verde.",
-   "start": 75.54,
-   "end": 76.0,
+   "start": 69.32,
+   "end": 69.76,
    "type": "word"
   },
   {
    "text": "Então",
-   "start": 76.44,
-   "end": 76.58,
+   "start": 70.04,
+   "end": 70.2,
    "type": "word"
   },
   {
    "text": "você",
-   "start": 76.58,
-   "end": 76.88,
+   "start": 70.2,
+   "end": 70.46,
    "type": "word"
   },
   {
    "text": "põe",
-   "start": 76.88,
-   "end": 76.96,
+   "start": 70.46,
+   "end": 70.56,
    "type": "word"
   },
   {
    "text": "uma",
-   "start": 76.96,
-   "end": 77.28,
+   "start": 70.56,
+   "end": 70.84,
    "type": "word"
   },
   {
    "text": "bomba",
-   "start": 77.28,
-   "end": 77.6,
+   "start": 70.84,
+   "end": 71.16,
    "type": "word"
   },
   {
    "text": "que",
-   "start": 77.6,
-   "end": 77.8,
+   "start": 71.16,
+   "end": 71.34,
    "type": "word"
   },
   {
    "text": "passa",
-   "start": 77.8,
-   "end": 78.14,
+   "start": 71.34,
+   "end": 71.66,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 78.14,
-   "end": 78.28,
+   "start": 71.66,
+   "end": 71.8,
    "type": "word"
   },
   {
    "text": "água",
-   "start": 78.28,
-   "end": 78.38,
+   "start": 71.8,
+   "end": 71.92,
    "type": "word"
   },
   {
    "text": "por",
-   "start": 78.38,
-   "end": 78.58,
+   "start": 71.92,
+   "end": 72.12,
    "type": "word"
   },
   {
    "text": "um",
-   "start": 78.58,
-   "end": 78.78,
+   "start": 72.12,
+   "end": 72.28,
    "type": "word"
   },
   {
    "text": "tanque",
-   "start": 78.78,
-   "end": 78.98,
+   "start": 72.28,
+   "end": 72.48,
    "type": "word"
   },
   {
    "text": "de",
-   "start": 78.98,
-   "end": 79.16,
+   "start": 72.48,
+   "end": 72.64,
    "type": "word"
   },
   {
-   "text": "areia",
-   "start": 79.16,
-   "end": 79.48,
+   "text": "areia,",
+   "start": 72.64,
+   "end": 72.94,
    "type": "word"
   },
   {
    "text": "e",
-   "start": 79.48,
-   "end": 79.74,
+   "start": 73.14,
+   "end": 73.22,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 79.74,
-   "end": 79.9,
+   "start": 73.22,
+   "end": 73.36,
    "type": "word"
   },
   {
    "text": "areia",
-   "start": 79.9,
-   "end": 80.22,
+   "start": 73.36,
+   "end": 73.66,
    "type": "word"
   },
   {
    "text": "segura",
-   "start": 80.22,
+   "start": 73.66,
+   "end": 73.98,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 73.98,
+   "end": 74.08,
+   "type": "word"
+  },
+  {
+   "text": "sujeira.",
+   "start": 74.08,
+   "end": 74.58,
+   "type": "word"
+  },
+  {
+   "text": "Esse",
+   "start": 74.78,
+   "end": 75.08,
+   "type": "word"
+  },
+  {
+   "text": "é",
+   "start": 75.08,
+   "end": 75.26,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 75.26,
+   "end": 75.46,
+   "type": "word"
+  },
+  {
+   "text": "filtro,",
+   "start": 75.46,
+   "end": 75.92,
+   "type": "word"
+  },
+  {
+   "text": "mas",
+   "start": 76.0,
+   "end": 76.22,
+   "type": "word"
+  },
+  {
+   "text": "folha",
+   "start": 76.22,
+   "end": 76.56,
+   "type": "word"
+  },
+  {
+   "text": "boia.",
+   "start": 76.56,
+   "end": 76.92,
+   "type": "word"
+  },
+  {
+   "text": "Então",
+   "start": 77.2,
+   "end": 77.36,
+   "type": "word"
+  },
+  {
+   "text": "você",
+   "start": 77.36,
+   "end": 77.66,
+   "type": "word"
+  },
+  {
+   "text": "abre",
+   "start": 77.66,
+   "end": 77.8,
+   "type": "word"
+  },
+  {
+   "text": "na",
+   "start": 77.8,
+   "end": 77.96,
+   "type": "word"
+  },
+  {
+   "text": "parede,",
+   "start": 77.96,
+   "end": 78.36,
+   "type": "word"
+  },
+  {
+   "text": "na",
+   "start": 78.44,
+   "end": 78.52,
+   "type": "word"
+  },
+  {
+   "text": "altura",
+   "start": 78.52,
+   "end": 78.82,
+   "type": "word"
+  },
+  {
+   "text": "da",
+   "start": 78.82,
+   "end": 79.14,
+   "type": "word"
+  },
+  {
+   "text": "água,",
+   "start": 79.14,
+   "end": 79.28,
+   "type": "word"
+  },
+  {
+   "text": "uma",
+   "start": 79.44,
+   "end": 79.62,
+   "type": "word"
+  },
+  {
+   "text": "boca",
+   "start": 79.62,
+   "end": 79.96,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 79.96,
+   "end": 80.32,
+   "type": "word"
+  },
+  {
+   "text": "suga",
+   "start": 80.32,
    "end": 80.56,
    "type": "word"
   },
   {
    "text": "a",
    "start": 80.56,
-   "end": 80.64,
+   "end": 80.66,
    "type": "word"
   },
   {
-   "text": "sujeira.",
-   "start": 80.64,
-   "end": 81.08,
+   "text": "superfície",
+   "start": 80.66,
+   "end": 81.26,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 81.26,
+   "end": 81.54,
+   "type": "word"
+  },
+  {
+   "text": "prende",
+   "start": 81.54,
+   "end": 81.76,
+   "type": "word"
+  },
+  {
+   "text": "as",
+   "start": 81.76,
+   "end": 82.02,
+   "type": "word"
+  },
+  {
+   "text": "folhas",
+   "start": 82.02,
+   "end": 82.18,
+   "type": "word"
+  },
+  {
+   "text": "num",
+   "start": 82.18,
+   "end": 82.4,
+   "type": "word"
+  },
+  {
+   "text": "cesto.",
+   "start": 82.4,
+   "end": 82.92,
    "type": "word"
   },
   {
    "text": "Esse",
-   "start": 81.38,
-   "end": 81.72,
+   "start": 83.08,
+   "end": 83.4,
    "type": "word"
   },
   {
    "text": "é",
-   "start": 81.72,
-   "end": 81.92,
+   "start": 83.4,
+   "end": 83.56,
    "type": "word"
   },
   {
    "text": "o",
-   "start": 81.92,
-   "end": 82.1,
+   "start": 83.56,
+   "end": 83.76,
    "type": "word"
   },
   {
-   "text": "filtro.",
-   "start": 82.1,
-   "end": 82.7,
+   "text": "skimmer,",
+   "start": 83.76,
+   "end": 84.14,
    "type": "word"
   },
   {
-   "text": "Mas",
-   "start": 82.84,
-   "end": 83.0,
+   "text": "que",
+   "start": 84.3,
+   "end": 84.46,
    "type": "word"
   },
   {
-   "text": "folha",
-   "start": 83.0,
-   "end": 83.38,
+   "text": "muita",
+   "start": 84.46,
+   "end": 84.66,
    "type": "word"
   },
   {
-   "text": "boia.",
-   "start": 83.38,
-   "end": 83.82,
+   "text": "gente",
+   "start": 84.66,
+   "end": 84.94,
    "type": "word"
   },
   {
-   "text": "Então",
-   "start": 83.82,
-   "end": 84.28,
+   "text": "chama",
+   "start": 84.94,
+   "end": 85.14,
    "type": "word"
   },
   {
-   "text": "você",
-   "start": 84.28,
-   "end": 84.6,
-   "type": "word"
-  },
-  {
-   "text": "abre",
-   "start": 84.6,
-   "end": 84.8,
-   "type": "word"
-  },
-  {
-   "text": "na",
-   "start": 84.8,
-   "end": 84.96,
-   "type": "word"
-  },
-  {
-   "text": "parede,",
-   "start": 84.96,
+   "text": "de",
+   "start": 85.14,
    "end": 85.4,
    "type": "word"
   },
   {
-   "text": "na",
-   "start": 85.48,
-   "end": 85.56,
-   "type": "word"
-  },
-  {
-   "text": "altura",
-   "start": 85.56,
+   "text": "coadeira.",
+   "start": 85.4,
    "end": 85.86,
    "type": "word"
   },
   {
-   "text": "da",
+   "text": "E",
    "start": 85.86,
    "end": 86.16,
    "type": "word"
   },
   {
-   "text": "água,",
+   "text": "a",
    "start": 86.16,
-   "end": 86.34,
-   "type": "word"
-  },
-  {
-   "text": "uma",
-   "start": 86.54,
-   "end": 86.68,
-   "type": "word"
-  },
-  {
-   "text": "boca",
-   "start": 86.68,
-   "end": 87.06,
-   "type": "word"
-  },
-  {
-   "text": "que",
-   "start": 87.06,
-   "end": 87.42,
-   "type": "word"
-  },
-  {
-   "text": "suga",
-   "start": 87.42,
-   "end": 87.68,
-   "type": "word"
-  },
-  {
-   "text": "a",
-   "start": 87.68,
-   "end": 87.8,
-   "type": "word"
-  },
-  {
-   "text": "superfície",
-   "start": 87.8,
-   "end": 88.4,
-   "type": "word"
-  },
-  {
-   "text": "e",
-   "start": 88.4,
-   "end": 88.7,
-   "type": "word"
-  },
-  {
-   "text": "prende",
-   "start": 88.7,
-   "end": 88.94,
-   "type": "word"
-  },
-  {
-   "text": "as",
-   "start": 88.94,
-   "end": 89.18,
-   "type": "word"
-  },
-  {
-   "text": "folhas",
-   "start": 89.18,
-   "end": 89.36,
-   "type": "word"
-  },
-  {
-   "text": "num",
-   "start": 89.36,
-   "end": 89.58,
-   "type": "word"
-  },
-  {
-   "text": "cesto.",
-   "start": 89.58,
-   "end": 90.14,
-   "type": "word"
-  },
-  {
-   "text": "Esse",
-   "start": 90.5,
-   "end": 90.72,
-   "type": "word"
-  },
-  {
-   "text": "é",
-   "start": 90.72,
-   "end": 90.88,
-   "type": "word"
-  },
-  {
-   "text": "o",
-   "start": 90.88,
-   "end": 91.06,
-   "type": "word"
-  },
-  {
-   "text": "skimmer,",
-   "start": 91.06,
-   "end": 91.48,
-   "type": "word"
-  },
-  {
-   "text": "que",
-   "start": 91.68,
-   "end": 91.82,
-   "type": "word"
-  },
-  {
-   "text": "muita",
-   "start": 91.82,
-   "end": 92.02,
-   "type": "word"
-  },
-  {
-   "text": "gente",
-   "start": 92.02,
-   "end": 92.32,
-   "type": "word"
-  },
-  {
-   "text": "chama",
-   "start": 92.32,
-   "end": 92.52,
-   "type": "word"
-  },
-  {
-   "text": "de",
-   "start": 92.52,
-   "end": 92.8,
-   "type": "word"
-  },
-  {
-   "text": "coadeira,",
-   "start": 92.8,
-   "end": 93.3,
-   "type": "word"
-  },
-  {
-   "text": "e",
-   "start": 93.66,
-   "end": 93.78,
-   "type": "word"
-  },
-  {
-   "text": "a",
-   "start": 93.78,
-   "end": 93.9,
+   "end": 86.26,
    "type": "word"
   },
   {
    "text": "sujeira",
-   "start": 93.9,
-   "end": 94.18,
+   "start": 86.26,
+   "end": 86.6,
    "type": "word"
   },
   {
    "text": "pesada",
-   "start": 94.18,
-   "end": 94.78,
+   "start": 86.6,
+   "end": 87.2,
    "type": "word"
   },
   {
    "text": "afunda.",
-   "start": 94.78,
-   "end": 95.28,
+   "start": 87.2,
+   "end": 87.7,
    "type": "word"
   },
   {
    "text": "Então,",
-   "start": 95.88,
-   "end": 96.14,
+   "start": 88.1,
+   "end": 88.3,
    "type": "word"
   },
   {
    "text": "no",
-   "start": 96.28,
-   "end": 96.42,
+   "start": 88.46,
+   "end": 88.56,
    "type": "word"
   },
   {
    "text": "ponto",
-   "start": 96.42,
-   "end": 96.72,
+   "start": 88.56,
+   "end": 88.84,
    "type": "word"
   },
   {
    "text": "mais",
-   "start": 96.72,
-   "end": 97.12,
+   "start": 88.84,
+   "end": 89.24,
    "type": "word"
   },
   {
    "text": "fundo,",
-   "start": 97.12,
-   "end": 97.4,
+   "start": 89.24,
+   "end": 89.52,
    "type": "word"
   },
   {
    "text": "você",
-   "start": 97.6,
-   "end": 97.76,
+   "start": 89.72,
+   "end": 89.86,
    "type": "word"
   },
   {
    "text": "põe",
-   "start": 97.76,
-   "end": 97.84,
+   "start": 89.86,
+   "end": 89.94,
    "type": "word"
   },
   {
    "text": "uma",
-   "start": 97.84,
-   "end": 98.1,
+   "start": 89.94,
+   "end": 90.18,
    "type": "word"
   },
   {
    "text": "saída",
-   "start": 98.1,
-   "end": 98.48,
+   "start": 90.18,
+   "end": 90.56,
    "type": "word"
   },
   {
    "text": "que",
-   "start": 98.48,
-   "end": 98.74,
+   "start": 90.56,
+   "end": 90.8,
    "type": "word"
   },
   {
    "text": "puxa",
-   "start": 98.74,
-   "end": 99.04,
+   "start": 90.8,
+   "end": 91.12,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 99.04,
-   "end": 99.28,
+   "start": 91.12,
+   "end": 91.32,
    "type": "word"
   },
   {
    "text": "água",
-   "start": 99.28,
-   "end": 99.4,
+   "start": 91.32,
+   "end": 91.44,
    "type": "word"
   },
   {
    "text": "lá",
-   "start": 99.4,
-   "end": 99.64,
+   "start": 91.44,
+   "end": 91.68,
    "type": "word"
   },
   {
    "text": "de",
-   "start": 99.64,
-   "end": 99.82,
+   "start": 91.68,
+   "end": 91.84,
    "type": "word"
   },
   {
    "text": "baixo.",
-   "start": 99.82,
-   "end": 100.08,
+   "start": 91.84,
+   "end": 92.1,
    "type": "word"
   },
   {
    "text": "Esse",
-   "start": 100.48,
-   "end": 100.86,
+   "start": 92.56,
+   "end": 92.74,
    "type": "word"
   },
   {
    "text": "é",
-   "start": 100.86,
-   "end": 101.08,
+   "start": 92.74,
+   "end": 92.98,
    "type": "word"
   },
   {
    "text": "o",
-   "start": 101.08,
-   "end": 101.22,
+   "start": 92.98,
+   "end": 93.14,
    "type": "word"
   },
   {
    "text": "ralo",
-   "start": 101.22,
-   "end": 101.4,
+   "start": 93.14,
+   "end": 93.3,
    "type": "word"
   },
   {
    "text": "de",
-   "start": 101.4,
-   "end": 101.68,
+   "start": 93.3,
+   "end": 93.56,
    "type": "word"
   },
   {
    "text": "fundo.",
-   "start": 101.68,
-   "end": 101.92,
+   "start": 93.56,
+   "end": 93.8,
    "type": "word"
   },
   {
    "text": "É",
-   "start": 102.36,
-   "end": 102.48,
+   "start": 94.08,
+   "end": 94.16,
    "type": "word"
   },
   {
    "text": "por",
-   "start": 102.48,
-   "end": 102.7,
+   "start": 94.16,
+   "end": 94.38,
    "type": "word"
   },
   {
    "text": "isso",
-   "start": 102.7,
-   "end": 102.8,
+   "start": 94.38,
+   "end": 94.46,
    "type": "word"
   },
   {
    "text": "que",
-   "start": 102.8,
-   "end": 102.94,
+   "start": 94.46,
+   "end": 94.62,
    "type": "word"
   },
   {
    "text": "piscina",
-   "start": 102.94,
-   "end": 103.24,
+   "start": 94.62,
+   "end": 94.88,
    "type": "word"
   },
   {
    "text": "bem",
-   "start": 103.24,
-   "end": 103.52,
+   "start": 94.88,
+   "end": 95.16,
    "type": "word"
   },
   {
    "text": "feita",
-   "start": 103.52,
-   "end": 103.76,
+   "start": 95.16,
+   "end": 95.4,
    "type": "word"
   },
   {
    "text": "tem",
-   "start": 103.76,
-   "end": 103.98,
+   "start": 95.4,
+   "end": 95.6,
    "type": "word"
   },
   {
    "text": "dois",
-   "start": 103.98,
-   "end": 104.34,
+   "start": 95.6,
+   "end": 95.96,
    "type": "word"
   },
   {
    "text": "ralos",
-   "start": 104.34,
-   "end": 104.7,
+   "start": 95.96,
+   "end": 96.3,
    "type": "word"
   },
   {
    "text": "com",
-   "start": 104.7,
-   "end": 104.88,
+   "start": 96.3,
+   "end": 96.48,
    "type": "word"
   },
   {
    "text": "tampo",
-   "start": 104.88,
-   "end": 105.14,
+   "start": 96.48,
+   "end": 96.72,
    "type": "word"
   },
   {
    "text": "especial.",
-   "start": 105.14,
-   "end": 105.62,
+   "start": 96.72,
+   "end": 97.18,
    "type": "word"
   },
   {
    "text": "A",
-   "start": 106.02,
-   "end": 106.16,
+   "start": 97.5,
+   "end": 97.6,
    "type": "word"
   },
   {
    "text": "sucção",
-   "start": 106.16,
-   "end": 106.6,
+   "start": 97.6,
+   "end": 98.02,
    "type": "word"
   },
   {
    "text": "de",
-   "start": 106.6,
-   "end": 106.74,
+   "start": 98.02,
+   "end": 98.16,
    "type": "word"
   },
   {
    "text": "um",
-   "start": 106.74,
-   "end": 106.86,
+   "start": 98.16,
+   "end": 98.28,
    "type": "word"
   },
   {
    "text": "ralo",
-   "start": 106.86,
-   "end": 107.06,
+   "start": 98.28,
+   "end": 98.48,
    "type": "word"
   },
   {
    "text": "só",
-   "start": 107.06,
-   "end": 107.34,
+   "start": 98.48,
+   "end": 98.76,
    "type": "word"
   },
   {
    "text": "pode",
-   "start": 107.34,
-   "end": 107.72,
+   "start": 98.76,
+   "end": 99.12,
    "type": "word"
   },
   {
    "text": "prender",
-   "start": 107.72,
-   "end": 108.06,
+   "start": 99.12,
+   "end": 99.42,
    "type": "word"
   },
   {
    "text": "o",
-   "start": 108.06,
-   "end": 108.2,
+   "start": 99.42,
+   "end": 99.58,
    "type": "word"
   },
   {
    "text": "cabelo",
-   "start": 108.2,
-   "end": 108.48,
+   "start": 99.58,
+   "end": 99.82,
    "type": "word"
   },
   {
    "text": "de",
-   "start": 108.48,
-   "end": 108.62,
+   "start": 99.82,
+   "end": 99.96,
    "type": "word"
   },
   {
    "text": "quem",
-   "start": 108.62,
-   "end": 108.72,
+   "start": 99.96,
+   "end": 100.06,
    "type": "word"
   },
   {
    "text": "mergulha.",
-   "start": 108.72,
-   "end": 109.46,
+   "start": 100.06,
+   "end": 100.58,
    "type": "word"
   },
   {
    "text": "Mas",
-   "start": 109.62,
-   "end": 109.84,
+   "start": 100.74,
+   "end": 100.96,
    "type": "word"
   },
   {
    "text": "filtro",
-   "start": 109.84,
-   "end": 110.28,
+   "start": 100.96,
+   "end": 101.36,
    "type": "word"
   },
   {
    "text": "não",
-   "start": 110.28,
-   "end": 110.46,
+   "start": 101.36,
+   "end": 101.54,
    "type": "word"
   },
   {
    "text": "segura",
-   "start": 110.46,
-   "end": 110.72,
+   "start": 101.54,
+   "end": 101.8,
    "type": "word"
   },
   {
    "text": "bactéria",
-   "start": 110.72,
-   "end": 111.32,
+   "start": 101.8,
+   "end": 102.36,
    "type": "word"
   },
   {
    "text": "nem",
-   "start": 111.32,
-   "end": 111.54,
+   "start": 102.36,
+   "end": 102.58,
    "type": "word"
   },
   {
    "text": "alga.",
-   "start": 111.54,
-   "end": 112.1,
+   "start": 102.58,
+   "end": 103.02,
    "type": "word"
   },
   {
    "text": "Então",
-   "start": 112.1,
-   "end": 112.42,
+   "start": 103.18,
+   "end": 103.32,
    "type": "word"
   },
   {
    "text": "você",
-   "start": 112.42,
-   "end": 112.72,
+   "start": 103.32,
+   "end": 103.6,
    "type": "word"
   },
   {
    "text": "põe",
-   "start": 112.72,
-   "end": 112.9,
+   "start": 103.6,
+   "end": 103.76,
    "type": "word"
   },
   {
    "text": "na",
-   "start": 112.9,
-   "end": 113.08,
+   "start": 103.76,
+   "end": 104.02,
    "type": "word"
   },
   {
    "text": "água",
-   "start": 113.08,
-   "end": 113.26,
+   "start": 104.02,
+   "end": 104.12,
    "type": "word"
   },
   {
    "text": "um",
-   "start": 113.26,
-   "end": 113.48,
+   "start": 104.12,
+   "end": 104.36,
    "type": "word"
   },
   {
    "text": "produto",
-   "start": 113.48,
-   "end": 113.7,
+   "start": 104.36,
+   "end": 104.54,
    "type": "word"
   },
   {
    "text": "que",
-   "start": 113.7,
-   "end": 113.98,
+   "start": 104.54,
+   "end": 104.82,
    "type": "word"
   },
   {
    "text": "mata",
-   "start": 113.98,
-   "end": 114.22,
+   "start": 104.82,
+   "end": 105.04,
    "type": "word"
   },
   {
    "text": "o",
-   "start": 114.22,
-   "end": 114.36,
+   "start": 105.04,
+   "end": 105.16,
    "type": "word"
   },
   {
    "text": "que",
-   "start": 114.36,
-   "end": 114.46,
+   "start": 105.16,
+   "end": 105.26,
    "type": "word"
   },
   {
    "text": "é",
-   "start": 114.46,
-   "end": 114.6,
+   "start": 105.26,
+   "end": 105.4,
    "type": "word"
   },
   {
    "text": "vivo",
-   "start": 114.6,
-   "end": 114.82,
+   "start": 105.4,
+   "end": 105.62,
    "type": "word"
   },
   {
    "text": "e",
-   "start": 114.82,
-   "end": 115.2,
+   "start": 105.62,
+   "end": 105.98,
    "type": "word"
   },
   {
    "text": "acerta",
-   "start": 115.2,
-   "end": 115.62,
+   "start": 105.98,
+   "end": 106.38,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 115.62,
-   "end": 115.76,
+   "start": 106.38,
+   "end": 106.52,
    "type": "word"
   },
   {
    "text": "acidez",
-   "start": 115.76,
-   "end": 116.12,
+   "start": 106.52,
+   "end": 106.86,
    "type": "word"
   },
   {
    "text": "pra",
-   "start": 116.12,
-   "end": 116.28,
+   "start": 106.86,
+   "end": 107.02,
    "type": "word"
   },
   {
    "text": "ele",
-   "start": 116.28,
-   "end": 116.4,
+   "start": 107.02,
+   "end": 107.18,
    "type": "word"
   },
   {
    "text": "funcionar.",
-   "start": 116.4,
-   "end": 117.1,
+   "start": 107.18,
+   "end": 107.7,
    "type": "word"
   },
   {
    "text": "Esse",
-   "start": 117.44,
-   "end": 117.62,
+   "start": 107.86,
+   "end": 108.22,
    "type": "word"
   },
   {
    "text": "é",
-   "start": 117.62,
-   "end": 117.84,
+   "start": 108.22,
+   "end": 108.4,
    "type": "word"
   },
   {
    "text": "o",
-   "start": 117.84,
-   "end": 118.08,
+   "start": 108.4,
+   "end": 108.64,
    "type": "word"
   },
   {
    "text": "cloro.",
-   "start": 118.08,
-   "end": 118.36,
+   "start": 108.64,
+   "end": 108.88,
    "type": "word"
   },
   {
    "text": "É",
-   "start": 118.74,
-   "end": 118.92,
+   "start": 109.14,
+   "end": 109.24,
    "type": "word"
   },
   {
    "text": "por",
-   "start": 118.92,
-   "end": 119.1,
+   "start": 109.24,
+   "end": 109.46,
    "type": "word"
   },
   {
    "text": "isso",
-   "start": 119.1,
-   "end": 119.24,
+   "start": 109.46,
+   "end": 109.6,
    "type": "word"
   },
   {
    "text": "que",
-   "start": 119.24,
-   "end": 119.36,
+   "start": 109.6,
+   "end": 109.7,
    "type": "word"
   },
   {
    "text": "o",
-   "start": 119.36,
-   "end": 119.38,
+   "start": 109.7,
+   "end": 109.78,
    "type": "word"
   },
   {
    "text": "olho",
-   "start": 119.38,
-   "end": 119.64,
+   "start": 109.78,
+   "end": 109.98,
    "type": "word"
   },
   {
    "text": "arde",
-   "start": 119.64,
-   "end": 119.94,
+   "start": 109.98,
+   "end": 110.26,
    "type": "word"
   },
   {
    "text": "em",
-   "start": 119.94,
-   "end": 120.1,
+   "start": 110.26,
+   "end": 110.4,
    "type": "word"
   },
   {
    "text": "piscina",
-   "start": 120.1,
-   "end": 120.34,
+   "start": 110.4,
+   "end": 110.64,
    "type": "word"
   },
   {
    "text": "mal",
-   "start": 120.34,
-   "end": 120.56,
+   "start": 110.64,
+   "end": 110.84,
    "type": "word"
   },
   {
    "text": "cuidada.",
-   "start": 120.56,
-   "end": 121.08,
+   "start": 110.84,
+   "end": 111.34,
    "type": "word"
   },
   {
    "text": "Quase",
-   "start": 121.3,
-   "end": 121.66,
+   "start": 111.52,
+   "end": 111.86,
    "type": "word"
   },
   {
    "text": "sempre",
-   "start": 121.66,
-   "end": 121.94,
+   "start": 111.86,
+   "end": 112.12,
    "type": "word"
   },
   {
-   "text": "é",
-   "start": 121.94,
-   "end": 122.06,
+   "text": "há",
+   "start": 112.12,
+   "end": 112.3,
    "type": "word"
   },
   {
    "text": "falta",
-   "start": 122.06,
-   "end": 122.26,
+   "start": 112.3,
+   "end": 112.44,
    "type": "word"
   },
   {
    "text": "de",
-   "start": 122.26,
-   "end": 122.5,
+   "start": 112.44,
+   "end": 112.7,
    "type": "word"
   },
   {
    "text": "cuidado,",
-   "start": 122.5,
-   "end": 122.9,
+   "start": 112.7,
+   "end": 113.04,
    "type": "word"
   },
   {
    "text": "não",
-   "start": 123.18,
-   "end": 123.36,
+   "start": 113.3,
+   "end": 113.5,
    "type": "word"
   },
   {
    "text": "cloro",
-   "start": 123.36,
-   "end": 123.68,
+   "start": 113.5,
+   "end": 113.8,
    "type": "word"
   },
   {
    "text": "demais.",
-   "start": 123.68,
-   "end": 124.08,
+   "start": 113.8,
+   "end": 114.18,
    "type": "word"
   },
   {
    "text": "E",
-   "start": 124.62,
-   "end": 124.78,
+   "start": 114.18,
+   "end": 114.58,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 124.78,
-   "end": 124.96,
+   "start": 114.58,
+   "end": 114.78,
    "type": "word"
   },
   {
    "text": "bomba",
-   "start": 124.96,
-   "end": 125.2,
+   "start": 114.78,
+   "end": 115.06,
    "type": "word"
   },
   {
    "text": "e",
-   "start": 125.2,
-   "end": 125.26,
+   "start": 115.06,
+   "end": 115.12,
    "type": "word"
   },
   {
    "text": "o",
-   "start": 125.26,
-   "end": 125.48,
+   "start": 115.12,
+   "end": 115.34,
    "type": "word"
   },
   {
    "text": "filtro",
-   "start": 125.48,
-   "end": 125.76,
+   "start": 115.34,
+   "end": 115.62,
    "type": "word"
   },
   {
    "text": "ficam",
-   "start": 125.76,
-   "end": 126.02,
+   "start": 115.62,
+   "end": 115.84,
    "type": "word"
   },
   {
    "text": "numa",
-   "start": 126.02,
-   "end": 126.2,
+   "start": 115.84,
+   "end": 116.02,
    "type": "word"
   },
   {
    "text": "caixinha",
-   "start": 126.2,
-   "end": 126.64,
+   "start": 116.02,
+   "end": 116.46,
    "type": "word"
   },
   {
    "text": "ao",
-   "start": 126.64,
-   "end": 126.9,
+   "start": 116.46,
+   "end": 116.68,
    "type": "word"
   },
   {
    "text": "lado,",
-   "start": 126.9,
-   "end": 127.12,
+   "start": 116.68,
+   "end": 116.94,
    "type": "word"
   },
   {
    "text": "mais",
-   "start": 127.3,
-   "end": 127.52,
+   "start": 117.12,
+   "end": 117.28,
    "type": "word"
   },
   {
    "text": "baixa",
-   "start": 127.52,
-   "end": 127.82,
+   "start": 117.28,
+   "end": 117.58,
    "type": "word"
   },
   {
    "text": "que",
-   "start": 127.82,
-   "end": 127.98,
+   "start": 117.58,
+   "end": 117.74,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 127.98,
-   "end": 128.14,
+   "start": 117.74,
+   "end": 117.9,
    "type": "word"
   },
   {
    "text": "água,",
-   "start": 128.14,
-   "end": 128.34,
+   "start": 117.9,
+   "end": 118.1,
    "type": "word"
   },
   {
    "text": "pra",
-   "start": 128.46,
-   "end": 128.58,
+   "start": 118.24,
+   "end": 118.32,
    "type": "word"
   },
   {
    "text": "bomba",
-   "start": 128.58,
-   "end": 128.96,
+   "start": 118.32,
+   "end": 118.7,
    "type": "word"
   },
   {
    "text": "já",
-   "start": 128.96,
-   "end": 129.2,
+   "start": 118.7,
+   "end": 118.9,
    "type": "word"
   },
   {
    "text": "começar",
-   "start": 129.2,
-   "end": 129.54,
+   "start": 118.9,
+   "end": 119.26,
    "type": "word"
   },
   {
    "text": "cheia.",
-   "start": 129.54,
-   "end": 130.12,
+   "start": 119.26,
+   "end": 119.76,
    "type": "word"
   },
   {
    "text": "Essa",
-   "start": 130.42,
-   "end": 130.68,
+   "start": 120.04,
+   "end": 120.22,
    "type": "word"
   },
   {
    "text": "é",
-   "start": 130.68,
-   "end": 130.96,
+   "start": 120.22,
+   "end": 120.48,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 130.96,
-   "end": 131.02,
+   "start": 120.48,
+   "end": 120.5,
    "type": "word"
   },
   {
    "text": "casa",
-   "start": 131.02,
-   "end": 131.28,
+   "start": 120.5,
+   "end": 120.78,
    "type": "word"
   },
   {
    "text": "de",
-   "start": 131.28,
-   "end": 131.5,
+   "start": 120.78,
+   "end": 121.0,
    "type": "word"
   },
   {
    "text": "máquinas.",
-   "start": 131.5,
-   "end": 132.28,
+   "start": 121.0,
+   "end": 121.58,
    "type": "word"
   },
   {
    "text": "Mas",
-   "start": 132.42,
-   "end": 132.68,
+   "start": 121.74,
+   "end": 121.9,
    "type": "word"
   },
   {
    "text": "pedra",
-   "start": 132.68,
-   "end": 133.02,
+   "start": 121.9,
+   "end": 122.26,
    "type": "word"
   },
   {
    "text": "escura",
-   "start": 133.02,
-   "end": 133.34,
+   "start": 122.26,
+   "end": 122.58,
    "type": "word"
   },
   {
    "text": "no",
-   "start": 133.34,
-   "end": 133.54,
+   "start": 122.58,
+   "end": 122.76,
    "type": "word"
   },
   {
    "text": "sol",
-   "start": 133.54,
-   "end": 133.8,
+   "start": 122.76,
+   "end": 123.02,
    "type": "word"
   },
   {
    "text": "queima",
-   "start": 133.8,
-   "end": 134.22,
+   "start": 123.02,
+   "end": 123.44,
    "type": "word"
   },
   {
    "text": "o",
-   "start": 134.22,
-   "end": 134.38,
+   "start": 123.44,
+   "end": 123.58,
    "type": "word"
   },
   {
-   "text": "pé,",
-   "start": 134.38,
-   "end": 134.5,
+   "text": "pé",
+   "start": 123.58,
+   "end": 123.7,
    "type": "word"
   },
   {
    "text": "e",
-   "start": 134.74,
-   "end": 134.86,
+   "start": 123.7,
+   "end": 124.0,
    "type": "word"
   },
   {
    "text": "molhada",
-   "start": 134.86,
-   "end": 135.36,
+   "start": 124.0,
+   "end": 124.52,
    "type": "word"
   },
   {
    "text": "escorrega.",
-   "start": 135.36,
-   "end": 136.22,
+   "start": 124.52,
+   "end": 125.26,
    "type": "word"
   },
   {
    "text": "Então",
-   "start": 136.34,
-   "end": 136.56,
+   "start": 125.42,
+   "end": 125.54,
    "type": "word"
   },
   {
    "text": "você",
-   "start": 136.56,
-   "end": 136.86,
+   "start": 125.54,
+   "end": 125.8,
    "type": "word"
   },
   {
    "text": "contorna",
-   "start": 136.86,
-   "end": 137.3,
+   "start": 125.8,
+   "end": 126.26,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 137.3,
-   "end": 137.52,
+   "start": 126.26,
+   "end": 126.5,
    "type": "word"
   },
   {
    "text": "piscina",
-   "start": 137.52,
-   "end": 137.78,
+   "start": 126.5,
+   "end": 126.74,
    "type": "word"
   },
   {
    "text": "com",
-   "start": 137.78,
-   "end": 137.96,
+   "start": 126.74,
+   "end": 126.9,
    "type": "word"
   },
   {
    "text": "uma",
-   "start": 137.96,
-   "end": 138.14,
+   "start": 126.9,
+   "end": 127.06,
    "type": "word"
   },
   {
    "text": "pedra",
-   "start": 138.14,
-   "end": 138.48,
+   "start": 127.06,
+   "end": 127.42,
    "type": "word"
   },
   {
    "text": "clara",
-   "start": 138.48,
-   "end": 138.9,
+   "start": 127.42,
+   "end": 127.82,
    "type": "word"
   },
   {
    "text": "e",
-   "start": 138.9,
-   "end": 139.12,
+   "start": 127.82,
+   "end": 128.04,
    "type": "word"
   },
   {
    "text": "áspera,",
-   "start": 139.12,
-   "end": 139.64,
+   "start": 128.04,
+   "end": 128.52,
    "type": "word"
   },
   {
    "text": "inclinada",
-   "start": 139.8,
-   "end": 140.12,
+   "start": 128.68,
+   "end": 129.0,
    "type": "word"
   },
   {
    "text": "pra",
-   "start": 140.12,
-   "end": 140.42,
+   "start": 129.0,
+   "end": 129.26,
    "type": "word"
   },
   {
    "text": "fora,",
-   "start": 140.42,
-   "end": 140.72,
+   "start": 129.26,
+   "end": 129.54,
    "type": "word"
   },
   {
    "text": "pra",
-   "start": 140.78,
-   "end": 141.0,
+   "start": 129.7,
+   "end": 129.82,
    "type": "word"
   },
   {
    "text": "chuva",
-   "start": 141.0,
-   "end": 141.3,
+   "start": 129.82,
+   "end": 130.12,
    "type": "word"
   },
   {
    "text": "não",
-   "start": 141.3,
-   "end": 141.46,
+   "start": 130.12,
+   "end": 130.3,
    "type": "word"
   },
   {
    "text": "entrar.",
-   "start": 141.46,
-   "end": 141.8,
+   "start": 130.3,
+   "end": 130.52,
    "type": "word"
   },
   {
    "text": "Essa",
-   "start": 142.36,
-   "end": 142.56,
+   "start": 130.9,
+   "end": 131.14,
    "type": "word"
   },
   {
    "text": "é",
-   "start": 142.56,
-   "end": 142.8,
+   "start": 131.14,
+   "end": 131.42,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 142.8,
-   "end": 142.86,
+   "start": 131.42,
+   "end": 131.48,
    "type": "word"
   },
   {
    "text": "borda",
-   "start": 142.86,
-   "end": 143.28,
+   "start": 131.48,
+   "end": 131.84,
    "type": "word"
   },
   {
    "text": "térmica.",
-   "start": 143.28,
-   "end": 144.12,
+   "start": 131.84,
+   "end": 132.34,
    "type": "word"
   },
   {
    "text": "Mas",
-   "start": 144.22,
-   "end": 144.36,
+   "start": 132.58,
+   "end": 132.7,
    "type": "word"
   },
   {
    "text": "um",
-   "start": 144.36,
-   "end": 144.6,
+   "start": 132.7,
+   "end": 132.94,
    "type": "word"
   },
   {
    "text": "dia",
-   "start": 144.6,
-   "end": 144.76,
+   "start": 132.94,
+   "end": 133.1,
    "type": "word"
   },
   {
    "text": "vocês",
-   "start": 144.76,
-   "end": 145.08,
+   "start": 133.1,
+   "end": 133.4,
    "type": "word"
   },
   {
    "text": "vaziam",
-   "start": 145.08,
-   "end": 145.46,
+   "start": 133.4,
+   "end": 133.78,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 145.46,
-   "end": 145.64,
+   "start": 133.78,
+   "end": 133.96,
    "type": "word"
   },
   {
    "text": "piscina",
-   "start": 145.64,
-   "end": 145.84,
+   "start": 133.96,
+   "end": 134.14,
    "type": "word"
   },
   {
    "text": "pra",
-   "start": 145.84,
-   "end": 146.0,
+   "start": 134.14,
+   "end": 134.3,
    "type": "word"
   },
   {
    "text": "limpar",
-   "start": 146.0,
-   "end": 146.42,
+   "start": 134.3,
+   "end": 134.7,
    "type": "word"
   },
   {
    "text": "e",
-   "start": 146.42,
-   "end": 146.72,
+   "start": 134.7,
+   "end": 135.0,
    "type": "word"
   },
   {
    "text": "chove",
-   "start": 146.72,
-   "end": 147.12,
+   "start": 135.0,
+   "end": 135.38,
    "type": "word"
   },
   {
    "text": "forte.",
-   "start": 147.12,
-   "end": 147.6,
+   "start": 135.38,
+   "end": 135.84,
    "type": "word"
   },
   {
    "text": "A",
-   "start": 148.06,
-   "end": 148.18,
+   "start": 136.16,
+   "end": 136.28,
    "type": "word"
   },
   {
    "text": "água",
-   "start": 148.18,
-   "end": 148.32,
+   "start": 136.28,
+   "end": 136.42,
    "type": "word"
   },
   {
    "text": "do",
-   "start": 148.32,
-   "end": 148.52,
+   "start": 136.42,
+   "end": 136.62,
    "type": "word"
   },
   {
    "text": "chão",
-   "start": 148.52,
-   "end": 148.72,
+   "start": 136.62,
+   "end": 136.8,
    "type": "word"
   },
   {
    "text": "empurra",
-   "start": 148.72,
-   "end": 149.26,
+   "start": 136.8,
+   "end": 137.26,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 149.26,
-   "end": 149.4,
+   "start": 137.26,
+   "end": 137.42,
    "type": "word"
   },
   {
    "text": "caixa",
-   "start": 149.4,
-   "end": 149.62,
+   "start": 137.42,
+   "end": 137.68,
    "type": "word"
   },
   {
    "text": "vazia",
-   "start": 149.62,
-   "end": 149.96,
+   "start": 137.68,
+   "end": 138.0,
    "type": "word"
   },
   {
    "text": "pra",
-   "start": 149.96,
-   "end": 150.24,
+   "start": 138.0,
+   "end": 138.26,
    "type": "word"
   },
   {
    "text": "cima,",
-   "start": 150.24,
-   "end": 150.52,
+   "start": 138.26,
+   "end": 138.52,
    "type": "word"
   },
   {
    "text": "como",
-   "start": 150.7,
-   "end": 150.82,
+   "start": 138.66,
+   "end": 138.82,
    "type": "word"
   },
   {
    "text": "um",
-   "start": 150.82,
-   "end": 151.06,
+   "start": 138.82,
+   "end": 139.06,
    "type": "word"
   },
   {
    "text": "barco,",
-   "start": 151.06,
-   "end": 151.46,
+   "start": 139.06,
+   "end": 139.5,
    "type": "word"
   },
   {
    "text": "e",
-   "start": 151.64,
-   "end": 151.74,
+   "start": 139.56,
+   "end": 139.7,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 151.74,
-   "end": 151.9,
+   "start": 139.7,
+   "end": 139.88,
    "type": "word"
   },
   {
    "text": "piscina",
-   "start": 151.9,
-   "end": 152.26,
+   "start": 139.88,
+   "end": 140.22,
    "type": "word"
   },
   {
    "text": "sai",
-   "start": 152.26,
-   "end": 152.52,
+   "start": 140.22,
+   "end": 140.44,
    "type": "word"
   },
   {
    "text": "do",
-   "start": 152.52,
-   "end": 152.74,
+   "start": 140.44,
+   "end": 140.68,
    "type": "word"
   },
   {
    "text": "chão.",
-   "start": 152.74,
-   "end": 152.98,
+   "start": 140.68,
+   "end": 140.88,
    "type": "word"
   },
   {
    "text": "Então",
-   "start": 153.22,
-   "end": 153.4,
+   "start": 140.88,
+   "end": 141.3,
    "type": "word"
   },
   {
    "text": "você",
-   "start": 153.4,
-   "end": 153.76,
+   "start": 141.3,
+   "end": 141.64,
    "type": "word"
   },
   {
    "text": "põe",
-   "start": 153.76,
-   "end": 153.86,
+   "start": 141.64,
+   "end": 141.8,
    "type": "word"
   },
   {
    "text": "no",
-   "start": 153.86,
-   "end": 154.08,
+   "start": 141.8,
+   "end": 141.96,
    "type": "word"
   },
   {
    "text": "fundo",
-   "start": 154.08,
-   "end": 154.36,
+   "start": 141.96,
+   "end": 142.22,
    "type": "word"
   },
   {
    "text": "uma",
-   "start": 154.36,
-   "end": 154.68,
+   "start": 142.22,
+   "end": 142.54,
    "type": "word"
   },
   {
    "text": "válvula",
-   "start": 154.68,
-   "end": 155.2,
+   "start": 142.54,
+   "end": 143.04,
    "type": "word"
   },
   {
    "text": "que",
-   "start": 155.2,
-   "end": 155.48,
+   "start": 143.04,
+   "end": 143.3,
    "type": "word"
   },
   {
    "text": "abre",
-   "start": 155.48,
-   "end": 155.72,
+   "start": 143.3,
+   "end": 143.54,
    "type": "word"
   },
   {
    "text": "quando",
-   "start": 155.72,
-   "end": 155.98,
+   "start": 143.54,
+   "end": 143.82,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 155.98,
-   "end": 156.14,
+   "start": 143.82,
+   "end": 143.94,
    "type": "word"
   },
   {
    "text": "água",
-   "start": 156.14,
-   "end": 156.28,
+   "start": 143.94,
+   "end": 144.08,
    "type": "word"
   },
   {
    "text": "de",
-   "start": 156.28,
-   "end": 156.56,
+   "start": 144.08,
+   "end": 144.36,
    "type": "word"
   },
   {
    "text": "fora",
-   "start": 156.56,
-   "end": 156.74,
+   "start": 144.36,
+   "end": 144.52,
    "type": "word"
   },
   {
    "text": "empurra",
-   "start": 156.74,
-   "end": 157.08,
+   "start": 144.52,
+   "end": 144.86,
    "type": "word"
   },
   {
    "text": "mais",
-   "start": 157.08,
-   "end": 157.44,
+   "start": 144.86,
+   "end": 145.18,
    "type": "word"
   },
   {
-   "text": "forte,",
-   "start": 157.44,
-   "end": 157.8,
+   "text": "forte.",
+   "start": 145.18,
+   "end": 145.52,
    "type": "word"
   },
   {
-   "text": "e",
-   "start": 158.12,
-   "end": 158.22,
+   "text": "E",
+   "start": 145.84,
+   "end": 145.9,
    "type": "word"
   },
   {
    "text": "deixa",
-   "start": 158.22,
-   "end": 158.4,
+   "start": 145.9,
+   "end": 146.1,
    "type": "word"
   },
   {
    "text": "essa",
-   "start": 158.4,
-   "end": 158.62,
+   "start": 146.1,
+   "end": 146.3,
    "type": "word"
   },
   {
    "text": "água",
-   "start": 158.62,
-   "end": 158.82,
+   "start": 146.3,
+   "end": 146.5,
    "type": "word"
   },
   {
    "text": "entrar.",
-   "start": 158.82,
-   "end": 159.16,
+   "start": 146.5,
+   "end": 146.78,
    "type": "word"
   },
   {
    "text": "A",
-   "start": 159.54,
-   "end": 159.72,
+   "start": 147.1,
+   "end": 147.24,
    "type": "word"
   },
   {
    "text": "piscina",
-   "start": 159.72,
-   "end": 159.94,
+   "start": 147.24,
+   "end": 147.46,
    "type": "word"
   },
   {
    "text": "fica",
-   "start": 159.94,
-   "end": 160.16,
+   "start": 147.46,
+   "end": 147.66,
    "type": "word"
   },
   {
    "text": "pesada",
-   "start": 160.16,
-   "end": 160.82,
+   "start": 147.66,
+   "end": 148.28,
    "type": "word"
   },
   {
    "text": "e",
-   "start": 160.82,
-   "end": 160.94,
+   "start": 148.28,
+   "end": 148.44,
    "type": "word"
   },
   {
    "text": "não",
-   "start": 160.94,
-   "end": 161.16,
+   "start": 148.44,
+   "end": 148.6,
    "type": "word"
   },
   {
    "text": "sobe.",
-   "start": 161.16,
-   "end": 161.72,
+   "start": 148.6,
+   "end": 149.04,
    "type": "word"
   },
   {
    "text": "Essa",
-   "start": 161.9,
-   "end": 162.28,
+   "start": 149.42,
+   "end": 149.58,
    "type": "word"
   },
   {
    "text": "é",
-   "start": 162.28,
-   "end": 162.52,
+   "start": 149.58,
+   "end": 149.84,
    "type": "word"
   },
   {
    "text": "a",
-   "start": 162.52,
-   "end": 162.64,
+   "start": 149.84,
+   "end": 149.98,
    "type": "word"
   },
   {
    "text": "válvula",
-   "start": 162.64,
-   "end": 163.0,
+   "start": 149.98,
+   "end": 150.3,
    "type": "word"
   },
   {
    "text": "hidrostática.",
-   "start": 163.0,
-   "end": 163.78,
+   "start": 150.3,
+   "end": 151.08,
    "type": "word"
   },
   {
    "text": "Coloque",
-   "start": 164.24,
-   "end": 164.42,
+   "start": 151.38,
+   "end": 151.54,
    "type": "word"
   },
   {
    "text": "uma",
-   "start": 164.42,
-   "end": 164.62,
+   "start": 151.54,
+   "end": 151.74,
    "type": "word"
   },
   {
    "text": "escada,",
-   "start": 164.62,
-   "end": 165.12,
+   "start": 151.74,
+   "end": 152.28,
    "type": "word"
   },
   {
    "text": "uma",
-   "start": 165.4,
-   "end": 165.56,
+   "start": 152.52,
+   "end": 152.62,
    "type": "word"
   },
   {
    "text": "luz",
-   "start": 165.56,
-   "end": 165.76,
+   "start": 152.62,
+   "end": 152.82,
    "type": "word"
   },
   {
    "text": "embaixo",
-   "start": 165.76,
-   "end": 166.1,
+   "start": 152.82,
+   "end": 153.14,
    "type": "word"
   },
   {
    "text": "d",
-   "start": 166.1,
-   "end": 166.36,
+   "start": 153.14,
+   "end": 153.38,
    "type": "word"
   },
   {
    "text": "'água",
-   "start": 166.36,
-   "end": 166.5,
+   "start": 153.38,
+   "end": 153.52,
    "type": "word"
   },
   {
    "text": "e",
-   "start": 166.5,
-   "end": 166.72,
+   "start": 153.52,
+   "end": 153.76,
    "type": "word"
   },
   {
    "text": "uma",
-   "start": 166.72,
-   "end": 166.98,
+   "start": 153.76,
+   "end": 153.98,
    "type": "word"
   },
   {
    "text": "boia",
-   "start": 166.98,
-   "end": 167.2,
+   "start": 153.98,
+   "end": 154.2,
    "type": "word"
   },
   {
    "text": "de",
-   "start": 167.2,
-   "end": 167.4,
+   "start": 154.2,
+   "end": 154.4,
    "type": "word"
   },
   {
    "text": "unicórnio.",
-   "start": 167.4,
-   "end": 167.94,
+   "start": 154.4,
+   "end": 154.86,
    "type": "word"
   },
   {
    "text": "Agora",
-   "start": 168.06,
-   "end": 168.4,
+   "start": 155.24,
+   "end": 155.34,
    "type": "word"
   },
   {
    "text": "é",
-   "start": 168.4,
-   "end": 168.62,
+   "start": 155.34,
+   "end": 155.54,
    "type": "word"
   },
   {
    "text": "só",
-   "start": 168.62,
-   "end": 168.82,
+   "start": 155.54,
+   "end": 155.74,
    "type": "word"
   },
   {
    "text": "pular.",
-   "start": 168.82,
-   "end": 169.2,
+   "start": 155.74,
+   "end": 156.1,
    "type": "word"
   },
   {
    "text": "Parabéns!",
-   "start": 169.2,
-   "end": 170.26,
+   "start": 156.58,
+   "end": 157.06,
    "type": "word"
   },
   {
    "text": "Você",
-   "start": 170.32,
-   "end": 170.6,
+   "start": 157.12,
+   "end": 157.36,
    "type": "word"
   },
   {
    "text": "construiu",
-   "start": 170.6,
-   "end": 171.0,
+   "start": 157.36,
+   "end": 157.74,
    "type": "word"
   },
   {
    "text": "uma",
-   "start": 171.0,
-   "end": 171.2,
+   "start": 157.74,
+   "end": 157.96,
    "type": "word"
   },
   {
    "text": "piscina!",
-   "start": 171.2,
-   "end": 171.76,
+   "start": 157.96,
+   "end": 158.48,
    "type": "word"
   },
   {
    "text": "Se",
-   "start": 172.08,
-   "end": 172.18,
+   "start": 158.7,
+   "end": 158.84,
    "type": "word"
   },
   {
    "text": "você",
-   "start": 172.18,
-   "end": 172.4,
+   "start": 158.84,
+   "end": 159.04,
    "type": "word"
   },
   {
    "text": "já",
-   "start": 172.4,
-   "end": 172.6,
+   "start": 159.04,
+   "end": 159.24,
    "type": "word"
   },
   {
    "text": "sabia,",
-   "start": 172.6,
-   "end": 172.96,
+   "start": 159.24,
+   "end": 159.58,
    "type": "word"
   },
   {
    "text": "comente",
-   "start": 173.24,
-   "end": 173.6,
+   "start": 159.86,
+   "end": 160.22,
    "type": "word"
   },
   {
    "text": "piscineiro.",
-   "start": 173.6,
-   "end": 174.4,
+   "start": 160.22,
+   "end": 160.96,
    "type": "word"
   },
   {
    "text": "Se",
-   "start": 174.72,
-   "end": 174.84,
+   "start": 161.2,
+   "end": 161.32,
    "type": "word"
   },
   {
    "text": "não",
-   "start": 174.84,
-   "end": 175.02,
+   "start": 161.32,
+   "end": 161.48,
    "type": "word"
   },
   {
    "text": "sabia,",
-   "start": 175.02,
-   "end": 175.4,
+   "start": 161.48,
+   "end": 161.88,
    "type": "word"
   },
   {
    "text": "comente",
-   "start": 175.68,
-   "end": 176.06,
+   "start": 162.14,
+   "end": 162.5,
    "type": "word"
   },
   {
    "text": "boia.",
-   "start": 176.06,
-   "end": 176.48,
+   "start": 162.5,
+   "end": 162.9,
    "type": "word"
   }
  ]

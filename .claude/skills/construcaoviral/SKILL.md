@@ -109,7 +109,8 @@ Siga `references/elevenlabs.md`. Resumo:
 2. Revise e entregue o texto **na conversa, num bloco de código** para copiar, com caracteres, palavras, duração
    estimada e palavras de pronúncia duvidosa. **PARE.**
 3. Se o usuário mandar o áudio gerado: `scripts/transcrever_audio.py <slug> <arquivo>` (tempo por palavra) +
-   `scripts/medir_audio.py <slug>`; mostre e peça aprovação antes da F5.
+   `scripts/medir_audio.py <slug>`; se o ritmo estiver fora do formato, ofereça regerar ou
+   `scripts/ajustar_ritmo.py <slug>`; mostre e peça aprovação antes da F5.
 
 ## F5 — Produção (só com áudio aprovado)
 Siga `references/producao.md`: storyboard cronometrado pelos timestamps reais (`04-storyboard.md`), depois

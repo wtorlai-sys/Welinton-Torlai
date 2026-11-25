@@ -23,7 +23,8 @@ if not os.path.exists(src):
 d = proj(slug) / "03-narracao"; d.mkdir(exist_ok=True)
 ext = os.path.splitext(src)[1].lower() or ".mp3"
 dst = d / f"narracao{ext}"
-shutil.copy(src, dst)
+if os.path.abspath(src) != os.path.abspath(dst):
+    shutil.copy(src, dst)
 
 wav = os.path.join(tempfile.mkdtemp(), "a.wav")
 subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(dst), "-ac", "1", "-ar", "16000", wav], check=True)

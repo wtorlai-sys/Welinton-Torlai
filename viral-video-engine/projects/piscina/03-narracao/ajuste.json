@@ -1,0 +1,13 @@
+{
+ "original": "narracao-original.mp3",
+ "duracao_original_s": 176.64,
+ "silencios_encurtados": 50,
+ "tempo_removido_s": 7.12,
+ "duracao_apos_pausas_s": 169.52,
+ "fator_velocidade": 1.0396,
+ "filtro": "rubberband",
+ "duracao_final_s": 163.11,
+ "ppm_estimado": 200,
+ "alvo_ppm": 200.0,
+ "pausa_max_s": 0.25
+}
