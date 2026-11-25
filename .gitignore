@@ -1,3 +1,6 @@
 node_modules/
 out/
 .DS_Store
+
+# vídeos finais (pesados; entregues fora do git)
+viral-video-engine/output/*.mp4

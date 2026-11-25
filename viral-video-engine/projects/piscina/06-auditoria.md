@@ -1,7 +1,6 @@
 # Parabéns! Você construiu uma piscina — ENTREGA 6: Auditoria final (do plano)
 
-Escopo: auditoria do **plano de produção** (storyboard + produção). O vídeo ainda não foi renderizado; quando for,
-repetir a auditoria com stills e o MP4 final (itens marcados ⏳).
+Escopo: plano + **vídeo final renderizado em código** (`viral-video-engine/output/piscina.mp4`, não versionado no git).
 
 | Critério | Nota 0–5 | Evidência |
 |---|---|---|
@@ -11,7 +10,7 @@ repetir a auditoria com stills e o MP4 final (itens marcados ⏳).
 | Ritmo | 4 | áudio 200 ppm, 9 pausas; cenas ≤ 6,5 s; maior trecho sem impacto 75–99 s (compensado por mudança para subaquático) |
 | Clareza | 4 | forças com setas coloridas e cortes; legenda sobe nas 8 cenas com ação embaixo. Risco: cena 37 (sucção afogada) é a mais abstrata — linha "NÍVEL DA ÁGUA" ajuda |
 | Potencial de retenção (hipótese) | 4 | impactos a cada ~15–25 s; re-gancho principal aos 139 s antes do fecho; objeto-vítima (boia) recorrente |
-| Qualidade da execução | ⏳ | depende do render: conferir stills nos 16 instantes de QC, −14 LUFS, área segura |
+| Qualidade da execução | 4 | 1080x1920, 30 fps, 4.894 frames, 163,1 s; `checar_frames.py`: 0 frames corrompidos; master −13,8 LUFS; voz ~14 dB acima do fundo; ~40 stills conferidos. Pontos fracos: cena da luz da piscina (152–153 s) um pouco estourada; mascote fica pequeno em alguns planos gerais |
 
 ## Pontos de possível queda (hipóteses, sem dados)
 1. 41–64 s: dois ciclos de vedação seguidos (impermeabilização, revestimento) — mais "obra", menos ameaça.
@@ -31,3 +30,12 @@ repetir a auditoria com stills e o MP4 final (itens marcados ⏳).
 Visualizações, retenção média, duração média assistida, taxa de conclusão, comentários "piscineiro"/"boia",
 compartilhamentos, salvamentos; gráfico de retenção comparado às cenas 3, 9, 22, 44 (impactos) e 75–99 s (vale
 previsto). Registrar em `viral-video-engine/conhecimento/metricas/desempenho.csv`.
+
+## Execução (render em código)
+- Kit reutilizável `src/construcaoviral/` + episódio `src/construcaoviral/episodios/piscina/` (composição `Piscina`).
+- Correções feitas no QC por stills: buraco coberto pelo gramado de fundo; céu aparecendo sob o solo no corte;
+  camadas finas ilegíveis (exageradas para 6 / 4,5 cm); legenda colidindo com rótulos (desvio automático);
+  câmeras do rasgo, ralo e válvula; luz da piscina aparecendo antes de existir; etiquetas fora da tela.
+- 1º render com `--concurrency=4` saiu com 476 frames em mosaico (falha do render por software); refeito com
+  `--concurrency=1`: 0 frames ruins. Mix encurtava 3 s: corrigido (duração presa à voz).
+- Canal no CTA: **sem nome de canal** (o das referências não é do usuário). Informe o nome do seu canal para incluir.
