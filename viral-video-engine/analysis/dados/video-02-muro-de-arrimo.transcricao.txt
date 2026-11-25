@@ -1,0 +1,53 @@
+# Transcrição automática (Whisper medium, PT) com correções manuais marcadas em analysis/metodologia.md
+[000.00 → 003.70] Se você cortar o barranco do lado da sua casa pra fazer uma vaga pro seu carro,
+[003.96 → 006.76] você não vai ter uma garagem, vai ter um carro enterrado.
+[007.12 → 009.32] Porque a terra cortada em pé, não fica em pé.
+[009.56 → 012.66] Na primeira chuva forte, ela escorrega e soterra o carro inteiro.
+[012.98 → 015.68] Então você levanta um muro de tijolo na frente do barranco.
+[016.16 → 018.22] Mas a terra empurra esse muro o dia inteiro,
+[018.52 → 021.40] e um dia ele faz barriga, racha e tomba pra frente.
+[021.78 → 024.72] Então você faz o muro de concreto, com um pé largo embaixo,
+[025.02 → 028.06] enterrado em terra firme, que entra por baixo da terra do barranco.
+[028.06 → 032.76] Agora a própria terra que empurra o muro fica em cima desse pé e segura ele no lugar.
+[033.08 → 034.24] Essa é a sapata.
+[034.42 → 036.72] Mas o empurrão da terra é mais forte lá embaixo,
+[036.96 → 040.06] e o muro dobra bem no pé, abrindo uma trinca do lado da terra.
+[040.36 → 043.84] Então você põe barras de aço dentro do muro, coladas no lado da terra,
+[044.20 → 046.38] descendo e dobrando pra dentro da sapata.
+[046.64 → 047.68] Essa é a armadura.
+[047.96 → 051.48] É por isso que, no muro de arrimo, o aço principal fica do lado de trás,
+[051.68 → 052.80] e não do lado que você vê.
+[053.22 → 055.90] Mas o muro inteiro escorrega pra frente, devagarinho,
+[055.98 → 057.32] arrastando a sapata no chão.
+[057.32 → 061.26] Então você faz, embaixo da sapata, um degrau de concreto pra baixo,
+[061.52 → 063.76] cravado no chão, que trava o muro no lugar.
+[064.06 → 065.12] Esse é o dente.
+[065.36 → 068.08] Mas, quando chove, a água fica presa atrás do muro.
+[068.34 → 071.70] A terra encharca, fica pesada, e a água empurra junto com ela.
+[071.98 → 073.22] O empurrão pode dobrar.
+[073.56 → 075.48] Então você atravessa o muro com canos,
+[075.68 → 077.50] inclinados pra fora, pra água escapar.
+[077.78 → 080.82] Esses são os barbacãs, que muita gente chama de ladrão.
+[081.10 → 083.18] É por isso que muro de arrimo tem aqueles canos
+[083.18 → 085.24] que ficam pingando dias depois da chuva.
+[085.24 → 089.38] Mas a água leva a terra junto, e em poucos meses os canos entopem.
+[089.66 → 092.62] Então, atrás do muro, você põe uma camada de pedra britada
+[092.62 → 096.00] enrolada numa manta que deixa a água passar, mas segura a terra.
+[096.26 → 098.84] E lá embaixo, um cano furado levando a água embora.
+[099.12 → 100.04] Esse é o dreno.
+[100.30 → 103.34] É por isso que muro de arrimo costuma cair depois de chuva forte.
+[103.60 → 105.90] Quase sempre, a água não tinha por onde sair.
+[106.14 → 109.48] Mas um muro comprido racha sozinho no meio, sem ninguém empurrar,
+[109.60 → 112.82] porque o concreto encolhe quando seca e mexe com o calor e o frio.
+[113.16 → 115.00] Então você divide o muro em pedaços,
+[115.00 → 118.92] mais ou menos a cada 6 a 10 metros, com uma folguinha vedada entre eles.
+[119.42 → 120.96] Essa é a junta de dilatação.
+[121.36 → 125.08] É por isso que muro comprido tem aqueles riscos em pé de tempos em tempos.
+[125.32 → 127.94] Coloque uma canaleta lá em cima pra desviar a enxurrada,
+[128.22 → 129.52] uma grade pra ninguém cair,
+[129.78 → 131.76] grama no barranco pra chuva não lavar a terra,
+[132.08 → 132.66] e um portão.
+[133.12 → 135.54] Agora é só estacionar o carro e deixar a chuva cair.
+[135.78 → 138.26] Parabéns! Você construiu um muro de arrimo.
+[138.66 → 141.04] Comenta "criador" se você quer que eu te ensine a criar um vídeo
+[141.04 → 142.34] inteiro desses em um dia.

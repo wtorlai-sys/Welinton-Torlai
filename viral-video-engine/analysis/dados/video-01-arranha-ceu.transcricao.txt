@@ -1,0 +1,50 @@
+# Transcrição automática (Whisper medium, PT) com correções manuais marcadas em analysis/metodologia.md
+[000.00 → 004.04] Se você tirar o telhado da sua casa e empilhar um monte de andares em cima dela,
+[004.30 → 007.00] você não vai ter um prédio, vai ter uma catástrofe.
+[007.66 → 011.86] Porque quem segura a sua casa são paredes ou pilares dimensionados para uma casa,
+[012.12 → 015.44] e cada andar a mais pesa nos de baixo, até o tijolo esmagar.
+[015.74 → 021.16] Pra aguentar só 16 andares assim, a parede do térreo teria que ter quase 2 metros de grossura.
+[021.38 → 024.10] Então você troca as paredes por um esqueleto de concreto,
+[024.42 → 027.22] colunas em pé ligadas por barras deitadas em cada andar.
+[027.22 → 030.68] Esses são os pilares, e essas são as vigas.
+[030.88 → 035.02] O peso desce pelas vigas até os pilares, e pelos pilares até o chão.
+[035.38 → 037.06] As paredes não seguram mais nada.
+[037.40 → 041.56] É por isso que, na reforma, dá pra derrubar parede, mas pilar não se toca.
+[041.84 → 044.82] Mas o concreto aguenta aperto, e não aguenta puxão.
+[045.12 → 048.18] Quando a viga entorta, a parte de baixo é puxada e racha.
+[048.48 → 052.54] Então você põe barras de aço dentro dela, embaixo, que aguentam o puxão.
+[052.80 → 054.48] Esse é o concreto armado.
+[054.48 → 057.80] Mas ele ainda tá em cima da fundação da sua casa, que é rasa.
+[058.18 → 061.42] Com tanto peso, ele afunda na terra fofa e tomba.
+[061.60 → 064.82] Então você arranca essa fundação e crava colunas compridas,
+[064.94 → 067.46] que descem dezenas de metros até o chão firme.
+[067.76 → 069.06] Essas são as estacas.
+[069.38 → 073.34] Mas, quanto mais alto, mais forte o vento, e o prédio fino entorta.
+[073.64 → 079.26] Então você levanta no meio dele um tubo de concreto, largo e fechado, do chão até o topo.
+[079.34 → 082.30] Ele quase não entorta e segura o prédio contra o vento.
+[082.38 → 084.26] E os elevadores passam por dentro dele.
+[084.26 → 085.90] Esse é o núcleo.
+[086.08 → 089.70] Mas, se ele for alto e fino demais, lá em cima ele ainda balança,
+[089.88 → 091.70] e quem mora no último andar fica enjoado.
+[092.08 → 094.48] Então você pendura no topo um peso gigante,
+[094.68 → 097.44] que balança pro lado contrário e freia o balanço.
+[097.58 → 099.32] Esse é o amortecedor de massa.
+[099.62 → 103.08] E, como as paredes de fora não seguram nada, elas podem ser de vidro,
+[103.16 → 104.66] que é leve e deixa a luz entrar.
+[104.92 → 106.44] Essa é a pele de vidro.
+[106.70 → 108.40] E lá em cima não tem telhado.
+[108.54 → 110.98] Nessa altura, o vento pode até arrancar as telhas.
+[111.18 → 113.08] Então o topo é uma laje reta.
+[113.08 → 115.18] Mas laje reta não racha e vaza?
+[115.68 → 118.58] Por isso você cobre com uma manta que estica sem rasgar
+[118.58 → 120.96] e deixa uma leve inclinação até os ralos.
+[121.34 → 122.82] Essa é a impermeabilização.
+[123.14 → 126.66] E, logo embaixo da laje, tem um andar só pras máquinas dos elevadores,
+[126.92 → 128.68] a caixa d'água e o amortecedor.
+[129.02 → 130.90] Esse é o andar técnico.
+[131.12 → 134.94] Coloque uma portaria, um interfone e um vizinho que arrasta móveis à meia-noite.
+[135.30 → 138.24] Agora é só pegar o elevador e subir até o último andar.
+[138.74 → 141.16] Parabéns! Você construiu um arranha-céu!
+[141.68 → 143.78] Se você já sabia, comente "construtor".
+[143.96 → 145.74] Se não sabia, comente "aprendiz".
+[146.04 → 147.18] E segue o Desmontando o Mundo.

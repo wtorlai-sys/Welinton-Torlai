@@ -1,0 +1,32 @@
+{
+ "1": {
+  "seconds": 147,
+  "static_lt1": 18,
+  "low_1_5": 50,
+  "mid_5_15": 53,
+  "high_ge15": 26,
+  "visual_peaks": 56,
+  "mean_interval_between_peaks": 2.64,
+  "median_interval": 2.0
+ },
+ "2": {
+  "seconds": 142,
+  "static_lt1": 20,
+  "low_1_5": 41,
+  "mid_5_15": 67,
+  "high_ge15": 14,
+  "visual_peaks": 64,
+  "mean_interval_between_peaks": 2.18,
+  "median_interval": 2.0
+ },
+ "3": {
+  "seconds": 165,
+  "static_lt1": 43,
+  "low_1_5": 83,
+  "mid_5_15": 28,
+  "high_ge15": 11,
+  "visual_peaks": 36,
+  "mean_interval_between_peaks": 4.4,
+  "median_interval": 3.0
+ }
+}
