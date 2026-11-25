@@ -9,12 +9,13 @@ VOZ=public/construcaoviral/$S/narracao.mp3
 SFX=out/construcaoviral/${S}_sfx.wav
 MUS=out/construcaoviral/${S}_musica.wav
 MIX=out/construcaoviral/${S}_mix.m4a
+DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$VOZ")
 # Voz ao centro; trilha ~20 dB abaixo e SFX ~10 dB abaixo, os dois com sidechain da voz; master -14 LUFS, TP -1 dB.
 ffmpeg -v error -y -i "$VOZ" -i "$SFX" -i "$MUS" -filter_complex \
-  "[0:a]aformat=sample_rates=44100:channel_layouts=stereo,loudnorm=I=-16:TP=-2:LRA=7,asplit=3[voz][sc1][sc2]; \
-   [1:a]volume=0.68[fx]; [fx][sc1]sidechaincompress=threshold=0.05:ratio=3:attack=15:release=300[fxd]; \
-   [2:a]volume=0.2[mu]; [mu][sc2]sidechaincompress=threshold=0.03:ratio=6:attack=30:release=500[mud]; \
-   [voz][fxd][mud]amix=inputs=3:normalize=0:duration=first,loudnorm=I=-14:TP=-1:LRA=11" \
+  "[0:a]aformat=sample_rates=44100:channel_layouts=stereo,loudnorm=I=-16:TP=-2:LRA=7,apad,atrim=0:${DUR},asplit=3[voz][sc1][sc2]; \
+   [1:a]volume=0.68,apad[fx]; [fx][sc1]sidechaincompress=threshold=0.05:ratio=3:attack=15:release=300[fxd]; \
+   [2:a]volume=0.2,apad[mu]; [mu][sc2]sidechaincompress=threshold=0.03:ratio=6:attack=30:release=500[mud]; \
+   [voz]apad[vozp];[vozp][fxd][mud]amix=inputs=3:normalize=0:duration=longest,atrim=0:${DUR},loudnorm=I=-14:TP=-1:LRA=11" \
   -c:a aac -b:a 256k "$MIX"
 echo "ok $MIX"
 [ "${2:-}" = "audio" ] && exit 0

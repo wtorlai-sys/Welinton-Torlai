@@ -44,7 +44,10 @@ timestamps), determinismo e reaproveitamento do mundo entre vídeos.
 | `scripts/construcaoviral_mixar.sh <slug>` | ducking + master −14 LUFS + junta vídeo mudo e áudio em `viral-video-engine/output/<slug>.mp4` |
 
 Fluxo: `linha.ts` com tempos de `frases.json` → stills de QC (`node scripts/render-stills.mjs <Comp> <frames>`) → corrigir →
-`npx remotion render <Comp> out/construcaoviral/<slug>_mudo.mp4 --props='{"mudo":true}' --muted` → áudio → mixar.
+`npx remotion render <Comp> out/construcaoviral/<slug>_mudo.mp4 --props='{"mudo":true}' --muted --concurrency=1` →
+`python3 .claude/skills/construcaoviral/scripts/checar_frames.py out/construcaoviral/<slug>_mudo.mp4` (tem que dar 0) → áudio → mixar.
+**Sempre `--concurrency=1` neste ambiente**: com 2 ou 4 o render por software gera ~4–10% de frames em mosaico
+(sem legenda/etiquetas), intermitentes; com 1 saiu limpo e na mesma velocidade (~0,4 s/frame).
 Lições do 1º episódio: o gramado de fundo precisa de "buraco" na área do terreno; solo do corte até y=−9 (senão
 aparece céu embaixo); camadas finas (impermeabilização, azulejo) só ficam legíveis exageradas (5–6 cm); mascote
 fora da faixa x da câmera de corte fica cortado; rótulo amarelo e legenda colidem — a legenda desvia sozinha.
