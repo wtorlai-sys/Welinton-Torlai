@@ -15,6 +15,12 @@ Se um pedido conflitar com o guia, aponte o conflito antes de implementar.
 - Tudo determinístico: sem `Math.random()` sem seed, sem `Date.now()`, sem `delta` de `useFrame`.
 - Toda cena tem pelo menos 1 elemento-gag e `captionY` escolhido para não cobrir a ação.
 
+## Exceção: formato "Construção Viral"
+Vídeos do formato "Você Construiu" (skill `construcaoviral`, pasta `viral-video-engine/`) usam **mascote 3D
+low-poly** em mundo 3D low-poly, por decisão do usuário (2026-11-25). Para eles, a regra "Personagem é 2D" não se
+aplica; determinismo, formato 1080x1920, área segura e QC por stills continuam valendo. Veja
+`viral-video-engine/CLAUDE.md`.
+
 ## Comandos
 ```bash
 npm install

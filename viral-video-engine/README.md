@@ -1,6 +1,6 @@
 # Viral Video Engine
 
-Sistema de engenharia reversa de vídeos virais → formato → skill de produção (`construcao-viral`).
+Sistema de engenharia reversa (instruções em `CLAUDE.md`) de vídeos virais → formato → skill de produção (`construcaoviral`).
 
 ## Status das etapas
 | Etapa | Situação | Arquivos |
@@ -8,11 +8,11 @@ Sistema de engenharia reversa de vídeos virais → formato → skill de produç
 | A — Inventário | ✅ concluída | `analysis/00-inventario.md`, `analysis/metodologia.md` |
 | B — Engenharia reversa individual | ✅ concluída | `analysis/video-01-arranha-ceu.md`, `video-02-muro-de-arrimo.md`, `video-03-telhado.md` |
 | C — Comparação | ✅ concluída | `analysis/comparacao-geral.md` |
-| D — Formato | ✅ concluída (aguardando revisão do usuário) | `FORMATO_IDENTIFICADO.md` |
-| E — Skill | ⏸ aguardando aprovação das descobertas | — |
-| F — ElevenLabs | ⏸ | — |
-| G — Teste com tema novo | ⏸ | — |
-| H — Validação dos pontos de aprovação | ⏸ | — |
+| D — Formato | ✅ concluída | `FORMATO_IDENTIFICADO.md` (link para a skill) |
+| E — Skill | ✅ `construcaoviral` | `.claude/skills/construcaoviral/` (link em `skills/`) |
+| F — ElevenLabs | ⚠ integração pronta; chave salva é inválida (não começa com `sk_`) | `scripts/elevenlabs.py`, `references/elevenlabs.md` |
+| G — Teste com tema novo | ✅ até a F4 (piscina); áudio bloqueado pela chave | `projects/piscina/`, `conhecimento/teste-da-skill-2026-11-25.md` |
+| H — Validação dos pontos de aprovação | ✅ 9/9 testes | `conhecimento/teste-da-skill-2026-11-25.md` |
 
 ## Dados de apoio
 - `analysis/dados/*.transcricao.txt` — transcrição com timestamps (Whisper medium + correções).
