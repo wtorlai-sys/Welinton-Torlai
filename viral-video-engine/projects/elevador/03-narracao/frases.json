@@ -1,0 +1,2286 @@
+[
+ {
+  "n": 1,
+  "frase": "Se você pendurar uma caixa numa corda e puxar até o alto do prédio, você não vai ter um elevador, vai ter uma queda de doze andares.",
+  "inicio": 0.0,
+  "fim": 7.12,
+  "palavras": [
+   {
+    "t": "Se",
+    "s": 0.0
+   },
+   {
+    "t": "você",
+    "s": 0.2
+   },
+   {
+    "t": "pendurar",
+    "s": 0.48
+   },
+   {
+    "t": "uma",
+    "s": 0.74
+   },
+   {
+    "t": "caixa",
+    "s": 1.02
+   },
+   {
+    "t": "numa",
+    "s": 1.26
+   },
+   {
+    "t": "corda",
+    "s": 1.48
+   },
+   {
+    "t": "e",
+    "s": 1.98
+   },
+   {
+    "t": "puxar",
+    "s": 2.12
+   },
+   {
+    "t": "até",
+    "s": 2.48
+   },
+   {
+    "t": "o",
+    "s": 2.7
+   },
+   {
+    "t": "alto",
+    "s": 2.9
+   },
+   {
+    "t": "do",
+    "s": 3.04
+   },
+   {
+    "t": "prédio,",
+    "s": 3.26
+   },
+   {
+    "t": "você",
+    "s": 3.9
+   },
+   {
+    "t": "não",
+    "s": 4.04
+   },
+   {
+    "t": "vai",
+    "s": 4.2
+   },
+   {
+    "t": "ter",
+    "s": 4.32
+   },
+   {
+    "t": "um",
+    "s": 4.42
+   },
+   {
+    "t": "elevador.",
+    "s": 4.58
+   },
+   {
+    "t": "Vai",
+    "s": 5.16
+   },
+   {
+    "t": "ter",
+    "s": 5.28
+   },
+   {
+    "t": "uma",
+    "s": 5.4
+   },
+   {
+    "t": "queda",
+    "s": 5.64
+   },
+   {
+    "t": "de",
+    "s": 5.88
+   },
+   {
+    "t": "andares,",
+    "s": 6.48
+   }
+  ]
+ },
+ {
+  "n": 2,
+  "frase": "Porque corda estica, desfia e arrebenta.",
+  "inicio": 7.24,
+  "fim": 10.02,
+  "palavras": [
+   {
+    "t": "porque",
+    "s": 7.24
+   },
+   {
+    "t": "corda",
+    "s": 7.54
+   },
+   {
+    "t": "estica,",
+    "s": 7.9
+   },
+   {
+    "t": "desfia",
+    "s": 8.66
+   },
+   {
+    "t": "e",
+    "s": 9.06
+   },
+   {
+    "t": "arrebenta.",
+    "s": 9.36
+   }
+  ]
+ },
+ {
+  "n": 3,
+  "frase": "E uma cabine com oito pessoas dentro passa de uma tonelada.",
+  "inicio": 10.28,
+  "fim": 13.32,
+  "palavras": [
+   {
+    "t": "E",
+    "s": 10.28
+   },
+   {
+    "t": "uma",
+    "s": 10.38
+   },
+   {
+    "t": "cabine",
+    "s": 10.54
+   },
+   {
+    "t": "com",
+    "s": 10.8
+   },
+   {
+    "t": "pessoas",
+    "s": 11.2
+   },
+   {
+    "t": "dentro",
+    "s": 11.58
+   },
+   {
+    "t": "passa",
+    "s": 11.94
+   },
+   {
+    "t": "de",
+    "s": 12.22
+   },
+   {
+    "t": "tonelada.",
+    "s": 12.82
+   }
+  ]
+ },
+ {
+  "n": 4,
+  "frase": "Então você troca a corda por um cabo de aço, puxado por um motor lá em cima.",
+  "inicio": 13.5,
+  "fim": 17.4,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 13.5
+   },
+   {
+    "t": "você",
+    "s": 13.74
+   },
+   {
+    "t": "troca",
+    "s": 14.04
+   },
+   {
+    "t": "a",
+    "s": 14.32
+   },
+   {
+    "t": "corda",
+    "s": 14.52
+   },
+   {
+    "t": "por",
+    "s": 14.74
+   },
+   {
+    "t": "um",
+    "s": 14.92
+   },
+   {
+    "t": "cabo",
+    "s": 15.08
+   },
+   {
+    "t": "de",
+    "s": 15.24
+   },
+   {
+    "t": "aço,",
+    "s": 15.54
+   },
+   {
+    "t": "puxado",
+    "s": 15.96
+   },
+   {
+    "t": "por",
+    "s": 16.22
+   },
+   {
+    "t": "um",
+    "s": 16.38
+   },
+   {
+    "t": "motor",
+    "s": 16.54
+   },
+   {
+    "t": "lá",
+    "s": 16.8
+   },
+   {
+    "t": "em",
+    "s": 17.06
+   },
+   {
+    "t": "cima.",
+    "s": 17.2
+   }
+  ]
+ },
+ {
+  "n": 5,
+  "frase": "Mas pra levantar mais de uma tonelada sozinho, esse motor precisa ser enorme, e gasta energia demais a cada viagem.",
+  "inicio": 17.6,
+  "fim": 23.88,
+  "palavras": [
+   {
+    "t": "Mas",
+    "s": 17.6
+   },
+   {
+    "t": "levantar",
+    "s": 17.92
+   },
+   {
+    "t": "mais",
+    "s": 18.38
+   },
+   {
+    "t": "de",
+    "s": 18.64
+   },
+   {
+    "t": "tonelada",
+    "s": 18.88
+   },
+   {
+    "t": "sozinho,",
+    "s": 19.32
+   },
+   {
+    "t": "esse",
+    "s": 20.14
+   },
+   {
+    "t": "motor",
+    "s": 20.26
+   },
+   {
+    "t": "precisa",
+    "s": 20.54
+   },
+   {
+    "t": "ser",
+    "s": 20.84
+   },
+   {
+    "t": "enorme",
+    "s": 21.14
+   },
+   {
+    "t": "e",
+    "s": 21.8
+   },
+   {
+    "t": "gasta",
+    "s": 22.12
+   },
+   {
+    "t": "energia",
+    "s": 22.34
+   },
+   {
+    "t": "demais",
+    "s": 22.7
+   },
+   {
+    "t": "a",
+    "s": 23.16
+   },
+   {
+    "t": "cada",
+    "s": 23.32
+   },
+   {
+    "t": "viagem.",
+    "s": 23.48
+   }
+  ]
+ },
+ {
+  "n": 6,
+  "frase": "Então você pendura, do outro lado do cabo, um bloco de ferro pesado.",
+  "inicio": 24.14,
+  "fim": 27.96,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 24.14
+   },
+   {
+    "t": "você",
+    "s": 24.34
+   },
+   {
+    "t": "pendura,",
+    "s": 24.6
+   },
+   {
+    "t": "do",
+    "s": 25.2
+   },
+   {
+    "t": "outro",
+    "s": 25.38
+   },
+   {
+    "t": "lado",
+    "s": 25.58
+   },
+   {
+    "t": "do",
+    "s": 25.76
+   },
+   {
+    "t": "cabo,",
+    "s": 26.0
+   },
+   {
+    "t": "um",
+    "s": 26.46
+   },
+   {
+    "t": "bloco",
+    "s": 26.62
+   },
+   {
+    "t": "de",
+    "s": 26.92
+   },
+   {
+    "t": "ferro",
+    "s": 27.14
+   },
+   {
+    "t": "pesado.",
+    "s": 27.36
+   }
+  ]
+ },
+ {
+  "n": 7,
+  "frase": "Quando a cabine sobe, ele desce.",
+  "inicio": 27.96,
+  "fim": 29.92,
+  "palavras": [
+   {
+    "t": "Quando",
+    "s": 27.96
+   },
+   {
+    "t": "a",
+    "s": 28.22
+   },
+   {
+    "t": "cabine",
+    "s": 28.38
+   },
+   {
+    "t": "sobe,",
+    "s": 28.62
+   },
+   {
+    "t": "ele",
+    "s": 29.26
+   },
+   {
+    "t": "desce.",
+    "s": 29.44
+   }
+  ]
+ },
+ {
+  "n": 8,
+  "frase": "Quando ela desce, ele sobe.",
+  "inicio": 30.14,
+  "fim": 31.66,
+  "palavras": [
+   {
+    "t": "Quando",
+    "s": 30.14
+   },
+   {
+    "t": "ela",
+    "s": 30.2
+   },
+   {
+    "t": "desce,",
+    "s": 30.42
+   },
+   {
+    "t": "ele",
+    "s": 31.02
+   },
+   {
+    "t": "sobe.",
+    "s": 31.26
+   }
+  ]
+ },
+ {
+  "n": 9,
+  "frase": "Ele pesa o mesmo que a cabine, mais metade das pessoas que cabem nela.",
+  "inicio": 31.78,
+  "fim": 35.42,
+  "palavras": [
+   {
+    "t": "Ele",
+    "s": 31.78
+   },
+   {
+    "t": "pesa",
+    "s": 31.94
+   },
+   {
+    "t": "o",
+    "s": 32.18
+   },
+   {
+    "t": "mesmo",
+    "s": 32.34
+   },
+   {
+    "t": "que",
+    "s": 32.58
+   },
+   {
+    "t": "a",
+    "s": 32.68
+   },
+   {
+    "t": "cabine,",
+    "s": 32.88
+   },
+   {
+    "t": "metade",
+    "s": 33.56
+   },
+   {
+    "t": "das",
+    "s": 34.04
+   },
+   {
+    "t": "pessoas",
+    "s": 34.24
+   },
+   {
+    "t": "que",
+    "s": 34.62
+   },
+   {
+    "t": "cabem",
+    "s": 34.86
+   },
+   {
+    "t": "nela.",
+    "s": 35.04
+   }
+  ]
+ },
+ {
+  "n": 10,
+  "frase": "Assim, o motor só precisa puxar a diferença.",
+  "inicio": 35.54,
+  "fim": 37.96,
+  "palavras": [
+   {
+    "t": "Assim,",
+    "s": 35.54
+   },
+   {
+    "t": "o",
+    "s": 36.18
+   },
+   {
+    "t": "motor",
+    "s": 36.28
+   },
+   {
+    "t": "só",
+    "s": 36.5
+   },
+   {
+    "t": "precisa",
+    "s": 36.68
+   },
+   {
+    "t": "puxar",
+    "s": 36.96
+   },
+   {
+    "t": "a",
+    "s": 37.36
+   },
+   {
+    "t": "diferença.",
+    "s": 37.56
+   }
+  ]
+ },
+ {
+  "n": 11,
+  "frase": "Esse é o contrapeso.",
+  "inicio": 38.36,
+  "fim": 39.68,
+  "palavras": [
+   {
+    "t": "Esse",
+    "s": 38.36
+   },
+   {
+    "t": "é",
+    "s": 38.64
+   },
+   {
+    "t": "o",
+    "s": 38.9
+   },
+   {
+    "t": "contrapeso.",
+    "s": 39.18
+   }
+  ]
+ },
+ {
+  "n": 12,
+  "frase": "Mas a cabine e o contrapeso ficam balançando dentro do prédio e batendo nas paredes.",
+  "inicio": 39.9,
+  "fim": 44.3,
+  "palavras": [
+   {
+    "t": "Mas",
+    "s": 39.9
+   },
+   {
+    "t": "a",
+    "s": 40.04
+   },
+   {
+    "t": "cabine",
+    "s": 40.28
+   },
+   {
+    "t": "e",
+    "s": 40.56
+   },
+   {
+    "t": "o",
+    "s": 40.6
+   },
+   {
+    "t": "contrapeso",
+    "s": 40.86
+   },
+   {
+    "t": "ficam",
+    "s": 41.3
+   },
+   {
+    "t": "balançando",
+    "s": 41.58
+   },
+   {
+    "t": "dentro",
+    "s": 42.2
+   },
+   {
+    "t": "do",
+    "s": 42.46
+   },
+   {
+    "t": "prédio",
+    "s": 42.64
+   },
+   {
+    "t": "e",
+    "s": 42.98
+   },
+   {
+    "t": "batendo",
+    "s": 43.2
+   },
+   {
+    "t": "nas",
+    "s": 43.5
+   },
+   {
+    "t": "paredes.",
+    "s": 43.66
+   }
+  ]
+ },
+ {
+  "n": 13,
+  "frase": "Então você instala trilhos de aço do fundo até o topo, e os dois correm encaixados neles.",
+  "inicio": 44.48,
+  "fim": 49.52,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 44.48
+   },
+   {
+    "t": "você",
+    "s": 44.62
+   },
+   {
+    "t": "instala",
+    "s": 44.86
+   },
+   {
+    "t": "trilhos",
+    "s": 45.18
+   },
+   {
+    "t": "de",
+    "s": 45.62
+   },
+   {
+    "t": "aço",
+    "s": 45.9
+   },
+   {
+    "t": "do",
+    "s": 46.04
+   },
+   {
+    "t": "fundo",
+    "s": 46.34
+   },
+   {
+    "t": "até",
+    "s": 46.66
+   },
+   {
+    "t": "o",
+    "s": 47.0
+   },
+   {
+    "t": "topo,",
+    "s": 47.22
+   },
+   {
+    "t": "e",
+    "s": 47.68
+   },
+   {
+    "t": "os",
+    "s": 47.78
+   },
+   {
+    "t": "dois",
+    "s": 47.96
+   },
+   {
+    "t": "correm",
+    "s": 48.16
+   },
+   {
+    "t": "encaixados",
+    "s": 48.5
+   },
+   {
+    "t": "neles.",
+    "s": 49.16
+   }
+  ]
+ },
+ {
+  "n": 14,
+  "frase": "Essas são as guias.",
+  "inicio": 49.84,
+  "fim": 50.96,
+  "palavras": [
+   {
+    "t": "Essas",
+    "s": 49.84
+   },
+   {
+    "t": "são",
+    "s": 50.22
+   },
+   {
+    "t": "as",
+    "s": 50.38
+   },
+   {
+    "t": "guias.",
+    "s": 50.68
+   }
+  ]
+ },
+ {
+  "n": 15,
+  "frase": "Mas se o cabo arrebentar, a cabine cai do mesmo jeito.",
+  "inicio": 51.26,
+  "fim": 53.98,
+  "palavras": [
+   {
+    "t": "Mas",
+    "s": 51.26
+   },
+   {
+    "t": "se",
+    "s": 51.4
+   },
+   {
+    "t": "o",
+    "s": 51.56
+   },
+   {
+    "t": "cabo",
+    "s": 51.74
+   },
+   {
+    "t": "arrebentar,",
+    "s": 51.74
+   },
+   {
+    "t": "a",
+    "s": 52.6
+   },
+   {
+    "t": "cabine",
+    "s": 52.74
+   },
+   {
+    "t": "cai",
+    "s": 52.96
+   },
+   {
+    "t": "do",
+    "s": 53.14
+   },
+   {
+    "t": "mesmo",
+    "s": 53.4
+   },
+   {
+    "t": "jeito.",
+    "s": 53.64
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "frase": "Então você não usa um cabo só.",
+  "inicio": 53.98,
+  "fim": 55.88,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 53.98
+   },
+   {
+    "t": "você",
+    "s": 54.4
+   },
+   {
+    "t": "não",
+    "s": 54.66
+   },
+   {
+    "t": "usa",
+    "s": 54.84
+   },
+   {
+    "t": "um",
+    "s": 55.02
+   },
+   {
+    "t": "cabo",
+    "s": 55.34
+   },
+   {
+    "t": "só,",
+    "s": 55.56
+   }
+  ]
+ },
+ {
+  "n": 17,
+  "frase": "Usa vários, lado a lado, e cada um aguenta muito mais do que o peso da cabine cheia.",
+  "inicio": 56.06,
+  "fim": 60.98,
+  "palavras": [
+   {
+    "t": "usa",
+    "s": 56.06
+   },
+   {
+    "t": "vários,",
+    "s": 56.3
+   },
+   {
+    "t": "lado",
+    "s": 57.04
+   },
+   {
+    "t": "a",
+    "s": 57.24
+   },
+   {
+    "t": "lado,",
+    "s": 57.44
+   },
+   {
+    "t": "e",
+    "s": 57.96
+   },
+   {
+    "t": "cada",
+    "s": 58.04
+   },
+   {
+    "t": "um",
+    "s": 58.3
+   },
+   {
+    "t": "aguenta",
+    "s": 58.5
+   },
+   {
+    "t": "muito",
+    "s": 58.82
+   },
+   {
+    "t": "mais",
+    "s": 59.32
+   },
+   {
+    "t": "do",
+    "s": 59.52
+   },
+   {
+    "t": "que",
+    "s": 59.66
+   },
+   {
+    "t": "o",
+    "s": 59.74
+   },
+   {
+    "t": "peso",
+    "s": 59.8
+   },
+   {
+    "t": "da",
+    "s": 59.98
+   },
+   {
+    "t": "cabine",
+    "s": 60.18
+   },
+   {
+    "t": "cheia.",
+    "s": 60.5
+   }
+  ]
+ },
+ {
+  "n": 18,
+  "frase": "Esses são os cabos de tração.",
+  "inicio": 61.26,
+  "fim": 62.84,
+  "palavras": [
+   {
+    "t": "Esses",
+    "s": 61.26
+   },
+   {
+    "t": "são",
+    "s": 61.56
+   },
+   {
+    "t": "os",
+    "s": 61.78
+   },
+   {
+    "t": "cabos",
+    "s": 62.02
+   },
+   {
+    "t": "de",
+    "s": 62.24
+   },
+   {
+    "t": "tração.",
+    "s": 62.48
+   }
+  ]
+ },
+ {
+  "n": 19,
+  "frase": "Mas a energia pode acabar no meio da viagem.",
+  "inicio": 63.04,
+  "fim": 65.24,
+  "palavras": [
+   {
+    "t": "Mas",
+    "s": 63.04
+   },
+   {
+    "t": "a",
+    "s": 63.2
+   },
+   {
+    "t": "energia",
+    "s": 63.36
+   },
+   {
+    "t": "pode",
+    "s": 63.7
+   },
+   {
+    "t": "acabar",
+    "s": 63.94
+   },
+   {
+    "t": "no",
+    "s": 64.28
+   },
+   {
+    "t": "meio",
+    "s": 64.48
+   },
+   {
+    "t": "da",
+    "s": 64.56
+   },
+   {
+    "t": "viagem.",
+    "s": 64.76
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "frase": "Então você coloca no motor um freio apertado por molas.",
+  "inicio": 65.42,
+  "fim": 68.56,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 65.42
+   },
+   {
+    "t": "você",
+    "s": 65.56
+   },
+   {
+    "t": "coloca",
+    "s": 65.82
+   },
+   {
+    "t": "no",
+    "s": 66.08
+   },
+   {
+    "t": "motor",
+    "s": 66.22
+   },
+   {
+    "t": "um",
+    "s": 66.58
+   },
+   {
+    "t": "freio",
+    "s": 66.96
+   },
+   {
+    "t": "apertado",
+    "s": 67.18
+   },
+   {
+    "t": "por",
+    "s": 67.7
+   },
+   {
+    "t": "molas.",
+    "s": 67.98
+   }
+  ]
+ },
+ {
+  "n": 21,
+  "frase": "Ele vive fechado, e é a energia que abre o freio.",
+  "inicio": 68.68,
+  "fim": 71.72,
+  "palavras": [
+   {
+    "t": "Ele",
+    "s": 68.68
+   },
+   {
+    "t": "vive",
+    "s": 68.98
+   },
+   {
+    "t": "fechado,",
+    "s": 69.26
+   },
+   {
+    "t": "e",
+    "s": 70.04
+   },
+   {
+    "t": "é",
+    "s": 70.14
+   },
+   {
+    "t": "a",
+    "s": 70.26
+   },
+   {
+    "t": "energia",
+    "s": 70.28
+   },
+   {
+    "t": "que",
+    "s": 70.78
+   },
+   {
+    "t": "abre",
+    "s": 71.06
+   },
+   {
+    "t": "o",
+    "s": 71.18
+   },
+   {
+    "t": "freio.",
+    "s": 71.4
+   }
+  ]
+ },
+ {
+  "n": 22,
+  "frase": "Faltou luz, as molas apertam, e a cabine para onde está.",
+  "inicio": 71.86,
+  "fim": 74.92,
+  "palavras": [
+   {
+    "t": "Faltou",
+    "s": 71.86
+   },
+   {
+    "t": "luz,",
+    "s": 72.16
+   },
+   {
+    "t": "as",
+    "s": 72.68
+   },
+   {
+    "t": "molas",
+    "s": 72.88
+   },
+   {
+    "t": "apertam",
+    "s": 73.1
+   },
+   {
+    "t": "e",
+    "s": 73.62
+   },
+   {
+    "t": "a",
+    "s": 73.8
+   },
+   {
+    "t": "cabine",
+    "s": 73.96
+   },
+   {
+    "t": "para",
+    "s": 74.22
+   },
+   {
+    "t": "onde",
+    "s": 74.48
+   },
+   {
+    "t": "está.",
+    "s": 74.72
+   }
+  ]
+ },
+ {
+  "n": 23,
+  "frase": "Esse é o freio da máquina.",
+  "inicio": 75.2,
+  "fim": 76.76,
+  "palavras": [
+   {
+    "t": "Esse",
+    "s": 75.2
+   },
+   {
+    "t": "é",
+    "s": 75.6
+   },
+   {
+    "t": "o",
+    "s": 75.84
+   },
+   {
+    "t": "freio",
+    "s": 76.08
+   },
+   {
+    "t": "da",
+    "s": 76.26
+   },
+   {
+    "t": "máquina.",
+    "s": 76.44
+   }
+  ]
+ },
+ {
+  "n": 24,
+  "frase": "É por isso que, quando falta luz, o elevador para e não cai.",
+  "inicio": 77.04,
+  "fim": 80.4,
+  "palavras": [
+   {
+    "t": "É",
+    "s": 77.04
+   },
+   {
+    "t": "por",
+    "s": 77.2
+   },
+   {
+    "t": "isso",
+    "s": 77.46
+   },
+   {
+    "t": "que,",
+    "s": 77.62
+   },
+   {
+    "t": "quando",
+    "s": 77.88
+   },
+   {
+    "t": "falta",
+    "s": 78.12
+   },
+   {
+    "t": "luz,",
+    "s": 78.4
+   },
+   {
+    "t": "o",
+    "s": 78.92
+   },
+   {
+    "t": "elevador",
+    "s": 79.02
+   },
+   {
+    "t": "para",
+    "s": 79.44
+   },
+   {
+    "t": "e",
+    "s": 79.74
+   },
+   {
+    "t": "não",
+    "s": 80.0
+   },
+   {
+    "t": "cai.",
+    "s": 80.2
+   }
+  ]
+ },
+ {
+  "n": 25,
+  "frase": "Mas, se tudo isso falhar, a cabine pode descer rápido demais.",
+  "inicio": 80.4,
+  "fim": 84.3,
+  "palavras": [
+   {
+    "t": "Mas,",
+    "s": 80.4
+   },
+   {
+    "t": "se",
+    "s": 81.08
+   },
+   {
+    "t": "tudo",
+    "s": 81.36
+   },
+   {
+    "t": "isso",
+    "s": 81.68
+   },
+   {
+    "t": "falhar,",
+    "s": 81.92
+   },
+   {
+    "t": "a",
+    "s": 82.54
+   },
+   {
+    "t": "cabine",
+    "s": 82.68
+   },
+   {
+    "t": "pode",
+    "s": 82.88
+   },
+   {
+    "t": "descer",
+    "s": 83.12
+   },
+   {
+    "t": "rápido",
+    "s": 83.5
+   },
+   {
+    "t": "demais.",
+    "s": 83.84
+   }
+  ]
+ },
+ {
+  "n": 26,
+  "frase": "Então você coloca embaixo dela garras de aço que agarram os trilhos e travam a cabine ali mesmo.",
+  "inicio": 84.68,
+  "fim": 89.8,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 84.68
+   },
+   {
+    "t": "você",
+    "s": 84.78
+   },
+   {
+    "t": "coloca",
+    "s": 85.04
+   },
+   {
+    "t": "embaixo",
+    "s": 85.34
+   },
+   {
+    "t": "dela",
+    "s": 85.7
+   },
+   {
+    "t": "garras",
+    "s": 86.08
+   },
+   {
+    "t": "de",
+    "s": 86.56
+   },
+   {
+    "t": "aço",
+    "s": 86.76
+   },
+   {
+    "t": "que",
+    "s": 86.96
+   },
+   {
+    "t": "agarram",
+    "s": 87.18
+   },
+   {
+    "t": "os",
+    "s": 87.58
+   },
+   {
+    "t": "trilhos",
+    "s": 87.86
+   },
+   {
+    "t": "e",
+    "s": 88.14
+   },
+   {
+    "t": "travam",
+    "s": 88.42
+   },
+   {
+    "t": "a",
+    "s": 88.74
+   },
+   {
+    "t": "cabine",
+    "s": 88.92
+   },
+   {
+    "t": "ali",
+    "s": 89.2
+   },
+   {
+    "t": "mesmo.",
+    "s": 89.46
+   }
+  ]
+ },
+ {
+  "n": 27,
+  "frase": "Esse é o freio de segurança.",
+  "inicio": 90.2,
+  "fim": 91.68,
+  "palavras": [
+   {
+    "t": "Esse",
+    "s": 90.2
+   },
+   {
+    "t": "é",
+    "s": 90.4
+   },
+   {
+    "t": "o",
+    "s": 90.68
+   },
+   {
+    "t": "freio",
+    "s": 90.86
+   },
+   {
+    "t": "de",
+    "s": 91.04
+   },
+   {
+    "t": "segurança.",
+    "s": 91.32
+   }
+  ]
+ },
+ {
+  "n": 28,
+  "frase": "Mas quem avisa as garras que está rápido demais?",
+  "inicio": 91.96,
+  "fim": 94.1,
+  "palavras": [
+   {
+    "t": "Mas",
+    "s": 91.96
+   },
+   {
+    "t": "quem",
+    "s": 92.12
+   },
+   {
+    "t": "avisa",
+    "s": 92.36
+   },
+   {
+    "t": "as",
+    "s": 92.6
+   },
+   {
+    "t": "garras",
+    "s": 92.9
+   },
+   {
+    "t": "que",
+    "s": 93.14
+   },
+   {
+    "t": "está",
+    "s": 93.28
+   },
+   {
+    "t": "rápido",
+    "s": 93.42
+   },
+   {
+    "t": "demais?",
+    "s": 93.7
+   }
+  ]
+ },
+ {
+  "n": 29,
+  "frase": "Uma roda lá em cima, ligada à cabine por um cabo fino.",
+  "inicio": 94.42,
+  "fim": 97.38,
+  "palavras": [
+   {
+    "t": "Uma",
+    "s": 94.42
+   },
+   {
+    "t": "roda",
+    "s": 94.7
+   },
+   {
+    "t": "lá",
+    "s": 95.04
+   },
+   {
+    "t": "em",
+    "s": 95.24
+   },
+   {
+    "t": "cima",
+    "s": 95.44
+   },
+   {
+    "t": "ligada",
+    "s": 95.72
+   },
+   {
+    "t": "cabine",
+    "s": 96.3
+   },
+   {
+    "t": "por",
+    "s": 96.54
+   },
+   {
+    "t": "um",
+    "s": 96.74
+   },
+   {
+    "t": "cabo",
+    "s": 96.88
+   },
+   {
+    "t": "fino.",
+    "s": 97.04
+   }
+  ]
+ },
+ {
+  "n": 30,
+  "frase": "Se ela gira rápido demais, ela trava e puxa a alavanca das garras.",
+  "inicio": 97.68,
+  "fim": 101.62,
+  "palavras": [
+   {
+    "t": "Se",
+    "s": 97.68
+   },
+   {
+    "t": "ela",
+    "s": 97.8
+   },
+   {
+    "t": "gira",
+    "s": 98.0
+   },
+   {
+    "t": "rápido",
+    "s": 98.24
+   },
+   {
+    "t": "demais,",
+    "s": 98.58
+   },
+   {
+    "t": "ela",
+    "s": 99.3
+   },
+   {
+    "t": "trava",
+    "s": 99.5
+   },
+   {
+    "t": "e",
+    "s": 99.76
+   },
+   {
+    "t": "puxa",
+    "s": 100.08
+   },
+   {
+    "t": "a",
+    "s": 100.38
+   },
+   {
+    "t": "alavanca",
+    "s": 100.56
+   },
+   {
+    "t": "das",
+    "s": 100.9
+   },
+   {
+    "t": "garras.",
+    "s": 101.1
+   }
+  ]
+ },
+ {
+  "n": 31,
+  "frase": "Esse é o limitador de velocidade.",
+  "inicio": 101.76,
+  "fim": 103.64,
+  "palavras": [
+   {
+    "t": "Esse",
+    "s": 101.76
+   },
+   {
+    "t": "é",
+    "s": 102.12
+   },
+   {
+    "t": "o",
+    "s": 102.3
+   },
+   {
+    "t": "limitador",
+    "s": 102.44
+   },
+   {
+    "t": "de",
+    "s": 102.9
+   },
+   {
+    "t": "velocidade.",
+    "s": 103.1
+   }
+  ]
+ },
+ {
+  "n": 32,
+  "frase": "Mas se a cabine passar do térreo, ela bate no chão.",
+  "inicio": 103.9,
+  "fim": 106.4,
+  "palavras": [
+   {
+    "t": "Mas",
+    "s": 103.9
+   },
+   {
+    "t": "se",
+    "s": 104.02
+   },
+   {
+    "t": "a",
+    "s": 104.14
+   },
+   {
+    "t": "cabine",
+    "s": 104.24
+   },
+   {
+    "t": "passar",
+    "s": 104.46
+   },
+   {
+    "t": "do",
+    "s": 104.86
+   },
+   {
+    "t": "térreo,",
+    "s": 105.06
+   },
+   {
+    "t": "ela",
+    "s": 105.56
+   },
+   {
+    "t": "bate",
+    "s": 105.74
+   },
+   {
+    "t": "no",
+    "s": 105.96
+   },
+   {
+    "t": "chão.",
+    "s": 106.2
+   }
+  ]
+ },
+ {
+  "n": 33,
+  "frase": "Então você cava o fundo do poço mais baixo que o térreo e põe molas gigantes pra ela pousar macio.",
+  "inicio": 106.4,
+  "fim": 111.96,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 106.4
+   },
+   {
+    "t": "você",
+    "s": 106.78
+   },
+   {
+    "t": "cava",
+    "s": 107.14
+   },
+   {
+    "t": "o",
+    "s": 107.4
+   },
+   {
+    "t": "fundo",
+    "s": 107.58
+   },
+   {
+    "t": "do",
+    "s": 107.74
+   },
+   {
+    "t": "poço",
+    "s": 108.02
+   },
+   {
+    "t": "mais",
+    "s": 108.24
+   },
+   {
+    "t": "baixo",
+    "s": 108.6
+   },
+   {
+    "t": "que",
+    "s": 108.92
+   },
+   {
+    "t": "o",
+    "s": 109.1
+   },
+   {
+    "t": "térreo",
+    "s": 109.26
+   },
+   {
+    "t": "e",
+    "s": 109.54
+   },
+   {
+    "t": "põe",
+    "s": 109.72
+   },
+   {
+    "t": "molas",
+    "s": 109.92
+   },
+   {
+    "t": "gigantes",
+    "s": 110.24
+   },
+   {
+    "t": "ela",
+    "s": 110.96
+   },
+   {
+    "t": "pousar",
+    "s": 111.1
+   },
+   {
+    "t": "macio.",
+    "s": 111.4
+   }
+  ]
+ },
+ {
+  "n": 34,
+  "frase": "Esses são os amortecedores.",
+  "inicio": 112.16,
+  "fim": 113.8,
+  "palavras": [
+   {
+    "t": "Esses",
+    "s": 112.16
+   },
+   {
+    "t": "são",
+    "s": 112.54
+   },
+   {
+    "t": "os",
+    "s": 112.74
+   },
+   {
+    "t": "amortecedores.",
+    "s": 112.96
+   }
+  ]
+ },
+ {
+  "n": 35,
+  "frase": "É por isso que o poço do elevador desce abaixo do térreo.",
+  "inicio": 114.08,
+  "fim": 117.0,
+  "palavras": [
+   {
+    "t": "É",
+    "s": 114.08
+   },
+   {
+    "t": "por",
+    "s": 114.16
+   },
+   {
+    "t": "isso",
+    "s": 114.42
+   },
+   {
+    "t": "que",
+    "s": 114.52
+   },
+   {
+    "t": "o",
+    "s": 114.66
+   },
+   {
+    "t": "poço",
+    "s": 114.84
+   },
+   {
+    "t": "do",
+    "s": 115.02
+   },
+   {
+    "t": "elevador",
+    "s": 115.2
+   },
+   {
+    "t": "desce",
+    "s": 115.62
+   },
+   {
+    "t": "abaixo",
+    "s": 115.94
+   },
+   {
+    "t": "do",
+    "s": 116.36
+   },
+   {
+    "t": "térreo.",
+    "s": 116.58
+   }
+  ]
+ },
+ {
+  "n": 36,
+  "frase": "Mas se a porta de um andar abrir sem a cabine estar ali, alguém dá um passo no vazio.",
+  "inicio": 117.12,
+  "fim": 121.42,
+  "palavras": [
+   {
+    "t": "Mas",
+    "s": 117.12
+   },
+   {
+    "t": "se",
+    "s": 117.22
+   },
+   {
+    "t": "a",
+    "s": 117.38
+   },
+   {
+    "t": "porta",
+    "s": 117.44
+   },
+   {
+    "t": "de",
+    "s": 117.7
+   },
+   {
+    "t": "um",
+    "s": 117.84
+   },
+   {
+    "t": "andar",
+    "s": 117.98
+   },
+   {
+    "t": "abrir",
+    "s": 118.14
+   },
+   {
+    "t": "sem",
+    "s": 118.52
+   },
+   {
+    "t": "a",
+    "s": 118.78
+   },
+   {
+    "t": "cabine",
+    "s": 119.0
+   },
+   {
+    "t": "estar",
+    "s": 119.2
+   },
+   {
+    "t": "ali,",
+    "s": 119.38
+   },
+   {
+    "t": "alguém",
+    "s": 120.1
+   },
+   {
+    "t": "dá",
+    "s": 120.22
+   },
+   {
+    "t": "um",
+    "s": 120.34
+   },
+   {
+    "t": "passo",
+    "s": 120.6
+   },
+   {
+    "t": "no",
+    "s": 120.78
+   },
+   {
+    "t": "vazio.",
+    "s": 120.94
+   }
+  ]
+ },
+ {
+  "n": 37,
+  "frase": "Então cada porta tem uma trava que só solta quando a cabine chega.",
+  "inicio": 121.62,
+  "fim": 125.06,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 121.62
+   },
+   {
+    "t": "cada",
+    "s": 121.82
+   },
+   {
+    "t": "porta",
+    "s": 122.16
+   },
+   {
+    "t": "tem",
+    "s": 122.5
+   },
+   {
+    "t": "uma",
+    "s": 122.66
+   },
+   {
+    "t": "trava",
+    "s": 122.96
+   },
+   {
+    "t": "que",
+    "s": 123.22
+   },
+   {
+    "t": "só",
+    "s": 123.48
+   },
+   {
+    "t": "solta",
+    "s": 123.82
+   },
+   {
+    "t": "quando",
+    "s": 124.16
+   },
+   {
+    "t": "a",
+    "s": 124.32
+   },
+   {
+    "t": "cabine",
+    "s": 124.5
+   },
+   {
+    "t": "chega.",
+    "s": 124.74
+   }
+  ]
+ },
+ {
+  "n": 38,
+  "frase": "E com qualquer porta aberta, o motor não anda.",
+  "inicio": 125.32,
+  "fim": 127.68,
+  "palavras": [
+   {
+    "t": "E",
+    "s": 125.32
+   },
+   {
+    "t": "com",
+    "s": 125.42
+   },
+   {
+    "t": "qualquer",
+    "s": 125.64
+   },
+   {
+    "t": "porta",
+    "s": 125.92
+   },
+   {
+    "t": "aberta,",
+    "s": 126.18
+   },
+   {
+    "t": "o",
+    "s": 126.84
+   },
+   {
+    "t": "motor",
+    "s": 126.96
+   },
+   {
+    "t": "não",
+    "s": 127.18
+   },
+   {
+    "t": "anda.",
+    "s": 127.44
+   }
+  ]
+ },
+ {
+  "n": 39,
+  "frase": "Esse é o intertravamento.",
+  "inicio": 127.98,
+  "fim": 129.5,
+  "palavras": [
+   {
+    "t": "Esse",
+    "s": 127.98
+   },
+   {
+    "t": "é",
+    "s": 128.32
+   },
+   {
+    "t": "o",
+    "s": 128.58
+   },
+   {
+    "t": "intertravamento.",
+    "s": 128.76
+   }
+  ]
+ },
+ {
+  "n": 40,
+  "frase": "É por isso que o elevador não sai do lugar enquanto alguém segura a porta.",
+  "inicio": 129.82,
+  "fim": 132.92,
+  "palavras": [
+   {
+    "t": "É",
+    "s": 129.82
+   },
+   {
+    "t": "por",
+    "s": 129.86
+   },
+   {
+    "t": "isso",
+    "s": 130.14
+   },
+   {
+    "t": "que",
+    "s": 130.26
+   },
+   {
+    "t": "o",
+    "s": 130.34
+   },
+   {
+    "t": "elevador",
+    "s": 130.46
+   },
+   {
+    "t": "não",
+    "s": 130.78
+   },
+   {
+    "t": "sai",
+    "s": 131.06
+   },
+   {
+    "t": "do",
+    "s": 131.2
+   },
+   {
+    "t": "lugar",
+    "s": 131.36
+   },
+   {
+    "t": "enquanto",
+    "s": 131.66
+   },
+   {
+    "t": "alguém",
+    "s": 131.92
+   },
+   {
+    "t": "segura",
+    "s": 132.2
+   },
+   {
+    "t": "a",
+    "s": 132.52
+   },
+   {
+    "t": "porta.",
+    "s": 132.68
+   }
+  ]
+ },
+ {
+  "n": 41,
+  "frase": "Coloque um espelho, um botão de alarme e uma música que ninguém pediu.",
+  "inicio": 132.92,
+  "fim": 136.82,
+  "palavras": [
+   {
+    "t": "Coloque",
+    "s": 132.92
+   },
+   {
+    "t": "um",
+    "s": 133.42
+   },
+   {
+    "t": "espelho,",
+    "s": 133.62
+   },
+   {
+    "t": "um",
+    "s": 134.28
+   },
+   {
+    "t": "botão",
+    "s": 134.4
+   },
+   {
+    "t": "de",
+    "s": 134.64
+   },
+   {
+    "t": "alarme",
+    "s": 134.8
+   },
+   {
+    "t": "e",
+    "s": 135.16
+   },
+   {
+    "t": "uma",
+    "s": 135.36
+   },
+   {
+    "t": "música",
+    "s": 135.56
+   },
+   {
+    "t": "que",
+    "s": 135.86
+   },
+   {
+    "t": "ninguém",
+    "s": 136.08
+   },
+   {
+    "t": "pediu.",
+    "s": 136.34
+   }
+  ]
+ },
+ {
+  "n": 42,
+  "frase": "Agora é só apertar o doze e subir.",
+  "inicio": 137.16,
+  "fim": 138.92,
+  "palavras": [
+   {
+    "t": "Agora",
+    "s": 137.16
+   },
+   {
+    "t": "é",
+    "s": 137.26
+   },
+   {
+    "t": "só",
+    "s": 137.4
+   },
+   {
+    "t": "apertar",
+    "s": 137.58
+   },
+   {
+    "t": "o",
+    "s": 137.9
+   },
+   {
+    "t": "e",
+    "s": 138.3
+   },
+   {
+    "t": "subir.",
+    "s": 138.62
+   }
+  ]
+ },
+ {
+  "n": 43,
+  "frase": "Parabéns!",
+  "inicio": 139.36,
+  "fim": 139.88,
+  "palavras": [
+   {
+    "t": "Parabéns!",
+    "s": 139.36
+   }
+  ]
+ },
+ {
+  "n": 44,
+  "frase": "Você construiu um elevador!",
+  "inicio": 139.96,
+  "fim": 141.38,
+  "palavras": [
+   {
+    "t": "Você",
+    "s": 139.96
+   },
+   {
+    "t": "construiu",
+    "s": 140.28
+   },
+   {
+    "t": "um",
+    "s": 140.72
+   },
+   {
+    "t": "elevador!",
+    "s": 140.9
+   }
+  ]
+ },
+ {
+  "n": 45,
+  "frase": "Se você já sabia, comente \"ascensorista\".",
+  "inicio": 141.58,
+  "fim": 144.2,
+  "palavras": [
+   {
+    "t": "Se",
+    "s": 141.58
+   },
+   {
+    "t": "você",
+    "s": 141.7
+   },
+   {
+    "t": "já",
+    "s": 141.92
+   },
+   {
+    "t": "sabia,",
+    "s": 142.12
+   },
+   {
+    "t": "comente",
+    "s": 142.82
+   },
+   {
+    "t": "ascensorista.",
+    "s": 143.22
+   }
+  ]
+ },
+ {
+  "n": 46,
+  "frase": "Se não sabia, comente \"escada\".",
+  "inicio": 144.46,
+  "fim": 146.38,
+  "palavras": [
+   {
+    "t": "Se",
+    "s": 144.46
+   },
+   {
+    "t": "não",
+    "s": 144.58
+   },
+   {
+    "t": "sabia,",
+    "s": 144.76
+   },
+   {
+    "t": "comente",
+    "s": 145.48
+   },
+   {
+    "t": "escada.",
+    "s": 145.9
+   }
+  ]
+ }
+]

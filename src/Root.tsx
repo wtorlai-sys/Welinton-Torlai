@@ -6,6 +6,7 @@ import {PANELS, Storyboard} from './episodes/dormir/Storyboard';
 import {CastSheet} from './scenes/CastSheet';
 import {DORMIR_FPS, DORMIR_FRAMES, DormirVideo} from './episodes/dormir/Video';
 import {PISCINA_FPS, PISCINA_FRAMES, PiscinaVideo} from './construcaoviral/episodios/piscina/Video';
+import {ELEVADOR_FPS, ELEVADOR_FRAMES, ElevadorVideo} from './construcaoviral/episodios/elevador/Video';
 
 export const RemotionRoot: React.FC = () => (
 	<>
@@ -20,5 +21,6 @@ export const RemotionRoot: React.FC = () => (
 		<Composition id="DormirStoryboard" component={Storyboard} durationInFrames={PANELS.length} fps={VIDEO.fps} width={VIDEO.width} height={VIDEO.height} />
 		{/* Construção Viral — "Parabéns! Você construiu uma piscina" (mascote 3D low-poly: exceção registrada no CLAUDE.md) */}
 		<Composition id="Piscina" component={PiscinaVideo} durationInFrames={PISCINA_FRAMES} fps={PISCINA_FPS} width={VIDEO.width} height={VIDEO.height} defaultProps={{mudo: false}} />
+		<Composition id="Elevador" component={ElevadorVideo} durationInFrames={ELEVADOR_FRAMES} fps={ELEVADOR_FPS} width={VIDEO.width} height={VIDEO.height} defaultProps={{mudo: false}} />
 	</>
 );
