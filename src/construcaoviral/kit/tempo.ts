@@ -34,7 +34,9 @@ export const rewindActive = (T: number, rewinds: Rewind[]) => rewinds.some((r) =
 /* ------------------------------------------------------------------ */
 /* Câmera: keyframes interpolados (plano-sequência) + cortes secos     */
 /* ------------------------------------------------------------------ */
-export type CamKey = {t: number; pos: V3; look: V3; fov?: number; cut?: boolean};
+/** `seg`: no trecho [t, próxima chave) a câmera vem desta função (movimento contínuo, ex.: seguir um objeto) —
+ *  evita o "anda-e-para" de encadear várias chaves com easing. */
+export type CamKey = {t: number; pos: V3; look: V3; fov?: number; cut?: boolean; seg?: (T: number) => {pos: V3; look: V3; fov?: number}};
 export type CamState = {pos: THREE.Vector3; look: THREE.Vector3; fov: number};
 
 const vv = (a: V3) => new THREE.Vector3(...a);
@@ -44,21 +46,30 @@ export const cameraAt = (T: number, keys: CamKey[], shakes: {at: number; amp?: n
 	while (i < keys.length - 1 && keys[i + 1].t <= T) i++;
 	const a = keys[i];
 	const b = keys[Math.min(i + 1, keys.length - 1)];
+	if (a.seg && T >= a.t && T < b.t) {
+		const s = a.seg(T);
+		const st: CamState = {pos: vv(s.pos), look: vv(s.look), fov: s.fov ?? a.fov ?? 50};
+		return aplicaTremor(T, st, shakes);
+	}
 	let x = b.t > a.t ? clamp((T - a.t) / (b.t - a.t)) : 0;
 	if (b.cut) x = 0; // segura até o corte
 	x = easeInOutCubic(x);
 	const pos = vv(a.pos).lerp(vv(b.pos), x);
 	const look = vv(a.look).lerp(vv(b.look), x);
 	const fov = lerp(a.fov ?? 50, b.fov ?? 50, x);
+	return aplicaTremor(T, {pos, look, fov}, shakes);
+};
+
+const aplicaTremor = (T: number, c: CamState, shakes: {at: number; amp?: number}[]) => {
 	for (const s of shakes) {
 		const d = T - s.at;
 		if (d >= 0 && d < 0.35) {
 			const amp = (s.amp ?? 0.12) * (1 - d / 0.35);
-			pos.x += (noise1(T * 40, 1) - 0.5) * amp;
-			pos.y += (noise1(T * 40, 2) - 0.5) * amp;
+			c.pos.x += (noise1(T * 40, 1) - 0.5) * amp;
+			c.pos.y += (noise1(T * 40, 2) - 0.5) * amp;
 		}
 	}
-	return {pos, look, fov};
+	return c;
 };
 
 /* ------------------------------------------------------------------ */

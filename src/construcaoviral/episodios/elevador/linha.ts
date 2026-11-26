@@ -32,8 +32,7 @@ export const fundoPoco = (t: number) => (t < 107.1 ? -0.3 : lerp(-0.3, -1.8, k(t
 
 export const cabineY = (t: number): number => {
 	if (t < 13.5) return 0;
-	if (t < 17.6) return lerp(0, 9, k(t, 13.6, 17.4));
-	if (t < 24.1) return lerp(9, 12, k(t, 17.8, 23.8));
+	if (t < 24.1) return lerp(0, 12, k(t, 13.6, 23.8));
 	if (t < 39.9) return lerp(12, 21, k(t, 28.0, 29.9)) - lerp(0, 9, k(t, 30.1, 31.7));
 	if (t < 51.3) return lerp(12, 15, k(t, 39.9, 40.8)) + lerp(0, 3, k(t, 49.8, 51.0));
 	if (t < 54.1) return t < 52.0 ? 18 : queda(t, 52.0, 53.3, 18, 0);
@@ -59,9 +58,11 @@ export const estado = (t: number) => {
 	let caixaY = 0;
 	if (t < 5.6) caixaY = lerp(0, 33, k(t, 0.6, 4.4));
 	else if (t < 7.7) caixaY = queda(t, 5.6, 6.6, 33, 0);
-	else caixaY = 33;
+	else if (t < 9.36 || t >= 10.3) caixaY = 33;
+	else caixaY = queda(t, 9.36, 10.3, 33, 25);
 	const caixaQuebrada = on(t, 6.6, 7.7);
-	const cordaRompe = (on(t, 5.6, 7.7) ? 1 : 0) || (on(t, 9.36, 10.3) ? 1 : 0);
+	const cordaIdade = on(t, 5.55, 7.7) ? t - 5.55 : on(t, 9.36, 10.3) ? t - 9.36 : -1;
+	const cordaRompe = cordaIdade >= 0 ? 1 : 0;
 	const cordaEstica = on(t, 7.7, 10.3) ? k(t, 7.9, 9.3) : 0;
 	const oitoPessoas = on(t, 10.28, 13.5) ? k(t, 10.3, 10.9) : 0;
 	const cabine = t >= 10.28;
@@ -72,6 +73,8 @@ export const estado = (t: number) => {
 	const balanca = win(t, 40.6, 41.4, 44.0, 44.8);
 	const guias = t >= 44.5 ? k(t, 45.0, 48.6) : 0; // crescem de baixo para cima
 	const caboRompe = on(t, 51.74, 54.1);
+	const caboIdade = caboRompe ? t - 51.74 : -1;
+	const yQuebra = cabineY(51.7) + CAB.h + 0.25 + 7; // ponto onde o cabo arrebenta
 	const nCabos = t >= 55.9 ? 1 + Math.round(5 * k(t, 56.2, 57.6)) : 1;
 	const semLuz = win(t, 63.3, 63.6, 80.2, 80.6);
 	const freio = t >= 66.9 ? k(t, 66.9, 67.4) : 0;
@@ -129,7 +132,10 @@ export const estado = (t: number) => {
 		motor,
 		motorGrande,
 		contrapeso,
-		cpY: contrapesoY(t),
+		cpY: caboRompe ? queda(t, 51.9, 52.9, contrapesoY(51.7), fundoPoco(t) + 0.02) : contrapesoY(t),
+		cordaIdade,
+		caboIdade,
+		yQuebra,
 		balanca,
 		guias,
 		caboRompe,
@@ -203,19 +209,21 @@ export const mascote = (t: number, e: Estado): MascoteEst => {
 /* ------------------------------------- câmera ------------------------------------- */
 /** Plano frontal do poço: olha para (x, y) na profundidade da cabine, a `d` metros. */
 const F = (t: number, y: number, d: number, x = 0, fov = 50, cut = false): CamKey => ({t, pos: [x + 0.4, y + 0.5, -0.5 + d], look: [x, y, -0.6], fov, cut});
-/** Segue a cabine em [a,b] com chaves a cada `dt`. */
-const segue = (a: number, b: number, d: number, dy = 1.2, dt = 0.25, x = -0.2): CamKey[] => {
-	const ks: CamKey[] = [];
-	for (let t = a; t <= b + 1e-6; t += dt) ks.push(F(t, cabineY(t) + dy, d, x));
-	return ks;
+/** Segue a cabine em [a,b] de forma contínua (sem anda-e-para). */
+const segue = (a: number, b: number, d: number, dy = 1.2, _dt = 0, x = -0.2): CamKey[] => {
+	const at = (T: number) => {
+		const f = F(T, cabineY(T) + dy, d, x);
+		return {pos: f.pos, look: f.look, fov: f.fov};
+	};
+	return [{...F(a, cabineY(a) + dy, d, x), seg: at}, F(b, cabineY(b) + dy, d, x)];
 };
 const caixaFollow = (): CamKey[] => {
-	const ks: CamKey[] = [];
-	for (let t = 0; t <= 4.4; t += 0.4) {
-		const yy = lerp(0, 33, k(t, 0.6, 4.4));
-		ks.push(F(t, yy + 1.0, 9 + yy * 0.12, -0.3));
-	}
-	return ks;
+	const at = (T: number) => {
+		const yy = lerp(0, 33, k(T, 0.6, 4.4));
+		const f = F(T, yy + 1.0, 9 + yy * 0.12, -0.3);
+		return {pos: f.pos, look: f.look, fov: f.fov};
+	};
+	return [{...F(0, 1.0, 9, -0.3), seg: at}, F(4.4, 34, 9 + 33 * 0.12, -0.3)];
 };
 
 export const CAMERA: CamKey[] = [
@@ -228,7 +236,7 @@ export const CAMERA: CamKey[] = [
 	// cabine com 8 pessoas no térreo
 	F(10.3, 1.3, 6.5, -0.35, 50, true),
 	F(13.4, 1.3, 6.9, -0.35),
-	...segue(13.6, 15.6, 9, 1.4, 0.4),
+	...segue(13.6, 15.6, 9, 1.4),
 	{t: 16.6, pos: [3.6, 39.6, 5.0], look: [0.6, 37.4, -1.4], fov: 50},
 	{t: 23.8, pos: [4.6, 40.4, 6.4], look: [0.7, 37.4, -1.6], fov: 50},
 	F(24.6, 36.6, 11, 0.6),

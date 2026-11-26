@@ -148,6 +148,46 @@ const Terreno: React.FC<{e: Estado; M: Mats}> = ({e, M}) => {
 };
 
 /* ------------------------------------ peças ------------------------------------ */
+/** Cabo/corda que estoura: a ponta de cima chicoteia e recolhe; a de baixo cai presa à carga, enrolando;
+ *  fiapos voam do ponto de ruptura. `idade` = segundos desde a ruptura. */
+const CaboPartido: React.FC<{topo: V3; quebra: number; baixo: V3; idade: number; mat: THREE.Material; r: number; some?: boolean}> = ({topo, quebra, baixo, idade, mat, r, some}) => {
+	const x0 = topo[0];
+	const z = topo[2];
+	// ponta de cima: recolhe 70% em 0,3 s e balança
+	const Lcima = (topo[1] - quebra) * (1 - 0.7 * k(idade, 0, 0.3));
+	const chic = Math.sin(idade * 28) * 0.45 * Math.exp(-idade * 5);
+	const meioC: V3 = [x0 + chic * 0.5, topo[1] - Lcima * 0.5, z];
+	const fimC: V3 = [x0 + chic, topo[1] - Lcima, z];
+	// ponta de baixo: comprimento que sobrou acima da carga, vai encolhendo/enrolando
+	const L0 = Math.max(0.3, quebra - baixo[1]);
+	const Lb = Math.max(0.15, L0 * (1 - 0.75 * k(idade, 0.05, 0.7)));
+	const curl = Math.sin(idade * 14) * 0.35 * (0.4 + k(idade, 0, 0.4));
+	const meioB: V3 = [x0 + curl, baixo[1] + Lb * 0.55, z];
+	const fimB: V3 = [x0 - curl * 0.6, baixo[1] + Lb, z];
+	return (
+		<group>
+			<Barra a={topo} b={meioC} r={r} mat={mat} />
+			<Barra a={meioC} b={fimC} r={r} mat={mat} />
+			{!some && (
+				<>
+					<Barra a={baixo} b={meioB} r={r} mat={mat} />
+					<Barra a={meioB} b={fimB} r={r} mat={mat} />
+				</>
+			)}
+			{idade < 0.6 &&
+				Array.from({length: 10}).map((_, i) => {
+					const a = (i / 10) * Math.PI * 2;
+					const d = k(idade, 0, 0.6) * (0.6 + hash1(i) * 0.8);
+					return (
+						<mesh key={i} position={[x0 + Math.cos(a) * d, quebra + Math.sin(a) * d * 0.7 - idade * idade * 2, z + (hash1(i + 3) - 0.5) * 0.4]} rotation={[a, a * 2, 0]} material={mat}>
+							<boxGeometry args={[0.12 * (1 - idade), 0.02, 0.02]} />
+						</mesh>
+					);
+				})}
+		</group>
+	);
+};
+
 const Planta: React.FC<{pos: V3; tomba: number; M: Mats}> = ({pos, tomba, M}) => (
 	<group position={pos} rotation={[0, 0, tomba * 1.3]}>
 		<mesh position={[0, 0.15, 0]} material={M.vaso} castShadow>
@@ -350,10 +390,15 @@ export const Cena: React.FC<{e: Estado; mm: MascoteEst; T: number}> = ({e, mm, T
 		for (let i = 0; i < n; i++) {
 			const z = POLIA[2] + (i - (n - 1) / 2) * 0.07;
 			if (e.caboRompe) {
-				cabos.push(<Barra key={`a${i}`} a={[CAB.cx, ySheave, z]} b={[CAB.cx + 0.15, ySheave - 4, z]} r={0.025} mat={M.cabo} />);
-				cabos.push(<Barra key={`b${i}`} a={[CAB.cx, yTopCab, z]} b={[CAB.cx - 0.2, yTopCab + 1.5, z]} r={0.025} mat={M.cabo} />);
-			} else cabos.push(<Barra key={`c${i}`} a={[CAB.cx, yTopCab, z]} b={[CAB.cx, ySheave, z]} r={0.025} mat={M.cabo} />);
-			if (e.contrapeso > 0) cabos.push(<Barra key={`p${i}`} a={[CP.cx, e.cpY + CP.h, z]} b={[CP.cx, ySheave, z]} r={0.025} mat={M.cabo} />);
+				cabos.push(<CaboPartido key={`r${i}`} topo={[CAB.cx, ySheave, z]} quebra={e.yQuebra} baixo={[CAB.cx, yTopCab, z]} idade={e.caboIdade} mat={M.cabo} r={0.025} />);
+				// lado do contrapeso: sem nada segurando, o cabo escorrega pela polia e cai junto
+				const L = ySheave - (e.cpY + CP.h);
+				const solto = Math.min(L, 22);
+				cabos.push(<Barra key={`p${i}`} a={[CP.cx, e.cpY + CP.h, z]} b={[CP.cx + Math.sin(e.caboIdade * 9) * 0.15, e.cpY + CP.h + solto, z]} r={0.025} mat={M.cabo} />);
+			} else {
+				cabos.push(<Barra key={`c${i}`} a={[CAB.cx, yTopCab, z]} b={[CAB.cx, ySheave, z]} r={0.025} mat={M.cabo} />);
+				if (e.contrapeso > 0) cabos.push(<Barra key={`p${i}`} a={[CP.cx, e.cpY + CP.h, z]} b={[CP.cx, ySheave, z]} r={0.025} mat={M.cabo} />);
+			}
 		}
 	}
 	M.cabo.emissive.set('#FFD21F');
@@ -389,7 +434,7 @@ export const Cena: React.FC<{e: Estado; mm: MascoteEst; T: number}> = ({e, mm, T
 					{!e.cordaRompe ? (
 						<Barra a={[CAB.cx, e.caixaY + 0.8, -0.55]} b={[CAB.cx, TOPO + 0.9, -0.55]} r={0.035 * (1 - e.cordaEstica * 0.6)} mat={M.corda} />
 					) : (
-						<Barra a={[CAB.cx, TOPO + 0.9, -0.55]} b={[CAB.cx + 0.2, TOPO - 1.6, -0.55]} r={0.03} mat={M.corda} />
+						<CaboPartido topo={[CAB.cx, TOPO + 0.9, -0.55]} quebra={TOPO - 0.4} baixo={[CAB.cx, e.caixaY + 0.8, -0.55]} idade={e.cordaIdade} mat={M.corda} r={0.032} some={e.caixaQuebrada} />
 					)}
 					{e.cordaEstica > 0.2 &&
 						!e.cordaRompe &&
