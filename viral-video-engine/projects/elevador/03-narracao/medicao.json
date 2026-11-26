@@ -1,0 +1,60 @@
+{
+ "duracao_s": 153.47,
+ "loudness": "I:         -23.3 LUFS",
+ "palavras": 488,
+ "palavras_por_minuto": 191,
+ "primeira_palavra_s": 0.0,
+ "silencio_final_s": 0.15,
+ "pausas_acima_0_35s": [
+  [
+   0.46,
+   "diferença."
+  ],
+  [
+   0.38,
+   "está."
+  ],
+  [
+   0.44,
+   "demais."
+  ],
+  [
+   0.42,
+   "mesmo."
+  ],
+  [
+   0.36,
+   "segurança."
+  ],
+  [
+   0.4,
+   "demais?"
+  ],
+  [
+   0.4,
+   "fino."
+  ],
+  [
+   0.4,
+   "velocidade."
+  ],
+  [
+   0.42,
+   "ali,"
+  ],
+  [
+   0.38,
+   "intertravamento."
+  ],
+  [
+   0.44,
+   "subir."
+  ]
+ ],
+ "referencia": {
+  "ppm": "193–213",
+  "primeira_palavra_s": 0.0,
+  "pausas_acima_0_35s": "≤ 10",
+  "duracao_s": "140–165"
+ }
+}

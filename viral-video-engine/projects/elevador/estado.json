@@ -5,7 +5,7 @@
  "ideia_escolhida": true,
  "roteiro_auditado": true,
  "narracao_entregue": true,
- "audio_gerado": false,
+ "audio_gerado": true,
  "audio_aprovado": false,
  "storyboard_pronto": false,
  "producao_pronta": false,

@@ -1,0 +1,2935 @@
+{
+ "language_code": "por",
+ "source": "faster-whisper",
+ "audio": "narracao.mp3",
+ "words": [
+  {
+   "text": "Se",
+   "start": 0.0,
+   "end": 0.2,
+   "type": "word"
+  },
+  {
+   "text": "você",
+   "start": 0.2,
+   "end": 0.46,
+   "type": "word"
+  },
+  {
+   "text": "pendurar",
+   "start": 0.46,
+   "end": 0.76,
+   "type": "word"
+  },
+  {
+   "text": "uma",
+   "start": 0.76,
+   "end": 1.04,
+   "type": "word"
+  },
+  {
+   "text": "caixa",
+   "start": 1.04,
+   "end": 1.3,
+   "type": "word"
+  },
+  {
+   "text": "numa",
+   "start": 1.3,
+   "end": 1.52,
+   "type": "word"
+  },
+  {
+   "text": "corda",
+   "start": 1.52,
+   "end": 2.04,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 2.04,
+   "end": 2.18,
+   "type": "word"
+  },
+  {
+   "text": "puxar",
+   "start": 2.18,
+   "end": 2.54,
+   "type": "word"
+  },
+  {
+   "text": "até",
+   "start": 2.54,
+   "end": 2.72,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 2.72,
+   "end": 2.98,
+   "type": "word"
+  },
+  {
+   "text": "alto",
+   "start": 2.98,
+   "end": 3.12,
+   "type": "word"
+  },
+  {
+   "text": "do",
+   "start": 3.12,
+   "end": 3.32,
+   "type": "word"
+  },
+  {
+   "text": "prédio,",
+   "start": 3.32,
+   "end": 3.82,
+   "type": "word"
+  },
+  {
+   "text": "você",
+   "start": 3.96,
+   "end": 4.14,
+   "type": "word"
+  },
+  {
+   "text": "não",
+   "start": 4.14,
+   "end": 4.3,
+   "type": "word"
+  },
+  {
+   "text": "vai",
+   "start": 4.3,
+   "end": 4.42,
+   "type": "word"
+  },
+  {
+   "text": "ter",
+   "start": 4.42,
+   "end": 4.54,
+   "type": "word"
+  },
+  {
+   "text": "um",
+   "start": 4.54,
+   "end": 4.68,
+   "type": "word"
+  },
+  {
+   "text": "elevador.",
+   "start": 4.68,
+   "end": 5.16,
+   "type": "word"
+  },
+  {
+   "text": "Vai",
+   "start": 5.36,
+   "end": 5.48,
+   "type": "word"
+  },
+  {
+   "text": "ter",
+   "start": 5.48,
+   "end": 5.56,
+   "type": "word"
+  },
+  {
+   "text": "uma",
+   "start": 5.56,
+   "end": 5.86,
+   "type": "word"
+  },
+  {
+   "text": "queda",
+   "start": 5.86,
+   "end": 6.08,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 6.08,
+   "end": 6.38,
+   "type": "word"
+  },
+  {
+   "text": "12",
+   "start": 6.38,
+   "end": 6.7,
+   "type": "word"
+  },
+  {
+   "text": "andares,",
+   "start": 6.7,
+   "end": 7.4,
+   "type": "word"
+  },
+  {
+   "text": "porque",
+   "start": 7.5,
+   "end": 7.82,
+   "type": "word"
+  },
+  {
+   "text": "corda",
+   "start": 7.82,
+   "end": 8.2,
+   "type": "word"
+  },
+  {
+   "text": "estica,",
+   "start": 8.2,
+   "end": 8.68,
+   "type": "word"
+  },
+  {
+   "text": "desfia",
+   "start": 8.94,
+   "end": 9.38,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 9.38,
+   "end": 9.7,
+   "type": "word"
+  },
+  {
+   "text": "arrebenta.",
+   "start": 9.7,
+   "end": 10.38,
+   "type": "word"
+  },
+  {
+   "text": "E",
+   "start": 10.68,
+   "end": 10.78,
+   "type": "word"
+  },
+  {
+   "text": "uma",
+   "start": 10.78,
+   "end": 10.94,
+   "type": "word"
+  },
+  {
+   "text": "cabine",
+   "start": 10.94,
+   "end": 11.2,
+   "type": "word"
+  },
+  {
+   "text": "com",
+   "start": 11.2,
+   "end": 11.4,
+   "type": "word"
+  },
+  {
+   "text": "8",
+   "start": 11.4,
+   "end": 11.62,
+   "type": "word"
+  },
+  {
+   "text": "pessoas",
+   "start": 11.62,
+   "end": 12.02,
+   "type": "word"
+  },
+  {
+   "text": "dentro",
+   "start": 12.02,
+   "end": 12.38,
+   "type": "word"
+  },
+  {
+   "text": "passa",
+   "start": 12.38,
+   "end": 12.66,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 12.66,
+   "end": 13.04,
+   "type": "word"
+  },
+  {
+   "text": "1",
+   "start": 13.04,
+   "end": 13.28,
+   "type": "word"
+  },
+  {
+   "text": "tonelada.",
+   "start": 13.28,
+   "end": 13.8,
+   "type": "word"
+  },
+  {
+   "text": "Então",
+   "start": 14.1,
+   "end": 14.32,
+   "type": "word"
+  },
+  {
+   "text": "você",
+   "start": 14.32,
+   "end": 14.66,
+   "type": "word"
+  },
+  {
+   "text": "troca",
+   "start": 14.66,
+   "end": 14.9,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 14.9,
+   "end": 15.12,
+   "type": "word"
+  },
+  {
+   "text": "corda",
+   "start": 15.12,
+   "end": 15.36,
+   "type": "word"
+  },
+  {
+   "text": "por",
+   "start": 15.36,
+   "end": 15.54,
+   "type": "word"
+  },
+  {
+   "text": "um",
+   "start": 15.54,
+   "end": 15.7,
+   "type": "word"
+  },
+  {
+   "text": "cabo",
+   "start": 15.7,
+   "end": 15.86,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 15.86,
+   "end": 16.18,
+   "type": "word"
+  },
+  {
+   "text": "aço,",
+   "start": 16.18,
+   "end": 16.42,
+   "type": "word"
+  },
+  {
+   "text": "puxado",
+   "start": 16.62,
+   "end": 16.86,
+   "type": "word"
+  },
+  {
+   "text": "por",
+   "start": 16.86,
+   "end": 17.04,
+   "type": "word"
+  },
+  {
+   "text": "um",
+   "start": 17.04,
+   "end": 17.2,
+   "type": "word"
+  },
+  {
+   "text": "motor",
+   "start": 17.2,
+   "end": 17.46,
+   "type": "word"
+  },
+  {
+   "text": "lá",
+   "start": 17.46,
+   "end": 17.72,
+   "type": "word"
+  },
+  {
+   "text": "em",
+   "start": 17.72,
+   "end": 17.88,
+   "type": "word"
+  },
+  {
+   "text": "cima.",
+   "start": 17.88,
+   "end": 18.1,
+   "type": "word"
+  },
+  {
+   "text": "Mas",
+   "start": 18.4,
+   "end": 18.54,
+   "type": "word"
+  },
+  {
+   "text": "para",
+   "start": 18.54,
+   "end": 18.72,
+   "type": "word"
+  },
+  {
+   "text": "levantar",
+   "start": 18.72,
+   "end": 19.18,
+   "type": "word"
+  },
+  {
+   "text": "mais",
+   "start": 19.18,
+   "end": 19.44,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 19.44,
+   "end": 19.56,
+   "type": "word"
+  },
+  {
+   "text": "1",
+   "start": 19.56,
+   "end": 19.7,
+   "type": "word"
+  },
+  {
+   "text": "tonelada",
+   "start": 19.7,
+   "end": 20.14,
+   "type": "word"
+  },
+  {
+   "text": "sozinho,",
+   "start": 20.14,
+   "end": 20.74,
+   "type": "word"
+  },
+  {
+   "text": "esse",
+   "start": 21.0,
+   "end": 21.1,
+   "type": "word"
+  },
+  {
+   "text": "motor",
+   "start": 21.1,
+   "end": 21.4,
+   "type": "word"
+  },
+  {
+   "text": "precisa",
+   "start": 21.4,
+   "end": 21.72,
+   "type": "word"
+  },
+  {
+   "text": "ser",
+   "start": 21.72,
+   "end": 22.0,
+   "type": "word"
+  },
+  {
+   "text": "enorme",
+   "start": 22.0,
+   "end": 22.72,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 22.72,
+   "end": 23.02,
+   "type": "word"
+  },
+  {
+   "text": "gasta",
+   "start": 23.02,
+   "end": 23.24,
+   "type": "word"
+  },
+  {
+   "text": "energia",
+   "start": 23.24,
+   "end": 23.66,
+   "type": "word"
+  },
+  {
+   "text": "demais",
+   "start": 23.66,
+   "end": 24.1,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 24.1,
+   "end": 24.28,
+   "type": "word"
+  },
+  {
+   "text": "cada",
+   "start": 24.28,
+   "end": 24.42,
+   "type": "word"
+  },
+  {
+   "text": "viagem.",
+   "start": 24.42,
+   "end": 25.02,
+   "type": "word"
+  },
+  {
+   "text": "Então",
+   "start": 25.2,
+   "end": 25.4,
+   "type": "word"
+  },
+  {
+   "text": "você",
+   "start": 25.4,
+   "end": 25.68,
+   "type": "word"
+  },
+  {
+   "text": "pendura,",
+   "start": 25.68,
+   "end": 26.16,
+   "type": "word"
+  },
+  {
+   "text": "do",
+   "start": 26.38,
+   "end": 26.48,
+   "type": "word"
+  },
+  {
+   "text": "outro",
+   "start": 26.48,
+   "end": 26.68,
+   "type": "word"
+  },
+  {
+   "text": "lado",
+   "start": 26.68,
+   "end": 26.86,
+   "type": "word"
+  },
+  {
+   "text": "do",
+   "start": 26.86,
+   "end": 27.12,
+   "type": "word"
+  },
+  {
+   "text": "cabo,",
+   "start": 27.12,
+   "end": 27.32,
+   "type": "word"
+  },
+  {
+   "text": "um",
+   "start": 27.6,
+   "end": 27.76,
+   "type": "word"
+  },
+  {
+   "text": "bloco",
+   "start": 27.76,
+   "end": 28.06,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 28.06,
+   "end": 28.28,
+   "type": "word"
+  },
+  {
+   "text": "ferro",
+   "start": 28.28,
+   "end": 28.52,
+   "type": "word"
+  },
+  {
+   "text": "pesado.",
+   "start": 28.52,
+   "end": 29.04,
+   "type": "word"
+  },
+  {
+   "text": "Quando",
+   "start": 29.04,
+   "end": 29.5,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 29.5,
+   "end": 29.66,
+   "type": "word"
+  },
+  {
+   "text": "cabine",
+   "start": 29.66,
+   "end": 29.92,
+   "type": "word"
+  },
+  {
+   "text": "sobe,",
+   "start": 29.92,
+   "end": 30.38,
+   "type": "word"
+  },
+  {
+   "text": "ele",
+   "start": 30.56,
+   "end": 30.76,
+   "type": "word"
+  },
+  {
+   "text": "desce.",
+   "start": 30.76,
+   "end": 31.26,
+   "type": "word"
+  },
+  {
+   "text": "Quando",
+   "start": 31.48,
+   "end": 31.56,
+   "type": "word"
+  },
+  {
+   "text": "ela",
+   "start": 31.56,
+   "end": 31.78,
+   "type": "word"
+  },
+  {
+   "text": "desce,",
+   "start": 31.78,
+   "end": 32.32,
+   "type": "word"
+  },
+  {
+   "text": "ele",
+   "start": 32.4,
+   "end": 32.64,
+   "type": "word"
+  },
+  {
+   "text": "sobe.",
+   "start": 32.64,
+   "end": 33.04,
+   "type": "word"
+  },
+  {
+   "text": "Ele",
+   "start": 33.22,
+   "end": 33.38,
+   "type": "word"
+  },
+  {
+   "text": "pesa",
+   "start": 33.38,
+   "end": 33.64,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 33.64,
+   "end": 33.78,
+   "type": "word"
+  },
+  {
+   "text": "mesmo",
+   "start": 33.78,
+   "end": 34.04,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 34.04,
+   "end": 34.16,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 34.16,
+   "end": 34.34,
+   "type": "word"
+  },
+  {
+   "text": "cabine,",
+   "start": 34.34,
+   "end": 34.72,
+   "type": "word"
+  },
+  {
+   "text": "mas",
+   "start": 34.86,
+   "end": 35.04,
+   "type": "word"
+  },
+  {
+   "text": "metade",
+   "start": 35.04,
+   "end": 35.56,
+   "type": "word"
+  },
+  {
+   "text": "das",
+   "start": 35.56,
+   "end": 35.74,
+   "type": "word"
+  },
+  {
+   "text": "pessoas",
+   "start": 35.74,
+   "end": 36.12,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 36.12,
+   "end": 36.36,
+   "type": "word"
+  },
+  {
+   "text": "cabem",
+   "start": 36.36,
+   "end": 36.56,
+   "type": "word"
+  },
+  {
+   "text": "nela.",
+   "start": 36.56,
+   "end": 37.0,
+   "type": "word"
+  },
+  {
+   "text": "Assim,",
+   "start": 37.14,
+   "end": 37.56,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 37.8,
+   "end": 37.88,
+   "type": "word"
+  },
+  {
+   "text": "motor",
+   "start": 37.88,
+   "end": 38.1,
+   "type": "word"
+  },
+  {
+   "text": "só",
+   "start": 38.1,
+   "end": 38.28,
+   "type": "word"
+  },
+  {
+   "text": "precisa",
+   "start": 38.28,
+   "end": 38.58,
+   "type": "word"
+  },
+  {
+   "text": "puxar",
+   "start": 38.58,
+   "end": 39.0,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 39.0,
+   "end": 39.2,
+   "type": "word"
+  },
+  {
+   "text": "diferença.",
+   "start": 39.2,
+   "end": 39.62,
+   "type": "word"
+  },
+  {
+   "text": "Esse",
+   "start": 40.08,
+   "end": 40.36,
+   "type": "word"
+  },
+  {
+   "text": "é",
+   "start": 40.36,
+   "end": 40.64,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 40.64,
+   "end": 40.88,
+   "type": "word"
+  },
+  {
+   "text": "contrapeso.",
+   "start": 40.88,
+   "end": 41.42,
+   "type": "word"
+  },
+  {
+   "text": "Mas",
+   "start": 41.74,
+   "end": 41.88,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 41.88,
+   "end": 42.12,
+   "type": "word"
+  },
+  {
+   "text": "cabine",
+   "start": 42.12,
+   "end": 42.42,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 42.42,
+   "end": 42.46,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 42.46,
+   "end": 42.72,
+   "type": "word"
+  },
+  {
+   "text": "contrapeso",
+   "start": 42.72,
+   "end": 43.18,
+   "type": "word"
+  },
+  {
+   "text": "ficam",
+   "start": 43.18,
+   "end": 43.46,
+   "type": "word"
+  },
+  {
+   "text": "balançando",
+   "start": 43.46,
+   "end": 44.1,
+   "type": "word"
+  },
+  {
+   "text": "dentro",
+   "start": 44.1,
+   "end": 44.36,
+   "type": "word"
+  },
+  {
+   "text": "do",
+   "start": 44.36,
+   "end": 44.54,
+   "type": "word"
+  },
+  {
+   "text": "prédio",
+   "start": 44.54,
+   "end": 44.9,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 44.9,
+   "end": 45.1,
+   "type": "word"
+  },
+  {
+   "text": "batendo",
+   "start": 45.1,
+   "end": 45.44,
+   "type": "word"
+  },
+  {
+   "text": "nas",
+   "start": 45.44,
+   "end": 45.58,
+   "type": "word"
+  },
+  {
+   "text": "paredes.",
+   "start": 45.58,
+   "end": 46.32,
+   "type": "word"
+  },
+  {
+   "text": "Então",
+   "start": 46.52,
+   "end": 46.64,
+   "type": "word"
+  },
+  {
+   "text": "você",
+   "start": 46.64,
+   "end": 46.9,
+   "type": "word"
+  },
+  {
+   "text": "instala",
+   "start": 46.9,
+   "end": 47.22,
+   "type": "word"
+  },
+  {
+   "text": "trilhos",
+   "start": 47.22,
+   "end": 47.68,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 47.68,
+   "end": 47.94,
+   "type": "word"
+  },
+  {
+   "text": "aço",
+   "start": 47.94,
+   "end": 48.12,
+   "type": "word"
+  },
+  {
+   "text": "do",
+   "start": 48.12,
+   "end": 48.42,
+   "type": "word"
+  },
+  {
+   "text": "fundo",
+   "start": 48.42,
+   "end": 48.76,
+   "type": "word"
+  },
+  {
+   "text": "até",
+   "start": 48.76,
+   "end": 49.1,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 49.1,
+   "end": 49.32,
+   "type": "word"
+  },
+  {
+   "text": "topo,",
+   "start": 49.32,
+   "end": 49.66,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 49.8,
+   "end": 49.9,
+   "type": "word"
+  },
+  {
+   "text": "os",
+   "start": 49.9,
+   "end": 50.08,
+   "type": "word"
+  },
+  {
+   "text": "dois",
+   "start": 50.08,
+   "end": 50.28,
+   "type": "word"
+  },
+  {
+   "text": "correm",
+   "start": 50.28,
+   "end": 50.64,
+   "type": "word"
+  },
+  {
+   "text": "encaixados",
+   "start": 50.64,
+   "end": 51.32,
+   "type": "word"
+  },
+  {
+   "text": "neles.",
+   "start": 51.32,
+   "end": 51.84,
+   "type": "word"
+  },
+  {
+   "text": "Essas",
+   "start": 52.08,
+   "end": 52.46,
+   "type": "word"
+  },
+  {
+   "text": "são",
+   "start": 52.46,
+   "end": 52.62,
+   "type": "word"
+  },
+  {
+   "text": "as",
+   "start": 52.62,
+   "end": 52.9,
+   "type": "word"
+  },
+  {
+   "text": "guias.",
+   "start": 52.9,
+   "end": 53.26,
+   "type": "word"
+  },
+  {
+   "text": "Mas",
+   "start": 53.6,
+   "end": 53.74,
+   "type": "word"
+  },
+  {
+   "text": "se",
+   "start": 53.74,
+   "end": 53.9,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 53.9,
+   "end": 54.08,
+   "type": "word"
+  },
+  {
+   "text": "cabo",
+   "start": 54.08,
+   "end": 54.08,
+   "type": "word"
+  },
+  {
+   "text": "arrebentar,",
+   "start": 54.08,
+   "end": 54.72,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 54.96,
+   "end": 55.1,
+   "type": "word"
+  },
+  {
+   "text": "cabine",
+   "start": 55.1,
+   "end": 55.34,
+   "type": "word"
+  },
+  {
+   "text": "cai",
+   "start": 55.34,
+   "end": 55.52,
+   "type": "word"
+  },
+  {
+   "text": "do",
+   "start": 55.52,
+   "end": 55.78,
+   "type": "word"
+  },
+  {
+   "text": "mesmo",
+   "start": 55.78,
+   "end": 56.04,
+   "type": "word"
+  },
+  {
+   "text": "jeito.",
+   "start": 56.04,
+   "end": 56.38,
+   "type": "word"
+  },
+  {
+   "text": "Então",
+   "start": 56.68,
+   "end": 56.92,
+   "type": "word"
+  },
+  {
+   "text": "você",
+   "start": 56.92,
+   "end": 57.16,
+   "type": "word"
+  },
+  {
+   "text": "não",
+   "start": 57.16,
+   "end": 57.36,
+   "type": "word"
+  },
+  {
+   "text": "usa",
+   "start": 57.36,
+   "end": 57.56,
+   "type": "word"
+  },
+  {
+   "text": "um",
+   "start": 57.56,
+   "end": 57.88,
+   "type": "word"
+  },
+  {
+   "text": "cabo",
+   "start": 57.88,
+   "end": 58.1,
+   "type": "word"
+  },
+  {
+   "text": "só,",
+   "start": 58.1,
+   "end": 58.42,
+   "type": "word"
+  },
+  {
+   "text": "usa",
+   "start": 58.68,
+   "end": 58.94,
+   "type": "word"
+  },
+  {
+   "text": "vários,",
+   "start": 58.94,
+   "end": 59.46,
+   "type": "word"
+  },
+  {
+   "text": "lado",
+   "start": 59.68,
+   "end": 59.88,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 59.88,
+   "end": 60.1,
+   "type": "word"
+  },
+  {
+   "text": "lado,",
+   "start": 60.1,
+   "end": 60.34,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 60.62,
+   "end": 60.78,
+   "type": "word"
+  },
+  {
+   "text": "cada",
+   "start": 60.78,
+   "end": 60.98,
+   "type": "word"
+  },
+  {
+   "text": "um",
+   "start": 60.98,
+   "end": 61.2,
+   "type": "word"
+  },
+  {
+   "text": "aguenta",
+   "start": 61.2,
+   "end": 61.52,
+   "type": "word"
+  },
+  {
+   "text": "muito",
+   "start": 61.52,
+   "end": 62.02,
+   "type": "word"
+  },
+  {
+   "text": "mais",
+   "start": 62.02,
+   "end": 62.22,
+   "type": "word"
+  },
+  {
+   "text": "do",
+   "start": 62.22,
+   "end": 62.36,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 62.36,
+   "end": 62.44,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 62.44,
+   "end": 62.54,
+   "type": "word"
+  },
+  {
+   "text": "peso",
+   "start": 62.54,
+   "end": 62.7,
+   "type": "word"
+  },
+  {
+   "text": "da",
+   "start": 62.7,
+   "end": 62.92,
+   "type": "word"
+  },
+  {
+   "text": "cabine",
+   "start": 62.92,
+   "end": 63.22,
+   "type": "word"
+  },
+  {
+   "text": "cheia.",
+   "start": 63.22,
+   "end": 63.8,
+   "type": "word"
+  },
+  {
+   "text": "Esses",
+   "start": 64.12,
+   "end": 64.42,
+   "type": "word"
+  },
+  {
+   "text": "são",
+   "start": 64.42,
+   "end": 64.64,
+   "type": "word"
+  },
+  {
+   "text": "os",
+   "start": 64.64,
+   "end": 64.88,
+   "type": "word"
+  },
+  {
+   "text": "cabos",
+   "start": 64.88,
+   "end": 65.12,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 65.12,
+   "end": 65.38,
+   "type": "word"
+  },
+  {
+   "text": "tração.",
+   "start": 65.38,
+   "end": 65.74,
+   "type": "word"
+  },
+  {
+   "text": "Mas",
+   "start": 66.04,
+   "end": 66.18,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 66.18,
+   "end": 66.36,
+   "type": "word"
+  },
+  {
+   "text": "energia",
+   "start": 66.36,
+   "end": 66.7,
+   "type": "word"
+  },
+  {
+   "text": "pode",
+   "start": 66.7,
+   "end": 66.94,
+   "type": "word"
+  },
+  {
+   "text": "acabar",
+   "start": 66.94,
+   "end": 67.3,
+   "type": "word"
+  },
+  {
+   "text": "no",
+   "start": 67.3,
+   "end": 67.48,
+   "type": "word"
+  },
+  {
+   "text": "meio",
+   "start": 67.48,
+   "end": 67.58,
+   "type": "word"
+  },
+  {
+   "text": "da",
+   "start": 67.58,
+   "end": 67.78,
+   "type": "word"
+  },
+  {
+   "text": "viagem.",
+   "start": 67.78,
+   "end": 68.34,
+   "type": "word"
+  },
+  {
+   "text": "Então",
+   "start": 68.54,
+   "end": 68.68,
+   "type": "word"
+  },
+  {
+   "text": "você",
+   "start": 68.68,
+   "end": 68.98,
+   "type": "word"
+  },
+  {
+   "text": "coloca",
+   "start": 68.98,
+   "end": 69.22,
+   "type": "word"
+  },
+  {
+   "text": "no",
+   "start": 69.22,
+   "end": 69.36,
+   "type": "word"
+  },
+  {
+   "text": "motor",
+   "start": 69.36,
+   "end": 69.72,
+   "type": "word"
+  },
+  {
+   "text": "um",
+   "start": 69.72,
+   "end": 70.1,
+   "type": "word"
+  },
+  {
+   "text": "freio",
+   "start": 70.1,
+   "end": 70.34,
+   "type": "word"
+  },
+  {
+   "text": "apertado",
+   "start": 70.34,
+   "end": 70.88,
+   "type": "word"
+  },
+  {
+   "text": "por",
+   "start": 70.88,
+   "end": 71.18,
+   "type": "word"
+  },
+  {
+   "text": "molas.",
+   "start": 71.18,
+   "end": 71.72,
+   "type": "word"
+  },
+  {
+   "text": "Ele",
+   "start": 71.92,
+   "end": 72.22,
+   "type": "word"
+  },
+  {
+   "text": "vive",
+   "start": 72.22,
+   "end": 72.52,
+   "type": "word"
+  },
+  {
+   "text": "fechado,",
+   "start": 72.52,
+   "end": 73.18,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 73.3,
+   "end": 73.42,
+   "type": "word"
+  },
+  {
+   "text": "é",
+   "start": 73.42,
+   "end": 73.54,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 73.54,
+   "end": 73.56,
+   "type": "word"
+  },
+  {
+   "text": "energia",
+   "start": 73.56,
+   "end": 74.08,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 74.08,
+   "end": 74.34,
+   "type": "word"
+  },
+  {
+   "text": "abre",
+   "start": 74.34,
+   "end": 74.48,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 74.48,
+   "end": 74.7,
+   "type": "word"
+  },
+  {
+   "text": "freio.",
+   "start": 74.7,
+   "end": 75.08,
+   "type": "word"
+  },
+  {
+   "text": "Faltou",
+   "start": 75.26,
+   "end": 75.56,
+   "type": "word"
+  },
+  {
+   "text": "luz,",
+   "start": 75.56,
+   "end": 75.86,
+   "type": "word"
+  },
+  {
+   "text": "as",
+   "start": 76.1,
+   "end": 76.28,
+   "type": "word"
+  },
+  {
+   "text": "molas",
+   "start": 76.28,
+   "end": 76.54,
+   "type": "word"
+  },
+  {
+   "text": "apertam",
+   "start": 76.54,
+   "end": 77.04,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 77.04,
+   "end": 77.22,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 77.22,
+   "end": 77.4,
+   "type": "word"
+  },
+  {
+   "text": "cabine",
+   "start": 77.4,
+   "end": 77.68,
+   "type": "word"
+  },
+  {
+   "text": "para",
+   "start": 77.68,
+   "end": 77.94,
+   "type": "word"
+  },
+  {
+   "text": "onde",
+   "start": 77.94,
+   "end": 78.2,
+   "type": "word"
+  },
+  {
+   "text": "está.",
+   "start": 78.2,
+   "end": 78.4,
+   "type": "word"
+  },
+  {
+   "text": "Esse",
+   "start": 78.78,
+   "end": 79.14,
+   "type": "word"
+  },
+  {
+   "text": "é",
+   "start": 79.14,
+   "end": 79.4,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 79.4,
+   "end": 79.64,
+   "type": "word"
+  },
+  {
+   "text": "freio",
+   "start": 79.64,
+   "end": 79.82,
+   "type": "word"
+  },
+  {
+   "text": "da",
+   "start": 79.82,
+   "end": 80.04,
+   "type": "word"
+  },
+  {
+   "text": "máquina.",
+   "start": 80.04,
+   "end": 80.38,
+   "type": "word"
+  },
+  {
+   "text": "É",
+   "start": 80.7,
+   "end": 80.86,
+   "type": "word"
+  },
+  {
+   "text": "por",
+   "start": 80.86,
+   "end": 81.12,
+   "type": "word"
+  },
+  {
+   "text": "isso",
+   "start": 81.12,
+   "end": 81.32,
+   "type": "word"
+  },
+  {
+   "text": "que,",
+   "start": 81.32,
+   "end": 81.54,
+   "type": "word"
+  },
+  {
+   "text": "quando",
+   "start": 81.58,
+   "end": 81.82,
+   "type": "word"
+  },
+  {
+   "text": "falta",
+   "start": 81.82,
+   "end": 82.12,
+   "type": "word"
+  },
+  {
+   "text": "luz,",
+   "start": 82.12,
+   "end": 82.42,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 82.64,
+   "end": 82.76,
+   "type": "word"
+  },
+  {
+   "text": "elevador",
+   "start": 82.76,
+   "end": 83.18,
+   "type": "word"
+  },
+  {
+   "text": "para",
+   "start": 83.18,
+   "end": 83.5,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 83.5,
+   "end": 83.74,
+   "type": "word"
+  },
+  {
+   "text": "não",
+   "start": 83.74,
+   "end": 83.96,
+   "type": "word"
+  },
+  {
+   "text": "cai.",
+   "start": 83.96,
+   "end": 84.16,
+   "type": "word"
+  },
+  {
+   "text": "Mas,",
+   "start": 84.16,
+   "end": 84.78,
+   "type": "word"
+  },
+  {
+   "text": "se",
+   "start": 84.94,
+   "end": 85.24,
+   "type": "word"
+  },
+  {
+   "text": "tudo",
+   "start": 85.24,
+   "end": 85.56,
+   "type": "word"
+  },
+  {
+   "text": "isso",
+   "start": 85.56,
+   "end": 85.8,
+   "type": "word"
+  },
+  {
+   "text": "falhar,",
+   "start": 85.8,
+   "end": 86.22,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 86.44,
+   "end": 86.58,
+   "type": "word"
+  },
+  {
+   "text": "cabine",
+   "start": 86.58,
+   "end": 86.78,
+   "type": "word"
+  },
+  {
+   "text": "pode",
+   "start": 86.78,
+   "end": 87.02,
+   "type": "word"
+  },
+  {
+   "text": "descer",
+   "start": 87.02,
+   "end": 87.4,
+   "type": "word"
+  },
+  {
+   "text": "rápido",
+   "start": 87.4,
+   "end": 87.76,
+   "type": "word"
+  },
+  {
+   "text": "demais.",
+   "start": 87.76,
+   "end": 88.22,
+   "type": "word"
+  },
+  {
+   "text": "Então",
+   "start": 88.66,
+   "end": 88.78,
+   "type": "word"
+  },
+  {
+   "text": "você",
+   "start": 88.78,
+   "end": 89.06,
+   "type": "word"
+  },
+  {
+   "text": "coloca",
+   "start": 89.06,
+   "end": 89.34,
+   "type": "word"
+  },
+  {
+   "text": "embaixo",
+   "start": 89.34,
+   "end": 89.72,
+   "type": "word"
+  },
+  {
+   "text": "dela",
+   "start": 89.72,
+   "end": 90.14,
+   "type": "word"
+  },
+  {
+   "text": "garras",
+   "start": 90.14,
+   "end": 90.58,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 90.58,
+   "end": 90.8,
+   "type": "word"
+  },
+  {
+   "text": "aço",
+   "start": 90.8,
+   "end": 91.02,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 91.02,
+   "end": 91.26,
+   "type": "word"
+  },
+  {
+   "text": "agarram",
+   "start": 91.26,
+   "end": 91.64,
+   "type": "word"
+  },
+  {
+   "text": "os",
+   "start": 91.64,
+   "end": 91.94,
+   "type": "word"
+  },
+  {
+   "text": "trilhos",
+   "start": 91.94,
+   "end": 92.22,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 92.22,
+   "end": 92.54,
+   "type": "word"
+  },
+  {
+   "text": "travam",
+   "start": 92.54,
+   "end": 92.84,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 92.84,
+   "end": 93.02,
+   "type": "word"
+  },
+  {
+   "text": "cabine",
+   "start": 93.02,
+   "end": 93.32,
+   "type": "word"
+  },
+  {
+   "text": "ali",
+   "start": 93.32,
+   "end": 93.58,
+   "type": "word"
+  },
+  {
+   "text": "mesmo.",
+   "start": 93.58,
+   "end": 93.9,
+   "type": "word"
+  },
+  {
+   "text": "Esse",
+   "start": 94.32,
+   "end": 94.6,
+   "type": "word"
+  },
+  {
+   "text": "é",
+   "start": 94.6,
+   "end": 94.86,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 94.86,
+   "end": 95.06,
+   "type": "word"
+  },
+  {
+   "text": "freio",
+   "start": 95.06,
+   "end": 95.26,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 95.26,
+   "end": 95.52,
+   "type": "word"
+  },
+  {
+   "text": "segurança.",
+   "start": 95.52,
+   "end": 95.92,
+   "type": "word"
+  },
+  {
+   "text": "Mas",
+   "start": 96.28,
+   "end": 96.44,
+   "type": "word"
+  },
+  {
+   "text": "quem",
+   "start": 96.44,
+   "end": 96.66,
+   "type": "word"
+  },
+  {
+   "text": "avisa",
+   "start": 96.66,
+   "end": 96.92,
+   "type": "word"
+  },
+  {
+   "text": "as",
+   "start": 96.92,
+   "end": 97.24,
+   "type": "word"
+  },
+  {
+   "text": "garras",
+   "start": 97.24,
+   "end": 97.46,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 97.46,
+   "end": 97.6,
+   "type": "word"
+  },
+  {
+   "text": "está",
+   "start": 97.6,
+   "end": 97.76,
+   "type": "word"
+  },
+  {
+   "text": "rápido",
+   "start": 97.76,
+   "end": 98.06,
+   "type": "word"
+  },
+  {
+   "text": "demais?",
+   "start": 98.06,
+   "end": 98.46,
+   "type": "word"
+  },
+  {
+   "text": "Uma",
+   "start": 98.86,
+   "end": 99.16,
+   "type": "word"
+  },
+  {
+   "text": "roda",
+   "start": 99.16,
+   "end": 99.5,
+   "type": "word"
+  },
+  {
+   "text": "lá",
+   "start": 99.5,
+   "end": 99.7,
+   "type": "word"
+  },
+  {
+   "text": "em",
+   "start": 99.7,
+   "end": 99.92,
+   "type": "word"
+  },
+  {
+   "text": "cima",
+   "start": 99.92,
+   "end": 100.2,
+   "type": "word"
+  },
+  {
+   "text": "ligada",
+   "start": 100.2,
+   "end": 100.64,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 100.64,
+   "end": 100.8,
+   "type": "word"
+  },
+  {
+   "text": "cabine",
+   "start": 100.8,
+   "end": 101.06,
+   "type": "word"
+  },
+  {
+   "text": "por",
+   "start": 101.06,
+   "end": 101.24,
+   "type": "word"
+  },
+  {
+   "text": "um",
+   "start": 101.24,
+   "end": 101.4,
+   "type": "word"
+  },
+  {
+   "text": "cabo",
+   "start": 101.4,
+   "end": 101.54,
+   "type": "word"
+  },
+  {
+   "text": "fino.",
+   "start": 101.54,
+   "end": 101.92,
+   "type": "word"
+  },
+  {
+   "text": "Se",
+   "start": 102.32,
+   "end": 102.42,
+   "type": "word"
+  },
+  {
+   "text": "ela",
+   "start": 102.42,
+   "end": 102.62,
+   "type": "word"
+  },
+  {
+   "text": "gira",
+   "start": 102.62,
+   "end": 102.86,
+   "type": "word"
+  },
+  {
+   "text": "rápido",
+   "start": 102.86,
+   "end": 103.2,
+   "type": "word"
+  },
+  {
+   "text": "demais,",
+   "start": 103.2,
+   "end": 103.66,
+   "type": "word"
+  },
+  {
+   "text": "ela",
+   "start": 103.94,
+   "end": 104.16,
+   "type": "word"
+  },
+  {
+   "text": "trava",
+   "start": 104.16,
+   "end": 104.42,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 104.42,
+   "end": 104.74,
+   "type": "word"
+  },
+  {
+   "text": "puxa",
+   "start": 104.74,
+   "end": 105.06,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 105.06,
+   "end": 105.24,
+   "type": "word"
+  },
+  {
+   "text": "alavanca",
+   "start": 105.24,
+   "end": 105.58,
+   "type": "word"
+  },
+  {
+   "text": "das",
+   "start": 105.58,
+   "end": 105.8,
+   "type": "word"
+  },
+  {
+   "text": "garras.",
+   "start": 105.8,
+   "end": 106.38,
+   "type": "word"
+  },
+  {
+   "text": "Esse",
+   "start": 106.54,
+   "end": 106.94,
+   "type": "word"
+  },
+  {
+   "text": "é",
+   "start": 106.94,
+   "end": 107.12,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 107.12,
+   "end": 107.26,
+   "type": "word"
+  },
+  {
+   "text": "limitador",
+   "start": 107.26,
+   "end": 107.74,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 107.74,
+   "end": 107.94,
+   "type": "word"
+  },
+  {
+   "text": "velocidade.",
+   "start": 107.94,
+   "end": 108.44,
+   "type": "word"
+  },
+  {
+   "text": "Mas",
+   "start": 108.84,
+   "end": 108.96,
+   "type": "word"
+  },
+  {
+   "text": "se",
+   "start": 108.96,
+   "end": 109.1,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 109.1,
+   "end": 109.2,
+   "type": "word"
+  },
+  {
+   "text": "cabine",
+   "start": 109.2,
+   "end": 109.42,
+   "type": "word"
+  },
+  {
+   "text": "passar",
+   "start": 109.42,
+   "end": 109.82,
+   "type": "word"
+  },
+  {
+   "text": "do",
+   "start": 109.82,
+   "end": 110.04,
+   "type": "word"
+  },
+  {
+   "text": "térreo,",
+   "start": 110.04,
+   "end": 110.48,
+   "type": "word"
+  },
+  {
+   "text": "ela",
+   "start": 110.56,
+   "end": 110.76,
+   "type": "word"
+  },
+  {
+   "text": "bate",
+   "start": 110.76,
+   "end": 110.96,
+   "type": "word"
+  },
+  {
+   "text": "no",
+   "start": 110.96,
+   "end": 111.2,
+   "type": "word"
+  },
+  {
+   "text": "chão.",
+   "start": 111.2,
+   "end": 111.56,
+   "type": "word"
+  },
+  {
+   "text": "Então",
+   "start": 111.56,
+   "end": 111.88,
+   "type": "word"
+  },
+  {
+   "text": "você",
+   "start": 111.88,
+   "end": 112.26,
+   "type": "word"
+  },
+  {
+   "text": "cava",
+   "start": 112.26,
+   "end": 112.5,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 112.5,
+   "end": 112.68,
+   "type": "word"
+  },
+  {
+   "text": "fundo",
+   "start": 112.68,
+   "end": 112.86,
+   "type": "word"
+  },
+  {
+   "text": "do",
+   "start": 112.86,
+   "end": 113.14,
+   "type": "word"
+  },
+  {
+   "text": "poço",
+   "start": 113.14,
+   "end": 113.38,
+   "type": "word"
+  },
+  {
+   "text": "mais",
+   "start": 113.38,
+   "end": 113.82,
+   "type": "word"
+  },
+  {
+   "text": "baixo",
+   "start": 113.82,
+   "end": 114.08,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 114.08,
+   "end": 114.26,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 114.26,
+   "end": 114.42,
+   "type": "word"
+  },
+  {
+   "text": "térreo",
+   "start": 114.42,
+   "end": 114.7,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 114.7,
+   "end": 114.88,
+   "type": "word"
+  },
+  {
+   "text": "põe",
+   "start": 114.88,
+   "end": 115.1,
+   "type": "word"
+  },
+  {
+   "text": "molas",
+   "start": 115.1,
+   "end": 115.42,
+   "type": "word"
+  },
+  {
+   "text": "gigantes",
+   "start": 115.42,
+   "end": 115.98,
+   "type": "word"
+  },
+  {
+   "text": "para",
+   "start": 115.98,
+   "end": 116.18,
+   "type": "word"
+  },
+  {
+   "text": "ela",
+   "start": 116.18,
+   "end": 116.3,
+   "type": "word"
+  },
+  {
+   "text": "pousar",
+   "start": 116.3,
+   "end": 116.6,
+   "type": "word"
+  },
+  {
+   "text": "macio.",
+   "start": 116.6,
+   "end": 117.24,
+   "type": "word"
+  },
+  {
+   "text": "Esses",
+   "start": 117.44,
+   "end": 117.84,
+   "type": "word"
+  },
+  {
+   "text": "são",
+   "start": 117.84,
+   "end": 118.04,
+   "type": "word"
+  },
+  {
+   "text": "os",
+   "start": 118.04,
+   "end": 118.26,
+   "type": "word"
+  },
+  {
+   "text": "amortecedores.",
+   "start": 118.26,
+   "end": 119.12,
+   "type": "word"
+  },
+  {
+   "text": "É",
+   "start": 119.44,
+   "end": 119.56,
+   "type": "word"
+  },
+  {
+   "text": "por",
+   "start": 119.56,
+   "end": 119.84,
+   "type": "word"
+  },
+  {
+   "text": "isso",
+   "start": 119.84,
+   "end": 119.94,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 119.94,
+   "end": 120.08,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 120.08,
+   "end": 120.26,
+   "type": "word"
+  },
+  {
+   "text": "poço",
+   "start": 120.26,
+   "end": 120.44,
+   "type": "word"
+  },
+  {
+   "text": "do",
+   "start": 120.44,
+   "end": 120.62,
+   "type": "word"
+  },
+  {
+   "text": "elevador",
+   "start": 120.62,
+   "end": 121.06,
+   "type": "word"
+  },
+  {
+   "text": "desce",
+   "start": 121.06,
+   "end": 121.38,
+   "type": "word"
+  },
+  {
+   "text": "abaixo",
+   "start": 121.38,
+   "end": 121.82,
+   "type": "word"
+  },
+  {
+   "text": "do",
+   "start": 121.82,
+   "end": 122.04,
+   "type": "word"
+  },
+  {
+   "text": "térreo.",
+   "start": 122.04,
+   "end": 122.54,
+   "type": "word"
+  },
+  {
+   "text": "Mas",
+   "start": 122.66,
+   "end": 122.76,
+   "type": "word"
+  },
+  {
+   "text": "se",
+   "start": 122.76,
+   "end": 122.94,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 122.94,
+   "end": 123.0,
+   "type": "word"
+  },
+  {
+   "text": "porta",
+   "start": 123.0,
+   "end": 123.26,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 123.26,
+   "end": 123.4,
+   "type": "word"
+  },
+  {
+   "text": "um",
+   "start": 123.4,
+   "end": 123.54,
+   "type": "word"
+  },
+  {
+   "text": "andar",
+   "start": 123.54,
+   "end": 123.7,
+   "type": "word"
+  },
+  {
+   "text": "abrir",
+   "start": 123.7,
+   "end": 124.1,
+   "type": "word"
+  },
+  {
+   "text": "sem",
+   "start": 124.1,
+   "end": 124.38,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 124.38,
+   "end": 124.6,
+   "type": "word"
+  },
+  {
+   "text": "cabine",
+   "start": 124.6,
+   "end": 124.8,
+   "type": "word"
+  },
+  {
+   "text": "estar",
+   "start": 124.8,
+   "end": 125.0,
+   "type": "word"
+  },
+  {
+   "text": "ali,",
+   "start": 125.0,
+   "end": 125.28,
+   "type": "word"
+  },
+  {
+   "text": "alguém",
+   "start": 125.7,
+   "end": 125.84,
+   "type": "word"
+  },
+  {
+   "text": "dá",
+   "start": 125.84,
+   "end": 125.98,
+   "type": "word"
+  },
+  {
+   "text": "um",
+   "start": 125.98,
+   "end": 126.22,
+   "type": "word"
+  },
+  {
+   "text": "passo",
+   "start": 126.22,
+   "end": 126.4,
+   "type": "word"
+  },
+  {
+   "text": "no",
+   "start": 126.4,
+   "end": 126.6,
+   "type": "word"
+  },
+  {
+   "text": "vazio.",
+   "start": 126.6,
+   "end": 127.16,
+   "type": "word"
+  },
+  {
+   "text": "Então",
+   "start": 127.34,
+   "end": 127.56,
+   "type": "word"
+  },
+  {
+   "text": "cada",
+   "start": 127.56,
+   "end": 127.92,
+   "type": "word"
+  },
+  {
+   "text": "porta",
+   "start": 127.92,
+   "end": 128.26,
+   "type": "word"
+  },
+  {
+   "text": "tem",
+   "start": 128.26,
+   "end": 128.42,
+   "type": "word"
+  },
+  {
+   "text": "uma",
+   "start": 128.42,
+   "end": 128.72,
+   "type": "word"
+  },
+  {
+   "text": "trava",
+   "start": 128.72,
+   "end": 128.98,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 128.98,
+   "end": 129.26,
+   "type": "word"
+  },
+  {
+   "text": "só",
+   "start": 129.26,
+   "end": 129.6,
+   "type": "word"
+  },
+  {
+   "text": "solta",
+   "start": 129.6,
+   "end": 129.94,
+   "type": "word"
+  },
+  {
+   "text": "quando",
+   "start": 129.94,
+   "end": 130.12,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 130.12,
+   "end": 130.3,
+   "type": "word"
+  },
+  {
+   "text": "cabine",
+   "start": 130.3,
+   "end": 130.54,
+   "type": "word"
+  },
+  {
+   "text": "chega.",
+   "start": 130.54,
+   "end": 130.88,
+   "type": "word"
+  },
+  {
+   "text": "E",
+   "start": 131.22,
+   "end": 131.36,
+   "type": "word"
+  },
+  {
+   "text": "com",
+   "start": 131.36,
+   "end": 131.5,
+   "type": "word"
+  },
+  {
+   "text": "qualquer",
+   "start": 131.5,
+   "end": 131.84,
+   "type": "word"
+  },
+  {
+   "text": "porta",
+   "start": 131.84,
+   "end": 132.1,
+   "type": "word"
+  },
+  {
+   "text": "aberta,",
+   "start": 132.1,
+   "end": 132.6,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 132.78,
+   "end": 132.92,
+   "type": "word"
+  },
+  {
+   "text": "motor",
+   "start": 132.92,
+   "end": 133.14,
+   "type": "word"
+  },
+  {
+   "text": "não",
+   "start": 133.14,
+   "end": 133.4,
+   "type": "word"
+  },
+  {
+   "text": "anda.",
+   "start": 133.4,
+   "end": 133.66,
+   "type": "word"
+  },
+  {
+   "text": "Esse",
+   "start": 134.0,
+   "end": 134.38,
+   "type": "word"
+  },
+  {
+   "text": "é",
+   "start": 134.38,
+   "end": 134.62,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 134.62,
+   "end": 134.82,
+   "type": "word"
+  },
+  {
+   "text": "intertravamento.",
+   "start": 134.82,
+   "end": 135.6,
+   "type": "word"
+  },
+  {
+   "text": "É",
+   "start": 135.98,
+   "end": 136.06,
+   "type": "word"
+  },
+  {
+   "text": "por",
+   "start": 136.06,
+   "end": 136.3,
+   "type": "word"
+  },
+  {
+   "text": "isso",
+   "start": 136.3,
+   "end": 136.44,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 136.44,
+   "end": 136.52,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 136.52,
+   "end": 136.66,
+   "type": "word"
+  },
+  {
+   "text": "elevador",
+   "start": 136.66,
+   "end": 136.98,
+   "type": "word"
+  },
+  {
+   "text": "não",
+   "start": 136.98,
+   "end": 137.22,
+   "type": "word"
+  },
+  {
+   "text": "sai",
+   "start": 137.22,
+   "end": 137.42,
+   "type": "word"
+  },
+  {
+   "text": "do",
+   "start": 137.42,
+   "end": 137.58,
+   "type": "word"
+  },
+  {
+   "text": "lugar",
+   "start": 137.58,
+   "end": 137.88,
+   "type": "word"
+  },
+  {
+   "text": "enquanto",
+   "start": 137.88,
+   "end": 138.14,
+   "type": "word"
+  },
+  {
+   "text": "alguém",
+   "start": 138.14,
+   "end": 138.44,
+   "type": "word"
+  },
+  {
+   "text": "segura",
+   "start": 138.44,
+   "end": 138.76,
+   "type": "word"
+  },
+  {
+   "text": "a",
+   "start": 138.76,
+   "end": 139.0,
+   "type": "word"
+  },
+  {
+   "text": "porta.",
+   "start": 139.0,
+   "end": 139.18,
+   "type": "word"
+  },
+  {
+   "text": "Coloque",
+   "start": 139.18,
+   "end": 139.76,
+   "type": "word"
+  },
+  {
+   "text": "um",
+   "start": 139.76,
+   "end": 139.98,
+   "type": "word"
+  },
+  {
+   "text": "espelho,",
+   "start": 139.98,
+   "end": 140.48,
+   "type": "word"
+  },
+  {
+   "text": "um",
+   "start": 140.66,
+   "end": 140.78,
+   "type": "word"
+  },
+  {
+   "text": "botão",
+   "start": 140.78,
+   "end": 141.02,
+   "type": "word"
+  },
+  {
+   "text": "de",
+   "start": 141.02,
+   "end": 141.2,
+   "type": "word"
+  },
+  {
+   "text": "alarme",
+   "start": 141.2,
+   "end": 141.56,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 141.56,
+   "end": 141.76,
+   "type": "word"
+  },
+  {
+   "text": "uma",
+   "start": 141.76,
+   "end": 141.96,
+   "type": "word"
+  },
+  {
+   "text": "música",
+   "start": 141.96,
+   "end": 142.28,
+   "type": "word"
+  },
+  {
+   "text": "que",
+   "start": 142.28,
+   "end": 142.52,
+   "type": "word"
+  },
+  {
+   "text": "ninguém",
+   "start": 142.52,
+   "end": 142.8,
+   "type": "word"
+  },
+  {
+   "text": "pediu.",
+   "start": 142.8,
+   "end": 143.32,
+   "type": "word"
+  },
+  {
+   "text": "Agora",
+   "start": 143.66,
+   "end": 143.78,
+   "type": "word"
+  },
+  {
+   "text": "é",
+   "start": 143.78,
+   "end": 143.92,
+   "type": "word"
+  },
+  {
+   "text": "só",
+   "start": 143.92,
+   "end": 144.1,
+   "type": "word"
+  },
+  {
+   "text": "apertar",
+   "start": 144.1,
+   "end": 144.44,
+   "type": "word"
+  },
+  {
+   "text": "o",
+   "start": 144.44,
+   "end": 144.58,
+   "type": "word"
+  },
+  {
+   "text": "12",
+   "start": 144.58,
+   "end": 144.84,
+   "type": "word"
+  },
+  {
+   "text": "e",
+   "start": 144.84,
+   "end": 145.18,
+   "type": "word"
+  },
+  {
+   "text": "subir.",
+   "start": 145.18,
+   "end": 145.52,
+   "type": "word"
+  },
+  {
+   "text": "Parabéns!",
+   "start": 145.96,
+   "end": 146.56,
+   "type": "word"
+  },
+  {
+   "text": "Você",
+   "start": 146.64,
+   "end": 146.96,
+   "type": "word"
+  },
+  {
+   "text": "construiu",
+   "start": 146.96,
+   "end": 147.4,
+   "type": "word"
+  },
+  {
+   "text": "um",
+   "start": 147.4,
+   "end": 147.6,
+   "type": "word"
+  },
+  {
+   "text": "elevador!",
+   "start": 147.6,
+   "end": 148.06,
+   "type": "word"
+  },
+  {
+   "text": "Se",
+   "start": 148.32,
+   "end": 148.42,
+   "type": "word"
+  },
+  {
+   "text": "você",
+   "start": 148.42,
+   "end": 148.64,
+   "type": "word"
+  },
+  {
+   "text": "já",
+   "start": 148.64,
+   "end": 148.86,
+   "type": "word"
+  },
+  {
+   "text": "sabia,",
+   "start": 148.86,
+   "end": 149.24,
+   "type": "word"
+  },
+  {
+   "text": "comente",
+   "start": 149.56,
+   "end": 149.96,
+   "type": "word"
+  },
+  {
+   "text": "ascensorista.",
+   "start": 149.96,
+   "end": 150.98,
+   "type": "word"
+  },
+  {
+   "text": "Se",
+   "start": 151.32,
+   "end": 151.44,
+   "type": "word"
+  },
+  {
+   "text": "não",
+   "start": 151.44,
+   "end": 151.62,
+   "type": "word"
+  },
+  {
+   "text": "sabia,",
+   "start": 151.62,
+   "end": 152.04,
+   "type": "word"
+  },
+  {
+   "text": "comente",
+   "start": 152.38,
+   "end": 152.78,
+   "type": "word"
+  },
+  {
+   "text": "escada.",
+   "start": 152.78,
+   "end": 153.32,
+   "type": "word"
+  }
+ ]
+}
