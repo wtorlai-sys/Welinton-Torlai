@@ -9,5 +9,5 @@
  "audio_aprovado": true,
  "storyboard_pronto": true,
  "producao_pronta": true,
- "auditoria_final": false
+ "auditoria_final": true
 }
