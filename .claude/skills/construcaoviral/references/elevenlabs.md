@@ -27,8 +27,8 @@ a API, não peça chave, não escolha voz nem configure modelo por ele.
    (tempo por palavra, base de toda a produção) e lista divergências entre o roteiro e o que foi falado.
 2. `scripts/medir_audio.py <slug>` → duração real, palavras/min, pausas, loudness, comparado às referências.
 3. Mostre o resultado (incluindo divergências e se o ritmo ficou muito lento ou rápido) e pergunte se aprova.
-   Se estiver fora do formato (< 193 palavras/min, > 165 s ou > 10 pausas longas), ofereça: regerar no ElevenLabs
-   mais rápido, ou `scripts/ajustar_ritmo.py <slug>` (guarda o original, encurta pausas > 0,25 s por energia,
+   Se estiver fora do formato (< 193 palavras/min, > 165 s ou > 10 pausas longas), **rode direto, sem perguntar**
+   (decisão do usuário, 2026-11-27) `scripts/ajustar_ritmo.py <slug>` (guarda o original, encurta pausas > 0,25 s por energia,
    acelera com rubberband sem mudar o tom até ~200 ppm). Depois do ajuste, rode de novo `transcrever_audio.py`
    com o novo arquivo e `medir_audio.py`. Ajuste não corrige pronúncia: isso só regerando.
 4. Só após o "aprovado" explícito: `estado.py <slug> audio_aprovado true` → F5.

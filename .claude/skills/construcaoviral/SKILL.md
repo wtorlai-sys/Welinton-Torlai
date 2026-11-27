@@ -28,6 +28,9 @@ Caminhos (relativos à raiz do repositório):
 ## Decisões fixas do usuário (2026-11-25)
 - Nome da skill: construcaoviral ("Construção Viral").
 - ElevenLabs: só entregar o roteiro narrado para copiar e colar; nada de API.
+- Ritmo do áudio (2026-11-27): **sempre** rodar `ajustar_ritmo.py` automaticamente quando o áudio vier fora do
+  formato (< 193 ppm, > 165 s ou > 10 pausas longas) — sem perguntar. Depois mostrar antes/depois e pedir só a
+  aprovação do áudio.
 - Visual: **3D low-poly com mascote 3D**, como nas referências. Neste formato isso substitui a regra de
   personagem 2D do `STYLE_GUIDE.md` (que vale para a série "E se…?"). As demais regras técnicas do repositório
   (determinismo, 1080x1920/30 fps, área segura, vermelho só no foco) continuam valendo quando a produção for em código.
@@ -109,8 +112,8 @@ Siga `references/elevenlabs.md`. Resumo:
 2. Revise e entregue o texto **na conversa, num bloco de código** para copiar, com caracteres, palavras, duração
    estimada e palavras de pronúncia duvidosa. **PARE.**
 3. Se o usuário mandar o áudio gerado: `scripts/transcrever_audio.py <slug> <arquivo>` (tempo por palavra) +
-   `scripts/medir_audio.py <slug>`; se o ritmo estiver fora do formato, ofereça regerar ou
-   `scripts/ajustar_ritmo.py <slug>`; mostre e peça aprovação antes da F5.
+   `scripts/medir_audio.py <slug>`; se o ritmo estiver fora do formato, rode **direto** `scripts/ajustar_ritmo.py <slug>`
+   (decisão do usuário: ajustar sem perguntar), re-transcreva e re-meça; mostre antes/depois e peça aprovação antes da F5.
 
 ## F5 — Produção (só com áudio aprovado)
 Siga `references/producao.md`. Rode `scripts/marcar_tempos.py <slug>` (tempo real de cada frase + palavras-âncora) e

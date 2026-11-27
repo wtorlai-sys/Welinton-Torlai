@@ -1,122 +1,30 @@
 {
- "duracao_s": 161.57,
- "loudness": "I:         -23.2 LUFS",
+ "duracao_s": 148.72,
+ "loudness": "I:         -24.3 LUFS",
  "palavras": 495,
- "palavras_por_minuto": 184,
+ "palavras_por_minuto": 200,
  "primeira_palavra_s": 0.0,
- "silencio_final_s": 0.23,
+ "silencio_final_s": 0.22,
  "pausas_acima_0_35s": [
   [
-   0.42,
-   "lado."
-  ],
-  [
-   0.5,
-   "baixo."
-  ],
-  [
-   0.5,
-   "força."
-  ],
-  [
-   0.36,
-   "corrida."
-  ],
-  [
-   0.54,
-   "fora."
-  ],
-  [
-   0.4,
-   "inclinada."
-  ],
-  [
-   0.5,
-   "subir."
-  ],
-  [
-   0.42,
-   "cima."
-  ],
-  [
-   0.4,
-   "dente."
-  ],
-  [
-   0.48,
+   0.44,
    "trava."
   ],
   [
-   0.36,
-   "-retorno."
-  ],
-  [
    0.38,
-   "clac."
-  ],
-  [
-   0.42,
-   "baixo."
-  ],
-  [
-   0.44,
-   "cair."
-  ],
-  [
-   0.4,
-   "redondo."
-  ],
-  [
-   0.54,
    "banco?"
   ],
   [
-   0.46,
-   "estação."
-  ],
-  [
-   0.5,
+   0.38,
    "demais."
   ],
   [
-   0.38,
-   "carrinho."
-  ],
-  [
-   0.48,
-   "energia."
-  ],
-  [
-   0.44,
-   "magnético."
-  ],
-  [
-   0.38,
-   "estação."
-  ],
-  [
-   0.56,
+   0.4,
    "esperando."
   ],
   [
-   0.42,
-   "blocos."
-  ],
-  [
-   0.42,
-   "estação."
-  ],
-  [
-   0.42,
-   "lugar."
-  ],
-  [
-   0.44,
-   "descida."
-  ],
-  [
-   0.38,
-   "russa!"
+   0.36,
+   "sabia,"
   ]
  ],
  "referencia": {
