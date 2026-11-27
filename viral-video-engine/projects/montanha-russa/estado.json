@@ -6,8 +6,8 @@
  "roteiro_auditado": true,
  "narracao_entregue": true,
  "audio_gerado": true,
- "audio_aprovado": false,
- "storyboard_pronto": false,
- "producao_pronta": false,
+ "audio_aprovado": true,
+ "storyboard_pronto": true,
+ "producao_pronta": true,
  "auditoria_final": false
 }

@@ -1,0 +1,2274 @@
+[
+ {
+  "n": 1,
+  "frase": "Se você colocar um carrinho num trilho e soltar lá do alto, você não vai ter uma montanha-russa, vai ter um carrinho voando na primeira curva.",
+  "inicio": 0.0,
+  "fim": 7.38,
+  "palavras": [
+   {
+    "t": "Se",
+    "s": 0.0
+   },
+   {
+    "t": "você",
+    "s": 0.2
+   },
+   {
+    "t": "colocar",
+    "s": 0.48
+   },
+   {
+    "t": "um",
+    "s": 0.78
+   },
+   {
+    "t": "carrinho",
+    "s": 0.98
+   },
+   {
+    "t": "num",
+    "s": 1.22
+   },
+   {
+    "t": "trilho",
+    "s": 1.46
+   },
+   {
+    "t": "e",
+    "s": 1.82
+   },
+   {
+    "t": "soltar",
+    "s": 2.0
+   },
+   {
+    "t": "lá",
+    "s": 2.4
+   },
+   {
+    "t": "do",
+    "s": 2.66
+   },
+   {
+    "t": "alto,",
+    "s": 2.86
+   },
+   {
+    "t": "você",
+    "s": 3.42
+   },
+   {
+    "t": "não",
+    "s": 3.54
+   },
+   {
+    "t": "vai",
+    "s": 3.74
+   },
+   {
+    "t": "ter",
+    "s": 3.88
+   },
+   {
+    "t": "uma",
+    "s": 4.04
+   },
+   {
+    "t": "Vai",
+    "s": 5.08
+   },
+   {
+    "t": "ter",
+    "s": 5.22
+   },
+   {
+    "t": "um",
+    "s": 5.34
+   },
+   {
+    "t": "carrinho",
+    "s": 5.58
+   },
+   {
+    "t": "voando",
+    "s": 5.86
+   },
+   {
+    "t": "na",
+    "s": 6.3
+   },
+   {
+    "t": "primeira",
+    "s": 6.48
+   },
+   {
+    "t": "curva,",
+    "s": 6.82
+   }
+  ]
+ },
+ {
+  "n": 2,
+  "frase": "Porque, descendo de trinta metros, ele passa de oitenta quilômetros por hora.",
+  "inicio": 7.52,
+  "fim": 11.38,
+  "palavras": [
+   {
+    "t": "porque",
+    "s": 7.52
+   },
+   {
+    "t": "descendo",
+    "s": 7.92
+   },
+   {
+    "t": "de",
+    "s": 8.3
+   },
+   {
+    "t": "metros,",
+    "s": 8.82
+   },
+   {
+    "t": "ele",
+    "s": 9.38
+   },
+   {
+    "t": "passa",
+    "s": 9.56
+   },
+   {
+    "t": "de",
+    "s": 9.8
+   },
+   {
+    "t": "por",
+    "s": 10.9
+   },
+   {
+    "t": "hora,",
+    "s": 11.16
+   }
+  ]
+ },
+ {
+  "n": 3,
+  "frase": "E na curva, tudo que está rápido quer seguir reto.",
+  "inicio": 11.6,
+  "fim": 14.3,
+  "palavras": [
+   {
+    "t": "e",
+    "s": 11.6
+   },
+   {
+    "t": "na",
+    "s": 11.68
+   },
+   {
+    "t": "curva,",
+    "s": 11.86
+   },
+   {
+    "t": "tudo",
+    "s": 12.54
+   },
+   {
+    "t": "que",
+    "s": 12.64
+   },
+   {
+    "t": "está",
+    "s": 12.8
+   },
+   {
+    "t": "rápido",
+    "s": 12.96
+   },
+   {
+    "t": "quer",
+    "s": 13.32
+   },
+   {
+    "t": "seguir",
+    "s": 13.58
+   },
+   {
+    "t": "reto.",
+    "s": 13.84
+   }
+  ]
+ },
+ {
+  "n": 4,
+  "frase": "Então você coloca rodas também embaixo do trilho, além das de cima e das do lado.",
+  "inicio": 14.5,
+  "fim": 18.56,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 14.5
+   },
+   {
+    "t": "você",
+    "s": 14.64
+   },
+   {
+    "t": "coloca",
+    "s": 14.92
+   },
+   {
+    "t": "rodas",
+    "s": 15.2
+   },
+   {
+    "t": "também",
+    "s": 15.68
+   },
+   {
+    "t": "embaixo",
+    "s": 16.06
+   },
+   {
+    "t": "do",
+    "s": 16.36
+   },
+   {
+    "t": "trilho,",
+    "s": 16.6
+   },
+   {
+    "t": "além",
+    "s": 17.14
+   },
+   {
+    "t": "das",
+    "s": 17.3
+   },
+   {
+    "t": "de",
+    "s": 17.44
+   },
+   {
+    "t": "cima",
+    "s": 17.66
+   },
+   {
+    "t": "e",
+    "s": 17.88
+   },
+   {
+    "t": "das",
+    "s": 18.02
+   },
+   {
+    "t": "do",
+    "s": 18.14
+   },
+   {
+    "t": "lado.",
+    "s": 18.34
+   }
+  ]
+ },
+ {
+  "n": 5,
+  "frase": "O trilho fica abraçado, e o carrinho não sai nem de cabeça pra baixo.",
+  "inicio": 18.82,
+  "fim": 22.16,
+  "palavras": [
+   {
+    "t": "O",
+    "s": 18.82
+   },
+   {
+    "t": "trilho",
+    "s": 18.98
+   },
+   {
+    "t": "fica",
+    "s": 19.2
+   },
+   {
+    "t": "abraçado,",
+    "s": 19.4
+   },
+   {
+    "t": "e",
+    "s": 20.18
+   },
+   {
+    "t": "o",
+    "s": 20.32
+   },
+   {
+    "t": "carrinho",
+    "s": 20.46
+   },
+   {
+    "t": "não",
+    "s": 20.64
+   },
+   {
+    "t": "sai",
+    "s": 20.8
+   },
+   {
+    "t": "nem",
+    "s": 21.0
+   },
+   {
+    "t": "de",
+    "s": 21.26
+   },
+   {
+    "t": "cabeça",
+    "s": 21.42
+   },
+   {
+    "t": "pra",
+    "s": 21.66
+   },
+   {
+    "t": "baixo.",
+    "s": 21.9
+   }
+  ]
+ },
+ {
+  "n": 6,
+  "frase": "Essas são as rodas inferiores.",
+  "inicio": 22.44,
+  "fim": 24.24,
+  "palavras": [
+   {
+    "t": "Essas",
+    "s": 22.44
+   },
+   {
+    "t": "são",
+    "s": 22.88
+   },
+   {
+    "t": "as",
+    "s": 23.06
+   },
+   {
+    "t": "rodas",
+    "s": 23.22
+   },
+   {
+    "t": "inferiores.",
+    "s": 23.58
+   }
+  ]
+ },
+ {
+  "n": 7,
+  "frase": "Mas, na curva, o corpo de quem está dentro é jogado pro lado com força.",
+  "inicio": 24.46,
+  "fim": 28.5,
+  "palavras": [
+   {
+    "t": "Mas,",
+    "s": 24.46
+   },
+   {
+    "t": "na",
+    "s": 24.88
+   },
+   {
+    "t": "curva,",
+    "s": 25.1
+   },
+   {
+    "t": "o",
+    "s": 25.74
+   },
+   {
+    "t": "corpo",
+    "s": 25.88
+   },
+   {
+    "t": "de",
+    "s": 26.16
+   },
+   {
+    "t": "quem",
+    "s": 26.34
+   },
+   {
+    "t": "está",
+    "s": 26.44
+   },
+   {
+    "t": "dentro",
+    "s": 26.64
+   },
+   {
+    "t": "é",
+    "s": 26.92
+   },
+   {
+    "t": "jogado",
+    "s": 27.14
+   },
+   {
+    "t": "pro",
+    "s": 27.44
+   },
+   {
+    "t": "lado",
+    "s": 27.58
+   },
+   {
+    "t": "com",
+    "s": 27.78
+   },
+   {
+    "t": "força,",
+    "s": 28.12
+   }
+  ]
+ },
+ {
+  "n": 8,
+  "frase": "Então você deita o trilho pra dentro da curva, como numa pista de corrida.",
+  "inicio": 28.78,
+  "fim": 32.52,
+  "palavras": [
+   {
+    "t": "então",
+    "s": 28.78
+   },
+   {
+    "t": "você",
+    "s": 28.98
+   },
+   {
+    "t": "deita",
+    "s": 29.2
+   },
+   {
+    "t": "o",
+    "s": 29.64
+   },
+   {
+    "t": "trilho",
+    "s": 29.86
+   },
+   {
+    "t": "pra",
+    "s": 30.04
+   },
+   {
+    "t": "dentro",
+    "s": 30.32
+   },
+   {
+    "t": "da",
+    "s": 30.6
+   },
+   {
+    "t": "curva,",
+    "s": 30.82
+   },
+   {
+    "t": "como",
+    "s": 31.28
+   },
+   {
+    "t": "numa",
+    "s": 31.42
+   },
+   {
+    "t": "pista",
+    "s": 31.6
+   },
+   {
+    "t": "de",
+    "s": 31.88
+   },
+   {
+    "t": "corrida.",
+    "s": 32.08
+   }
+  ]
+ },
+ {
+  "n": 9,
+  "frase": "Agora a força empurra você contra o banco, e não pra fora.",
+  "inicio": 32.82,
+  "fim": 36.04,
+  "palavras": [
+   {
+    "t": "Agora,",
+    "s": 32.82
+   },
+   {
+    "t": "a",
+    "s": 33.24
+   },
+   {
+    "t": "força",
+    "s": 33.38
+   },
+   {
+    "t": "empurra",
+    "s": 33.56
+   },
+   {
+    "t": "você",
+    "s": 33.94
+   },
+   {
+    "t": "contra",
+    "s": 34.32
+   },
+   {
+    "t": "o",
+    "s": 34.64
+   },
+   {
+    "t": "banco,",
+    "s": 34.84
+   },
+   {
+    "t": "e",
+    "s": 35.24
+   },
+   {
+    "t": "não",
+    "s": 35.4
+   },
+   {
+    "t": "pra",
+    "s": 35.54
+   },
+   {
+    "t": "fora.",
+    "s": 35.78
+   }
+  ]
+ },
+ {
+  "n": 10,
+  "frase": "Essa é a curva inclinada.",
+  "inicio": 36.38,
+  "fim": 37.84,
+  "palavras": [
+   {
+    "t": "Essa",
+    "s": 36.38
+   },
+   {
+    "t": "é",
+    "s": 36.64
+   },
+   {
+    "t": "a",
+    "s": 36.88
+   },
+   {
+    "t": "curva",
+    "s": 37.08
+   },
+   {
+    "t": "inclinada.",
+    "s": 37.32
+   }
+  ]
+ },
+ {
+  "n": 11,
+  "frase": "Mas, pra descer, o carrinho primeiro precisa subir.",
+  "inicio": 38.08,
+  "fim": 40.74,
+  "palavras": [
+   {
+    "t": "Mas",
+    "s": 38.08
+   },
+   {
+    "t": "pra",
+    "s": 38.34
+   },
+   {
+    "t": "descer,",
+    "s": 38.58
+   },
+   {
+    "t": "o",
+    "s": 39.26
+   },
+   {
+    "t": "carrinho",
+    "s": 39.4
+   },
+   {
+    "t": "primeiro",
+    "s": 39.6
+   },
+   {
+    "t": "precisa",
+    "s": 40.0
+   },
+   {
+    "t": "subir.",
+    "s": 40.34
+   }
+  ]
+ },
+ {
+  "n": 12,
+  "frase": "Então você coloca uma corrente no meio do trilho, puxada por um motor, que arrasta o carrinho até o topo.",
+  "inicio": 41.08,
+  "fim": 46.3,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 41.08
+   },
+   {
+    "t": "você",
+    "s": 41.2
+   },
+   {
+    "t": "coloca",
+    "s": 41.48
+   },
+   {
+    "t": "uma",
+    "s": 41.7
+   },
+   {
+    "t": "corrente",
+    "s": 41.98
+   },
+   {
+    "t": "no",
+    "s": 42.34
+   },
+   {
+    "t": "meio",
+    "s": 42.52
+   },
+   {
+    "t": "do",
+    "s": 42.7
+   },
+   {
+    "t": "trilho,",
+    "s": 42.92
+   },
+   {
+    "t": "puxada",
+    "s": 43.36
+   },
+   {
+    "t": "por",
+    "s": 43.6
+   },
+   {
+    "t": "um",
+    "s": 43.76
+   },
+   {
+    "t": "motor,",
+    "s": 43.9
+   },
+   {
+    "t": "que",
+    "s": 44.46
+   },
+   {
+    "t": "arrasta",
+    "s": 44.62
+   },
+   {
+    "t": "o",
+    "s": 45.02
+   },
+   {
+    "t": "carrinho",
+    "s": 45.18
+   },
+   {
+    "t": "até",
+    "s": 45.42
+   },
+   {
+    "t": "o",
+    "s": 45.7
+   },
+   {
+    "t": "topo.",
+    "s": 45.86
+   }
+  ]
+ },
+ {
+  "n": 13,
+  "frase": "Essa é a subida de corrente.",
+  "inicio": 46.46,
+  "fim": 48.04,
+  "palavras": [
+   {
+    "t": "Essa",
+    "s": 46.46
+   },
+   {
+    "t": "é",
+    "s": 46.76
+   },
+   {
+    "t": "a",
+    "s": 46.98
+   },
+   {
+    "t": "subida",
+    "s": 47.1
+   },
+   {
+    "t": "de",
+    "s": 47.44
+   },
+   {
+    "t": "corrente.",
+    "s": 47.66
+   }
+  ]
+ },
+ {
+  "n": 14,
+  "frase": "Mas, se a corrente arrebentar, o carrinho volta de ré lá de cima.",
+  "inicio": 48.3,
+  "fim": 51.78,
+  "palavras": [
+   {
+    "t": "Mas",
+    "s": 48.3
+   },
+   {
+    "t": "se",
+    "s": 48.58
+   },
+   {
+    "t": "a",
+    "s": 48.84
+   },
+   {
+    "t": "corrente",
+    "s": 49.0
+   },
+   {
+    "t": "arrebentar,",
+    "s": 49.22
+   },
+   {
+    "t": "o",
+    "s": 50.06
+   },
+   {
+    "t": "carrinho",
+    "s": 50.2
+   },
+   {
+    "t": "volta",
+    "s": 50.46
+   },
+   {
+    "t": "de",
+    "s": 50.76
+   },
+   {
+    "t": "ré",
+    "s": 51.0
+   },
+   {
+    "t": "lá",
+    "s": 51.12
+   },
+   {
+    "t": "de",
+    "s": 51.4
+   },
+   {
+    "t": "cima.",
+    "s": 51.6
+   }
+  ]
+ },
+ {
+  "n": 15,
+  "frase": "Então você põe ao lado da corrente uma escadinha de dentes.",
+  "inicio": 52.1,
+  "fim": 55.1,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 52.1
+   },
+   {
+    "t": "você",
+    "s": 52.28
+   },
+   {
+    "t": "põe",
+    "s": 52.58
+   },
+   {
+    "t": "ao",
+    "s": 52.7
+   },
+   {
+    "t": "lado",
+    "s": 52.9
+   },
+   {
+    "t": "da",
+    "s": 53.08
+   },
+   {
+    "t": "corrente",
+    "s": 53.3
+   },
+   {
+    "t": "uma",
+    "s": 53.64
+   },
+   {
+    "t": "escadinha",
+    "s": 53.84
+   },
+   {
+    "t": "de",
+    "s": 54.28
+   },
+   {
+    "t": "dentes.",
+    "s": 54.52
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "frase": "Embaixo do carrinho, uma garra vai pulando de dente em dente.",
+  "inicio": 55.3,
+  "fim": 58.3,
+  "palavras": [
+   {
+    "t": "Embaixo",
+    "s": 55.3
+   },
+   {
+    "t": "do",
+    "s": 55.6
+   },
+   {
+    "t": "carrinho,",
+    "s": 55.78
+   },
+   {
+    "t": "uma",
+    "s": 56.32
+   },
+   {
+    "t": "garra",
+    "s": 56.52
+   },
+   {
+    "t": "vai",
+    "s": 56.8
+   },
+   {
+    "t": "pulando",
+    "s": 56.98
+   },
+   {
+    "t": "de",
+    "s": 57.4
+   },
+   {
+    "t": "dente",
+    "s": 57.66
+   },
+   {
+    "t": "em",
+    "s": 57.88
+   },
+   {
+    "t": "dente.",
+    "s": 58.02
+   }
+  ]
+ },
+ {
+  "n": 17,
+  "frase": "Se ele tentar voltar, a garra trava.",
+  "inicio": 58.3,
+  "fim": 60.54,
+  "palavras": [
+   {
+    "t": "Se",
+    "s": 58.3
+   },
+   {
+    "t": "ele",
+    "s": 58.7
+   },
+   {
+    "t": "tentar",
+    "s": 58.86
+   },
+   {
+    "t": "voltar,",
+    "s": 59.12
+   },
+   {
+    "t": "a",
+    "s": 60.16
+   },
+   {
+    "t": "trava.",
+    "s": 60.32
+   }
+  ]
+ },
+ {
+  "n": 18,
+  "frase": "Essa é a trava antirretorno.",
+  "inicio": 60.98,
+  "fim": 61.8,
+  "palavras": [
+   {
+    "t": "Essa",
+    "s": 60.98
+   },
+   {
+    "t": "é",
+    "s": 61.14
+   },
+   {
+    "t": "a",
+    "s": 61.46
+   },
+   {
+    "t": "trava",
+    "s": 61.56
+   }
+  ]
+ },
+ {
+  "n": 19,
+  "frase": "É por isso que a subida da montanha-russa faz clac, clac, clac.",
+  "inicio": 62.94,
+  "fim": 66.36,
+  "palavras": [
+   {
+    "t": "É",
+    "s": 62.94
+   },
+   {
+    "t": "por",
+    "s": 63.02
+   },
+   {
+    "t": "isso",
+    "s": 63.28
+   },
+   {
+    "t": "que",
+    "s": 63.4
+   },
+   {
+    "t": "a",
+    "s": 63.5
+   },
+   {
+    "t": "subida",
+    "s": 63.62
+   },
+   {
+    "t": "da",
+    "s": 63.86
+   },
+   {
+    "t": "faz",
+    "s": 64.56
+   },
+   {
+    "t": "clac,",
+    "s": 64.96
+   },
+   {
+    "t": "clac,",
+    "s": 65.54
+   },
+   {
+    "t": "clac.",
+    "s": 65.94
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "frase": "Mas agora você quer dar uma volta de cabeça pra baixo.",
+  "inicio": 66.58,
+  "fim": 69.12,
+  "palavras": [
+   {
+    "t": "Mas",
+    "s": 66.58
+   },
+   {
+    "t": "agora",
+    "s": 66.72
+   },
+   {
+    "t": "você",
+    "s": 67.06
+   },
+   {
+    "t": "quer",
+    "s": 67.32
+   },
+   {
+    "t": "dar",
+    "s": 67.46
+   },
+   {
+    "t": "uma",
+    "s": 67.62
+   },
+   {
+    "t": "volta",
+    "s": 67.84
+   },
+   {
+    "t": "de",
+    "s": 68.02
+   },
+   {
+    "t": "cabeça",
+    "s": 68.24
+   },
+   {
+    "t": "pra",
+    "s": 68.54
+   },
+   {
+    "t": "baixo.",
+    "s": 68.82
+   }
+  ]
+ },
+ {
+  "n": 21,
+  "frase": "Num loop redondo, o carrinho precisa entrar tão rápido que, lá embaixo, seu corpo fica seis vezes mais pesado.",
+  "inicio": 69.4,
+  "fim": 75.46,
+  "palavras": [
+   {
+    "t": "Num",
+    "s": 69.4
+   },
+   {
+    "t": "loop",
+    "s": 69.52
+   },
+   {
+    "t": "redondo,",
+    "s": 69.8
+   },
+   {
+    "t": "o",
+    "s": 70.48
+   },
+   {
+    "t": "carrinho",
+    "s": 70.6
+   },
+   {
+    "t": "precisa",
+    "s": 70.8
+   },
+   {
+    "t": "entrar",
+    "s": 71.1
+   },
+   {
+    "t": "tão",
+    "s": 71.44
+   },
+   {
+    "t": "rápido",
+    "s": 71.7
+   },
+   {
+    "t": "que",
+    "s": 72.16
+   },
+   {
+    "t": "lá",
+    "s": 72.4
+   },
+   {
+    "t": "embaixo",
+    "s": 72.62
+   },
+   {
+    "t": "seu",
+    "s": 73.02
+   },
+   {
+    "t": "corpo",
+    "s": 73.3
+   },
+   {
+    "t": "fica",
+    "s": 73.58
+   },
+   {
+    "t": "vezes",
+    "s": 74.28
+   },
+   {
+    "t": "mais",
+    "s": 74.6
+   },
+   {
+    "t": "pesado.",
+    "s": 74.88
+   }
+  ]
+ },
+ {
+  "n": 22,
+  "frase": "Então você estica o loop pra cima, em forma de gota.",
+  "inicio": 75.6,
+  "fim": 78.52,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 75.6
+   },
+   {
+    "t": "você",
+    "s": 75.78
+   },
+   {
+    "t": "estica",
+    "s": 76.18
+   },
+   {
+    "t": "o",
+    "s": 76.46
+   },
+   {
+    "t": "loop",
+    "s": 76.64
+   },
+   {
+    "t": "pra",
+    "s": 76.8
+   },
+   {
+    "t": "cima,",
+    "s": 77.12
+   },
+   {
+    "t": "em",
+    "s": 77.58
+   },
+   {
+    "t": "forma",
+    "s": 77.7
+   },
+   {
+    "t": "de",
+    "s": 77.88
+   },
+   {
+    "t": "gota.",
+    "s": 78.12
+   }
+  ]
+ },
+ {
+  "n": 23,
+  "frase": "Embaixo, a curva é aberta e suave.",
+  "inicio": 78.72,
+  "fim": 80.86,
+  "palavras": [
+   {
+    "t": "Embaixo,",
+    "s": 78.72
+   },
+   {
+    "t": "a",
+    "s": 79.3
+   },
+   {
+    "t": "curva",
+    "s": 79.44
+   },
+   {
+    "t": "é",
+    "s": 79.64
+   },
+   {
+    "t": "aberta",
+    "s": 79.8
+   },
+   {
+    "t": "e",
+    "s": 80.22
+   },
+   {
+    "t": "suave.",
+    "s": 80.44
+   }
+  ]
+ },
+ {
+  "n": 24,
+  "frase": "Em cima, é fechada, e o carrinho passa devagar sem cair.",
+  "inicio": 81.14,
+  "fim": 84.36,
+  "palavras": [
+   {
+    "t": "Em",
+    "s": 81.14
+   },
+   {
+    "t": "cima,",
+    "s": 81.36
+   },
+   {
+    "t": "é",
+    "s": 81.72
+   },
+   {
+    "t": "fechada,",
+    "s": 81.86
+   },
+   {
+    "t": "e",
+    "s": 82.46
+   },
+   {
+    "t": "o",
+    "s": 82.56
+   },
+   {
+    "t": "carrinho",
+    "s": 82.7
+   },
+   {
+    "t": "passa",
+    "s": 82.9
+   },
+   {
+    "t": "devagar",
+    "s": 83.16
+   },
+   {
+    "t": "sem",
+    "s": 83.76
+   },
+   {
+    "t": "cair.",
+    "s": 84.02
+   }
+  ]
+ },
+ {
+  "n": 25,
+  "frase": "Esse é o loop em gota.",
+  "inicio": 84.7,
+  "fim": 86.14,
+  "palavras": [
+   {
+    "t": "Esse",
+    "s": 84.7
+   },
+   {
+    "t": "é",
+    "s": 84.96
+   },
+   {
+    "t": "o",
+    "s": 85.18
+   },
+   {
+    "t": "loop",
+    "s": 85.34
+   },
+   {
+    "t": "em",
+    "s": 85.54
+   },
+   {
+    "t": "gota.",
+    "s": 85.72
+   }
+  ]
+ },
+ {
+  "n": 26,
+  "frase": "É por isso que nenhum loop de montanha-russa é redondo.",
+  "inicio": 86.14,
+  "fim": 88.72,
+  "palavras": [
+   {
+    "t": "É",
+    "s": 86.14
+   },
+   {
+    "t": "por",
+    "s": 86.3
+   },
+   {
+    "t": "isso",
+    "s": 86.62
+   },
+   {
+    "t": "que",
+    "s": 86.76
+   },
+   {
+    "t": "nenhum",
+    "s": 86.9
+   },
+   {
+    "t": "loop",
+    "s": 87.18
+   },
+   {
+    "t": "de",
+    "s": 87.46
+   },
+   {
+    "t": "é",
+    "s": 88.18
+   },
+   {
+    "t": "redondo.",
+    "s": 88.36
+   }
+  ]
+ },
+ {
+  "n": 27,
+  "frase": "Mas, de cabeça pra baixo, quem segura você no banco?",
+  "inicio": 89.06,
+  "fim": 91.72,
+  "palavras": [
+   {
+    "t": "Mas,",
+    "s": 89.06
+   },
+   {
+    "t": "de",
+    "s": 89.4
+   },
+   {
+    "t": "cabeça",
+    "s": 89.56
+   },
+   {
+    "t": "pra",
+    "s": 89.82
+   },
+   {
+    "t": "baixo,",
+    "s": 90.1
+   },
+   {
+    "t": "quem",
+    "s": 90.6
+   },
+   {
+    "t": "segura",
+    "s": 90.76
+   },
+   {
+    "t": "você",
+    "s": 91.06
+   },
+   {
+    "t": "no",
+    "s": 91.3
+   },
+   {
+    "t": "banco?",
+    "s": 91.44
+   }
+  ]
+ },
+ {
+  "n": 28,
+  "frase": "Então você desce uma barra sobre os ombros, que trava sozinha e só abre na estação.",
+  "inicio": 92.1,
+  "fim": 96.48,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 92.1
+   },
+   {
+    "t": "você",
+    "s": 92.28
+   },
+   {
+    "t": "desce",
+    "s": 92.6
+   },
+   {
+    "t": "uma",
+    "s": 92.86
+   },
+   {
+    "t": "barra",
+    "s": 93.1
+   },
+   {
+    "t": "sobre",
+    "s": 93.38
+   },
+   {
+    "t": "os",
+    "s": 93.6
+   },
+   {
+    "t": "ombros,",
+    "s": 93.82
+   },
+   {
+    "t": "que",
+    "s": 94.18
+   },
+   {
+    "t": "trava",
+    "s": 94.38
+   },
+   {
+    "t": "sozinha",
+    "s": 94.56
+   },
+   {
+    "t": "e",
+    "s": 95.14
+   },
+   {
+    "t": "só",
+    "s": 95.3
+   },
+   {
+    "t": "abre",
+    "s": 95.54
+   },
+   {
+    "t": "na",
+    "s": 95.74
+   },
+   {
+    "t": "estação.",
+    "s": 95.92
+   }
+  ]
+ },
+ {
+  "n": 29,
+  "frase": "Essa é a trava de segurança.",
+  "inicio": 96.78,
+  "fim": 98.22,
+  "palavras": [
+   {
+    "t": "Essa",
+    "s": 96.78
+   },
+   {
+    "t": "é",
+    "s": 96.94
+   },
+   {
+    "t": "a",
+    "s": 97.24
+   },
+   {
+    "t": "trava",
+    "s": 97.36
+   },
+   {
+    "t": "de",
+    "s": 97.54
+   },
+   {
+    "t": "segurança.",
+    "s": 97.86
+   }
+  ]
+ },
+ {
+  "n": 30,
+  "frase": "Mas, no fim do percurso, o carrinho ainda chega rápido demais.",
+  "inicio": 98.54,
+  "fim": 101.7,
+  "palavras": [
+   {
+    "t": "Mas,",
+    "s": 98.54
+   },
+   {
+    "t": "no",
+    "s": 98.98
+   },
+   {
+    "t": "fim",
+    "s": 99.14
+   },
+   {
+    "t": "do",
+    "s": 99.24
+   },
+   {
+    "t": "percurso,",
+    "s": 99.5
+   },
+   {
+    "t": "o",
+    "s": 100.04
+   },
+   {
+    "t": "carrinho",
+    "s": 100.16
+   },
+   {
+    "t": "ainda",
+    "s": 100.34
+   },
+   {
+    "t": "chega",
+    "s": 100.58
+   },
+   {
+    "t": "rápido",
+    "s": 100.88
+   },
+   {
+    "t": "demais.",
+    "s": 101.26
+   }
+  ]
+ },
+ {
+  "n": 31,
+  "frase": "Então você põe ímãs fortes no trilho e uma lâmina de metal embaixo do carrinho.",
+  "inicio": 102.08,
+  "fim": 105.96,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 102.08
+   },
+   {
+    "t": "você",
+    "s": 102.2
+   },
+   {
+    "t": "põe",
+    "s": 102.5
+   },
+   {
+    "t": "fortes",
+    "s": 103.12
+   },
+   {
+    "t": "no",
+    "s": 103.42
+   },
+   {
+    "t": "trilho",
+    "s": 103.58
+   },
+   {
+    "t": "e",
+    "s": 103.9
+   },
+   {
+    "t": "uma",
+    "s": 104.08
+   },
+   {
+    "t": "lâmina",
+    "s": 104.32
+   },
+   {
+    "t": "de",
+    "s": 104.56
+   },
+   {
+    "t": "metal",
+    "s": 104.8
+   },
+   {
+    "t": "embaixo",
+    "s": 105.0
+   },
+   {
+    "t": "do",
+    "s": 105.4
+   },
+   {
+    "t": "carrinho.",
+    "s": 105.64
+   }
+  ]
+ },
+ {
+  "n": 32,
+  "frase": "Quando a lâmina passa entre os ímãs, ela freia sem encostar em nada, e funciona até sem energia.",
+  "inicio": 106.22,
+  "fim": 111.26,
+  "palavras": [
+   {
+    "t": "Quando",
+    "s": 106.22
+   },
+   {
+    "t": "a",
+    "s": 106.36
+   },
+   {
+    "t": "lâmina",
+    "s": 106.52
+   },
+   {
+    "t": "passa",
+    "s": 106.8
+   },
+   {
+    "t": "entre",
+    "s": 107.1
+   },
+   {
+    "t": "os",
+    "s": 107.32
+   },
+   {
+    "t": "ela",
+    "s": 107.94
+   },
+   {
+    "t": "freia",
+    "s": 108.24
+   },
+   {
+    "t": "sem",
+    "s": 108.48
+   },
+   {
+    "t": "encostar",
+    "s": 108.72
+   },
+   {
+    "t": "em",
+    "s": 109.18
+   },
+   {
+    "t": "nada,",
+    "s": 109.36
+   },
+   {
+    "t": "e",
+    "s": 109.84
+   },
+   {
+    "t": "funciona",
+    "s": 109.96
+   },
+   {
+    "t": "até",
+    "s": 110.26
+   },
+   {
+    "t": "sem",
+    "s": 110.54
+   },
+   {
+    "t": "energia.",
+    "s": 110.78
+   }
+  ]
+ },
+ {
+  "n": 33,
+  "frase": "Esse é o freio magnético.",
+  "inicio": 111.6,
+  "fim": 113.12,
+  "palavras": [
+   {
+    "t": "Esse",
+    "s": 111.6
+   },
+   {
+    "t": "é",
+    "s": 111.9
+   },
+   {
+    "t": "o",
+    "s": 112.12
+   },
+   {
+    "t": "freio",
+    "s": 112.34
+   },
+   {
+    "t": "magnético.",
+    "s": 112.58
+   }
+  ]
+ },
+ {
+  "n": 34,
+  "frase": "Mas, enquanto um carrinho termina a volta, outro já saiu da estação.",
+  "inicio": 113.12,
+  "fim": 117.04,
+  "palavras": [
+   {
+    "t": "Mas,",
+    "s": 113.12
+   },
+   {
+    "t": "enquanto",
+    "s": 113.86
+   },
+   {
+    "t": "um",
+    "s": 114.1
+   },
+   {
+    "t": "carrinho",
+    "s": 114.32
+   },
+   {
+    "t": "termina",
+    "s": 114.52
+   },
+   {
+    "t": "a",
+    "s": 114.96
+   },
+   {
+    "t": "volta,",
+    "s": 115.12
+   },
+   {
+    "t": "outro",
+    "s": 115.78
+   },
+   {
+    "t": "já",
+    "s": 115.92
+   },
+   {
+    "t": "saiu",
+    "s": 116.2
+   },
+   {
+    "t": "da",
+    "s": 116.38
+   },
+   {
+    "t": "estação.",
+    "s": 116.52
+   }
+  ]
+ },
+ {
+  "n": 35,
+  "frase": "Se um alcançar o outro, eles batem.",
+  "inicio": 117.22,
+  "fim": 119.2,
+  "palavras": [
+   {
+    "t": "Se",
+    "s": 117.22
+   },
+   {
+    "t": "um",
+    "s": 117.36
+   },
+   {
+    "t": "alcançar",
+    "s": 117.52
+   },
+   {
+    "t": "o",
+    "s": 117.92
+   },
+   {
+    "t": "outro,",
+    "s": 118.1
+   },
+   {
+    "t": "eles",
+    "s": 118.44
+   },
+   {
+    "t": "batem.",
+    "s": 118.74
+   }
+  ]
+ },
+ {
+  "n": 36,
+  "frase": "Então você divide o trilho em trechos, e cada trecho só aceita um carrinho por vez.",
+  "inicio": 119.42,
+  "fim": 123.64,
+  "palavras": [
+   {
+    "t": "Então",
+    "s": 119.42
+   },
+   {
+    "t": "você",
+    "s": 119.54
+   },
+   {
+    "t": "divide",
+    "s": 119.82
+   },
+   {
+    "t": "o",
+    "s": 120.08
+   },
+   {
+    "t": "trilho",
+    "s": 120.3
+   },
+   {
+    "t": "em",
+    "s": 120.46
+   },
+   {
+    "t": "trechos,",
+    "s": 120.68
+   },
+   {
+    "t": "e",
+    "s": 121.32
+   },
+   {
+    "t": "cada",
+    "s": 121.4
+   },
+   {
+    "t": "trecho",
+    "s": 121.66
+   },
+   {
+    "t": "só",
+    "s": 122.0
+   },
+   {
+    "t": "aceita",
+    "s": 122.2
+   },
+   {
+    "t": "um",
+    "s": 122.54
+   },
+   {
+    "t": "carrinho",
+    "s": 122.86
+   },
+   {
+    "t": "por",
+    "s": 123.14
+   },
+   {
+    "t": "vez.",
+    "s": 123.4
+   }
+  ]
+ },
+ {
+  "n": 37,
+  "frase": "Se o da frente não liberou, o de trás fica preso num freio esperando.",
+  "inicio": 123.92,
+  "fim": 127.2,
+  "palavras": [
+   {
+    "t": "Se",
+    "s": 123.92
+   },
+   {
+    "t": "o",
+    "s": 124.02
+   },
+   {
+    "t": "da",
+    "s": 124.12
+   },
+   {
+    "t": "frente",
+    "s": 124.28
+   },
+   {
+    "t": "não",
+    "s": 124.48
+   },
+   {
+    "t": "liberou,",
+    "s": 124.68
+   },
+   {
+    "t": "o",
+    "s": 125.28
+   },
+   {
+    "t": "de",
+    "s": 125.38
+   },
+   {
+    "t": "trás",
+    "s": 125.52
+   },
+   {
+    "t": "fica",
+    "s": 125.66
+   },
+   {
+    "t": "preso",
+    "s": 125.9
+   },
+   {
+    "t": "num",
+    "s": 126.26
+   },
+   {
+    "t": "freio",
+    "s": 126.44
+   },
+   {
+    "t": "esperando.",
+    "s": 126.76
+   }
+  ]
+ },
+ {
+  "n": 38,
+  "frase": "Esses são os blocos.",
+  "inicio": 127.6,
+  "fim": 128.88,
+  "palavras": [
+   {
+    "t": "Esses",
+    "s": 127.6
+   },
+   {
+    "t": "são",
+    "s": 127.96
+   },
+   {
+    "t": "os",
+    "s": 128.18
+   },
+   {
+    "t": "blocos.",
+    "s": 128.44
+   }
+  ]
+ },
+ {
+  "n": 39,
+  "frase": "É por isso que, às vezes, o carrinho para do nada antes da estação.",
+  "inicio": 129.14,
+  "fim": 132.4,
+  "palavras": [
+   {
+    "t": "É",
+    "s": 129.14
+   },
+   {
+    "t": "por",
+    "s": 129.24
+   },
+   {
+    "t": "isso",
+    "s": 129.52
+   },
+   {
+    "t": "que,",
+    "s": 129.62
+   },
+   {
+    "t": "às",
+    "s": 129.74
+   },
+   {
+    "t": "vezes,",
+    "s": 129.94
+   },
+   {
+    "t": "o",
+    "s": 130.32
+   },
+   {
+    "t": "carrinho",
+    "s": 130.48
+   },
+   {
+    "t": "para",
+    "s": 130.68
+   },
+   {
+    "t": "do",
+    "s": 130.9
+   },
+   {
+    "t": "nada",
+    "s": 131.22
+   },
+   {
+    "t": "antes",
+    "s": 131.48
+   },
+   {
+    "t": "da",
+    "s": 131.82
+   },
+   {
+    "t": "estação.",
+    "s": 132.02
+   }
+  ]
+ },
+ {
+  "n": 40,
+  "frase": "Coloque uma câmera pra foto na descida, uma fila de duas horas e alguém gritando antes de sair do lugar.",
+  "inicio": 132.7,
+  "fim": 137.98,
+  "palavras": [
+   {
+    "t": "Coloque",
+    "s": 132.7
+   },
+   {
+    "t": "uma",
+    "s": 132.9
+   },
+   {
+    "t": "câmera",
+    "s": 133.08
+   },
+   {
+    "t": "pra",
+    "s": 133.42
+   },
+   {
+    "t": "foto",
+    "s": 133.64
+   },
+   {
+    "t": "na",
+    "s": 133.92
+   },
+   {
+    "t": "descida,",
+    "s": 134.06
+   },
+   {
+    "t": "uma",
+    "s": 134.74
+   },
+   {
+    "t": "fila",
+    "s": 134.96
+   },
+   {
+    "t": "de",
+    "s": 135.18
+   },
+   {
+    "t": "duas",
+    "s": 135.42
+   },
+   {
+    "t": "horas,",
+    "s": 135.66
+   },
+   {
+    "t": "e",
+    "s": 136.2
+   },
+   {
+    "t": "alguém",
+    "s": 136.28
+   },
+   {
+    "t": "gritando",
+    "s": 136.42
+   },
+   {
+    "t": "antes",
+    "s": 137.0
+   },
+   {
+    "t": "de",
+    "s": 137.26
+   },
+   {
+    "t": "sair",
+    "s": 137.46
+   },
+   {
+    "t": "do",
+    "s": 137.58
+   },
+   {
+    "t": "lugar.",
+    "s": 137.74
+   }
+  ]
+ },
+ {
+  "n": 41,
+  "frase": "Agora é só levantar os braços na primeira descida.",
+  "inicio": 138.24,
+  "fim": 140.9,
+  "palavras": [
+   {
+    "t": "Agora,",
+    "s": 138.24
+   },
+   {
+    "t": "é",
+    "s": 138.76
+   },
+   {
+    "t": "só",
+    "s": 138.9
+   },
+   {
+    "t": "levantar",
+    "s": 139.1
+   },
+   {
+    "t": "os",
+    "s": 139.5
+   },
+   {
+    "t": "braços",
+    "s": 139.72
+   },
+   {
+    "t": "na",
+    "s": 139.94
+   },
+   {
+    "t": "primeira",
+    "s": 140.18
+   },
+   {
+    "t": "descida.",
+    "s": 140.44
+   }
+  ]
+ },
+ {
+  "n": 42,
+  "frase": "Parabéns!",
+  "inicio": 140.9,
+  "fim": 141.86,
+  "palavras": [
+   {
+    "t": "Parabéns!",
+    "s": 140.9
+   }
+  ]
+ },
+ {
+  "n": 43,
+  "frase": "Você construiu uma montanha-russa!",
+  "inicio": 142.0,
+  "fim": 142.82,
+  "palavras": [
+   {
+    "t": "Você",
+    "s": 142.0
+   },
+   {
+    "t": "construiu",
+    "s": 142.26
+   },
+   {
+    "t": "uma",
+    "s": 142.68
+   }
+  ]
+ },
+ {
+  "n": 44,
+  "frase": "Se você já sabia, comente \"engenheiro\".",
+  "inicio": 144.02,
+  "fim": 146.24,
+  "palavras": [
+   {
+    "t": "Se",
+    "s": 144.02
+   },
+   {
+    "t": "você",
+    "s": 144.12
+   },
+   {
+    "t": "já",
+    "s": 144.34
+   },
+   {
+    "t": "sabia,",
+    "s": 144.54
+   },
+   {
+    "t": "comente",
+    "s": 145.26
+   },
+   {
+    "t": "engenheiro.",
+    "s": 145.52
+   }
+  ]
+ },
+ {
+  "n": 45,
+  "frase": "Se não sabia, comente \"passageiro\".",
+  "inicio": 146.52,
+  "fim": 148.5,
+  "palavras": [
+   {
+    "t": "Se",
+    "s": 146.52
+   },
+   {
+    "t": "não",
+    "s": 146.66
+   },
+   {
+    "t": "sabia,",
+    "s": 146.8
+   },
+   {
+    "t": "comente",
+    "s": 147.46
+   },
+   {
+    "t": "passageiro.",
+    "s": 147.84
+   }
+  ]
+ }
+]

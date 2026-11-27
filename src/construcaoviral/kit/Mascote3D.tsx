@@ -122,6 +122,37 @@ export const pose = (name: string, t = 0): Pose => {
 			p.bodyY = -0.42;
 			p.lean = -5;
 			break;
+		case 'sentado':
+			p.legL = p.legR = 85;
+			p.kneeL = p.kneeR = 85;
+			p.armL = [35, 12];
+			p.armR = [35, 12];
+			p.foreL = p.foreR = 35;
+			p.bodyY = -0.36;
+			break;
+		case 'sentado-bracos':
+			p.legL = p.legR = 85;
+			p.kneeL = p.kneeR = 85;
+			p.armL = [165, 20 + sw(t, 12, 8)];
+			p.armR = [165, 20 - sw(t, 12, 8)];
+			p.foreL = p.foreR = 5;
+			p.bodyY = -0.36;
+			break;
+		case 'sentado-susto':
+			p.legL = p.legR = 85;
+			p.kneeL = p.kneeR = 85;
+			p.armL = [70, 5];
+			p.armR = [70, 5];
+			p.foreL = p.foreR = 10;
+			p.bodyY = -0.36;
+			p.headTilt = -8;
+			break;
+		case 'grita':
+			p.armL = [10, 160];
+			p.armR = [10, 160];
+			p.foreL = p.foreR = 10;
+			p.headTilt = -12;
+			break;
 		case 'anda':
 			p.legL = sw(t, 9, 25);
 			p.legR = -sw(t, 9, 25);

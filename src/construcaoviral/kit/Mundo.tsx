@@ -183,7 +183,7 @@ export const Muro: React.FC<{z: number; x0: number; x1: number; h?: number}> = (
 };
 
 /** Vizinhança de fundo (montanhas, prédios cinza, nuvens) — fica longe da ação. */
-export const Fundo: React.FC<{buraco?: [number, number, number, number]}> = ({buraco = [0, 0, 0, 0]}) => {
+export const Fundo: React.FC<{buraco?: [number, number, number, number]; nuvens?: boolean}> = ({buraco = [0, 0, 0, 0], nuvens = true}) => {
 	const pm = useMemo(() => flat(CORES.predio, {roughness: 1}), []);
 	const gm = useMemo(() => flat(CORES.grama, {roughness: 1}), []);
 	// gramado distante em 4 faixas em volta de `buraco` [x0, x1, z0, z1] (área do terreno detalhado)
@@ -217,10 +217,14 @@ export const Fundo: React.FC<{buraco?: [number, number, number, number]}> = ({bu
 					<boxGeometry args={[w, h, w]} />
 				</mesh>
 			))}
-			<Nuvem position={[-9, 15, -30]} s={1.6} />
-			<Nuvem position={[8, 17, -36]} s={2} />
-			<Nuvem position={[20, 13, -26]} s={1.3} />
-			<Nuvem position={[-22, 18, -40]} s={2.2} />
+			{nuvens && (
+				<>
+					<Nuvem position={[-9, 15, -30]} s={1.6} />
+					<Nuvem position={[8, 17, -36]} s={2} />
+					<Nuvem position={[20, 13, -26]} s={1.3} />
+					<Nuvem position={[-22, 18, -40]} s={2.2} />
+				</>
+			)}
 		</group>
 	);
 };
